@@ -883,3 +883,98 @@
 [2023-05-09 01:08:16] INFO root fetch - main [MainThread]: End processing [tmnt]: success
 [2023-05-09 01:08:55] INFO root fetch - main [MainThread]: End processing [ddtrace]: success
 [2023-05-09 01:08:55] INFO root fetch - main [MainThread]: Store serial: [18023527]
+[2023-05-09 01:13:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023527]
+[2023-05-09 01:14:04] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kolibri-explore-plugin
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wads
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-chess-bughouse
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spatial-summarize-within
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyExpUtils-andnp
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sampling-constraints
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: latch
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cagraph
+[2023-05-09 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: JupyterQuiz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [kolibri-explore-plugin]: New version: [6.0.0] Old Version: [5.9.0]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [spatial-summarize-within]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [sampling-constraints]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [python-chess-bughouse]: New version: [0.28.0] Old Version: [0.27.3]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [PyExpUtils-andnp]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [wads]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [cagraph]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [JupyterQuiz]: New version: [2.5.1] Old Version: [2.5.0]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.308] Old Version: [0.3.307]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [kolibri-explore-plugin]: Downloading https://files.pythonhosted.org/packages/f4/29/bee70a4abbe5fc02ed96a70eb96bd8dc0f430cb0fe3de79272ba5f4d713a/kolibri_explore_plugin-5.9.0-py2.py3-none-any.whl
+[2023-05-09 01:14:04] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/a1/15/d5a679884217abff16fc2bc104f36637be28bb2650c6052d9d67f61437b8/pepperize.cdk-ses-smtp-credentials-0.3.307.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [cagraph]: Downloading https://files.pythonhosted.org/packages/3e/b6/f2b4ca4d9ebc7568d5a4c0ecbfc4d2fff22a0421f66021bd95e9a23cbfde/cagraph-0.0.8.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [wads]: Downloading https://files.pythonhosted.org/packages/2f/49/6663752a3ec44ab9b8e366f6a3b47e3ef0c08dc06c3945b42f6c79507571/wads-0.0.8.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [PyExpUtils-andnp]: Downloading https://files.pythonhosted.org/packages/3a/36/d30fa21c1abd5e47abcd8b25154a075786e4c562705bf2f105e476540120/PyExpUtils-andnp-4.0.1.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [JupyterQuiz]: Downloading https://files.pythonhosted.org/packages/0e/95/5e04bc41afef0532d3ecc272fe2991b159782b2da0de80e7eb26d69a3895/JupyterQuiz-2.5.0.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/79/f7/1912dae713dbd539910745289141bab27e2ec23827c1f7112accaf98bdda/latch-2.9.5.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [python-chess-bughouse]: Downloading https://files.pythonhosted.org/packages/9d/f6/2fc096faa986095e40b1ace5028a8362c8a2355bc0006a4080bc7e72df95/python-chess-bughouse-0.27.3.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [spatial-summarize-within]: Downloading https://files.pythonhosted.org/packages/38/d3/58814c12bae5c5ab4bfaf923c5a0c92c075ebb6e0c16a92b2d05d13ec188/spatial_summarize_within-0.1.2.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [sampling-constraints]: Downloading https://files.pythonhosted.org/packages/8f/9a/0229ff76fe56e3d04672ccf851ba00eaa77867b7b3fb898c5a2f059db6da/sampling-constraints-0.0.6.tar.gz
+[2023-05-09 01:14:04] WARNING root fetch - processPackages [kolibri-explore-plugin]: Skipping package: exceeds size limit 16263845>=10485760
+[2023-05-09 01:14:04] INFO root fetch - processPackages [kolibri-explore-plugin]: Start processing: FlowKit
+[2023-05-09 01:14:04] INFO root fetch - processPackages [PyExpUtils-andnp]: executing diffoscope
+[2023-05-09 01:14:04] INFO root fetch - main [MainThread]: End processing [kolibri-explore-plugin] error
+[2023-05-09 01:14:04] INFO root fetch - processPackages [PyExpUtils-andnp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyExpUtils-andnp-4.0.0.tar.gz tmp/PyExpUtils-andnp-4.0.1.tar.gz --markdown 20230509/P/PyExpUtils-andnp/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-05-09 01:14:04] INFO root fetch - processPackages [spatial-summarize-within]: executing diffoscope
+[2023-05-09 01:14:04] INFO root fetch - processPackages [spatial-summarize-within]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatial_summarize_within-0.1.1.tar.gz tmp/spatial_summarize_within-0.1.2.tar.gz --markdown 20230509/s/spatial-summarize-within/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 01:14:04] INFO root fetch - processPackages [sampling-constraints]: executing diffoscope
+[2023-05-09 01:14:04] INFO root fetch - processPackages [cagraph]: executing diffoscope
+[2023-05-09 01:14:04] INFO root fetch - processPackages [sampling-constraints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sampling-constraints-0.0.5.tar.gz tmp/sampling-constraints-0.0.6.tar.gz --markdown 20230509/s/sampling-constraints/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 01:14:04] INFO root fetch - processPackages [cagraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagraph-0.0.7.tar.gz tmp/cagraph-0.0.8.tar.gz --markdown 20230509/c/cagraph/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-09 01:14:04] INFO root fetch - processPackages [FlowKit]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 01:14:04] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/b6/88/98c5c63c67f75829049f8ef4e2b96684279213580d30d5be1080c003266a/pepperize.cdk-ses-smtp-credentials-0.3.308.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-09 01:14:04] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.307.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.308.tar.gz --markdown 20230509/p/pepperize.cdk-ses-smtp-credentials/0.3.307-0.3.308/diff.md --exclude *.pyd
+[2023-05-09 01:14:04] INFO root fetch - processPackages [wads]: Downloading https://files.pythonhosted.org/packages/75/5e/3a91a7524a6b786bb306693ddaf58f9c767fa1cb6a605904b91e813e2708/wads-0.0.9.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [FlowKit]: Downloading https://files.pythonhosted.org/packages/91/91/dd44d42125f0d59f9de9c5158714a8b3aecb4d6c1d9cc057832d4fcb6b80/FlowKit-1.0.0.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/5e/5a/e91171b6eca0ba929f7259719a3d389fd86242408d94dbf266925a9f4d21/latch-2.9.6.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [python-chess-bughouse]: Downloading https://files.pythonhosted.org/packages/4e/cb/cbcec1049b7e117415898206704c765e53c78f31a1cc4b7e98aa4d570649/python-chess-bughouse-0.28.0.tar.gz
+[2023-05-09 01:14:04] INFO root fetch - processPackages [python-chess-bughouse]: executing diffoscope
+[2023-05-09 01:14:04] INFO root fetch - processPackages [python-chess-bughouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-chess-bughouse-0.27.3.tar.gz tmp/python-chess-bughouse-0.28.0.tar.gz --markdown 20230509/p/python-chess-bughouse/0.27.3-0.28.0/diff.md --exclude *.pyd
+[2023-05-09 01:14:04] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-05-09 01:14:04] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230509/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-05-09 01:14:05] INFO root fetch - processPackages [FlowKit]: Downloading https://files.pythonhosted.org/packages/eb/26/65a22954c5ae4bbbb4fe350a6b3e9a7f1149b833c83f1f9593f9f2229f6a/FlowKit-1.0.1.tar.gz
+[2023-05-09 01:14:05] INFO root fetch - processPackages [FlowKit]: executing diffoscope
+[2023-05-09 01:14:05] INFO root fetch - processPackages [FlowKit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlowKit-1.0.0.tar.gz tmp/FlowKit-1.0.1.tar.gz --markdown 20230509/F/FlowKit/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 01:14:05] INFO root fetch - processPackages [JupyterQuiz]: Downloading https://files.pythonhosted.org/packages/29/c3/726f5b66dff68bde061157d870c1f57213a650de8049f6754022d129ddd0/JupyterQuiz-2.5.1.tar.gz
+[2023-05-09 01:14:05] INFO root fetch - processPackages [wads]: executing diffoscope
+[2023-05-09 01:14:05] INFO root fetch - processPackages [wads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wads-0.0.8.tar.gz tmp/wads-0.0.9.tar.gz --markdown 20230509/w/wads/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 01:14:05] INFO root fetch - processPackages [JupyterQuiz]: executing diffoscope
+[2023-05-09 01:14:05] INFO root fetch - processPackages [JupyterQuiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JupyterQuiz-2.5.0.tar.gz tmp/JupyterQuiz-2.5.1.tar.gz --markdown 20230509/J/JupyterQuiz/2.5.0-2.5.1/diff.md --exclude *.pyd
+[2023-05-09 01:14:05] INFO root fetch - processPackages [spatial-summarize-within]: Start processing: redis-elastic
+[2023-05-09 01:14:05] INFO root fetch - main [MainThread]: End processing [spatial-summarize-within]: success
+[2023-05-09 01:14:05] INFO root fetch - processPackages [redis-elastic]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 01:14:05] INFO root fetch - processPackages [sampling-constraints]: Start processing: MeTA-bagari
+[2023-05-09 01:14:05] INFO root fetch - main [MainThread]: End processing [sampling-constraints]: success
+[2023-05-09 01:14:06] INFO root fetch - processPackages [MeTA-bagari]: New version: [0.0.2.1] Old Version: [0.0.2]
+[2023-05-09 01:14:06] INFO root fetch - processPackages [redis-elastic]: Downloading https://files.pythonhosted.org/packages/94/5a/8f0790f5ff06495e789f1790096f0f7ce848ea5e00dd5da745dc3321e06b/redis_elastic-1.0.0.tar.gz
+[2023-05-09 01:14:06] INFO root fetch - processPackages [MeTA-bagari]: Downloading https://files.pythonhosted.org/packages/c8/2c/b8e32f70fffc3b3b1f821ae353244db893ec0402ffe95f7b32d1e85fe791/MeTA_bagari-0.0.2.1.tar.gz
+[2023-05-09 01:14:06] INFO root fetch - processPackages [MeTA-bagari]: executing diffoscope
+[2023-05-09 01:14:06] INFO root fetch - processPackages [MeTA-bagari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeTA_bagari-0.0.2.tar.gz tmp/MeTA_bagari-0.0.2.1.tar.gz --markdown 20230509/M/MeTA-bagari/0.0.2-0.0.2.1/diff.md --exclude *.pyd
+[2023-05-09 01:14:06] INFO root fetch - processPackages [redis-elastic]: Downloading https://files.pythonhosted.org/packages/4a/24/ea7aa6c086a57cda6599b316f1c1ff51f90e0aab747c80991a547300c1e8/redis_elastic-1.0.1.tar.gz
+[2023-05-09 01:14:06] INFO root fetch - processPackages [redis-elastic]: executing diffoscope
+[2023-05-09 01:14:06] INFO root fetch - processPackages [redis-elastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redis_elastic-1.0.0.tar.gz tmp/redis_elastic-1.0.1.tar.gz --markdown 20230509/r/redis-elastic/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 01:14:06] INFO root fetch - processPackages [PyExpUtils-andnp]: Start processing: jarvis-ironman
+[2023-05-09 01:14:06] INFO root fetch - main [MainThread]: End processing [PyExpUtils-andnp]: success
+[2023-05-09 01:14:06] INFO root fetch - processPackages [jarvis-ironman]: New version: [3.0a0] Old Version: [2.7a0]
+[2023-05-09 01:14:06] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-09 01:14:06] INFO root fetch - main [MainThread]: End processing [wads]: success
+[2023-05-09 01:14:06] INFO root fetch - processPackages [jarvis-ironman]: Downloading https://files.pythonhosted.org/packages/7d/01/02d7ad92d741cd546b645110d6bf462df86fcdc6b16c477276cefefe260f/jarvis_ironman-2.7a0-py3-none-any.whl
+[2023-05-09 01:14:06] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2023-05-09 01:14:07] INFO root fetch - main [MainThread]: End processing [FlowKit]: success
+[2023-05-09 01:14:07] INFO root fetch - main [MainThread]: End processing [python-chess-bughouse]: success
+[2023-05-09 01:14:07] INFO root fetch - main [MainThread]: End processing [redis-elastic]: success
+[2023-05-09 01:14:07] INFO root fetch - main [MainThread]: End processing [MeTA-bagari]: success
+[2023-05-09 01:14:07] INFO root fetch - processPackages [jarvis-ironman]: Downloading https://files.pythonhosted.org/packages/c1/63/4ad2a24201e6698d6640b4aa2ff34db267e34d1b007786fb3d7c39064e22/jarvis_ironman-3.0a0-py3-none-any.whl
+[2023-05-09 01:14:09] INFO root fetch - processPackages [jarvis-ironman]: executing diffoscope
+[2023-05-09 01:14:09] INFO root fetch - processPackages [jarvis-ironman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis_ironman-2.7a0-py3-none-any.whl.zip tmp/jarvis_ironman-3.0a0-py3-none-any.whl.zip --markdown 20230509/j/jarvis-ironman/2.7a0-3.0a0/diff.md --exclude *.pyd
+[2023-05-09 01:14:09] INFO root fetch - main [MainThread]: End processing [JupyterQuiz]: success
+[2023-05-09 01:14:12] INFO root fetch - main [MainThread]: End processing [jarvis-ironman]: success
+[2023-05-09 01:17:04] ERROR root fetch - processPackages [cagraph]: Timeout during execution of pkgdiff
+[2023-05-09 01:17:04] INFO root fetch - main [MainThread]: End processing [cagraph] error
+[2023-05-09 01:17:04] INFO root fetch - main [MainThread]: Store serial: [18023566]
