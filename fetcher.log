@@ -369,3 +369,61 @@
 [2023-05-09 00:29:25] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
 [2023-05-09 00:29:26] INFO root fetch - main [MainThread]: End processing [phdi]: success
 [2023-05-09 00:29:26] INFO root fetch - main [MainThread]: Store serial: [18023177]
+[2023-05-09 00:34:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023177]
+[2023-05-09 00:34:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-09 00:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robusta-cli
+[2023-05-09 00:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kmport
+[2023-05-09 00:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: horsetalk
+[2023-05-09 00:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TheSilent
+[2023-05-09 00:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: faker-file
+[2023-05-09 00:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: expden
+[2023-05-09 00:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: st-ant-menu
+[2023-05-09 00:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: complex-curve-fit-gui
+[2023-05-09 00:34:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rime-sdk
+[2023-05-09 00:34:34] INFO root fetch - processPackages [horsetalk]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-09 00:34:34] INFO root fetch - processPackages [kmport]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-09 00:34:34] INFO root fetch - processPackages [expden]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 00:34:34] INFO root fetch - processPackages [faker-file]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-09 00:34:34] INFO root fetch - processPackages [complex-curve-fit-gui]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-05-09 00:34:34] INFO root fetch - processPackages [robusta-cli]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-09 00:34:34] INFO root fetch - processPackages [st-ant-menu]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 00:34:34] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 00:34:34] INFO root fetch - processPackages [rime-sdk]: New version: [2.1.0rc2] Old Version: [2.1.0rc1]
+[2023-05-09 00:34:34] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-05-09 00:34:34] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230509/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 00:34:34] INFO root fetch - processPackages [robusta-cli]: executing diffoscope
+[2023-05-09 00:34:34] INFO root fetch - processPackages [robusta-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robusta-cli-0.9.7.tar.gz tmp/robusta-cli-0.9.9.tar.gz --markdown 20230509/r/robusta-cli/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 00:34:35] INFO root fetch - processPackages [faker-file]: executing diffoscope
+[2023-05-09 00:34:35] INFO root fetch - processPackages [faker-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faker-file-0.9.2.tar.gz tmp/faker-file-0.9.3.tar.gz --markdown 20230509/f/faker-file/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-09 00:34:35] INFO root fetch - processPackages [expden]: Downloading https://files.pythonhosted.org/packages/4f/4b/b73a0b43b7ac5e192bc63010c34b2048f8e6b683961bf4f0c65a5f64f0c3/expden-0.1.1.tar.gz
+[2023-05-09 00:34:35] INFO root fetch - processPackages [horsetalk]: Downloading https://files.pythonhosted.org/packages/3e/47/1e648ba54289e8e4c886b676ee4551cf4262aee01b647f37dc27bb9440bf/horsetalk-0.8.2.tar.gz
+[2023-05-09 00:34:35] INFO root fetch - processPackages [kmport]: Downloading https://files.pythonhosted.org/packages/61/fa/d628f6cd69e6efdedad5ab9cd4fafac47fc31d431af5540789663f3e6d75/kmport-2.0.8.tar.gz
+[2023-05-09 00:34:35] INFO root fetch - processPackages [st-ant-menu]: Downloading https://files.pythonhosted.org/packages/00/5e/3df1dc090c5df6e89406368e969852a9521de210ab6049a9cd41d3d29d91/st_ant_menu-0.0.8-py3-none-any.whl
+[2023-05-09 00:34:35] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/f4/e7/2040e79b620bda964fb3302af57c993c2d7e6d97ef5749c2126a2b99cd8f/rime_sdk-2.1.0rc1.tar.gz
+[2023-05-09 00:34:35] INFO root fetch - processPackages [complex-curve-fit-gui]: Downloading https://files.pythonhosted.org/packages/38/bc/b65f4970b4a4503c6c278f432868f18960461a14d1311b71e3168f34457c/complex_curve_fit_gui-1.2.0.tar.gz
+[2023-05-09 00:34:35] INFO root fetch - processPackages [horsetalk]: executing diffoscope
+[2023-05-09 00:34:35] INFO root fetch - processPackages [horsetalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/horsetalk-0.8.1.tar.gz tmp/horsetalk-0.8.2.tar.gz --markdown 20230509/h/horsetalk/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-09 00:34:35] INFO root fetch - processPackages [complex-curve-fit-gui]: executing diffoscope
+[2023-05-09 00:34:35] INFO root fetch - processPackages [complex-curve-fit-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/complex_curve_fit_gui-1.1.9.tar.gz tmp/complex_curve_fit_gui-1.2.0.tar.gz --markdown 20230509/c/complex-curve-fit-gui/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 00:34:35] INFO root fetch - processPackages [expden]: Downloading https://files.pythonhosted.org/packages/02/dd/f2fad66b74c8eb1731b83b1c6608dcecfe653ee01598c0f2720f9ef1f171/expden-0.1.2.tar.gz
+[2023-05-09 00:34:35] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/25/79/ba7681364317f1cc1fcb8d61cb09bf0beead08e3c305d2ecebd3f397d6b8/rime_sdk-2.1.0rc2.tar.gz
+[2023-05-09 00:34:35] INFO root fetch - processPackages [st-ant-menu]: Downloading https://files.pythonhosted.org/packages/8d/b8/05b9140865f38d5b42db920bf8ece71bdc9acfc0d6b4b3a6367b72e3c541/st_ant_menu-0.0.9-py3-none-any.whl
+[2023-05-09 00:34:35] INFO root fetch - processPackages [expden]: executing diffoscope
+[2023-05-09 00:34:35] INFO root fetch - processPackages [expden]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/expden-0.1.1.tar.gz tmp/expden-0.1.2.tar.gz --markdown 20230509/e/expden/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 00:34:35] INFO root fetch - processPackages [kmport]: Downloading https://files.pythonhosted.org/packages/1e/6c/b0e5677c043977795bd55a43bd6564150ff35d707fee0d3c053cd82b2d18/kmport-2.0.9.tar.gz
+[2023-05-09 00:34:35] INFO root fetch - processPackages [rime-sdk]: executing diffoscope
+[2023-05-09 00:34:35] INFO root fetch - processPackages [rime-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rime_sdk-2.1.0rc1.tar.gz tmp/rime_sdk-2.1.0rc2.tar.gz --markdown 20230509/r/rime-sdk/2.1.0rc1-2.1.0rc2/diff.md --exclude *.pyd
+[2023-05-09 00:34:35] INFO root fetch - processPackages [kmport]: executing diffoscope
+[2023-05-09 00:34:35] INFO root fetch - processPackages [kmport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmport-2.0.8.tar.gz tmp/kmport-2.0.9.tar.gz --markdown 20230509/k/kmport/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:34:36] INFO root fetch - processPackages [st-ant-menu]: executing diffoscope
+[2023-05-09 00:34:36] INFO root fetch - processPackages [st-ant-menu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_ant_menu-0.0.8-py3-none-any.whl.zip tmp/st_ant_menu-0.0.9-py3-none-any.whl.zip --markdown 20230509/s/st-ant-menu/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:34:36] INFO root fetch - main [MainThread]: End processing [complex-curve-fit-gui]: success
+[2023-05-09 00:34:36] INFO root fetch - main [MainThread]: End processing [horsetalk]: success
+[2023-05-09 00:34:36] INFO root fetch - main [MainThread]: End processing [expden]: success
+[2023-05-09 00:34:36] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-05-09 00:34:37] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
+[2023-05-09 00:34:37] INFO root fetch - main [MainThread]: End processing [kmport]: success
+[2023-05-09 00:34:37] INFO root fetch - main [MainThread]: End processing [faker-file]: success
+[2023-05-09 00:34:41] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
+[2023-05-09 00:35:44] INFO root fetch - main [MainThread]: End processing [st-ant-menu]: success
+[2023-05-09 00:35:44] INFO root fetch - main [MainThread]: Store serial: [18023202]
