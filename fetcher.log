@@ -1297,3 +1297,62 @@
 [2023-05-09 01:44:01] INFO root fetch - main [MainThread]: End processing [es7s]: success
 [2023-05-09 01:44:02] INFO root fetch - main [MainThread]: End processing [ReplayTables-andnp]: success
 [2023-05-09 01:44:02] INFO root fetch - main [MainThread]: Store serial: [18023780]
+[2023-05-09 01:49:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023780]
+[2023-05-09 01:49:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-09 01:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simplechain
+[2023-05-09 01:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wallaroo
+[2023-05-09 01:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymatgen-analysis-defects
+[2023-05-09 01:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jefferson-street-singer-ingest
+[2023-05-09 01:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CNNtech-News
+[2023-05-09 01:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mppsolar
+[2023-05-09 01:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bivalve
+[2023-05-09 01:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SDTcloud
+[2023-05-09 01:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pano-airflow
+[2023-05-09 01:49:10] INFO root fetch - processPackages [wallaroo]: New version: [2023.2.0rc1] Old Version: [2023.1.0rc1]
+[2023-05-09 01:49:10] INFO root fetch - processPackages [simplechain]: New version: [0.0.5.6] Old Version: [0.0.5.5]
+[2023-05-09 01:49:10] INFO root fetch - processPackages [jefferson-street-singer-ingest]: New version: [2.8.4] Old Version: [2.8.2]
+[2023-05-09 01:49:10] INFO root fetch - processPackages [CNNtech-News]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 01:49:10] INFO root fetch - processPackages [pymatgen-analysis-defects]: New version: [2023.5.8] Old Version: [2023.5.4]
+[2023-05-09 01:49:10] INFO root fetch - processPackages [bivalve]: New version: [0.4] Old Version: [0.3]
+[2023-05-09 01:49:10] INFO root fetch - processPackages [SDTcloud]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 01:49:10] INFO root fetch - processPackages [mppsolar]: New version: [0.9.12] Old Version: [0.9.1]
+[2023-05-09 01:49:10] WARNING root fetch - processPackages [pano-airflow]: Skipping, unable to determine old version
+[2023-05-09 01:49:10] INFO root fetch - main [MainThread]: End processing [pano-airflow] error
+[2023-05-09 01:49:10] INFO root fetch - processPackages [CNNtech-News]: Downloading https://files.pythonhosted.org/packages/12/35/f334f43c774b3e86caabb3ad1f0ca04aecff078a2040eb105997699612e1/CNNtech_News-0.1.0.tar.gz
+[2023-05-09 01:49:10] INFO root fetch - processPackages [SDTcloud]: Downloading https://files.pythonhosted.org/packages/df/14/a7d846cb21842e94588b0df44ead9370b975a192042e929ed496daf392a6/SDTcloud-0.1.8.tar.gz
+[2023-05-09 01:49:10] INFO root fetch - processPackages [wallaroo]: Downloading https://files.pythonhosted.org/packages/64/c1/2372521a6afcdf81e77cdc3d475916ad4aef7e61bbe05d50135255607c22/wallaroo-2023.1.0rc1.tar.gz
+[2023-05-09 01:49:10] INFO root fetch - processPackages [jefferson-street-singer-ingest]: Downloading https://files.pythonhosted.org/packages/6c/d2/058a97035f5149f4012a096babd06a8c611cfc392df5d051f385a70f7eca/jefferson-street-singer-ingest-2.8.4.tar.gz
+[2023-05-09 01:49:10] INFO root fetch - processPackages [mppsolar]: Downloading https://files.pythonhosted.org/packages/6b/31/e960cd826fccc8ffb069d4605d995c555846f8fce9f86e5e121ccedcad86/mppsolar-0.9.1.tar.gz
+[2023-05-09 01:49:10] INFO root fetch - processPackages [pymatgen-analysis-defects]: Downloading https://files.pythonhosted.org/packages/4a/c3/e321952b03ac233899b2ccb3fbb2345e1e5aa4c0238d31608d13076d7d03/pymatgen-analysis-defects-2023.5.4.tar.gz
+[2023-05-09 01:49:10] INFO root fetch - processPackages [simplechain]: Downloading https://files.pythonhosted.org/packages/b3/71/584f36ac4e8287f8d45299289ef49ed5275a8bbe2a4f4758f73ab10bee96/simplechain-0.0.5.6.tar.gz
+[2023-05-09 01:49:10] INFO root fetch - processPackages [simplechain]: executing diffoscope
+[2023-05-09 01:49:10] INFO root fetch - processPackages [simplechain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplechain-0.0.5.5.tar.gz tmp/simplechain-0.0.5.6.tar.gz --markdown 20230509/s/simplechain/0.0.5.5-0.0.5.6/diff.md --exclude *.pyd
+[2023-05-09 01:49:11] INFO root fetch - processPackages [jefferson-street-singer-ingest]: executing diffoscope
+[2023-05-09 01:49:11] INFO root fetch - processPackages [jefferson-street-singer-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jefferson-street-singer-ingest-2.8.2.tar.gz tmp/jefferson-street-singer-ingest-2.8.4.tar.gz --markdown 20230509/j/jefferson-street-singer-ingest/2.8.2-2.8.4/diff.md --exclude *.pyd
+[2023-05-09 01:49:11] INFO root fetch - processPackages [CNNtech-News]: Downloading https://files.pythonhosted.org/packages/3c/a3/27ec30f4089d87fc24ae2aa4b52c6e6b82e4020371da1cac976a815b34ed/CNNtech_News-0.1.1.tar.gz
+[2023-05-09 01:49:11] INFO root fetch - processPackages [bivalve]: Downloading https://files.pythonhosted.org/packages/94/e0/69eef91db8563a20133766baf85064d95c60ca6fa5677a509b89571b7c19/bivalve-0.4.tar.gz
+[2023-05-09 01:49:11] INFO root fetch - processPackages [SDTcloud]: Downloading https://files.pythonhosted.org/packages/64/c8/7383a04951bfe459323549ff2800a2ce8f6e513924e1cb07a3776547e688/SDTcloud-0.1.9.tar.gz
+[2023-05-09 01:49:11] INFO root fetch - processPackages [SDTcloud]: executing diffoscope
+[2023-05-09 01:49:11] INFO root fetch - processPackages [SDTcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SDTcloud-0.1.8.tar.gz tmp/SDTcloud-0.1.9.tar.gz --markdown 20230509/S/SDTcloud/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 01:49:11] INFO root fetch - processPackages [CNNtech-News]: executing diffoscope
+[2023-05-09 01:49:11] INFO root fetch - processPackages [CNNtech-News]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CNNtech_News-0.1.0.tar.gz tmp/CNNtech_News-0.1.1.tar.gz --markdown 20230509/C/CNNtech-News/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 01:49:11] INFO root fetch - processPackages [bivalve]: executing diffoscope
+[2023-05-09 01:49:11] INFO root fetch - processPackages [bivalve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bivalve-0.3.tar.gz tmp/bivalve-0.4.tar.gz --markdown 20230509/b/bivalve/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-09 01:49:11] INFO root fetch - processPackages [pymatgen-analysis-defects]: Downloading https://files.pythonhosted.org/packages/d4/53/e026b0e66c99920d4e2dfe2997f724711e6aa9b97577a85324866562c33c/pymatgen-analysis-defects-2023.5.8.tar.gz
+[2023-05-09 01:49:11] INFO root fetch - processPackages [pymatgen-analysis-defects]: executing diffoscope
+[2023-05-09 01:49:11] INFO root fetch - processPackages [pymatgen-analysis-defects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymatgen-analysis-defects-2023.5.4.tar.gz tmp/pymatgen-analysis-defects-2023.5.8.tar.gz --markdown 20230509/p/pymatgen-analysis-defects/2023.5.4-2023.5.8/diff.md --exclude *.pyd
+[2023-05-09 01:49:11] INFO root fetch - processPackages [mppsolar]: Downloading https://files.pythonhosted.org/packages/fd/87/29296f7b83112ba52d957ad9bd045e73b688905ea29ddda5f44e092a22bc/mppsolar-0.9.12.tar.gz
+[2023-05-09 01:49:11] INFO root fetch - processPackages [mppsolar]: executing diffoscope
+[2023-05-09 01:49:11] INFO root fetch - processPackages [mppsolar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mppsolar-0.9.1.tar.gz tmp/mppsolar-0.9.12.tar.gz --markdown 20230509/m/mppsolar/0.9.1-0.9.12/diff.md --exclude *.pyd
+[2023-05-09 01:49:12] INFO root fetch - main [MainThread]: End processing [jefferson-street-singer-ingest]: success
+[2023-05-09 01:49:12] INFO root fetch - main [MainThread]: End processing [SDTcloud]: success
+[2023-05-09 01:49:12] INFO root fetch - main [MainThread]: End processing [bivalve]: success
+[2023-05-09 01:49:12] INFO root fetch - main [MainThread]: End processing [pymatgen-analysis-defects]: success
+[2023-05-09 01:49:12] INFO root fetch - main [MainThread]: End processing [simplechain]: success
+[2023-05-09 01:49:12] INFO root fetch - main [MainThread]: End processing [CNNtech-News]: success
+[2023-05-09 01:49:12] INFO root fetch - processPackages [wallaroo]: Downloading https://files.pythonhosted.org/packages/c0/a8/e3619368c11d49abf891c231b98aeb56b6048401ff0b40e9d0eed8a81032/wallaroo-2023.2.0rc1.tar.gz
+[2023-05-09 01:49:13] INFO root fetch - main [MainThread]: End processing [mppsolar]: success
+[2023-05-09 01:49:14] INFO root fetch - processPackages [wallaroo]: executing diffoscope
+[2023-05-09 01:49:14] INFO root fetch - processPackages [wallaroo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wallaroo-2023.1.0rc1.tar.gz tmp/wallaroo-2023.2.0rc1.tar.gz --markdown 20230509/w/wallaroo/2023.1.0rc1-2023.2.0rc1/diff.md --exclude *.pyd
+[2023-05-09 01:50:11] INFO root fetch - main [MainThread]: End processing [wallaroo]: success
+[2023-05-09 01:50:11] INFO root fetch - main [MainThread]: Store serial: [18023808]
