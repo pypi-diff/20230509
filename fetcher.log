@@ -690,3 +690,110 @@
 [2023-05-09 00:54:24] ERROR root fetch - processPackages [cagraph]: Timeout during execution of pkgdiff
 [2023-05-09 00:54:24] INFO root fetch - main [MainThread]: End processing [cagraph] error
 [2023-05-09 00:54:24] INFO root fetch - main [MainThread]: Store serial: [18023339]
+[2023-05-09 00:59:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023339]
+[2023-05-09 00:59:32] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: firepup650
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotON_sdk
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-cpp-python
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FicImageScript
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lftools
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: datoso
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cagraph
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lattice-graph-manipulation
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kgcl-rdflib
+[2023-05-09 00:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tflite-runtime
+[2023-05-09 00:59:32] INFO root fetch - processPackages [firepup650]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 00:59:32] INFO root fetch - processPackages [lftools]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 00:59:32] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.2.5] Old Version: [0.0.2.4]
+[2023-05-09 00:59:32] WARNING root fetch - processPackages [FicImageScript]: Skipping, unable to determine old version
+[2023-05-09 00:59:32] INFO root fetch - processPackages [FicImageScript]: Start processing: terminut
+[2023-05-09 00:59:32] INFO root fetch - main [MainThread]: End processing [FicImageScript] error
+[2023-05-09 00:59:32] INFO root fetch - processPackages [datoso]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-09 00:59:32] INFO root fetch - processPackages [cagraph]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-05-09 00:59:32] INFO root fetch - processPackages [lattice-graph-manipulation]: New version: [1.0.0] Old Version: [0.1.1]
+[2023-05-09 00:59:32] INFO root fetch - processPackages [llama-cpp-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 00:59:32] INFO root fetch - processPackages [tflite-runtime]: New version: [2.9.1] Old Version: [2.8.0]
+[2023-05-09 00:59:32] INFO root fetch - processPackages [kgcl-rdflib]: New version: [0.4.0rc1] Old Version: [0.3.0]
+[2023-05-09 00:59:32] INFO root fetch - processPackages [terminut]: New version: [0.0.0.6] Old Version: [0.0.0.5]
+[2023-05-09 00:59:33] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/e3/8f/d05b08d8675c74aa6fa7c771bc01d86aafabed34b31c79bc5db614a51851/spotON_sdk-0.0.2.4.tar.gz
+[2023-05-09 00:59:33] INFO root fetch - processPackages [lattice-graph-manipulation]: Downloading https://files.pythonhosted.org/packages/95/53/9fc3eb3ebcd9719a3328fa1b19a2316ad6c396c045089068180bae5db34e/Lattice-Graph-Manipulation-0.1.1.tar.gz
+[2023-05-09 00:59:33] INFO root fetch - processPackages [cagraph]: Downloading https://files.pythonhosted.org/packages/18/e4/484e7bc6af070f3bb4e515b59b0c17bfbda54697351700469c57105e696b/cagraph-0.0.7.tar.gz
+[2023-05-09 00:59:33] INFO root fetch - processPackages [datoso]: Downloading https://files.pythonhosted.org/packages/1a/8a/7571ea1283cdba6c54c58675cf9e6660eb713a2ee6a2612b9b0d1163702c/datoso-0.2.7.tar.gz
+[2023-05-09 00:59:33] INFO root fetch - processPackages [kgcl-rdflib]: Downloading https://files.pythonhosted.org/packages/b9/2e/0468797b1e3fd637057fc50964659e00e8373cfdcb114759651a6a793136/kgcl-rdflib-0.3.0.tar.gz
+[2023-05-09 00:59:33] INFO root fetch - processPackages [terminut]: Downloading https://files.pythonhosted.org/packages/8b/41/67f88e57d9557403a4f3081d73fe40a3bc7e925b0d841e90a4b72a675154/terminut-0.0.0.6.tar.gz
+[2023-05-09 00:59:33] INFO root fetch - processPackages [tflite-runtime]: Downloading https://files.pythonhosted.org/packages/95/d4/9819b1c14ffbd425f8292e774889bca203f227ed2419a7e7b6ded17c3a66/tflite_runtime-2.8.0-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-09 00:59:33] INFO root fetch - processPackages [datoso]: executing diffoscope
+[2023-05-09 00:59:33] INFO root fetch - processPackages [datoso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datoso-0.2.6.tar.gz tmp/datoso-0.2.7.tar.gz --markdown 20230509/d/datoso/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-09 00:59:33] INFO root fetch - processPackages [terminut]: executing diffoscope
+[2023-05-09 00:59:33] INFO root fetch - processPackages [terminut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminut-0.0.0.5.tar.gz tmp/terminut-0.0.0.6.tar.gz --markdown 20230509/t/terminut/0.0.0.5-0.0.0.6/diff.md --exclude *.pyd
+[2023-05-09 00:59:33] INFO root fetch - processPackages [cagraph]: executing diffoscope
+[2023-05-09 00:59:33] INFO root fetch - processPackages [cagraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagraph-0.0.5.tar.gz tmp/cagraph-0.0.7.tar.gz --markdown 20230509/c/cagraph/0.0.5-0.0.7/diff.md --exclude *.pyd
+[2023-05-09 00:59:33] INFO root fetch - processPackages [firepup650]: executing diffoscope
+[2023-05-09 00:59:33] INFO root fetch - processPackages [firepup650]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firepup650-1.0.8.tar.gz tmp/firepup650-1.0.9.tar.gz --markdown 20230509/f/firepup650/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:59:33] INFO root fetch - processPackages [lftools]: executing diffoscope
+[2023-05-09 00:59:33] INFO root fetch - processPackages [lftools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lftools-0.9.0.tar.gz tmp/lftools-0.9.1.tar.gz --markdown 20230509/l/lftools/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 00:59:33] INFO root fetch - processPackages [llama-cpp-python]: executing diffoscope
+[2023-05-09 00:59:33] INFO root fetch - processPackages [llama-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_python-0.1.8.tar.gz tmp/llama_cpp_python-0.1.9.tar.gz --markdown 20230509/l/llama-cpp-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 00:59:33] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/df/b7/cda3b4f98e49c05bb2388196d670d234a3837e53522c7af688ee8f8ca7b3/spotON_sdk-0.0.2.5.tar.gz
+[2023-05-09 00:59:33] INFO root fetch - processPackages [lattice-graph-manipulation]: Downloading https://files.pythonhosted.org/packages/b0/65/a8276625651eab63443a9ea21e6807f78f6bb703187d6017a5dfa211c3df/Lattice-Graph-Manipulation-1.0.0.tar.gz
+[2023-05-09 00:59:33] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-09 00:59:33] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.2.4.tar.gz tmp/spotON_sdk-0.0.2.5.tar.gz --markdown 20230509/s/spotON_sdk/0.0.2.4-0.0.2.5/diff.md --exclude *.pyd
+[2023-05-09 00:59:33] INFO root fetch - processPackages [kgcl-rdflib]: Downloading https://files.pythonhosted.org/packages/44/dd/522e7edcf2764429f64f13b84f4c7b7cdce2638e9e628bea1531bbb8f41b/kgcl_rdflib-0.4.0rc1.tar.gz
+[2023-05-09 00:59:33] INFO root fetch - processPackages [lattice-graph-manipulation]: executing diffoscope
+[2023-05-09 00:59:33] INFO root fetch - processPackages [lattice-graph-manipulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Lattice-Graph-Manipulation-0.1.1.tar.gz tmp/Lattice-Graph-Manipulation-1.0.0.tar.gz --markdown 20230509/l/lattice-graph-manipulation/0.1.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-09 00:59:33] INFO root fetch - processPackages [kgcl-rdflib]: executing diffoscope
+[2023-05-09 00:59:33] INFO root fetch - processPackages [kgcl-rdflib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgcl-rdflib-0.3.0.tar.gz tmp/kgcl_rdflib-0.4.0rc1.tar.gz --markdown 20230509/k/kgcl-rdflib/0.3.0-0.4.0rc1/diff.md --exclude *.pyd
+[2023-05-09 00:59:33] INFO root fetch - processPackages [tflite-runtime]: Downloading https://files.pythonhosted.org/packages/f5/80/9edc8cbbc36318106e6cf43fbc5f1a655230d2f7f1ce1eb9eeadf2a7131d/tflite_runtime-2.9.1-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-09 00:59:34] INFO root fetch - processPackages [tflite-runtime]: executing diffoscope
+[2023-05-09 00:59:34] INFO root fetch - processPackages [tflite-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime-2.8.0-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime-2.9.1-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230509/t/tflite-runtime/2.8.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-09 00:59:35] INFO root fetch - processPackages [spotON_sdk]: Start processing: frameworks-experimental-protogen
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-09 00:59:35] WARNING root fetch - processPackages [frameworks-experimental-protogen]: Skipping, unable to determine old version
+[2023-05-09 00:59:35] INFO root fetch - processPackages [frameworks-experimental-protogen]: Start processing: slurm-parallel
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [frameworks-experimental-protogen] error
+[2023-05-09 00:59:35] INFO root fetch - processPackages [slurm-parallel]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 00:59:35] INFO root fetch - processPackages [terminut]: Start processing: technews-monitoring
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [terminut]: success
+[2023-05-09 00:59:35] INFO root fetch - processPackages [firepup650]: Start processing: cliconfig
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [firepup650]: success
+[2023-05-09 00:59:35] WARNING root fetch - processPackages [technews-monitoring]: Skipping, unable to determine old version
+[2023-05-09 00:59:35] INFO root fetch - processPackages [technews-monitoring]: Start processing: semantic-kernel
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [technews-monitoring] error
+[2023-05-09 00:59:35] INFO root fetch - processPackages [cliconfig]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-09 00:59:35] INFO root fetch - processPackages [datoso]: Start processing: anyscale
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [datoso]: success
+[2023-05-09 00:59:35] INFO root fetch - processPackages [semantic-kernel]: New version: [0.2.7.dev0] Old Version: [0.2.6.dev0]
+[2023-05-09 00:59:35] INFO root fetch - processPackages [lftools]: Start processing: stackdiac
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [lftools]: success
+[2023-05-09 00:59:35] INFO root fetch - processPackages [stackdiac]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-05-09 00:59:35] INFO root fetch - processPackages [anyscale]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
+[2023-05-09 00:59:35] INFO root fetch - processPackages [stackdiac]: executing diffoscope
+[2023-05-09 00:59:35] INFO root fetch - processPackages [stackdiac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackdiac-0.0.1.dev8.tar.gz tmp/stackdiac-0.0.1.dev9.tar.gz --markdown 20230509/s/stackdiac/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-09 00:59:35] INFO root fetch - processPackages [slurm-parallel]: Downloading https://files.pythonhosted.org/packages/c1/5b/ba33f36b15ca5bb3ac96b3ecabda41dbdfb54a48f288afe63f60f4374b3f/slurm-parallel-0.1.2.tar.gz
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [kgcl-rdflib]: success
+[2023-05-09 00:59:35] INFO root fetch - processPackages [semantic-kernel]: Downloading https://files.pythonhosted.org/packages/11/6f/261b3205a71bfce0b34a5d72b7f89424c2673fdd5511abb4d30959e2282c/semantic_kernel-0.2.6.dev0.tar.gz
+[2023-05-09 00:59:35] ERROR root fetch - processPackages [stackdiac]: Diffoscope failed: Error: error creating container storage: the container name "sweet_newton" is already in use by "287a29c2748c2d230415b976f6d1648853123c7c06443d4a0a4bca12356f2cae". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [stackdiac] error
+[2023-05-09 00:59:35] INFO root fetch - processPackages [anyscale]: Downloading https://files.pythonhosted.org/packages/0d/64/8bf86d6d00617c61b31e91a8455e6fb08278056ee4d72abf6317509d592e/anyscale-0.5.98.tar.gz
+[2023-05-09 00:59:35] INFO root fetch - processPackages [slurm-parallel]: executing diffoscope
+[2023-05-09 00:59:35] INFO root fetch - processPackages [slurm-parallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slurm-parallel-0.1.1.tar.gz tmp/slurm-parallel-0.1.2.tar.gz --markdown 20230509/s/slurm-parallel/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 00:59:35] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/33/81/e17397b2b134d3fec47d480e19e1f27cfdce14e624c09360bc3ccad8802c/cliconfig-0.3.0.tar.gz
+[2023-05-09 00:59:35] INFO root fetch - main [MainThread]: End processing [lattice-graph-manipulation]: success
+[2023-05-09 00:59:35] INFO root fetch - processPackages [semantic-kernel]: Downloading https://files.pythonhosted.org/packages/c8/65/a520938f7d15f6699477c2ba517adffe3df97b6e21e4db030c3257c657e3/semantic_kernel-0.2.7.dev0.tar.gz
+[2023-05-09 00:59:35] INFO root fetch - processPackages [cliconfig]: executing diffoscope
+[2023-05-09 00:59:35] INFO root fetch - processPackages [cliconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliconfig-0.2.2.tar.gz tmp/cliconfig-0.3.0.tar.gz --markdown 20230509/c/cliconfig/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 00:59:35] INFO root fetch - processPackages [anyscale]: Downloading https://files.pythonhosted.org/packages/61/f0/917cf3e18c478eaae2e53db68c9d20607edab461774054c8f509cc4885b6/anyscale-0.5.99.tar.gz
+[2023-05-09 00:59:35] INFO root fetch - processPackages [semantic-kernel]: executing diffoscope
+[2023-05-09 00:59:35] INFO root fetch - processPackages [semantic-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_kernel-0.2.6.dev0.tar.gz tmp/semantic_kernel-0.2.7.dev0.tar.gz --markdown 20230509/s/semantic-kernel/0.2.6.dev0-0.2.7.dev0/diff.md --exclude *.pyd
+[2023-05-09 00:59:35] INFO root fetch - processPackages [anyscale]: executing diffoscope
+[2023-05-09 00:59:35] INFO root fetch - processPackages [anyscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyscale-0.5.98.tar.gz tmp/anyscale-0.5.99.tar.gz --markdown 20230509/a/anyscale/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-09 00:59:36] INFO root fetch - main [MainThread]: End processing [slurm-parallel]: success
+[2023-05-09 00:59:36] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
+[2023-05-09 00:59:37] INFO root fetch - main [MainThread]: End processing [semantic-kernel]: success
+[2023-05-09 00:59:46] INFO root fetch - main [MainThread]: End processing [anyscale]: success
+[2023-05-09 01:00:09] INFO root fetch - main [MainThread]: End processing [tflite-runtime]: success
+[2023-05-09 01:02:33] ERROR root fetch - processPackages [cagraph]: Timeout during execution of pkgdiff
+[2023-05-09 01:02:33] INFO root fetch - main [MainThread]: End processing [cagraph] error
+[2023-05-09 01:02:33] INFO root fetch - main [MainThread]: Store serial: [18023415]
