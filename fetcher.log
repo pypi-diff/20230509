@@ -1232,3 +1232,68 @@
 [2023-05-09 01:38:48] ERROR root fetch - processPackages [cagraph]: Timeout during execution of pkgdiff
 [2023-05-09 01:38:48] INFO root fetch - main [MainThread]: End processing [cagraph] error
 [2023-05-09 01:38:48] INFO root fetch - main [MainThread]: Store serial: [18023730]
+[2023-05-09 01:43:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023730]
+[2023-05-09 01:43:57] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spswarehouse
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CNNtech-News
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: motifopt
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polymers
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pinecone-cli
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: es7s
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: videogestalt
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: camelcart
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: simplechain
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: google-generativeai
+[2023-05-09 01:43:57] INFO root fetch - processPackages [spswarehouse]: New version: [0.1.0] Old Version: [0.0.9.0]
+[2023-05-09 01:43:57] INFO root fetch - processPackages [videogestalt]: New version: [0.2.9] Old Version: [0.2.6]
+[2023-05-09 01:43:57] WARNING root fetch - processPackages [motifopt]: Skipping, unable to determine old version
+[2023-05-09 01:43:57] INFO root fetch - processPackages [motifopt]: Start processing: ReplayTables-andnp
+[2023-05-09 01:43:57] INFO root fetch - main [MainThread]: End processing [motifopt] error
+[2023-05-09 01:43:57] WARNING root fetch - processPackages [camelcart]: Skipping, unable to determine old version
+[2023-05-09 01:43:57] WARNING root fetch - processPackages [CNNtech-News]: Skipping, unable to determine old version
+[2023-05-09 01:43:57] INFO root fetch - main [MainThread]: End processing [camelcart] error
+[2023-05-09 01:43:57] INFO root fetch - main [MainThread]: End processing [CNNtech-News] error
+[2023-05-09 01:43:57] INFO root fetch - processPackages [es7s]: New version: [3.6.0.dev0] Old Version: [3.5.0.dev0]
+[2023-05-09 01:43:57] INFO root fetch - processPackages [polymers]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-09 01:43:57] INFO root fetch - processPackages [google-generativeai]: New version: [0.1.0rc2] Old Version: [0.1.0rc1]
+[2023-05-09 01:43:57] INFO root fetch - processPackages [simplechain]: New version: [0.0.5.5] Old Version: [0.0.5.4]
+[2023-05-09 01:43:57] INFO root fetch - processPackages [pinecone-cli]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ReplayTables-andnp]: New version: [3.0.0] Old Version: [2.6.0]
+[2023-05-09 01:43:57] INFO root fetch - processPackages [polymers]: Downloading https://files.pythonhosted.org/packages/ea/64/e247221785f599e545dd7c44f7ad4e9301caf4fbb47bd2ad4701fde3ed10/polymers-0.3.4-cp39-none-win_amd64.whl
+[2023-05-09 01:43:57] INFO root fetch - processPackages [es7s]: Downloading https://files.pythonhosted.org/packages/d4/9b/638089077ce7b31286a1c6ea6d58552b2cb0e3f363a26c290e6de2ea308b/es7s-3.5.0.dev0.tar.gz
+[2023-05-09 01:43:57] INFO root fetch - processPackages [spswarehouse]: Downloading https://files.pythonhosted.org/packages/c6/6f/d72c26537760343be3867e65da3e1fa5ca80e178149bd6c20d20a1a91856/spswarehouse-0.0.9.0.tar.gz
+[2023-05-09 01:43:57] INFO root fetch - processPackages [videogestalt]: Downloading https://files.pythonhosted.org/packages/06/ed/97ea0473f44944b5f4a4fac140a5a6cdefe29be7ce0dd33f55eb440e76ab/videogestalt-0.2.6.tar.gz
+[2023-05-09 01:43:57] INFO root fetch - processPackages [simplechain]: Downloading https://files.pythonhosted.org/packages/0f/a5/d53f682f9c25b5ff4a77e92b3255fb627a4c25c0f0b379c52c80d47907fb/simplechain-0.0.5.5.tar.gz
+[2023-05-09 01:43:57] INFO root fetch - processPackages [google-generativeai]: Downloading https://files.pythonhosted.org/packages/41/18/24219ea81063836f25084d081da73184f82605275ec4023c033f1a04083e/google_generativeai-0.1.0rc1-py3-none-any.whl
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ReplayTables-andnp]: Downloading https://files.pythonhosted.org/packages/49/5e/e00213ba51c58176a3f81072a34c87e2beb9057e840a132e8ac74edeb8ef/ReplayTables-andnp-3.0.0.tar.gz
+[2023-05-09 01:43:57] INFO root fetch - processPackages [simplechain]: executing diffoscope
+[2023-05-09 01:43:57] INFO root fetch - processPackages [simplechain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplechain-0.0.5.4.tar.gz tmp/simplechain-0.0.5.5.tar.gz --markdown 20230509/s/simplechain/0.0.5.4-0.0.5.5/diff.md --exclude *.pyd
+[2023-05-09 01:43:57] INFO root fetch - processPackages [spswarehouse]: Downloading https://files.pythonhosted.org/packages/ab/83/e1f6bead08941c274c19cda69ccbde2f90ebb9b6b7beed92662ce6a72c17/spswarehouse-0.1.0.tar.gz
+[2023-05-09 01:43:57] INFO root fetch - processPackages [videogestalt]: Downloading https://files.pythonhosted.org/packages/f9/98/274d972ab79ba0d789bdc3fb9d22a68bf8fd2906664b6ac2ab3647a21971/videogestalt-0.2.9.tar.gz
+[2023-05-09 01:43:57] INFO root fetch - processPackages [polymers]: Downloading https://files.pythonhosted.org/packages/bf/88/c93f8efe92907b3f5673c42e78a66bc28b223f52b0c2b6b9ba1cbe8a5f03/polymers-0.3.5-cp39-none-win_amd64.whl
+[2023-05-09 01:43:57] INFO root fetch - processPackages [google-generativeai]: Downloading https://files.pythonhosted.org/packages/d8/2b/5d580a5cf315371d83f4b1c22a0bd3ab851c6ef13e3a27e0018f7811830e/google_generativeai-0.1.0rc2-py3-none-any.whl
+[2023-05-09 01:43:57] INFO root fetch - processPackages [es7s]: Downloading https://files.pythonhosted.org/packages/19/8b/f0ecc6844615f1d6585d48b9c2cc1f4e21bd25b8cf7a8d0aa0f8912bc159/es7s-3.6.0.dev0.tar.gz
+[2023-05-09 01:43:57] INFO root fetch - processPackages [videogestalt]: executing diffoscope
+[2023-05-09 01:43:57] INFO root fetch - processPackages [videogestalt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/videogestalt-0.2.6.tar.gz tmp/videogestalt-0.2.9.tar.gz --markdown 20230509/v/videogestalt/0.2.6-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 01:43:57] INFO root fetch - processPackages [spswarehouse]: executing diffoscope
+[2023-05-09 01:43:57] INFO root fetch - processPackages [spswarehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spswarehouse-0.0.9.0.tar.gz tmp/spswarehouse-0.1.0.tar.gz --markdown 20230509/s/spswarehouse/0.0.9.0-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ReplayTables-andnp]: executing diffoscope
+[2023-05-09 01:43:57] INFO root fetch - processPackages [ReplayTables-andnp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReplayTables-andnp-2.6.0.tar.gz tmp/ReplayTables-andnp-3.0.0.tar.gz --markdown 20230509/R/ReplayTables-andnp/2.6.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-09 01:43:57] INFO root fetch - processPackages [pinecone-cli]: Downloading https://files.pythonhosted.org/packages/95/3c/a24b2d6b45a5dd9ce90b1a6d3139b1c0a5b305760b84ec91b69f25585c83/pinecone_cli-0.5.4-py3-none-any.whl
+[2023-05-09 01:43:57] INFO root fetch - processPackages [es7s]: executing diffoscope
+[2023-05-09 01:43:57] INFO root fetch - processPackages [es7s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/es7s-3.5.0.dev0.tar.gz tmp/es7s-3.6.0.dev0.tar.gz --markdown 20230509/e/es7s/3.5.0.dev0-3.6.0.dev0/diff.md --exclude *.pyd
+[2023-05-09 01:43:57] INFO root fetch - processPackages [polymers]: executing diffoscope
+[2023-05-09 01:43:57] INFO root fetch - processPackages [polymers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polymers-0.3.4-cp39-none-win_amd64.whl.zip tmp/polymers-0.3.5-cp39-none-win_amd64.whl.zip --markdown 20230509/p/polymers/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-09 01:43:58] INFO root fetch - processPackages [pinecone-cli]: executing diffoscope
+[2023-05-09 01:43:58] INFO root fetch - processPackages [pinecone-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinecone_cli-0.5.3-py3-none-any.whl.zip tmp/pinecone_cli-0.5.4-py3-none-any.whl.zip --markdown 20230509/p/pinecone-cli/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-09 01:43:58] INFO root fetch - processPackages [google-generativeai]: executing diffoscope
+[2023-05-09 01:43:58] INFO root fetch - processPackages [google-generativeai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google_generativeai-0.1.0rc1-py3-none-any.whl.zip tmp/google_generativeai-0.1.0rc2-py3-none-any.whl.zip --markdown 20230509/g/google-generativeai/0.1.0rc1-0.1.0rc2/diff.md --exclude *.pyd
+[2023-05-09 01:43:59] INFO root fetch - main [MainThread]: End processing [simplechain]: success
+[2023-05-09 01:43:59] INFO root fetch - main [MainThread]: End processing [videogestalt]: success
+[2023-05-09 01:43:59] INFO root fetch - main [MainThread]: End processing [polymers]: success
+[2023-05-09 01:43:59] INFO root fetch - main [MainThread]: End processing [spswarehouse]: success
+[2023-05-09 01:43:59] INFO root fetch - main [MainThread]: End processing [pinecone-cli]: success
+[2023-05-09 01:43:59] INFO root fetch - main [MainThread]: End processing [google-generativeai]: success
+[2023-05-09 01:44:01] INFO root fetch - main [MainThread]: End processing [es7s]: success
+[2023-05-09 01:44:02] INFO root fetch - main [MainThread]: End processing [ReplayTables-andnp]: success
+[2023-05-09 01:44:02] INFO root fetch - main [MainThread]: Store serial: [18023780]
