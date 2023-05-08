@@ -299,3 +299,73 @@
 [2023-05-09 00:24:07] INFO root fetch - main [MainThread]: End processing [torch-adata]: success
 [2023-05-09 00:24:12] INFO root fetch - main [MainThread]: End processing [tecton]: success
 [2023-05-09 00:24:12] INFO root fetch - main [MainThread]: Store serial: [18023145]
+[2023-05-09 00:29:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023145]
+[2023-05-09 00:29:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: complex-curve-fit-gui
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slashml
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rayserverdl
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nustarpipeline
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: strictdoc
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ni-measurementlink-service
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ni-measurementlink-generator
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyxmmsas
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: openlm
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: phdi
+[2023-05-09 00:29:21] WARNING root fetch - processPackages [rayserverdl]: Skipping, unable to determine old version
+[2023-05-09 00:29:21] INFO root fetch - processPackages [rayserverdl]: Start processing: FicImage
+[2023-05-09 00:29:21] INFO root fetch - processPackages [slashml]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 00:29:21] INFO root fetch - main [MainThread]: End processing [rayserverdl] error
+[2023-05-09 00:29:21] INFO root fetch - processPackages [openlm]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ni-measurementlink-generator]: New version: [1.1.0.dev0] Old Version: [1.0.1]
+[2023-05-09 00:29:21] INFO root fetch - processPackages [phdi]: New version: [1.0.0] Old Version: [0.1.0.dev5]
+[2023-05-09 00:29:21] INFO root fetch - processPackages [complex-curve-fit-gui]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-09 00:29:21] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 00:29:21] INFO root fetch - processPackages [pyxmmsas]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ni-measurementlink-service]: New version: [1.1.0.dev0] Old Version: [1.0.1]
+[2023-05-09 00:29:21] INFO root fetch - processPackages [nustarpipeline]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 00:29:21] INFO root fetch - processPackages [FicImage]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 00:29:21] INFO root fetch - processPackages [pyxmmsas]: executing diffoscope
+[2023-05-09 00:29:21] INFO root fetch - processPackages [pyxmmsas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxmmsas-1.4.8.tar.gz tmp/pyxmmsas-1.4.9.tar.gz --markdown 20230509/p/pyxmmsas/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-09 00:29:21] INFO root fetch - processPackages [nustarpipeline]: executing diffoscope
+[2023-05-09 00:29:21] INFO root fetch - processPackages [nustarpipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nustarpipeline-0.2.8.tar.gz tmp/nustarpipeline-0.2.9.tar.gz --markdown 20230509/n/nustarpipeline/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 00:29:21] INFO root fetch - processPackages [slashml]: Downloading https://files.pythonhosted.org/packages/2b/df/6a21fc2654516ad66e0a285a46b629940973c4773b95da61681b9e103e81/slashml-0.0.3-py3-none-any.whl
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ni-measurementlink-service]: Downloading https://files.pythonhosted.org/packages/25/6b/7f512cb32036b650fc3576b7f5086e72cb077a63b109179b152a1e775517/ni_measurementlink_service-1.0.1.tar.gz
+[2023-05-09 00:29:21] INFO root fetch - processPackages [phdi]: Downloading https://files.pythonhosted.org/packages/56/cd/e0ef28cf620655e5420e83e1016b64988cb14eab7eccee5f3e8117c0d1a2/phdi-0.1.0.dev5.tar.gz
+[2023-05-09 00:29:21] INFO root fetch - processPackages [ni-measurementlink-generator]: Downloading https://files.pythonhosted.org/packages/2e/a9/d68726e6a23b6b5b5ac348a2b93ad73531f750d4ec3f1d6bb28669c31f9f/ni_measurementlink_generator-1.0.1.tar.gz
+[2023-05-09 00:29:21] INFO root fetch - processPackages [openlm]: Downloading https://files.pythonhosted.org/packages/9e/a9/ff92a5680e703e0c3938dea810e07ecb3f67833e04a923a2619daffdf9d2/openlm-0.0.1.tar.gz
+[2023-05-09 00:29:21] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/0e/0c/3782c5673a36cda9e2189ef1e7d9661ba2f1e5c9822b736cf2ce0d2545a7/strictdoc-0.0.8.tar.gz
+[2023-05-09 00:29:21] INFO root fetch - processPackages [complex-curve-fit-gui]: Downloading https://files.pythonhosted.org/packages/0f/a0/1f64c1f3f875520c3967be06007926d895e18ccea5188ec7c216b4d69aed/complex_curve_fit_gui-1.1.9.tar.gz
+[2023-05-09 00:29:21] INFO root fetch - processPackages [FicImage]: Downloading https://files.pythonhosted.org/packages/32/32/0df6a25e509c9284bde80b6e79d8532cb661922cb55dce5c6f6171d86dbf/FicImage-1.0.2.tar.gz
+[2023-05-09 00:29:22] INFO root fetch - processPackages [complex-curve-fit-gui]: executing diffoscope
+[2023-05-09 00:29:22] INFO root fetch - processPackages [complex-curve-fit-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/complex_curve_fit_gui-1.1.8.tar.gz tmp/complex_curve_fit_gui-1.1.9.tar.gz --markdown 20230509/c/complex-curve-fit-gui/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-09 00:29:22] INFO root fetch - processPackages [FicImage]: executing diffoscope
+[2023-05-09 00:29:22] INFO root fetch - processPackages [FicImage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FicImage-1.0.1.tar.gz tmp/FicImage-1.0.2.tar.gz --markdown 20230509/F/FicImage/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 00:29:22] INFO root fetch - processPackages [slashml]: Downloading https://files.pythonhosted.org/packages/da/e1/635ffb6837bdabf8a138e27d64d00f02932a94a66c8b2f53896b005e74ed/slashml-0.0.4.tar.gz
+[2023-05-09 00:29:22] INFO root fetch - processPackages [ni-measurementlink-service]: Downloading https://files.pythonhosted.org/packages/6d/5d/190f69e419c736c9e0e83249d8d783b70450a21e2f44c8c956a3f348b779/ni_measurementlink_service-1.1.0.dev0.tar.gz
+[2023-05-09 00:29:22] INFO root fetch - processPackages [openlm]: Downloading https://files.pythonhosted.org/packages/2d/68/8be9c96b15e3925770dc85e7d9163c946832aa645ab19f636858045a7698/openlm-0.0.2.tar.gz
+[2023-05-09 00:29:22] INFO root fetch - processPackages [phdi]: Downloading https://files.pythonhosted.org/packages/c4/1e/0a1925918122d1613a5a6732e40fe90584fc0b4190fd204d915e88c2ea6d/phdi-1.0.0.tar.gz
+[2023-05-09 00:29:22] INFO root fetch - processPackages [slashml]: executing diffoscope
+[2023-05-09 00:29:22] INFO root fetch - processPackages [slashml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slashml-0.0.3-py3-none-any.whl.zip tmp/slashml-0.0.4.tar.gz --markdown 20230509/s/slashml/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 00:29:22] INFO root fetch - processPackages [ni-measurementlink-generator]: Downloading https://files.pythonhosted.org/packages/69/45/b86953d47846326e52f7e526f504a8e7bc29e7c7e837656dd4cf00e379f7/ni_measurementlink_generator-1.1.0.dev0.tar.gz
+[2023-05-09 00:29:22] INFO root fetch - processPackages [ni-measurementlink-generator]: executing diffoscope
+[2023-05-09 00:29:22] INFO root fetch - processPackages [ni-measurementlink-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ni_measurementlink_generator-1.0.1.tar.gz tmp/ni_measurementlink_generator-1.1.0.dev0.tar.gz --markdown 20230509/n/ni-measurementlink-generator/1.0.1-1.1.0.dev0/diff.md --exclude *.pyd
+[2023-05-09 00:29:22] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/b6/06/2219b569301c00406d344dca69ac5e31a169bb9529b66ec957609495d940/strictdoc-0.0.9.tar.gz
+[2023-05-09 00:29:22] INFO root fetch - processPackages [openlm]: executing diffoscope
+[2023-05-09 00:29:22] INFO root fetch - processPackages [openlm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlm-0.0.1.tar.gz tmp/openlm-0.0.2.tar.gz --markdown 20230509/o/openlm/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 00:29:22] INFO root fetch - processPackages [ni-measurementlink-service]: executing diffoscope
+[2023-05-09 00:29:22] INFO root fetch - processPackages [ni-measurementlink-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ni_measurementlink_service-1.0.1.tar.gz tmp/ni_measurementlink_service-1.1.0.dev0.tar.gz --markdown 20230509/n/ni-measurementlink-service/1.0.1-1.1.0.dev0/diff.md --exclude *.pyd
+[2023-05-09 00:29:22] INFO root fetch - processPackages [phdi]: executing diffoscope
+[2023-05-09 00:29:22] INFO root fetch - processPackages [phdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phdi-0.1.0.dev5.tar.gz tmp/phdi-1.0.0.tar.gz --markdown 20230509/p/phdi/0.1.0.dev5-1.0.0/diff.md --exclude *.pyd
+[2023-05-09 00:29:22] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2023-05-09 00:29:22] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20230509/s/strictdoc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:29:23] INFO root fetch - main [MainThread]: End processing [nustarpipeline]: success
+[2023-05-09 00:29:23] INFO root fetch - main [MainThread]: End processing [pyxmmsas]: success
+[2023-05-09 00:29:23] INFO root fetch - main [MainThread]: End processing [slashml]: success
+[2023-05-09 00:29:23] INFO root fetch - main [MainThread]: End processing [complex-curve-fit-gui]: success
+[2023-05-09 00:29:23] INFO root fetch - main [MainThread]: End processing [FicImage]: success
+[2023-05-09 00:29:23] INFO root fetch - main [MainThread]: End processing [ni-measurementlink-generator]: success
+[2023-05-09 00:29:23] INFO root fetch - main [MainThread]: End processing [openlm]: success
+[2023-05-09 00:29:24] INFO root fetch - main [MainThread]: End processing [ni-measurementlink-service]: success
+[2023-05-09 00:29:25] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2023-05-09 00:29:26] INFO root fetch - main [MainThread]: End processing [phdi]: success
+[2023-05-09 00:29:26] INFO root fetch - main [MainThread]: Store serial: [18023177]
