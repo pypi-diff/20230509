@@ -797,3 +797,89 @@
 [2023-05-09 01:02:33] ERROR root fetch - processPackages [cagraph]: Timeout during execution of pkgdiff
 [2023-05-09 01:02:33] INFO root fetch - main [MainThread]: End processing [cagraph] error
 [2023-05-09 01:02:33] INFO root fetch - main [MainThread]: Store serial: [18023415]
+[2023-05-09 01:07:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023415]
+[2023-05-09 01:07:46] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django4-inline-actions
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dkist-processing-common
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ddtrace
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: topologicpy
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tmnt-cu101
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simplechain
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hamlet
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tmnt
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flwr-nightly
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ib110hw-testing
+[2023-05-09 01:07:46] INFO root fetch - processPackages [dkist-processing-common]: New version: [2.6.1rc1] Old Version: [2.6.0]
+[2023-05-09 01:07:46] INFO root fetch - processPackages [topologicpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-09 01:07:46] INFO root fetch - processPackages [simplechain]: New version: [0.0.5.4] Old Version: [0.0.5.3]
+[2023-05-09 01:07:46] INFO root fetch - processPackages [django4-inline-actions]: New version: [1.5] Old Version: [1.4]
+[2023-05-09 01:07:46] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230508] Old Version: [0.7.0b20230507]
+[2023-05-09 01:07:46] WARNING root fetch - processPackages [ib110hw-testing]: Skipping, unable to determine old version
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ib110hw-testing]: Start processing: oexp
+[2023-05-09 01:07:46] INFO root fetch - main [MainThread]: End processing [ib110hw-testing] error
+[2023-05-09 01:07:46] INFO root fetch - processPackages [hamlet]: New version: [9.9.1.dev1] Old Version: [9.9.1]
+[2023-05-09 01:07:46] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230508] Old Version: [0.7.0b20230507]
+[2023-05-09 01:07:46] INFO root fetch - processPackages [flwr-nightly]: New version: [1.5.0.dev20230507] Old Version: [1.5.0.dev20230504]
+[2023-05-09 01:07:46] INFO root fetch - processPackages [oexp]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-09 01:07:46] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-05-09 01:07:46] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.5.0.dev20230504.tar.gz tmp/flwr_nightly-1.5.0.dev20230507.tar.gz --markdown 20230509/f/flwr-nightly/1.5.0.dev20230504-1.5.0.dev20230507/diff.md --exclude *.pyd
+[2023-05-09 01:07:46] INFO root fetch - processPackages [django4-inline-actions]: Downloading https://files.pythonhosted.org/packages/8a/71/79e0ba3d853e9b215bc274981faccfa789a8651fe0d26d1189bb36ede658/django4-inline-actions-1.4.tar.gz
+[2023-05-09 01:07:46] INFO root fetch - processPackages [dkist-processing-common]: Downloading https://files.pythonhosted.org/packages/8b/d0/feac227eb809e89799ce26f00751a649828edc40f2778c3be6fae02c184f/dkist-processing-common-2.6.0.tar.gz
+[2023-05-09 01:07:46] INFO root fetch - processPackages [simplechain]: Downloading https://files.pythonhosted.org/packages/68/c6/0809cbab412d74c8c15280c3d18769eaa9a4bfdaf3771f20c88b9c2ef74c/simplechain-0.0.5.3.tar.gz
+[2023-05-09 01:07:46] INFO root fetch - processPackages [ddtrace]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-09 01:07:46] INFO root fetch - processPackages [oexp]: Downloading https://files.pythonhosted.org/packages/0c/f6/f1bb2aadec33d52e7b449c29ba1d5e9f38ef345a7831765cb2f89366d73a/oexp-0.2.2.tar.gz
+[2023-05-09 01:07:46] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/12/0b/267f340949abbb7d48140618d9cd8c57a15fc284cd9289dc398a10fab19a/tmnt-0.7.0b20230508.tar.gz
+[2023-05-09 01:07:47] INFO root fetch - processPackages [hamlet]: Downloading https://files.pythonhosted.org/packages/7c/6c/cef27d43674fd20230e734f03ebf6e2f3845e070d2dbb45ae257e4cf317c/hamlet-9.9.1.tar.gz
+[2023-05-09 01:07:47] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-05-09 01:07:47] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230507.tar.gz tmp/tmnt-0.7.0b20230508.tar.gz --markdown 20230509/t/tmnt/0.7.0b20230507-0.7.0b20230508/diff.md --exclude *.pyd
+[2023-05-09 01:07:47] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/39/75/83fafebbaca1d72ae34c68f1f3c3205a346e8138e5aa11778dc0344df171/tmnt-cu101-0.7.0b20230508.tar.gz
+[2023-05-09 01:07:47] INFO root fetch - processPackages [django4-inline-actions]: Downloading https://files.pythonhosted.org/packages/08/4b/aa4805000f53b490903fc170299f190e6479a6dcd16de7d9d8270d554733/django4-inline-actions-1.5.tar.gz
+[2023-05-09 01:07:47] INFO root fetch - processPackages [simplechain]: Downloading https://files.pythonhosted.org/packages/6d/79/8f8ebcd32041970d7f6fd3eda9b03f27ea9e2fd3a9f9e7ef0d8d58de9505/simplechain-0.0.5.4.tar.gz
+[2023-05-09 01:07:47] INFO root fetch - processPackages [dkist-processing-common]: Downloading https://files.pythonhosted.org/packages/47/68/bd7d2714bb6c75cf9b2ce905349664de832dcf55c4cc666833b60e759bb1/dkist-processing-common-2.6.1rc1.tar.gz
+[2023-05-09 01:07:47] INFO root fetch - processPackages [oexp]: Downloading https://files.pythonhosted.org/packages/b5/02/7582539c8f5e10c7828833b23ecb37487c67236c4c4ed48ad001c19e9042/oexp-0.3.0.tar.gz
+[2023-05-09 01:07:47] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-05-09 01:07:47] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230507.tar.gz tmp/tmnt-cu101-0.7.0b20230508.tar.gz --markdown 20230509/t/tmnt-cu101/0.7.0b20230507-0.7.0b20230508/diff.md --exclude *.pyd
+[2023-05-09 01:07:47] INFO root fetch - processPackages [django4-inline-actions]: executing diffoscope
+[2023-05-09 01:07:47] INFO root fetch - processPackages [django4-inline-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django4-inline-actions-1.4.tar.gz tmp/django4-inline-actions-1.5.tar.gz --markdown 20230509/d/django4-inline-actions/1.4-1.5/diff.md --exclude *.pyd
+[2023-05-09 01:07:47] INFO root fetch - processPackages [simplechain]: executing diffoscope
+[2023-05-09 01:07:47] INFO root fetch - processPackages [simplechain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplechain-0.0.5.3.tar.gz tmp/simplechain-0.0.5.4.tar.gz --markdown 20230509/s/simplechain/0.0.5.3-0.0.5.4/diff.md --exclude *.pyd
+[2023-05-09 01:07:47] INFO root fetch - processPackages [oexp]: executing diffoscope
+[2023-05-09 01:07:47] INFO root fetch - processPackages [oexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oexp-0.2.2.tar.gz tmp/oexp-0.3.0.tar.gz --markdown 20230509/o/oexp/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 01:07:47] INFO root fetch - processPackages [dkist-processing-common]: executing diffoscope
+[2023-05-09 01:07:47] INFO root fetch - processPackages [dkist-processing-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-processing-common-2.6.0.tar.gz tmp/dkist-processing-common-2.6.1rc1.tar.gz --markdown 20230509/d/dkist-processing-common/2.6.0-2.6.1rc1/diff.md --exclude *.pyd
+[2023-05-09 01:07:47] INFO root fetch - processPackages [ddtrace]: executing diffoscope
+[2023-05-09 01:07:47] INFO root fetch - processPackages [ddtrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddtrace-1.9.5.tar.gz tmp/ddtrace-1.9.6.tar.gz --markdown 20230509/d/ddtrace/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-09 01:07:47] INFO root fetch - processPackages [hamlet]: Downloading https://files.pythonhosted.org/packages/1d/a3/0ac051b5e2c00c530860e6baaf68572be2d73888379a733c97be6f75b748/hamlet-9.9.1.dev1.tar.gz
+[2023-05-09 01:07:47] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/c5/85/1c4479b468dd8447a392da1fb4879881f139f70892e1015a6f377c4cea2b/topologicpy-0.4.9.tar.gz
+[2023-05-09 01:07:47] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34020520>=10485760
+[2023-05-09 01:07:47] INFO root fetch - processPackages [topologicpy]: Start processing: terminut
+[2023-05-09 01:07:47] INFO root fetch - main [MainThread]: End processing [topologicpy] error
+[2023-05-09 01:07:47] INFO root fetch - processPackages [terminut]: New version: [0.0.0.600] Old Version: [0.0.0.6]
+[2023-05-09 01:07:47] INFO root fetch - processPackages [hamlet]: executing diffoscope
+[2023-05-09 01:07:47] INFO root fetch - processPackages [hamlet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hamlet-9.9.1.tar.gz tmp/hamlet-9.9.1.dev1.tar.gz --markdown 20230509/h/hamlet/9.9.1-9.9.1.dev1/diff.md --exclude *.pyd
+[2023-05-09 01:07:47] INFO root fetch - processPackages [terminut]: Downloading https://files.pythonhosted.org/packages/b1/10/4b78e1e067ab764a3fa08e8785da97efe1ee81e0c436c1c4526f7279cba7/terminut-0.0.0.600.tar.gz
+[2023-05-09 01:07:47] INFO root fetch - processPackages [terminut]: executing diffoscope
+[2023-05-09 01:07:47] INFO root fetch - processPackages [terminut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminut-0.0.0.6.tar.gz tmp/terminut-0.0.0.600.tar.gz --markdown 20230509/t/terminut/0.0.0.6-0.0.0.600/diff.md --exclude *.pyd
+[2023-05-09 01:07:48] INFO root fetch - processPackages [django4-inline-actions]: Start processing: MeTA-bagari
+[2023-05-09 01:07:48] INFO root fetch - main [MainThread]: End processing [django4-inline-actions]: success
+[2023-05-09 01:07:48] INFO root fetch - processPackages [tmnt-cu101]: Start processing: spotON_sdk
+[2023-05-09 01:07:48] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-05-09 01:07:48] INFO root fetch - processPackages [MeTA-bagari]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 01:07:48] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.2.5] Old Version: [0.0.2.4]
+[2023-05-09 01:07:48] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-09 01:07:48] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.2.4.tar.gz tmp/spotON_sdk-0.0.2.5.tar.gz --markdown 20230509/s/spotON_sdk/0.0.2.4-0.0.2.5/diff.md --exclude *.pyd
+[2023-05-09 01:07:48] INFO root fetch - processPackages [MeTA-bagari]: Downloading https://files.pythonhosted.org/packages/69/b4/7b1aac7c5244ad47c5ac5467c2ba052e2518507c64d837ecdec2d42304dd/MeTA_bagari-0.0.1.tar.gz
+[2023-05-09 01:07:49] INFO root fetch - main [MainThread]: End processing [oexp]: success
+[2023-05-09 01:07:49] INFO root fetch - main [MainThread]: End processing [terminut]: success
+[2023-05-09 01:07:49] INFO root fetch - processPackages [MeTA-bagari]: Downloading https://files.pythonhosted.org/packages/46/2b/a459268c38b0adab6838b28d054c805f5bcc967f1d2cebf3dde1fe7e03e1/MeTA_bagari-0.0.2.tar.gz
+[2023-05-09 01:07:49] INFO root fetch - main [MainThread]: End processing [simplechain]: success
+[2023-05-09 01:07:49] INFO root fetch - processPackages [MeTA-bagari]: executing diffoscope
+[2023-05-09 01:07:49] INFO root fetch - processPackages [MeTA-bagari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeTA_bagari-0.0.1.tar.gz tmp/MeTA_bagari-0.0.2.tar.gz --markdown 20230509/M/MeTA-bagari/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 01:07:49] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-09 01:07:50] INFO root fetch - main [MainThread]: End processing [MeTA-bagari]: success
+[2023-05-09 01:07:50] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2023-05-09 01:07:52] INFO root fetch - main [MainThread]: End processing [dkist-processing-common]: success
+[2023-05-09 01:07:53] INFO root fetch - main [MainThread]: End processing [hamlet]: success
+[2023-05-09 01:08:16] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-05-09 01:08:55] INFO root fetch - main [MainThread]: End processing [ddtrace]: success
+[2023-05-09 01:08:55] INFO root fetch - main [MainThread]: Store serial: [18023527]
