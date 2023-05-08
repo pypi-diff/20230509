@@ -978,3 +978,104 @@
 [2023-05-09 01:17:04] ERROR root fetch - processPackages [cagraph]: Timeout during execution of pkgdiff
 [2023-05-09 01:17:04] INFO root fetch - main [MainThread]: End processing [cagraph] error
 [2023-05-09 01:17:04] INFO root fetch - main [MainThread]: Store serial: [18023566]
+[2023-05-09 01:22:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023566]
+[2023-05-09 01:22:13] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioabcpapi
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qolpy
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: synthesisai
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: terminut
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hail
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: snakemake-staging
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pypromice
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tiktokapipy
+[2023-05-09 01:22:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: synapse
+[2023-05-09 01:22:13] INFO root fetch - processPackages [qolpy]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 01:22:13] INFO root fetch - processPackages [aioabcpapi]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-09 01:22:13] WARNING root fetch - processPackages [snakemake-staging]: Skipping, unable to determine old version
+[2023-05-09 01:22:13] INFO root fetch - processPackages [snakemake-staging]: Start processing: cagraph
+[2023-05-09 01:22:13] INFO root fetch - main [MainThread]: End processing [snakemake-staging] error
+[2023-05-09 01:22:13] INFO root fetch - processPackages [terminut]: New version: [0.0.0.690] Old Version: [0.0.0.600]
+[2023-05-09 01:22:13] INFO root fetch - processPackages [tiktokapipy]: New version: [0.1.9.post1] Old Version: [0.1.9]
+[2023-05-09 01:22:13] WARNING root fetch - processPackages [pypromice]: Skipping, unable to determine old version
+[2023-05-09 01:22:13] INFO root fetch - processPackages [pypromice]: Start processing: read-rapidpe
+[2023-05-09 01:22:13] INFO root fetch - main [MainThread]: End processing [pypromice] error
+[2023-05-09 01:22:13] INFO root fetch - processPackages [synthesisai]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-09 01:22:13] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.310] Old Version: [0.3.309]
+[2023-05-09 01:22:13] INFO root fetch - processPackages [hail]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-05-09 01:22:13] INFO root fetch - processPackages [read-rapidpe]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-09 01:22:13] INFO root fetch - processPackages [cagraph]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 01:22:13] INFO root fetch - processPackages [synapse]: New version: [2.99.0] Old Version: [2.98.0]
+[2023-05-09 01:22:13] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/14/e3/44fb2a61e534dc4b00288f04822c4119f11d270ab6966e9babec22ab7502/pepperize.cdk-ses-smtp-credentials-0.3.309.tar.gz
+[2023-05-09 01:22:13] INFO root fetch - processPackages [aioabcpapi]: Downloading https://files.pythonhosted.org/packages/8f/2e/957d3e2cd47c72dea27ecd16586e944ce2eddc75ac4d0600d331d87371b8/aioabcpapi-1.1.4.tar.gz
+[2023-05-09 01:22:13] INFO root fetch - processPackages [qolpy]: Downloading https://files.pythonhosted.org/packages/5f/66/f5c06690ebe6bbc3053754e03420040bb8cd1f317cb013180d35de2712b3/qolpy-0.1.1.tar.gz
+[2023-05-09 01:22:13] INFO root fetch - processPackages [hail]: Downloading https://files.pythonhosted.org/packages/1d/79/af3836ea0d871c9eef733651d0c9a76f631ea963e14203f63b4e1ff97a49/hail-0.2.98-py3-none-any.whl
+[2023-05-09 01:22:13] INFO root fetch - processPackages [read-rapidpe]: Downloading https://files.pythonhosted.org/packages/16/59/6eabe813e713cfe9e65b3b36808f0e17855be432434ef93a6c50d5f5158f/read_rapidpe-0.3.0.tar.gz
+[2023-05-09 01:22:13] INFO root fetch - processPackages [cagraph]: Downloading https://files.pythonhosted.org/packages/90/ee/1a3ee3923822e6edc360c00d39bd736c95f6fffa375adea182c248494208/cagraph-0.0.9.tar.gz
+[2023-05-09 01:22:13] INFO root fetch - processPackages [synapse]: Downloading https://files.pythonhosted.org/packages/a0/16/05b574cbcacea5a4e03b3992f83fa15d65e908bbe429c52c6c618808810e/synapse-2.98.0.tar.gz
+[2023-05-09 01:22:13] INFO root fetch - processPackages [synthesisai]: Downloading https://files.pythonhosted.org/packages/78/fd/787201f0676d1a2f9479f8cffe6e8638ab3b7b1122fec357ac419e2fa78f/synthesisai-0.4.0.tar.gz
+[2023-05-09 01:22:13] INFO root fetch - processPackages [terminut]: Downloading https://files.pythonhosted.org/packages/e1/1e/4730ef2703d9cd26ba91c51b07a7e6bfb8bfa36b4b6c11b22a7d70b4e191/terminut-0.0.0.690.tar.gz
+[2023-05-09 01:22:13] INFO root fetch - processPackages [tiktokapipy]: Downloading https://files.pythonhosted.org/packages/cd/bb/3a13446b2373c4339a184f14288f148e79394d4798a9cad2831d3c4022ed/tiktokapipy-0.1.9.tar.gz
+[2023-05-09 01:22:13] INFO root fetch - processPackages [terminut]: executing diffoscope
+[2023-05-09 01:22:13] INFO root fetch - processPackages [terminut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminut-0.0.0.600.tar.gz tmp/terminut-0.0.0.690.tar.gz --markdown 20230509/t/terminut/0.0.0.600-0.0.0.690/diff.md --exclude *.pyd
+[2023-05-09 01:22:13] INFO root fetch - processPackages [cagraph]: executing diffoscope
+[2023-05-09 01:22:13] INFO root fetch - processPackages [cagraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagraph-0.0.8.tar.gz tmp/cagraph-0.0.9.tar.gz --markdown 20230509/c/cagraph/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 01:22:14] INFO root fetch - processPackages [read-rapidpe]: executing diffoscope
+[2023-05-09 01:22:14] INFO root fetch - processPackages [read-rapidpe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/read_rapidpe-0.2.2.tar.gz tmp/read_rapidpe-0.3.0.tar.gz --markdown 20230509/r/read-rapidpe/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 01:22:14] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/aa/4e/dbfed9681318d4d5b29da198ccd49bbc817efb73e9eebe15d2598b5b12aa/pepperize.cdk-ses-smtp-credentials-0.3.310.tar.gz
+[2023-05-09 01:22:14] INFO root fetch - processPackages [qolpy]: Downloading https://files.pythonhosted.org/packages/f2/4e/ef03c82fa0660c8de497de5cd89189d2809637fa8f41d8de4344189032c6/qolpy-0.1.2.tar.gz
+[2023-05-09 01:22:14] WARNING root fetch - processPackages [hail]: Skipping package: exceeds size limit 99410480>=10485760
+[2023-05-09 01:22:14] INFO root fetch - processPackages [hail]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-09 01:22:14] INFO root fetch - main [MainThread]: End processing [hail] error
+[2023-05-09 01:22:14] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.310] Old Version: [0.3.309]
+[2023-05-09 01:22:14] INFO root fetch - processPackages [qolpy]: executing diffoscope
+[2023-05-09 01:22:14] INFO root fetch - processPackages [qolpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qolpy-0.1.1.tar.gz tmp/qolpy-0.1.2.tar.gz --markdown 20230509/q/qolpy/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 01:22:14] INFO root fetch - processPackages [synthesisai]: Downloading https://files.pythonhosted.org/packages/a4/1e/f95a0a1f60e5a615c734bd250ee0afe2cd7c542ff65585940228cd7af759/synthesisai-0.5.0.tar.gz
+[2023-05-09 01:22:14] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/aa/4e/dbfed9681318d4d5b29da198ccd49bbc817efb73e9eebe15d2598b5b12aa/pepperize.cdk-ses-smtp-credentials-0.3.310.tar.gz
+[2023-05-09 01:22:14] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-09 01:22:14] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.309.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.310.tar.gz --markdown 20230509/p/pepperize.cdk-ses-smtp-credentials/0.3.309-0.3.310/diff.md --exclude *.pyd
+[2023-05-09 01:22:14] INFO root fetch - processPackages [synthesisai]: executing diffoscope
+[2023-05-09 01:22:14] INFO root fetch - processPackages [synthesisai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synthesisai-0.4.0.tar.gz tmp/synthesisai-0.5.0.tar.gz --markdown 20230509/s/synthesisai/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 01:22:14] INFO root fetch - processPackages [tiktokapipy]: Downloading https://files.pythonhosted.org/packages/63/31/43b6abdd020b33b02f78837904a30b80800400a2113f582dd924ff88082c/tiktokapipy-0.1.9.post1.tar.gz
+[2023-05-09 01:22:14] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-09 01:22:14] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.309.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.310.tar.gz --markdown 20230509/p/pepperize.cdk-ses-smtp-credentials/0.3.309-0.3.310/diff.md --exclude *.pyd
+[2023-05-09 01:22:14] INFO root fetch - processPackages [aioabcpapi]: Downloading https://files.pythonhosted.org/packages/af/d3/69c77d2500c73c57422f03162b7c3df531aa784639687be163856c038b63/aioabcpapi-1.1.5.tar.gz
+[2023-05-09 01:22:14] INFO root fetch - processPackages [aioabcpapi]: executing diffoscope
+[2023-05-09 01:22:14] INFO root fetch - processPackages [aioabcpapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioabcpapi-1.1.4.tar.gz tmp/aioabcpapi-1.1.5.tar.gz --markdown 20230509/a/aioabcpapi/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-09 01:22:14] INFO root fetch - processPackages [tiktokapipy]: executing diffoscope
+[2023-05-09 01:22:14] INFO root fetch - processPackages [tiktokapipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiktokapipy-0.1.9.tar.gz tmp/tiktokapipy-0.1.9.post1.tar.gz --markdown 20230509/t/tiktokapipy/0.1.9-0.1.9.post1/diff.md --exclude *.pyd
+[2023-05-09 01:22:14] INFO root fetch - processPackages [synapse]: Downloading https://files.pythonhosted.org/packages/6d/c7/9f83caee3522a85b4e4c80a4308801fb6bbbdcd7ba86efd93fd74ee3accf/synapse-2.99.0.tar.gz
+[2023-05-09 01:22:15] INFO root fetch - processPackages [terminut]: Start processing: oci
+[2023-05-09 01:22:15] INFO root fetch - main [MainThread]: End processing [terminut]: success
+[2023-05-09 01:22:15] INFO root fetch - processPackages [oci]: New version: [2.99.1] Old Version: [2.99.0]
+[2023-05-09 01:22:15] INFO root fetch - processPackages [synapse]: executing diffoscope
+[2023-05-09 01:22:15] INFO root fetch - processPackages [synapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapse-2.98.0.tar.gz tmp/synapse-2.99.0.tar.gz --markdown 20230509/s/synapse/2.98.0-2.99.0/diff.md --exclude *.pyd
+[2023-05-09 01:22:15] INFO root fetch - processPackages [oci]: Downloading https://files.pythonhosted.org/packages/b7/50/166794801e82f1f65176a501f1451e6c542bd24f1b9bc4cae6e79a4bcd64/oci-2.99.0.tar.gz
+[2023-05-09 01:22:15] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Start processing: windmill-api
+[2023-05-09 01:22:15] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-09 01:22:15] INFO root fetch - processPackages [windmill-api]: New version: [1.96.2] Old Version: [1.96.1]
+[2023-05-09 01:22:15] INFO root fetch - processPackages [read-rapidpe]: Start processing: wmill
+[2023-05-09 01:22:15] INFO root fetch - main [MainThread]: End processing [read-rapidpe]: success
+[2023-05-09 01:22:15] INFO root fetch - processPackages [wmill]: New version: [1.96.2] Old Version: [1.96.1]
+[2023-05-09 01:22:15] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-09 01:22:15] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/0e/88/fec822e2c32697a71b139c0911e9b773a87dd2af1701a1b7fc5a4883515c/windmill_api-1.96.2.tar.gz
+[2023-05-09 01:22:15] INFO root fetch - main [MainThread]: End processing [tiktokapipy]: success
+[2023-05-09 01:22:15] INFO root fetch - main [MainThread]: End processing [qolpy]: success
+[2023-05-09 01:22:15] INFO root fetch - main [MainThread]: End processing [aioabcpapi]: success
+[2023-05-09 01:22:15] INFO root fetch - main [MainThread]: End processing [synthesisai]: success
+[2023-05-09 01:22:16] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-09 01:22:16] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.96.1.tar.gz tmp/windmill_api-1.96.2.tar.gz --markdown 20230509/w/windmill-api/1.96.1-1.96.2/diff.md --exclude *.pyd
+[2023-05-09 01:22:16] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/67/88/df1c100bf694486dd306595e1ad377a29b32d9adce3dc912a56326b2867e/wmill-1.96.2.tar.gz
+[2023-05-09 01:22:16] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-09 01:22:16] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.96.1.tar.gz tmp/wmill-1.96.2.tar.gz --markdown 20230509/w/wmill/1.96.1-1.96.2/diff.md --exclude *.pyd
+[2023-05-09 01:22:16] INFO root fetch - processPackages [oci]: Downloading https://files.pythonhosted.org/packages/8f/3f/4d237aeedaa8d6cb488beefd362f4e0024342ac507be45fc223132c6f3a6/oci-2.99.1.tar.gz
+[2023-05-09 01:22:16] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-09 01:22:17] INFO root fetch - processPackages [oci]: executing diffoscope
+[2023-05-09 01:22:17] INFO root fetch - processPackages [oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oci-2.99.0.tar.gz tmp/oci-2.99.1.tar.gz --markdown 20230509/o/oci/2.99.0-2.99.1/diff.md --exclude *.pyd
+[2023-05-09 01:22:22] INFO root fetch - main [MainThread]: End processing [synapse]: success
+[2023-05-09 01:22:33] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-09 01:25:14] ERROR root fetch - processPackages [cagraph]: Timeout during execution of pkgdiff
+[2023-05-09 01:25:14] INFO root fetch - main [MainThread]: End processing [cagraph] error
+[2023-05-09 01:25:18] ERROR root fetch - processPackages [oci]: Timeout during execution of pkgdiff
+[2023-05-09 01:25:18] INFO root fetch - main [MainThread]: End processing [oci] error
+[2023-05-09 01:25:18] INFO root fetch - main [MainThread]: Store serial: [18023626]
