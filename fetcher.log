@@ -532,3 +532,72 @@
 [2023-05-09 00:40:57] INFO root fetch - processPackages [sports2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sports2d-0.0.8.tar.gz tmp/sports2d-0.0.9.tar.gz --markdown 20230509/s/sports2d/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-05-09 00:40:58] INFO root fetch - main [MainThread]: End processing [sports2d]: success
 [2023-05-09 00:40:58] INFO root fetch - main [MainThread]: Store serial: [18023255]
+[2023-05-09 00:46:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023255]
+[2023-05-09 00:46:07] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: se-lib
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MeTA-bagari
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onvif-gui
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: parsl
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: terminut
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: optimum-neuron
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-thomas-library-tests
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: FicImage
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sqlite-utils
+[2023-05-09 00:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: slashml
+[2023-05-09 00:46:07] INFO root fetch - processPackages [se-lib]: New version: [0.26.5] Old Version: [0.26.4]
+[2023-05-09 00:46:07] INFO root fetch - processPackages [certora-cli-alpha-thomas-library-tests]: New version: [20230508.19.57.649887] Old Version: [20230506.0.28.534068]
+[2023-05-09 00:46:07] INFO root fetch - processPackages [FicImage]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-09 00:46:07] INFO root fetch - processPackages [terminut]: New version: [0.0.0.3] Old Version: [0.0.0.2]
+[2023-05-09 00:46:07] INFO root fetch - processPackages [certora-cli-alpha-thomas-library-tests]: Downloading https://files.pythonhosted.org/packages/3e/7f/368526fa8bd7fbaf9dd490305b6ae8578803de8924ff4269a8027e5651db/certora-cli-alpha-thomas-library-tests-20230506.0.28.534068.tar.gz
+[2023-05-09 00:46:07] INFO root fetch - processPackages [se-lib]: executing diffoscope
+[2023-05-09 00:46:07] INFO root fetch - processPackages [se-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/se_lib-0.26.4.tar.gz tmp/se_lib-0.26.5.tar.gz --markdown 20230509/s/se-lib/0.26.4-0.26.5/diff.md --exclude *.pyd
+[2023-05-09 00:46:07] WARNING root fetch - processPackages [MeTA-bagari]: Skipping, unable to determine old version
+[2023-05-09 00:46:07] INFO root fetch - processPackages [MeTA-bagari]: Start processing: raisetool
+[2023-05-09 00:46:07] INFO root fetch - main [MainThread]: End processing [MeTA-bagari] error
+[2023-05-09 00:46:07] INFO root fetch - processPackages [terminut]: executing diffoscope
+[2023-05-09 00:46:07] INFO root fetch - processPackages [terminut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminut-0.0.0.2.tar.gz tmp/terminut-0.0.0.3.tar.gz --markdown 20230509/t/terminut/0.0.0.2-0.0.0.3/diff.md --exclude *.pyd
+[2023-05-09 00:46:07] INFO root fetch - processPackages [slashml]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-09 00:46:07] INFO root fetch - processPackages [optimum-neuron]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 00:46:07] INFO root fetch - processPackages [parsl]: New version: [2023.5.8] Old Version: [2023.5.1]
+[2023-05-09 00:46:08] INFO root fetch - processPackages [onvif-gui]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-05-09 00:46:08] INFO root fetch - processPackages [sqlite-utils]: New version: [3.9.1] Old Version: [3.9]
+[2023-05-09 00:46:08] INFO root fetch - processPackages [FicImage]: Downloading https://files.pythonhosted.org/packages/0b/cb/6d62497a5e2cad2b0690f11cdf7b9179f46386db9b1b4190789411c46886/FicImage-1.0.3.tar.gz
+[2023-05-09 00:46:08] WARNING root fetch - processPackages [raisetool]: Skipping, unable to determine old version
+[2023-05-09 00:46:08] INFO root fetch - processPackages [raisetool]: Start processing: deepview-validator
+[2023-05-09 00:46:08] INFO root fetch - main [MainThread]: End processing [raisetool] error
+[2023-05-09 00:46:08] WARNING root fetch - processPackages [certora-cli-alpha-thomas-library-tests]: Skipping package: exceeds size limit 38473059>=10485760
+[2023-05-09 00:46:08] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-thomas-library-tests] error
+[2023-05-09 00:46:08] INFO root fetch - processPackages [deepview-validator]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-05-09 00:46:08] INFO root fetch - processPackages [FicImage]: executing diffoscope
+[2023-05-09 00:46:08] INFO root fetch - processPackages [FicImage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FicImage-1.0.2.tar.gz tmp/FicImage-1.0.3.tar.gz --markdown 20230509/F/FicImage/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-09 00:46:08] INFO root fetch - processPackages [parsl]: Downloading https://files.pythonhosted.org/packages/23/d8/24eda3203a31d1de92cbc7227088c446f5f8b1e74fa8865531f3653cb503/parsl-2023.5.1.tar.gz
+[2023-05-09 00:46:08] INFO root fetch - processPackages [optimum-neuron]: Downloading https://files.pythonhosted.org/packages/19/35/af2f8b9f5ea9b7b0de233abc3a386ed803fb17105cbba7dca836516e8b36/optimum-neuron-0.0.3.tar.gz
+[2023-05-09 00:46:08] INFO root fetch - processPackages [deepview-validator]: executing diffoscope
+[2023-05-09 00:46:08] INFO root fetch - processPackages [deepview-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepview_validator-3.0.5-py3-none-any.whl.zip tmp/deepview_validator-3.0.6-py3-none-any.whl.zip --markdown 20230509/d/deepview-validator/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2023-05-09 00:46:08] INFO root fetch - processPackages [onvif-gui]: Downloading https://files.pythonhosted.org/packages/8a/0e/f6a6914dc5d982f0c7274b4919a15a20540e216c71be86041957a28f0ff8/onvif-gui-1.0.9.tar.gz
+[2023-05-09 00:46:08] INFO root fetch - processPackages [sqlite-utils]: Downloading https://files.pythonhosted.org/packages/86/4f/17aaa5880391e1a982119013e590ae246d709d7bf797127ab7dedfacb10a/sqlite-utils-3.9.tar.gz
+[2023-05-09 00:46:08] INFO root fetch - processPackages [slashml]: Downloading https://files.pythonhosted.org/packages/ca/f1/cf00a2e3fc2c15d896576b4b9d8e33873307965692464d17fa6b1dc3e98d/slashml-0.0.5.tar.gz
+[2023-05-09 00:46:08] INFO root fetch - processPackages [optimum-neuron]: Downloading https://files.pythonhosted.org/packages/7e/d7/a8882cfb6c8fee2d3ad71b8a86f1e003eac7e579eaa150a6cea690b7006e/optimum-neuron-0.0.4.tar.gz
+[2023-05-09 00:46:08] INFO root fetch - processPackages [slashml]: executing diffoscope
+[2023-05-09 00:46:08] INFO root fetch - processPackages [slashml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slashml-0.0.4.tar.gz tmp/slashml-0.0.5.tar.gz --markdown 20230509/s/slashml/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 00:46:08] INFO root fetch - processPackages [optimum-neuron]: executing diffoscope
+[2023-05-09 00:46:08] INFO root fetch - processPackages [optimum-neuron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimum-neuron-0.0.3.tar.gz tmp/optimum-neuron-0.0.4.tar.gz --markdown 20230509/o/optimum-neuron/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 00:46:08] INFO root fetch - processPackages [parsl]: Downloading https://files.pythonhosted.org/packages/4d/9e/cd09cfd1048ae5b90d606eb634587248820b8d470107c3f0dbc358fb75c2/parsl-2023.5.8.tar.gz
+[2023-05-09 00:46:08] INFO root fetch - processPackages [sqlite-utils]: Downloading https://files.pythonhosted.org/packages/9c/c9/3b3d73898243153dd80aa56c1bf80f5dd700ae65d12c29324ac9db833e03/sqlite-utils-3.9.1.tar.gz
+[2023-05-09 00:46:08] INFO root fetch - processPackages [parsl]: executing diffoscope
+[2023-05-09 00:46:08] INFO root fetch - processPackages [parsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsl-2023.5.1.tar.gz tmp/parsl-2023.5.8.tar.gz --markdown 20230509/p/parsl/2023.5.1-2023.5.8/diff.md --exclude *.pyd
+[2023-05-09 00:46:08] INFO root fetch - processPackages [onvif-gui]: Downloading https://files.pythonhosted.org/packages/4f/16/4ac397955764c6638f17888f61e3263813572d69a0e84fcc4106b8a3981d/onvif-gui-1.1.0.tar.gz
+[2023-05-09 00:46:08] INFO root fetch - processPackages [sqlite-utils]: executing diffoscope
+[2023-05-09 00:46:08] INFO root fetch - processPackages [sqlite-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite-utils-3.9.tar.gz tmp/sqlite-utils-3.9.1.tar.gz --markdown 20230509/s/sqlite-utils/3.9-3.9.1/diff.md --exclude *.pyd
+[2023-05-09 00:46:09] INFO root fetch - main [MainThread]: End processing [terminut]: success
+[2023-05-09 00:46:09] INFO root fetch - processPackages [onvif-gui]: executing diffoscope
+[2023-05-09 00:46:09] INFO root fetch - processPackages [onvif-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-gui-1.0.9.tar.gz tmp/onvif-gui-1.1.0.tar.gz --markdown 20230509/o/onvif-gui/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 00:46:09] INFO root fetch - main [MainThread]: End processing [FicImage]: success
+[2023-05-09 00:46:09] INFO root fetch - main [MainThread]: End processing [se-lib]: success
+[2023-05-09 00:46:09] INFO root fetch - main [MainThread]: End processing [deepview-validator]: success
+[2023-05-09 00:46:09] INFO root fetch - main [MainThread]: End processing [slashml]: success
+[2023-05-09 00:46:10] INFO root fetch - main [MainThread]: End processing [sqlite-utils]: success
+[2023-05-09 00:46:11] INFO root fetch - main [MainThread]: End processing [optimum-neuron]: success
+[2023-05-09 00:46:11] INFO root fetch - main [MainThread]: End processing [onvif-gui]: success
+[2023-05-09 00:46:14] INFO root fetch - main [MainThread]: End processing [parsl]: success
+[2023-05-09 00:46:14] INFO root fetch - main [MainThread]: Store serial: [18023291]
