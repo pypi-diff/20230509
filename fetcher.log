@@ -1171,3 +1171,64 @@
 [2023-05-09 01:30:34] INFO root fetch - main [MainThread]: End processing [affinda]: success
 [2023-05-09 01:30:37] INFO root fetch - main [MainThread]: End processing [sqlmesh]: success
 [2023-05-09 01:30:37] INFO root fetch - main [MainThread]: Store serial: [18023699]
+[2023-05-09 01:35:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023699]
+[2023-05-09 01:35:48] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-migraphx
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyntree
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phdi
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cagraph
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jefferson-street-singer-ingest
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mage-ai
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nsdotpy
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo14-addon-crm-lead-currency
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-master
+[2023-05-09 01:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: certora-cli-alpha-kit-annotation
+[2023-05-09 01:35:48] INFO root fetch - processPackages [cagraph]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 01:35:48] INFO root fetch - processPackages [phdi]: New version: [0.1.0.dev5] Old Version: [0.1.0.dev4]
+[2023-05-09 01:35:48] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: New version: [20230508.21.18.137806] Old Version: [20230508.20.34.862914]
+[2023-05-09 01:35:48] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230508.21.17.852013] Old Version: [20230508.20.32.816389]
+[2023-05-09 01:35:48] INFO root fetch - processPackages [nsdotpy]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-09 01:35:48] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/9e/2d/4903e9ee58fc7b7afc38d63d850afacf67e7ee6bcf6023d45f42f10d5f8f/certora-cli-alpha-master-20230508.20.32.816389.tar.gz
+[2023-05-09 01:35:48] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: Downloading https://files.pythonhosted.org/packages/cf/8f/632403b190aed95f8f33c22c6c7544404d52f051987c313d47ab6d5c08e7/certora-cli-alpha-kit-annotation-20230508.20.34.862914.tar.gz
+[2023-05-09 01:35:48] WARNING root fetch - processPackages [torch-migraphx]: Skipping, unable to determine old version
+[2023-05-09 01:35:48] INFO root fetch - main [MainThread]: End processing [torch-migraphx] error
+[2023-05-09 01:35:48] INFO root fetch - processPackages [pyntree]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-09 01:35:48] INFO root fetch - processPackages [odoo14-addon-crm-lead-currency]: New version: [14.0.1.0.1.dev2] Old Version: [14.0.1.0.1]
+[2023-05-09 01:35:48] INFO root fetch - processPackages [cagraph]: executing diffoscope
+[2023-05-09 01:35:48] INFO root fetch - processPackages [cagraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cagraph-0.0.8.tar.gz tmp/cagraph-0.0.9.tar.gz --markdown 20230509/c/cagraph/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 01:35:48] INFO root fetch - processPackages [jefferson-street-singer-ingest]: New version: [2.8.2] Old Version: [2.8.1]
+[2023-05-09 01:35:48] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38475040>=10485760
+[2023-05-09 01:35:48] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-09 01:35:48] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-09 01:35:48] INFO root fetch - processPackages [nsdotpy]: executing diffoscope
+[2023-05-09 01:35:48] INFO root fetch - processPackages [nsdotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdotpy-1.2.0.tar.gz tmp/nsdotpy-1.2.1.tar.gz --markdown 20230509/n/nsdotpy/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-09 01:35:48] INFO root fetch - processPackages [phdi]: Downloading https://files.pythonhosted.org/packages/02/5f/8817020db6343f3098462775a2ae9f9e16909f91ad3271356933dae4345a/phdi-0.1.0.dev4.tar.gz
+[2023-05-09 01:35:48] WARNING root fetch - processPackages [certora-cli-alpha-kit-annotation]: Skipping package: exceeds size limit 38483162>=10485760
+[2023-05-09 01:35:48] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-kit-annotation] error
+[2023-05-09 01:35:48] INFO root fetch - processPackages [odoo14-addon-crm-lead-currency]: Downloading https://files.pythonhosted.org/packages/d2/23/ffdc9c6fb23de9e71322e76388c67d19a6ae97765f2fd9596d1177511354/odoo14_addon_crm_lead_currency-14.0.1.0.1-py3-none-any.whl
+[2023-05-09 01:35:48] INFO root fetch - processPackages [pyntree]: Downloading https://files.pythonhosted.org/packages/7e/3c/2c98182fd0884913bec72e2f6bf23a16ebd584de406009217ffa20042014/pyntree-1.1.1.tar.gz
+[2023-05-09 01:35:48] INFO root fetch - processPackages [jefferson-street-singer-ingest]: Downloading https://files.pythonhosted.org/packages/03/f6/8c13f4c4845b7217f4a7a73c7abfa8e61f9b3b841eebdc56ed992cd6f4e7/jefferson-street-singer-ingest-2.8.1.tar.gz
+[2023-05-09 01:35:48] INFO root fetch - processPackages [mage-ai]: Downloading https://files.pythonhosted.org/packages/d8/f1/206020fc20b4824552c8b49cb9cf4d9a10f4a9c8133ca4fb1fc9667d87cd/mage-ai-0.8.8.tar.gz
+[2023-05-09 01:35:48] INFO root fetch - processPackages [phdi]: executing diffoscope
+[2023-05-09 01:35:48] INFO root fetch - processPackages [phdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phdi-0.1.0.dev4.tar.gz tmp/phdi-0.1.0.dev5.tar.gz --markdown 20230509/p/phdi/0.1.0.dev4-0.1.0.dev5/diff.md --exclude *.pyd
+[2023-05-09 01:35:48] INFO root fetch - processPackages [pyntree]: Downloading https://files.pythonhosted.org/packages/e3/4f/e018d0fd0e9084fc24a104c9578be4ef9c3c28018caf25a454c4155f43a6/pyntree-1.2.0.tar.gz
+[2023-05-09 01:35:49] INFO root fetch - processPackages [pyntree]: executing diffoscope
+[2023-05-09 01:35:49] INFO root fetch - processPackages [pyntree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyntree-1.1.1.tar.gz tmp/pyntree-1.2.0.tar.gz --markdown 20230509/p/pyntree/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 01:35:49] INFO root fetch - processPackages [jefferson-street-singer-ingest]: Downloading https://files.pythonhosted.org/packages/74/eb/fd897340be145564f0e6aa14af6792f9c427d0fbf8e4d174506387356897/jefferson-street-singer-ingest-2.8.2.tar.gz
+[2023-05-09 01:35:49] INFO root fetch - processPackages [odoo14-addon-crm-lead-currency]: Downloading https://files.pythonhosted.org/packages/3a/7d/a9b6c3a4620756e25a4047dc24924e56953a5ea9fd6057017fabc32d5c73/odoo14_addon_crm_lead_currency-14.0.1.0.1.dev2-py3-none-any.whl
+[2023-05-09 01:35:49] INFO root fetch - processPackages [odoo14-addon-crm-lead-currency]: executing diffoscope
+[2023-05-09 01:35:49] INFO root fetch - processPackages [odoo14-addon-crm-lead-currency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_crm_lead_currency-14.0.1.0.1-py3-none-any.whl.zip tmp/odoo14_addon_crm_lead_currency-14.0.1.0.1.dev2-py3-none-any.whl.zip --markdown 20230509/o/odoo14-addon-crm-lead-currency/14.0.1.0.1-14.0.1.0.1.dev2/diff.md --exclude *.pyd
+[2023-05-09 01:35:49] INFO root fetch - processPackages [jefferson-street-singer-ingest]: executing diffoscope
+[2023-05-09 01:35:49] INFO root fetch - processPackages [jefferson-street-singer-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jefferson-street-singer-ingest-2.8.1.tar.gz tmp/jefferson-street-singer-ingest-2.8.2.tar.gz --markdown 20230509/j/jefferson-street-singer-ingest/2.8.1-2.8.2/diff.md --exclude *.pyd
+[2023-05-09 01:35:49] INFO root fetch - main [MainThread]: End processing [nsdotpy]: success
+[2023-05-09 01:35:49] INFO root fetch - processPackages [mage-ai]: Downloading https://files.pythonhosted.org/packages/8b/c6/2ffc10c42d453735347d31b5d865f060c7ea95dad9c502d809dcd7867e95/mage-ai-0.8.9.tar.gz
+[2023-05-09 01:35:50] INFO root fetch - main [MainThread]: End processing [pyntree]: success
+[2023-05-09 01:35:50] INFO root fetch - main [MainThread]: End processing [odoo14-addon-crm-lead-currency]: success
+[2023-05-09 01:35:50] INFO root fetch - main [MainThread]: End processing [jefferson-street-singer-ingest]: success
+[2023-05-09 01:35:50] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-05-09 01:35:50] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230509/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-09 01:35:51] INFO root fetch - main [MainThread]: End processing [phdi]: success
+[2023-05-09 01:36:01] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-05-09 01:38:48] ERROR root fetch - processPackages [cagraph]: Timeout during execution of pkgdiff
+[2023-05-09 01:38:48] INFO root fetch - main [MainThread]: End processing [cagraph] error
+[2023-05-09 01:38:48] INFO root fetch - main [MainThread]: Store serial: [18023730]
