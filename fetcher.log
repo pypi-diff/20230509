@@ -1356,3 +1356,53 @@
 [2023-05-09 01:49:14] INFO root fetch - processPackages [wallaroo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wallaroo-2023.1.0rc1.tar.gz tmp/wallaroo-2023.2.0rc1.tar.gz --markdown 20230509/w/wallaroo/2023.1.0rc1-2023.2.0rc1/diff.md --exclude *.pyd
 [2023-05-09 01:50:11] INFO root fetch - main [MainThread]: End processing [wallaroo]: success
 [2023-05-09 01:50:11] INFO root fetch - main [MainThread]: Store serial: [18023808]
+[2023-05-09 01:55:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023808]
+[2023-05-09 01:55:23] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-09 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pandasai
+[2023-05-09 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nasa-scrub
+[2023-05-09 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jefferson-street-singer-ingest
+[2023-05-09 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zcmds
+[2023-05-09 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cohere-sagemaker
+[2023-05-09 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: video-subtitles
+[2023-05-09 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: arraymap
+[2023-05-09 01:55:23] INFO root fetch - processPackages [pandasai]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 01:55:23] INFO root fetch - processPackages [video-subtitles]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 01:55:23] INFO root fetch - processPackages [nasa-scrub]: New version: [2.6.5] Old Version: [2.6.4]
+[2023-05-09 01:55:23] INFO root fetch - processPackages [zcmds]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-09 01:55:23] INFO root fetch - processPackages [jefferson-street-singer-ingest]: New version: [2.8.5] Old Version: [2.8.4]
+[2023-05-09 01:55:23] INFO root fetch - processPackages [cohere-sagemaker]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-09 01:55:23] INFO root fetch - processPackages [video-subtitles]: Downloading https://files.pythonhosted.org/packages/b3/0d/a1682bbae98fbd8888fcbbe498456fecfe4ac54860a40dcf30e78ed3b95d/video-subtitles-1.0.0.tar.gz
+[2023-05-09 01:55:23] INFO root fetch - processPackages [cohere-sagemaker]: Downloading https://files.pythonhosted.org/packages/16/eb/55424bb4e5a299708bfcfc765df2ba1a7d8e931e0b178133db288664d35c/cohere-sagemaker-0.5.0.tar.gz
+[2023-05-09 01:55:23] INFO root fetch - processPackages [zcmds]: Downloading https://files.pythonhosted.org/packages/cf/85/6745bf792d3dace88b4a0cfba4bf8c74d34157be8f84838613c74637f6a0/zcmds-1.4.8.tar.gz
+[2023-05-09 01:55:23] INFO root fetch - processPackages [jefferson-street-singer-ingest]: Downloading https://files.pythonhosted.org/packages/c7/41/51910e97c5b051e08893479d8484ac7a6e4cedde8d254c285d55dcd1d237/jefferson-street-singer-ingest-2.8.5.tar.gz
+[2023-05-09 01:55:23] INFO root fetch - processPackages [arraymap]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 01:55:23] INFO root fetch - processPackages [nasa-scrub]: Downloading https://files.pythonhosted.org/packages/6d/24/a326e0e533916fb6708c9dac40975ef57fb23c4c206d33a634e84e6e70f8/nasa-scrub-2.6.4.tar.gz
+[2023-05-09 01:55:23] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/1f/53/1ac70595b26514aafd7eaa6cb84f5c5e4ed5fb3ad887a42cbc9e7d9d901d/pandasai-0.2.9.tar.gz
+[2023-05-09 01:55:23] INFO root fetch - processPackages [pandasai]: executing diffoscope
+[2023-05-09 01:55:23] INFO root fetch - processPackages [pandasai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasai-0.2.8.tar.gz tmp/pandasai-0.2.9.tar.gz --markdown 20230509/p/pandasai/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 01:55:24] INFO root fetch - processPackages [jefferson-street-singer-ingest]: executing diffoscope
+[2023-05-09 01:55:24] INFO root fetch - processPackages [jefferson-street-singer-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jefferson-street-singer-ingest-2.8.4.tar.gz tmp/jefferson-street-singer-ingest-2.8.5.tar.gz --markdown 20230509/j/jefferson-street-singer-ingest/2.8.4-2.8.5/diff.md --exclude *.pyd
+[2023-05-09 01:55:24] INFO root fetch - processPackages [video-subtitles]: Downloading https://files.pythonhosted.org/packages/08/5e/84f7b821ee28d8af1c677d0677a9059af7b52e1b5c90f3d9085bfefe47de/video-subtitles-1.0.1.tar.gz
+[2023-05-09 01:55:24] INFO root fetch - processPackages [arraymap]: Downloading https://files.pythonhosted.org/packages/f8/aa/2def75468f417040fbfe2cfa87533546d2e3bf48d61959b37bc873325f52/arraymap-0.1.7.tar.gz
+[2023-05-09 01:55:24] INFO root fetch - processPackages [video-subtitles]: executing diffoscope
+[2023-05-09 01:55:24] INFO root fetch - processPackages [video-subtitles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/video-subtitles-1.0.0.tar.gz tmp/video-subtitles-1.0.1.tar.gz --markdown 20230509/v/video-subtitles/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 01:55:24] INFO root fetch - processPackages [cohere-sagemaker]: Downloading https://files.pythonhosted.org/packages/3f/53/5093383f3f624a33c63c51330e1e8f214dedd2b4176dc67756c04270197f/cohere-sagemaker-0.6.0.tar.gz
+[2023-05-09 01:55:24] INFO root fetch - processPackages [cohere-sagemaker]: executing diffoscope
+[2023-05-09 01:55:24] INFO root fetch - processPackages [cohere-sagemaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cohere-sagemaker-0.5.0.tar.gz tmp/cohere-sagemaker-0.6.0.tar.gz --markdown 20230509/c/cohere-sagemaker/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-09 01:55:24] INFO root fetch - processPackages [zcmds]: Downloading https://files.pythonhosted.org/packages/ee/c7/785afe3eb6342eebc74522af1d496ca09cf10ab8aab660d94d91cfbef640/zcmds-1.4.9.tar.gz
+[2023-05-09 01:55:24] INFO root fetch - processPackages [nasa-scrub]: Downloading https://files.pythonhosted.org/packages/50/d8/de9896d9396ecb142c6781bed1ba0dfb01e04e7e1753175b8c343a09f702/nasa-scrub-2.6.5.tar.gz
+[2023-05-09 01:55:24] INFO root fetch - processPackages [nasa-scrub]: executing diffoscope
+[2023-05-09 01:55:24] INFO root fetch - processPackages [nasa-scrub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nasa-scrub-2.6.4.tar.gz tmp/nasa-scrub-2.6.5.tar.gz --markdown 20230509/n/nasa-scrub/2.6.4-2.6.5/diff.md --exclude *.pyd
+[2023-05-09 01:55:24] INFO root fetch - processPackages [zcmds]: executing diffoscope
+[2023-05-09 01:55:24] INFO root fetch - processPackages [zcmds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zcmds-1.4.8.tar.gz tmp/zcmds-1.4.9.tar.gz --markdown 20230509/z/zcmds/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-09 01:55:24] INFO root fetch - processPackages [arraymap]: Downloading https://files.pythonhosted.org/packages/1e/70/a87d93a29be3837865da34d0ce951c262a0b8bf1550cb19545e4eb22263c/arraymap-0.1.8-cp37-cp37m-win_amd64.whl
+[2023-05-09 01:55:24] INFO root fetch - processPackages [arraymap]: executing diffoscope
+[2023-05-09 01:55:24] INFO root fetch - processPackages [arraymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraymap-0.1.7.tar.gz tmp/arraymap-0.1.8-cp37-cp37m-win_amd64.whl.zip --markdown 20230509/a/arraymap/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 01:55:25] INFO root fetch - main [MainThread]: End processing [pandasai]: success
+[2023-05-09 01:55:25] INFO root fetch - main [MainThread]: End processing [cohere-sagemaker]: success
+[2023-05-09 01:55:25] INFO root fetch - main [MainThread]: End processing [jefferson-street-singer-ingest]: success
+[2023-05-09 01:55:25] INFO root fetch - main [MainThread]: End processing [video-subtitles]: success
+[2023-05-09 01:55:25] INFO root fetch - main [MainThread]: End processing [arraymap]: success
+[2023-05-09 01:55:25] INFO root fetch - main [MainThread]: End processing [nasa-scrub]: success
+[2023-05-09 01:55:25] INFO root fetch - main [MainThread]: End processing [zcmds]: success
+[2023-05-09 01:55:25] INFO root fetch - main [MainThread]: Store serial: [18023851]
