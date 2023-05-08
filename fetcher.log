@@ -213,3 +213,39 @@
 [2023-05-09 00:13:40] INFO root fetch - main [MainThread]: End processing [s3dbm]: success
 [2023-05-09 00:13:41] INFO root fetch - main [MainThread]: End processing [pyqodeng]: success
 [2023-05-09 00:13:41] INFO root fetch - main [MainThread]: Store serial: [18023094]
+[2023-05-09 00:18:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023094]
+[2023-05-09 00:18:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-09 00:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyNucSeg
+[2023-05-09 00:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frankAllSkyCam
+[2023-05-09 00:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: filedbm
+[2023-05-09 00:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slashml
+[2023-05-09 00:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webint
+[2023-05-09 00:18:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gpt-review
+[2023-05-09 00:18:50] INFO root fetch - processPackages [PyNucSeg]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-09 00:18:50] INFO root fetch - processPackages [webint]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 00:18:50] WARNING root fetch - processPackages [slashml]: Skipping, unable to determine old version
+[2023-05-09 00:18:50] INFO root fetch - main [MainThread]: End processing [slashml] error
+[2023-05-09 00:18:50] INFO root fetch - processPackages [filedbm]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 00:18:50] INFO root fetch - processPackages [gpt-review]: New version: [0.8.0rc524.post1] Old Version: [0.8.0rc518.post1]
+[2023-05-09 00:18:50] INFO root fetch - processPackages [frankAllSkyCam]: New version: [6.0] Old Version: [5.9]
+[2023-05-09 00:18:50] INFO root fetch - processPackages [webint]: executing diffoscope
+[2023-05-09 00:18:50] INFO root fetch - processPackages [webint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint-0.1.8.tar.gz tmp/webint-0.1.9.tar.gz --markdown 20230509/w/webint/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 00:18:50] INFO root fetch - processPackages [PyNucSeg]: Downloading https://files.pythonhosted.org/packages/aa/6f/1c3b25cca29aabbdfce03153f24f538586f810970a1cf22867bfc77018a7/PyNucSeg-0.0.7.tar.gz
+[2023-05-09 00:18:50] INFO root fetch - processPackages [gpt-review]: Downloading https://files.pythonhosted.org/packages/da/d5/f1a6aca29081310c0afa05f9e32e40208c80cd04d606bcbaa5ff55d1a116/gpt-review-0.8.0rc524.post1.tar.gz
+[2023-05-09 00:18:50] INFO root fetch - processPackages [filedbm]: Downloading https://files.pythonhosted.org/packages/bb/50/504c7bb1e41522ca11ce061591b778e7d78cc55d3e541f19de3408145583/filedbm-0.0.3.tar.gz
+[2023-05-09 00:18:50] INFO root fetch - processPackages [gpt-review]: executing diffoscope
+[2023-05-09 00:18:50] INFO root fetch - processPackages [gpt-review]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-review-0.8.0rc518.post1.tar.gz tmp/gpt-review-0.8.0rc524.post1.tar.gz --markdown 20230509/g/gpt-review/0.8.0rc518.post1-0.8.0rc524.post1/diff.md --exclude *.pyd
+[2023-05-09 00:18:50] INFO root fetch - processPackages [filedbm]: executing diffoscope
+[2023-05-09 00:18:50] INFO root fetch - processPackages [filedbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filedbm-0.0.2.tar.gz tmp/filedbm-0.0.3.tar.gz --markdown 20230509/f/filedbm/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 00:18:50] INFO root fetch - processPackages [frankAllSkyCam]: Downloading https://files.pythonhosted.org/packages/6d/87/fabb3bea90c5e24057df2056089fd573bb4e0d3d327ef82f9bba00f2dce9/frankAllSkyCam-6.0.tar.gz
+[2023-05-09 00:18:51] INFO root fetch - processPackages [PyNucSeg]: Downloading https://files.pythonhosted.org/packages/95/b9/ea6b919168790dbdf29929afc79cb187df13d1a08e03eafe1bcadec61638/PyNucSeg-0.0.8.tar.gz
+[2023-05-09 00:18:51] INFO root fetch - processPackages [frankAllSkyCam]: executing diffoscope
+[2023-05-09 00:18:51] INFO root fetch - processPackages [frankAllSkyCam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frankAllSkyCam-5.9.tar.gz tmp/frankAllSkyCam-6.0.tar.gz --markdown 20230509/f/frankAllSkyCam/5.9-6.0/diff.md --exclude *.pyd
+[2023-05-09 00:18:51] INFO root fetch - processPackages [PyNucSeg]: executing diffoscope
+[2023-05-09 00:18:51] INFO root fetch - processPackages [PyNucSeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyNucSeg-0.0.7.tar.gz tmp/PyNucSeg-0.0.8.tar.gz --markdown 20230509/P/PyNucSeg/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-09 00:18:51] INFO root fetch - main [MainThread]: End processing [filedbm]: success
+[2023-05-09 00:18:52] INFO root fetch - main [MainThread]: End processing [gpt-review]: success
+[2023-05-09 00:18:52] INFO root fetch - main [MainThread]: End processing [PyNucSeg]: success
+[2023-05-09 00:18:52] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam]: success
+[2023-05-09 00:18:56] INFO root fetch - main [MainThread]: End processing [webint]: success
+[2023-05-09 00:18:56] INFO root fetch - main [MainThread]: Store serial: [18023116]
