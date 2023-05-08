@@ -1,0 +1,107 @@
+[2023-05-09 00:03:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18022989]
+[2023-05-09 00:03:11] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-09 00:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: expden
+[2023-05-09 00:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mama
+[2023-05-09 00:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: animo-trainer
+[2023-05-09 00:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freshpy
+[2023-05-09 00:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Pulse3D
+[2023-05-09 00:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: complex-curve-fit-gui
+[2023-05-09 00:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: globus-compute-sdk
+[2023-05-09 00:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: globus-compute-endpoint
+[2023-05-09 00:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: funcx
+[2023-05-09 00:03:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: funcx-endpoint
+[2023-05-09 00:03:12] WARNING root fetch - processPackages [expden]: Skipping, unable to determine old version
+[2023-05-09 00:03:12] INFO root fetch - processPackages [expden]: Start processing: slashml
+[2023-05-09 00:03:12] INFO root fetch - main [MainThread]: End processing [expden] error
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx]: New version: [2.0.2a1] Old Version: [2.0.2a0]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [mama]: New version: [0.7.9] Old Version: [0.7.7]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [animo-trainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-sdk]: New version: [2.0.2a1] Old Version: [2.0.2a0]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-endpoint]: New version: [2.0.2a1] Old Version: [2.0.2a0]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [freshpy]: New version: [1.1.1] Old Version: [1.1.0b1]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [complex-curve-fit-gui]: New version: [1.1.8] Old Version: [1.1.6]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [Pulse3D]: New version: [0.33.3] Old Version: [0.33.2]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx-endpoint]: New version: [2.0.2a1] Old Version: [2.0.2a0]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [animo-trainer]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [animo-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animo_trainer-0.1.8.tar.gz tmp/animo_trainer-0.1.9.tar.gz --markdown 20230509/a/animo-trainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-sdk]: Downloading https://files.pythonhosted.org/packages/21/3f/3545ca3085b81c0e7b0c6e104bd0db8c924e390734233583e12e42d6929e/globus-compute-sdk-2.0.2a0.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [slashml]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx]: Downloading https://files.pythonhosted.org/packages/c1/8c/68cb33fcf71ae65ef61d651537f738017f9c6781bfb8efdf1c62e71602b2/funcx-2.0.2a0.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-endpoint]: Downloading https://files.pythonhosted.org/packages/c0/16/af79da19f1407a94f53264a06d5b6d3ef5dd454544bfe8f1710787eca986/globus-compute-endpoint-2.0.2a0.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [Pulse3D]: Downloading https://files.pythonhosted.org/packages/0c/00/45702cba95579d89817d0e048f7712db63d74a9bec561ddcc66c7d451dff/Pulse3D-0.33.2.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx-endpoint]: Downloading https://files.pythonhosted.org/packages/a3/aa/49ebd068a921d5f3f141a344981d526b6d2df17291238f1575ab251da68c/funcx-endpoint-2.0.2a0.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [mama]: Downloading https://files.pythonhosted.org/packages/3e/e3/6763878d4735797a32b4c7a6c1fc91bf62aab9da7806aa1c652348e944ee/mama-0.7.7.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [freshpy]: Downloading https://files.pythonhosted.org/packages/79/fb/544cf002015d6c68e6b3f22a60d85e005f9a049d985ed1bc7a0a00562acc/freshpy-1.1.0b1.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-sdk]: Downloading https://files.pythonhosted.org/packages/5b/6a/8ef155f0f102a5fd9386c10797949d951199792b6d835998203d66b0b409/globus-compute-sdk-2.0.2a1.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [complex-curve-fit-gui]: Downloading https://files.pythonhosted.org/packages/94/6b/566da663d7c448ee934b814d8e54367307e961731e83c6cd70a35277895e/complex_curve_fit_gui-1.1.8.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [Pulse3D]: Downloading https://files.pythonhosted.org/packages/e4/09/0dbeaa5fcb38f67cbf73213c375ffc593dc8008e9522a03bd61f2dd9dd67/Pulse3D-0.33.3.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-endpoint]: Downloading https://files.pythonhosted.org/packages/f6/b2/a114012128057a30ac2abcf55dcc0a9fbf5b219ba5e37485ab55cd596438/globus-compute-endpoint-2.0.2a1.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [complex-curve-fit-gui]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [complex-curve-fit-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/complex_curve_fit_gui-1.1.6.tar.gz tmp/complex_curve_fit_gui-1.1.8.tar.gz --markdown 20230509/c/complex-curve-fit-gui/1.1.6-1.1.8/diff.md --exclude *.pyd
+[2023-05-09 00:03:12] INFO root fetch - processPackages [Pulse3D]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [Pulse3D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pulse3D-0.33.2.tar.gz tmp/Pulse3D-0.33.3.tar.gz --markdown 20230509/P/Pulse3D/0.33.2-0.33.3/diff.md --exclude *.pyd
+[2023-05-09 00:03:12] INFO root fetch - processPackages [mama]: Downloading https://files.pythonhosted.org/packages/ab/38/c41c90c62bbdafa900ef75fccb1a6dc925a6666d203d5d29cc749481d652/mama-0.7.9.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx]: Downloading https://files.pythonhosted.org/packages/d2/a1/56486e5bcbcca0de7abf68a0b37121ae768fd3f6cabc8d9e8bfb3a761c43/funcx-2.0.2a1.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-sdk]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/globus-compute-sdk-2.0.2a0.tar.gz tmp/globus-compute-sdk-2.0.2a1.tar.gz --markdown 20230509/g/globus-compute-sdk/2.0.2a0-2.0.2a1/diff.md --exclude *.pyd
+[2023-05-09 00:03:12] INFO root fetch - processPackages [slashml]: Downloading https://files.pythonhosted.org/packages/f1/53/c48349b284c96e06ca000d8a4dd204cb3b41e57fc1712549c5f8afedc3d5/slashml-0.1.2.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx-endpoint]: Downloading https://files.pythonhosted.org/packages/8c/88/73754b642662b6edf046e00860d641fd81d74f285517d24141bc3f89f5c4/funcx-endpoint-2.0.2a1.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-endpoint]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [globus-compute-endpoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/globus-compute-endpoint-2.0.2a0.tar.gz tmp/globus-compute-endpoint-2.0.2a1.tar.gz --markdown 20230509/g/globus-compute-endpoint/2.0.2a0-2.0.2a1/diff.md --exclude *.pyd
+[2023-05-09 00:03:12] INFO root fetch - processPackages [freshpy]: Downloading https://files.pythonhosted.org/packages/85/d4/53cb26de2a6835e372c62504de87b527c6e8fbccc41c27cc8286894f36de/freshpy-1.1.1.tar.gz
+[2023-05-09 00:03:12] INFO root fetch - processPackages [mama]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [mama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mama-0.7.7.tar.gz tmp/mama-0.7.9.tar.gz --markdown 20230509/m/mama/0.7.7-0.7.9/diff.md --exclude *.pyd
+[2023-05-09 00:03:12] INFO root fetch - processPackages [freshpy]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [freshpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freshpy-1.1.0b1.tar.gz tmp/freshpy-1.1.1.tar.gz --markdown 20230509/f/freshpy/1.1.0b1-1.1.1/diff.md --exclude *.pyd
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcx-2.0.2a0.tar.gz tmp/funcx-2.0.2a1.tar.gz --markdown 20230509/f/funcx/2.0.2a0-2.0.2a1/diff.md --exclude *.pyd
+[2023-05-09 00:03:12] INFO root fetch - processPackages [slashml]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [slashml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slashml-0.1.1.tar.gz tmp/slashml-0.1.2.tar.gz --markdown 20230509/s/slashml/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx-endpoint]: executing diffoscope
+[2023-05-09 00:03:12] INFO root fetch - processPackages [funcx-endpoint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcx-endpoint-2.0.2a0.tar.gz tmp/funcx-endpoint-2.0.2a1.tar.gz --markdown 20230509/f/funcx-endpoint/2.0.2a0-2.0.2a1/diff.md --exclude *.pyd
+[2023-05-09 00:03:14] INFO root fetch - processPackages [funcx-endpoint]: Start processing: jac-vision
+[2023-05-09 00:03:14] INFO root fetch - main [MainThread]: End processing [funcx-endpoint]: success
+[2023-05-09 00:03:14] INFO root fetch - processPackages [slashml]: Start processing: jaseci
+[2023-05-09 00:03:14] INFO root fetch - main [MainThread]: End processing [slashml]: success
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-vision]: New version: [1.4.0.9] Old Version: [1.4.0.8]
+[2023-05-09 00:03:14] INFO root fetch - processPackages [funcx]: Start processing: jac-nlp
+[2023-05-09 00:03:14] INFO root fetch - main [MainThread]: End processing [funcx]: success
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jaseci]: New version: [1.4.0.9] Old Version: [1.4.0.8]
+[2023-05-09 00:03:14] INFO root fetch - processPackages [globus-compute-endpoint]: Start processing: jac-speech
+[2023-05-09 00:03:14] INFO root fetch - main [MainThread]: End processing [globus-compute-endpoint]: success
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-nlp]: New version: [1.4.0.9] Old Version: [1.4.0.8]
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-vision]: Downloading https://files.pythonhosted.org/packages/37/29/1f486ac2a581711b4bcd46525454c7982acf909ac69cdbafa80e325b6fdd/jac_vision-1.4.0.8.tar.gz
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-speech]: New version: [1.4.0.9] Old Version: [1.4.0.8]
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jaseci]: Downloading https://files.pythonhosted.org/packages/c5/2e/51b94b822565a584d71eb0afeaea29bb70409df6426927e3e3f8ef998977/jaseci-1.4.0.8.tar.gz
+[2023-05-09 00:03:14] INFO root fetch - processPackages [freshpy]: Start processing: jac-misc
+[2023-05-09 00:03:14] INFO root fetch - main [MainThread]: End processing [freshpy]: success
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-nlp]: Downloading https://files.pythonhosted.org/packages/71/74/2eaf69faaa9e09ce411aa5c2bfdc9b73cdc93130fcbc403ed2d250d3c2f1/jac_nlp-1.4.0.8.tar.gz
+[2023-05-09 00:03:14] INFO root fetch - main [MainThread]: End processing [complex-curve-fit-gui]: success
+[2023-05-09 00:03:14] INFO root fetch - main [MainThread]: End processing [Pulse3D]: success
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-speech]: Downloading https://files.pythonhosted.org/packages/77/83/f87aed83614469610b0017c2c9d2305639589eb52b1a51190396c9b0d34b/jac_speech-1.4.0.8.tar.gz
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-misc]: New version: [1.4.0.9] Old Version: [1.4.0.8]
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-vision]: Downloading https://files.pythonhosted.org/packages/ec/96/cc4f2576036a4fb015a266a0fa017c1b17b13b96837df66add65fae31faa/jac_vision-1.4.0.9.tar.gz
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jaseci]: Downloading https://files.pythonhosted.org/packages/9f/3c/ab42161452fc8b5f5c5f481dd6e5e729908aa3e05dd3e5001983ffbb09cf/jaseci-1.4.0.9.tar.gz
+[2023-05-09 00:03:14] INFO root fetch - main [MainThread]: End processing [globus-compute-sdk]: success
+[2023-05-09 00:03:14] INFO root fetch - main [MainThread]: End processing [mama]: success
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-misc]: Downloading https://files.pythonhosted.org/packages/99/82/5d26254b49d8db1cd1c492554c30970c88f60cbfc5dbf9ed6d2ae4648ba3/jac_misc-1.4.0.8.tar.gz
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-vision]: executing diffoscope
+[2023-05-09 00:03:14] INFO root fetch - processPackages [jac-vision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jac_vision-1.4.0.8.tar.gz tmp/jac_vision-1.4.0.9.tar.gz --markdown 20230509/j/jac-vision/1.4.0.8-1.4.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jac-nlp]: Downloading https://files.pythonhosted.org/packages/f4/17/3dca80a03cabd5fff75bcfb56af2bb78b20b757814881cc451cbeac8bfcb/jac_nlp-1.4.0.9.tar.gz
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jaseci]: executing diffoscope
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jaseci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaseci-1.4.0.8.tar.gz tmp/jaseci-1.4.0.9.tar.gz --markdown 20230509/j/jaseci/1.4.0.8-1.4.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jac-speech]: Downloading https://files.pythonhosted.org/packages/a3/0e/53fa907f625021a4ea24238ed23f6bbc0239a9455d42b14f7d998496c7ea/jac_speech-1.4.0.9.tar.gz
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jac-nlp]: executing diffoscope
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jac-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jac_nlp-1.4.0.8.tar.gz tmp/jac_nlp-1.4.0.9.tar.gz --markdown 20230509/j/jac-nlp/1.4.0.8-1.4.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jac-speech]: executing diffoscope
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jac-speech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jac_speech-1.4.0.8.tar.gz tmp/jac_speech-1.4.0.9.tar.gz --markdown 20230509/j/jac-speech/1.4.0.8-1.4.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jac-misc]: Downloading https://files.pythonhosted.org/packages/06/96/1e695cfb5574e6e8de6c536d19faa5326041c5b6fab9cccff1959303f129/jac_misc-1.4.0.9.tar.gz
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jac-misc]: executing diffoscope
+[2023-05-09 00:03:15] INFO root fetch - processPackages [jac-misc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jac_misc-1.4.0.8.tar.gz tmp/jac_misc-1.4.0.9.tar.gz --markdown 20230509/j/jac-misc/1.4.0.8-1.4.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:03:16] INFO root fetch - main [MainThread]: End processing [jac-vision]: success
+[2023-05-09 00:03:16] INFO root fetch - main [MainThread]: End processing [jac-speech]: success
+[2023-05-09 00:03:16] INFO root fetch - main [MainThread]: End processing [jac-misc]: success
+[2023-05-09 00:03:16] INFO root fetch - main [MainThread]: End processing [jaseci]: success
+[2023-05-09 00:03:18] INFO root fetch - main [MainThread]: End processing [animo-trainer]: success
+[2023-05-09 00:03:18] INFO root fetch - main [MainThread]: End processing [jac-nlp]: success
+[2023-05-09 00:03:18] INFO root fetch - main [MainThread]: Store serial: [18023043]
