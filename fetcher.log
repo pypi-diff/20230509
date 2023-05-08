@@ -105,3 +105,71 @@
 [2023-05-09 00:03:18] INFO root fetch - main [MainThread]: End processing [animo-trainer]: success
 [2023-05-09 00:03:18] INFO root fetch - main [MainThread]: End processing [jac-nlp]: success
 [2023-05-09 00:03:18] INFO root fetch - main [MainThread]: Store serial: [18023043]
+[2023-05-09 00:08:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023043]
+[2023-05-09 00:08:27] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaseci-serv
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: discoger
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: les-louisdelatech
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: livesolid
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kgcl-schema
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ib110hw
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nsdotpy
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: djlint
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyncette
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: certora-cli-alpha-eric-kotlin1.8
+[2023-05-09 00:08:27] INFO root fetch - processPackages [les-louisdelatech]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-09 00:08:27] INFO root fetch - processPackages [discoger]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-09 00:08:27] INFO root fetch - processPackages [kgcl-schema]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-09 00:08:27] INFO root fetch - processPackages [livesolid]: New version: [0.0.6] Old Version: [0.0.4]
+[2023-05-09 00:08:27] INFO root fetch - processPackages [nsdotpy]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-09 00:08:27] INFO root fetch - processPackages [certora-cli-alpha-eric-kotlin1.8]: New version: [20230508.21.16.928990] Old Version: [20230508.20.7.741514]
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ib110hw]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 00:08:27] INFO root fetch - processPackages [jaseci-serv]: New version: [1.4.0.9] Old Version: [1.4.0.8]
+[2023-05-09 00:08:27] INFO root fetch - processPackages [djlint]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-09 00:08:27] INFO root fetch - processPackages [certora-cli-alpha-eric-kotlin1.8]: Downloading https://files.pythonhosted.org/packages/c9/37/f0aed573147f320677efac735ebb2d0019ecf5415d0883d2cb94fbc4c452/certora-cli-alpha-eric-kotlin1.8-20230508.20.7.741514.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [pyncette]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-09 00:08:27] WARNING root fetch - processPackages [certora-cli-alpha-eric-kotlin1.8]: Skipping package: exceeds size limit 39212434>=10485760
+[2023-05-09 00:08:27] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-kotlin1.8] error
+[2023-05-09 00:08:27] INFO root fetch - processPackages [djlint]: executing diffoscope
+[2023-05-09 00:08:27] INFO root fetch - processPackages [djlint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djlint-1.9.4.tar.gz tmp/djlint-1.9.5.tar.gz --markdown 20230509/d/djlint/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-09 00:08:27] INFO root fetch - processPackages [les-louisdelatech]: Downloading https://files.pythonhosted.org/packages/d7/b3/95a12e4d1288cebe262f2b2471e5735f79c7602d57b65a8b142c81b9e845/les-louisdelatech-0.2.2.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [livesolid]: Downloading https://files.pythonhosted.org/packages/ed/dc/80ab13ec1970b6410058a633b7fb42c01e56ef8b22a5bb246f4237c21e09/livesolid-0.0.4.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ib110hw]: Downloading https://files.pythonhosted.org/packages/47/ba/dfb3d442a3760a6c7da83f742f8a8218692fc3d70fcc1087e3ccd529fc33/ib110hw-0.1.4.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [kgcl-schema]: Downloading https://files.pythonhosted.org/packages/a2/9b/44d945bf1fa505d5be0f76f57ca309756d1d5265e58d3f907b9994ebe689/kgcl_schema-0.3.6.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [jaseci-serv]: Downloading https://files.pythonhosted.org/packages/54/cb/40cac007acb8c32addc02c946bfb5a30e334c7e6cc4d7011739bfbffe8b5/jaseci_serv-1.4.0.8.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [discoger]: Downloading https://files.pythonhosted.org/packages/03/f5/3c488d1ccd5db6a0799af89a03a97fd942e29229cc436e03879701700aad/discoger-1.1.5.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [nsdotpy]: Downloading https://files.pythonhosted.org/packages/5f/29/0e7f8448325a18c28ad3ba4e505277621ce453aa7dff3f4ced1b33da52f0/nsdotpy-1.2.0.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [pyncette]: Downloading https://files.pythonhosted.org/packages/38/5c/065c69e45683908abedd2c9ea8153f8844d3b78c5cf87f6d01984be8e8fc/pyncette-0.8.1.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [discoger]: executing diffoscope
+[2023-05-09 00:08:27] INFO root fetch - processPackages [discoger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discoger-1.1.4.tar.gz tmp/discoger-1.1.5.tar.gz --markdown 20230509/d/discoger/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-09 00:08:27] INFO root fetch - processPackages [livesolid]: Downloading https://files.pythonhosted.org/packages/8f/74/2d164b6ba03dfbe21e5ce80b5c21837aa498f9afa5cdc1c33324aeeff0c2/livesolid-0.0.6.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ib110hw]: Downloading https://files.pythonhosted.org/packages/b1/e1/c1e7188dc828ab219fb62a234dd7eff4979bfb9d4a8e7e8ae5ac878cac0d/ib110hw-0.1.5.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [nsdotpy]: Downloading https://files.pythonhosted.org/packages/b2/e3/33d2899a9955a903c3993e2e295f80504faacd7e32900968934de21ed866/nsdotpy-1.2.1.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [livesolid]: executing diffoscope
+[2023-05-09 00:08:27] INFO root fetch - processPackages [livesolid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/livesolid-0.0.4.tar.gz tmp/livesolid-0.0.6.tar.gz --markdown 20230509/l/livesolid/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 00:08:27] INFO root fetch - processPackages [les-louisdelatech]: Downloading https://files.pythonhosted.org/packages/47/84/2b72b11b18b1bd016cf07056840281ffd3558bf6ae74503f3ef62656fc85/les_louisdelatech-0.3.0.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [kgcl-schema]: Downloading https://files.pythonhosted.org/packages/7b/62/025a00bf8b5be8ebcc27f47cf9d04f2dbe908cce7ef450811f1b0472a134/kgcl_schema-0.3.7.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ib110hw]: executing diffoscope
+[2023-05-09 00:08:27] INFO root fetch - processPackages [ib110hw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ib110hw-0.1.4.tar.gz tmp/ib110hw-0.1.5.tar.gz --markdown 20230509/i/ib110hw/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 00:08:27] INFO root fetch - processPackages [nsdotpy]: executing diffoscope
+[2023-05-09 00:08:27] INFO root fetch - processPackages [nsdotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdotpy-1.2.0.tar.gz tmp/nsdotpy-1.2.1.tar.gz --markdown 20230509/n/nsdotpy/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-09 00:08:27] INFO root fetch - processPackages [jaseci-serv]: Downloading https://files.pythonhosted.org/packages/b7/3b/4718f4f4f08e2adc57da5321d6f3729f207a6f35fb7b06ff6889a4ec2ffd/jaseci_serv-1.4.0.9.tar.gz
+[2023-05-09 00:08:27] INFO root fetch - processPackages [les-louisdelatech]: executing diffoscope
+[2023-05-09 00:08:27] INFO root fetch - processPackages [les-louisdelatech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/les-louisdelatech-0.2.2.tar.gz tmp/les_louisdelatech-0.3.0.tar.gz --markdown 20230509/l/les-louisdelatech/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 00:08:28] INFO root fetch - processPackages [kgcl-schema]: executing diffoscope
+[2023-05-09 00:08:28] INFO root fetch - processPackages [kgcl-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgcl_schema-0.3.6.tar.gz tmp/kgcl_schema-0.3.7.tar.gz --markdown 20230509/k/kgcl-schema/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-09 00:08:28] INFO root fetch - processPackages [pyncette]: Downloading https://files.pythonhosted.org/packages/3f/c0/63437229e68bd55cb87749f167397ad69df69353704d8cfe73f290b68468/pyncette-0.9.0.tar.gz
+[2023-05-09 00:08:28] INFO root fetch - processPackages [jaseci-serv]: executing diffoscope
+[2023-05-09 00:08:28] INFO root fetch - processPackages [jaseci-serv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaseci_serv-1.4.0.8.tar.gz tmp/jaseci_serv-1.4.0.9.tar.gz --markdown 20230509/j/jaseci-serv/1.4.0.8-1.4.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:08:28] INFO root fetch - processPackages [pyncette]: executing diffoscope
+[2023-05-09 00:08:28] INFO root fetch - processPackages [pyncette]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyncette-0.8.1.tar.gz tmp/pyncette-0.9.0.tar.gz --markdown 20230509/p/pyncette/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [livesolid]: success
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [nsdotpy]: success
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [ib110hw]: success
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [kgcl-schema]: success
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [djlint]: success
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [les-louisdelatech]: success
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [discoger]: success
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [pyncette]: success
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [jaseci-serv]: success
+[2023-05-09 00:08:29] INFO root fetch - main [MainThread]: Store serial: [18023074]
