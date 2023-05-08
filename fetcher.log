@@ -173,3 +173,43 @@
 [2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [pyncette]: success
 [2023-05-09 00:08:29] INFO root fetch - main [MainThread]: End processing [jaseci-serv]: success
 [2023-05-09 00:08:29] INFO root fetch - main [MainThread]: Store serial: [18023074]
+[2023-05-09 00:13:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023074]
+[2023-05-09 00:13:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-09 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: videogestalt
+[2023-05-09 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wtt02
+[2023-05-09 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maverage
+[2023-05-09 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: s3dbm
+[2023-05-09 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyqodeng
+[2023-05-09 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: harlequin
+[2023-05-09 00:13:38] INFO root fetch - processPackages [pyqodeng]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 00:13:38] INFO root fetch - processPackages [harlequin]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-09 00:13:38] WARNING root fetch - processPackages [maverage]: Skipping, unable to determine old version
+[2023-05-09 00:13:38] INFO root fetch - processPackages [s3dbm]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-09 00:13:38] INFO root fetch - main [MainThread]: End processing [maverage] error
+[2023-05-09 00:13:38] INFO root fetch - processPackages [videogestalt]: New version: [0.2.4] Old Version: [0.2.3a0]
+[2023-05-09 00:13:38] INFO root fetch - processPackages [wtt02]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-09 00:13:38] INFO root fetch - processPackages [pyqodeng]: Downloading https://files.pythonhosted.org/packages/00/a2/becd415069093837a259dc6be98dd4dbe1a4c518abb86c12339cd4fd3ebb/pyqodeng-0.0.8.tar.gz
+[2023-05-09 00:13:38] INFO root fetch - processPackages [harlequin]: Downloading https://files.pythonhosted.org/packages/6a/27/e78fe8e9d3b450c4d5be648b2a46da4044eae907bb3f41ab0aba577807a4/harlequin-0.0.4.tar.gz
+[2023-05-09 00:13:38] INFO root fetch - processPackages [wtt02]: Downloading https://files.pythonhosted.org/packages/62/b0/8353ea33a51398db18a02a9a968adf54750374abd74c9239a9fd046213f7/wtt02-0.3.6.tar.gz
+[2023-05-09 00:13:38] INFO root fetch - processPackages [videogestalt]: Downloading https://files.pythonhosted.org/packages/2d/b4/daf0c59c098eb845ae85740b320b4af0917ac5c29a3634c30785a36283b6/videogestalt-0.2.3a0.tar.gz
+[2023-05-09 00:13:38] INFO root fetch - processPackages [s3dbm]: Downloading https://files.pythonhosted.org/packages/4a/7a/f7ae90702d3fe21aa6e63751e521a52341aa91c670f83788d9169036070f/s3dbm-0.0.6.tar.gz
+[2023-05-09 00:13:38] INFO root fetch - processPackages [s3dbm]: executing diffoscope
+[2023-05-09 00:13:38] INFO root fetch - processPackages [s3dbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s3dbm-0.0.5.tar.gz tmp/s3dbm-0.0.6.tar.gz --markdown 20230509/s/s3dbm/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 00:13:38] INFO root fetch - processPackages [wtt02]: Downloading https://files.pythonhosted.org/packages/2a/14/75c819b9324bb5a905d40f1c9383ae90d882c32ed99aa6ef135ff182eaca/wtt02-0.3.7.tar.gz
+[2023-05-09 00:13:38] INFO root fetch - processPackages [videogestalt]: Downloading https://files.pythonhosted.org/packages/9b/39/531bfab4c48e5c7373fa3dc91af7a541e7609746bb0f8d0f1a85aa7de4a3/videogestalt-0.2.4.tar.gz
+[2023-05-09 00:13:38] INFO root fetch - processPackages [pyqodeng]: Downloading https://files.pythonhosted.org/packages/f6/d5/ff576b9194292211c33eead1175700686b883c828c5fa0afccb14285c3f4/pyqodeng-0.0.9.tar.gz
+[2023-05-09 00:13:39] INFO root fetch - processPackages [harlequin]: Downloading https://files.pythonhosted.org/packages/b2/cf/4a2e7c445fd15696da52f6ceeab18ac0543215a4cab545f62c9994e2f311/harlequin-0.0.5.tar.gz
+[2023-05-09 00:13:39] INFO root fetch - processPackages [wtt02]: executing diffoscope
+[2023-05-09 00:13:39] INFO root fetch - processPackages [wtt02]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtt02-0.3.6.tar.gz tmp/wtt02-0.3.7.tar.gz --markdown 20230509/w/wtt02/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-09 00:13:39] INFO root fetch - processPackages [videogestalt]: executing diffoscope
+[2023-05-09 00:13:39] INFO root fetch - processPackages [videogestalt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/videogestalt-0.2.3a0.tar.gz tmp/videogestalt-0.2.4.tar.gz --markdown 20230509/v/videogestalt/0.2.3a0-0.2.4/diff.md --exclude *.pyd
+[2023-05-09 00:13:39] INFO root fetch - processPackages [pyqodeng]: executing diffoscope
+[2023-05-09 00:13:39] INFO root fetch - processPackages [pyqodeng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqodeng-0.0.8.tar.gz tmp/pyqodeng-0.0.9.tar.gz --markdown 20230509/p/pyqodeng/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 00:13:39] INFO root fetch - processPackages [harlequin]: executing diffoscope
+[2023-05-09 00:13:39] INFO root fetch - processPackages [harlequin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harlequin-0.0.4.tar.gz tmp/harlequin-0.0.5.tar.gz --markdown 20230509/h/harlequin/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 00:13:40] INFO root fetch - main [MainThread]: End processing [wtt02]: success
+[2023-05-09 00:13:40] INFO root fetch - main [MainThread]: End processing [videogestalt]: success
+[2023-05-09 00:13:40] INFO root fetch - main [MainThread]: End processing [harlequin]: success
+[2023-05-09 00:13:40] INFO root fetch - main [MainThread]: End processing [s3dbm]: success
+[2023-05-09 00:13:41] INFO root fetch - main [MainThread]: End processing [pyqodeng]: success
+[2023-05-09 00:13:41] INFO root fetch - main [MainThread]: Store serial: [18023094]
