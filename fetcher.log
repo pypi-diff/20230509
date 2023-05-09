@@ -21908,3 +21908,136 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 19:30:46] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-05-09 19:30:47] INFO root fetch - main [MainThread]: End processing [bycon]: success
 [2023-05-09 19:30:47] INFO root fetch - main [MainThread]: Store serial: [18035484]
+[2023-05-09 19:35:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18035484]
+[2023-05-09 19:35:57] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sagemaker
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emr-cli
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydra-fsl
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nucliadb
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nucliadb-client
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: garatool
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nucliadb-dataset
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nucliadb-models
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nucliadb-protos
+[2023-05-09 19:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pysfa
+[2023-05-09 19:35:57] INFO root fetch - processPackages [pydra-fsl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [emr-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb]: New version: [2.8.5.post252] Old Version: [2.8.5.post249]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-client]: New version: [2.8.5.post252] Old Version: [2.8.5.post249]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [pysfa]: New version: [0.4] Old Version: [0.3]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [garatool]: New version: [0.1683653555.0] Old Version: [0.1683653464.0]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [sagemaker]: New version: [2.99.0] Old Version: [2.98.0]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-dataset]: New version: [2.8.5.post252] Old Version: [2.8.5.post249]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-protos]: New version: [2.8.5.post252] Old Version: [2.8.5.post249]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-models]: New version: [2.8.5.post252] Old Version: [2.8.5.post249]
+[2023-05-09 19:35:57] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/56/0f/7cbf1296cebd9ac1b7e806f980b2c247fa30bffc6c4eba64480efcc7823f/garatool-0.1683653464.0.tar.gz
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-dataset]: Downloading https://files.pythonhosted.org/packages/95/f5/ca8d1d8516d67e12a35b2b7ae3b186e8d09f39597aa37048356c96e6a3fa/nucliadb_dataset-2.8.5.post252-py3-none-any.whl
+[2023-05-09 19:35:57] INFO root fetch - processPackages [emr-cli]: Downloading https://files.pythonhosted.org/packages/57/aa/f25811c10a6e0647b87323f3140c463a8357cb004f5292599a140b279293/emr_cli-0.0.8.tar.gz
+[2023-05-09 19:35:57] INFO root fetch - processPackages [pydra-fsl]: Downloading https://files.pythonhosted.org/packages/a3/0e/6763eeba5bb3375298fc7519ac1d8d63117462e51e9969ddf2a285b4d126/pydra_fsl-0.0.8.tar.gz
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb]: Downloading https://files.pythonhosted.org/packages/fb/57/39ee36645ef39a0aaf4135db39f1678b4df24389c6beedfa5dd124e80aec/nucliadb-2.8.5.post252-py3-none-any.whl
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-client]: Downloading https://files.pythonhosted.org/packages/62/3d/90ef96c55e449b779b3525f56d15939f093ed6de5c970c818514aa0f6056/nucliadb_client-2.8.5.post252-py3-none-any.whl
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-models]: Downloading https://files.pythonhosted.org/packages/b2/1a/c12ba83e3a35c4dfa82379a79ae314a1867956f7bf28c364f765cf4bf7be/nucliadb_models-2.8.5.post252-py3-none-any.whl
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-protos]: Downloading https://files.pythonhosted.org/packages/87/68/55fb2a28a7930e33d8efa5af14cb1f1e633b1ecc28b6f809fa5f9f0af403/nucliadb_protos-2.8.5.post252-py3-none-any.whl
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-dataset]: executing diffoscope
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_dataset-2.8.5.post249-py3-none-any.whl.zip tmp/nucliadb_dataset-2.8.5.post252-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-dataset/2.8.5.post249-2.8.5.post252/diff.md --exclude *.pyd
+[2023-05-09 19:35:57] INFO root fetch - processPackages [sagemaker]: Downloading https://files.pythonhosted.org/packages/22/dd/adc439c8040ceb2a14d8d72110638d79775925a88e7e3925ee7a87333551/sagemaker-2.98.0.tar.gz
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-client]: executing diffoscope
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_client-2.8.5.post249-py3-none-any.whl.zip tmp/nucliadb_client-2.8.5.post252-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-client/2.8.5.post249-2.8.5.post252/diff.md --exclude *.pyd
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb]: executing diffoscope
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb-2.8.5.post249-py3-none-any.whl.zip tmp/nucliadb-2.8.5.post252-py3-none-any.whl.zip --markdown 20230509/n/nucliadb/2.8.5.post249-2.8.5.post252/diff.md --exclude *.pyd
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-models]: executing diffoscope
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_models-2.8.5.post249-py3-none-any.whl.zip tmp/nucliadb_models-2.8.5.post252-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-models/2.8.5.post249-2.8.5.post252/diff.md --exclude *.pyd
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-protos]: executing diffoscope
+[2023-05-09 19:35:57] INFO root fetch - processPackages [nucliadb-protos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_protos-2.8.5.post249-py3-none-any.whl.zip tmp/nucliadb_protos-2.8.5.post252-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-protos/2.8.5.post249-2.8.5.post252/diff.md --exclude *.pyd
+[2023-05-09 19:35:57] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/af/0f/72118ca110ea180cd70fa21a155e2c35471105a39fdc2b602f7d51ac6cb8/garatool-0.1683653555.0.tar.gz
+[2023-05-09 19:35:57] INFO root fetch - processPackages [pysfa]: Downloading https://files.pythonhosted.org/packages/4d/91/d138c239005b3f3a25c661031cdf162e9259cd416d9203c463692a380959/pysfa-0.4.tar.gz
+[2023-05-09 19:35:57] INFO root fetch - processPackages [emr-cli]: Downloading https://files.pythonhosted.org/packages/1e/2d/1b63e3c460cac416ae146ba0ecf025caf042b44a4b337519dd04fca516cc/emr_cli-0.0.9.tar.gz
+[2023-05-09 19:35:58] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 19:35:58] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683653464.0.tar.gz tmp/garatool-0.1683653555.0.tar.gz --markdown 20230509/g/garatool/0.1683653464.0-0.1683653555.0/diff.md --exclude *.pyd
+[2023-05-09 19:35:58] INFO root fetch - processPackages [pysfa]: executing diffoscope
+[2023-05-09 19:35:58] INFO root fetch - processPackages [pysfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysfa-0.3.tar.gz tmp/pysfa-0.4.tar.gz --markdown 20230509/p/pysfa/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-09 19:35:58] INFO root fetch - processPackages [emr-cli]: executing diffoscope
+[2023-05-09 19:35:58] INFO root fetch - processPackages [emr-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emr_cli-0.0.8.tar.gz tmp/emr_cli-0.0.9.tar.gz --markdown 20230509/e/emr-cli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 19:35:58] INFO root fetch - processPackages [pydra-fsl]: Downloading https://files.pythonhosted.org/packages/01/95/5681f06f697e05dd675fd56473ea56f5b4a9a90862261bc27fe200af5c30/pydra_fsl-0.0.9.tar.gz
+[2023-05-09 19:35:58] INFO root fetch - processPackages [sagemaker]: Downloading https://files.pythonhosted.org/packages/a1/4b/c6dcd8ae0e0f163c7938e1fee17da72be71aac4347c044a5a52f21a850a6/sagemaker-2.99.0.tar.gz
+[2023-05-09 19:35:58] INFO root fetch - processPackages [pydra-fsl]: executing diffoscope
+[2023-05-09 19:35:58] INFO root fetch - processPackages [pydra-fsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydra_fsl-0.0.8.tar.gz tmp/pydra_fsl-0.0.9.tar.gz --markdown 20230509/p/pydra-fsl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 19:35:58] INFO root fetch - processPackages [sagemaker]: executing diffoscope
+[2023-05-09 19:35:58] INFO root fetch - processPackages [sagemaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemaker-2.98.0.tar.gz tmp/sagemaker-2.99.0.tar.gz --markdown 20230509/s/sagemaker/2.98.0-2.99.0/diff.md --exclude *.pyd
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-dataset]: Start processing: nucliadb-sdk
+[2023-05-09 19:35:59] INFO root fetch - main [MainThread]: End processing [nucliadb-dataset]: success
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-sdk]: New version: [2.8.5.post252] Old Version: [2.8.5.post249]
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-client]: Start processing: nucliadb-utils
+[2023-05-09 19:35:59] INFO root fetch - main [MainThread]: End processing [nucliadb-client]: success
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-utils]: New version: [2.8.5.post252] Old Version: [2.8.5.post249]
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-models]: Start processing: bit-field
+[2023-05-09 19:35:59] INFO root fetch - main [MainThread]: End processing [nucliadb-models]: success
+[2023-05-09 19:35:59] INFO root fetch - processPackages [bit-field]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-sdk]: Downloading https://files.pythonhosted.org/packages/29/5e/456b4a370150eccdca79cefb46db14e1855f9639c5ff913c948a0cc09559/nucliadb_sdk-2.8.5.post252-py3-none-any.whl
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-sdk]: executing diffoscope
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_sdk-2.8.5.post249-py3-none-any.whl.zip tmp/nucliadb_sdk-2.8.5.post252-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-sdk/2.8.5.post249-2.8.5.post252/diff.md --exclude *.pyd
+[2023-05-09 19:35:59] INFO root fetch - processPackages [garatool]: Start processing: mage-ai
+[2023-05-09 19:35:59] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 19:35:59] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-05-09 19:35:59] INFO root fetch - processPackages [pysfa]: Start processing: garatool
+[2023-05-09 19:35:59] INFO root fetch - main [MainThread]: End processing [pysfa]: success
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-utils]: Downloading https://files.pythonhosted.org/packages/32/b6/8d393f1d0d0d43c59812f584b25cc76e82dda6b864f1387a94a8111e1dd9/nucliadb_utils-2.8.5.post252-py3-none-any.whl
+[2023-05-09 19:35:59] INFO root fetch - processPackages [bit-field]: Downloading https://files.pythonhosted.org/packages/10/57/7cd9318081a4e194e972a023aaa4b209c7e580a72341e6b1c4550d44f18f/bit_field-1.0.1.tar.gz
+[2023-05-09 19:35:59] INFO root fetch - processPackages [garatool]: New version: [0.1683653555.0] Old Version: [0.1683653464.0]
+[2023-05-09 19:35:59] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-05-09 19:35:59] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230509/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-utils]: executing diffoscope
+[2023-05-09 19:35:59] INFO root fetch - processPackages [nucliadb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_utils-2.8.5.post249-py3-none-any.whl.zip tmp/nucliadb_utils-2.8.5.post252-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-utils/2.8.5.post249-2.8.5.post252/diff.md --exclude *.pyd
+[2023-05-09 19:35:59] INFO root fetch - processPackages [bit-field]: executing diffoscope
+[2023-05-09 19:35:59] INFO root fetch - processPackages [bit-field]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bit_field-1.0.0.tar.gz tmp/bit_field-1.0.1.tar.gz --markdown 20230509/b/bit-field/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 19:35:59] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 19:35:59] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683653464.0.tar.gz tmp/garatool-0.1683653555.0.tar.gz --markdown 20230509/g/garatool/0.1683653464.0-0.1683653555.0/diff.md --exclude *.pyd
+[2023-05-09 19:36:00] INFO root fetch - processPackages [nucliadb-protos]: Start processing: niceplots
+[2023-05-09 19:36:00] INFO root fetch - main [MainThread]: End processing [nucliadb-protos]: success
+[2023-05-09 19:36:00] INFO root fetch - processPackages [niceplots]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-05-09 19:36:00] INFO root fetch - processPackages [pydra-fsl]: Start processing: lmanage
+[2023-05-09 19:36:00] INFO root fetch - main [MainThread]: End processing [pydra-fsl]: success
+[2023-05-09 19:36:00] INFO root fetch - processPackages [lmanage]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-05-09 19:36:00] INFO root fetch - processPackages [emr-cli]: Start processing: blindai
+[2023-05-09 19:36:00] INFO root fetch - main [MainThread]: End processing [emr-cli]: success
+[2023-05-09 19:36:00] INFO root fetch - processPackages [blindai]: New version: [0.6.2] Old Version: [0.6.1.post2]
+[2023-05-09 19:36:00] INFO root fetch - processPackages [lmanage]: Downloading https://files.pythonhosted.org/packages/06/01/291b16f862c076ce7d41e568a3165866abb01450ba80b6365c2333644291/lmanage-0.3.8.tar.gz
+[2023-05-09 19:36:00] INFO root fetch - processPackages [lmanage]: executing diffoscope
+[2023-05-09 19:36:00] INFO root fetch - processPackages [lmanage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmanage-0.3.7.tar.gz tmp/lmanage-0.3.8.tar.gz --markdown 20230509/l/lmanage/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-05-09 19:36:00] INFO root fetch - processPackages [niceplots]: Downloading https://files.pythonhosted.org/packages/89/7f/f6eb58cb399b0b4e2fee8464094f684100c6cd71fefc071385d3920cea60/niceplots-2.2.0-py3-none-any.whl
+[2023-05-09 19:36:00] INFO root fetch - processPackages [blindai]: Downloading https://files.pythonhosted.org/packages/9e/cc/5fb3e56b0fa7e770b6140bc15d8053f9f325f4b26b9b47b26f66ed589a60/blindai-0.6.1.post2.tar.gz
+[2023-05-09 19:36:00] INFO root fetch - processPackages [blindai]: Downloading https://files.pythonhosted.org/packages/cc/81/f8faa5d59c0b0ae84d1951e13c335fbe007b6f517266ca83e7f7d05613e3/blindai-0.6.2.tar.gz
+[2023-05-09 19:36:00] INFO root fetch - processPackages [niceplots]: Downloading https://files.pythonhosted.org/packages/36/84/d84866b348c93b645234a88548a5a052b511275d0d2afe493c3903d2998c/niceplots-2.3.0-py3-none-any.whl
+[2023-05-09 19:36:00] INFO root fetch - processPackages [blindai]: executing diffoscope
+[2023-05-09 19:36:00] INFO root fetch - processPackages [blindai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blindai-0.6.1.post2.tar.gz tmp/blindai-0.6.2.tar.gz --markdown 20230509/b/blindai/0.6.1.post2-0.6.2/diff.md --exclude *.pyd
+[2023-05-09 19:36:01] INFO root fetch - processPackages [niceplots]: executing diffoscope
+[2023-05-09 19:36:01] INFO root fetch - processPackages [niceplots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/niceplots-2.2.0-py3-none-any.whl.zip tmp/niceplots-2.3.0-py3-none-any.whl.zip --markdown 20230509/n/niceplots/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-05-09 19:36:01] INFO root fetch - processPackages [nucliadb-sdk]: Start processing: spgci
+[2023-05-09 19:36:01] INFO root fetch - main [MainThread]: End processing [nucliadb-sdk]: success
+[2023-05-09 19:36:01] INFO root fetch - processPackages [spgci]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 19:36:01] INFO root fetch - processPackages [bit-field]: Start processing: moto
+[2023-05-09 19:36:01] INFO root fetch - main [MainThread]: End processing [bit-field]: success
+[2023-05-09 19:36:01] INFO root fetch - processPackages [moto]: New version: [4.1.9.dev9] Old Version: [4.1.9.dev8]
+[2023-05-09 19:36:01] INFO root fetch - processPackages [garatool]: Start processing: genochain
+[2023-05-09 19:36:01] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 19:36:01] INFO root fetch - processPackages [spgci]: Downloading https://files.pythonhosted.org/packages/94/45/63c272c3047fc87580751c2c1a49b2da6ca31f87cc36d2bc52d285a37e6e/spgci-0.0.8.tar.gz
+[2023-05-09 19:36:01] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-05-09 19:36:01] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.9.dev8.tar.gz tmp/moto-4.1.9.dev9.tar.gz --markdown 20230509/m/moto/4.1.9.dev8-4.1.9.dev9/diff.md --exclude *.pyd
+[2023-05-09 19:36:01] INFO root fetch - processPackages [genochain]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-09 19:36:01] INFO root fetch - processPackages [genochain]: Downloading https://files.pythonhosted.org/packages/ed/78/932839f02421737397313b9b2329858e1f17f5c38da75554e14080a173b8/genochain-0.0.5.tar.gz
+[2023-05-09 19:36:02] INFO root fetch - processPackages [genochain]: executing diffoscope
+[2023-05-09 19:36:02] INFO root fetch - processPackages [genochain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genochain-0.0.4.tar.gz tmp/genochain-0.0.5.tar.gz --markdown 20230509/g/genochain/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 19:36:02] INFO root fetch - main [MainThread]: End processing [nucliadb-utils]: success
+[2023-05-09 19:36:02] INFO root fetch - processPackages [spgci]: Downloading https://files.pythonhosted.org/packages/23/ee/39b2ba24bbc6531d21d8a2b5f11bb25fc3a49c25079a5859d7b25ba914d0/spgci-0.0.9.tar.gz
+[2023-05-09 19:36:02] INFO root fetch - main [MainThread]: End processing [nucliadb]: success
+[2023-05-09 19:36:02] INFO root fetch - processPackages [spgci]: executing diffoscope
+[2023-05-09 19:36:02] INFO root fetch - processPackages [spgci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spgci-0.0.8.tar.gz tmp/spgci-0.0.9.tar.gz --markdown 20230509/s/spgci/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 19:36:02] INFO root fetch - main [MainThread]: End processing [niceplots]: success
+[2023-05-09 19:36:02] INFO root fetch - main [MainThread]: End processing [blindai]: success
+[2023-05-09 19:36:02] INFO root fetch - main [MainThread]: End processing [lmanage]: success
+[2023-05-09 19:36:03] INFO root fetch - main [MainThread]: End processing [sagemaker]: success
+[2023-05-09 19:36:03] INFO root fetch - main [MainThread]: End processing [genochain]: success
+[2023-05-09 19:36:03] INFO root fetch - main [MainThread]: End processing [spgci]: success
+[2023-05-09 19:36:13] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-05-09 19:36:34] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-05-09 19:36:34] INFO root fetch - main [MainThread]: Store serial: [18035538]
