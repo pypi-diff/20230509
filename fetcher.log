@@ -13461,3 +13461,115 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 11:35:53] INFO root fetch - main [MainThread]: End processing [wc-django-envoyer]: success
 [2023-05-09 11:35:53] INFO root fetch - main [MainThread]: End processing [tala]: success
 [2023-05-09 11:35:53] INFO root fetch - main [MainThread]: Store serial: [18030183]
+[2023-05-09 11:40:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18030183]
+[2023-05-09 11:41:02] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyxk
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inductiva
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: emgregs
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: KeyboardPaster
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: telebot-against-war
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: plotly-resampler
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gcscore
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bambooai
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ckanext-iiif
+[2023-05-09 11:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: alibabacloud-ros-tran
+[2023-05-09 11:41:02] INFO root fetch - processPackages [inductiva]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 11:41:02] INFO root fetch - processPackages [gcscore]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 11:41:02] INFO root fetch - processPackages [KeyboardPaster]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 11:41:02] INFO root fetch - processPackages [emgregs]: New version: [0.0.5] Old Version: [0.0.4.dev0]
+[2023-05-09 11:41:02] INFO root fetch - processPackages [pyxk]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-09 11:41:03] INFO root fetch - processPackages [alibabacloud-ros-tran]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-09 11:41:03] INFO root fetch - processPackages [plotly-resampler]: New version: [0.9.0rc1] Old Version: [0.9.0rc0]
+[2023-05-09 11:41:03] INFO root fetch - processPackages [bambooai]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-09 11:41:03] INFO root fetch - processPackages [gcscore]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [gcscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcscore-0.0.8.tar.gz tmp/gcscore-0.0.9.tar.gz --markdown 20230509/g/gcscore/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 11:41:03] INFO root fetch - processPackages [ckanext-iiif]: New version: [3.0.8] Old Version: [3.0.7]
+[2023-05-09 11:41:03] INFO root fetch - processPackages [telebot-against-war]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-05-09 11:41:03] INFO root fetch - processPackages [KeyboardPaster]: Downloading https://files.pythonhosted.org/packages/1f/70/b64f581e741170f69ae06109e2dedd3770a0c66b54850e8838f6ace8d5e9/KeyboardPaster-0.1.0.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [plotly-resampler]: Downloading https://files.pythonhosted.org/packages/8b/e4/cd7452ed2b8dae5b63768f0484d810783213869687f39d24f928b0c71e13/plotly_resampler-0.9.0rc0.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [alibabacloud-ros-tran]: Downloading https://files.pythonhosted.org/packages/c4/65/49d1898400e031ab7fcfb352f31fee67b468954c33e0725c56cfad552fe3/alibabacloud-ros-tran-0.3.8.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [inductiva]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [inductiva]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inductiva-0.0.8.tar.gz tmp/inductiva-0.0.9.tar.gz --markdown 20230509/i/inductiva/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 11:41:03] INFO root fetch - processPackages [emgregs]: Downloading https://files.pythonhosted.org/packages/8d/51/7266ae751a445049af492d73d48736e937440393a676f21486c2af13e90e/emgregs-0.0.4.dev0.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [telebot-against-war]: Downloading https://files.pythonhosted.org/packages/08/35/d356dfe11f23e345cc57fa932c1afbd8c2ccc7a365ac69a1a3d52cc6e437/telebot_against_war-0.6.3.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [ckanext-iiif]: Downloading https://files.pythonhosted.org/packages/94/45/fcbd2782f0462b314f97d5d782c0717a136b3b993cf5f9fc60dc9b0e1b0d/ckanext-iiif-3.0.7.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/d2/d5/a340fab1b09668aad5910e7948ce401f5fe689d200c348716213dbf7a61d/bambooai-0.0.9.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [pyxk]: Downloading https://files.pythonhosted.org/packages/8c/4a/d49757f6dffc58da1f2605228f030830502dee38ce20cc6e490846ed2009/pyxk-0.5.4.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [KeyboardPaster]: Downloading https://files.pythonhosted.org/packages/73/38/64e54930dbf8501f40e968c5bafb1eea3a034165c8616c36d47571264552/KeyboardPaster-0.1.1.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [pyxk]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [pyxk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxk-0.5.3.tar.gz tmp/pyxk-0.5.4.tar.gz --markdown 20230509/p/pyxk/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-09 11:41:03] INFO root fetch - processPackages [emgregs]: Downloading https://files.pythonhosted.org/packages/78/18/d83ea97abaad3e246046f8abda978e3fb6ba9ab971ccc33355980dd9714c/emgregs-0.0.5.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [plotly-resampler]: Downloading https://files.pythonhosted.org/packages/ae/ba/2994bea7b393a8b8fc2357525b10df87bfe3e942d6d7af688997b3a47110/plotly_resampler-0.9.0rc1.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [KeyboardPaster]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [KeyboardPaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KeyboardPaster-0.1.0.tar.gz tmp/KeyboardPaster-0.1.1.tar.gz --markdown 20230509/K/KeyboardPaster/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 11:41:03] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.0.7.tar.gz tmp/bambooai-0.0.9.tar.gz --markdown 20230509/b/bambooai/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 11:41:03] INFO root fetch - processPackages [ckanext-iiif]: Downloading https://files.pythonhosted.org/packages/29/3b/eaf83a711b31c9a6f8231bfbdba73b632c0ca3523f8c472b4243a8027169/ckanext-iiif-3.0.8.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [alibabacloud-ros-tran]: Downloading https://files.pythonhosted.org/packages/45/28/8fe3adc97c5dbd7165702f68e9bc6914dbb0494108b48146543f61f2f02b/alibabacloud-ros-tran-0.3.9.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [plotly-resampler]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [plotly-resampler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotly_resampler-0.9.0rc0.tar.gz tmp/plotly_resampler-0.9.0rc1.tar.gz --markdown 20230509/p/plotly-resampler/0.9.0rc0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-05-09 11:41:03] INFO root fetch - processPackages [alibabacloud-ros-tran]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [alibabacloud-ros-tran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud-ros-tran-0.3.8.tar.gz tmp/alibabacloud-ros-tran-0.3.9.tar.gz --markdown 20230509/a/alibabacloud-ros-tran/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-09 11:41:03] INFO root fetch - processPackages [telebot-against-war]: Downloading https://files.pythonhosted.org/packages/6e/a8/da5e0787ab5ac3f0f6ee34740ce897eed021b85ff7fba5e14566ddaaed30/telebot_against_war-0.6.4.tar.gz
+[2023-05-09 11:41:03] INFO root fetch - processPackages [emgregs]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [emgregs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emgregs-0.0.4.dev0.tar.gz tmp/emgregs-0.0.5.tar.gz --markdown 20230509/e/emgregs/0.0.4.dev0-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 11:41:03] INFO root fetch - processPackages [ckanext-iiif]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [ckanext-iiif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-iiif-3.0.7.tar.gz tmp/ckanext-iiif-3.0.8.tar.gz --markdown 20230509/c/ckanext-iiif/3.0.7-3.0.8/diff.md --exclude *.pyd
+[2023-05-09 11:41:03] INFO root fetch - processPackages [telebot-against-war]: executing diffoscope
+[2023-05-09 11:41:03] INFO root fetch - processPackages [telebot-against-war]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telebot_against_war-0.6.3.tar.gz tmp/telebot_against_war-0.6.4.tar.gz --markdown 20230509/t/telebot-against-war/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-05-09 11:41:04] INFO root fetch - processPackages [gcscore]: Start processing: yyperf
+[2023-05-09 11:41:04] INFO root fetch - main [MainThread]: End processing [gcscore]: success
+[2023-05-09 11:41:04] INFO root fetch - processPackages [yyperf]: New version: [0.6.9.dev2] Old Version: [0.6.9]
+[2023-05-09 11:41:04] INFO root fetch - processPackages [yyperf]: Downloading https://files.pythonhosted.org/packages/01/56/8d1cfb1ce995c585d9c70c5a9b7760fbdefdbec743e277a0d10d1c706e26/yyperf-0.6.9.tar.gz
+[2023-05-09 11:41:05] WARNING root fetch - processPackages [yyperf]: Skipping package: exceeds size limit 15809435>=10485760
+[2023-05-09 11:41:05] INFO root fetch - processPackages [yyperf]: Start processing: KeyboardPaster
+[2023-05-09 11:41:05] INFO root fetch - main [MainThread]: End processing [yyperf] error
+[2023-05-09 11:41:05] INFO root fetch - processPackages [KeyboardPaster]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 11:41:05] INFO root fetch - processPackages [bambooai]: Start processing: ckanext-nhm
+[2023-05-09 11:41:05] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-09 11:41:05] INFO root fetch - processPackages [ckanext-nhm]: New version: [5.6.3] Old Version: [5.6.2]
+[2023-05-09 11:41:05] INFO root fetch - processPackages [KeyboardPaster]: Downloading https://files.pythonhosted.org/packages/54/f7/ce6a66a25b934d54da7df69985d44a3fd0afcf35d9fb71c9f4e766722fde/KeyboardPaster-0.1.2.tar.gz
+[2023-05-09 11:41:05] INFO root fetch - processPackages [KeyboardPaster]: Start processing: mkdocs-annexes-integration
+[2023-05-09 11:41:05] INFO root fetch - main [MainThread]: End processing [KeyboardPaster]: success
+[2023-05-09 11:41:05] INFO root fetch - processPackages [mkdocs-annexes-integration]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 11:41:05] INFO root fetch - processPackages [ckanext-nhm]: Downloading https://files.pythonhosted.org/packages/1f/59/2a28d12e3daea9347741c53a02be8379e21b742ccfe8392c30b3d5047495/ckanext-nhm-5.6.2.tar.gz
+[2023-05-09 11:41:05] INFO root fetch - processPackages [mkdocs-annexes-integration]: executing diffoscope
+[2023-05-09 11:41:05] INFO root fetch - processPackages [mkdocs-annexes-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-annexes-integration-0.1.0.tar.gz tmp/mkdocs-annexes-integration-0.1.1.tar.gz --markdown 20230509/m/mkdocs-annexes-integration/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 11:41:05] INFO root fetch - processPackages [pyxk]: Start processing: localstack-core
+[2023-05-09 11:41:05] INFO root fetch - main [MainThread]: End processing [pyxk]: success
+[2023-05-09 11:41:05] INFO root fetch - processPackages [plotly-resampler]: Start processing: ckanext-versioned-tiledmap
+[2023-05-09 11:41:05] INFO root fetch - main [MainThread]: End processing [plotly-resampler]: success
+[2023-05-09 11:41:05] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230509090139] Old Version: [2.0.3.dev20230509083833]
+[2023-05-09 11:41:05] WARNING root fetch - processPackages [ckanext-nhm]: Skipping package: exceeds size limit 29272958>=10485760
+[2023-05-09 11:41:05] INFO root fetch - processPackages [ckanext-nhm]: Start processing: dwdparse
+[2023-05-09 11:41:05] INFO root fetch - main [MainThread]: End processing [ckanext-nhm] error
+[2023-05-09 11:41:05] INFO root fetch - processPackages [emgregs]: Start processing: rquge-score
+[2023-05-09 11:41:05] INFO root fetch - processPackages [KeyboardPaster]: Downloading https://files.pythonhosted.org/packages/14/d6/71b34cdc5f19f2e461d367b582cc3df8ce86692e1cbf6ff26cb537774ab7/KeyboardPaster-0.1.3.tar.gz
+[2023-05-09 11:41:05] INFO root fetch - main [MainThread]: End processing [emgregs]: success
+[2023-05-09 11:41:05] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: New version: [2.2.0] Old Version: [2.1.9]
+[2023-05-09 11:41:06] WARNING root fetch - processPackages [rquge-score]: Skipping, unable to determine old version
+[2023-05-09 11:41:06] INFO root fetch - main [MainThread]: End processing [rquge-score] error
+[2023-05-09 11:41:06] INFO root fetch - processPackages [dwdparse]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-09 11:41:06] INFO root fetch - processPackages [KeyboardPaster]: executing diffoscope
+[2023-05-09 11:41:06] INFO root fetch - processPackages [KeyboardPaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KeyboardPaster-0.1.2.tar.gz tmp/KeyboardPaster-0.1.3.tar.gz --markdown 20230509/K/KeyboardPaster/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 11:41:06] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/3e/b3/34dba79b0425d22e80510388dde0d8ee1e47db42afe2dd8848d46a7b4e26/localstack-core-2.0.3.dev20230509090139.tar.gz
+[2023-05-09 11:41:06] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: Downloading https://files.pythonhosted.org/packages/1d/36/4edf1e2c5b01003f24506b94d459b0c8ddeb3718225ecc54c15c14afe963/ckanext-versioned-tiledmap-2.1.9.tar.gz
+[2023-05-09 11:41:06] INFO root fetch - processPackages [dwdparse]: Downloading https://files.pythonhosted.org/packages/8a/f4/1dc0e9277a8132ba41a9ad8385a680671476ccc4268624226ad9a5280d06/dwdparse-0.9.5.tar.gz
+[2023-05-09 11:41:06] INFO root fetch - main [MainThread]: End processing [telebot-against-war]: success
+[2023-05-09 11:41:06] INFO root fetch - main [MainThread]: End processing [ckanext-iiif]: success
+[2023-05-09 11:41:06] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-09 11:41:06] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230509083833.tar.gz tmp/localstack-core-2.0.3.dev20230509090139.tar.gz --markdown 20230509/l/localstack-core/2.0.3.dev20230509083833-2.0.3.dev20230509090139/diff.md --exclude *.pyd
+[2023-05-09 11:41:06] INFO root fetch - processPackages [dwdparse]: Downloading https://files.pythonhosted.org/packages/94/f5/d266f66dad50ac2c93eb7b2dec2e3630e24a92ede2741758c267c3eeb2e0/dwdparse-0.9.6.tar.gz
+[2023-05-09 11:41:06] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: Downloading https://files.pythonhosted.org/packages/ec/5b/28e1eb63cc0cea20c7463d65669d8010b62f80cc0c76ab6137f250d1b04d/ckanext-versioned-tiledmap-2.2.0.tar.gz
+[2023-05-09 11:41:06] INFO root fetch - processPackages [dwdparse]: executing diffoscope
+[2023-05-09 11:41:06] INFO root fetch - processPackages [dwdparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwdparse-0.9.5.tar.gz tmp/dwdparse-0.9.6.tar.gz --markdown 20230509/d/dwdparse/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-09 11:41:06] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: executing diffoscope
+[2023-05-09 11:41:06] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-versioned-tiledmap-2.1.9.tar.gz tmp/ckanext-versioned-tiledmap-2.2.0.tar.gz --markdown 20230509/c/ckanext-versioned-tiledmap/2.1.9-2.2.0/diff.md --exclude *.pyd
+[2023-05-09 11:41:06] INFO root fetch - main [MainThread]: End processing [inductiva]: success
+[2023-05-09 11:41:06] INFO root fetch - main [MainThread]: End processing [alibabacloud-ros-tran]: success
+[2023-05-09 11:41:07] INFO root fetch - main [MainThread]: End processing [mkdocs-annexes-integration]: success
+[2023-05-09 11:41:07] INFO root fetch - main [MainThread]: End processing [KeyboardPaster]: success
+[2023-05-09 11:41:08] INFO root fetch - main [MainThread]: End processing [dwdparse]: success
+[2023-05-09 11:41:11] INFO root fetch - main [MainThread]: End processing [ckanext-versioned-tiledmap]: success
+[2023-05-09 11:41:16] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-09 11:41:16] INFO root fetch - main [MainThread]: Store serial: [18030245]
