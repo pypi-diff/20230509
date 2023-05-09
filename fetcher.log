@@ -22375,3 +22375,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 19:57:41] INFO root fetch - main [MainThread]: End processing [taskcluster]: success
 [2023-05-09 19:57:41] INFO root fetch - main [MainThread]: End processing [wok-code]: success
 [2023-05-09 19:57:41] INFO root fetch - main [MainThread]: Store serial: [18035724]
+[2023-05-09 20:02:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18035724]
+[2023-05-09 20:02:52] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ruamel.yaml
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zerobug
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: antspymm
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sql-smith
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PySqlModel
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: docutils
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: segmentheepy-test
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pypotlib
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: palmers-agents-general
+[2023-05-09 20:02:52] INFO root fetch - processPackages [antspymm]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-09 20:02:52] INFO root fetch - processPackages [docutils]: New version: [0.9.1] Old Version: [0.9]
+[2023-05-09 20:02:52] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.10.0] Old Version: [0.0.9]
+[2023-05-09 20:02:52] INFO root fetch - processPackages [ruamel.yaml]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-09 20:02:52] INFO root fetch - processPackages [zerobug]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-09 20:02:52] INFO root fetch - processPackages [antspymm]: executing diffoscope
+[2023-05-09 20:02:52] INFO root fetch - processPackages [antspymm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antspymm-0.9.5.tar.gz tmp/antspymm-0.9.6.tar.gz --markdown 20230509/a/antspymm/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-09 20:02:52] INFO root fetch - processPackages [sql-smith]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-09 20:02:52] INFO root fetch - processPackages [segmentheepy-test]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 20:02:52] WARNING root fetch - processPackages [PySqlModel]: Skipping, unable to determine old version
+[2023-05-09 20:02:52] INFO root fetch - main [MainThread]: End processing [PySqlModel] error
+[2023-05-09 20:02:52] INFO root fetch - processPackages [pypotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 20:02:52] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-09 20:02:52] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.9.tar.gz tmp/palmers_agents_general-0.10.0.tar.gz --markdown 20230509/p/palmers-agents-general/0.0.9-0.10.0/diff.md --exclude *.pyd
+[2023-05-09 20:02:53] INFO root fetch - processPackages [docutils]: Downloading https://files.pythonhosted.org/packages/13/98/de4fe2d3b085a4f408ec80117489f32ed0564c6d15eca0cf4a45441d8052/docutils-0.9.tar.gz
+[2023-05-09 20:02:53] INFO root fetch - processPackages [ruamel.yaml]: Downloading https://files.pythonhosted.org/packages/08/2e/36ad3bba826620494292ad7c14beb21695e6da91705f50cf228fb0fa4409/ruamel.yaml-0.9.7.tar.gz
+[2023-05-09 20:02:53] INFO root fetch - processPackages [pypotlib]: Downloading https://files.pythonhosted.org/packages/38/a5/045046a8e4fe0c2bf6162cf44b58e855365e811eb10f4be9a71c4d5a830e/pypotlib-0.0.8.tar.gz
+[2023-05-09 20:02:53] INFO root fetch - processPackages [zerobug]: Downloading https://files.pythonhosted.org/packages/70/2a/660140799f5ae32c3295d807097b58e16596eb45aad21b19907b9fa11879/zerobug-2.0.5.tar.gz
+[2023-05-09 20:02:53] INFO root fetch - processPackages [sql-smith]: Downloading https://files.pythonhosted.org/packages/79/70/7070ea3635bebc26b440da638f2bf28d85e6faaebcfc508c2c553113b9ba/sql-smith-1.0.1.tar.gz
+[2023-05-09 20:02:53] INFO root fetch - processPackages [segmentheepy-test]: Downloading https://files.pythonhosted.org/packages/83/f4/5c946effb15377a883ac337e33cd3dbb1c1d809a6b941d14537f35f6f013/segmentheepy_test-0.0.1-py3-none-any.whl
+[2023-05-09 20:02:53] INFO root fetch - processPackages [zerobug]: Downloading https://files.pythonhosted.org/packages/b8/82/f9a9c6f8c93dd0d016d6f921e994a0480e929be88989973aaccff42f9c75/zerobug-2.0.6.tar.gz
+[2023-05-09 20:02:53] INFO root fetch - processPackages [docutils]: Downloading https://files.pythonhosted.org/packages/d1/fd/e569a6139d5bfda5574b3a4bd840dd1b23d03fc7fcbb193bd1f450f98cc4/docutils-0.9.1.tar.gz
+[2023-05-09 20:02:53] INFO root fetch - processPackages [ruamel.yaml]: Downloading https://files.pythonhosted.org/packages/29/71/ac3ab7be172ca88b6d16134578c9124e0b5ed157a3681e5181d9ca9bb3ec/ruamel.yaml-0.9.8.tar.gz
+[2023-05-09 20:02:53] INFO root fetch - processPackages [sql-smith]: Downloading https://files.pythonhosted.org/packages/90/2f/51482fd5240edddc02788199c5e52221c2764d748d2bf49a41d14293ebbd/sql_smith-1.1.0-py3-none-any.whl
+[2023-05-09 20:02:53] INFO root fetch - processPackages [segmentheepy-test]: Downloading https://files.pythonhosted.org/packages/b4/b2/63eab6ebf8b34437a03c607f1309e284f4cc031c53f70ea6c9eb101aa363/segmentheepy_test-0.0.2-py3-none-any.whl
+[2023-05-09 20:02:53] INFO root fetch - processPackages [docutils]: executing diffoscope
+[2023-05-09 20:02:53] INFO root fetch - processPackages [docutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docutils-0.9.tar.gz tmp/docutils-0.9.1.tar.gz --markdown 20230509/d/docutils/0.9-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 20:02:53] INFO root fetch - processPackages [zerobug]: executing diffoscope
+[2023-05-09 20:02:53] INFO root fetch - processPackages [zerobug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerobug-2.0.5.tar.gz tmp/zerobug-2.0.6.tar.gz --markdown 20230509/z/zerobug/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-09 20:02:53] INFO root fetch - processPackages [ruamel.yaml]: executing diffoscope
+[2023-05-09 20:02:53] INFO root fetch - processPackages [ruamel.yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruamel.yaml-0.9.7.tar.gz tmp/ruamel.yaml-0.9.8.tar.gz --markdown 20230509/r/ruamel.yaml/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-09 20:02:53] INFO root fetch - processPackages [segmentheepy-test]: executing diffoscope
+[2023-05-09 20:02:53] INFO root fetch - processPackages [segmentheepy-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segmentheepy_test-0.0.1-py3-none-any.whl.zip tmp/segmentheepy_test-0.0.2-py3-none-any.whl.zip --markdown 20230509/s/segmentheepy-test/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 20:02:53] INFO root fetch - processPackages [sql-smith]: executing diffoscope
+[2023-05-09 20:02:53] INFO root fetch - processPackages [sql-smith]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql-smith-1.0.1.tar.gz tmp/sql_smith-1.1.0-py3-none-any.whl.zip --markdown 20230509/s/sql-smith/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 20:02:53] INFO root fetch - processPackages [pypotlib]: Downloading https://files.pythonhosted.org/packages/4d/1a/d689306b0dc6e6c6ff9cefabc009624c79d9fe0a5515af78a1a2e3d60260/pypotlib-0.0.9.tar.gz
+[2023-05-09 20:02:53] INFO root fetch - processPackages [pypotlib]: executing diffoscope
+[2023-05-09 20:02:53] INFO root fetch - processPackages [pypotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypotlib-0.0.8.tar.gz tmp/pypotlib-0.0.9.tar.gz --markdown 20230509/p/pypotlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 20:02:53] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-09 20:02:54] INFO root fetch - main [MainThread]: End processing [antspymm]: success
+[2023-05-09 20:02:54] INFO root fetch - main [MainThread]: End processing [sql-smith]: success
+[2023-05-09 20:02:54] INFO root fetch - main [MainThread]: End processing [segmentheepy-test]: success
+[2023-05-09 20:02:55] INFO root fetch - main [MainThread]: End processing [zerobug]: success
+[2023-05-09 20:02:55] INFO root fetch - main [MainThread]: End processing [pypotlib]: success
+[2023-05-09 20:02:55] INFO root fetch - main [MainThread]: End processing [ruamel.yaml]: success
+[2023-05-09 20:02:59] INFO root fetch - main [MainThread]: End processing [docutils]: success
+[2023-05-09 20:02:59] INFO root fetch - main [MainThread]: Store serial: [18035776]
