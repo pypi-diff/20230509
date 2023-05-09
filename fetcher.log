@@ -23087,3 +23087,89 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 20:58:32] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-09 20:59:05] INFO root fetch - main [MainThread]: End processing [freud-analysis]: success
 [2023-05-09 20:59:05] INFO root fetch - main [MainThread]: Store serial: [18036176]
+[2023-05-09 21:04:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18036176]
+[2023-05-09 21:04:15] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: firepup650
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flowMC
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: honeybee-grasshopper-core
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dh-potluck
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: splight-lib
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: protoc-gen-validate
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lbt-grasshopper
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbt-rpc
+[2023-05-09 21:04:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: luminesce-sdk-preview
+[2023-05-09 21:04:15] INFO root fetch - processPackages [firepup650]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [honeybee-grasshopper-core]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [dh-potluck]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [protoc-gen-validate]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [flowMC]: New version: [0.2.0] Old Version: [0.0.9]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [dbt-rpc]: New version: [0.4.1] Old Version: [0.4.0rc1]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [luminesce-sdk-preview]: New version: [1.9.92] Old Version: [1.9.88]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [lbt-grasshopper]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [kcli]: New version: [99.0.202305091858] Old Version: [99.0.202305091856]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [lbt-grasshopper]: executing diffoscope
+[2023-05-09 21:04:15] INFO root fetch - processPackages [lbt-grasshopper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-grasshopper-1.6.8.tar.gz tmp/lbt-grasshopper-1.6.9.tar.gz --markdown 20230509/l/lbt-grasshopper/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-05-09 21:04:15] INFO root fetch - processPackages [splight-lib]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-09 21:04:15] INFO root fetch - processPackages [dbt-rpc]: Downloading https://files.pythonhosted.org/packages/3b/23/33e45561e265d9847f0ff4ed60eb7cc0abcbf6903e41cfcdbd68f410107a/dbt-rpc-0.4.0rc1.tar.gz
+[2023-05-09 21:04:15] INFO root fetch - processPackages [dh-potluck]: Downloading https://files.pythonhosted.org/packages/6c/85/d5529ba47bcfff2278b73467b2003491ff930a8916ec90ab6d347fbd037b/dh-potluck-1.9.0.tar.gz
+[2023-05-09 21:04:15] INFO root fetch - processPackages [honeybee-grasshopper-core]: Downloading https://files.pythonhosted.org/packages/ac/e4/eea858d9e1db52a66889fbc651df5778c83ca0b7375070416b3584cbcc93/honeybee-grasshopper-core-1.9.0.tar.gz
+[2023-05-09 21:04:15] INFO root fetch - processPackages [protoc-gen-validate]: Downloading https://files.pythonhosted.org/packages/38/68/3129567a0cd9bf64696dfa147d5515e121bb77de1a28628a04e372b8ad47/protoc-gen-validate-1.0.0.tar.gz
+[2023-05-09 21:04:15] INFO root fetch - processPackages [luminesce-sdk-preview]: Downloading https://files.pythonhosted.org/packages/d3/7b/a9c3e829fb03ae79379224fe34adb99d80c6dbfc5f00ccc44cf429d34f61/luminesce-sdk-preview-1.9.88.tar.gz
+[2023-05-09 21:04:15] INFO root fetch - processPackages [flowMC]: Downloading https://files.pythonhosted.org/packages/45/30/24748310de2d4a66c972942dfab867465a37e02f8d7265a28e08f4edb2fb/flowMC-0.0.9.tar.gz
+[2023-05-09 21:04:15] INFO root fetch - processPackages [firepup650]: executing diffoscope
+[2023-05-09 21:04:15] INFO root fetch - processPackages [firepup650]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firepup650-1.0.8.tar.gz tmp/firepup650-1.0.9.tar.gz --markdown 20230509/f/firepup650/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 21:04:15] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-05-09 21:04:15] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.3.8.tar.gz tmp/splight-lib-2.3.9.tar.gz --markdown 20230509/s/splight-lib/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-09 21:04:16] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/29/d2/bcd2e522293d345adce6565e47dafe134229d37a8bc040f9cfe6367cc1a5/kcli-99.0.202305091858-py3-none-any.whl
+[2023-05-09 21:04:16] INFO root fetch - processPackages [dbt-rpc]: Downloading https://files.pythonhosted.org/packages/d4/c9/15b8511c962bb59f086b835ae941ebf9b3ff46124975cdadeb2d61f1ca4b/dbt-rpc-0.4.1.tar.gz
+[2023-05-09 21:04:16] INFO root fetch - processPackages [protoc-gen-validate]: Downloading https://files.pythonhosted.org/packages/23/e1/c99a677659da8ab96abda69d6ce778f0b1e2644b3154d9ab721c8035a83a/protoc-gen-validate-1.0.1.tar.gz
+[2023-05-09 21:04:16] INFO root fetch - processPackages [dh-potluck]: Downloading https://files.pythonhosted.org/packages/5d/ea/c5f6e8c82d824dad4198a98dfb092cefc1dfdd950baaf6168a964441a559/dh-potluck-1.9.1.tar.gz
+[2023-05-09 21:04:16] INFO root fetch - processPackages [luminesce-sdk-preview]: Downloading https://files.pythonhosted.org/packages/b4/a1/29e30342ad6b0ee5f31f57c9ebeee25c12a4805f3f972e1908bf31abd599/luminesce-sdk-preview-1.9.92.tar.gz
+[2023-05-09 21:04:16] INFO root fetch - processPackages [dbt-rpc]: executing diffoscope
+[2023-05-09 21:04:16] INFO root fetch - processPackages [dbt-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-rpc-0.4.0rc1.tar.gz tmp/dbt-rpc-0.4.1.tar.gz --markdown 20230509/d/dbt-rpc/0.4.0rc1-0.4.1/diff.md --exclude *.pyd
+[2023-05-09 21:04:16] INFO root fetch - processPackages [flowMC]: Downloading https://files.pythonhosted.org/packages/d2/3c/e1e2716579db76447dea533c501ba919cb742d3fce1fa02b29e7b5338658/flowMC-0.2.0.tar.gz
+[2023-05-09 21:04:16] INFO root fetch - processPackages [flowMC]: executing diffoscope
+[2023-05-09 21:04:16] INFO root fetch - processPackages [flowMC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowMC-0.0.9.tar.gz tmp/flowMC-0.2.0.tar.gz --markdown 20230509/f/flowMC/0.0.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 21:04:16] INFO root fetch - processPackages [protoc-gen-validate]: executing diffoscope
+[2023-05-09 21:04:16] INFO root fetch - processPackages [protoc-gen-validate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoc-gen-validate-1.0.0.tar.gz tmp/protoc-gen-validate-1.0.1.tar.gz --markdown 20230509/p/protoc-gen-validate/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 21:04:16] INFO root fetch - processPackages [dh-potluck]: executing diffoscope
+[2023-05-09 21:04:16] INFO root fetch - processPackages [dh-potluck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dh-potluck-1.9.0.tar.gz tmp/dh-potluck-1.9.1.tar.gz --markdown 20230509/d/dh-potluck/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-09 21:04:16] INFO root fetch - processPackages [luminesce-sdk-preview]: executing diffoscope
+[2023-05-09 21:04:16] INFO root fetch - processPackages [luminesce-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luminesce-sdk-preview-1.9.88.tar.gz tmp/luminesce-sdk-preview-1.9.92.tar.gz --markdown 20230509/l/luminesce-sdk-preview/1.9.88-1.9.92/diff.md --exclude *.pyd
+[2023-05-09 21:04:16] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-09 21:04:16] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305091856-py3-none-any.whl.zip tmp/kcli-99.0.202305091858-py3-none-any.whl.zip --markdown 20230509/k/kcli/99.0.202305091856-99.0.202305091858/diff.md --exclude *.pyd
+[2023-05-09 21:04:17] INFO root fetch - processPackages [firepup650]: Start processing: args-python
+[2023-05-09 21:04:17] INFO root fetch - main [MainThread]: End processing [firepup650]: success
+[2023-05-09 21:04:17] INFO root fetch - processPackages [lbt-grasshopper]: Start processing: seleniumbase
+[2023-05-09 21:04:17] INFO root fetch - main [MainThread]: End processing [lbt-grasshopper]: success
+[2023-05-09 21:04:17] WARNING root fetch - processPackages [args-python]: Skipping, unable to determine old version
+[2023-05-09 21:04:17] INFO root fetch - processPackages [args-python]: Start processing: dbt-rpc
+[2023-05-09 21:04:17] INFO root fetch - main [MainThread]: End processing [args-python] error
+[2023-05-09 21:04:17] INFO root fetch - processPackages [dbt-rpc]: New version: [0.4.1] Old Version: [0.4.0rc1]
+[2023-05-09 21:04:17] INFO root fetch - processPackages [seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 21:04:17] INFO root fetch - processPackages [honeybee-grasshopper-core]: Downloading https://files.pythonhosted.org/packages/9f/d3/178ae65f9205bae55d153ddf7bded46daea544a32ff51fb34d6715864dae/honeybee-grasshopper-core-1.9.1.tar.gz
+[2023-05-09 21:04:17] INFO root fetch - processPackages [dbt-rpc]: executing diffoscope
+[2023-05-09 21:04:17] INFO root fetch - processPackages [dbt-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-rpc-0.4.0rc1.tar.gz tmp/dbt-rpc-0.4.1.tar.gz --markdown 20230509/d/dbt-rpc/0.4.0rc1-0.4.1/diff.md --exclude *.pyd
+[2023-05-09 21:04:17] INFO root fetch - processPackages [seleniumbase]: Downloading https://files.pythonhosted.org/packages/d5/06/b4c4aa69540cf3a9c497a53072da777eefd704403fc8f952a88c69208ad1/seleniumbase-4.9.8.tar.gz
+[2023-05-09 21:04:17] INFO root fetch - processPackages [honeybee-grasshopper-core]: executing diffoscope
+[2023-05-09 21:04:17] INFO root fetch - processPackages [honeybee-grasshopper-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-grasshopper-core-1.9.0.tar.gz tmp/honeybee-grasshopper-core-1.9.1.tar.gz --markdown 20230509/h/honeybee-grasshopper-core/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-09 21:04:17] INFO root fetch - processPackages [splight-lib]: Start processing: certora-cli-alpha-eric-serialModule
+[2023-05-09 21:04:17] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
+[2023-05-09 21:04:17] INFO root fetch - main [MainThread]: End processing [protoc-gen-validate]: success
+[2023-05-09 21:04:17] INFO root fetch - processPackages [certora-cli-alpha-eric-serialModule]: New version: [20230509.17.6.498344] Old Version: [20230508.14.50.747022]
+[2023-05-09 21:04:17] INFO root fetch - processPackages [certora-cli-alpha-eric-serialModule]: Downloading https://files.pythonhosted.org/packages/fc/88/1fedac88fa29cb94dceeb6a9d15bd71cff07b3d6b767bd8bd5ad987d53e5/certora-cli-alpha-eric-serialModule-20230508.14.50.747022.tar.gz
+[2023-05-09 21:04:17] INFO root fetch - main [MainThread]: End processing [flowMC]: success
+[2023-05-09 21:04:18] INFO root fetch - main [MainThread]: End processing [dbt-rpc]: success
+[2023-05-09 21:04:18] WARNING root fetch - processPackages [certora-cli-alpha-eric-serialModule]: Skipping package: exceeds size limit 38545533>=10485760
+[2023-05-09 21:04:18] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-serialModule] error
+[2023-05-09 21:04:18] INFO root fetch - processPackages [seleniumbase]: Downloading https://files.pythonhosted.org/packages/9d/0f/462449b9921267bb9f0f0db257c72435e50ec2fcd4219764bb131be70686/seleniumbase-4.9.9.tar.gz
+[2023-05-09 21:04:18] INFO root fetch - main [MainThread]: End processing [dh-potluck]: success
+[2023-05-09 21:04:18] INFO root fetch - processPackages [seleniumbase]: executing diffoscope
+[2023-05-09 21:04:18] INFO root fetch - processPackages [seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seleniumbase-4.9.8.tar.gz tmp/seleniumbase-4.9.9.tar.gz --markdown 20230509/s/seleniumbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:04:18] INFO root fetch - main [MainThread]: End processing [dbt-rpc]: success
+[2023-05-09 21:04:19] INFO root fetch - main [MainThread]: End processing [honeybee-grasshopper-core]: success
+[2023-05-09 21:04:20] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
+[2023-05-09 21:04:20] INFO root fetch - main [MainThread]: End processing [seleniumbase]: success
+[2023-05-09 21:04:24] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-09 21:04:24] INFO root fetch - main [MainThread]: Store serial: [18036222]
