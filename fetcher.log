@@ -19723,3 +19723,127 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 17:41:53] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-05-09 17:41:54] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-05-09 17:41:54] INFO root fetch - main [MainThread]: Store serial: [18034201]
+[2023-05-09 17:46:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034201]
+[2023-05-09 17:47:04] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo13-addon-ddmrp
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: djangoldp-application
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: parsigs
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anastasia-logger
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nanolab
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: querytograph
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: awc
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dxsp
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: artesian-sdk
+[2023-05-09 17:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nucliadb-contributor-assets
+[2023-05-09 17:47:04] WARNING root fetch - processPackages [anastasia-logger]: Skipping, unable to determine old version
+[2023-05-09 17:47:04] INFO root fetch - processPackages [anastasia-logger]: Start processing: shapash
+[2023-05-09 17:47:04] INFO root fetch - main [MainThread]: End processing [anastasia-logger] error
+[2023-05-09 17:47:04] INFO root fetch - processPackages [odoo13-addon-ddmrp]: New version: [13.0.1.9.1.dev1] Old Version: [13.0.1.9.0]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [djangoldp-application]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [nanolab]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [awc]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [querytograph]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [artesian-sdk]: New version: [3.0.9.dev7] Old Version: [3.0.9.dev5]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [parsigs]: New version: [0.0.5b0] Old Version: [0.0.4b0]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post756] Old Version: [1.0.0.post754]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [shapash]: New version: [2.3.4] Old Version: [2.3.3]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [dxsp]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-09 17:47:04] INFO root fetch - processPackages [artesian-sdk]: executing diffoscope
+[2023-05-09 17:47:04] INFO root fetch - processPackages [artesian-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artesian-sdk-3.0.9.dev5.tar.gz tmp/artesian-sdk-3.0.9.dev7.tar.gz --markdown 20230509/a/artesian-sdk/3.0.9.dev5-3.0.9.dev7/diff.md --exclude *.pyd
+[2023-05-09 17:47:04] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-09 17:47:04] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.0.8.tar.gz tmp/dxsp-2.0.9.tar.gz --markdown 20230509/d/dxsp/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-09 17:47:04] INFO root fetch - processPackages [nanolab]: Downloading https://files.pythonhosted.org/packages/28/f7/b69794c261a1aa4847de405055d6c26adb1780eaa56e329ebed6e6b0caa3/nanolab-0.0.1.tar.gz
+[2023-05-09 17:47:04] INFO root fetch - processPackages [shapash]: Downloading https://files.pythonhosted.org/packages/32/de/1e08d1feff207437db7271a4ff0f3a61cfb047e97c49795c287aa62d389c/shapash-2.3.3.tar.gz
+[2023-05-09 17:47:05] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/8b/be/dc46914b1381687165c421a6adfa42f9a0fd6d32d9dd475dd25c89f63dbc/nucliadb_contributor_assets-1.0.0.post756-py3-none-any.whl
+[2023-05-09 17:47:05] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-05-09 17:47:05] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post754-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post756-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-contributor-assets/1.0.0.post754-1.0.0.post756/diff.md --exclude *.pyd
+[2023-05-09 17:47:05] INFO root fetch - processPackages [querytograph]: Downloading https://files.pythonhosted.org/packages/15/cf/5be5d119f1262b2a6dee45403afc9b56c56fde1cf9fd5724379189fa2f2f/querytograph-0.0.4.tar.gz
+[2023-05-09 17:47:05] INFO root fetch - processPackages [djangoldp-application]: executing diffoscope
+[2023-05-09 17:47:05] INFO root fetch - processPackages [djangoldp-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_application-1.0.8.tar.gz tmp/djangoldp_application-1.0.9.tar.gz --markdown 20230509/d/djangoldp-application/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 17:47:05] INFO root fetch - processPackages [nanolab]: Downloading https://files.pythonhosted.org/packages/43/8e/703b4bff92eda3d1788ab10bebed14d7a108c08aa7aa90b37b45fe64bac3/nanolab-0.0.2.tar.gz
+[2023-05-09 17:47:05] INFO root fetch - processPackages [awc]: Downloading https://files.pythonhosted.org/packages/6e/21/713b7eac4113c1037eb1e9c186c7feb77c72bf6f85c20d0892c571b78045/awc-3.0.0-py2.py3-none-any.whl
+[2023-05-09 17:47:05] INFO root fetch - processPackages [querytograph]: executing diffoscope
+[2023-05-09 17:47:05] INFO root fetch - processPackages [querytograph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querytograph-0.0.3.tar.gz tmp/querytograph-0.0.4.tar.gz --markdown 20230509/q/querytograph/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 17:47:05] INFO root fetch - processPackages [odoo13-addon-ddmrp]: executing diffoscope
+[2023-05-09 17:47:05] INFO root fetch - processPackages [odoo13-addon-ddmrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_ddmrp-13.0.1.9.0-py3-none-any.whl.zip tmp/odoo13_addon_ddmrp-13.0.1.9.1.dev1-py3-none-any.whl.zip --markdown 20230509/o/odoo13-addon-ddmrp/13.0.1.9.0-13.0.1.9.1.dev1/diff.md --exclude *.pyd
+[2023-05-09 17:47:05] INFO root fetch - processPackages [nanolab]: executing diffoscope
+[2023-05-09 17:47:05] INFO root fetch - processPackages [nanolab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolab-0.0.1.tar.gz tmp/nanolab-0.0.2.tar.gz --markdown 20230509/n/nanolab/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 17:47:05] INFO root fetch - processPackages [awc]: executing diffoscope
+[2023-05-09 17:47:05] INFO root fetch - processPackages [shapash]: Downloading https://files.pythonhosted.org/packages/2b/80/e97778bdd6df0ef1ac7670816a9091dffe946997bbc83cd813e6d86348e9/shapash-2.3.4.tar.gz
+[2023-05-09 17:47:05] INFO root fetch - processPackages [awc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc-2.0.0-py2.py3-none-any.whl.zip tmp/awc-3.0.0-py2.py3-none-any.whl.zip --markdown 20230509/a/awc/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-09 17:47:05] INFO root fetch - processPackages [parsigs]: Downloading https://files.pythonhosted.org/packages/43/34/af9a849ca6d07e9781e8923eccca189c7bc2604897cbc3cb76120dffdc07/parsigs-0.0.5b0.tar.gz
+[2023-05-09 17:47:05] INFO root fetch - processPackages [shapash]: executing diffoscope
+[2023-05-09 17:47:05] INFO root fetch - processPackages [shapash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shapash-2.3.3.tar.gz tmp/shapash-2.3.4.tar.gz --markdown 20230509/s/shapash/2.3.3-2.3.4/diff.md --exclude *.pyd
+[2023-05-09 17:47:05] INFO root fetch - processPackages [parsigs]: executing diffoscope
+[2023-05-09 17:47:05] INFO root fetch - processPackages [parsigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsigs-0.0.4b0.tar.gz tmp/parsigs-0.0.5b0.tar.gz --markdown 20230509/p/parsigs/0.0.4b0-0.0.5b0/diff.md --exclude *.pyd
+[2023-05-09 17:47:06] INFO root fetch - processPackages [dxsp]: Start processing: qdrant-client
+[2023-05-09 17:47:06] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-09 17:47:06] INFO root fetch - processPackages [qdrant-client]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-09 17:47:06] INFO root fetch - processPackages [qdrant-client]: Downloading https://files.pythonhosted.org/packages/45/ed/3cf1e55daaff880f9acac9cecd29e1831572b235faf2a81460ef5c182974/qdrant_client-1.1.6.tar.gz
+[2023-05-09 17:47:06] INFO root fetch - processPackages [djangoldp-application]: Start processing: anomalib
+[2023-05-09 17:47:06] INFO root fetch - main [MainThread]: End processing [djangoldp-application]: success
+[2023-05-09 17:47:06] INFO root fetch - processPackages [anomalib]: New version: [0.5.0] Old Version: [0.4.0rc2]
+[2023-05-09 17:47:06] INFO root fetch - processPackages [qdrant-client]: Downloading https://files.pythonhosted.org/packages/49/a7/4fa8600e8f81bfad69768103d106ce782a5162cec23265f48a02072a6cf9/qdrant_client-1.1.7.tar.gz
+[2023-05-09 17:47:06] INFO root fetch - processPackages [awc]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-09 17:47:06] INFO root fetch - main [MainThread]: End processing [awc]: success
+[2023-05-09 17:47:06] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230509.15.44.285120] Old Version: [20230509.15.20.621163]
+[2023-05-09 17:47:06] INFO root fetch - processPackages [anomalib]: Downloading https://files.pythonhosted.org/packages/ee/05/93b071b0d0ad14db0b3ef33e3c04c20c52afa17cfd8d32f35868e2bbec20/anomalib-0.4.0rc2.tar.gz
+[2023-05-09 17:47:06] INFO root fetch - processPackages [querytograph]: Start processing: zephyr-ml
+[2023-05-09 17:47:06] INFO root fetch - main [MainThread]: End processing [querytograph]: success
+[2023-05-09 17:47:06] INFO root fetch - processPackages [qdrant-client]: executing diffoscope
+[2023-05-09 17:47:06] INFO root fetch - processPackages [qdrant-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qdrant_client-1.1.6.tar.gz tmp/qdrant_client-1.1.7.tar.gz --markdown 20230509/q/qdrant-client/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-09 17:47:06] INFO root fetch - processPackages [zephyr-ml]: New version: [0.0.2.dev0] Old Version: [0.0.2]
+[2023-05-09 17:47:06] INFO root fetch - processPackages [parsigs]: Start processing: litestar
+[2023-05-09 17:47:06] INFO root fetch - main [MainThread]: End processing [parsigs]: success
+[2023-05-09 17:47:06] INFO root fetch - processPackages [nanolab]: Start processing: ezneural
+[2023-05-09 17:47:06] INFO root fetch - main [MainThread]: End processing [nanolab]: success
+[2023-05-09 17:47:07] INFO root fetch - processPackages [zephyr-ml]: Downloading https://files.pythonhosted.org/packages/ea/3f/d216a19258be670fee568ddf6f27e20e9a6ab11b861bb829d93b9231c441/zephyr-ml-0.0.2.tar.gz
+[2023-05-09 17:47:07] INFO root fetch - processPackages [litestar]: New version: [2.0.0a6] Old Version: [2.0.0a5]
+[2023-05-09 17:47:07] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/52/4d/df68ab347d1995a51a2934baca4f2474cafa1f776cfc3ab761baffc54c81/certora-cli-alpha-roy-CERT-1955-assertHits-20230509.15.20.621163.tar.gz
+[2023-05-09 17:47:07] WARNING root fetch - processPackages [ezneural]: Skipping, unable to determine old version
+[2023-05-09 17:47:07] INFO root fetch - processPackages [ezneural]: Start processing: rustsim
+[2023-05-09 17:47:07] INFO root fetch - main [MainThread]: End processing [ezneural] error
+[2023-05-09 17:47:07] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38475431>=10485760
+[2023-05-09 17:47:07] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Start processing: palmers-agents-general
+[2023-05-09 17:47:07] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-09 17:47:07] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 17:47:07] INFO root fetch - processPackages [rustsim]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 17:47:07] INFO root fetch - processPackages [zephyr-ml]: executing diffoscope
+[2023-05-09 17:47:07] INFO root fetch - processPackages [zephyr-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zephyr-ml-0.0.2.tar.gz tmp/zephyr-ml-0.0.2.dev0.tar.gz --markdown 20230509/z/zephyr-ml/0.0.2-0.0.2.dev0/diff.md --exclude *.pyd
+[2023-05-09 17:47:07] INFO root fetch - processPackages [shapash]: Start processing: simple-parquet-viewer
+[2023-05-09 17:47:07] INFO root fetch - main [MainThread]: End processing [shapash]: success
+[2023-05-09 17:47:07] INFO root fetch - processPackages [litestar]: Downloading https://files.pythonhosted.org/packages/a2/fc/541c217260e9cfbeacff4949a51a926bd5615a09d9cf58d77f37eea90461/litestar-2.0.0a5.tar.gz
+[2023-05-09 17:47:07] INFO root fetch - processPackages [simple-parquet-viewer]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 17:47:07] INFO root fetch - processPackages [anomalib]: Downloading https://files.pythonhosted.org/packages/64/4c/c4b3f22cf94b9e8cfb5e5597ba1ef7081c211697ad0ae4289b2145540df1/anomalib-0.5.0.tar.gz
+[2023-05-09 17:47:07] INFO root fetch - processPackages [palmers-agents-general]: Downloading https://files.pythonhosted.org/packages/61/cd/e3e3e79d25eaa13474a77df36729a9c49c52bf78a9aabee81eb71e0e9622/palmers_agents_general-0.0.9.tar.gz
+[2023-05-09 17:47:07] INFO root fetch - processPackages [anomalib]: executing diffoscope
+[2023-05-09 17:47:07] INFO root fetch - processPackages [anomalib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anomalib-0.4.0rc2.tar.gz tmp/anomalib-0.5.0.tar.gz --markdown 20230509/a/anomalib/0.4.0rc2-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 17:47:07] INFO root fetch - processPackages [simple-parquet-viewer]: executing diffoscope
+[2023-05-09 17:47:07] INFO root fetch - processPackages [simple-parquet-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_parquet_viewer-0.9.0.tar.gz tmp/simple_parquet_viewer-0.9.1.tar.gz --markdown 20230509/s/simple-parquet-viewer/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 17:47:07] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-09 17:47:07] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.8.tar.gz tmp/palmers_agents_general-0.0.9.tar.gz --markdown 20230509/p/palmers-agents-general/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 17:47:07] INFO root fetch - processPackages [rustsim]: Downloading https://files.pythonhosted.org/packages/c7/88/69db7dba03d3388112865f30cf75bd3939120902af5b6595fb32eaa8a576/rustsim-0.1.8-cp39-none-win_amd64.whl
+[2023-05-09 17:47:07] INFO root fetch - processPackages [odoo13-addon-ddmrp]: Start processing: mastoposter
+[2023-05-09 17:47:07] INFO root fetch - main [MainThread]: End processing [odoo13-addon-ddmrp]: success
+[2023-05-09 17:47:07] INFO root fetch - main [MainThread]: End processing [artesian-sdk]: success
+[2023-05-09 17:47:07] INFO root fetch - processPackages [mastoposter]: New version: [0.1] Old Version: [0]
+[2023-05-09 17:47:07] INFO root fetch - processPackages [litestar]: Downloading https://files.pythonhosted.org/packages/1c/e5/8de5f627dca207748b6e49826b78c17a83d2022f9b0ea85ffcea81b3c888/litestar-2.0.0a6.tar.gz
+[2023-05-09 17:47:07] INFO root fetch - processPackages [litestar]: executing diffoscope
+[2023-05-09 17:47:07] INFO root fetch - processPackages [litestar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litestar-2.0.0a5.tar.gz tmp/litestar-2.0.0a6.tar.gz --markdown 20230509/l/litestar/2.0.0a5-2.0.0a6/diff.md --exclude *.pyd
+[2023-05-09 17:47:07] INFO root fetch - processPackages [mastoposter]: Downloading https://files.pythonhosted.org/packages/6e/2f/52a97043d25b8f15b0c39991f6ed85759c435e1977bf7b72d33a5b5db14a/mastoposter-0.tar.gz
+[2023-05-09 17:47:07] INFO root fetch - processPackages [rustsim]: Downloading https://files.pythonhosted.org/packages/66/2c/e1480ceb70e3357b6bf360c872c8c33b3f0e084eace002f02d29f72a3e05/rustsim-0.1.9.tar.gz
+[2023-05-09 17:47:07] INFO root fetch - processPackages [rustsim]: executing diffoscope
+[2023-05-09 17:47:07] INFO root fetch - processPackages [rustsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustsim-0.1.8-cp39-none-win_amd64.whl.zip tmp/rustsim-0.1.9.tar.gz --markdown 20230509/r/rustsim/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 17:47:08] INFO root fetch - processPackages [mastoposter]: Downloading https://files.pythonhosted.org/packages/8a/ed/90a901a0b3983f280bb0c2d26d86c0da461ac6590a44be3fa6c9d16369da/mastoposter-0.1.tar.gz
+[2023-05-09 17:47:08] INFO root fetch - processPackages [mastoposter]: executing diffoscope
+[2023-05-09 17:47:08] INFO root fetch - processPackages [mastoposter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mastoposter-0.tar.gz tmp/mastoposter-0.1.tar.gz --markdown 20230509/m/mastoposter/0-0.1/diff.md --exclude *.pyd
+[2023-05-09 17:47:08] INFO root fetch - main [MainThread]: End processing [qdrant-client]: success
+[2023-05-09 17:47:08] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-09 17:47:08] INFO root fetch - main [MainThread]: End processing [simple-parquet-viewer]: success
+[2023-05-09 17:47:09] INFO root fetch - main [MainThread]: End processing [rustsim]: success
+[2023-05-09 17:47:09] INFO root fetch - main [MainThread]: End processing [zephyr-ml]: success
+[2023-05-09 17:47:09] INFO root fetch - main [MainThread]: End processing [mastoposter]: success
+[2023-05-09 17:47:11] INFO root fetch - main [MainThread]: End processing [anomalib]: success
+[2023-05-09 17:47:12] INFO root fetch - main [MainThread]: End processing [litestar]: success
+[2023-05-09 17:47:12] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-05-09 17:47:12] INFO root fetch - main [MainThread]: Store serial: [18034264]
