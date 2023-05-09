@@ -12668,3 +12668,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 10:52:59] INFO root fetch - main [MainThread]: End processing [steamship]: success
 [2023-05-09 10:53:06] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-es-ticketbai-pos]: success
 [2023-05-09 10:53:06] INFO root fetch - main [MainThread]: Store serial: [18029692]
+[2023-05-09 10:58:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029692]
+[2023-05-09 10:58:15] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyowletapi
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lektor-markdown-ruby-blocks
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-eyalf-test-pr-for-codeowners-exclude
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-gereon-cert-2093-update-gradle-git-version
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hstream
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyawskit
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: NewsSentiment
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: unblob-native
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: toolforge-weld
+[2023-05-09 10:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fastapi-amis-admin-cli
+[2023-05-09 10:58:15] INFO root fetch - processPackages [hstream]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 10:58:15] WARNING root fetch - processPackages [certora-cli-alpha-eyalf-test-pr-for-codeowners-exclude]: Skipping, unable to determine old version
+[2023-05-09 10:58:15] INFO root fetch - processPackages [certora-cli-alpha-eyalf-test-pr-for-codeowners-exclude]: Start processing: annofabapi
+[2023-05-09 10:58:15] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eyalf-test-pr-for-codeowners-exclude] error
+[2023-05-09 10:58:15] INFO root fetch - processPackages [hstream]: executing diffoscope
+[2023-05-09 10:58:15] INFO root fetch - processPackages [hstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hstream-0.0.8.tar.gz tmp/hstream-0.0.9.tar.gz --markdown 20230509/h/hstream/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 10:58:15] WARNING root fetch - processPackages [certora-cli-alpha-gereon-cert-2093-update-gradle-git-version]: Skipping, unable to determine old version
+[2023-05-09 10:58:15] INFO root fetch - processPackages [unblob-native]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 10:58:15] INFO root fetch - processPackages [certora-cli-alpha-gereon-cert-2093-update-gradle-git-version]: Start processing: deepke
+[2023-05-09 10:58:15] INFO root fetch - processPackages [lektor-markdown-ruby-blocks]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-09 10:58:15] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-gereon-cert-2093-update-gradle-git-version] error
+[2023-05-09 10:58:15] INFO root fetch - processPackages [fastapi-amis-admin-cli]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 10:58:15] INFO root fetch - processPackages [pyawskit]: New version: [0.1.73] Old Version: [0.1.72]
+[2023-05-09 10:58:15] WARNING root fetch - processPackages [toolforge-weld]: Skipping, unable to determine old version
+[2023-05-09 10:58:15] INFO root fetch - main [MainThread]: End processing [toolforge-weld] error
+[2023-05-09 10:58:15] INFO root fetch - processPackages [pyowletapi]: New version: [2023.5.9] Old Version: [2023.5.7]
+[2023-05-09 10:58:15] INFO root fetch - processPackages [NewsSentiment]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-09 10:58:15] INFO root fetch - processPackages [deepke]: New version: [2.2] Old Version: [2.1.3]
+[2023-05-09 10:58:15] INFO root fetch - processPackages [annofabapi]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 10:58:15] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/34/33/efc46050e3c7617e4e366ed41239d667118596381b401bdf490a927c1f12/pyawskit-0.1.72.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [annofabapi]: executing diffoscope
+[2023-05-09 10:58:15] INFO root fetch - processPackages [annofabapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/annofabapi-0.9.0.tar.gz tmp/annofabapi-0.9.1.tar.gz --markdown 20230509/a/annofabapi/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 10:58:15] INFO root fetch - processPackages [unblob-native]: Downloading https://files.pythonhosted.org/packages/7b/cb/d5f529372ce2dcdffa263e581c2b64b5775f7ad7bb8f02731d45673d8fd9/unblob_native-0.1.0.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [fastapi-amis-admin-cli]: Downloading https://files.pythonhosted.org/packages/3e/c1/2fbfc6fcba349e9a0266b745b522b1c7f1458ff017ebfe9827792af958db/fastapi_amis_admin_cli-0.1.0.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [NewsSentiment]: Downloading https://files.pythonhosted.org/packages/43/99/4e5a405346503eff7e1a9c13a058ad976bb2a284bf5601d9ad0d9be3d6ef/NewsSentiment-1.1.8.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [lektor-markdown-ruby-blocks]: Downloading https://files.pythonhosted.org/packages/5b/40/984bb85a0b09c4324054cf88a82ee0c1d1571dc1eb07e2ad72b38a2cc407/lektor_markdown_ruby_blocks-0.2.3.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [pyowletapi]: Downloading https://files.pythonhosted.org/packages/93/a6/977ae0ddc9feb31d34adcb2ff9537f80ef29a6ad29a1ddc97e66f10f316a/pyowletapi-2023.5.7.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [deepke]: Downloading https://files.pythonhosted.org/packages/f8/20/812ad21ccda95557252a5d91c5b2e3a85da223254bbcda21ff609e1d9fe2/deepke-2.1.3.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [pyawskit]: Downloading https://files.pythonhosted.org/packages/0f/14/2ac6376088a29690e006eb5806d31f25fb4a81925924a2849f1baf9d9e11/pyawskit-0.1.73.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [unblob-native]: Downloading https://files.pythonhosted.org/packages/a2/db/37ea007be2c129b8c4ceea573d9d73f5026a1e4ac459bcdca208dfa52e12/unblob_native-0.1.1.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [fastapi-amis-admin-cli]: Downloading https://files.pythonhosted.org/packages/4f/32/2d199f486e89e32f61aecd62676928c28aefb6a875dc4e593c99be0b3c51/fastapi_amis_admin_cli-0.1.1.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [lektor-markdown-ruby-blocks]: Downloading https://files.pythonhosted.org/packages/a0/30/b4c37cead313ee288cbe5fc0408a1d2a51834adf4d5f99932e2082938139/lektor_markdown_ruby_blocks-0.2.4.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [pyawskit]: executing diffoscope
+[2023-05-09 10:58:15] INFO root fetch - processPackages [pyawskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyawskit-0.1.72.tar.gz tmp/pyawskit-0.1.73.tar.gz --markdown 20230509/p/pyawskit/0.1.72-0.1.73/diff.md --exclude *.pyd
+[2023-05-09 10:58:15] INFO root fetch - processPackages [pyowletapi]: Downloading https://files.pythonhosted.org/packages/6e/2e/af455fa9c2a369e4db90d9e563028eecc7136380171d474521192dfd23ef/pyowletapi-2023.5.9.tar.gz
+[2023-05-09 10:58:15] INFO root fetch - processPackages [unblob-native]: executing diffoscope
+[2023-05-09 10:58:15] INFO root fetch - processPackages [unblob-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unblob_native-0.1.0.tar.gz tmp/unblob_native-0.1.1.tar.gz --markdown 20230509/u/unblob-native/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 10:58:15] INFO root fetch - processPackages [deepke]: Downloading https://files.pythonhosted.org/packages/37/eb/28f1b622c084dbae11b7092ccabbca12ffaeb5c597807046ab4a48e91e3d/deepke-2.2.tar.gz
+[2023-05-09 10:58:16] INFO root fetch - processPackages [deepke]: executing diffoscope
+[2023-05-09 10:58:16] INFO root fetch - processPackages [deepke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepke-2.1.3.tar.gz tmp/deepke-2.2.tar.gz --markdown 20230509/d/deepke/2.1.3-2.2/diff.md --exclude *.pyd
+[2023-05-09 10:58:16] INFO root fetch - processPackages [fastapi-amis-admin-cli]: executing diffoscope
+[2023-05-09 10:58:16] INFO root fetch - processPackages [fastapi-amis-admin-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_amis_admin_cli-0.1.0.tar.gz tmp/fastapi_amis_admin_cli-0.1.1.tar.gz --markdown 20230509/f/fastapi-amis-admin-cli/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 10:58:16] INFO root fetch - processPackages [NewsSentiment]: Downloading https://files.pythonhosted.org/packages/57/e7/ebbd21c7f83874a8c1894e4c6339bb98b3442e4ca159793251a001111a06/NewsSentiment-1.1.9.tar.gz
+[2023-05-09 10:58:16] INFO root fetch - processPackages [lektor-markdown-ruby-blocks]: executing diffoscope
+[2023-05-09 10:58:16] INFO root fetch - processPackages [lektor-markdown-ruby-blocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lektor_markdown_ruby_blocks-0.2.3.tar.gz tmp/lektor_markdown_ruby_blocks-0.2.4.tar.gz --markdown 20230509/l/lektor-markdown-ruby-blocks/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-09 10:58:16] INFO root fetch - processPackages [pyowletapi]: executing diffoscope
+[2023-05-09 10:58:16] INFO root fetch - processPackages [pyowletapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyowletapi-2023.5.7.tar.gz tmp/pyowletapi-2023.5.9.tar.gz --markdown 20230509/p/pyowletapi/2023.5.7-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 10:58:16] INFO root fetch - processPackages [NewsSentiment]: executing diffoscope
+[2023-05-09 10:58:16] INFO root fetch - processPackages [NewsSentiment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NewsSentiment-1.1.8.tar.gz tmp/NewsSentiment-1.1.9.tar.gz --markdown 20230509/N/NewsSentiment/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-09 10:58:16] INFO root fetch - main [MainThread]: End processing [hstream]: success
+[2023-05-09 10:58:17] INFO root fetch - main [MainThread]: End processing [lektor-markdown-ruby-blocks]: success
+[2023-05-09 10:58:17] INFO root fetch - main [MainThread]: End processing [pyowletapi]: success
+[2023-05-09 10:58:17] INFO root fetch - main [MainThread]: End processing [pyawskit]: success
+[2023-05-09 10:58:17] INFO root fetch - main [MainThread]: End processing [fastapi-amis-admin-cli]: success
+[2023-05-09 10:58:17] INFO root fetch - main [MainThread]: End processing [annofabapi]: success
+[2023-05-09 10:58:17] INFO root fetch - main [MainThread]: End processing [unblob-native]: success
+[2023-05-09 10:58:18] INFO root fetch - main [MainThread]: End processing [NewsSentiment]: success
+[2023-05-09 10:58:18] INFO root fetch - main [MainThread]: End processing [deepke]: success
+[2023-05-09 10:58:18] INFO root fetch - main [MainThread]: Store serial: [18029740]
