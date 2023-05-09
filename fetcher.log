@@ -6953,3 +6953,125 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 72: invalid
 [2023-05-09 04:52:47] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
 [2023-05-09 04:52:48] INFO root fetch - main [MainThread]: End processing [meerschaum]: success
 [2023-05-09 04:52:48] INFO root fetch - main [MainThread]: Store serial: [18026515]
+[2023-05-09 04:57:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18026515]
+[2023-05-09 04:57:57] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pwl-chat-python
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: air-df
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kuto
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: meerschaum
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scutls
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyportfolioanalytics
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: react-editable-table
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dea-tools
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: widecity-extracter
+[2023-05-09 04:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: lftools
+[2023-05-09 04:57:57] INFO root fetch - processPackages [pwl-chat-python]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-05-09 04:57:57] INFO root fetch - processPackages [react-editable-table]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 04:57:57] INFO root fetch - processPackages [scutls]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 04:57:57] INFO root fetch - processPackages [air-df]: New version: [0.1.1] Old Version: [0.0.9]
+[2023-05-09 04:57:57] WARNING root fetch - processPackages [pyportfolioanalytics]: Skipping, unable to determine old version
+[2023-05-09 04:57:57] INFO root fetch - processPackages [pyportfolioanalytics]: Start processing: tencentcloud-sdk-python-gme
+[2023-05-09 04:57:57] INFO root fetch - main [MainThread]: End processing [pyportfolioanalytics] error
+[2023-05-09 04:57:57] INFO root fetch - processPackages [widecity-extracter]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 04:57:57] INFO root fetch - processPackages [kuto]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 04:57:57] INFO root fetch - processPackages [lftools]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 04:57:57] INFO root fetch - processPackages [meerschaum]: New version: [1.6.6] Old Version: [1.6.5]
+[2023-05-09 04:57:57] INFO root fetch - processPackages [dea-tools]: New version: [0.2.8.dev9] Old Version: [0.2.8.dev80]
+[2023-05-09 04:57:57] INFO root fetch - processPackages [tencentcloud-sdk-python-gme]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:57:57] INFO root fetch - processPackages [meerschaum]: executing diffoscope
+[2023-05-09 04:57:57] INFO root fetch - processPackages [meerschaum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meerschaum-1.6.5.tar.gz tmp/meerschaum-1.6.6.tar.gz --markdown 20230509/m/meerschaum/1.6.5-1.6.6/diff.md --exclude *.pyd
+[2023-05-09 04:57:57] INFO root fetch - processPackages [lftools]: executing diffoscope
+[2023-05-09 04:57:57] INFO root fetch - processPackages [lftools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lftools-0.9.0.tar.gz tmp/lftools-0.9.1.tar.gz --markdown 20230509/l/lftools/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 04:57:57] INFO root fetch - processPackages [react-editable-table]: Downloading https://files.pythonhosted.org/packages/b5/59/5d0b3b307aa541f231c9e5d17f4fbb665db0c7ed5ed0a12f0502beddeaaa/react_editable_table-0.0.1.tar.gz
+[2023-05-09 04:57:57] INFO root fetch - processPackages [scutls]: Downloading https://files.pythonhosted.org/packages/8d/78/e312ca8316e42d234c292b7f69ed483167a3fd984f6b386d0ac5a89b1323/scutls-0.1.7.tar.gz
+[2023-05-09 04:57:57] INFO root fetch - processPackages [kuto]: Downloading https://files.pythonhosted.org/packages/5d/2b/b07f42d97494605aa51a7b047985ca3a49230c79e7198dc241d507720711/kuto-0.0.2.tar.gz
+[2023-05-09 04:57:57] INFO root fetch - processPackages [pwl-chat-python]: Downloading https://files.pythonhosted.org/packages/15/9d/44966591f169eb39a2984c2b3a6029b9882980c4e4a8eb966d220b8c0df4/pwl-chat-python-1.3.6.tar.gz
+[2023-05-09 04:57:57] INFO root fetch - processPackages [widecity-extracter]: Downloading https://files.pythonhosted.org/packages/ad/96/80d31386d2e1932b1d877c18c522b36d0a2e82f11806796f74ce59dfa97f/widecity-extracter-0.0.1.tar.gz
+[2023-05-09 04:57:57] INFO root fetch - processPackages [air-df]: Downloading https://files.pythonhosted.org/packages/e1/9d/a73d360b4e14a7c5c0fdf17670d92800b70d5cd614781abef1d6b07191b6/air-df-0.0.9.tar.gz
+[2023-05-09 04:57:57] INFO root fetch - processPackages [dea-tools]: Downloading https://files.pythonhosted.org/packages/ef/60/302d5b896ba003446f420b3d1d98212db1523d57a9c286165e4adbce8045/dea-tools-0.2.8.dev80.tar.gz
+[2023-05-09 04:57:57] INFO root fetch - processPackages [pwl-chat-python]: executing diffoscope
+[2023-05-09 04:57:57] INFO root fetch - processPackages [tencentcloud-sdk-python-gme]: Downloading https://files.pythonhosted.org/packages/0f/46/809b7a9121de5e0d6524101614e281e336e4b1101cc2e3034b49cdc069e1/tencentcloud-sdk-python-gme-3.0.887.tar.gz
+[2023-05-09 04:57:57] INFO root fetch - processPackages [pwl-chat-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwl-chat-python-1.3.5.tar.gz tmp/pwl-chat-python-1.3.6.tar.gz --markdown 20230509/p/pwl-chat-python/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-05-09 04:57:58] INFO root fetch - processPackages [scutls]: Downloading https://files.pythonhosted.org/packages/1d/c4/c5f4ffab5f24c925e29b373acb0b1b5badd4823f4feb83082ed6425ace08/scutls-0.1.8.tar.gz
+[2023-05-09 04:57:58] INFO root fetch - processPackages [kuto]: Downloading https://files.pythonhosted.org/packages/4f/28/32866a20fec5dcb73fe748ad140ae3a612956c13a46bccec851b309a8fb6/kuto-0.0.3.tar.gz
+[2023-05-09 04:57:58] INFO root fetch - processPackages [react-editable-table]: Downloading https://files.pythonhosted.org/packages/84/e3/9eb98e3cf0defba3f027c5d5f99a4cce76bf8efc42acdfa3c274bccdd9cb/react_editable_table-0.0.2.tar.gz
+[2023-05-09 04:57:58] INFO root fetch - processPackages [widecity-extracter]: Downloading https://files.pythonhosted.org/packages/d0/97/37c1448dcb2710cc58d5c04810213d204f320d167b9eee11efd1222fb605/widecity-extracter-0.0.2.tar.gz
+[2023-05-09 04:57:58] INFO root fetch - processPackages [air-df]: Downloading https://files.pythonhosted.org/packages/a1/58/8e46ad689bb8cf6d2b5fc7eeef98c74a896dbd3afbf049a9c94f44bb3aab/air-df-0.1.1.tar.gz
+[2023-05-09 04:57:58] INFO root fetch - processPackages [tencentcloud-sdk-python-gme]: executing diffoscope
+[2023-05-09 04:57:58] INFO root fetch - processPackages [tencentcloud-sdk-python-gme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-gme-3.0.886.tar.gz tmp/tencentcloud-sdk-python-gme-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-gme/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:57:58] INFO root fetch - processPackages [scutls]: executing diffoscope
+[2023-05-09 04:57:58] INFO root fetch - processPackages [scutls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scutls-0.1.7.tar.gz tmp/scutls-0.1.8.tar.gz --markdown 20230509/s/scutls/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 04:57:58] INFO root fetch - processPackages [dea-tools]: Downloading https://files.pythonhosted.org/packages/dd/f7/b2e8ab9008b9e7bdc8a498f8add376e8e9239fd58601ad2061023eb1a224/dea-tools-0.2.8.dev9.tar.gz
+[2023-05-09 04:57:58] INFO root fetch - processPackages [air-df]: executing diffoscope
+[2023-05-09 04:57:58] INFO root fetch - processPackages [air-df]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/air-df-0.0.9.tar.gz tmp/air-df-0.1.1.tar.gz --markdown 20230509/a/air-df/0.0.9-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 04:57:58] INFO root fetch - processPackages [kuto]: executing diffoscope
+[2023-05-09 04:57:58] INFO root fetch - processPackages [kuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuto-0.0.2.tar.gz tmp/kuto-0.0.3.tar.gz --markdown 20230509/k/kuto/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 04:57:58] INFO root fetch - processPackages [react-editable-table]: executing diffoscope
+[2023-05-09 04:57:58] INFO root fetch - processPackages [react-editable-table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/react_editable_table-0.0.1.tar.gz tmp/react_editable_table-0.0.2.tar.gz --markdown 20230509/r/react-editable-table/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 04:57:58] INFO root fetch - processPackages [widecity-extracter]: executing diffoscope
+[2023-05-09 04:57:58] INFO root fetch - processPackages [widecity-extracter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/widecity-extracter-0.0.1.tar.gz tmp/widecity-extracter-0.0.2.tar.gz --markdown 20230509/w/widecity-extracter/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 04:57:58] INFO root fetch - processPackages [dea-tools]: executing diffoscope
+[2023-05-09 04:57:58] INFO root fetch - processPackages [dea-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dea-tools-0.2.8.dev80.tar.gz tmp/dea-tools-0.2.8.dev9.tar.gz --markdown 20230509/d/dea-tools/0.2.8.dev80-0.2.8.dev9/diff.md --exclude *.pyd
+[2023-05-09 04:57:59] INFO root fetch - processPackages [pwl-chat-python]: Start processing: tencentcloud-sdk-python-goosefs
+[2023-05-09 04:57:59] INFO root fetch - main [MainThread]: End processing [pwl-chat-python]: success
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-goosefs]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-gme]: Start processing: tencentcloud-sdk-python-gpm
+[2023-05-09 04:57:59] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-gme]: success
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-gpm]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:57:59] INFO root fetch - processPackages [scutls]: Start processing: tencentcloud-sdk-python-gs
+[2023-05-09 04:57:59] INFO root fetch - main [MainThread]: End processing [scutls]: success
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-gs]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:57:59] INFO root fetch - processPackages [air-df]: Start processing: tencentcloud-sdk-python-gse
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-gpm]: Downloading https://files.pythonhosted.org/packages/fd/39/070934192add3432338ef9ca7c54f3c524dde6fe9c7081c7972533aaaac6/tencentcloud-sdk-python-gpm-3.0.887.tar.gz
+[2023-05-09 04:57:59] INFO root fetch - main [MainThread]: End processing [air-df]: success
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-gse]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-goosefs]: Downloading https://files.pythonhosted.org/packages/51/2e/695aec89f970797e52da90b76345130ded1cf0be6aad218067bcf9271170/tencentcloud-sdk-python-goosefs-3.0.887.tar.gz
+[2023-05-09 04:57:59] INFO root fetch - processPackages [lftools]: Start processing: spiderx
+[2023-05-09 04:57:59] INFO root fetch - main [MainThread]: End processing [lftools]: success
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-gs]: Downloading https://files.pythonhosted.org/packages/73/31/fb6fecf6891b7d50b2c5caed32f3e3f83d9ef0ee641d8bc9b0cf3243c854/tencentcloud-sdk-python-gs-3.0.887.tar.gz
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-gpm]: executing diffoscope
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-gpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-gpm-3.0.886.tar.gz tmp/tencentcloud-sdk-python-gpm-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-gpm/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:57:59] INFO root fetch - processPackages [spiderx]: New version: [1.8.9] Old Version: [1.8.2]
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-gse]: Downloading https://files.pythonhosted.org/packages/d4/8a/2eea060fd93d8202107061e0e0352c0e60e2785450db5d34fcc8ca16b11d/tencentcloud-sdk-python-gse-3.0.887.tar.gz
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-goosefs]: executing diffoscope
+[2023-05-09 04:57:59] INFO root fetch - processPackages [tencentcloud-sdk-python-goosefs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-goosefs-3.0.886.tar.gz tmp/tencentcloud-sdk-python-goosefs-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-goosefs/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:57:59] INFO root fetch - processPackages [widecity-extracter]: Start processing: carchive
+[2023-05-09 04:57:59] INFO root fetch - main [MainThread]: End processing [widecity-extracter]: success
+[2023-05-09 04:58:00] INFO root fetch - processPackages [carchive]: New version: [0.0.56] Old Version: [0.0.55]
+[2023-05-09 04:58:00] INFO root fetch - processPackages [tencentcloud-sdk-python-gs]: executing diffoscope
+[2023-05-09 04:58:00] INFO root fetch - processPackages [tencentcloud-sdk-python-gs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-gs-3.0.886.tar.gz tmp/tencentcloud-sdk-python-gs-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-gs/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:58:00] INFO root fetch - processPackages [carchive]: executing diffoscope
+[2023-05-09 04:58:00] INFO root fetch - processPackages [carchive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carchive-0.0.55.tar.gz tmp/carchive-0.0.56.tar.gz --markdown 20230509/c/carchive/0.0.55-0.0.56/diff.md --exclude *.pyd
+[2023-05-09 04:58:00] INFO root fetch - processPackages [react-editable-table]: Start processing: sans
+[2023-05-09 04:58:00] INFO root fetch - main [MainThread]: End processing [react-editable-table]: success
+[2023-05-09 04:58:00] INFO root fetch - processPackages [spiderx]: Downloading https://files.pythonhosted.org/packages/0a/38/bdc5166668af43c8d8fb12955ee54797392b7e8d7c1bc7aa8180d6cf526b/spiderx-1.8.2.tar.gz
+[2023-05-09 04:58:00] INFO root fetch - processPackages [tencentcloud-sdk-python-gse]: executing diffoscope
+[2023-05-09 04:58:00] INFO root fetch - processPackages [tencentcloud-sdk-python-gse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-gse-3.0.886.tar.gz tmp/tencentcloud-sdk-python-gse-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-gse/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:58:00] INFO root fetch - processPackages [sans]: New version: [1.0.0a1] Old Version: [0.0.1b7]
+[2023-05-09 04:58:00] INFO root fetch - processPackages [spiderx]: Downloading https://files.pythonhosted.org/packages/89/1b/9167dbeeaa50aa50ace655fad0bdde6e911624db12636d31909324747f8a/spiderx-1.8.9.tar.gz
+[2023-05-09 04:58:00] INFO root fetch - processPackages [sans]: Downloading https://files.pythonhosted.org/packages/dc/fe/991d28471066edb18d8e6854e344d83dc5978f93e9c948f4a2a428473f8e/sans-0.0.1b7.tar.gz
+[2023-05-09 04:58:00] INFO root fetch - processPackages [dea-tools]: Start processing: align4d
+[2023-05-09 04:58:00] INFO root fetch - main [MainThread]: End processing [dea-tools]: success
+[2023-05-09 04:58:00] INFO root fetch - processPackages [spiderx]: executing diffoscope
+[2023-05-09 04:58:00] INFO root fetch - processPackages [spiderx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderx-1.8.2.tar.gz tmp/spiderx-1.8.9.tar.gz --markdown 20230509/s/spiderx/1.8.2-1.8.9/diff.md --exclude *.pyd
+[2023-05-09 04:58:00] INFO root fetch - processPackages [align4d]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-09 04:58:00] ERROR root fetch - processPackages [spiderx]: Diffoscope failed: Error: error creating container storage: the container name "youthful_shirley" is already in use by "2afe256e98ed53b91fe31bc6104f9ca483545cd7575572ffc12d725bfdf0e421". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-09 04:58:00] INFO root fetch - main [MainThread]: End processing [spiderx] error
+[2023-05-09 04:58:00] INFO root fetch - processPackages [align4d]: Downloading https://files.pythonhosted.org/packages/db/9c/7fa08c7207be3a943a91ad3a7ea1674892977dc9a5c91381f22e524a899f/align4d-1.0.0.tar.gz
+[2023-05-09 04:58:01] INFO root fetch - processPackages [sans]: Downloading https://files.pythonhosted.org/packages/ad/70/dbc0f1ec0d42e4f8306a9141c0f20f3e9d98271d5eee0d28001d0667b7c3/sans-1.0.0a1.tar.gz
+[2023-05-09 04:58:01] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-gpm]: success
+[2023-05-09 04:58:01] INFO root fetch - processPackages [align4d]: Downloading https://files.pythonhosted.org/packages/a9/b6/67c3ab8a88287131f6dc86986601f8878ff5487e1790161ecad9acf3ae8e/align4d-1.1.0.tar.gz
+[2023-05-09 04:58:01] INFO root fetch - processPackages [sans]: executing diffoscope
+[2023-05-09 04:58:01] INFO root fetch - processPackages [sans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sans-0.0.1b7.tar.gz tmp/sans-1.0.0a1.tar.gz --markdown 20230509/s/sans/0.0.1b7-1.0.0a1/diff.md --exclude *.pyd
+[2023-05-09 04:58:01] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-goosefs]: success
+[2023-05-09 04:58:01] INFO root fetch - processPackages [align4d]: executing diffoscope
+[2023-05-09 04:58:01] INFO root fetch - processPackages [align4d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/align4d-1.0.0.tar.gz tmp/align4d-1.1.0.tar.gz --markdown 20230509/a/align4d/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 04:58:01] INFO root fetch - main [MainThread]: End processing [carchive]: success
+[2023-05-09 04:58:01] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-gs]: success
+[2023-05-09 04:58:01] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-gse]: success
+[2023-05-09 04:58:01] INFO root fetch - main [MainThread]: End processing [kuto]: success
+[2023-05-09 04:58:02] INFO root fetch - main [MainThread]: End processing [sans]: success
+[2023-05-09 04:58:02] INFO root fetch - main [MainThread]: End processing [meerschaum]: success
+[2023-05-09 04:58:12] INFO root fetch - main [MainThread]: End processing [align4d]: success
+[2023-05-09 04:58:12] INFO root fetch - main [MainThread]: Store serial: [18026572]
