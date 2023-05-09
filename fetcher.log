@@ -2371,3 +2371,67 @@
 [2023-05-09 02:48:08] INFO root fetch - main [MainThread]: End processing [mgz]: success
 [2023-05-09 02:48:17] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-05-09 02:48:17] INFO root fetch - main [MainThread]: Store serial: [18024386]
+[2023-05-09 02:53:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18024386]
+[2023-05-09 02:53:25] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: projen
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: benchling-api-client
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: molad
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysparkler
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-databrew-cicd
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: reportbro-fpdf2
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: RMTable
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: esterdb
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Flask-Lib
+[2023-05-09 02:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: khloraascaf
+[2023-05-09 02:53:25] INFO root fetch - processPackages [molad]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-09 02:53:25] INFO root fetch - processPackages [RMTable]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-09 02:53:25] INFO root fetch - processPackages [benchling-api-client]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-09 02:53:25] WARNING root fetch - processPackages [Flask-Lib]: Skipping, unable to determine old version
+[2023-05-09 02:53:25] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-09 02:53:25] INFO root fetch - processPackages [Flask-Lib]: Start processing: diffcord
+[2023-05-09 02:53:25] INFO root fetch - main [MainThread]: End processing [Flask-Lib] error
+[2023-05-09 02:53:25] INFO root fetch - processPackages [khloraascaf]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-05-09 02:53:25] WARNING root fetch - processPackages [esterdb]: Skipping, unable to determine old version
+[2023-05-09 02:53:25] INFO root fetch - main [MainThread]: End processing [esterdb] error
+[2023-05-09 02:53:25] INFO root fetch - processPackages [pysparkler]: New version: [0.7.dev1683593394] Old Version: [0.7.dev1683592298]
+[2023-05-09 02:53:25] INFO root fetch - processPackages [reportbro-fpdf2]: New version: [2.7.0] Old Version: [0.9.1]
+[2023-05-09 02:53:25] INFO root fetch - processPackages [diffcord]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 02:53:25] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-05-09 02:53:25] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230509/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-09 02:53:26] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-09 02:53:26] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/19/d9/6e10a0d753d2b0d94a4d62230595622ccfa9f314a1f4487b1f5d266f27f5/pysparkler-0.7.dev1683592298.tar.gz
+[2023-05-09 02:53:26] INFO root fetch - processPackages [molad]: Downloading https://files.pythonhosted.org/packages/5a/e7/530bbbc04520f367b73426ac164012e4006ec33330ecbfb3d73862230d98/molad-0.0.4.tar.gz
+[2023-05-09 02:53:26] INFO root fetch - processPackages [RMTable]: Downloading https://files.pythonhosted.org/packages/c3/63/1b8c5a85448f07071230a72e102892b5d084ef278beb062586f86b3f376d/RMTable-1.2.0.tar.gz
+[2023-05-09 02:53:26] INFO root fetch - processPackages [reportbro-fpdf2]: Downloading https://files.pythonhosted.org/packages/5a/15/4a507f16f3f1d0b7f22396dab6c182ca097a36d3524a48e1de7fbca69a7f/reportbro-fpdf2-0.9.1.tar.gz
+[2023-05-09 02:53:26] INFO root fetch - processPackages [diffcord]: Downloading https://files.pythonhosted.org/packages/e9/78/8f55d1d4a496b2eeff30e9a29144ccddd83656606d7091925218e2598c89/diffcord-1.0.1.tar.gz
+[2023-05-09 02:53:26] INFO root fetch - processPackages [khloraascaf]: Downloading https://files.pythonhosted.org/packages/88/8c/b6092280c8e47897755c6989ebda19edb4bae5e668ec3bfd5dea1b0e6776/khloraascaf-1.7.1.tar.gz
+[2023-05-09 02:53:26] INFO root fetch - processPackages [diffcord]: executing diffoscope
+[2023-05-09 02:53:26] INFO root fetch - processPackages [diffcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diffcord-1.0.0.tar.gz tmp/diffcord-1.0.1.tar.gz --markdown 20230509/d/diffcord/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 02:53:26] INFO root fetch - processPackages [khloraascaf]: executing diffoscope
+[2023-05-09 02:53:26] INFO root fetch - processPackages [khloraascaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khloraascaf-1.7.0.tar.gz tmp/khloraascaf-1.7.1.tar.gz --markdown 20230509/k/khloraascaf/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-05-09 02:53:26] INFO root fetch - processPackages [benchling-api-client]: executing diffoscope
+[2023-05-09 02:53:26] INFO root fetch - processPackages [benchling-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benchling_api_client-2.0.98.tar.gz tmp/benchling_api_client-2.0.99.tar.gz --markdown 20230509/b/benchling-api-client/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-09 02:53:26] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/3f/cd/e14392199e8a29867e64f45fba3147d2e292552f918d6b059378ae1e4f7b/pysparkler-0.7.dev1683593394.tar.gz
+[2023-05-09 02:53:26] INFO root fetch - processPackages [RMTable]: Downloading https://files.pythonhosted.org/packages/f8/9a/30703972c544616f16a83cb5e00a01e849975883969e0abacb8d0ee9f2c8/RMTable-1.2.1.tar.gz
+[2023-05-09 02:53:26] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-09 02:53:26] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230509/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-09 02:53:26] INFO root fetch - processPackages [molad]: Downloading https://files.pythonhosted.org/packages/6b/0f/c085d02b5614a11ff71430f1246839aaba88a67f86051bf632332a0ed6c8/molad-0.0.5.tar.gz
+[2023-05-09 02:53:26] INFO root fetch - processPackages [pysparkler]: executing diffoscope
+[2023-05-09 02:53:26] INFO root fetch - processPackages [pysparkler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkler-0.7.dev1683592298.tar.gz tmp/pysparkler-0.7.dev1683593394.tar.gz --markdown 20230509/p/pysparkler/0.7.dev1683592298-0.7.dev1683593394/diff.md --exclude *.pyd
+[2023-05-09 02:53:26] INFO root fetch - processPackages [reportbro-fpdf2]: Downloading https://files.pythonhosted.org/packages/2e/86/db6186108081e37831fa622b0992bad0ef8ba49f7f531b660b00ee642dcb/reportbro_fpdf2-2.7.0-py2.py3-none-any.whl
+[2023-05-09 02:53:26] INFO root fetch - processPackages [molad]: executing diffoscope
+[2023-05-09 02:53:26] INFO root fetch - processPackages [molad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molad-0.0.4.tar.gz tmp/molad-0.0.5.tar.gz --markdown 20230509/m/molad/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 02:53:26] INFO root fetch - processPackages [reportbro-fpdf2]: executing diffoscope
+[2023-05-09 02:53:26] INFO root fetch - processPackages [reportbro-fpdf2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reportbro-fpdf2-0.9.1.tar.gz tmp/reportbro_fpdf2-2.7.0-py2.py3-none-any.whl.zip --markdown 20230509/r/reportbro-fpdf2/0.9.1-2.7.0/diff.md --exclude *.pyd
+[2023-05-09 02:53:26] INFO root fetch - processPackages [RMTable]: executing diffoscope
+[2023-05-09 02:53:26] INFO root fetch - processPackages [RMTable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RMTable-1.2.0.tar.gz tmp/RMTable-1.2.1.tar.gz --markdown 20230509/R/RMTable/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-09 02:53:27] INFO root fetch - main [MainThread]: End processing [diffcord]: success
+[2023-05-09 02:53:27] INFO root fetch - main [MainThread]: End processing [molad]: success
+[2023-05-09 02:53:27] INFO root fetch - main [MainThread]: End processing [pysparkler]: success
+[2023-05-09 02:53:27] INFO root fetch - main [MainThread]: End processing [reportbro-fpdf2]: success
+[2023-05-09 02:53:28] INFO root fetch - main [MainThread]: End processing [RMTable]: success
+[2023-05-09 02:53:28] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-09 02:53:29] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-05-09 02:53:29] INFO root fetch - main [MainThread]: End processing [khloraascaf]: success
+[2023-05-09 02:55:16] INFO root fetch - main [MainThread]: End processing [benchling-api-client]: success
+[2023-05-09 02:55:16] INFO root fetch - main [MainThread]: Store serial: [18024423]
