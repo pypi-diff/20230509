@@ -10157,3 +10157,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 08:17:57] INFO root fetch - main [MainThread]: End processing [pandas-indexing]: success
 [2023-05-09 08:18:00] INFO root fetch - main [MainThread]: End processing [bp-data-visualization]: success
 [2023-05-09 08:18:00] INFO root fetch - main [MainThread]: Store serial: [18028149]
+[2023-05-09 08:23:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028149]
+[2023-05-09 08:23:10] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QuNet
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whochat
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: font-CLI
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pretext
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tumfl
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ai-data-preprocessing-queue
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: datacyclist
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hubitatcontrol
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cloud-data-connector
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-okta
+[2023-05-09 08:23:10] INFO root fetch - processPackages [tumfl]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 08:23:10] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 08:23:10] WARNING root fetch - processPackages [ai-data-preprocessing-queue]: Skipping, unable to determine old version
+[2023-05-09 08:23:10] INFO root fetch - processPackages [ai-data-preprocessing-queue]: Start processing: musegan
+[2023-05-09 08:23:10] INFO root fetch - main [MainThread]: End processing [ai-data-preprocessing-queue] error
+[2023-05-09 08:23:10] INFO root fetch - processPackages [cloud-data-connector]: New version: [1.0.0] Old Version: [0.0.0.dev1]
+[2023-05-09 08:23:10] ERROR root fetch - processPackages [datacyclist]: Unable to get metadata: No such project 'datacyclist'
+[2023-05-09 08:23:10] INFO root fetch - main [MainThread]: End processing [datacyclist] error
+[2023-05-09 08:23:10] INFO root fetch - processPackages [whochat]: New version: [1.3.2] Old Version: [1.3.0]
+[2023-05-09 08:23:10] INFO root fetch - processPackages [hubitatcontrol]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-09 08:23:10] INFO root fetch - processPackages [font-CLI]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 08:23:10] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230509] Old Version: [1.5.3.dev20230508]
+[2023-05-09 08:23:10] INFO root fetch - processPackages [musegan]: New version: [0.0.6] Old Version: [0.0.4]
+[2023-05-09 08:23:10] INFO root fetch - processPackages [pulumi-okta]: New version: [3.9.0a1652715097] Old Version: [3.9.0a1650909822]
+[2023-05-09 08:23:10] INFO root fetch - processPackages [musegan]: executing diffoscope
+[2023-05-09 08:23:10] INFO root fetch - processPackages [musegan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musegan-0.0.4.tar.gz tmp/musegan-0.0.6.tar.gz --markdown 20230509/m/musegan/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 08:23:10] INFO root fetch - processPackages [cloud-data-connector]: Downloading https://files.pythonhosted.org/packages/09/a6/6cfceca132ca525d6464bd0c4b9d9aa4e8578ec6dbdb926832635978acbf/cloud-data-connector-0.0.0.dev1.tar.gz
+[2023-05-09 08:23:10] INFO root fetch - processPackages [hubitatcontrol]: Downloading https://files.pythonhosted.org/packages/69/e6/36e2c26dfc050d86a6790e9f13d4a0cff5b7c06cb2fbe4ae9b2de0bf5708/hubitatcontrol-2.3.2.tar.gz
+[2023-05-09 08:23:10] INFO root fetch - processPackages [tumfl]: Downloading https://files.pythonhosted.org/packages/0d/22/7217d7ef50ded54d58a767e1058db87b2b17d8eccfef852aebd50e257f4f/tumfl-0.1.4.tar.gz
+[2023-05-09 08:23:10] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/9d/bd/aa1e3c76d434d19007286b629c43dcd0678c1bcb90de3c569a399e887931/pretext-1.5.3.dev20230509.tar.gz
+[2023-05-09 08:23:10] INFO root fetch - processPackages [font-CLI]: Downloading https://files.pythonhosted.org/packages/06/60/9a4e563794daa93134d8c5427df6bf3a3d4b52b1d2f640738b6cf7b03ea6/font-CLI-0.9.8.tar.gz
+[2023-05-09 08:23:10] INFO root fetch - processPackages [pulumi-okta]: Downloading https://files.pythonhosted.org/packages/f5/a4/2f4087cfeedaf6c2e5db7486ef05c0f2ac7ff8223bdb8b12027e4ea02112/pulumi_okta-3.9.0a1650909822.tar.gz
+[2023-05-09 08:23:10] INFO root fetch - processPackages [tumfl]: executing diffoscope
+[2023-05-09 08:23:10] INFO root fetch - processPackages [tumfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tumfl-0.1.3.tar.gz tmp/tumfl-0.1.4.tar.gz --markdown 20230509/t/tumfl/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 08:23:10] INFO root fetch - processPackages [hubitatcontrol]: executing diffoscope
+[2023-05-09 08:23:10] INFO root fetch - processPackages [hubitatcontrol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hubitatcontrol-2.3.1.tar.gz tmp/hubitatcontrol-2.3.2.tar.gz --markdown 20230509/h/hubitatcontrol/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-09 08:23:10] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-05-09 08:23:10] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230508.tar.gz tmp/pretext-1.5.3.dev20230509.tar.gz --markdown 20230509/p/pretext/1.5.3.dev20230508-1.5.3.dev20230509/diff.md --exclude *.pyd
+[2023-05-09 08:23:10] INFO root fetch - processPackages [whochat]: Downloading https://files.pythonhosted.org/packages/fe/41/afac2a54c0f830631e4ac48c938d8cf2dcdedb7955503164d47f7e0c0126/whochat-1.3.2.tar.gz
+[2023-05-09 08:23:11] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-05-09 08:23:11] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230509/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 08:23:11] INFO root fetch - processPackages [cloud-data-connector]: Downloading https://files.pythonhosted.org/packages/1c/ae/ed23709b6826ac9d8a72df51e859a9697f383b26d705d78e0c24c5559492/cloud_data_connector-1.0.0.tar.gz
+[2023-05-09 08:23:11] INFO root fetch - processPackages [whochat]: executing diffoscope
+[2023-05-09 08:23:11] INFO root fetch - processPackages [whochat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whochat-1.3.0.tar.gz tmp/whochat-1.3.2.tar.gz --markdown 20230509/w/whochat/1.3.0-1.3.2/diff.md --exclude *.pyd
+[2023-05-09 08:23:11] INFO root fetch - processPackages [font-CLI]: Downloading https://files.pythonhosted.org/packages/32/a2/92d8279cf0ec790d01e55a0b0024fe518128e1728d42dfbbb55e17f8a4c9/font-CLI-0.9.9.tar.gz
+[2023-05-09 08:23:11] INFO root fetch - processPackages [cloud-data-connector]: executing diffoscope
+[2023-05-09 08:23:11] INFO root fetch - processPackages [cloud-data-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-data-connector-0.0.0.dev1.tar.gz tmp/cloud_data_connector-1.0.0.tar.gz --markdown 20230509/c/cloud-data-connector/0.0.0.dev1-1.0.0/diff.md --exclude *.pyd
+[2023-05-09 08:23:11] INFO root fetch - processPackages [pulumi-okta]: Downloading https://files.pythonhosted.org/packages/d8/2c/5d5f7005f00e1dba3bd8b51ceaca9a35c45e1f1b54574d0a70abc34b825a/pulumi_okta-3.9.0a1652715097.tar.gz
+[2023-05-09 08:23:11] INFO root fetch - processPackages [font-CLI]: executing diffoscope
+[2023-05-09 08:23:11] INFO root fetch - processPackages [font-CLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/font-CLI-0.9.8.tar.gz tmp/font-CLI-0.9.9.tar.gz --markdown 20230509/f/font-CLI/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 08:23:11] INFO root fetch - processPackages [pulumi-okta]: executing diffoscope
+[2023-05-09 08:23:11] INFO root fetch - processPackages [pulumi-okta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_okta-3.9.0a1650909822.tar.gz tmp/pulumi_okta-3.9.0a1652715097.tar.gz --markdown 20230509/p/pulumi-okta/3.9.0a1650909822-3.9.0a1652715097/diff.md --exclude *.pyd
+[2023-05-09 08:23:12] INFO root fetch - main [MainThread]: End processing [musegan]: success
+[2023-05-09 08:23:12] INFO root fetch - main [MainThread]: End processing [hubitatcontrol]: success
+[2023-05-09 08:23:12] INFO root fetch - main [MainThread]: End processing [tumfl]: success
+[2023-05-09 08:23:12] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-05-09 08:23:12] INFO root fetch - main [MainThread]: End processing [cloud-data-connector]: success
+[2023-05-09 08:23:13] INFO root fetch - main [MainThread]: End processing [font-CLI]: success
+[2023-05-09 08:23:14] INFO root fetch - main [MainThread]: End processing [whochat]: success
+[2023-05-09 08:23:15] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-05-09 08:23:18] INFO root fetch - main [MainThread]: End processing [pulumi-okta]: success
+[2023-05-09 08:23:18] INFO root fetch - main [MainThread]: Store serial: [18028194]
