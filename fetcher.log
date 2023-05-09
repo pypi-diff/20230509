@@ -12924,3 +12924,111 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 11:08:50] INFO root fetch - main [MainThread]: End processing [hydromass]: success
 [2023-05-09 11:08:50] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2023-05-09 11:08:50] INFO root fetch - main [MainThread]: Store serial: [18029867]
+[2023-05-09 11:13:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029867]
+[2023-05-09 11:13:59] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotON_sdk
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modelon-impact-client
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.projen-awscdk-construct
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: makejinja
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: checkov
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lusid-notifications-sdk-preview
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openhexa.sdk
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: phdu
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qontract-reconcile
+[2023-05-09 11:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jy-utils
+[2023-05-09 11:13:59] INFO root fetch - processPackages [modelon-impact-client]: New version: [3.0.0.dev9] Old Version: [3.0.0.dev8]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [jy-utils]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [openhexa.sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [phdu]: New version: [1.9b3] Old Version: [1.9b2]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [modelon-impact-client]: executing diffoscope
+[2023-05-09 11:13:59] INFO root fetch - processPackages [modelon-impact-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelon_impact_client-3.0.0.dev8.tar.gz tmp/modelon_impact_client-3.0.0.dev9.tar.gz --markdown 20230509/m/modelon-impact-client/3.0.0.dev8-3.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-09 11:13:59] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.2.8] Old Version: [0.0.2.7]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [makejinja]: New version: [1.1.5b2] Old Version: [1.1.5b1]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: New version: [0.1.663] Old Version: [0.1.660]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [jy-utils]: executing diffoscope
+[2023-05-09 11:13:59] INFO root fetch - processPackages [jy-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jy_utils-0.0.3.tar.gz tmp/jy_utils-0.0.4.tar.gz --markdown 20230509/j/jy-utils/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 11:13:59] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-05-09 11:13:59] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230509/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-05-09 11:13:59] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: executing diffoscope
+[2023-05-09 11:13:59] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.projen-awscdk-construct-0.0.98.tar.gz tmp/pepperize.projen-awscdk-construct-0.0.99.tar.gz --markdown 20230509/p/pepperize.projen-awscdk-construct/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 11:13:59] INFO root fetch - processPackages [phdu]: executing diffoscope
+[2023-05-09 11:13:59] INFO root fetch - processPackages [phdu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phdu-1.9b2.tar.gz tmp/phdu-1.9b3.tar.gz --markdown 20230509/p/phdu/1.9b2-1.9b3/diff.md --exclude *.pyd
+[2023-05-09 11:13:59] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-09 11:13:59] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: Downloading https://files.pythonhosted.org/packages/48/fc/7a0d3bb958e3a076f19a2fdbeec8c4c92171c0545e32cfe2dc0e2212d10c/lusid-notifications-sdk-preview-0.1.660.tar.gz
+[2023-05-09 11:13:59] INFO root fetch - processPackages [makejinja]: Downloading https://files.pythonhosted.org/packages/9e/64/0598d8c71f0d628a0f4748187ac9bfcd731c52adf4ce22d21bcd088b09be/makejinja-1.1.5b2.tar.gz
+[2023-05-09 11:13:59] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-09 11:13:59] INFO root fetch - processPackages [openhexa.sdk]: executing diffoscope
+[2023-05-09 11:13:59] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230509/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-09 11:13:59] INFO root fetch - processPackages [openhexa.sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openhexa.sdk-0.1.8.tar.gz tmp/openhexa.sdk-0.1.9.tar.gz --markdown 20230509/o/openhexa.sdk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 11:13:59] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/c0/df/98384add8d0668595b7d0d010e3fe1edb2ef634d360d28ecaf4fb738be3f/spotON_sdk-0.0.2.8.tar.gz
+[2023-05-09 11:13:59] INFO root fetch - processPackages [makejinja]: executing diffoscope
+[2023-05-09 11:13:59] INFO root fetch - processPackages [makejinja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makejinja-1.1.5b1.tar.gz tmp/makejinja-1.1.5b2.tar.gz --markdown 20230509/m/makejinja/1.1.5b1-1.1.5b2/diff.md --exclude *.pyd
+[2023-05-09 11:14:00] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: Downloading https://files.pythonhosted.org/packages/cc/a3/3ab1ebed824c6721a2afd30f581cfd5393a705427730fe04868a70af507b/lusid-notifications-sdk-preview-0.1.663.tar.gz
+[2023-05-09 11:14:00] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-09 11:14:00] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.2.7.tar.gz tmp/spotON_sdk-0.0.2.8.tar.gz --markdown 20230509/s/spotON_sdk/0.0.2.7-0.0.2.8/diff.md --exclude *.pyd
+[2023-05-09 11:14:00] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: executing diffoscope
+[2023-05-09 11:14:00] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-notifications-sdk-preview-0.1.660.tar.gz tmp/lusid-notifications-sdk-preview-0.1.663.tar.gz --markdown 20230509/l/lusid-notifications-sdk-preview/0.1.660-0.1.663/diff.md --exclude *.pyd
+[2023-05-09 11:14:01] INFO root fetch - processPackages [jy-utils]: Start processing: equal-odds
+[2023-05-09 11:14:01] INFO root fetch - main [MainThread]: End processing [jy-utils]: success
+[2023-05-09 11:14:01] INFO root fetch - processPackages [equal-odds]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 11:14:01] INFO root fetch - processPackages [equal-odds]: executing diffoscope
+[2023-05-09 11:14:01] INFO root fetch - processPackages [equal-odds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/equal-odds-0.0.3.tar.gz tmp/equal-odds-0.0.4.tar.gz --markdown 20230509/e/equal-odds/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 11:14:01] INFO root fetch - processPackages [spotON_sdk]: Start processing: sphinx-typo3-theme
+[2023-05-09 11:14:01] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-09 11:14:01] INFO root fetch - processPackages [sphinx-typo3-theme]: New version: [4.7.9] Old Version: [4.7.7]
+[2023-05-09 11:14:02] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: Start processing: encord
+[2023-05-09 11:14:02] INFO root fetch - main [MainThread]: End processing [pepperize.projen-awscdk-construct]: success
+[2023-05-09 11:14:02] INFO root fetch - processPackages [makejinja]: Start processing: Thya
+[2023-05-09 11:14:02] INFO root fetch - main [MainThread]: End processing [makejinja]: success
+[2023-05-09 11:14:02] INFO root fetch - processPackages [encord]: New version: [0.1.75] Old Version: [0.1.74]
+[2023-05-09 11:14:02] INFO root fetch - processPackages [phdu]: Start processing: bq-validator
+[2023-05-09 11:14:02] INFO root fetch - main [MainThread]: End processing [phdu]: success
+[2023-05-09 11:14:02] INFO root fetch - processPackages [sphinx-typo3-theme]: Downloading https://files.pythonhosted.org/packages/f8/f2/df9db0aaacfa17919d1e1d2ecedac6ac6603722304ba33a2c4cae769fe6a/sphinx_typo3_theme-4.7.7-py2.py3-none-any.whl
+[2023-05-09 11:14:02] INFO root fetch - processPackages [Thya]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 11:14:02] INFO root fetch - processPackages [bq-validator]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-09 11:14:02] INFO root fetch - processPackages [encord]: Downloading https://files.pythonhosted.org/packages/fd/ec/45b142516d1b38dd4924390621490f554b32d051c53e2e5c1aebf70b57ab/encord-0.1.74.tar.gz
+[2023-05-09 11:14:02] INFO root fetch - processPackages [Thya]: Downloading https://files.pythonhosted.org/packages/a4/3a/a92eb118528a2577539c1c06594d27eca955fff35104b1c8539645ba8398/Thya-0.0.1.tar.gz
+[2023-05-09 11:14:02] INFO root fetch - processPackages [openhexa.sdk]: Start processing: openlane
+[2023-05-09 11:14:02] INFO root fetch - main [MainThread]: End processing [openhexa.sdk]: success
+[2023-05-09 11:14:02] INFO root fetch - processPackages [bq-validator]: Downloading https://files.pythonhosted.org/packages/b0/be/1045cd902f874fcb71cdcb01ca224707430115e372f8a876a59a8475501d/bq-validator-0.5.3.tar.gz
+[2023-05-09 11:14:02] INFO root fetch - processPackages [openlane]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-05-09 11:14:02] INFO root fetch - processPackages [modelon-impact-client]: Start processing: deep-clone-gfg-test
+[2023-05-09 11:14:02] INFO root fetch - main [MainThread]: End processing [modelon-impact-client]: success
+[2023-05-09 11:14:02] INFO root fetch - processPackages [encord]: Downloading https://files.pythonhosted.org/packages/b8/a1/68957e8daefde843a7c26949f2cb231a291eaf264f90afec8935873f28b1/encord-0.1.75.tar.gz
+[2023-05-09 11:14:02] INFO root fetch - processPackages [bq-validator]: Downloading https://files.pythonhosted.org/packages/36/bd/e1a7bcf8aa15916f78434af0a5d9253e65bce79d04a2878d853ce2e94134/bq-validator-0.5.4.tar.gz
+[2023-05-09 11:14:02] INFO root fetch - processPackages [Thya]: Downloading https://files.pythonhosted.org/packages/16/71/2989731dddca0d8fdb4b896ed28708a0b75927491168a3dc18d3c647713a/Thya-0.0.2.tar.gz
+[2023-05-09 11:14:02] WARNING root fetch - processPackages [deep-clone-gfg-test]: Skipping, unable to determine old version
+[2023-05-09 11:14:02] INFO root fetch - processPackages [deep-clone-gfg-test]: Start processing: mypy-json-report
+[2023-05-09 11:14:02] INFO root fetch - main [MainThread]: End processing [deep-clone-gfg-test] error
+[2023-05-09 11:14:02] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: Start processing: FakeNewsClassifier
+[2023-05-09 11:14:02] INFO root fetch - main [MainThread]: End processing [lusid-notifications-sdk-preview]: success
+[2023-05-09 11:14:02] WARNING root fetch - processPackages [FakeNewsClassifier]: Skipping, unable to determine old version
+[2023-05-09 11:14:02] INFO root fetch - main [MainThread]: End processing [FakeNewsClassifier] error
+[2023-05-09 11:14:02] INFO root fetch - processPackages [encord]: executing diffoscope
+[2023-05-09 11:14:02] INFO root fetch - processPackages [encord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encord-0.1.74.tar.gz tmp/encord-0.1.75.tar.gz --markdown 20230509/e/encord/0.1.74-0.1.75/diff.md --exclude *.pyd
+[2023-05-09 11:14:02] INFO root fetch - processPackages [mypy-json-report]: New version: [1.0.4] Old Version: [1.0.2]
+[2023-05-09 11:14:02] INFO root fetch - processPackages [bq-validator]: executing diffoscope
+[2023-05-09 11:14:02] INFO root fetch - processPackages [bq-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bq-validator-0.5.3.tar.gz tmp/bq-validator-0.5.4.tar.gz --markdown 20230509/b/bq-validator/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-09 11:14:02] INFO root fetch - processPackages [openlane]: executing diffoscope
+[2023-05-09 11:14:02] INFO root fetch - processPackages [openlane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlane-2.0.0a8.tar.gz tmp/openlane-2.0.0a9.tar.gz --markdown 20230509/o/openlane/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-09 11:14:02] INFO root fetch - processPackages [Thya]: executing diffoscope
+[2023-05-09 11:14:02] INFO root fetch - processPackages [Thya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Thya-0.0.1.tar.gz tmp/Thya-0.0.2.tar.gz --markdown 20230509/T/Thya/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 11:14:03] INFO root fetch - processPackages [mypy-json-report]: Downloading https://files.pythonhosted.org/packages/d6/62/6b593399326cb61185c8d69c5faf742b02ff33a2bf36ec2b402aaa5fbfa0/mypy_json_report-1.0.2.tar.gz
+[2023-05-09 11:14:03] INFO root fetch - processPackages [sphinx-typo3-theme]: Downloading https://files.pythonhosted.org/packages/0a/1e/7e73c98f65f17ecbbd547459ae66e8c041e770504704d6092d83abce222d/sphinx_typo3_theme-4.7.9-py2.py3-none-any.whl
+[2023-05-09 11:14:03] INFO root fetch - main [MainThread]: End processing [equal-odds]: success
+[2023-05-09 11:14:03] INFO root fetch - processPackages [mypy-json-report]: Downloading https://files.pythonhosted.org/packages/7b/51/db80fa6a54eac5757fb0ed6356fd58c628efb9a6378a09179a57a4334a3e/mypy_json_report-1.0.4.tar.gz
+[2023-05-09 11:14:03] INFO root fetch - processPackages [sphinx-typo3-theme]: executing diffoscope
+[2023-05-09 11:14:03] INFO root fetch - processPackages [sphinx-typo3-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_typo3_theme-4.7.7-py2.py3-none-any.whl.zip tmp/sphinx_typo3_theme-4.7.9-py2.py3-none-any.whl.zip --markdown 20230509/s/sphinx-typo3-theme/4.7.7-4.7.9/diff.md --exclude *.pyd
+[2023-05-09 11:14:03] INFO root fetch - processPackages [mypy-json-report]: executing diffoscope
+[2023-05-09 11:14:03] INFO root fetch - processPackages [mypy-json-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy_json_report-1.0.2.tar.gz tmp/mypy_json_report-1.0.4.tar.gz --markdown 20230509/m/mypy-json-report/1.0.2-1.0.4/diff.md --exclude *.pyd
+[2023-05-09 11:14:04] INFO root fetch - main [MainThread]: End processing [bq-validator]: success
+[2023-05-09 11:14:04] INFO root fetch - main [MainThread]: End processing [Thya]: success
+[2023-05-09 11:14:04] INFO root fetch - main [MainThread]: End processing [encord]: success
+[2023-05-09 11:14:04] INFO root fetch - main [MainThread]: End processing [mypy-json-report]: success
+[2023-05-09 11:14:05] INFO root fetch - main [MainThread]: End processing [openlane]: success
+[2023-05-09 11:14:06] INFO root fetch - main [MainThread]: End processing [sphinx-typo3-theme]: success
+[2023-05-09 11:14:06] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-05-09 11:14:44] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-09 11:14:44] INFO root fetch - main [MainThread]: Store serial: [18029926]
