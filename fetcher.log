@@ -12354,3 +12354,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 10:31:06] INFO root fetch - main [MainThread]: End processing [duqtools]: success
 [2023-05-09 10:31:06] INFO root fetch - main [MainThread]: End processing [huspacy-nightly]: success
 [2023-05-09 10:31:06] INFO root fetch - main [MainThread]: Store serial: [18029452]
+[2023-05-09 10:36:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029452]
+[2023-05-09 10:36:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-09 10:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enhanceezqq
+[2023-05-09 10:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alfred-pyflow
+[2023-05-09 10:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gimera
+[2023-05-09 10:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysui
+[2023-05-09 10:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FakeNewsClassifier
+[2023-05-09 10:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: compact-distillation
+[2023-05-09 10:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: EprReaderPY
+[2023-05-09 10:36:15] INFO root fetch - processPackages [alfred-pyflow]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-09 10:36:15] INFO root fetch - processPackages [enhanceezqq]: New version: [1.0.0.1] Old Version: [1.0.0]
+[2023-05-09 10:36:15] INFO root fetch - processPackages [FakeNewsClassifier]: New version: [0.0.21] Old Version: [0.0.20]
+[2023-05-09 10:36:15] WARNING root fetch - processPackages [EprReaderPY]: Skipping, unable to determine old version
+[2023-05-09 10:36:15] INFO root fetch - processPackages [pysui]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 10:36:15] INFO root fetch - main [MainThread]: End processing [EprReaderPY] error
+[2023-05-09 10:36:15] INFO root fetch - processPackages [compact-distillation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 10:36:15] INFO root fetch - processPackages [gimera]: New version: [0.6.9] Old Version: [0.6.84]
+[2023-05-09 10:36:15] INFO root fetch - processPackages [alfred-pyflow]: Downloading https://files.pythonhosted.org/packages/99/da/f790bd8a0cebea5c41e4c3131a019cf62ae967106ceb81c095486792843e/alfred_pyflow-0.4.3.tar.gz
+[2023-05-09 10:36:15] INFO root fetch - processPackages [gimera]: Downloading https://files.pythonhosted.org/packages/a6/57/99fd65e81d4c01558e64ee95bf31fb20213bf13f76c7d7e2f0802596f535/gimera-0.6.84.tar.gz
+[2023-05-09 10:36:15] INFO root fetch - processPackages [enhanceezqq]: Downloading https://files.pythonhosted.org/packages/81/cd/d26900a5e84834d188cfaf143b3690f466094d7fa68ee88c81a21d8145aa/enhanceezqq-1.0.0.tar.gz
+[2023-05-09 10:36:15] INFO root fetch - processPackages [FakeNewsClassifier]: Downloading https://files.pythonhosted.org/packages/3e/ff/41ab8ce2f52af1f5d768a0d4e189226cad9f75ba69b52ab94a3cbf7e3c5c/FakeNewsClassifier-0.0.20.tar.gz
+[2023-05-09 10:36:16] INFO root fetch - processPackages [pysui]: Downloading https://files.pythonhosted.org/packages/df/fd/8060c20cdf32607400911d43fc627a8bf48fe7571dc1992ab190b3274d7b/pysui-0.8.0-py3-none-any.whl
+[2023-05-09 10:36:16] INFO root fetch - processPackages [compact-distillation]: Downloading https://files.pythonhosted.org/packages/b9/da/58721146959d6a5280e724afce724d8744cdef3b8f6620ee03ad37b84c8a/compact-distillation-0.0.8.tar.gz
+[2023-05-09 10:36:16] INFO root fetch - processPackages [gimera]: executing diffoscope
+[2023-05-09 10:36:16] INFO root fetch - processPackages [gimera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gimera-0.6.84.tar.gz tmp/gimera-0.6.9.tar.gz --markdown 20230509/g/gimera/0.6.84-0.6.9/diff.md --exclude *.pyd
+[2023-05-09 10:36:16] INFO root fetch - processPackages [enhanceezqq]: Downloading https://files.pythonhosted.org/packages/7b/64/5e54ee43df73dbc8af65eaaaf14bad1a8bf10dfc9cb1ae64148882b3a563/enhanceezqq-1.0.0.1.tar.gz
+[2023-05-09 10:36:16] INFO root fetch - processPackages [alfred-pyflow]: Downloading https://files.pythonhosted.org/packages/3b/ac/3bf372c7ffd44d5f118d879b9d6c4c1d4ee4029e94f94ca374c11df9f7a7/alfred_pyflow-0.4.4.tar.gz
+[2023-05-09 10:36:16] INFO root fetch - processPackages [enhanceezqq]: executing diffoscope
+[2023-05-09 10:36:16] INFO root fetch - processPackages [enhanceezqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhanceezqq-1.0.0.tar.gz tmp/enhanceezqq-1.0.0.1.tar.gz --markdown 20230509/e/enhanceezqq/1.0.0-1.0.0.1/diff.md --exclude *.pyd
+[2023-05-09 10:36:16] INFO root fetch - processPackages [alfred-pyflow]: executing diffoscope
+[2023-05-09 10:36:16] INFO root fetch - processPackages [alfred-pyflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfred_pyflow-0.4.3.tar.gz tmp/alfred_pyflow-0.4.4.tar.gz --markdown 20230509/a/alfred-pyflow/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-09 10:36:16] INFO root fetch - processPackages [pysui]: Downloading https://files.pythonhosted.org/packages/d0/d5/e2108ab88d1f544ccab9554dcf4127133263950ae9c3e3912ab5bb6db12a/pysui-0.9.0-py3-none-any.whl
+[2023-05-09 10:36:16] INFO root fetch - processPackages [compact-distillation]: Downloading https://files.pythonhosted.org/packages/e5/85/2f7ba75e6f4d3213f9f424887a18aba46630f9d9291c67f34b798826e67c/compact-distillation-0.0.9.tar.gz
+[2023-05-09 10:36:16] INFO root fetch - processPackages [FakeNewsClassifier]: Downloading https://files.pythonhosted.org/packages/2b/81/500bd1324564192019b2273df3da016957931e5ed3e42e65c8511b37a340/FakeNewsClassifier-0.0.21.tar.gz
+[2023-05-09 10:36:16] INFO root fetch - processPackages [compact-distillation]: executing diffoscope
+[2023-05-09 10:36:16] INFO root fetch - processPackages [compact-distillation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compact-distillation-0.0.8.tar.gz tmp/compact-distillation-0.0.9.tar.gz --markdown 20230509/c/compact-distillation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 10:36:16] INFO root fetch - processPackages [pysui]: executing diffoscope
+[2023-05-09 10:36:16] INFO root fetch - processPackages [pysui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysui-0.8.0-py3-none-any.whl.zip tmp/pysui-0.9.0-py3-none-any.whl.zip --markdown 20230509/p/pysui/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 10:36:17] INFO root fetch - main [MainThread]: End processing [gimera]: success
+[2023-05-09 10:36:17] INFO root fetch - main [MainThread]: End processing [alfred-pyflow]: success
+[2023-05-09 10:36:17] INFO root fetch - main [MainThread]: End processing [enhanceezqq]: success
+[2023-05-09 10:36:17] INFO root fetch - main [MainThread]: End processing [compact-distillation]: success
+[2023-05-09 10:36:17] INFO root fetch - processPackages [FakeNewsClassifier]: executing diffoscope
+[2023-05-09 10:36:17] INFO root fetch - processPackages [FakeNewsClassifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FakeNewsClassifier-0.0.20.tar.gz tmp/FakeNewsClassifier-0.0.21.tar.gz --markdown 20230509/F/FakeNewsClassifier/0.0.20-0.0.21/diff.md --exclude *.pyd
+[2023-05-09 10:36:18] INFO root fetch - main [MainThread]: End processing [pysui]: success
+[2023-05-09 10:36:20] INFO root fetch - main [MainThread]: End processing [FakeNewsClassifier]: success
+[2023-05-09 10:36:20] INFO root fetch - main [MainThread]: Store serial: [18029477]
