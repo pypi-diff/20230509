@@ -18236,3 +18236,128 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 16:34:20] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-05-09 16:34:59] INFO root fetch - main [MainThread]: End processing [openxes-cli-py]: success
 [2023-05-09 16:34:59] INFO root fetch - main [MainThread]: Store serial: [18033161]
+[2023-05-09 16:40:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18033161]
+[2023-05-09 16:40:10] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lariat-python-sdk
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libecalc
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weaviate-cli
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alyvix
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llamabot
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rustplus
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yeref
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nudeny
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: deptools
+[2023-05-09 16:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyatlan
+[2023-05-09 16:40:10] INFO root fetch - processPackages [lariat-python-sdk]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [weaviate-cli]: New version: [2.2.0] Old Version: [2.1.3.dev1]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [yeref]: New version: [0.1.59] Old Version: [0.1.58]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [libecalc]: New version: [8.2.1] Old Version: [0.0.1]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [pyatlan]: New version: [0.0.27] Old Version: [0.0.26]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [alyvix]: New version: [3.4.0b1] Old Version: [3.4.0b0]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [llamabot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [nudeny]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-05-09 16:40:10] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.58.tar.gz tmp/yeref-0.1.59.tar.gz --markdown 20230509/y/yeref/0.1.58-0.1.59/diff.md --exclude *.pyd
+[2023-05-09 16:40:10] INFO root fetch - processPackages [rustplus]: New version: [5.6.1] Old Version: [5.6.0]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [deptools]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-05-09 16:40:10] INFO root fetch - processPackages [lariat-python-sdk]: Downloading https://files.pythonhosted.org/packages/4d/5a/83e70007a221814554185f9fcf43ef298f495c3716fa5b7582f7e06cd7d9/lariat_python_sdk-0.1.3.tar.gz
+[2023-05-09 16:40:10] INFO root fetch - processPackages [weaviate-cli]: Downloading https://files.pythonhosted.org/packages/83/6a/d70963bc8355a03598c44bc6679b1808a53e712b96faac30bd44cb847afc/weaviate-cli-2.1.3.dev1.tar.gz
+[2023-05-09 16:40:10] INFO root fetch - processPackages [alyvix]: Downloading https://files.pythonhosted.org/packages/e4/f3/e7c2b642b2e0d5eb4bc593bd9a7ad05a85f9d5219057cebc1c46572e2d65/alyvix-3.4.0b0-cp39-cp39-win_amd64.whl
+[2023-05-09 16:40:10] INFO root fetch - processPackages [nudeny]: Downloading https://files.pythonhosted.org/packages/b0/35/b52cc3f9ef70cef74cf5d7968f62015d99ed3cb680b578dd91dc9694c7cf/nudeny-0.0.7.tar.gz
+[2023-05-09 16:40:10] INFO root fetch - processPackages [libecalc]: Downloading https://files.pythonhosted.org/packages/14/ae/51f68a550607f81b9c04324f8387051eebd3710551acaf9262a679bcb772/libecalc-0.0.1.tar.gz
+[2023-05-09 16:40:10] INFO root fetch - processPackages [pyatlan]: executing diffoscope
+[2023-05-09 16:40:10] INFO root fetch - processPackages [pyatlan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyatlan-0.0.26.tar.gz tmp/pyatlan-0.0.27.tar.gz --markdown 20230509/p/pyatlan/0.0.26-0.0.27/diff.md --exclude *.pyd
+[2023-05-09 16:40:10] INFO root fetch - processPackages [deptools]: Downloading https://files.pythonhosted.org/packages/d4/59/677a109130de17e017e61235e25571b08883ef5f75ef1dfa5bafaa5f5e27/deptools-1.6.8.tar.gz
+[2023-05-09 16:40:10] WARNING root fetch - processPackages [alyvix]: Skipping package: exceeds size limit 100852808>=10485760
+[2023-05-09 16:40:10] INFO root fetch - processPackages [alyvix]: Start processing: chejo-libs
+[2023-05-09 16:40:10] INFO root fetch - main [MainThread]: End processing [alyvix] error
+[2023-05-09 16:40:10] INFO root fetch - processPackages [rustplus]: Downloading https://files.pythonhosted.org/packages/3a/46/72608dbc431109500854f6985a8469986b6aaa1ac23f7658fb5093608d33/rustplus-5.6.1.tar.gz
+[2023-05-09 16:40:10] INFO root fetch - processPackages [llamabot]: executing diffoscope
+[2023-05-09 16:40:10] INFO root fetch - processPackages [llamabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamabot-0.0.8.tar.gz tmp/llamabot-0.0.9.tar.gz --markdown 20230509/l/llamabot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 16:40:10] INFO root fetch - processPackages [lariat-python-sdk]: Downloading https://files.pythonhosted.org/packages/4f/c2/c997644dadc400f01060fcc1cac9c2d3b40f33cf4629e90cfe07af4a9934/lariat_python_sdk-0.1.4.tar.gz
+[2023-05-09 16:40:11] INFO root fetch - processPackages [nudeny]: executing diffoscope
+[2023-05-09 16:40:11] INFO root fetch - processPackages [nudeny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudeny-0.0.7.tar.gz tmp/nudeny-0.0.8.tar.gz --markdown 20230509/n/nudeny/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-09 16:40:11] INFO root fetch - processPackages [weaviate-cli]: Downloading https://files.pythonhosted.org/packages/ac/ec/6e66db2f3968b783ac26eda38131354e7b970a503bd2913553aa81ed0f44/weaviate-cli-2.2.0.tar.gz
+[2023-05-09 16:40:11] WARNING root fetch - processPackages [chejo-libs]: Skipping, unable to determine old version
+[2023-05-09 16:40:11] INFO root fetch - processPackages [chejo-libs]: Start processing: cybrid-api-id-python
+[2023-05-09 16:40:11] INFO root fetch - main [MainThread]: End processing [chejo-libs] error
+[2023-05-09 16:40:11] INFO root fetch - processPackages [lariat-python-sdk]: executing diffoscope
+[2023-05-09 16:40:11] INFO root fetch - processPackages [lariat-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lariat_python_sdk-0.1.3.tar.gz tmp/lariat_python_sdk-0.1.4.tar.gz --markdown 20230509/l/lariat-python-sdk/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 16:40:11] INFO root fetch - processPackages [rustplus]: executing diffoscope
+[2023-05-09 16:40:11] INFO root fetch - processPackages [rustplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustplus-5.6.0.tar.gz tmp/rustplus-5.6.1.tar.gz --markdown 20230509/r/rustplus/5.6.0-5.6.1/diff.md --exclude *.pyd
+[2023-05-09 16:40:11] INFO root fetch - processPackages [libecalc]: Downloading https://files.pythonhosted.org/packages/91/46/bc74570d3c87204e2686213a02ac634eb0898dc95b423b0defaf5654105a/libecalc-8.2.1.tar.gz
+[2023-05-09 16:40:11] INFO root fetch - processPackages [deptools]: Downloading https://files.pythonhosted.org/packages/fa/ee/8e78b54f3656d3befdb36c91d4a3120b94515da51627232371320b885053/deptools-1.6.9.tar.gz
+[2023-05-09 16:40:11] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 16:40:11] WARNING root fetch - processPackages [libecalc]: Skipping package: exceeds size limit 31016441>=10485760
+[2023-05-09 16:40:11] INFO root fetch - processPackages [libecalc]: Start processing: hlatypingtools
+[2023-05-09 16:40:11] INFO root fetch - main [MainThread]: End processing [libecalc] error
+[2023-05-09 16:40:11] INFO root fetch - processPackages [weaviate-cli]: executing diffoscope
+[2023-05-09 16:40:11] INFO root fetch - processPackages [weaviate-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weaviate-cli-2.1.3.dev1.tar.gz tmp/weaviate-cli-2.2.0.tar.gz --markdown 20230509/w/weaviate-cli/2.1.3.dev1-2.2.0/diff.md --exclude *.pyd
+[2023-05-09 16:40:11] INFO root fetch - processPackages [deptools]: executing diffoscope
+[2023-05-09 16:40:11] INFO root fetch - processPackages [deptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deptools-1.6.8.tar.gz tmp/deptools-1.6.9.tar.gz --markdown 20230509/d/deptools/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-05-09 16:40:11] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-09 16:40:11] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 16:40:11] INFO root fetch - processPackages [hlatypingtools]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-09 16:40:11] INFO root fetch - processPackages [hlatypingtools]: Downloading https://files.pythonhosted.org/packages/02/df/d5e840c788f2cd42a195bbd2d14948ea4736d96b31f99fc3fe8cefd7a95e/hlatypingtools-1.0.5.tar.gz
+[2023-05-09 16:40:11] INFO root fetch - processPackages [hlatypingtools]: Downloading https://files.pythonhosted.org/packages/da/57/a50e528303a2fb1a4e668b193073b90d16c97b6b1eca77fd2163140e22d3/hlatypingtools-1.0.6.tar.gz
+[2023-05-09 16:40:11] INFO root fetch - processPackages [hlatypingtools]: executing diffoscope
+[2023-05-09 16:40:11] INFO root fetch - processPackages [hlatypingtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hlatypingtools-1.0.5.tar.gz tmp/hlatypingtools-1.0.6.tar.gz --markdown 20230509/h/hlatypingtools/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-09 16:40:12] INFO root fetch - processPackages [nudeny]: Start processing: aws-analytics-reference-architecture
+[2023-05-09 16:40:12] INFO root fetch - main [MainThread]: End processing [nudeny]: success
+[2023-05-09 16:40:12] INFO root fetch - processPackages [aws-analytics-reference-architecture]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-09 16:40:12] INFO root fetch - processPackages [llamabot]: Start processing: cybrid-api-bank-python
+[2023-05-09 16:40:12] INFO root fetch - main [MainThread]: End processing [llamabot]: success
+[2023-05-09 16:40:12] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 16:40:12] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-09 16:40:12] INFO root fetch - processPackages [aws-analytics-reference-architecture]: Downloading https://files.pythonhosted.org/packages/ae/2b/5f638a1ef1f2c98e5cabf7d36e8ec3c32166be2db0c031a731483adef20f/aws_analytics_reference_architecture-2.9.8.tar.gz
+[2023-05-09 16:40:12] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 16:40:12] INFO root fetch - processPackages [weaviate-cli]: Start processing: cybrid-api-organization-python
+[2023-05-09 16:40:12] INFO root fetch - main [MainThread]: End processing [weaviate-cli]: success
+[2023-05-09 16:40:12] WARNING root fetch - processPackages [aws-analytics-reference-architecture]: Skipping package: exceeds size limit 118649369>=10485760
+[2023-05-09 16:40:12] INFO root fetch - processPackages [aws-analytics-reference-architecture]: Start processing: enso-nic
+[2023-05-09 16:40:12] INFO root fetch - main [MainThread]: End processing [aws-analytics-reference-architecture] error
+[2023-05-09 16:40:12] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 16:40:12] INFO root fetch - processPackages [lariat-python-sdk]: Start processing: TremendousClient
+[2023-05-09 16:40:12] INFO root fetch - main [MainThread]: End processing [lariat-python-sdk]: success
+[2023-05-09 16:40:12] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-09 16:40:12] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 16:40:12] INFO root fetch - processPackages [enso-nic]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 16:40:12] INFO root fetch - processPackages [TremendousClient]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-09 16:40:12] INFO root fetch - processPackages [pyatlan]: Start processing: google-maps-places
+[2023-05-09 16:40:12] INFO root fetch - main [MainThread]: End processing [pyatlan]: success
+[2023-05-09 16:40:13] INFO root fetch - processPackages [deptools]: Start processing: cognite-gql-pygen
+[2023-05-09 16:40:13] INFO root fetch - main [MainThread]: End processing [deptools]: success
+[2023-05-09 16:40:13] INFO root fetch - processPackages [TremendousClient]: Downloading https://files.pythonhosted.org/packages/3b/cd/6f64f799f7163ba47622b18b7fdf76c56a85a12da9ae13a0a70e9eb3e0ca/TremendousClient-0.0.5.tar.gz
+[2023-05-09 16:40:13] WARNING root fetch - processPackages [google-maps-places]: Skipping, unable to determine old version
+[2023-05-09 16:40:13] INFO root fetch - processPackages [google-maps-places]: Start processing: moto
+[2023-05-09 16:40:13] INFO root fetch - main [MainThread]: End processing [google-maps-places] error
+[2023-05-09 16:40:13] INFO root fetch - processPackages [enso-nic]: Downloading https://files.pythonhosted.org/packages/86/ba/c45bac2628c8522a5c677dfffca3e1cbe0692cd4c3477aa20a81de830e08/enso-nic-0.1.2.tar.gz
+[2023-05-09 16:40:13] INFO root fetch - processPackages [moto]: New version: [4.1.9.dev9] Old Version: [4.1.9.dev8]
+[2023-05-09 16:40:13] INFO root fetch - processPackages [cognite-gql-pygen]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-09 16:40:13] INFO root fetch - processPackages [cybrid-api-id-python]: Start processing: llamabot
+[2023-05-09 16:40:13] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-09 16:40:13] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-05-09 16:40:13] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.9.dev8.tar.gz tmp/moto-4.1.9.dev9.tar.gz --markdown 20230509/m/moto/4.1.9.dev8-4.1.9.dev9/diff.md --exclude *.pyd
+[2023-05-09 16:40:13] INFO root fetch - processPackages [llamabot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 16:40:13] INFO root fetch - main [MainThread]: End processing [hlatypingtools]: success
+[2023-05-09 16:40:13] INFO root fetch - processPackages [enso-nic]: Downloading https://files.pythonhosted.org/packages/a7/48/87005a91af537a38bcbb083f393fdd0f5981395c9ceb97756c7633100b32/enso-nic-0.1.3.tar.gz
+[2023-05-09 16:40:13] INFO root fetch - processPackages [llamabot]: executing diffoscope
+[2023-05-09 16:40:13] INFO root fetch - processPackages [llamabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamabot-0.0.8.tar.gz tmp/llamabot-0.0.9.tar.gz --markdown 20230509/l/llamabot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 16:40:13] INFO root fetch - processPackages [TremendousClient]: Downloading https://files.pythonhosted.org/packages/e9/17/95f557e1037123845cffe55e4a402ab81ca5682a5723786efb6a14b0d0c7/TremendousClient-0.0.6.tar.gz
+[2023-05-09 16:40:13] INFO root fetch - processPackages [enso-nic]: executing diffoscope
+[2023-05-09 16:40:13] INFO root fetch - processPackages [enso-nic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enso-nic-0.1.2.tar.gz tmp/enso-nic-0.1.3.tar.gz --markdown 20230509/e/enso-nic/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 16:40:13] INFO root fetch - processPackages [cognite-gql-pygen]: Downloading https://files.pythonhosted.org/packages/33/16/0c1cfe1e61fe5707e80a7e070f4d2b5fd4901619bb0fc6270569425d817d/cognite_gql_pygen-0.4.4.tar.gz
+[2023-05-09 16:40:13] INFO root fetch - processPackages [TremendousClient]: executing diffoscope
+[2023-05-09 16:40:13] INFO root fetch - processPackages [TremendousClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TremendousClient-0.0.5.tar.gz tmp/TremendousClient-0.0.6.tar.gz --markdown 20230509/T/TremendousClient/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 16:40:13] INFO root fetch - processPackages [cognite-gql-pygen]: executing diffoscope
+[2023-05-09 16:40:13] INFO root fetch - processPackages [cognite-gql-pygen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_gql_pygen-0.4.3.tar.gz tmp/cognite_gql_pygen-0.4.4.tar.gz --markdown 20230509/c/cognite-gql-pygen/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-09 16:40:13] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-05-09 16:40:14] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-09 16:40:14] INFO root fetch - main [MainThread]: End processing [llamabot]: success
+[2023-05-09 16:40:14] INFO root fetch - main [MainThread]: End processing [enso-nic]: success
+[2023-05-09 16:40:14] INFO root fetch - main [MainThread]: End processing [TremendousClient]: success
+[2023-05-09 16:40:14] INFO root fetch - main [MainThread]: End processing [cognite-gql-pygen]: success
+[2023-05-09 16:40:15] INFO root fetch - main [MainThread]: End processing [rustplus]: success
+[2023-05-09 16:40:17] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-09 16:40:44] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-05-09 16:40:44] INFO root fetch - main [MainThread]: Store serial: [18033231]
