@@ -8801,3 +8801,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 06:14:55] INFO root fetch - main [MainThread]: End processing [autocar]: success
 [2023-05-09 06:14:56] INFO root fetch - main [MainThread]: End processing [pymap]: success
 [2023-05-09 06:14:56] INFO root fetch - main [MainThread]: Store serial: [18027462]
+[2023-05-09 06:20:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027462]
+[2023-05-09 06:20:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-09 06:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: venakatest
+[2023-05-09 06:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfirebird
+[2023-05-09 06:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pai-easycv
+[2023-05-09 06:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hive-builder
+[2023-05-09 06:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xhs
+[2023-05-09 06:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: venakatest
+[2023-05-09 06:20:04] INFO root fetch - processPackages [venakatest]: New version: [0.1.34] Old Version: [0.1.33]
+[2023-05-09 06:20:04] INFO root fetch - processPackages [pai-easycv]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 06:20:04] INFO root fetch - processPackages [venakatest]: New version: [0.1.34] Old Version: [0.1.33]
+[2023-05-09 06:20:04] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.34] Old Version: [0.0.33]
+[2023-05-09 06:20:04] INFO root fetch - processPackages [xhs]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 06:20:04] INFO root fetch - processPackages [hive-builder]: New version: [3.6.6] Old Version: [3.6.5]
+[2023-05-09 06:20:05] INFO root fetch - processPackages [venakatest]: Downloading https://files.pythonhosted.org/packages/ff/91/b1178404f1c7be1dd0c6703bee6c1afdc9d79d3e0154bfcddec8e3870ea0/venakatest-0.1.33.tar.gz
+[2023-05-09 06:20:05] INFO root fetch - processPackages [venakatest]: Downloading https://files.pythonhosted.org/packages/ff/91/b1178404f1c7be1dd0c6703bee6c1afdc9d79d3e0154bfcddec8e3870ea0/venakatest-0.1.33.tar.gz
+[2023-05-09 06:20:05] INFO root fetch - processPackages [hive-builder]: Downloading https://files.pythonhosted.org/packages/49/d2/296ea15c9fa1d004746ee6a5a891e2a2abde9d78585d407f9f3d4cf694b4/hive_builder-3.6.5.tar.gz
+[2023-05-09 06:20:05] INFO root fetch - processPackages [pai-easycv]: Downloading https://files.pythonhosted.org/packages/c5/4f/3836cdd58824b51011c0d589e27275245a05c594ddfaa7d0663f5d6ba013/pai-easycv-0.8.0.tar.gz
+[2023-05-09 06:20:05] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/17/8b/4423b257b80a2fb11a059e2017ce54fca9850bf65e71003fe2628d754c92/pyfirebird-0.0.34.tar.gz
+[2023-05-09 06:20:05] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 06:20:05] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.33.tar.gz tmp/pyfirebird-0.0.34.tar.gz --markdown 20230509/p/pyfirebird/0.0.33-0.0.34/diff.md --exclude *.pyd
+[2023-05-09 06:20:05] INFO root fetch - processPackages [venakatest]: Downloading https://files.pythonhosted.org/packages/45/c6/f515e83ccde7147f1153ccaa6f863fb9768f230b1008a2f8a524e3f00bc6/venakatest-0.1.34.tar.gz
+[2023-05-09 06:20:05] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/83/c7/9ef44650a86f8eb759ae444a6ac5244ea75ce417055a3962fbaf19142fd6/xhs-0.1.9.tar.gz
+[2023-05-09 06:20:05] INFO root fetch - processPackages [venakatest]: Downloading https://files.pythonhosted.org/packages/45/c6/f515e83ccde7147f1153ccaa6f863fb9768f230b1008a2f8a524e3f00bc6/venakatest-0.1.34.tar.gz
+[2023-05-09 06:20:05] INFO root fetch - processPackages [venakatest]: executing diffoscope
+[2023-05-09 06:20:05] INFO root fetch - processPackages [venakatest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/venakatest-0.1.33.tar.gz tmp/venakatest-0.1.34.tar.gz --markdown 20230509/v/venakatest/0.1.33-0.1.34/diff.md --exclude *.pyd
+[2023-05-09 06:20:05] INFO root fetch - processPackages [xhs]: executing diffoscope
+[2023-05-09 06:20:05] INFO root fetch - processPackages [xhs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xhs-0.1.8.tar.gz tmp/xhs-0.1.9.tar.gz --markdown 20230509/x/xhs/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 06:20:05] INFO root fetch - processPackages [venakatest]: executing diffoscope
+[2023-05-09 06:20:05] INFO root fetch - processPackages [venakatest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/venakatest-0.1.33.tar.gz tmp/venakatest-0.1.34.tar.gz --markdown 20230509/v/venakatest/0.1.33-0.1.34/diff.md --exclude *.pyd
+[2023-05-09 06:20:05] INFO root fetch - processPackages [hive-builder]: Downloading https://files.pythonhosted.org/packages/98/c2/b1f6ab66a983501a5456cfab18835a911845edd411d66edbb68fc8089330/hive_builder-3.6.6.tar.gz
+[2023-05-09 06:20:05] INFO root fetch - processPackages [hive-builder]: executing diffoscope
+[2023-05-09 06:20:05] INFO root fetch - processPackages [hive-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hive_builder-3.6.5.tar.gz tmp/hive_builder-3.6.6.tar.gz --markdown 20230509/h/hive-builder/3.6.5-3.6.6/diff.md --exclude *.pyd
+[2023-05-09 06:20:06] INFO root fetch - main [MainThread]: End processing [venakatest]: success
+[2023-05-09 06:20:06] INFO root fetch - main [MainThread]: End processing [venakatest]: success
+[2023-05-09 06:20:06] INFO root fetch - main [MainThread]: End processing [xhs]: success
+[2023-05-09 06:20:06] INFO root fetch - processPackages [pai-easycv]: Downloading https://files.pythonhosted.org/packages/06/16/9ee9b8e4098d020df3be42f2cf3fb0bacdb0d75a68ff72cc608c3ae36124/pai-easycv-0.9.0.tar.gz
+[2023-05-09 06:20:07] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 06:20:07] INFO root fetch - main [MainThread]: End processing [hive-builder]: success
+[2023-05-09 06:20:08] INFO root fetch - processPackages [pai-easycv]: executing diffoscope
+[2023-05-09 06:20:08] INFO root fetch - processPackages [pai-easycv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pai-easycv-0.8.0.tar.gz tmp/pai-easycv-0.9.0.tar.gz --markdown 20230509/p/pai-easycv/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 06:20:18] INFO root fetch - main [MainThread]: End processing [pai-easycv]: success
+[2023-05-09 06:20:18] INFO root fetch - main [MainThread]: Store serial: [18027483]
