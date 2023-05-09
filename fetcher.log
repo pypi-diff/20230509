@@ -11029,3 +11029,118 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 09:09:04] INFO root fetch - main [MainThread]: End processing [pulumi-linode]: success
 [2023-05-09 09:09:05] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
 [2023-05-09 09:09:05] INFO root fetch - main [MainThread]: Store serial: [18028700]
+[2023-05-09 09:14:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028700]
+[2023-05-09 09:14:14] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: napari-nD-annotator
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reytool
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: russianLosses
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: starsaiot-monit
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: soliddriver-checks
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: linktest
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: halig
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-tls
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: titan-iris
+[2023-05-09 09:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: HDRezka
+[2023-05-09 09:14:14] INFO root fetch - processPackages [linktest]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-09 09:14:14] INFO root fetch - processPackages [soliddriver-checks]: New version: [3.0.8] Old Version: [3.0.7]
+[2023-05-09 09:14:14] INFO root fetch - processPackages [starsaiot-monit]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-09 09:14:14] INFO root fetch - processPackages [halig]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-09 09:14:14] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-05-09 09:14:14] INFO root fetch - processPackages [napari-nD-annotator]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-05-09 09:14:14] WARNING root fetch - processPackages [russianLosses]: Skipping, unable to determine old version
+[2023-05-09 09:14:14] INFO root fetch - processPackages [russianLosses]: Start processing: pulumi-sumologic
+[2023-05-09 09:14:14] INFO root fetch - processPackages [HDRezka]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-05-09 09:14:14] INFO root fetch - main [MainThread]: End processing [russianLosses] error
+[2023-05-09 09:14:14] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-05-09 09:14:14] INFO root fetch - processPackages [pulumi-tls]: New version: [5.1.0a1683613744] Old Version: [5.1.0a1683354300]
+[2023-05-09 09:14:14] INFO root fetch - processPackages [pulumi-sumologic]: New version: [0.9.1a1663799436] Old Version: [0.9.0]
+[2023-05-09 09:14:15] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230509/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-05-09 09:14:15] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/12/04/9e79ae92a5b195f5fd2e8588b5b72df28ca509296582a68d2df7c1f1b726/linktest-2.0.6.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [starsaiot-monit]: Downloading https://files.pythonhosted.org/packages/d6/46/a29424aed9a0915fa4d367265d64294f7ece13086deee2cc6f5fa82c768c/starsaiot-monit-1.2.8.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [halig]: Downloading https://files.pythonhosted.org/packages/3b/c6/10d1911bc2627835047a609abaebc33c84ef292f13b212614897402cf82e/halig-0.2.0.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [soliddriver-checks]: Downloading https://files.pythonhosted.org/packages/06/67/385c1ac594ec1dee9e9bfdd29bda15105788c005215a0f2bfe566c3399f1/soliddriver-checks-3.0.7.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [napari-nD-annotator]: Downloading https://files.pythonhosted.org/packages/57/68/4a556d5fe693e73ec67a817426382953b537ded52a85563ccaa12f89fed2/napari-nD-annotator-0.0.8.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/55/42/16e6ed04e87b7b3a1f00e4018c6e0a1a62647e27a44c612e9d3f3a71d6f1/pulumi_tls-5.1.0a1683354300.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [pulumi-sumologic]: Downloading https://files.pythonhosted.org/packages/6e/f2/ba414f5902bee40f219e9fb7e62d763f8263329614fc12ed2b5b02a34627/pulumi_sumologic-0.9.0.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [titan-iris]: Downloading https://files.pythonhosted.org/packages/44/d5/65facd9094b25df7ad98b3e18ba0615e010861081bf1b7fe7ca7cc35b0a7/titan-iris-0.3.9a1.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [HDRezka]: Downloading https://files.pythonhosted.org/packages/12/06/cb5bc8332eb242bba69f2359786abd3b3fe113b92105a7a325ed68b420f1/HDRezka-3.0.1.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.0.5.tar.gz tmp/linktest-2.0.6.tar.gz --markdown 20230509/l/linktest/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-09 09:14:15] INFO root fetch - processPackages [halig]: Downloading https://files.pythonhosted.org/packages/a2/94/308236fc03d1e212d62e17e438be1d99ed1282a541f6afaea087530b4df0/halig-0.2.1.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/3c/1b/b7cc3896b27adceb208fd85683248a8e7c318f9ad1708f13d9762e442b3e/pulumi_tls-5.1.0a1683613744.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [HDRezka]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [HDRezka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HDRezka-3.0.0.tar.gz tmp/HDRezka-3.0.1.tar.gz --markdown 20230509/H/HDRezka/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-05-09 09:14:15] INFO root fetch - processPackages [pulumi-tls]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [pulumi-tls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tls-5.1.0a1683354300.tar.gz tmp/pulumi_tls-5.1.0a1683613744.tar.gz --markdown 20230509/p/pulumi-tls/5.1.0a1683354300-5.1.0a1683613744/diff.md --exclude *.pyd
+[2023-05-09 09:14:15] INFO root fetch - processPackages [soliddriver-checks]: Downloading https://files.pythonhosted.org/packages/bb/5f/a85028a781d2b4cc4f588c8897d81d7ab6742e27ab7c2f0a4b4166c19bed/soliddriver-checks-3.0.8.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [pulumi-sumologic]: Downloading https://files.pythonhosted.org/packages/67/c4/8f95a0de8aac6e9d9348bd2698c48e05211e3a2fabda9b0e7bcaa7b80ca8/pulumi_sumologic-0.9.1a1663799436.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [napari-nD-annotator]: Downloading https://files.pythonhosted.org/packages/cf/c2/15eef468fe884932f374e249e41ddcd8b82099e6c71ba77a4461471c25f4/napari-nD-annotator-0.1.0.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [halig]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [halig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/halig-0.2.0.tar.gz tmp/halig-0.2.1.tar.gz --markdown 20230509/h/halig/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-09 09:14:15] INFO root fetch - processPackages [titan-iris]: Downloading https://files.pythonhosted.org/packages/6e/81/2a91a9be26df9651b2fc3a6054ccc6fbe32f3a3f990f2ffe9f5b67799541/titan-iris-0.3.9a2.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [soliddriver-checks]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [soliddriver-checks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soliddriver-checks-3.0.7.tar.gz tmp/soliddriver-checks-3.0.8.tar.gz --markdown 20230509/s/soliddriver-checks/3.0.7-3.0.8/diff.md --exclude *.pyd
+[2023-05-09 09:14:15] INFO root fetch - processPackages [pulumi-sumologic]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [pulumi-sumologic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sumologic-0.9.0.tar.gz tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz --markdown 20230509/p/pulumi-sumologic/0.9.0-0.9.1a1663799436/diff.md --exclude *.pyd
+[2023-05-09 09:14:15] INFO root fetch - processPackages [napari-nD-annotator]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [napari-nD-annotator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-nD-annotator-0.0.8.tar.gz tmp/napari-nD-annotator-0.1.0.tar.gz --markdown 20230509/n/napari-nD-annotator/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 09:14:15] INFO root fetch - processPackages [starsaiot-monit]: Downloading https://files.pythonhosted.org/packages/fc/0b/c09f8c3370147eafe5032c8dbcf11c438057a479ecd7b517dd9b4300ef72/starsaiot-monit-1.2.9.tar.gz
+[2023-05-09 09:14:15] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230509/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-05-09 09:14:15] INFO root fetch - processPackages [starsaiot-monit]: executing diffoscope
+[2023-05-09 09:14:15] INFO root fetch - processPackages [starsaiot-monit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starsaiot-monit-1.2.8.tar.gz tmp/starsaiot-monit-1.2.9.tar.gz --markdown 20230509/s/starsaiot-monit/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-09 09:14:16] INFO root fetch - processPackages [reytool]: Start processing: k2hr3-osnl
+[2023-05-09 09:14:16] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-05-09 09:14:16] INFO root fetch - processPackages [k2hr3-osnl]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-09 09:14:16] INFO root fetch - processPackages [k2hr3-osnl]: Downloading https://files.pythonhosted.org/packages/9f/cf/f351650aa53004a7be4ba1f0acb2f46831d66b4b8e61fa37dfd66c0ecaa9/k2hr3_osnl-1.0.4.tar.gz
+[2023-05-09 09:14:17] INFO root fetch - processPackages [k2hr3-osnl]: Downloading https://files.pythonhosted.org/packages/0e/83/8380293b53d913876a8eca7e95cc209137ce5eb7f72514d9d011ae6172b8/k2hr3_osnl-1.0.5.tar.gz
+[2023-05-09 09:14:17] INFO root fetch - processPackages [linktest]: Start processing: Aestate
+[2023-05-09 09:14:17] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2023-05-09 09:14:17] INFO root fetch - processPackages [Aestate]: New version: [1.0.9a1] Old Version: [1.0.9]
+[2023-05-09 09:14:17] INFO root fetch - processPackages [k2hr3-osnl]: executing diffoscope
+[2023-05-09 09:14:17] INFO root fetch - processPackages [k2hr3-osnl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k2hr3_osnl-1.0.4.tar.gz tmp/k2hr3_osnl-1.0.5.tar.gz --markdown 20230509/k/k2hr3-osnl/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-09 09:14:17] INFO root fetch - processPackages [HDRezka]: Start processing: pepperize.cdk-terraform-state-backend
+[2023-05-09 09:14:17] INFO root fetch - main [MainThread]: End processing [HDRezka]: success
+[2023-05-09 09:14:17] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-09 09:14:17] INFO root fetch - processPackages [Aestate]: Downloading https://files.pythonhosted.org/packages/97/87/2bb320a12af7b9dc71b5de0e94a27810ad5b85d9932d179f4180b17489cf/Aestate-1.0.9.tar.gz
+[2023-05-09 09:14:17] INFO root fetch - processPackages [halig]: Start processing: testservices
+[2023-05-09 09:14:17] INFO root fetch - main [MainThread]: End processing [halig]: success
+[2023-05-09 09:14:17] INFO root fetch - processPackages [titan-iris]: Start processing: pulumi-random
+[2023-05-09 09:14:17] INFO root fetch - main [MainThread]: End processing [titan-iris]: success
+[2023-05-09 09:14:17] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-05-09 09:14:17] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230509/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-09 09:14:17] INFO root fetch - processPackages [testservices]: New version: [0.1.0] Old Version: [0.0.0.dev0]
+[2023-05-09 09:14:17] INFO root fetch - processPackages [pulumi-random]: New version: [4.9.0a1674773801] Old Version: [4.9.0a1673556316]
+[2023-05-09 09:14:17] INFO root fetch - processPackages [pulumi-tls]: Start processing: holoviews
+[2023-05-09 09:14:17] INFO root fetch - main [MainThread]: End processing [pulumi-tls]: success
+[2023-05-09 09:14:17] INFO root fetch - processPackages [holoviews]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-09 09:14:17] INFO root fetch - processPackages [Aestate]: Downloading https://files.pythonhosted.org/packages/04/3a/cf059781e4e1ccb32e5f054e657590e69b6beb7a19eaf1d7229c243def82/Aestate-1.0.9a1.tar.gz
+[2023-05-09 09:14:17] INFO root fetch - processPackages [testservices]: Downloading https://files.pythonhosted.org/packages/83/0c/82b7b4fdc222e58e26a2fbe02554845bd5b37f6040e7d50e2dd3b6de3159/testservices-0.0.0.dev0.tar.gz
+[2023-05-09 09:14:17] INFO root fetch - processPackages [pulumi-random]: Downloading https://files.pythonhosted.org/packages/e3/37/2cc13bf17f327e646e4b225d9a662c398da5ae064fbaaf071b5093d9200d/pulumi_random-4.9.0a1673556316.tar.gz
+[2023-05-09 09:14:17] INFO root fetch - processPackages [Aestate]: executing diffoscope
+[2023-05-09 09:14:17] INFO root fetch - processPackages [Aestate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Aestate-1.0.9.tar.gz tmp/Aestate-1.0.9a1.tar.gz --markdown 20230509/A/Aestate/1.0.9-1.0.9a1/diff.md --exclude *.pyd
+[2023-05-09 09:14:17] INFO root fetch - processPackages [holoviews]: executing diffoscope
+[2023-05-09 09:14:17] INFO root fetch - processPackages [holoviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/holoviews-1.9.4.tar.gz tmp/holoviews-1.9.5.tar.gz --markdown 20230509/h/holoviews/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-09 09:14:17] INFO root fetch - processPackages [pulumi-sumologic]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-05-09 09:14:17] INFO root fetch - main [MainThread]: End processing [pulumi-sumologic]: success
+[2023-05-09 09:14:17] INFO root fetch - main [MainThread]: End processing [starsaiot-monit]: success
+[2023-05-09 09:14:17] INFO root fetch - main [MainThread]: End processing [soliddriver-checks]: success
+[2023-05-09 09:14:17] INFO root fetch - processPackages [testservices]: Downloading https://files.pythonhosted.org/packages/a7/e5/6708508acdd52fef7a42d7edaf1f4aae267461f883f13717b5f9dac7ad0f/testservices-0.1.0.tar.gz
+[2023-05-09 09:14:17] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-09 09:14:18] INFO root fetch - processPackages [testservices]: executing diffoscope
+[2023-05-09 09:14:18] INFO root fetch - processPackages [testservices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testservices-0.0.0.dev0.tar.gz tmp/testservices-0.1.0.tar.gz --markdown 20230509/t/testservices/0.0.0.dev0-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 09:14:18] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-05-09 09:14:18] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 09:14:18] INFO root fetch - processPackages [pulumi-random]: Downloading https://files.pythonhosted.org/packages/60/4b/3fbb36b8ea6ee761180821419350808d93a817d302404b35a787b0e12917/pulumi_random-4.9.0a1674773801.tar.gz
+[2023-05-09 09:14:18] INFO root fetch - main [MainThread]: End processing [k2hr3-osnl]: success
+[2023-05-09 09:14:18] INFO root fetch - processPackages [pulumi-random]: executing diffoscope
+[2023-05-09 09:14:18] INFO root fetch - processPackages [pulumi-random]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_random-4.9.0a1673556316.tar.gz tmp/pulumi_random-4.9.0a1674773801.tar.gz --markdown 20230509/p/pulumi-random/4.9.0a1673556316-4.9.0a1674773801/diff.md --exclude *.pyd
+[2023-05-09 09:14:19] INFO root fetch - main [MainThread]: End processing [testservices]: success
+[2023-05-09 09:14:19] INFO root fetch - main [MainThread]: End processing [Aestate]: success
+[2023-05-09 09:14:19] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-05-09 09:14:19] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-terraform-state-backend]: success
+[2023-05-09 09:14:20] INFO root fetch - main [MainThread]: End processing [pulumi-random]: success
+[2023-05-09 09:14:22] INFO root fetch - main [MainThread]: End processing [napari-nD-annotator]: success
+[2023-05-09 09:14:28] INFO root fetch - main [MainThread]: End processing [holoviews]: success
+[2023-05-09 09:14:28] INFO root fetch - main [MainThread]: Store serial: [18028766]
