@@ -16805,3 +16805,104 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 15:25:09] INFO root fetch - main [MainThread]: End processing [capellambse]: success
 [2023-05-09 15:25:36] INFO root fetch - main [MainThread]: End processing [bitmovin-api-sdk]: success
 [2023-05-09 15:25:36] INFO root fetch - main [MainThread]: Store serial: [18032225]
+[2023-05-09 15:30:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032225]
+[2023-05-09 15:30:45] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-pandas
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invenio-rdm-migrator
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edx-enterprise
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: firepup650
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: GramGetter
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: secretflow
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: duckdb-kernel
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-pytorch
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: crosscompute
+[2023-05-09 15:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rexify
+[2023-05-09 15:30:45] INFO root fetch - processPackages [GramGetter]: New version: [0.5.0] Old Version: [0.3.0]
+[2023-05-09 15:30:45] INFO root fetch - processPackages [invenio-rdm-migrator]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-09 15:30:45] INFO root fetch - processPackages [firepup650]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 15:30:46] INFO root fetch - processPackages [secretflow]: New version: [0.8.2b2] Old Version: [0.8.2b1]
+[2023-05-09 15:30:46] INFO root fetch - processPackages [crosscompute]: New version: [0.9.4.4] Old Version: [0.9.4.3]
+[2023-05-09 15:30:46] INFO root fetch - processPackages [rexify]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 15:30:46] INFO root fetch - processPackages [duckdb-kernel]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-09 15:30:46] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 15:30:46] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 15:30:46] INFO root fetch - processPackages [edx-enterprise]: New version: [3.9.9] Old Version: [3.9.7]
+[2023-05-09 15:30:46] INFO root fetch - processPackages [GramGetter]: Downloading https://files.pythonhosted.org/packages/02/c1/0c5e28e2ab249e9daf2799d8434e20896236c86cad92e9b790fb7a0ce816/GramGetter-0.3.0.tar.gz
+[2023-05-09 15:30:46] INFO root fetch - processPackages [rexify]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [rexify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rexify-0.1.8.tar.gz tmp/rexify-0.1.9.tar.gz --markdown 20230509/r/rexify/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 15:30:46] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230509/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 15:30:46] INFO root fetch - processPackages [invenio-rdm-migrator]: Downloading https://files.pythonhosted.org/packages/f2/35/df1d3d1fd116accb444b432b3a6355ab02c1c2c7fc74df9355a7b4183460/invenio-rdm-migrator-1.0.0a8.tar.gz
+[2023-05-09 15:30:46] INFO root fetch - processPackages [crosscompute]: Downloading https://files.pythonhosted.org/packages/24/b0/9422bea5b56ddeabe7645c8f55f151f5dc1334fd8f2521db6fde8f466844/crosscompute-0.9.4.3.tar.gz
+[2023-05-09 15:30:46] INFO root fetch - processPackages [duckdb-kernel]: Downloading https://files.pythonhosted.org/packages/c7/a8/9fd684be831300838f5171ec25c8824b16a7c86428fea367547c95cf42f8/duckdb_kernel-0.4.0.tar.gz
+[2023-05-09 15:30:46] INFO root fetch - processPackages [secretflow]: Downloading https://files.pythonhosted.org/packages/36/b3/119a467de0e167f58b0ea6afb1005d52f58c10e727b96af098e8d93ba942/secretflow-0.8.2b1-cp38-cp38-manylinux2014_x86_64.whl
+[2023-05-09 15:30:46] INFO root fetch - processPackages [duckdb-kernel]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [duckdb-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdb_kernel-0.3.0.tar.gz tmp/duckdb_kernel-0.4.0.tar.gz --markdown 20230509/d/duckdb-kernel/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-09 15:30:46] INFO root fetch - processPackages [firepup650]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [firepup650]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firepup650-1.0.8.tar.gz tmp/firepup650-1.0.9.tar.gz --markdown 20230509/f/firepup650/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 15:30:46] INFO root fetch - processPackages [GramGetter]: Downloading https://files.pythonhosted.org/packages/e9/ce/8fbee2261a42df28c2fa00d2b49ae8b19665bce124d71dbf878823dfe00a/GramGetter-0.5.0.tar.gz
+[2023-05-09 15:30:46] INFO root fetch - processPackages [edx-enterprise]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [edx-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edx-enterprise-3.9.7.tar.gz tmp/edx-enterprise-3.9.9.tar.gz --markdown 20230509/e/edx-enterprise/3.9.7-3.9.9/diff.md --exclude *.pyd
+[2023-05-09 15:30:46] INFO root fetch - processPackages [invenio-rdm-migrator]: Downloading https://files.pythonhosted.org/packages/f6/0b/8a545ab266d704938b556168a3fcddbc06ebfc9f0eb7ae8dfd46a1ee9f19/invenio-rdm-migrator-1.0.0a9.tar.gz
+[2023-05-09 15:30:46] INFO root fetch - processPackages [GramGetter]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [GramGetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GramGetter-0.3.0.tar.gz tmp/GramGetter-0.5.0.tar.gz --markdown 20230509/G/GramGetter/0.3.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 15:30:46] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230509/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 15:30:46] INFO root fetch - processPackages [invenio-rdm-migrator]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [invenio-rdm-migrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-rdm-migrator-1.0.0a8.tar.gz tmp/invenio-rdm-migrator-1.0.0a9.tar.gz --markdown 20230509/i/invenio-rdm-migrator/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-09 15:30:46] INFO root fetch - processPackages [crosscompute]: Downloading https://files.pythonhosted.org/packages/ba/40/c6754e30ac11655a43ff2a2a188dcfe8e7074614b537cc15f5714c60037e/crosscompute-0.9.4.4.tar.gz
+[2023-05-09 15:30:46] INFO root fetch - processPackages [crosscompute]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [crosscompute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosscompute-0.9.4.3.tar.gz tmp/crosscompute-0.9.4.4.tar.gz --markdown 20230509/c/crosscompute/0.9.4.3-0.9.4.4/diff.md --exclude *.pyd
+[2023-05-09 15:30:46] INFO root fetch - processPackages [secretflow]: Downloading https://files.pythonhosted.org/packages/3a/f4/ae80b536865b79ac5624c5fcb2d482f6e502ca9889e152beb8e0eabaebe7/secretflow-0.8.2b2-cp38-cp38-manylinux2014_x86_64.whl
+[2023-05-09 15:30:46] INFO root fetch - processPackages [secretflow]: executing diffoscope
+[2023-05-09 15:30:46] INFO root fetch - processPackages [secretflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secretflow-0.8.2b1-cp38-cp38-manylinux2014_x86_64.whl.zip tmp/secretflow-0.8.2b2-cp38-cp38-manylinux2014_x86_64.whl.zip --markdown 20230509/s/secretflow/0.8.2b1-0.8.2b2/diff.md --exclude *.pyd
+[2023-05-09 15:30:47] INFO root fetch - processPackages [nbdev-pytorch]: Start processing: pulumi-aws-native
+[2023-05-09 15:30:47] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-09 15:30:47] INFO root fetch - processPackages [pulumi-aws-native]: New version: [0.9.1a1641826769] Old Version: [0.9.1a1641824984]
+[2023-05-09 15:30:47] INFO root fetch - processPackages [pulumi-aws-native]: executing diffoscope
+[2023-05-09 15:30:47] INFO root fetch - processPackages [pulumi-aws-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws_native-0.9.1a1641824984.tar.gz tmp/pulumi_aws_native-0.9.1a1641826769.tar.gz --markdown 20230509/p/pulumi-aws-native/0.9.1a1641824984-0.9.1a1641826769/diff.md --exclude *.pyd
+[2023-05-09 15:30:47] INFO root fetch - processPackages [duckdb-kernel]: Start processing: cloudsmith-cli
+[2023-05-09 15:30:47] INFO root fetch - main [MainThread]: End processing [duckdb-kernel]: success
+[2023-05-09 15:30:47] INFO root fetch - processPackages [cloudsmith-cli]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-09 15:30:47] INFO root fetch - processPackages [cloudsmith-cli]: executing diffoscope
+[2023-05-09 15:30:47] INFO root fetch - processPackages [cloudsmith-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudsmith_cli-0.8.2-py2.py3-none-any.whl.zip tmp/cloudsmith_cli-0.9.0-py2.py3-none-any.whl.zip --markdown 20230509/c/cloudsmith-cli/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 15:30:48] INFO root fetch - processPackages [firepup650]: Start processing: nucliadb-contributor-assets
+[2023-05-09 15:30:48] INFO root fetch - main [MainThread]: End processing [firepup650]: success
+[2023-05-09 15:30:48] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post754] Old Version: [1.0.0.post752]
+[2023-05-09 15:30:48] INFO root fetch - processPackages [GramGetter]: Start processing: nbdev-scipy
+[2023-05-09 15:30:48] INFO root fetch - main [MainThread]: End processing [GramGetter]: success
+[2023-05-09 15:30:48] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 15:30:48] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/ca/1e/e7a281548d218d62d5f864cd2ba41b9ea0e0cd55c2c09688ae514734f536/nucliadb_contributor_assets-1.0.0.post754-py3-none-any.whl
+[2023-05-09 15:30:48] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-09 15:30:48] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230509/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 15:30:48] INFO root fetch - processPackages [rexify]: Start processing: cgiw
+[2023-05-09 15:30:48] INFO root fetch - main [MainThread]: End processing [rexify]: success
+[2023-05-09 15:30:48] INFO root fetch - processPackages [cgiw]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-09 15:30:48] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-05-09 15:30:48] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post752-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post754-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-contributor-assets/1.0.0.post752-1.0.0.post754/diff.md --exclude *.pyd
+[2023-05-09 15:30:48] INFO root fetch - processPackages [cgiw]: Downloading https://files.pythonhosted.org/packages/02/95/f37b385b96d8e8cf029ea9df38fa32f00801beeac594fbe7f9e58e18102b/cgiw-0.1.6.tar.gz
+[2023-05-09 15:30:48] INFO root fetch - processPackages [cgiw]: executing diffoscope
+[2023-05-09 15:30:48] INFO root fetch - processPackages [cgiw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cgiw-0.1.5.tar.gz tmp/cgiw-0.1.6.tar.gz --markdown 20230509/c/cgiw/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-09 15:30:48] INFO root fetch - processPackages [nbdev-pandas]: Start processing: rmpy
+[2023-05-09 15:30:48] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-09 15:30:48] INFO root fetch - processPackages [rmpy]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-09 15:30:48] INFO root fetch - processPackages [rmpy]: Downloading https://files.pythonhosted.org/packages/f6/f3/edd2e54e0520ebe3be14b4ed074ccc9be18e08239958f3c562b22fc07a91/rmpy-1.1.3.tar.gz
+[2023-05-09 15:30:49] INFO root fetch - processPackages [crosscompute]: Start processing: nbdev-sphinx
+[2023-05-09 15:30:49] INFO root fetch - main [MainThread]: End processing [crosscompute]: success
+[2023-05-09 15:30:49] INFO root fetch - processPackages [rmpy]: Downloading https://files.pythonhosted.org/packages/9f/c6/6f57af919c6692cb51173c415343ed8a9f875828446b760bccd31c6a5361/rmpy-1.1.4.tar.gz
+[2023-05-09 15:30:49] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 15:30:49] INFO root fetch - processPackages [rmpy]: executing diffoscope
+[2023-05-09 15:30:49] INFO root fetch - processPackages [rmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmpy-1.1.3.tar.gz tmp/rmpy-1.1.4.tar.gz --markdown 20230509/r/rmpy/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-09 15:30:49] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-09 15:30:49] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230509/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 15:30:49] INFO root fetch - main [MainThread]: End processing [invenio-rdm-migrator]: success
+[2023-05-09 15:30:50] INFO root fetch - main [MainThread]: End processing [cloudsmith-cli]: success
+[2023-05-09 15:30:50] INFO root fetch - main [MainThread]: End processing [cgiw]: success
+[2023-05-09 15:30:50] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-09 15:30:51] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-09 15:30:51] INFO root fetch - main [MainThread]: End processing [secretflow]: success
+[2023-05-09 15:30:51] INFO root fetch - main [MainThread]: End processing [rmpy]: success
+[2023-05-09 15:30:52] INFO root fetch - main [MainThread]: End processing [edx-enterprise]: success
+[2023-05-09 15:31:06] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-05-09 15:31:17] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
+[2023-05-09 15:31:17] INFO root fetch - main [MainThread]: Store serial: [18032287]
