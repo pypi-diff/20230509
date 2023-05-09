@@ -15619,3 +15619,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 13:58:53] INFO root fetch - main [MainThread]: End processing [tuf]: success
 [2023-05-09 13:58:53] INFO root fetch - main [MainThread]: End processing [buteo]: success
 [2023-05-09 13:58:53] INFO root fetch - main [MainThread]: Store serial: [18031468]
+[2023-05-09 14:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031468]
+[2023-05-09 14:04:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-09 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dupla
+[2023-05-09 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sportydatagen
+[2023-05-09 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: emlib
+[2023-05-09 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: duckdb-kernel
+[2023-05-09 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rmpy
+[2023-05-09 14:04:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zipline-norgatedata
+[2023-05-09 14:04:05] INFO root fetch - processPackages [sportydatagen]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-09 14:04:05] WARNING root fetch - processPackages [dupla]: Skipping, unable to determine old version
+[2023-05-09 14:04:05] INFO root fetch - main [MainThread]: End processing [dupla] error
+[2023-05-09 14:04:05] WARNING root fetch - processPackages [duckdb-kernel]: Skipping, unable to determine old version
+[2023-05-09 14:04:05] INFO root fetch - main [MainThread]: End processing [duckdb-kernel] error
+[2023-05-09 14:04:05] INFO root fetch - processPackages [rmpy]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 14:04:05] INFO root fetch - processPackages [emlib]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-09 14:04:05] INFO root fetch - processPackages [zipline-norgatedata]: New version: [2.4.2] Old Version: [2.4.1]
+[2023-05-09 14:04:06] INFO root fetch - processPackages [emlib]: executing diffoscope
+[2023-05-09 14:04:06] INFO root fetch - processPackages [emlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emlib-1.9.1.tar.gz tmp/emlib-1.9.2.tar.gz --markdown 20230509/e/emlib/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-09 14:04:06] INFO root fetch - processPackages [rmpy]: Downloading https://files.pythonhosted.org/packages/cb/f5/e5b36ae7dc68f2817380e51a1aaf9cfb7abcf3d24fb8d7a20b0edb86af51/rmpy-0.1.2.tar.gz
+[2023-05-09 14:04:06] INFO root fetch - processPackages [sportydatagen]: Downloading https://files.pythonhosted.org/packages/10/52/f7d44f889eedf4751c22c1a7421ecf9c3871210d9eedc268600756717fe2/sportydatagen-0.2.0.tar.gz
+[2023-05-09 14:04:06] INFO root fetch - processPackages [zipline-norgatedata]: Downloading https://files.pythonhosted.org/packages/2a/7f/62e96ef98b176383225fed21fc3eccdba5391480b878d1544c9e89c87ce2/zipline_norgatedata-2.4.2-py3-none-any.whl
+[2023-05-09 14:04:06] INFO root fetch - processPackages [zipline-norgatedata]: executing diffoscope
+[2023-05-09 14:04:06] INFO root fetch - processPackages [zipline-norgatedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zipline_norgatedata-2.4.1-py3-none-any.whl.zip tmp/zipline_norgatedata-2.4.2-py3-none-any.whl.zip --markdown 20230509/z/zipline-norgatedata/2.4.1-2.4.2/diff.md --exclude *.pyd
+[2023-05-09 14:04:06] INFO root fetch - processPackages [sportydatagen]: Downloading https://files.pythonhosted.org/packages/28/69/39b26e0640d00745ac68e290513512be15f0eb95fe64e544f698a091c804/sportydatagen-0.2.1.tar.gz
+[2023-05-09 14:04:06] INFO root fetch - processPackages [rmpy]: Downloading https://files.pythonhosted.org/packages/65/be/e2598d95726a0a6c3c1015227ee55c7752ffa226768f46c4b855c6de4351/rmpy-0.1.3.tar.gz
+[2023-05-09 14:04:06] INFO root fetch - processPackages [rmpy]: executing diffoscope
+[2023-05-09 14:04:06] INFO root fetch - processPackages [rmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmpy-0.1.2.tar.gz tmp/rmpy-0.1.3.tar.gz --markdown 20230509/r/rmpy/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 14:04:06] INFO root fetch - processPackages [sportydatagen]: executing diffoscope
+[2023-05-09 14:04:06] INFO root fetch - processPackages [sportydatagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sportydatagen-0.2.0.tar.gz tmp/sportydatagen-0.2.1.tar.gz --markdown 20230509/s/sportydatagen/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-09 14:04:07] INFO root fetch - main [MainThread]: End processing [zipline-norgatedata]: success
+[2023-05-09 14:04:07] INFO root fetch - main [MainThread]: End processing [sportydatagen]: success
+[2023-05-09 14:04:08] INFO root fetch - main [MainThread]: End processing [rmpy]: success
+[2023-05-09 14:04:09] INFO root fetch - main [MainThread]: End processing [emlib]: success
+[2023-05-09 14:04:09] INFO root fetch - main [MainThread]: Store serial: [18031490]
