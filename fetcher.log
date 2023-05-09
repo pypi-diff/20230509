@@ -13362,3 +13362,102 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 11:30:35] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-05-09 11:30:39] INFO root fetch - main [MainThread]: End processing [mainnet]: success
 [2023-05-09 11:30:39] INFO root fetch - main [MainThread]: Store serial: [18030124]
+[2023-05-09 11:35:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18030124]
+[2023-05-09 11:35:48] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: birentechci
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airflow-commons
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tala
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wgd
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: badgescale-ys-plt
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oscilloscope-scripts-xzf8971
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: polynomiograpy
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-fragments
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: crdb
+[2023-05-09 11:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: KeyboardPaster
+[2023-05-09 11:35:48] INFO root fetch - processPackages [birentechci]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 11:35:48] WARNING root fetch - processPackages [KeyboardPaster]: Skipping, unable to determine old version
+[2023-05-09 11:35:48] INFO root fetch - processPackages [KeyboardPaster]: Start processing: minato
+[2023-05-09 11:35:48] INFO root fetch - main [MainThread]: End processing [KeyboardPaster] error
+[2023-05-09 11:35:48] WARNING root fetch - processPackages [django-fragments]: Skipping, unable to determine old version
+[2023-05-09 11:35:48] INFO root fetch - processPackages [django-fragments]: Start processing: cmem-cmemc
+[2023-05-09 11:35:48] INFO root fetch - main [MainThread]: End processing [django-fragments] error
+[2023-05-09 11:35:48] INFO root fetch - processPackages [minato]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-09 11:35:48] INFO root fetch - processPackages [birentechci]: executing diffoscope
+[2023-05-09 11:35:48] INFO root fetch - processPackages [birentechci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/birentechci-0.0.8.tar.gz tmp/birentechci-0.0.9.tar.gz --markdown 20230509/b/birentechci/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 11:35:48] INFO root fetch - processPackages [badgescale-ys-plt]: New version: [8.0] Old Version: [7.0]
+[2023-05-09 11:35:48] INFO root fetch - processPackages [oscilloscope-scripts-xzf8971]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-09 11:35:48] INFO root fetch - processPackages [polynomiograpy]: New version: [0.3.0a1] Old Version: [0.2.0a1.post1]
+[2023-05-09 11:35:49] INFO root fetch - processPackages [tala]: New version: [9.0.0] Old Version: [8.0.0]
+[2023-05-09 11:35:49] INFO root fetch - processPackages [crdb]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-05-09 11:35:49] WARNING root fetch - processPackages [wgd]: Skipping, unable to determine old version
+[2023-05-09 11:35:49] INFO root fetch - processPackages [wgd]: Start processing: pqinput
+[2023-05-09 11:35:49] INFO root fetch - main [MainThread]: End processing [wgd] error
+[2023-05-09 11:35:49] INFO root fetch - processPackages [airflow-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 11:35:49] INFO root fetch - processPackages [cmem-cmemc]: New version: [23.1.2rc1] Old Version: [23.1.2]
+[2023-05-09 11:35:49] INFO root fetch - processPackages [pqinput]: New version: [0.0.321] Old Version: [0.0.32]
+[2023-05-09 11:35:49] INFO root fetch - processPackages [cmem-cmemc]: Downloading https://files.pythonhosted.org/packages/97/14/fce923c0692da2276f0e9fd28229bac3e273e7a7ff44d8e78b1d24e75d8e/cmem_cmemc-23.1.2.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [badgescale-ys-plt]: Downloading https://files.pythonhosted.org/packages/da/c4/5ccd86bbeb3aa3f9f327793ea8ea6bf94b3654ba62867584284c7aef3940/badgescale_ys_plt-8.0-py3-none-any.whl
+[2023-05-09 11:35:49] INFO root fetch - processPackages [oscilloscope-scripts-xzf8971]: Downloading https://files.pythonhosted.org/packages/ff/74/5dd3c7e26059b515f5388c95ae7686b2bd1015a9e72a2622aebe8ff14c62/oscilloscope_scripts_xzf8971-1.1.0.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [minato]: executing diffoscope
+[2023-05-09 11:35:49] INFO root fetch - processPackages [minato]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minato-0.8.2.tar.gz tmp/minato-0.9.0.tar.gz --markdown 20230509/m/minato/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 11:35:49] INFO root fetch - processPackages [tala]: Downloading https://files.pythonhosted.org/packages/7e/f9/4b94d1b356b377e8e1011db136793b76e02d6511cab1d4f7e16d63b5f308/tala-8.0.0-py3-none-any.whl
+[2023-05-09 11:35:49] INFO root fetch - processPackages [airflow-commons]: Downloading https://files.pythonhosted.org/packages/f0/d8/75854fa36e01b6ba970901cd1d78e72a61b989df5574a2bbe9c95fde9ffe/airflow-commons-0.0.8.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [crdb]: Downloading https://files.pythonhosted.org/packages/0b/19/a45f098652ac66a605edba9ad04299498438bbf8f175a2d66055c8297978/crdb-0.6.1.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [polynomiograpy]: Downloading https://files.pythonhosted.org/packages/d4/f3/f3c30897d6bdff314c2e099be8b0fffdfc66f4bb04e64e38e4dffa1707c5/polynomiograpy-0.2.0a1.post1.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [pqinput]: Downloading https://files.pythonhosted.org/packages/64/56/86e8bd3c2198c88ee8def89fa8048783b2809f3929213b17b58fa42cf723/pqinput-0.0.321.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [oscilloscope-scripts-xzf8971]: Downloading https://files.pythonhosted.org/packages/fb/0a/66232e18f5926df52999696df7e37f6bf59abcff3feb560bc1cca98d3396/oscilloscope_scripts_xzf8971-1.2.0.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [pqinput]: executing diffoscope
+[2023-05-09 11:35:49] INFO root fetch - processPackages [pqinput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqinput-0.0.32.tar.gz tmp/pqinput-0.0.321.tar.gz --markdown 20230509/p/pqinput/0.0.32-0.0.321/diff.md --exclude *.pyd
+[2023-05-09 11:35:49] INFO root fetch - processPackages [crdb]: Downloading https://files.pythonhosted.org/packages/59/d1/c61f59000a77201573b4c9b22ba64e7f0abed23841e6812b2f6eaf2f9f03/crdb-0.7.0.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [polynomiograpy]: Downloading https://files.pythonhosted.org/packages/e7/6f/a7052b0e78cb8926659bbed7c67e3ca0fb1aac9e38f03b6b587306e22561/polynomiograpy-0.3.0a1.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [badgescale-ys-plt]: executing diffoscope
+[2023-05-09 11:35:49] INFO root fetch - processPackages [badgescale-ys-plt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgescale_ys_plt-7.0-py3-none-any.whl.zip tmp/badgescale_ys_plt-8.0-py3-none-any.whl.zip --markdown 20230509/b/badgescale-ys-plt/7.0-8.0/diff.md --exclude *.pyd
+[2023-05-09 11:35:49] INFO root fetch - processPackages [cmem-cmemc]: Downloading https://files.pythonhosted.org/packages/88/b4/29249a280d48fb0f50e92cbd3049bea6b1d7ca7afc0cae937af87523ffa0/cmem_cmemc-23.1.2rc1.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [crdb]: executing diffoscope
+[2023-05-09 11:35:49] INFO root fetch - processPackages [crdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crdb-0.6.1.tar.gz tmp/crdb-0.7.0.tar.gz --markdown 20230509/c/crdb/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-05-09 11:35:49] INFO root fetch - processPackages [airflow-commons]: Downloading https://files.pythonhosted.org/packages/64/5b/34c0e5a9e387f00249831c2a975b2097907cf519ba5f4f448ef21070346a/airflow-commons-0.0.9.tar.gz
+[2023-05-09 11:35:49] INFO root fetch - processPackages [oscilloscope-scripts-xzf8971]: executing diffoscope
+[2023-05-09 11:35:49] INFO root fetch - processPackages [oscilloscope-scripts-xzf8971]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oscilloscope_scripts_xzf8971-1.1.0.tar.gz tmp/oscilloscope_scripts_xzf8971-1.2.0.tar.gz --markdown 20230509/o/oscilloscope-scripts-xzf8971/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 11:35:49] INFO root fetch - processPackages [cmem-cmemc]: executing diffoscope
+[2023-05-09 11:35:49] INFO root fetch - processPackages [cmem-cmemc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmem_cmemc-23.1.2.tar.gz tmp/cmem_cmemc-23.1.2rc1.tar.gz --markdown 20230509/c/cmem-cmemc/23.1.2-23.1.2rc1/diff.md --exclude *.pyd
+[2023-05-09 11:35:49] INFO root fetch - processPackages [polynomiograpy]: executing diffoscope
+[2023-05-09 11:35:49] INFO root fetch - processPackages [polynomiograpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polynomiograpy-0.2.0a1.post1.tar.gz tmp/polynomiograpy-0.3.0a1.tar.gz --markdown 20230509/p/polynomiograpy/0.2.0a1.post1-0.3.0a1/diff.md --exclude *.pyd
+[2023-05-09 11:35:49] INFO root fetch - processPackages [airflow-commons]: executing diffoscope
+[2023-05-09 11:35:49] INFO root fetch - processPackages [airflow-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-commons-0.0.8.tar.gz tmp/airflow-commons-0.0.9.tar.gz --markdown 20230509/a/airflow-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 11:35:49] INFO root fetch - processPackages [tala]: Downloading https://files.pythonhosted.org/packages/8e/72/986c5075d29f6cff970b43955b8d4d42316a124d22c2e01c2877aab4480c/tala-9.0.0-py3-none-any.whl
+[2023-05-09 11:35:50] INFO root fetch - processPackages [tala]: executing diffoscope
+[2023-05-09 11:35:50] INFO root fetch - processPackages [tala]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tala-8.0.0-py3-none-any.whl.zip tmp/tala-9.0.0-py3-none-any.whl.zip --markdown 20230509/t/tala/8.0.0-9.0.0/diff.md --exclude *.pyd
+[2023-05-09 11:35:50] INFO root fetch - processPackages [birentechci]: Start processing: Geode-Common
+[2023-05-09 11:35:50] INFO root fetch - main [MainThread]: End processing [birentechci]: success
+[2023-05-09 11:35:50] INFO root fetch - processPackages [Geode-Common]: New version: [25.0.7] Old Version: [25.0.6]
+[2023-05-09 11:35:50] INFO root fetch - processPackages [minato]: Start processing: certora-cli-alpha-niv-fix-check-results
+[2023-05-09 11:35:50] INFO root fetch - main [MainThread]: End processing [minato]: success
+[2023-05-09 11:35:50] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/58/c9/58d6f19535edae12d8da72c0e6e81ff4945e406dd41f739759843dda4a93/Geode_Common-25.0.6-cp39-cp39-win_amd64.whl
+[2023-05-09 11:35:50] WARNING root fetch - processPackages [certora-cli-alpha-niv-fix-check-results]: Skipping, unable to determine old version
+[2023-05-09 11:35:50] INFO root fetch - processPackages [certora-cli-alpha-niv-fix-check-results]: Start processing: phdu
+[2023-05-09 11:35:50] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-niv-fix-check-results] error
+[2023-05-09 11:35:50] INFO root fetch - processPackages [phdu]: New version: [1.9b6] Old Version: [1.9b5]
+[2023-05-09 11:35:51] INFO root fetch - processPackages [pqinput]: Start processing: wc-django-envoyer
+[2023-05-09 11:35:51] INFO root fetch - main [MainThread]: End processing [pqinput]: success
+[2023-05-09 11:35:51] INFO root fetch - processPackages [phdu]: Downloading https://files.pythonhosted.org/packages/c5/03/b08a07dffd9f3b83f7b0047fbcad9f9ac189e8bb96bef9c027264b0c9144/phdu-1.9b6.tar.gz
+[2023-05-09 11:35:51] INFO root fetch - processPackages [wc-django-envoyer]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-09 11:35:51] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/55/c8/1089d3d2b577913afaff8176228d6152f8749e9e91e9757561e6965e9766/Geode_Common-25.0.7-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-09 11:35:51] INFO root fetch - processPackages [phdu]: executing diffoscope
+[2023-05-09 11:35:51] INFO root fetch - processPackages [phdu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phdu-1.9b5.tar.gz tmp/phdu-1.9b6.tar.gz --markdown 20230509/p/phdu/1.9b5-1.9b6/diff.md --exclude *.pyd
+[2023-05-09 11:35:51] INFO root fetch - main [MainThread]: End processing [polynomiograpy]: success
+[2023-05-09 11:35:51] INFO root fetch - main [MainThread]: End processing [badgescale-ys-plt]: success
+[2023-05-09 11:35:51] INFO root fetch - main [MainThread]: End processing [airflow-commons]: success
+[2023-05-09 11:35:51] INFO root fetch - processPackages [wc-django-envoyer]: Downloading https://files.pythonhosted.org/packages/78/cc/03686378d3dac03ba800b9ae53bfe9d1f9de0f14185ea220060f86444289/wc-django-envoyer-0.1.0.tar.gz
+[2023-05-09 11:35:51] INFO root fetch - processPackages [Geode-Common]: executing diffoscope
+[2023-05-09 11:35:51] INFO root fetch - processPackages [Geode-Common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Common-25.0.6-cp39-cp39-win_amd64.whl.zip tmp/Geode_Common-25.0.7-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230509/G/Geode-Common/25.0.6-25.0.7/diff.md --exclude *.pyd
+[2023-05-09 11:35:51] INFO root fetch - processPackages [wc-django-envoyer]: Downloading https://files.pythonhosted.org/packages/1c/6b/843a62f36518cdb2042304708e529c23c600977b17a508ff1bdc3a545080/wc-django-envoyer-0.2.0.tar.gz
+[2023-05-09 11:35:51] INFO root fetch - processPackages [wc-django-envoyer]: executing diffoscope
+[2023-05-09 11:35:51] INFO root fetch - processPackages [wc-django-envoyer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wc-django-envoyer-0.1.0.tar.gz tmp/wc-django-envoyer-0.2.0.tar.gz --markdown 20230509/w/wc-django-envoyer/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 11:35:52] INFO root fetch - main [MainThread]: End processing [oscilloscope-scripts-xzf8971]: success
+[2023-05-09 11:35:52] INFO root fetch - main [MainThread]: End processing [crdb]: success
+[2023-05-09 11:35:52] INFO root fetch - main [MainThread]: End processing [phdu]: success
+[2023-05-09 11:35:52] INFO root fetch - main [MainThread]: End processing [cmem-cmemc]: success
+[2023-05-09 11:35:53] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
+[2023-05-09 11:35:53] INFO root fetch - main [MainThread]: End processing [wc-django-envoyer]: success
+[2023-05-09 11:35:53] INFO root fetch - main [MainThread]: End processing [tala]: success
+[2023-05-09 11:35:53] INFO root fetch - main [MainThread]: Store serial: [18030183]
