@@ -9982,3 +9982,52 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 08:06:52] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
 [2023-05-09 08:07:11] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-09 08:07:11] INFO root fetch - main [MainThread]: Store serial: [18028059]
+[2023-05-09 08:12:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028059]
+[2023-05-09 08:12:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-09 08:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DXR
+[2023-05-09 08:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zep-python
+[2023-05-09 08:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-datadog
+[2023-05-09 08:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-ec
+[2023-05-09 08:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: linktest
+[2023-05-09 08:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-libvirt
+[2023-05-09 08:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-keycloak
+[2023-05-09 08:12:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: practica1-pandas-erika
+[2023-05-09 08:12:21] INFO root fetch - processPackages [pulumi-libvirt]: New version: [0.4.1a1683610844] Old Version: [0.4.1a1683352653]
+[2023-05-09 08:12:21] INFO root fetch - processPackages [pulumi-ec]: New version: [0.5.2a1683610439] Old Version: [0.5.2a1683351297]
+[2023-05-09 08:12:21] INFO root fetch - processPackages [linktest]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-09 08:12:21] INFO root fetch - processPackages [pulumi-datadog]: New version: [4.9.0a1653604828] Old Version: [4.9.0a1650908051]
+[2023-05-09 08:12:21] INFO root fetch - processPackages [DXR]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-05-09 08:12:21] WARNING root fetch - processPackages [practica1-pandas-erika]: Skipping, unable to determine old version
+[2023-05-09 08:12:21] INFO root fetch - main [MainThread]: End processing [practica1-pandas-erika] error
+[2023-05-09 08:12:21] WARNING root fetch - processPackages [zep-python]: Skipping, unable to determine old version
+[2023-05-09 08:12:21] INFO root fetch - main [MainThread]: End processing [zep-python] error
+[2023-05-09 08:12:21] INFO root fetch - processPackages [pulumi-keycloak]: New version: [5.2.0a1683610820] Old Version: [5.2.0a1683351485]
+[2023-05-09 08:12:21] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/45/c4/dbded3b4e521c8d8900bc15be77909b0f2716ff7df117baa8d9fd16baa54/linktest-2.0.5.tar.gz
+[2023-05-09 08:12:21] INFO root fetch - processPackages [DXR]: Downloading https://files.pythonhosted.org/packages/e2/0f/9a8bc141a103919845e18a9d93adaa2a88fe9bdc443153192bf0964d31e3/DXR-1.8.9.tar.gz
+[2023-05-09 08:12:21] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/d8/b5/8991a5e2174de51c32d71e18a0d3eb5ac2f6bb5fe9f15ca8f908cee6e214/pulumi_datadog-4.9.0a1650908051.tar.gz
+[2023-05-09 08:12:21] INFO root fetch - processPackages [DXR]: executing diffoscope
+[2023-05-09 08:12:21] INFO root fetch - processPackages [DXR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DXR-1.8.8.tar.gz tmp/DXR-1.8.9.tar.gz --markdown 20230509/D/DXR/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-05-09 08:12:21] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/32/ce/b2c3400f975820c2ae0fca39cf76b73089c6c0ac6f7f321cc75bb5ee88fd/pulumi_ec-0.5.2a1683351297.tar.gz
+[2023-05-09 08:12:21] INFO root fetch - processPackages [pulumi-keycloak]: Downloading https://files.pythonhosted.org/packages/05/d1/3aee2a8258609c3b0c623ff7407e8167f5bf426b183a4ca233d4331a943b/pulumi_keycloak-5.2.0a1683351485.tar.gz
+[2023-05-09 08:12:22] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2023-05-09 08:12:22] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.0.4.tar.gz tmp/linktest-2.0.5.tar.gz --markdown 20230509/l/linktest/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/52/27/bcd1bc4e5016f15222bc7adac486ba4998c18df8a08aba5c436bf9942364/pulumi_ec-0.5.2a1683610439.tar.gz
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-libvirt]: Downloading https://files.pythonhosted.org/packages/9c/a2/0a314d198646156d809d3710ec06bcff40a42cf04b5235b0e80e1f5971ee/pulumi_libvirt-0.4.1a1683352653.tar.gz
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-ec]: executing diffoscope
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-ec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ec-0.5.2a1683351297.tar.gz tmp/pulumi_ec-0.5.2a1683610439.tar.gz --markdown 20230509/p/pulumi-ec/0.5.2a1683351297-0.5.2a1683610439/diff.md --exclude *.pyd
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-keycloak]: Downloading https://files.pythonhosted.org/packages/67/ee/49a26380793675a718d7b2df6e576afeaf59374e778220684a0f77ab831c/pulumi_keycloak-5.2.0a1683610820.tar.gz
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-keycloak]: executing diffoscope
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-keycloak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_keycloak-5.2.0a1683351485.tar.gz tmp/pulumi_keycloak-5.2.0a1683610820.tar.gz --markdown 20230509/p/pulumi-keycloak/5.2.0a1683351485-5.2.0a1683610820/diff.md --exclude *.pyd
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/de/b3/aee4697d07beb69799f35031c032637a1c998c8ba8a18ace02fb30a3011f/pulumi_datadog-4.9.0a1653604828.tar.gz
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-libvirt]: Downloading https://files.pythonhosted.org/packages/dd/02/2e83532c57d0d0e8cae1bfe29fe3d07af04a610ea925b08a6ea389d9a65b/pulumi_libvirt-0.4.1a1683610844.tar.gz
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-libvirt]: executing diffoscope
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-libvirt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_libvirt-0.4.1a1683352653.tar.gz tmp/pulumi_libvirt-0.4.1a1683610844.tar.gz --markdown 20230509/p/pulumi-libvirt/0.4.1a1683352653-0.4.1a1683610844/diff.md --exclude *.pyd
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-datadog]: executing diffoscope
+[2023-05-09 08:12:22] INFO root fetch - processPackages [pulumi-datadog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_datadog-4.9.0a1650908051.tar.gz tmp/pulumi_datadog-4.9.0a1653604828.tar.gz --markdown 20230509/p/pulumi-datadog/4.9.0a1650908051-4.9.0a1653604828/diff.md --exclude *.pyd
+[2023-05-09 08:12:23] INFO root fetch - main [MainThread]: End processing [pulumi-ec]: success
+[2023-05-09 08:12:23] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2023-05-09 08:12:23] INFO root fetch - main [MainThread]: End processing [pulumi-libvirt]: success
+[2023-05-09 08:12:24] INFO root fetch - main [MainThread]: End processing [pulumi-keycloak]: success
+[2023-05-09 08:12:24] INFO root fetch - main [MainThread]: End processing [DXR]: success
+[2023-05-09 08:12:26] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
+[2023-05-09 08:12:26] INFO root fetch - main [MainThread]: Store serial: [18028092]
