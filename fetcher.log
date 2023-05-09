@@ -14456,3 +14456,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 12:35:16] INFO root fetch - main [MainThread]: End processing [solidpython2]: success
 [2023-05-09 12:35:17] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-validator-cfnguard]: success
 [2023-05-09 12:35:17] INFO root fetch - main [MainThread]: Store serial: [18030763]
+[2023-05-09 12:40:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18030763]
+[2023-05-09 12:40:27] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exodusutils
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spaceone-api
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: loristrck
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: palmers-agents-general
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: unblob
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xsystem
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyasd
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spotON_sdk
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ess-streaming-data-types
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PyHarshit
+[2023-05-09 12:40:27] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-09 12:40:27] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.3.0] Old Version: [0.0.2.9]
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ess-streaming-data-types]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-09 12:40:27] INFO root fetch - processPackages [unblob]: New version: [23.5.9] Old Version: [23.5.5]
+[2023-05-09 12:40:27] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-09 12:40:27] INFO root fetch - processPackages [exodusutils]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-05-09 12:40:27] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.6.tar.gz tmp/palmers_agents_general-0.0.7.tar.gz --markdown 20230509/p/palmers-agents-general/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-09 12:40:27] WARNING root fetch - processPackages [xsystem]: Skipping, unable to determine old version
+[2023-05-09 12:40:27] INFO root fetch - main [MainThread]: End processing [xsystem] error
+[2023-05-09 12:40:27] INFO root fetch - processPackages [loristrck]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ess-streaming-data-types]: executing diffoscope
+[2023-05-09 12:40:27] WARNING root fetch - processPackages [PyHarshit]: Skipping, unable to determine old version
+[2023-05-09 12:40:27] INFO root fetch - processPackages [ess-streaming-data-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ess_streaming_data_types-0.9.5.tar.gz tmp/ess_streaming_data_types-0.9.6.tar.gz --markdown 20230509/e/ess-streaming-data-types/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-09 12:40:27] INFO root fetch - main [MainThread]: End processing [PyHarshit] error
+[2023-05-09 12:40:27] INFO root fetch - processPackages [spaceone-api]: New version: [1.9.7rc1] Old Version: [1.9.7.dev3]
+[2023-05-09 12:40:27] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/2f/e9/c4fbe15c8f4cd68b0cfb18316edf14c689f766098e75436d5b02f414edd8/spotON_sdk-0.0.3.0.tar.gz
+[2023-05-09 12:40:27] INFO root fetch - processPackages [loristrck]: Downloading https://files.pythonhosted.org/packages/b4/4a/cbddc08027d1034bdbd8834725d56e3374ece41b00d22c82726bb7bd2cde/loristrck-1.5.4.tar.gz
+[2023-05-09 12:40:27] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-09 12:40:27] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.2.9.tar.gz tmp/spotON_sdk-0.0.3.0.tar.gz --markdown 20230509/s/spotON_sdk/0.0.2.9-0.0.3.0/diff.md --exclude *.pyd
+[2023-05-09 12:40:27] INFO root fetch - processPackages [pyasd]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-09 12:40:27] INFO root fetch - processPackages [unblob]: Downloading https://files.pythonhosted.org/packages/67/38/c8f98a3d1500f3be8ae8648c02f9d3b631b4c69725b2405feb2062cbf1f6/unblob-23.5.5.tar.gz
+[2023-05-09 12:40:27] INFO root fetch - processPackages [exodusutils]: executing diffoscope
+[2023-05-09 12:40:27] INFO root fetch - processPackages [exodusutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exodusutils-0.3.7.tar.gz tmp/exodusutils-0.3.9.tar.gz --markdown 20230509/e/exodusutils/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-05-09 12:40:27] INFO root fetch - processPackages [unblob]: Downloading https://files.pythonhosted.org/packages/8b/46/2e1dc37cc166d1253b8981c412355e60b1c1b934e4ae24cc46f4b9019b91/unblob-23.5.9.tar.gz
+[2023-05-09 12:40:27] INFO root fetch - processPackages [spaceone-api]: executing diffoscope
+[2023-05-09 12:40:27] INFO root fetch - processPackages [spaceone-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_api-1.9.7.dev3-py3-none-any.whl.zip tmp/spaceone_api-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-api/1.9.7.dev3-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 12:40:27] INFO root fetch - processPackages [loristrck]: Downloading https://files.pythonhosted.org/packages/76/b5/38b5c19160a6200a02bb4ad047adec3df54c0639c92347ac2e817b6e60e3/loristrck-1.5.5-cp39-cp39-win_amd64.whl
+[2023-05-09 12:40:27] INFO root fetch - processPackages [pyasd]: Downloading https://files.pythonhosted.org/packages/83/4e/38921238f7e0a640bd6f0ea22ab8c76b59e200d24a12287d4b43a6eafb04/pyasd-0.0.7.tar.gz
+[2023-05-09 12:40:27] INFO root fetch - processPackages [unblob]: executing diffoscope
+[2023-05-09 12:40:27] INFO root fetch - processPackages [unblob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unblob-23.5.5.tar.gz tmp/unblob-23.5.9.tar.gz --markdown 20230509/u/unblob/23.5.5-23.5.9/diff.md --exclude *.pyd
+[2023-05-09 12:40:28] INFO root fetch - processPackages [loristrck]: executing diffoscope
+[2023-05-09 12:40:28] INFO root fetch - processPackages [loristrck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loristrck-1.5.4.tar.gz tmp/loristrck-1.5.5-cp39-cp39-win_amd64.whl.zip --markdown 20230509/l/loristrck/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-05-09 12:40:28] INFO root fetch - processPackages [pyasd]: executing diffoscope
+[2023-05-09 12:40:28] INFO root fetch - processPackages [pyasd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasd-0.0.6.tar.gz tmp/pyasd-0.0.7.tar.gz --markdown 20230509/p/pyasd/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-09 12:40:28] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-09 12:40:28] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-09 12:40:29] INFO root fetch - main [MainThread]: End processing [exodusutils]: success
+[2023-05-09 12:40:29] INFO root fetch - main [MainThread]: End processing [loristrck]: success
+[2023-05-09 12:40:30] INFO root fetch - main [MainThread]: End processing [ess-streaming-data-types]: success
+[2023-05-09 12:40:30] INFO root fetch - main [MainThread]: End processing [pyasd]: success
+[2023-05-09 12:40:30] INFO root fetch - main [MainThread]: End processing [unblob]: success
+[2023-05-09 12:40:31] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
+[2023-05-09 12:40:31] INFO root fetch - main [MainThread]: Store serial: [18030806]
