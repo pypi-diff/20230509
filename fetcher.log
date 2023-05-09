@@ -11498,3 +11498,82 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 09:36:18] INFO root fetch - main [MainThread]: End processing [teemi]: success
 [2023-05-09 09:36:19] INFO root fetch - main [MainThread]: End processing [PyNyaaTa]: success
 [2023-05-09 09:36:19] INFO root fetch - main [MainThread]: Store serial: [18028950]
+[2023-05-09 09:41:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028950]
+[2023-05-09 09:41:28] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: garaprod
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-rke
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tritony
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: localstack-core
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: modal-client
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cloudnetpy-qc
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: badgescale-ys-plt
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: slurm-parallel
+[2023-05-09 09:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: git-browse
+[2023-05-09 09:41:29] INFO root fetch - processPackages [tritony]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [slurm-parallel]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [garaprod]: New version: [0.1683617809.0] Old Version: [0.1683617694.0]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230509073900] Old Version: [2.0.3.dev20230508171732]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [modal-client]: New version: [0.49.2148] Old Version: [0.49.2147]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [pulumi-rke]: New version: [3.3.0a1683615565] Old Version: [3.3.0a1683356306]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [slurm-parallel]: executing diffoscope
+[2023-05-09 09:41:29] INFO root fetch - processPackages [slurm-parallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slurm-parallel-0.1.1.tar.gz tmp/slurm-parallel-0.1.2.tar.gz --markdown 20230509/s/slurm-parallel/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 09:41:29] INFO root fetch - processPackages [git-browse]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [badgescale-ys-plt]: New version: [6.0] Old Version: [5.0]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [cloudnetpy-qc]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-09 09:41:29] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-05-09 09:41:29] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 09:41:29] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/96/54/e5adf91d47ed1eb228a19b8e67a895f0ae0ca44ebcb9404addf2491a55b2/garaprod-0.1683617694.0.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [tritony]: Downloading https://files.pythonhosted.org/packages/70/60/9fc6a361e800f1730aab0c4a9c20895110a5f994d5ac0659f9e963f0046d/tritony-0.0.8.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/87/21/9b19ee87a562d67fadbeb91f47b79e7a5ea4f91e746bec7bf0ca5917a128/localstack-core-2.0.3.dev20230508171732.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/ab/b8/f44784cd4c4c3bb52d4b900141553d082021eb575b0b35067a66310db118/pulumi_rke-3.3.0a1683356306.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/cc/c0/4fa1ede8238ac1c2d644970a292be0a5d44d1b448125313f184956ced3db/modal_client-0.49.2147-py3-none-any.whl
+[2023-05-09 09:41:29] INFO root fetch - processPackages [git-browse]: Downloading https://files.pythonhosted.org/packages/4a/cf/b1f35b92e4fac844afab656dd9ccd6fe45f7a9770881c9c6778e2dd248ec/git-browse-2.9.1.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [cloudnetpy-qc]: Downloading https://files.pythonhosted.org/packages/2b/37/8700176a21e67e769e2ce546f74d753adeb243a4497dcb1bd3859a131986/cloudnetpy_qc-1.9.5.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [badgescale-ys-plt]: Downloading https://files.pythonhosted.org/packages/bf/34/325b16e19318dcf7127e1fd83b205624f2a9e97825cd299bb84dfbbd1e74/badgescale_ys_plt-6.0-py3-none-any.whl
+[2023-05-09 09:41:29] INFO root fetch - processPackages [cloudnetpy-qc]: executing diffoscope
+[2023-05-09 09:41:29] INFO root fetch - processPackages [cloudnetpy-qc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudnetpy_qc-1.9.4.tar.gz tmp/cloudnetpy_qc-1.9.5.tar.gz --markdown 20230509/c/cloudnetpy-qc/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-09 09:41:29] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/42/44/95ea50ee1537c548cf865700a7eb003e5827618b3793334d82c235863151/garaprod-0.1683617809.0.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/0d/30/5c2c15169fb9bab5c6d74152ad2a4e009358ed9af56d368953204457ae9c/modal_client-0.49.2148-py3-none-any.whl
+[2023-05-09 09:41:29] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/15/39/80820b8ff636c8b00f94c1921fc6e9cba05541da47639e2956ace1489f1b/localstack-core-2.0.3.dev20230509073900.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/23/0b/3d433f1a2aa5c20247bc4612584920f8bdf384232a36f9f46fc1a1dfff40/pulumi_rke-3.3.0a1683615565.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [tritony]: Downloading https://files.pythonhosted.org/packages/b9/5a/0aa777fa6a1f64a7c09b2bc4a41826e501079840bb08776d1b61f206c778/tritony-0.0.9.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [badgescale-ys-plt]: executing diffoscope
+[2023-05-09 09:41:29] INFO root fetch - processPackages [badgescale-ys-plt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgescale_ys_plt-5.0-py3-none-any.whl.zip tmp/badgescale_ys_plt-6.0-py3-none-any.whl.zip --markdown 20230509/b/badgescale-ys-plt/5.0-6.0/diff.md --exclude *.pyd
+[2023-05-09 09:41:29] INFO root fetch - processPackages [git-browse]: Downloading https://files.pythonhosted.org/packages/46/29/6091d61d7e48169112df3d73fea84755489167bf628520280604c6b1975b/git-browse-2.9.2.tar.gz
+[2023-05-09 09:41:29] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 09:41:29] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683617694.0.tar.gz tmp/garaprod-0.1683617809.0.tar.gz --markdown 20230509/g/garaprod/0.1683617694.0-0.1683617809.0/diff.md --exclude *.pyd
+[2023-05-09 09:41:29] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2023-05-09 09:41:29] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.49.2147-py3-none-any.whl.zip tmp/modal_client-0.49.2148-py3-none-any.whl.zip --markdown 20230509/m/modal-client/0.49.2147-0.49.2148/diff.md --exclude *.pyd
+[2023-05-09 09:41:29] INFO root fetch - processPackages [tritony]: executing diffoscope
+[2023-05-09 09:41:29] INFO root fetch - processPackages [tritony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tritony-0.0.8.tar.gz tmp/tritony-0.0.9.tar.gz --markdown 20230509/t/tritony/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 09:41:29] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2023-05-09 09:41:29] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.3.0a1683356306.tar.gz tmp/pulumi_rke-3.3.0a1683615565.tar.gz --markdown 20230509/p/pulumi-rke/3.3.0a1683356306-3.3.0a1683615565/diff.md --exclude *.pyd
+[2023-05-09 09:41:29] INFO root fetch - processPackages [git-browse]: executing diffoscope
+[2023-05-09 09:41:29] INFO root fetch - processPackages [git-browse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-browse-2.9.1.tar.gz tmp/git-browse-2.9.2.tar.gz --markdown 20230509/g/git-browse/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-05-09 09:41:30] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-09 09:41:30] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230508171732.tar.gz tmp/localstack-core-2.0.3.dev20230509073900.tar.gz --markdown 20230509/l/localstack-core/2.0.3.dev20230508171732-2.0.3.dev20230509073900/diff.md --exclude *.pyd
+[2023-05-09 09:41:30] INFO root fetch - processPackages [slurm-parallel]: Start processing: starrail-toolkit
+[2023-05-09 09:41:30] INFO root fetch - main [MainThread]: End processing [slurm-parallel]: success
+[2023-05-09 09:41:30] INFO root fetch - processPackages [starrail-toolkit]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-09 09:41:30] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: Start processing: garaprod
+[2023-05-09 09:41:30] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-05-09 09:41:30] INFO root fetch - processPackages [garaprod]: New version: [0.1683618082.0] Old Version: [0.1683617809.0]
+[2023-05-09 09:41:31] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/5a/e1/266da407493b943f6de1531122b5b35b05031cdedaf6735a257e1d7857f6/garaprod-0.1683618082.0.tar.gz
+[2023-05-09 09:41:31] INFO root fetch - processPackages [starrail-toolkit]: Downloading https://files.pythonhosted.org/packages/87/d6/89fc1ab918936a011c1b63396958b9996df61c9a4e8b874052b2da40801b/starrail-toolkit-0.5.1.tar.gz
+[2023-05-09 09:41:31] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 09:41:31] INFO root fetch - processPackages [starrail-toolkit]: executing diffoscope
+[2023-05-09 09:41:31] INFO root fetch - processPackages [starrail-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrail-toolkit-0.5.0.tar.gz tmp/starrail-toolkit-0.5.1.tar.gz --markdown 20230509/s/starrail-toolkit/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-09 09:41:31] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 09:41:31] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683617809.0.tar.gz tmp/garaprod-0.1683618082.0.tar.gz --markdown 20230509/g/garaprod/0.1683617809.0-0.1683618082.0/diff.md --exclude *.pyd
+[2023-05-09 09:41:31] INFO root fetch - main [MainThread]: End processing [badgescale-ys-plt]: success
+[2023-05-09 09:41:31] INFO root fetch - main [MainThread]: End processing [tritony]: success
+[2023-05-09 09:41:31] INFO root fetch - main [MainThread]: End processing [git-browse]: success
+[2023-05-09 09:41:32] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2023-05-09 09:41:32] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 09:41:32] INFO root fetch - main [MainThread]: End processing [starrail-toolkit]: success
+[2023-05-09 09:41:33] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2023-05-09 09:41:34] INFO root fetch - main [MainThread]: End processing [cloudnetpy-qc]: success
+[2023-05-09 09:41:36] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-09 09:41:36] INFO root fetch - main [MainThread]: Store serial: [18028996]
