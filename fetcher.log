@@ -18638,3 +18638,122 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 16:51:20] INFO root fetch - main [MainThread]: End processing [pybrook]: success
 [2023-05-09 16:51:20] INFO root fetch - main [MainThread]: End processing [xpag]: success
 [2023-05-09 16:51:20] INFO root fetch - main [MainThread]: Store serial: [18033443]
+[2023-05-09 16:56:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18033443]
+[2023-05-09 16:56:30] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioinsta
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mitosheet3
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: virtru-sdk
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: module-qc-analysis-tools
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: langchain
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pybrook
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rele
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: numpy-groupies
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: unique-symbols
+[2023-05-09 16:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pynubank
+[2023-05-09 16:56:30] INFO root fetch - processPackages [aioinsta]: New version: [1.3] Old Version: [1.2]
+[2023-05-09 16:56:30] INFO root fetch - processPackages [pybrook]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 16:56:30] INFO root fetch - processPackages [module-qc-analysis-tools]: New version: [1.3.1rc7] Old Version: [1.3.1rc6]
+[2023-05-09 16:56:30] WARNING root fetch - processPackages [unique-symbols]: Skipping, unable to determine old version
+[2023-05-09 16:56:30] INFO root fetch - processPackages [unique-symbols]: Start processing: taskiq
+[2023-05-09 16:56:30] INFO root fetch - main [MainThread]: End processing [unique-symbols] error
+[2023-05-09 16:56:30] INFO root fetch - processPackages [rele]: New version: [1.9.0] Old Version: [1.8.1b0]
+[2023-05-09 16:56:30] INFO root fetch - processPackages [numpy-groupies]: New version: [0.9.9] Old Version: [0.9.8.4]
+[2023-05-09 16:56:30] INFO root fetch - processPackages [mitosheet3]: New version: [0.3.92] Old Version: [0.3.91]
+[2023-05-09 16:56:30] INFO root fetch - processPackages [pynubank]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-09 16:56:30] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-05-09 16:56:30] INFO root fetch - processPackages [taskiq]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-09 16:56:30] INFO root fetch - processPackages [virtru-sdk]: New version: [2.7.0b2137] Old Version: [2.7.0a1325]
+[2023-05-09 16:56:30] INFO root fetch - processPackages [numpy-groupies]: executing diffoscope
+[2023-05-09 16:56:30] INFO root fetch - processPackages [numpy-groupies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpy_groupies-0.9.8.4.tar.gz tmp/numpy_groupies-0.9.9.tar.gz --markdown 20230509/n/numpy-groupies/0.9.8.4-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 16:56:30] INFO root fetch - processPackages [rele]: executing diffoscope
+[2023-05-09 16:56:30] INFO root fetch - processPackages [rele]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rele-1.8.1b0.tar.gz tmp/rele-1.9.0.tar.gz --markdown 20230509/r/rele/1.8.1b0-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 16:56:30] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-05-09 16:56:30] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230509/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-05-09 16:56:30] INFO root fetch - processPackages [pybrook]: Downloading https://files.pythonhosted.org/packages/46/9d/1d4fea7f8a09f6a1046e38daec7424b65196eff79f310b5990322e66c1bd/pybrook-0.1.4.tar.gz
+[2023-05-09 16:56:30] INFO root fetch - processPackages [module-qc-analysis-tools]: Downloading https://files.pythonhosted.org/packages/90/79/fa11444f680c888a453b86a92c8e4094beecd0b1d3ae049a9cb14ddfa6cb/module_qc_analysis_tools-1.3.1rc6.tar.gz
+[2023-05-09 16:56:30] INFO root fetch - processPackages [mitosheet3]: Downloading https://files.pythonhosted.org/packages/6f/3c/6539541f7e98b9657a8e2532e70845cda53ecb7a601e5c97042db4d828bd/mitosheet3-0.3.91.tar.gz
+[2023-05-09 16:56:30] INFO root fetch - processPackages [pynubank]: Downloading https://files.pythonhosted.org/packages/ed/2a/f5cd715bd6ccece4e2726a342485312cb4d2060004469719490eca3f33d1/pynubank-2.9.0.tar.gz
+[2023-05-09 16:56:30] INFO root fetch - processPackages [virtru-sdk]: Downloading https://files.pythonhosted.org/packages/37/1d/99725124c02ff6d92cb80aedac4bea060d4c2f6bf8c5d4f9907f5a4e7957/virtru_sdk-2.7.0b2137-cp39-cp39-win_amd64.whl
+[2023-05-09 16:56:30] INFO root fetch - processPackages [aioinsta]: Downloading https://files.pythonhosted.org/packages/b2/6f/8f3c47867d937b2c1355f431205d4b8a83d5b238c37d9c09a5813db5b45b/aioinsta-1.3.tar.gz
+[2023-05-09 16:56:30] INFO root fetch - processPackages [pybrook]: executing diffoscope
+[2023-05-09 16:56:30] INFO root fetch - processPackages [pybrook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrook-0.1.3.tar.gz tmp/pybrook-0.1.4.tar.gz --markdown 20230509/p/pybrook/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 16:56:30] INFO root fetch - processPackages [taskiq]: Downloading https://files.pythonhosted.org/packages/74/bf/46c2e0fa7b2a24906675fa45790990ffb92415738ec96f999fbe7284074b/taskiq-0.4.3-py3-none-any.whl
+[2023-05-09 16:56:31] INFO root fetch - processPackages [aioinsta]: executing diffoscope
+[2023-05-09 16:56:31] INFO root fetch - processPackages [aioinsta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioinsta-1.2.tar.gz tmp/aioinsta-1.3.tar.gz --markdown 20230509/a/aioinsta/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-09 16:56:31] INFO root fetch - processPackages [virtru-sdk]: executing diffoscope
+[2023-05-09 16:56:31] INFO root fetch - processPackages [virtru-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/virtru_sdk-2.7.0a1325-cp39-cp39-win_amd64.whl.zip tmp/virtru_sdk-2.7.0b2137-cp39-cp39-win_amd64.whl.zip --markdown 20230509/v/virtru-sdk/2.7.0a1325-2.7.0b2137/diff.md --exclude *.pyd
+[2023-05-09 16:56:31] INFO root fetch - processPackages [module-qc-analysis-tools]: Downloading https://files.pythonhosted.org/packages/5f/63/1fddf202aed25d44bc6264e5d2ca4c15a99c397a11dcc4e398753a195f50/module_qc_analysis_tools-1.3.1rc7.tar.gz
+[2023-05-09 16:56:31] INFO root fetch - processPackages [taskiq]: executing diffoscope
+[2023-05-09 16:56:31] INFO root fetch - processPackages [taskiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskiq-0.4.2.tar.gz tmp/taskiq-0.4.3-py3-none-any.whl.zip --markdown 20230509/t/taskiq/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-09 16:56:31] INFO root fetch - processPackages [module-qc-analysis-tools]: executing diffoscope
+[2023-05-09 16:56:31] INFO root fetch - processPackages [module-qc-analysis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/module_qc_analysis_tools-1.3.1rc6.tar.gz tmp/module_qc_analysis_tools-1.3.1rc7.tar.gz --markdown 20230509/m/module-qc-analysis-tools/1.3.1rc6-1.3.1rc7/diff.md --exclude *.pyd
+[2023-05-09 16:56:31] INFO root fetch - processPackages [mitosheet3]: Downloading https://files.pythonhosted.org/packages/40/75/fd3d6e8ade06ccff505fe1fdb297fcc61956799b01527fb587f77f52ef6f/mitosheet3-0.3.92.tar.gz
+[2023-05-09 16:56:31] INFO root fetch - processPackages [pynubank]: Downloading https://files.pythonhosted.org/packages/d2/1f/bf72658c19b9d038c2a1bfcb84fc12ad70b31fb097ede791770963b06c19/pynubank-2.9.1.tar.gz
+[2023-05-09 16:56:31] INFO root fetch - processPackages [mitosheet3]: executing diffoscope
+[2023-05-09 16:56:31] INFO root fetch - processPackages [mitosheet3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitosheet3-0.3.91.tar.gz tmp/mitosheet3-0.3.92.tar.gz --markdown 20230509/m/mitosheet3/0.3.91-0.3.92/diff.md --exclude *.pyd
+[2023-05-09 16:56:31] INFO root fetch - processPackages [pynubank]: executing diffoscope
+[2023-05-09 16:56:31] INFO root fetch - processPackages [pynubank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynubank-2.9.0.tar.gz tmp/pynubank-2.9.1.tar.gz --markdown 20230509/p/pynubank/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-09 16:56:32] INFO root fetch - processPackages [virtru-sdk]: Start processing: prodigy-teams
+[2023-05-09 16:56:32] INFO root fetch - main [MainThread]: End processing [virtru-sdk]: success
+[2023-05-09 16:56:32] INFO root fetch - processPackages [prodigy-teams]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 16:56:32] INFO root fetch - processPackages [numpy-groupies]: Start processing: certora-cli-alpha-yoav-static-arrays-splitting
+[2023-05-09 16:56:32] INFO root fetch - main [MainThread]: End processing [numpy-groupies]: success
+[2023-05-09 16:56:32] INFO root fetch - processPackages [certora-cli-alpha-yoav-static-arrays-splitting]: New version: [20230509.8.25.662734] Old Version: [20230509.14.54.652747]
+[2023-05-09 16:56:32] INFO root fetch - processPackages [aioinsta]: Start processing: pyowletapi
+[2023-05-09 16:56:32] INFO root fetch - main [MainThread]: End processing [aioinsta]: success
+[2023-05-09 16:56:32] INFO root fetch - processPackages [taskiq]: Start processing: ifd-python
+[2023-05-09 16:56:32] INFO root fetch - main [MainThread]: End processing [taskiq]: success
+[2023-05-09 16:56:32] INFO root fetch - processPackages [pyowletapi]: New version: [2023.5.9] Old Version: [2023.5.7]
+[2023-05-09 16:56:32] WARNING root fetch - processPackages [ifd-python]: Skipping, unable to determine old version
+[2023-05-09 16:56:32] INFO root fetch - processPackages [ifd-python]: Start processing: cohere
+[2023-05-09 16:56:32] INFO root fetch - main [MainThread]: End processing [ifd-python] error
+[2023-05-09 16:56:32] INFO root fetch - processPackages [prodigy-teams]: Downloading https://files.pythonhosted.org/packages/57/07/71027c4957e6a1622fb80cd60a705edc10baedef545efd04b767e8678c42/prodigy-teams-0.1.8.tar.gz
+[2023-05-09 16:56:32] INFO root fetch - processPackages [cohere]: New version: [4.4.0] Old Version: [4.3.1]
+[2023-05-09 16:56:32] INFO root fetch - processPackages [rele]: Start processing: pybritive
+[2023-05-09 16:56:32] INFO root fetch - main [MainThread]: End processing [rele]: success
+[2023-05-09 16:56:32] INFO root fetch - processPackages [certora-cli-alpha-yoav-static-arrays-splitting]: Downloading https://files.pythonhosted.org/packages/99/be/2dbfd7bf1684d8b277175a5ee541f055932617dde41e294fd50df803aa2b/certora-cli-alpha-yoav-static_arrays_splitting-20230509.14.54.652747.tar.gz
+[2023-05-09 16:56:32] INFO root fetch - processPackages [pybritive]: New version: [1.4.0rc2] Old Version: [1.4.0rc1]
+[2023-05-09 16:56:32] INFO root fetch - processPackages [pyowletapi]: executing diffoscope
+[2023-05-09 16:56:32] INFO root fetch - processPackages [pyowletapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyowletapi-2023.5.7.tar.gz tmp/pyowletapi-2023.5.9.tar.gz --markdown 20230509/p/pyowletapi/2023.5.7-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 16:56:32] WARNING root fetch - processPackages [certora-cli-alpha-yoav-static-arrays-splitting]: Skipping package: exceeds size limit 39215704>=10485760
+[2023-05-09 16:56:32] INFO root fetch - processPackages [certora-cli-alpha-yoav-static-arrays-splitting]: Start processing: unit-python-sdk
+[2023-05-09 16:56:32] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-yoav-static-arrays-splitting] error
+[2023-05-09 16:56:32] INFO root fetch - processPackages [unit-python-sdk]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-09 16:56:32] INFO root fetch - processPackages [cohere]: Downloading https://files.pythonhosted.org/packages/59/71/973ceb7c7abacb2dc94405581d3381302838895c38ace0bed97cd4ef6828/cohere-4.3.1.tar.gz
+[2023-05-09 16:56:32] INFO root fetch - processPackages [module-qc-analysis-tools]: Start processing: aitviewer
+[2023-05-09 16:56:32] INFO root fetch - main [MainThread]: End processing [module-qc-analysis-tools]: success
+[2023-05-09 16:56:32] INFO root fetch - processPackages [aitviewer]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-09 16:56:32] INFO root fetch - processPackages [prodigy-teams]: Downloading https://files.pythonhosted.org/packages/17/4c/a5f4f3cdaf7487d887d1aeabe53a3c3c0a1fe1985296cca2b2f3d0775821/prodigy-teams-0.1.9.tar.gz
+[2023-05-09 16:56:33] INFO root fetch - processPackages [pynubank]: Start processing: slcl1butils
+[2023-05-09 16:56:33] INFO root fetch - main [MainThread]: End processing [pynubank]: success
+[2023-05-09 16:56:33] INFO root fetch - processPackages [pybritive]: Downloading https://files.pythonhosted.org/packages/28/ec/66f4b3187a5d2b655645baed2408f1b3559c7db28a7386ffdd655c41cf2a/pybritive-1.4.0rc2.tar.gz
+[2023-05-09 16:56:33] INFO root fetch - processPackages [slcl1butils]: New version: [2023.5.9.2] Old Version: [2023.5.9]
+[2023-05-09 16:56:33] INFO root fetch - processPackages [prodigy-teams]: executing diffoscope
+[2023-05-09 16:56:33] INFO root fetch - processPackages [prodigy-teams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prodigy-teams-0.1.8.tar.gz tmp/prodigy-teams-0.1.9.tar.gz --markdown 20230509/p/prodigy-teams/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 16:56:33] INFO root fetch - processPackages [aitviewer]: Downloading https://files.pythonhosted.org/packages/09/ce/1316cd5653f5f32703b828bd5828810c4aba92ef11b2a9000839083301bb/aitviewer-1.8.1.tar.gz
+[2023-05-09 16:56:33] INFO root fetch - processPackages [cohere]: Downloading https://files.pythonhosted.org/packages/cc/46/dcea89dd2374f28ef9ca061d3cf06ff26e8789a8305169cfc095e12685a7/cohere-4.4.0.tar.gz
+[2023-05-09 16:56:33] INFO root fetch - processPackages [pybritive]: executing diffoscope
+[2023-05-09 16:56:33] INFO root fetch - processPackages [pybritive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybritive-1.4.0rc1.tar.gz tmp/pybritive-1.4.0rc2.tar.gz --markdown 20230509/p/pybritive/1.4.0rc1-1.4.0rc2/diff.md --exclude *.pyd
+[2023-05-09 16:56:33] INFO root fetch - processPackages [slcl1butils]: Downloading https://files.pythonhosted.org/packages/3b/c8/5552781dd5ede061890dfcd4a2084a595ae166478aef745b2f0822a71365/slcl1butils-2023.5.9.2.tar.gz
+[2023-05-09 16:56:33] INFO root fetch - processPackages [unit-python-sdk]: Downloading https://files.pythonhosted.org/packages/d6/29/65a1b06a6d3e1b295cf1788aee3b354863c1759f28c940d634f1648530a8/unit-python-sdk-0.9.2.tar.gz
+[2023-05-09 16:56:33] INFO root fetch - processPackages [cohere]: executing diffoscope
+[2023-05-09 16:56:33] INFO root fetch - processPackages [cohere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cohere-4.3.1.tar.gz tmp/cohere-4.4.0.tar.gz --markdown 20230509/c/cohere/4.3.1-4.4.0/diff.md --exclude *.pyd
+[2023-05-09 16:56:33] INFO root fetch - processPackages [aitviewer]: Downloading https://files.pythonhosted.org/packages/50/d1/10929698903f5feef965c65d59bb0efa3f6a63f1fffaae497dbfe9cff74a/aitviewer-1.9.0.tar.gz
+[2023-05-09 16:56:33] INFO root fetch - processPackages [slcl1butils]: executing diffoscope
+[2023-05-09 16:56:33] INFO root fetch - processPackages [slcl1butils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slcl1butils-2023.5.9.tar.gz tmp/slcl1butils-2023.5.9.2.tar.gz --markdown 20230509/s/slcl1butils/2023.5.9-2023.5.9.2/diff.md --exclude *.pyd
+[2023-05-09 16:56:33] INFO root fetch - processPackages [aitviewer]: executing diffoscope
+[2023-05-09 16:56:33] INFO root fetch - processPackages [aitviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aitviewer-1.8.1.tar.gz tmp/aitviewer-1.9.0.tar.gz --markdown 20230509/a/aitviewer/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 16:56:33] INFO root fetch - processPackages [unit-python-sdk]: Downloading https://files.pythonhosted.org/packages/59/11/edd1becb5a2350e8f84e58b77c96c0c1a77d29431195b2ac123f24f25981/unit-python-sdk-0.9.3.tar.gz
+[2023-05-09 16:56:33] INFO root fetch - processPackages [unit-python-sdk]: executing diffoscope
+[2023-05-09 16:56:33] INFO root fetch - processPackages [unit-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unit-python-sdk-0.9.2.tar.gz tmp/unit-python-sdk-0.9.3.tar.gz --markdown 20230509/u/unit-python-sdk/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-09 16:56:34] INFO root fetch - main [MainThread]: End processing [pyowletapi]: success
+[2023-05-09 16:56:34] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-05-09 16:56:34] INFO root fetch - main [MainThread]: End processing [cohere]: success
+[2023-05-09 16:56:34] INFO root fetch - main [MainThread]: End processing [slcl1butils]: success
+[2023-05-09 16:56:35] INFO root fetch - main [MainThread]: End processing [unit-python-sdk]: success
+[2023-05-09 16:56:35] INFO root fetch - main [MainThread]: End processing [pybritive]: success
+[2023-05-09 16:56:35] INFO root fetch - main [MainThread]: End processing [mitosheet3]: success
+[2023-05-09 16:56:35] INFO root fetch - main [MainThread]: End processing [aitviewer]: success
+[2023-05-09 16:56:36] INFO root fetch - main [MainThread]: End processing [prodigy-teams]: success
+[2023-05-09 16:56:36] INFO root fetch - main [MainThread]: End processing [pybrook]: success
+[2023-05-09 16:56:36] INFO root fetch - main [MainThread]: Store serial: [18033519]
