@@ -18901,3 +18901,77 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 17:01:54] INFO root fetch - main [MainThread]: End processing [neulabs-cdk-constructs]: success
 [2023-05-09 17:01:56] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-05-09 17:01:56] INFO root fetch - main [MainThread]: Store serial: [18033597]
+[2023-05-09 17:07:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18033597]
+[2023-05-09 17:07:08] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coiled
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: splight-lib
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hat-event
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cog-airflow-notify-sns
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyproject-generator
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mly
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alacorder
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: eotdl-cli
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: whisper-cpp-python
+[2023-05-09 17:07:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: polars-streaming
+[2023-05-09 17:07:08] INFO root fetch - processPackages [cog-airflow-notify-sns]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-09 17:07:08] INFO root fetch - processPackages [whisper-cpp-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 17:07:08] INFO root fetch - processPackages [mly]: New version: [0.3.1] Old Version: [0.1.1]
+[2023-05-09 17:07:08] INFO root fetch - processPackages [coiled]: New version: [0.6.3.dev9] Old Version: [0.6.3.dev8]
+[2023-05-09 17:07:09] INFO root fetch - processPackages [pyproject-generator]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-09 17:07:09] INFO root fetch - processPackages [eotdl-cli]: New version: [2023.5.9.post3] Old Version: [2023.5.9.post2]
+[2023-05-09 17:07:09] INFO root fetch - processPackages [splight-lib]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-09 17:07:09] INFO root fetch - processPackages [polars-streaming]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-09 17:07:09] INFO root fetch - processPackages [hat-event]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-05-09 17:07:09] INFO root fetch - processPackages [alacorder]: New version: [80.3.5] Old Version: [80.3.4]
+[2023-05-09 17:07:09] INFO root fetch - processPackages [whisper-cpp-python]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [whisper-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_cpp_python-0.1.8.tar.gz tmp/whisper_cpp_python-0.1.9.tar.gz --markdown 20230509/w/whisper-cpp-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 17:07:09] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.3.8.tar.gz tmp/splight-lib-2.3.9.tar.gz --markdown 20230509/s/splight-lib/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-09 17:07:09] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.3.dev8.tar.gz tmp/coiled-0.6.3.dev9.tar.gz --markdown 20230509/c/coiled/0.6.3.dev8-0.6.3.dev9/diff.md --exclude *.pyd
+[2023-05-09 17:07:09] INFO root fetch - processPackages [mly]: Downloading https://files.pythonhosted.org/packages/36/7f/1a796499cc99850b2af478ca2e8e29de9bb95d12b09034683f7093a9aa25/mly-0.1.1.tar.gz
+[2023-05-09 17:07:09] INFO root fetch - processPackages [polars-streaming]: Downloading https://files.pythonhosted.org/packages/fa/36/3a76fa04807a84770ec53cf66a9da2c62dcb2ed2cb9151a52c7a2285133b/polars-streaming-0.2.0.tar.gz
+[2023-05-09 17:07:09] INFO root fetch - processPackages [cog-airflow-notify-sns]: Downloading https://files.pythonhosted.org/packages/58/38/0967aa1b7b4ae19457c3a010441f4cc64199ef9b466f809b1b5806d7d6bf/cog-airflow-notify-sns-1.0.5.tar.gz
+[2023-05-09 17:07:09] INFO root fetch - processPackages [hat-event]: Downloading https://files.pythonhosted.org/packages/26/89/92ecf6c2b8c3a7b0373829afb8e83cad9733fb49076e5d67427228221a7e/hat_event-0.8.4-cp39-cp39-win_amd64.whl
+[2023-05-09 17:07:09] INFO root fetch - processPackages [eotdl-cli]: Downloading https://files.pythonhosted.org/packages/49/a1/452c4712e5974f215ed346454a822b4ddabf3f2e39af8c7400560761c48e/eotdl-cli-2023.5.9.post3.tar.gz
+[2023-05-09 17:07:09] INFO root fetch - processPackages [cog-airflow-notify-sns]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [cog-airflow-notify-sns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cog-airflow-notify-sns-1.0.4.tar.gz tmp/cog-airflow-notify-sns-1.0.5.tar.gz --markdown 20230509/c/cog-airflow-notify-sns/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-09 17:07:09] INFO root fetch - processPackages [pyproject-generator]: Downloading https://files.pythonhosted.org/packages/9e/91/9c9133741613c701edd71eef8f13cffbc5c2ab2921cbe61f278b42e38139/pyproject-generator-0.2.4.tar.gz
+[2023-05-09 17:07:09] INFO root fetch - processPackages [eotdl-cli]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [eotdl-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eotdl-cli-2023.5.9.post2.tar.gz tmp/eotdl-cli-2023.5.9.post3.tar.gz --markdown 20230509/e/eotdl-cli/2023.5.9.post2-2023.5.9.post3/diff.md --exclude *.pyd
+[2023-05-09 17:07:09] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/52/dd/697b34545f512b67e3516bf96c45c5490866afb4951dec10c03ae55bcce1/alacorder-80.3.5.tar.gz
+[2023-05-09 17:07:09] INFO root fetch - processPackages [pyproject-generator]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [pyproject-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-generator-0.2.3.tar.gz tmp/pyproject-generator-0.2.4.tar.gz --markdown 20230509/p/pyproject-generator/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-09 17:07:09] INFO root fetch - processPackages [hat-event]: Downloading https://files.pythonhosted.org/packages/a0/9f/0100e26ae4a463874b0d75fc9dd6f0c17a49618259fe0004f84fdad49354/hat_event-0.8.5-cp39-cp39-win_amd64.whl
+[2023-05-09 17:07:09] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.3.4.tar.gz tmp/alacorder-80.3.5.tar.gz --markdown 20230509/a/alacorder/80.3.4-80.3.5/diff.md --exclude *.pyd
+[2023-05-09 17:07:09] INFO root fetch - processPackages [polars-streaming]: Downloading https://files.pythonhosted.org/packages/a8/a9/d132a3cc42c41b7038661eb27a1e121a2c508c9bfee0b075aed7a6055e28/polars-streaming-0.3.0.tar.gz
+[2023-05-09 17:07:09] INFO root fetch - processPackages [mly]: Downloading https://files.pythonhosted.org/packages/9b/74/dabfc4814d4652a515bc750518823e0cb2b775da738a5555a4da8973b127/mly-0.3.1.tar.gz
+[2023-05-09 17:07:09] INFO root fetch - processPackages [hat-event]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [hat-event]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_event-0.8.4-cp39-cp39-win_amd64.whl.zip tmp/hat_event-0.8.5-cp39-cp39-win_amd64.whl.zip --markdown 20230509/h/hat-event/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-05-09 17:07:09] INFO root fetch - processPackages [polars-streaming]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [polars-streaming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars-streaming-0.2.0.tar.gz tmp/polars-streaming-0.3.0.tar.gz --markdown 20230509/p/polars-streaming/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 17:07:09] INFO root fetch - processPackages [mly]: executing diffoscope
+[2023-05-09 17:07:09] INFO root fetch - processPackages [mly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mly-0.1.1.tar.gz tmp/mly-0.3.1.tar.gz --markdown 20230509/m/mly/0.1.1-0.3.1/diff.md --exclude *.pyd
+[2023-05-09 17:07:10] INFO root fetch - processPackages [cog-airflow-notify-sns]: Start processing: aioinsta
+[2023-05-09 17:07:10] INFO root fetch - main [MainThread]: End processing [cog-airflow-notify-sns]: success
+[2023-05-09 17:07:10] INFO root fetch - processPackages [aioinsta]: New version: [1.4] Old Version: [1.3]
+[2023-05-09 17:07:10] INFO root fetch - processPackages [eotdl-cli]: Start processing: robusta-cli
+[2023-05-09 17:07:10] INFO root fetch - main [MainThread]: End processing [eotdl-cli]: success
+[2023-05-09 17:07:11] INFO root fetch - processPackages [aioinsta]: Downloading https://files.pythonhosted.org/packages/4a/2f/84c1e2bd99d2da28b5ff786753e63dff93fd046564a3473168f6dc75f2eb/aioinsta-1.4.tar.gz
+[2023-05-09 17:07:11] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
+[2023-05-09 17:07:11] INFO root fetch - processPackages [robusta-cli]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-09 17:07:11] INFO root fetch - processPackages [aioinsta]: executing diffoscope
+[2023-05-09 17:07:11] INFO root fetch - processPackages [aioinsta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioinsta-1.3.tar.gz tmp/aioinsta-1.4.tar.gz --markdown 20230509/a/aioinsta/1.3-1.4/diff.md --exclude *.pyd
+[2023-05-09 17:07:11] INFO root fetch - processPackages [robusta-cli]: executing diffoscope
+[2023-05-09 17:07:11] INFO root fetch - processPackages [robusta-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robusta-cli-0.9.7.tar.gz tmp/robusta-cli-0.9.9.tar.gz --markdown 20230509/r/robusta-cli/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 17:07:11] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-09 17:07:11] INFO root fetch - main [MainThread]: End processing [hat-event]: success
+[2023-05-09 17:07:11] INFO root fetch - main [MainThread]: End processing [mly]: success
+[2023-05-09 17:07:11] INFO root fetch - main [MainThread]: End processing [polars-streaming]: success
+[2023-05-09 17:07:11] INFO root fetch - main [MainThread]: End processing [pyproject-generator]: success
+[2023-05-09 17:07:12] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-09 17:07:12] INFO root fetch - main [MainThread]: End processing [aioinsta]: success
+[2023-05-09 17:07:13] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
+[2023-05-09 17:07:16] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python]: success
+[2023-05-09 17:07:16] INFO root fetch - main [MainThread]: Store serial: [18033661]
