@@ -15806,3 +15806,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 14:25:10] INFO root fetch - main [MainThread]: End processing [ptrlib]: success
 [2023-05-09 14:25:11] INFO root fetch - main [MainThread]: End processing [khloraascaf-utils]: success
 [2023-05-09 14:25:11] INFO root fetch - main [MainThread]: Store serial: [18031591]
+[2023-05-09 14:30:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031591]
+[2023-05-09 14:30:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-09 14:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opengpt
+[2023-05-09 14:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: q2terminal
+[2023-05-09 14:30:21] INFO root fetch - processPackages [opengpt]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 14:30:21] INFO root fetch - processPackages [q2terminal]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 14:30:22] INFO root fetch - processPackages [q2terminal]: Downloading https://files.pythonhosted.org/packages/33/ef/18291a843e3b1add0ca60c5a03a131971edf3b22209f96b3dc79956d7d05/q2terminal-0.1.8.tar.gz
+[2023-05-09 14:30:22] INFO root fetch - processPackages [opengpt]: Downloading https://files.pythonhosted.org/packages/4f/be/431a4cab987a86daf6f6e0d33c03fc3fa1b4641bcedd5feca838f2f12dee/opengpt-0.0.3-py3-none-any.whl
+[2023-05-09 14:30:22] INFO root fetch - processPackages [q2terminal]: Downloading https://files.pythonhosted.org/packages/d1/ec/5e3907ca119d03ba490f2239217a9d8ab900e7555d6f019583e3bff232a9/q2terminal-0.1.9.tar.gz
+[2023-05-09 14:30:22] INFO root fetch - processPackages [opengpt]: Downloading https://files.pythonhosted.org/packages/59/55/7e0e5be76c8d4a446e969c36f64bda74fe385a44d52b43df90c1724b1fdc/opengpt-0.0.4.tar.gz
+[2023-05-09 14:30:22] INFO root fetch - processPackages [q2terminal]: executing diffoscope
+[2023-05-09 14:30:22] INFO root fetch - processPackages [q2terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2terminal-0.1.8.tar.gz tmp/q2terminal-0.1.9.tar.gz --markdown 20230509/q/q2terminal/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 14:30:22] INFO root fetch - processPackages [opengpt]: executing diffoscope
+[2023-05-09 14:30:22] INFO root fetch - processPackages [opengpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opengpt-0.0.3-py3-none-any.whl.zip tmp/opengpt-0.0.4.tar.gz --markdown 20230509/o/opengpt/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 14:30:23] INFO root fetch - main [MainThread]: End processing [q2terminal]: success
+[2023-05-09 14:30:23] INFO root fetch - main [MainThread]: End processing [opengpt]: success
+[2023-05-09 14:30:23] INFO root fetch - main [MainThread]: Store serial: [18031618]
