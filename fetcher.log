@@ -9190,3 +9190,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 07:03:00] INFO root fetch - main [MainThread]: End processing [bioutils]: success
 [2023-05-09 07:03:00] INFO root fetch - main [MainThread]: End processing [tasep]: success
 [2023-05-09 07:03:00] INFO root fetch - main [MainThread]: Store serial: [18027680]
+[2023-05-09 07:08:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027680]
+[2023-05-09 07:08:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-09 07:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asa-tools
+[2023-05-09 07:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain-serve
+[2023-05-09 07:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-rahav-cert-1987-update-regTest
+[2023-05-09 07:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-logger
+[2023-05-09 07:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multi-model-server
+[2023-05-09 07:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapid-pe
+[2023-05-09 07:08:09] INFO root fetch - processPackages [ml-logger]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 07:08:09] INFO root fetch - processPackages [asa-tools]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-09 07:08:09] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: New version: [20230509.5.5.661313] Old Version: [20230508.7.31.531418]
+[2023-05-09 07:08:09] INFO root fetch - processPackages [langchain-serve]: New version: [0.0.9.dev9] Old Version: [0.0.9.dev22]
+[2023-05-09 07:08:09] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230508] Old Version: [0.1.1.dev20230507]
+[2023-05-09 07:08:09] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230509] Old Version: [1.1.8b20230508]
+[2023-05-09 07:08:09] INFO root fetch - processPackages [langchain-serve]: executing diffoscope
+[2023-05-09 07:08:09] INFO root fetch - processPackages [langchain-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-serve-0.0.9.dev22.tar.gz tmp/langchain-serve-0.0.9.dev9.tar.gz --markdown 20230509/l/langchain-serve/0.0.9.dev22-0.0.9.dev9/diff.md --exclude *.pyd
+[2023-05-09 07:08:09] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-09 07:08:09] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230507.tar.gz tmp/rapid_pe-0.1.1.dev20230508.tar.gz --markdown 20230509/r/rapid-pe/0.1.1.dev20230507-0.1.1.dev20230508/diff.md --exclude *.pyd
+[2023-05-09 07:08:09] INFO root fetch - processPackages [ml-logger]: Downloading https://files.pythonhosted.org/packages/ec/1b/27ce922215cb6668309725864644ecb6ea7e94953063d450a07eb0a76208/ml_logger-0.9.8.tar.gz
+[2023-05-09 07:08:09] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Downloading https://files.pythonhosted.org/packages/e6/90/4c84e536b00cfce9b34a344bd8d8decf959a0afe7b5c874b0c57243be909/certora-cli-alpha-rahav-cert-1987_update_regTest-20230508.7.31.531418.tar.gz
+[2023-05-09 07:08:09] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/24/ea/a26290d773c8eca557082ee6cca5c9401695cff419d685c04c475615315d/multi_model_server-1.1.8b20230509-py2.py3-none-any.whl
+[2023-05-09 07:08:09] INFO root fetch - processPackages [asa-tools]: Downloading https://files.pythonhosted.org/packages/e5/5c/a3b08c726026699dc80bcc3ffd6a58d8a3f8dee1e25bf189064dfd5326b2/asa-tools-0.1.tar.gz
+[2023-05-09 07:08:09] WARNING root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Skipping package: exceeds size limit 38474546>=10485760
+[2023-05-09 07:08:09] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-cert-1987-update-regTest] error
+[2023-05-09 07:08:10] INFO root fetch - processPackages [asa-tools]: Downloading https://files.pythonhosted.org/packages/2e/f0/cfe4c8bb4f4a582b8b7c9f40daa530bb9ffde7f0e6008fdac96744e91416/asa-tools-0.1.1.tar.gz
+[2023-05-09 07:08:10] INFO root fetch - processPackages [asa-tools]: executing diffoscope
+[2023-05-09 07:08:10] INFO root fetch - processPackages [asa-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asa-tools-0.1.tar.gz tmp/asa-tools-0.1.1.tar.gz --markdown 20230509/a/asa-tools/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 07:08:10] INFO root fetch - processPackages [ml-logger]: Downloading https://files.pythonhosted.org/packages/5e/73/772ea95da7b25d502cf034bc9d04a1f427674d9ad9fc87e212fccc33c1f0/ml_logger-0.9.9.tar.gz
+[2023-05-09 07:08:10] INFO root fetch - processPackages [ml-logger]: executing diffoscope
+[2023-05-09 07:08:10] INFO root fetch - processPackages [ml-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml_logger-0.9.8.tar.gz tmp/ml_logger-0.9.9.tar.gz --markdown 20230509/m/ml-logger/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 07:08:10] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-09 07:08:10] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-09 07:08:10] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230508-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230509-py2.py3-none-any.whl.zip --markdown 20230509/m/multi-model-server/1.1.8b20230508-1.1.8b20230509/diff.md --exclude *.pyd
+[2023-05-09 07:08:10] INFO root fetch - main [MainThread]: End processing [langchain-serve]: success
+[2023-05-09 07:08:11] INFO root fetch - main [MainThread]: End processing [asa-tools]: success
+[2023-05-09 07:08:11] INFO root fetch - main [MainThread]: End processing [ml-logger]: success
+[2023-05-09 07:11:00] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-09 07:11:00] INFO root fetch - main [MainThread]: Store serial: [18027696]
