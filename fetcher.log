@@ -9105,3 +9105,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 06:52:09] INFO root fetch - main [MainThread]: End processing [llmpool]: success
 [2023-05-09 06:52:09] INFO root fetch - main [MainThread]: End processing [mystring]: success
 [2023-05-09 06:52:09] INFO root fetch - main [MainThread]: Store serial: [18027634]
+[2023-05-09 06:57:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027634]
+[2023-05-09 06:57:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-09 06:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hotkeynet
+[2023-05-09 06:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scippnexus
+[2023-05-09 06:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: l3c
+[2023-05-09 06:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfirebird
+[2023-05-09 06:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-bunny
+[2023-05-09 06:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: biobookshelf
+[2023-05-09 06:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: np-tools
+[2023-05-09 06:57:18] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.35] Old Version: [0.0.34]
+[2023-05-09 06:57:18] INFO root fetch - processPackages [django-bunny]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-09 06:57:18] INFO root fetch - processPackages [hotkeynet]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 06:57:18] INFO root fetch - processPackages [scippnexus]: New version: [23.5.0] Old Version: [23.4.1]
+[2023-05-09 06:57:18] INFO root fetch - processPackages [biobookshelf]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-09 06:57:18] INFO root fetch - processPackages [l3c]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 06:57:18] INFO root fetch - processPackages [np-tools]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 06:57:18] INFO root fetch - processPackages [np-tools]: executing diffoscope
+[2023-05-09 06:57:18] INFO root fetch - processPackages [np-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_tools-0.1.7.tar.gz tmp/np_tools-0.1.8.tar.gz --markdown 20230509/n/np-tools/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 06:57:18] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/e6/68/d14a4747ae045f29d756812f3ec8bdc45b9e9ab5478f5b33aab822f22f52/pyfirebird-0.0.35.tar.gz
+[2023-05-09 06:57:18] INFO root fetch - processPackages [django-bunny]: Downloading https://files.pythonhosted.org/packages/19/74/47a25f41fec5ade68aa2c0358d9f405f0c330b78aafb4bfe1b6cd56d1381/django-bunny-1.0.5.tar.gz
+[2023-05-09 06:57:18] INFO root fetch - processPackages [scippnexus]: Downloading https://files.pythonhosted.org/packages/54/32/a009537171e4eb2f70d51a729c49e1f5895e78bb3f74072ab956d79083ca/scippnexus-23.4.1.tar.gz
+[2023-05-09 06:57:18] INFO root fetch - processPackages [l3c]: Downloading https://files.pythonhosted.org/packages/ad/ec/e49751ed006a180a3ba6927954daee82e2c692f47749772d4b3cc09f4dc6/l3c-0.0.2-py2.py3-none-any.whl
+[2023-05-09 06:57:18] INFO root fetch - processPackages [hotkeynet]: Downloading https://files.pythonhosted.org/packages/4a/54/9bdd0d7b62aaef577c703c967f0c5e5a18e369e53e6d9fc0df5ce63f1c04/hotkeynet-0.1.4.tar.gz
+[2023-05-09 06:57:18] INFO root fetch - processPackages [biobookshelf]: Downloading https://files.pythonhosted.org/packages/e2/dd/46010371b310d4b84f1addad3a8cbdd8d303e55d10b7a5fd815ec515757c/biobookshelf-0.2.4.tar.gz
+[2023-05-09 06:57:18] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 06:57:18] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.4.tar.gz tmp/django-bunny-1.0.5.tar.gz --markdown 20230509/d/django-bunny/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-09 06:57:18] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 06:57:18] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.34.tar.gz tmp/pyfirebird-0.0.35.tar.gz --markdown 20230509/p/pyfirebird/0.0.34-0.0.35/diff.md --exclude *.pyd
+[2023-05-09 06:57:18] INFO root fetch - processPackages [hotkeynet]: executing diffoscope
+[2023-05-09 06:57:18] INFO root fetch - processPackages [hotkeynet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotkeynet-0.1.3.tar.gz tmp/hotkeynet-0.1.4.tar.gz --markdown 20230509/h/hotkeynet/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 06:57:18] INFO root fetch - processPackages [l3c]: Downloading https://files.pythonhosted.org/packages/72/57/7eed7488d6cb3e6e4d0c9ec4bfd2bf1450901a30c48ed292747f0756a830/l3c-0.0.3-py2.py3-none-any.whl
+[2023-05-09 06:57:18] INFO root fetch - processPackages [scippnexus]: Downloading https://files.pythonhosted.org/packages/b7/eb/43108a57eecc38ca0975389758427b73b799abe4aad0136d5ebb5fb7c33a/scippnexus-23.5.0.tar.gz
+[2023-05-09 06:57:18] INFO root fetch - processPackages [biobookshelf]: Downloading https://files.pythonhosted.org/packages/0c/1e/69a3e85edc133aa26d51950e32bc8166e06f3eeaff0b5a915caa9528ae36/biobookshelf-0.2.5.tar.gz
+[2023-05-09 06:57:18] INFO root fetch - processPackages [scippnexus]: executing diffoscope
+[2023-05-09 06:57:18] INFO root fetch - processPackages [scippnexus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scippnexus-23.4.1.tar.gz tmp/scippnexus-23.5.0.tar.gz --markdown 20230509/s/scippnexus/23.4.1-23.5.0/diff.md --exclude *.pyd
+[2023-05-09 06:57:18] INFO root fetch - processPackages [l3c]: executing diffoscope
+[2023-05-09 06:57:18] INFO root fetch - processPackages [l3c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/l3c-0.0.2-py2.py3-none-any.whl.zip tmp/l3c-0.0.3-py2.py3-none-any.whl.zip --markdown 20230509/l/l3c/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 06:57:18] INFO root fetch - processPackages [biobookshelf]: executing diffoscope
+[2023-05-09 06:57:18] INFO root fetch - processPackages [biobookshelf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobookshelf-0.2.4.tar.gz tmp/biobookshelf-0.2.5.tar.gz --markdown 20230509/b/biobookshelf/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-09 06:57:19] INFO root fetch - main [MainThread]: End processing [np-tools]: success
+[2023-05-09 06:57:19] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 06:57:20] INFO root fetch - main [MainThread]: End processing [hotkeynet]: success
+[2023-05-09 06:57:20] INFO root fetch - main [MainThread]: End processing [biobookshelf]: success
+[2023-05-09 06:57:20] INFO root fetch - main [MainThread]: End processing [scippnexus]: success
+[2023-05-09 06:57:23] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 06:57:50] INFO root fetch - main [MainThread]: End processing [l3c]: success
+[2023-05-09 06:57:50] INFO root fetch - main [MainThread]: Store serial: [18027651]
