@@ -14577,3 +14577,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 12:45:44] INFO root fetch - main [MainThread]: End processing [django-vendor]: success
 [2023-05-09 12:46:09] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
 [2023-05-09 12:46:09] INFO root fetch - main [MainThread]: Store serial: [18030858]
+[2023-05-09 12:51:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18030858]
+[2023-05-09 12:51:17] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 12:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exodusutils
+[2023-05-09 12:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decentralizedroutines
+[2023-05-09 12:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ramqp
+[2023-05-09 12:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mujoco-dev
+[2023-05-09 12:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dxsp
+[2023-05-09 12:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: microsoft-kiota-http
+[2023-05-09 12:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rape-identification
+[2023-05-09 12:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: easy-patents
+[2023-05-09 12:51:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ifctester
+[2023-05-09 12:51:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: spaceone-api
+[2023-05-09 12:51:18] INFO root fetch - processPackages [dxsp]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-09 12:51:18] WARNING root fetch - processPackages [rape-identification]: Skipping, unable to determine old version
+[2023-05-09 12:51:18] INFO root fetch - main [MainThread]: End processing [rape-identification] error
+[2023-05-09 12:51:18] INFO root fetch - processPackages [spaceone-api]: New version: [1.9.7rc1] Old Version: [1.9.7.dev3]
+[2023-05-09 12:51:18] INFO root fetch - processPackages [decentralizedroutines]: New version: [2.0.7] Old Version: [2.0.6]
+[2023-05-09 12:51:18] INFO root fetch - processPackages [exodusutils]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-05-09 12:51:18] INFO root fetch - processPackages [easy-patents]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 12:51:18] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-09 12:51:18] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.0.8.tar.gz tmp/dxsp-2.0.9.tar.gz --markdown 20230509/d/dxsp/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-09 12:51:18] INFO root fetch - processPackages [spaceone-api]: executing diffoscope
+[2023-05-09 12:51:18] WARNING root fetch - processPackages [ifctester]: Skipping, unable to determine old version
+[2023-05-09 12:51:18] INFO root fetch - processPackages [spaceone-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_api-1.9.7.dev3-py3-none-any.whl.zip tmp/spaceone_api-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-api/1.9.7.dev3-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 12:51:18] INFO root fetch - main [MainThread]: End processing [ifctester] error
+[2023-05-09 12:51:18] INFO root fetch - processPackages [microsoft-kiota-http]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-09 12:51:18] INFO root fetch - processPackages [mujoco-dev]: New version: [2.3.6.dev530559807] Old Version: [2.3.6.dev530075836]
+[2023-05-09 12:51:18] INFO root fetch - processPackages [ramqp]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-05-09 12:51:18] INFO root fetch - processPackages [easy-patents]: Downloading https://files.pythonhosted.org/packages/f8/d5/6331a13176b705d5c2a5bbe0295cee2794dbaca71b512830742292bc6cb3/easy_patents-1.0.8.tar.gz
+[2023-05-09 12:51:18] INFO root fetch - processPackages [microsoft-kiota-http]: Downloading https://files.pythonhosted.org/packages/65/50/ddca599a7cef0859f6acbd35710efd382516db2d85c3f692209efae018e0/microsoft-kiota-http-0.4.1.tar.gz
+[2023-05-09 12:51:18] INFO root fetch - processPackages [ramqp]: Downloading https://files.pythonhosted.org/packages/c0/9b/56b8bbdd2662cb7435aa96b91f5e2007560857704b21b7f2b6522704d09b/ramqp-8.2.1.tar.gz
+[2023-05-09 12:51:18] INFO root fetch - processPackages [decentralizedroutines]: Downloading https://files.pythonhosted.org/packages/83/5c/d64848b26d2ef0c0086f93f0679296b742a8b4249bb28b5775e41d48c7b1/decentralizedroutines-2.0.7.tar.gz
+[2023-05-09 12:51:18] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/ac/98/ee35251eee896b9772091647678d23dcf9e9e3d627809c652bb739b06f1b/mujoco_dev-2.3.6.dev530559807-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-09 12:51:18] INFO root fetch - processPackages [exodusutils]: executing diffoscope
+[2023-05-09 12:51:18] INFO root fetch - processPackages [exodusutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exodusutils-0.3.7.tar.gz tmp/exodusutils-0.3.9.tar.gz --markdown 20230509/e/exodusutils/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-05-09 12:51:18] INFO root fetch - processPackages [decentralizedroutines]: executing diffoscope
+[2023-05-09 12:51:18] INFO root fetch - processPackages [decentralizedroutines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decentralizedroutines-2.0.6.tar.gz tmp/decentralizedroutines-2.0.7.tar.gz --markdown 20230509/d/decentralizedroutines/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2023-05-09 12:51:18] INFO root fetch - processPackages [microsoft-kiota-http]: Downloading https://files.pythonhosted.org/packages/e1/6d/1d5f9bf4f6540164db0900d7b71658b1a890f201ab79697af85553b5ae33/microsoft-kiota-http-0.4.2.tar.gz
+[2023-05-09 12:51:18] INFO root fetch - processPackages [easy-patents]: Downloading https://files.pythonhosted.org/packages/bd/97/a1ecbc304146a7d6412f416ee8eb74d00c47fd28b9cca11bfd34cb066d78/easy_patents-1.0.9.tar.gz
+[2023-05-09 12:51:18] INFO root fetch - processPackages [ramqp]: Downloading https://files.pythonhosted.org/packages/fd/a2/7aa6143c413f236100194cdcf8c857ad4ea12eb2a719bb646967dfa6ccd9/ramqp-8.2.2.tar.gz
+[2023-05-09 12:51:18] INFO root fetch - processPackages [easy-patents]: executing diffoscope
+[2023-05-09 12:51:18] INFO root fetch - processPackages [easy-patents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_patents-1.0.8.tar.gz tmp/easy_patents-1.0.9.tar.gz --markdown 20230509/e/easy-patents/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 12:51:18] INFO root fetch - processPackages [ramqp]: executing diffoscope
+[2023-05-09 12:51:18] INFO root fetch - processPackages [ramqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramqp-8.2.1.tar.gz tmp/ramqp-8.2.2.tar.gz --markdown 20230509/r/ramqp/8.2.1-8.2.2/diff.md --exclude *.pyd
+[2023-05-09 12:51:18] INFO root fetch - processPackages [microsoft-kiota-http]: executing diffoscope
+[2023-05-09 12:51:18] INFO root fetch - processPackages [microsoft-kiota-http]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microsoft-kiota-http-0.4.1.tar.gz tmp/microsoft-kiota-http-0.4.2.tar.gz --markdown 20230509/m/microsoft-kiota-http/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-09 12:51:19] INFO root fetch - processPackages [mujoco-dev]: executing diffoscope
+[2023-05-09 12:51:19] INFO root fetch - processPackages [mujoco-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mujoco_dev-2.3.6.dev530075836-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/mujoco_dev-2.3.6.dev530559807-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230509/m/mujoco-dev/2.3.6.dev530075836-2.3.6.dev530559807/diff.md --exclude *.pyd
+[2023-05-09 12:51:19] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-09 12:51:19] INFO root fetch - main [MainThread]: End processing [decentralizedroutines]: success
+[2023-05-09 12:51:20] INFO root fetch - main [MainThread]: End processing [exodusutils]: success
+[2023-05-09 12:51:20] INFO root fetch - main [MainThread]: End processing [ramqp]: success
+[2023-05-09 12:51:20] INFO root fetch - main [MainThread]: End processing [easy-patents]: success
+[2023-05-09 12:51:20] INFO root fetch - main [MainThread]: End processing [microsoft-kiota-http]: success
+[2023-05-09 12:51:21] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
+[2023-05-09 12:52:02] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
+[2023-05-09 12:52:02] INFO root fetch - main [MainThread]: Store serial: [18030903]
