@@ -20785,3 +20785,92 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 18:32:04] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-05-09 18:32:13] INFO root fetch - main [MainThread]: End processing [aesara]: success
 [2023-05-09 18:32:13] INFO root fetch - main [MainThread]: Store serial: [18034806]
+[2023-05-09 18:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034806]
+[2023-05-09 18:37:24] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robocorp-log
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latch-config
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchcrepe
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prettynumbers
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: firex-flame-ui
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: firepup650
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: guimpltataody
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pydischarge
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: unpast
+[2023-05-09 18:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: garatool
+[2023-05-09 18:37:24] INFO root fetch - processPackages [prettynumbers]: New version: [0.2.3a3] Old Version: [0.2.2]
+[2023-05-09 18:37:24] INFO root fetch - processPackages [latch-config]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 18:37:24] INFO root fetch - processPackages [robocorp-log]: New version: [0.1.0] Old Version: [0.0.15]
+[2023-05-09 18:37:24] INFO root fetch - processPackages [torchcrepe]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 18:37:24] INFO root fetch - processPackages [firepup650]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 18:37:24] INFO root fetch - processPackages [garatool]: New version: [0.1683641466.0] Old Version: [0.1683641371.0]
+[2023-05-09 18:37:24] INFO root fetch - processPackages [pydischarge]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 18:37:24] WARNING root fetch - processPackages [unpast]: Skipping, unable to determine old version
+[2023-05-09 18:37:24] INFO root fetch - processPackages [unpast]: Start processing: garatool
+[2023-05-09 18:37:24] INFO root fetch - main [MainThread]: End processing [unpast] error
+[2023-05-09 18:37:24] INFO root fetch - processPackages [garatool]: New version: [0.1683641466.0] Old Version: [0.1683641371.0]
+[2023-05-09 18:37:24] INFO root fetch - processPackages [firex-flame-ui]: New version: [0.5] Old Version: [0.4]
+[2023-05-09 18:37:24] WARNING root fetch - processPackages [guimpltataody]: Skipping, unable to determine old version
+[2023-05-09 18:37:24] INFO root fetch - processPackages [guimpltataody]: Start processing: xdatasets
+[2023-05-09 18:37:24] INFO root fetch - main [MainThread]: End processing [guimpltataody] error
+[2023-05-09 18:37:24] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 18:37:24] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683641371.0.tar.gz tmp/garatool-0.1683641466.0.tar.gz --markdown 20230509/g/garatool/0.1683641371.0-0.1683641466.0/diff.md --exclude *.pyd
+[2023-05-09 18:37:24] INFO root fetch - processPackages [latch-config]: Downloading https://files.pythonhosted.org/packages/63/1c/12f4e5a77bd7ccd5105885f673e250d2a86071f3558846ce2a7bdbbe3443/latch_config-0.1.2.tar.gz
+[2023-05-09 18:37:24] INFO root fetch - processPackages [robocorp-log]: Downloading https://files.pythonhosted.org/packages/ab/b9/ddecccb5f70037bfc8dcdc6e593fced5d011c7eae85616a03acf6c4cadda/robocorp_log-0.0.15.tar.gz
+[2023-05-09 18:37:24] INFO root fetch - processPackages [pydischarge]: Downloading https://files.pythonhosted.org/packages/9e/64/57568348a702f7c26eab3cc7c0f2f2626ed59efc708086849e1c6d02dc1b/pydischarge-0.0.1.tar.gz
+[2023-05-09 18:37:24] INFO root fetch - processPackages [firepup650]: executing diffoscope
+[2023-05-09 18:37:24] INFO root fetch - processPackages [firepup650]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firepup650-1.0.8.tar.gz tmp/firepup650-1.0.9.tar.gz --markdown 20230509/f/firepup650/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:37:24] INFO root fetch - processPackages [xdatasets]: New version: [0.2.6] Old Version: [0.2.3]
+[2023-05-09 18:37:24] INFO root fetch - processPackages [torchcrepe]: Downloading https://files.pythonhosted.org/packages/68/c4/e4d5d28982c406d75a29a4cef1f0768babe08f9c4195727c60a199d2b839/torchcrepe-0.0.8.tar.gz
+[2023-05-09 18:37:24] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 18:37:24] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683641371.0.tar.gz tmp/garatool-0.1683641466.0.tar.gz --markdown 20230509/g/garatool/0.1683641371.0-0.1683641466.0/diff.md --exclude *.pyd
+[2023-05-09 18:37:24] INFO root fetch - processPackages [prettynumbers]: Downloading https://files.pythonhosted.org/packages/67/53/a9b2aabfc612bb52ab8314765fc5f9389ba2553eb2cbe6a2a8448dd9820e/prettynumbers-0.2.3a3.tar.gz
+[2023-05-09 18:37:24] INFO root fetch - processPackages [firex-flame-ui]: Downloading https://files.pythonhosted.org/packages/16/35/e5827a063bd5bc86bcfb1203dcfe119f3d65f5bbd5a6242765b475767f0f/firex_flame_ui-0.4.tar.gz
+[2023-05-09 18:37:24] INFO root fetch - processPackages [prettynumbers]: executing diffoscope
+[2023-05-09 18:37:24] INFO root fetch - processPackages [prettynumbers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettynumbers-0.2.2.tar.gz tmp/prettynumbers-0.2.3a3.tar.gz --markdown 20230509/p/prettynumbers/0.2.2-0.2.3a3/diff.md --exclude *.pyd
+[2023-05-09 18:37:24] INFO root fetch - processPackages [latch-config]: Downloading https://files.pythonhosted.org/packages/d6/53/efbcdfb356580923c30319976ec6d4db79d7f3b9e92377217ff8f22ee481/latch_config-0.1.3.tar.gz
+[2023-05-09 18:37:24] INFO root fetch - processPackages [xdatasets]: Downloading https://files.pythonhosted.org/packages/b7/9a/b14df3d56444f7d5b67d03d6efb89460e68fe004c32acd4c2a65ebd056a7/xdatasets-0.2.3.tar.gz
+[2023-05-09 18:37:24] INFO root fetch - processPackages [robocorp-log]: Downloading https://files.pythonhosted.org/packages/48/08/14cd327f0436b746e2e372662f4c5e63be46de3445040dabdd70afb3cb3a/robocorp_log-0.1.0.tar.gz
+[2023-05-09 18:37:24] INFO root fetch - processPackages [latch-config]: executing diffoscope
+[2023-05-09 18:37:24] INFO root fetch - processPackages [latch-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_config-0.1.2.tar.gz tmp/latch_config-0.1.3.tar.gz --markdown 20230509/l/latch-config/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 18:37:24] INFO root fetch - processPackages [robocorp-log]: executing diffoscope
+[2023-05-09 18:37:24] INFO root fetch - processPackages [robocorp-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robocorp_log-0.0.15.tar.gz tmp/robocorp_log-0.1.0.tar.gz --markdown 20230509/r/robocorp-log/0.0.15-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 18:37:25] INFO root fetch - processPackages [xdatasets]: Downloading https://files.pythonhosted.org/packages/cb/8d/9b504725fded53c0296be52e291d5f9ff88041a120c51843ae933365e5dc/xdatasets-0.2.6.tar.gz
+[2023-05-09 18:37:25] INFO root fetch - processPackages [firex-flame-ui]: Downloading https://files.pythonhosted.org/packages/df/b9/4a36f6c021003eb03a13e164b40b96cd12546c19265317674e26e3f26452/firex_flame_ui-0.5.tar.gz
+[2023-05-09 18:37:25] INFO root fetch - processPackages [pydischarge]: Downloading https://files.pythonhosted.org/packages/f5/2b/e2b23c20fd9831798274ab96f07b0b423f31754bf2bcc762b26c51984b79/pydischarge-0.0.2.tar.gz
+[2023-05-09 18:37:25] INFO root fetch - processPackages [xdatasets]: executing diffoscope
+[2023-05-09 18:37:25] INFO root fetch - processPackages [xdatasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdatasets-0.2.3.tar.gz tmp/xdatasets-0.2.6.tar.gz --markdown 20230509/x/xdatasets/0.2.3-0.2.6/diff.md --exclude *.pyd
+[2023-05-09 18:37:25] INFO root fetch - processPackages [firex-flame-ui]: executing diffoscope
+[2023-05-09 18:37:25] INFO root fetch - processPackages [firex-flame-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firex_flame_ui-0.4.tar.gz tmp/firex_flame_ui-0.5.tar.gz --markdown 20230509/f/firex-flame-ui/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-09 18:37:25] INFO root fetch - processPackages [pydischarge]: executing diffoscope
+[2023-05-09 18:37:25] INFO root fetch - processPackages [pydischarge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydischarge-0.0.1.tar.gz tmp/pydischarge-0.0.2.tar.gz --markdown 20230509/p/pydischarge/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 18:37:25] WARNING root fetch - processPackages [torchcrepe]: Skipping package: exceeds size limit 72323458>=10485760
+[2023-05-09 18:37:25] INFO root fetch - processPackages [torchcrepe]: Start processing: rele
+[2023-05-09 18:37:25] INFO root fetch - main [MainThread]: End processing [torchcrepe] error
+[2023-05-09 18:37:25] INFO root fetch - processPackages [rele]: New version: [1.9.0] Old Version: [1.8.1b0]
+[2023-05-09 18:37:25] INFO root fetch - processPackages [rele]: executing diffoscope
+[2023-05-09 18:37:25] INFO root fetch - processPackages [rele]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rele-1.8.1b0.tar.gz tmp/rele-1.9.0.tar.gz --markdown 20230509/r/rele/1.8.1b0-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 18:37:25] INFO root fetch - processPackages [garatool]: Start processing: CosmoTech-Acceleration-Library
+[2023-05-09 18:37:25] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 18:37:25] INFO root fetch - processPackages [CosmoTech-Acceleration-Library]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 18:37:26] INFO root fetch - processPackages [garatool]: Start processing: cdk-valheim
+[2023-05-09 18:37:26] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 18:37:26] INFO root fetch - processPackages [cdk-valheim]: New version: [0.0.9] Old Version: [0.0.25]
+[2023-05-09 18:37:26] INFO root fetch - processPackages [CosmoTech-Acceleration-Library]: Downloading https://files.pythonhosted.org/packages/98/c0/5d37f95c76a1397f25eb42cb526471039fdad2cee3e15a9ea831dc45ea0c/CosmoTech_Acceleration_Library-0.2.8.tar.gz
+[2023-05-09 18:37:26] INFO root fetch - main [MainThread]: End processing [prettynumbers]: success
+[2023-05-09 18:37:26] INFO root fetch - processPackages [cdk-valheim]: Downloading https://files.pythonhosted.org/packages/f7/1d/b0ad8a6dac540fee00a20fe060338e5e5d8a4e7b9e46485d70a5c5e591a7/cdk-valheim-0.0.25.tar.gz
+[2023-05-09 18:37:26] INFO root fetch - main [MainThread]: End processing [latch-config]: success
+[2023-05-09 18:37:26] INFO root fetch - main [MainThread]: End processing [firepup650]: success
+[2023-05-09 18:37:26] INFO root fetch - processPackages [cdk-valheim]: Downloading https://files.pythonhosted.org/packages/ee/51/298efe28a2f726f73f5961ac98807371431835796139751be27280a26479/cdk-valheim-0.0.9.tar.gz
+[2023-05-09 18:37:26] INFO root fetch - processPackages [CosmoTech-Acceleration-Library]: Downloading https://files.pythonhosted.org/packages/9f/d5/a982785b4379072488fcd0064fe809a8cfad4af0493eb540681602322981/CosmoTech_Acceleration_Library-0.2.9.tar.gz
+[2023-05-09 18:37:26] INFO root fetch - processPackages [cdk-valheim]: executing diffoscope
+[2023-05-09 18:37:26] INFO root fetch - processPackages [cdk-valheim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-valheim-0.0.25.tar.gz tmp/cdk-valheim-0.0.9.tar.gz --markdown 20230509/c/cdk-valheim/0.0.25-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:37:26] INFO root fetch - processPackages [CosmoTech-Acceleration-Library]: executing diffoscope
+[2023-05-09 18:37:26] INFO root fetch - processPackages [CosmoTech-Acceleration-Library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CosmoTech_Acceleration_Library-0.2.8.tar.gz tmp/CosmoTech_Acceleration_Library-0.2.9.tar.gz --markdown 20230509/C/CosmoTech-Acceleration-Library/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 18:37:26] INFO root fetch - main [MainThread]: End processing [xdatasets]: success
+[2023-05-09 18:37:27] INFO root fetch - main [MainThread]: End processing [robocorp-log]: success
+[2023-05-09 18:37:27] INFO root fetch - main [MainThread]: End processing [rele]: success
+[2023-05-09 18:37:27] INFO root fetch - main [MainThread]: End processing [cdk-valheim]: success
+[2023-05-09 18:37:27] INFO root fetch - main [MainThread]: End processing [CosmoTech-Acceleration-Library]: success
+[2023-05-09 18:37:33] INFO root fetch - main [MainThread]: End processing [firex-flame-ui]: success
+[2023-05-09 18:37:34] INFO root fetch - main [MainThread]: End processing [pydischarge]: success
+[2023-05-09 18:37:34] INFO root fetch - main [MainThread]: Store serial: [18034852]
