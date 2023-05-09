@@ -1406,3 +1406,65 @@
 [2023-05-09 01:55:25] INFO root fetch - main [MainThread]: End processing [nasa-scrub]: success
 [2023-05-09 01:55:25] INFO root fetch - main [MainThread]: End processing [zcmds]: success
 [2023-05-09 01:55:25] INFO root fetch - main [MainThread]: Store serial: [18023851]
+[2023-05-09 02:00:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023851]
+[2023-05-09 02:00:34] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: complex-curve-fit-gui
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DXR
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cloudconsolelink
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aws-lambda-stream
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SDTcloud
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: psgspecialelements
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: terminut
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytplot-mpl-temp
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: yohsin3d
+[2023-05-09 02:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: django-handyhelpers
+[2023-05-09 02:00:34] INFO root fetch - processPackages [psgspecialelements]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [DXR]: New version: [1.8.5] Old Version: [1.8.4]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [pytplot-mpl-temp]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [complex-curve-fit-gui]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [terminut]: New version: [0.0.0.710] Old Version: [0.0.0.699]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [cloudconsolelink]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [SDTcloud]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [aws-lambda-stream]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [yohsin3d]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [django-handyhelpers]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-09 02:00:34] INFO root fetch - processPackages [pytplot-mpl-temp]: executing diffoscope
+[2023-05-09 02:00:34] INFO root fetch - processPackages [pytplot-mpl-temp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytplot-mpl-temp-2.1.8.tar.gz tmp/pytplot-mpl-temp-2.1.9.tar.gz --markdown 20230509/p/pytplot-mpl-temp/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-09 02:00:34] INFO root fetch - processPackages [SDTcloud]: executing diffoscope
+[2023-05-09 02:00:34] INFO root fetch - processPackages [SDTcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SDTcloud-0.1.8.tar.gz tmp/SDTcloud-0.1.9.tar.gz --markdown 20230509/S/SDTcloud/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 02:00:34] INFO root fetch - processPackages [DXR]: Downloading https://files.pythonhosted.org/packages/dc/65/34050322e38e539559fe2e4105a01f277568a344d68bb67e4e60381cd1fe/DXR-1.8.4.tar.gz
+[2023-05-09 02:00:34] INFO root fetch - processPackages [psgspecialelements]: Downloading https://files.pythonhosted.org/packages/e0/92/d5d93f877c2924ad6e02b13fb4528638f0baafc29c859c6aa68be998fbac/psgspecialelements-1.0.0.tar.gz
+[2023-05-09 02:00:34] INFO root fetch - processPackages [terminut]: Downloading https://files.pythonhosted.org/packages/b9/20/9951a201b49f9cf355a2e530a27774162bd5016b72c7c5970ecd19130c60/terminut-0.0.0.710.tar.gz
+[2023-05-09 02:00:34] INFO root fetch - processPackages [cloudconsolelink]: Downloading https://files.pythonhosted.org/packages/17/83/b3d14615fbb373cfded7b41e6a3226f1ef7cf529cc445ca156fabeb6f22a/cloudconsolelink-1.0.8.tar.gz
+[2023-05-09 02:00:34] INFO root fetch - processPackages [django-handyhelpers]: Downloading https://files.pythonhosted.org/packages/c2/49/c09378d6c6d5b17c190522fa01a0813fd705945015d9e39910d0ddf50a68/django-handyhelpers-0.3.2.tar.gz
+[2023-05-09 02:00:35] INFO root fetch - processPackages [yohsin3d]: Downloading https://files.pythonhosted.org/packages/b3/97/a05b51f88462b766deab7ace997685afb2b877fc3120ee75f5b675e42821/yohsin3d-0.4.2.tar.gz
+[2023-05-09 02:00:35] WARNING root fetch - processPackages [django-handyhelpers]: Skipping package: exceeds size limit 15621957>=10485760
+[2023-05-09 02:00:35] INFO root fetch - main [MainThread]: End processing [django-handyhelpers] error
+[2023-05-09 02:00:35] INFO root fetch - processPackages [complex-curve-fit-gui]: Downloading https://files.pythonhosted.org/packages/5c/ed/2e8ab8cf5c2e828678aae5bf6f91ab73c3c4c90d0cb4cb2d19ce9a836111/complex_curve_fit_gui-1.2.1.tar.gz
+[2023-05-09 02:00:35] INFO root fetch - processPackages [terminut]: executing diffoscope
+[2023-05-09 02:00:35] INFO root fetch - processPackages [terminut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminut-0.0.0.699.tar.gz tmp/terminut-0.0.0.710.tar.gz --markdown 20230509/t/terminut/0.0.0.699-0.0.0.710/diff.md --exclude *.pyd
+[2023-05-09 02:00:35] INFO root fetch - processPackages [aws-lambda-stream]: executing diffoscope
+[2023-05-09 02:00:35] INFO root fetch - processPackages [aws-lambda-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_stream-1.0.8.tar.gz tmp/aws_lambda_stream-1.0.9.tar.gz --markdown 20230509/a/aws-lambda-stream/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 02:00:35] INFO root fetch - processPackages [complex-curve-fit-gui]: executing diffoscope
+[2023-05-09 02:00:35] INFO root fetch - processPackages [psgspecialelements]: Downloading https://files.pythonhosted.org/packages/a9/8f/2b714d78fb286f0f56b4b50e5df4cc957992ed978785795e5dcec46fc17a/psgspecialelements-1.0.1.tar.gz
+[2023-05-09 02:00:35] INFO root fetch - processPackages [complex-curve-fit-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/complex_curve_fit_gui-1.2.0.tar.gz tmp/complex_curve_fit_gui-1.2.1.tar.gz --markdown 20230509/c/complex-curve-fit-gui/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-09 02:00:35] INFO root fetch - processPackages [DXR]: Downloading https://files.pythonhosted.org/packages/23/5f/f6f1ffc1b2808be7b48a124a4dccd041dbabcbe5f11d589bd736600c81c8/DXR-1.8.5.tar.gz
+[2023-05-09 02:00:35] INFO root fetch - processPackages [yohsin3d]: executing diffoscope
+[2023-05-09 02:00:35] INFO root fetch - processPackages [yohsin3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yohsin3d-0.4.1.tar.gz tmp/yohsin3d-0.4.2.tar.gz --markdown 20230509/y/yohsin3d/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-09 02:00:35] INFO root fetch - processPackages [cloudconsolelink]: Downloading https://files.pythonhosted.org/packages/52/76/2617dfe21e2169cfd32f9b4bf6be8f229c55dc23e70eabe2680647810f16/cloudconsolelink-1.0.9.tar.gz
+[2023-05-09 02:00:35] INFO root fetch - processPackages [psgspecialelements]: executing diffoscope
+[2023-05-09 02:00:35] INFO root fetch - processPackages [psgspecialelements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgspecialelements-1.0.0.tar.gz tmp/psgspecialelements-1.0.1.tar.gz --markdown 20230509/p/psgspecialelements/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 02:00:35] INFO root fetch - processPackages [DXR]: executing diffoscope
+[2023-05-09 02:00:35] INFO root fetch - processPackages [DXR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DXR-1.8.4.tar.gz tmp/DXR-1.8.5.tar.gz --markdown 20230509/D/DXR/1.8.4-1.8.5/diff.md --exclude *.pyd
+[2023-05-09 02:00:35] INFO root fetch - processPackages [cloudconsolelink]: executing diffoscope
+[2023-05-09 02:00:35] INFO root fetch - processPackages [cloudconsolelink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudconsolelink-1.0.8.tar.gz tmp/cloudconsolelink-1.0.9.tar.gz --markdown 20230509/c/cloudconsolelink/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 02:00:36] INFO root fetch - main [MainThread]: End processing [SDTcloud]: success
+[2023-05-09 02:00:36] INFO root fetch - main [MainThread]: End processing [terminut]: success
+[2023-05-09 02:00:36] INFO root fetch - main [MainThread]: End processing [yohsin3d]: success
+[2023-05-09 02:00:36] INFO root fetch - main [MainThread]: End processing [aws-lambda-stream]: success
+[2023-05-09 02:00:36] INFO root fetch - main [MainThread]: End processing [complex-curve-fit-gui]: success
+[2023-05-09 02:00:36] INFO root fetch - main [MainThread]: End processing [DXR]: success
+[2023-05-09 02:00:37] INFO root fetch - main [MainThread]: End processing [cloudconsolelink]: success
+[2023-05-09 02:00:37] INFO root fetch - main [MainThread]: End processing [psgspecialelements]: success
+[2023-05-09 02:00:37] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
+[2023-05-09 02:00:37] INFO root fetch - main [MainThread]: Store serial: [18023901]
