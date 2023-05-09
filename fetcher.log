@@ -20357,3 +20357,136 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 18:13:59] INFO root fetch - main [MainThread]: End processing [plotnine]: success
 [2023-05-09 18:13:59] INFO root fetch - main [MainThread]: End processing [azure-servicebus]: success
 [2023-05-09 18:13:59] INFO root fetch - main [MainThread]: Store serial: [18034575]
+[2023-05-09 18:19:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034575]
+[2023-05-09 18:19:10] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepperize.cdk-vpc
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: verime
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: panel
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: duckdb-engine
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: firepup650
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spotipy-anon
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyranges
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: parsigs
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: inductiva
+[2023-05-09 18:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: spswarehouse-airflow
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spswarehouse-airflow]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [firepup650]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [verime]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spotipy-anon]: New version: [1.1] Old Version: [1.0]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [parsigs]: New version: [0.0.6b0] Old Version: [0.0.5b0]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [inductiva]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [panel]: New version: [1.0.0rc7] Old Version: [1.0.0rc6]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [pyranges]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [duckdb-engine]: New version: [0.7.1] Old Version: [0.7.0rc1]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [firepup650]: executing diffoscope
+[2023-05-09 18:19:10] INFO root fetch - processPackages [firepup650]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firepup650-1.0.8.tar.gz tmp/firepup650-1.0.9.tar.gz --markdown 20230509/f/firepup650/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:19:10] INFO root fetch - processPackages [inductiva]: executing diffoscope
+[2023-05-09 18:19:10] INFO root fetch - processPackages [inductiva]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inductiva-0.0.8.tar.gz tmp/inductiva-0.0.9.tar.gz --markdown 20230509/i/inductiva/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:19:10] ERROR root fetch - processPackages [spswarehouse-airflow]: Unable to fetch info: No such project/version 'spswarehouse-airflow' 0.1.1
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spswarehouse-airflow]: Start processing: spswarehouse-airflow
+[2023-05-09 18:19:10] INFO root fetch - main [MainThread]: End processing [spswarehouse-airflow] error
+[2023-05-09 18:19:10] INFO root fetch - processPackages [verime]: Downloading https://files.pythonhosted.org/packages/65/44/aa3f9d9dddfa711778e51d5e6e5af2c6e8dbad667e76983f88d16eb9a55f/verime-1.0.1.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [parsigs]: Downloading https://files.pythonhosted.org/packages/d6/2b/53eb7729ed58e6e1bc4b1e3538c0b88f56baecdd3915af2f0f453c381b10/parsigs-0.0.6b0.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spswarehouse-airflow]: New version: [0.2.0] Old Version: [0.0.6.1]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [duckdb-engine]: Downloading https://files.pythonhosted.org/packages/d2/f5/821096e54e7f05016f9204d1b008cfa911148e5de61af7e1decd477db6c0/duckdb_engine-0.7.0rc1.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [pyranges]: Downloading https://files.pythonhosted.org/packages/cc/7d/48a8a699ffa2c49b6484bd47cf8433b3c68d05ef4b57fc8806a3ebf31bae/pyranges-0.0.98.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spotipy-anon]: Downloading https://files.pythonhosted.org/packages/44/77/c187c3acdd8acaeed58b02e6f0f9531cd21a1cf96c0a94ae329ec550fd9d/spotipy_anon-1.0.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [panel]: Downloading https://files.pythonhosted.org/packages/96/fb/ab803584ae0a045299130a9f17f49fa012f76fe8152912778ddc595a35fb/panel-1.0.0rc6.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [parsigs]: executing diffoscope
+[2023-05-09 18:19:10] INFO root fetch - processPackages [parsigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsigs-0.0.5b0.tar.gz tmp/parsigs-0.0.6b0.tar.gz --markdown 20230509/p/parsigs/0.0.5b0-0.0.6b0/diff.md --exclude *.pyd
+[2023-05-09 18:19:10] WARNING root fetch - processPackages [panel]: Skipping package: exceeds size limit 24540123>=10485760
+[2023-05-09 18:19:10] INFO root fetch - processPackages [panel]: Start processing: spswarehouse-airflow
+[2023-05-09 18:19:10] INFO root fetch - main [MainThread]: End processing [panel] error
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spswarehouse-airflow]: New version: [0.2.0] Old Version: [0.0.6.1]
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spswarehouse-airflow]: Downloading https://files.pythonhosted.org/packages/df/39/f003d512dc699cfbe6420544f41067bb59785f5cc916723cf49ad166013d/spswarehouse_airflow-0.0.6.1.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-05-09 18:19:10] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spswarehouse-airflow]: Downloading https://files.pythonhosted.org/packages/df/39/f003d512dc699cfbe6420544f41067bb59785f5cc916723cf49ad166013d/spswarehouse_airflow-0.0.6.1.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [verime]: Downloading https://files.pythonhosted.org/packages/5d/8d/21bbc8e5cb4b5f7621bbeae4c9279433799f263c900bb22918ab871c2eb5/verime-1.0.2.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spotipy-anon]: Downloading https://files.pythonhosted.org/packages/48/c3/aaac470be01e3e5eecc8c56f559229f6c8fe143577234cd580436bb5cae4/spotipy_anon-1.1.tar.gz
+[2023-05-09 18:19:10] INFO root fetch - processPackages [verime]: executing diffoscope
+[2023-05-09 18:19:10] INFO root fetch - processPackages [verime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/verime-1.0.1.tar.gz tmp/verime-1.0.2.tar.gz --markdown 20230509/v/verime/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spotipy-anon]: executing diffoscope
+[2023-05-09 18:19:10] INFO root fetch - processPackages [spotipy-anon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotipy_anon-1.0.tar.gz tmp/spotipy_anon-1.1.tar.gz --markdown 20230509/s/spotipy-anon/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-09 18:19:11] INFO root fetch - processPackages [duckdb-engine]: Downloading https://files.pythonhosted.org/packages/d0/b6/1f97ff18530dd4a335af1333917c09fa3bc4e7b66cdf229fdcb1592fa4ec/duckdb_engine-0.7.1.tar.gz
+[2023-05-09 18:19:11] INFO root fetch - processPackages [pyranges]: Downloading https://files.pythonhosted.org/packages/4b/72/075fd9696e4c448209d751656d7184b1b3a7738ab256428ba4bef0fbbc25/pyranges-0.0.99.tar.gz
+[2023-05-09 18:19:11] INFO root fetch - processPackages [spswarehouse-airflow]: Downloading https://files.pythonhosted.org/packages/a5/cc/0c280ecb8f64e88f2ea7b0615e6790c3bca37bb1cbf17b6a10df0476ccdb/spswarehouse_airflow-0.2.0.tar.gz
+[2023-05-09 18:19:11] INFO root fetch - processPackages [spswarehouse-airflow]: Downloading https://files.pythonhosted.org/packages/a5/cc/0c280ecb8f64e88f2ea7b0615e6790c3bca37bb1cbf17b6a10df0476ccdb/spswarehouse_airflow-0.2.0.tar.gz
+[2023-05-09 18:19:11] INFO root fetch - processPackages [duckdb-engine]: executing diffoscope
+[2023-05-09 18:19:11] INFO root fetch - processPackages [duckdb-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdb_engine-0.7.0rc1.tar.gz tmp/duckdb_engine-0.7.1.tar.gz --markdown 20230509/d/duckdb-engine/0.7.0rc1-0.7.1/diff.md --exclude *.pyd
+[2023-05-09 18:19:11] INFO root fetch - processPackages [spswarehouse-airflow]: executing diffoscope
+[2023-05-09 18:19:11] INFO root fetch - processPackages [spswarehouse-airflow]: executing diffoscope
+[2023-05-09 18:19:11] INFO root fetch - processPackages [spswarehouse-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spswarehouse_airflow-0.0.6.1.tar.gz tmp/spswarehouse_airflow-0.2.0.tar.gz --markdown 20230509/s/spswarehouse-airflow/0.0.6.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 18:19:11] INFO root fetch - processPackages [spswarehouse-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spswarehouse_airflow-0.0.6.1.tar.gz tmp/spswarehouse_airflow-0.2.0.tar.gz --markdown 20230509/s/spswarehouse-airflow/0.0.6.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 18:19:11] INFO root fetch - processPackages [pyranges]: executing diffoscope
+[2023-05-09 18:19:11] INFO root fetch - processPackages [pyranges]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyranges-0.0.98.tar.gz tmp/pyranges-0.0.99.tar.gz --markdown 20230509/p/pyranges/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 18:19:12] INFO root fetch - processPackages [firepup650]: Start processing: spswarehouse-airflow
+[2023-05-09 18:19:12] INFO root fetch - main [MainThread]: End processing [firepup650]: success
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: New version: [0.2.0] Old Version: [0.0.6.1]
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: executing diffoscope
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spswarehouse_airflow-0.0.6.1.tar.gz tmp/spswarehouse_airflow-0.2.0.tar.gz --markdown 20230509/s/spswarehouse-airflow/0.0.6.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 18:19:12] INFO root fetch - processPackages [pepperize.cdk-vpc]: Start processing: wodoo
+[2023-05-09 18:19:12] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-vpc]: success
+[2023-05-09 18:19:12] INFO root fetch - processPackages [parsigs]: Start processing: spswarehouse-airflow
+[2023-05-09 18:19:12] INFO root fetch - main [MainThread]: End processing [parsigs]: success
+[2023-05-09 18:19:12] INFO root fetch - processPackages [wodoo]: New version: [0.3.99] Old Version: [0.3.96]
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: New version: [0.2.0] Old Version: [0.0.6.1]
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: executing diffoscope
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spswarehouse_airflow-0.0.6.1.tar.gz tmp/spswarehouse_airflow-0.2.0.tar.gz --markdown 20230509/s/spswarehouse-airflow/0.0.6.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 18:19:12] INFO root fetch - processPackages [inductiva]: Start processing: premium
+[2023-05-09 18:19:12] INFO root fetch - main [MainThread]: End processing [inductiva]: success
+[2023-05-09 18:19:12] INFO root fetch - processPackages [premium]: New version: [23.5.10.0] Old Version: [0.0.9rc2]
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spotipy-anon]: Start processing: spswarehouse-airflow
+[2023-05-09 18:19:12] INFO root fetch - main [MainThread]: End processing [spotipy-anon]: success
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: New version: [0.2.0] Old Version: [0.0.6.1]
+[2023-05-09 18:19:12] INFO root fetch - processPackages [premium]: Downloading https://files.pythonhosted.org/packages/71/de/c87570b88c3735ca74c5b84a05db187031d09fe7fa1d73a7006d43d8523c/premium-0.0.9rc2.tar.gz
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: executing diffoscope
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spswarehouse_airflow-0.0.6.1.tar.gz tmp/spswarehouse_airflow-0.2.0.tar.gz --markdown 20230509/s/spswarehouse-airflow/0.0.6.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 18:19:12] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2023-05-09 18:19:12] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.3.96.tar.gz tmp/wodoo-0.3.99.tar.gz --markdown 20230509/w/wodoo/0.3.96-0.3.99/diff.md --exclude *.pyd
+[2023-05-09 18:19:12] INFO root fetch - processPackages [spswarehouse-airflow]: Start processing: pyquokka
+[2023-05-09 18:19:12] INFO root fetch - main [MainThread]: End processing [spswarehouse-airflow]: success
+[2023-05-09 18:19:12] INFO root fetch - processPackages [pyquokka]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-09 18:19:12] INFO root fetch - processPackages [duckdb-engine]: Start processing: flatnet
+[2023-05-09 18:19:12] INFO root fetch - main [MainThread]: End processing [duckdb-engine]: success
+[2023-05-09 18:19:12] INFO root fetch - processPackages [flatnet]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-09 18:19:12] INFO root fetch - processPackages [verime]: Start processing: azureml-dataprep-rslex
+[2023-05-09 18:19:12] INFO root fetch - main [MainThread]: End processing [verime]: success
+[2023-05-09 18:19:13] INFO root fetch - processPackages [azureml-dataprep-rslex]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-09 18:19:13] INFO root fetch - processPackages [pyquokka]: Downloading https://files.pythonhosted.org/packages/d2/9e/8640a15c586625698f95446ad0a4f77887a3a39340ef7fa42351704adedd/pyquokka-0.2.7-py3-none-any.whl
+[2023-05-09 18:19:13] INFO root fetch - processPackages [premium]: Downloading https://files.pythonhosted.org/packages/2a/5b/ab00915021e5f26fa2b5f3779cc32b88db98dc5654e5f833dcce6e05f652/premium-23.5.10.0.tar.gz
+[2023-05-09 18:19:13] INFO root fetch - processPackages [flatnet]: Downloading https://files.pythonhosted.org/packages/af/5d/3ea17e24481dcfcfb17cbb758da37c530816e71481e8368e6dec8d87025c/flatnet-0.2.1.tar.gz
+[2023-05-09 18:19:13] INFO root fetch - processPackages [azureml-dataprep-rslex]: Downloading https://files.pythonhosted.org/packages/a3/d5/7a9b0965a3954085cb0614195ffdb7507030614aff2fa0c8d65551f20d62/azureml_dataprep_rslex-2.9.0-cp39-cp39-win_amd64.whl
+[2023-05-09 18:19:13] INFO root fetch - processPackages [spswarehouse-airflow]: Start processing: rapidtide
+[2023-05-09 18:19:13] INFO root fetch - main [MainThread]: End processing [spswarehouse-airflow]: success
+[2023-05-09 18:19:13] INFO root fetch - processPackages [flatnet]: executing diffoscope
+[2023-05-09 18:19:13] INFO root fetch - processPackages [flatnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatnet-0.2.0.tar.gz tmp/flatnet-0.2.1.tar.gz --markdown 20230509/f/flatnet/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-09 18:19:13] INFO root fetch - processPackages [premium]: executing diffoscope
+[2023-05-09 18:19:13] INFO root fetch - processPackages [premium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/premium-0.0.9rc2.tar.gz tmp/premium-23.5.10.0.tar.gz --markdown 20230509/p/premium/0.0.9rc2-23.5.10.0/diff.md --exclude *.pyd
+[2023-05-09 18:19:13] INFO root fetch - processPackages [rapidtide]: New version: [2.5.2] Old Version: [2.5.1.2]
+[2023-05-09 18:19:13] INFO root fetch - processPackages [pyquokka]: Downloading https://files.pythonhosted.org/packages/e2/e5/7784b825c61224b8b48d990bd88342fa444f8b3a085e739c6a349fc422a0/pyquokka-0.2.8-py3-none-any.whl
+[2023-05-09 18:19:13] INFO root fetch - processPackages [pyquokka]: executing diffoscope
+[2023-05-09 18:19:13] INFO root fetch - processPackages [pyquokka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyquokka-0.2.7-py3-none-any.whl.zip tmp/pyquokka-0.2.8-py3-none-any.whl.zip --markdown 20230509/p/pyquokka/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-09 18:19:13] INFO root fetch - processPackages [rapidtide]: Downloading https://files.pythonhosted.org/packages/33/4f/acd4108b5cb59ecf2019102d065a2e7f6623d68905dd286a95ef9378add5/rapidtide-2.5.1.2.tar.gz
+[2023-05-09 18:19:13] WARNING root fetch - processPackages [rapidtide]: Skipping package: exceeds size limit 10760518>=10485760
+[2023-05-09 18:19:13] INFO root fetch - processPackages [rapidtide]: Start processing: absract
+[2023-05-09 18:19:13] INFO root fetch - main [MainThread]: End processing [rapidtide] error
+[2023-05-09 18:19:13] WARNING root fetch - processPackages [absract]: Skipping, unable to determine old version
+[2023-05-09 18:19:13] INFO root fetch - processPackages [absract]: Start processing: pepperize.cdk-vpc
+[2023-05-09 18:19:13] INFO root fetch - main [MainThread]: End processing [absract] error
+[2023-05-09 18:19:13] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 18:19:13] INFO root fetch - main [MainThread]: End processing [spswarehouse-airflow]: success
+[2023-05-09 18:19:13] INFO root fetch - main [MainThread]: End processing [pyranges]: success
+[2023-05-09 18:19:13] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-05-09 18:19:13] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 18:19:13] WARNING root fetch - processPackages [azureml-dataprep-rslex]: Skipping package: exceeds size limit 13348921>=10485760
+[2023-05-09 18:19:13] INFO root fetch - main [MainThread]: End processing [azureml-dataprep-rslex] error
+[2023-05-09 18:19:14] INFO root fetch - main [MainThread]: End processing [spswarehouse-airflow]: success
+[2023-05-09 18:19:14] INFO root fetch - main [MainThread]: End processing [flatnet]: success
+[2023-05-09 18:19:14] INFO root fetch - main [MainThread]: End processing [spswarehouse-airflow]: success
+[2023-05-09 18:19:14] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-vpc]: success
+[2023-05-09 18:19:14] INFO root fetch - main [MainThread]: End processing [pyquokka]: success
+[2023-05-09 18:19:16] INFO root fetch - main [MainThread]: End processing [premium]: success
+[2023-05-09 18:19:16] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2023-05-09 18:19:16] INFO root fetch - main [MainThread]: Store serial: [18034656]
