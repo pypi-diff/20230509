@@ -17854,3 +17854,104 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 16:16:09] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.runtime]: success
 [2023-05-09 16:16:20] INFO root fetch - main [MainThread]: End processing [udata-front]: success
 [2023-05-09 16:16:20] INFO root fetch - main [MainThread]: Store serial: [18032924]
+[2023-05-09 16:21:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032924]
+[2023-05-09 16:21:33] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: udata-front
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plotgen
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nudeny
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbis-er-diagram
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pepperize.cdk-dynamodb-backup
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: easierscrape
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mmcb-avt
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rmpy
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: s3autocp
+[2023-05-09 16:21:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: scsd
+[2023-05-09 16:21:33] INFO root fetch - processPackages [plotgen]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-09 16:21:33] INFO root fetch - processPackages [nudeny]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 16:21:33] INFO root fetch - processPackages [dbis-er-diagram]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-09 16:21:33] INFO root fetch - processPackages [s3autocp]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 16:21:33] INFO root fetch - processPackages [mmcb-avt]: New version: [0.0.75] Old Version: [0.0.67]
+[2023-05-09 16:21:33] INFO root fetch - processPackages [easierscrape]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-09 16:21:33] WARNING root fetch - processPackages [scsd]: Skipping, unable to determine old version
+[2023-05-09 16:21:33] INFO root fetch - processPackages [scsd]: Start processing: digital-experiments
+[2023-05-09 16:21:33] INFO root fetch - main [MainThread]: End processing [scsd] error
+[2023-05-09 16:21:33] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 16:21:33] INFO root fetch - processPackages [udata-front]: New version: [3.2.3.dev9974] Old Version: [3.2.3.dev10339]
+[2023-05-09 16:21:33] INFO root fetch - processPackages [s3autocp]: executing diffoscope
+[2023-05-09 16:21:33] INFO root fetch - processPackages [s3autocp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s3autocp-0.0.3.tar.gz tmp/s3autocp-0.0.4.tar.gz --markdown 20230509/s/s3autocp/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 16:21:33] WARNING root fetch - processPackages [rmpy]: Skipping, unable to determine old version
+[2023-05-09 16:21:33] INFO root fetch - processPackages [rmpy]: Start processing: apache-airflow-client
+[2023-05-09 16:21:33] INFO root fetch - main [MainThread]: End processing [rmpy] error
+[2023-05-09 16:21:33] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: executing diffoscope
+[2023-05-09 16:21:33] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-dynamodb-backup-0.0.98.tar.gz tmp/pepperize.cdk-dynamodb-backup-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-dynamodb-backup/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 16:21:33] INFO root fetch - processPackages [udata-front]: executing diffoscope
+[2023-05-09 16:21:33] INFO root fetch - processPackages [udata-front]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udata_front-3.2.3.dev10339-py2.py3-none-any.whl.zip tmp/udata_front-3.2.3.dev9974-py2.py3-none-any.whl.zip --markdown 20230509/u/udata-front/3.2.3.dev10339-3.2.3.dev9974/diff.md --exclude *.pyd
+[2023-05-09 16:21:33] INFO root fetch - processPackages [digital-experiments]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-09 16:21:33] INFO root fetch - processPackages [nudeny]: Downloading https://files.pythonhosted.org/packages/a7/f4/a7c8f2723b5f8b54a64139fb996dff77abdc7df14bef2bc50a24b6e794d4/nudeny-0.0.8.tar.gz
+[2023-05-09 16:21:33] INFO root fetch - processPackages [dbis-er-diagram]: Downloading https://files.pythonhosted.org/packages/3d/13/48a7638ef0ce94c2f5028c470d7e975bcf8895bc3ee2f436f17bd4abf03d/dbis-er-diagram-1.0.7.tar.gz
+[2023-05-09 16:21:33] INFO root fetch - processPackages [mmcb-avt]: Downloading https://files.pythonhosted.org/packages/e5/94/92758a5257e22419babd65c2369d9653ec70ad2fd61a324f380247da751f/mmcb-avt-0.0.67.tar.gz
+[2023-05-09 16:21:33] INFO root fetch - processPackages [apache-airflow-client]: New version: [2.6.0rc3] Old Version: [2.6.0rc2]
+[2023-05-09 16:21:33] INFO root fetch - processPackages [dbis-er-diagram]: executing diffoscope
+[2023-05-09 16:21:33] INFO root fetch - processPackages [dbis-er-diagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbis-er-diagram-1.0.6.tar.gz tmp/dbis-er-diagram-1.0.7.tar.gz --markdown 20230509/d/dbis-er-diagram/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-09 16:21:33] INFO root fetch - processPackages [digital-experiments]: Downloading https://files.pythonhosted.org/packages/65/df/c9662008bc4b2c0b5bc8af9da632fb293a902043d184803b8f7af5744ff8/digital-experiments-1.0.7.tar.gz
+[2023-05-09 16:21:33] INFO root fetch - processPackages [easierscrape]: Downloading https://files.pythonhosted.org/packages/02/34/a7bffc196bd3ed256ab2ece3203beca7de6b71e8b00193c938e9052a14da/easierscrape-0.2.2.tar.gz
+[2023-05-09 16:21:33] INFO root fetch - processPackages [plotgen]: executing diffoscope
+[2023-05-09 16:21:33] INFO root fetch - processPackages [plotgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotgen-0.7.8-py3-none-any.whl.zip tmp/plotgen-0.7.9-py3-none-any.whl.zip --markdown 20230509/p/plotgen/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-09 16:21:33] INFO root fetch - processPackages [easierscrape]: executing diffoscope
+[2023-05-09 16:21:33] INFO root fetch - processPackages [easierscrape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easierscrape-0.2.1.tar.gz tmp/easierscrape-0.2.2.tar.gz --markdown 20230509/e/easierscrape/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-09 16:21:33] INFO root fetch - processPackages [nudeny]: Downloading https://files.pythonhosted.org/packages/1d/42/889158d5e37c94207347b0f34afe97a634cde4f322ec30505d140e986a64/nudeny-0.0.9.tar.gz
+[2023-05-09 16:21:33] INFO root fetch - processPackages [mmcb-avt]: Downloading https://files.pythonhosted.org/packages/51/cc/b9e9cd63a3c4fa1b3e3b34b6227c00c50daa9b753e10e79a721e45239c7a/mmcb-avt-0.0.75.tar.gz
+[2023-05-09 16:21:33] INFO root fetch - processPackages [nudeny]: executing diffoscope
+[2023-05-09 16:21:33] INFO root fetch - processPackages [nudeny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudeny-0.0.8.tar.gz tmp/nudeny-0.0.9.tar.gz --markdown 20230509/n/nudeny/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 16:21:33] INFO root fetch - processPackages [mmcb-avt]: executing diffoscope
+[2023-05-09 16:21:33] INFO root fetch - processPackages [mmcb-avt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmcb-avt-0.0.67.tar.gz tmp/mmcb-avt-0.0.75.tar.gz --markdown 20230509/m/mmcb-avt/0.0.67-0.0.75/diff.md --exclude *.pyd
+[2023-05-09 16:21:34] INFO root fetch - processPackages [apache-airflow-client]: executing diffoscope
+[2023-05-09 16:21:34] INFO root fetch - processPackages [apache-airflow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-client-2.6.0rc2.tar.gz tmp/apache-airflow-client-2.6.0rc3.tar.gz --markdown 20230509/a/apache-airflow-client/2.6.0rc2-2.6.0rc3/diff.md --exclude *.pyd
+[2023-05-09 16:21:34] INFO root fetch - processPackages [digital-experiments]: Downloading https://files.pythonhosted.org/packages/6e/9a/65f396fcf4ae63646111c44218c2a1473fb49475368b7ecf8b848a061a0f/digital-experiments-1.0.8.tar.gz
+[2023-05-09 16:21:34] INFO root fetch - processPackages [digital-experiments]: executing diffoscope
+[2023-05-09 16:21:34] INFO root fetch - processPackages [digital-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital-experiments-1.0.7.tar.gz tmp/digital-experiments-1.0.8.tar.gz --markdown 20230509/d/digital-experiments/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-09 16:21:35] INFO root fetch - processPackages [s3autocp]: Start processing: finalynx
+[2023-05-09 16:21:35] INFO root fetch - main [MainThread]: End processing [s3autocp]: success
+[2023-05-09 16:21:35] INFO root fetch - processPackages [finalynx]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-09 16:21:35] INFO root fetch - processPackages [finalynx]: executing diffoscope
+[2023-05-09 16:21:35] INFO root fetch - processPackages [finalynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalynx-1.8.3.tar.gz tmp/finalynx-1.9.0.tar.gz --markdown 20230509/f/finalynx/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 16:21:35] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: Start processing: duckdb-kernel
+[2023-05-09 16:21:35] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-dynamodb-backup]: success
+[2023-05-09 16:21:35] INFO root fetch - processPackages [duckdb-kernel]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-09 16:21:35] INFO root fetch - processPackages [dbis-er-diagram]: Start processing: gdata-vaas
+[2023-05-09 16:21:35] INFO root fetch - main [MainThread]: End processing [dbis-er-diagram]: success
+[2023-05-09 16:21:35] INFO root fetch - processPackages [duckdb-kernel]: executing diffoscope
+[2023-05-09 16:21:35] INFO root fetch - processPackages [duckdb-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdb_kernel-0.3.0.tar.gz tmp/duckdb_kernel-0.4.0.tar.gz --markdown 20230509/d/duckdb-kernel/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-09 16:21:35] INFO root fetch - processPackages [gdata-vaas]: New version: [3.0.0] Old Version: [2.2.0]
+[2023-05-09 16:21:35] INFO root fetch - processPackages [plotgen]: Start processing: voicevox-client
+[2023-05-09 16:21:35] INFO root fetch - main [MainThread]: End processing [plotgen]: success
+[2023-05-09 16:21:35] INFO root fetch - processPackages [gdata-vaas]: Downloading https://files.pythonhosted.org/packages/0f/53/b871916f5f43e57169114547619151e24f421e12adbb869f6b81c1c8b7bb/gdata-vaas-2.2.0.tar.gz
+[2023-05-09 16:21:35] INFO root fetch - processPackages [easierscrape]: Start processing: design.plone.policy
+[2023-05-09 16:21:35] INFO root fetch - main [MainThread]: End processing [easierscrape]: success
+[2023-05-09 16:21:35] INFO root fetch - processPackages [voicevox-client]: New version: [0.2.0a2] Old Version: [0.2.0a0]
+[2023-05-09 16:21:35] INFO root fetch - processPackages [nudeny]: Start processing: frequenz-repo-config
+[2023-05-09 16:21:35] INFO root fetch - main [MainThread]: End processing [nudeny]: success
+[2023-05-09 16:21:35] INFO root fetch - processPackages [design.plone.policy]: New version: [5.0.2] Old Version: [5.0.1]
+[2023-05-09 16:21:35] WARNING root fetch - processPackages [frequenz-repo-config]: Skipping, unable to determine old version
+[2023-05-09 16:21:35] INFO root fetch - main [MainThread]: End processing [frequenz-repo-config] error
+[2023-05-09 16:21:35] INFO root fetch - processPackages [voicevox-client]: Downloading https://files.pythonhosted.org/packages/c8/e8/226f71df0729011503001d3bdb58b38ca12761cdbc0d4da290ea21324e30/voicevox-client-0.2.0a0.tar.gz
+[2023-05-09 16:21:35] INFO root fetch - processPackages [gdata-vaas]: Downloading https://files.pythonhosted.org/packages/5a/02/74ca46fcd14dbb9fbc92b13abaa4076ce646b8da3e9cc981be3a924e9dae/gdata-vaas-3.0.0.tar.gz
+[2023-05-09 16:21:35] INFO root fetch - processPackages [design.plone.policy]: Downloading https://files.pythonhosted.org/packages/88/a6/238b7dbbcf1ab711e11ab2c2c4e102867c74d497228e6e02d6411df55811/design.plone.policy-5.0.1.tar.gz
+[2023-05-09 16:21:35] INFO root fetch - main [MainThread]: End processing [digital-experiments]: success
+[2023-05-09 16:21:36] INFO root fetch - processPackages [gdata-vaas]: executing diffoscope
+[2023-05-09 16:21:36] INFO root fetch - processPackages [gdata-vaas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdata-vaas-2.2.0.tar.gz tmp/gdata-vaas-3.0.0.tar.gz --markdown 20230509/g/gdata-vaas/2.2.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-09 16:21:36] INFO root fetch - processPackages [voicevox-client]: Downloading https://files.pythonhosted.org/packages/a2/fc/0e49786896ff6f0fa4e101cf78af0b23e2db08a28500de7091c1a515a293/voicevox-client-0.2.0a2.tar.gz
+[2023-05-09 16:21:36] INFO root fetch - processPackages [design.plone.policy]: Downloading https://files.pythonhosted.org/packages/9b/30/b47a25fc026d2b8781a0290b3a625f55c8fc44a73080cebe7691742dfdb4/design.plone.policy-5.0.2.tar.gz
+[2023-05-09 16:21:36] INFO root fetch - processPackages [voicevox-client]: executing diffoscope
+[2023-05-09 16:21:36] INFO root fetch - processPackages [voicevox-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voicevox-client-0.2.0a0.tar.gz tmp/voicevox-client-0.2.0a2.tar.gz --markdown 20230509/v/voicevox-client/0.2.0a0-0.2.0a2/diff.md --exclude *.pyd
+[2023-05-09 16:21:36] INFO root fetch - processPackages [design.plone.policy]: executing diffoscope
+[2023-05-09 16:21:36] INFO root fetch - processPackages [design.plone.policy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/design.plone.policy-5.0.1.tar.gz tmp/design.plone.policy-5.0.2.tar.gz --markdown 20230509/d/design.plone.policy/5.0.1-5.0.2/diff.md --exclude *.pyd
+[2023-05-09 16:21:36] INFO root fetch - main [MainThread]: End processing [duckdb-kernel]: success
+[2023-05-09 16:21:36] INFO root fetch - main [MainThread]: End processing [finalynx]: success
+[2023-05-09 16:21:36] INFO root fetch - main [MainThread]: End processing [mmcb-avt]: success
+[2023-05-09 16:21:37] INFO root fetch - main [MainThread]: End processing [gdata-vaas]: success
+[2023-05-09 16:21:37] INFO root fetch - main [MainThread]: End processing [voicevox-client]: success
+[2023-05-09 16:21:37] INFO root fetch - main [MainThread]: End processing [design.plone.policy]: success
+[2023-05-09 16:21:40] INFO root fetch - main [MainThread]: End processing [apache-airflow-client]: success
+[2023-05-09 16:22:08] INFO root fetch - main [MainThread]: End processing [udata-front]: success
+[2023-05-09 16:22:08] INFO root fetch - main [MainThread]: Store serial: [18032987]
