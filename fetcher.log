@@ -10750,3 +10750,130 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 08:52:54] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-09 08:53:08] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
 [2023-05-09 08:53:08] INFO root fetch - main [MainThread]: Store serial: [18028541]
+[2023-05-09 08:58:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028541]
+[2023-05-09 08:58:18] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asytest
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piwaterflow
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-purchase-order-type
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: musegan
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: irails
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Slpapy
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Xponge
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hbshare
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lbsntransform
+[2023-05-09 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-mongodbatlas
+[2023-05-09 08:58:18] INFO root fetch - processPackages [asytest]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [musegan]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [odoo14-addon-purchase-order-type]: New version: [14.0.1.0.3.dev9] Old Version: [14.0.1.0.3.dev8]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [piwaterflow]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [Slpapy]: New version: [0.3.2] Old Version: [0.2.11]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [irails]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [Xponge]: New version: [1.3b7] Old Version: [1.3b6]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [pulumi-mongodbatlas]: New version: [3.9.0a1683611208] Old Version: [3.9.0a1683352158]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [lbsntransform]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [hbshare]: New version: [3.7.9] Old Version: [3.7.8]
+[2023-05-09 08:58:18] INFO root fetch - processPackages [hbshare]: executing diffoscope
+[2023-05-09 08:58:18] INFO root fetch - processPackages [hbshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbshare-3.7.8.tar.gz tmp/hbshare-3.7.9.tar.gz --markdown 20230509/h/hbshare/3.7.8-3.7.9/diff.md --exclude *.pyd
+[2023-05-09 08:58:18] INFO root fetch - processPackages [musegan]: Downloading https://files.pythonhosted.org/packages/6a/89/4ac4ad5ab5882ebdd9d89450b588c8e3fb887e9b58a3b119390cf707f7b5/musegan-0.0.7.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [asytest]: Downloading https://files.pythonhosted.org/packages/1e/6e/cbc30f2fa345128059e2b79e4489c209171988d645913173d737e99e7657/asytest-0.1.4.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [Xponge]: Downloading https://files.pythonhosted.org/packages/e0/56/241b08e4fff35dffb14f5676fc00ec121b28094b1373ff1590be56a7926b/Xponge-1.3b6.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/74/cb/d7dff4f5dcdc65f6d4e5b5fd13ded53cdbb5532402d872d928b6108acaec/irails-1.2.0.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/2a/2b/46964c8c0bcb867796ad80f331fe10ed05c8bdde199a0e4f478db882b479/Slpapy-0.2.11.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [pulumi-mongodbatlas]: Downloading https://files.pythonhosted.org/packages/0f/1d/76b4fbf9e142f996e9f51da58e9b7c467b73552e1637fc6c5d706aa09efb/pulumi_mongodbatlas-3.9.0a1683352158.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [lbsntransform]: Downloading https://files.pythonhosted.org/packages/11/e6/158ad34c9fa123cf627347902c237969a7590eac7412197bcf1f2594c525/lbsntransform-0.9.0.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [odoo14-addon-purchase-order-type]: Downloading https://files.pythonhosted.org/packages/6b/65/e0bb6380d8649a7516b1678638cfeac8c0a2c611ac8bc60c1e58afeabe7e/odoo14_addon_purchase_order_type-14.0.1.0.3.dev8-py3-none-any.whl
+[2023-05-09 08:58:18] INFO root fetch - processPackages [musegan]: Downloading https://files.pythonhosted.org/packages/4f/37/3c16b8d9e54a17b5036c7dd7f67b60a45a97451cbd5352c3cbff5deac109/musegan-0.0.8.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [asytest]: Downloading https://files.pythonhosted.org/packages/b4/e3/5418c8d356dd4858f1282737e39507041f83f0cea3bf7fe25e51b10188a0/asytest-0.1.5.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [piwaterflow]: Downloading https://files.pythonhosted.org/packages/86/f9/bcd0a8c0406c5c188df6477507e9c324e59bbba0864f753dfd6a3442f335/piwaterflow-0.5.3.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [musegan]: executing diffoscope
+[2023-05-09 08:58:18] INFO root fetch - processPackages [musegan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musegan-0.0.7.tar.gz tmp/musegan-0.0.8.tar.gz --markdown 20230509/m/musegan/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-09 08:58:18] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/1b/28/fb2af0b859b28ebf9fd0044142e6ed56872e3eb4ab64c3e54c8a7df1ca42/Slpapy-0.3.2.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [asytest]: executing diffoscope
+[2023-05-09 08:58:18] INFO root fetch - processPackages [asytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asytest-0.1.4.tar.gz tmp/asytest-0.1.5.tar.gz --markdown 20230509/a/asytest/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 08:58:18] INFO root fetch - processPackages [lbsntransform]: Downloading https://files.pythonhosted.org/packages/bf/88/a37ad3b3d1a74234be6dd80b539f325dc82045f46071808dd1cc12474ebe/lbsntransform-0.9.1.tar.gz
+[2023-05-09 08:58:18] INFO root fetch - processPackages [piwaterflow]: executing diffoscope
+[2023-05-09 08:58:18] INFO root fetch - processPackages [piwaterflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwaterflow-0.5.2.tar.gz tmp/piwaterflow-0.5.3.tar.gz --markdown 20230509/p/piwaterflow/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-09 08:58:18] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-05-09 08:58:18] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.2.11.tar.gz tmp/Slpapy-0.3.2.tar.gz --markdown 20230509/S/Slpapy/0.2.11-0.3.2/diff.md --exclude *.pyd
+[2023-05-09 08:58:19] INFO root fetch - processPackages [Xponge]: Downloading https://files.pythonhosted.org/packages/0c/45/ab9b11eb5c44859c05e297110ea6af607ac2b0319030bdc84bdaa08fece7/Xponge-1.3b7.tar.gz
+[2023-05-09 08:58:19] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/a7/1d/0448956b97fee3c9a17f87e3d76ddaa15536fe09243175d09f969d18a360/irails-1.2.1.tar.gz
+[2023-05-09 08:58:19] INFO root fetch - processPackages [pulumi-mongodbatlas]: Downloading https://files.pythonhosted.org/packages/42/a9/f07becb4729857a97e5d8fae7563519b13ac34e11aa98e7a193992eec646/pulumi_mongodbatlas-3.9.0a1683611208.tar.gz
+[2023-05-09 08:58:19] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-09 08:58:19] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.2.0.tar.gz tmp/irails-1.2.1.tar.gz --markdown 20230509/i/irails/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-09 08:58:19] INFO root fetch - processPackages [lbsntransform]: executing diffoscope
+[2023-05-09 08:58:19] INFO root fetch - processPackages [lbsntransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbsntransform-0.9.0.tar.gz tmp/lbsntransform-0.9.1.tar.gz --markdown 20230509/l/lbsntransform/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 08:58:19] INFO root fetch - processPackages [odoo14-addon-purchase-order-type]: Downloading https://files.pythonhosted.org/packages/c1/99/7d0813b69aecd27f736525b4ec167cc7199b7a170deea10ceceada75d33a/odoo14_addon_purchase_order_type-14.0.1.0.3.dev9-py3-none-any.whl
+[2023-05-09 08:58:19] INFO root fetch - processPackages [pulumi-mongodbatlas]: executing diffoscope
+[2023-05-09 08:58:19] INFO root fetch - processPackages [pulumi-mongodbatlas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mongodbatlas-3.9.0a1683352158.tar.gz tmp/pulumi_mongodbatlas-3.9.0a1683611208.tar.gz --markdown 20230509/p/pulumi-mongodbatlas/3.9.0a1683352158-3.9.0a1683611208/diff.md --exclude *.pyd
+[2023-05-09 08:58:19] INFO root fetch - processPackages [odoo14-addon-purchase-order-type]: executing diffoscope
+[2023-05-09 08:58:19] INFO root fetch - processPackages [odoo14-addon-purchase-order-type]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_purchase_order_type-14.0.1.0.3.dev8-py3-none-any.whl.zip tmp/odoo14_addon_purchase_order_type-14.0.1.0.3.dev9-py3-none-any.whl.zip --markdown 20230509/o/odoo14-addon-purchase-order-type/14.0.1.0.3.dev8-14.0.1.0.3.dev9/diff.md --exclude *.pyd
+[2023-05-09 08:58:19] INFO root fetch - processPackages [Xponge]: executing diffoscope
+[2023-05-09 08:58:19] INFO root fetch - processPackages [Xponge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Xponge-1.3b6.tar.gz tmp/Xponge-1.3b7.tar.gz --markdown 20230509/X/Xponge/1.3b6-1.3b7/diff.md --exclude *.pyd
+[2023-05-09 08:58:20] INFO root fetch - processPackages [piwaterflow]: Start processing: odoo-addon-purchase-order-uninvoiced-amount
+[2023-05-09 08:58:20] INFO root fetch - main [MainThread]: End processing [piwaterflow]: success
+[2023-05-09 08:58:20] INFO root fetch - processPackages [odoo-addon-purchase-order-uninvoiced-amount]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-05-09 08:58:20] INFO root fetch - processPackages [asytest]: Start processing: odoo-addons-oca-purchase-workflow
+[2023-05-09 08:58:20] INFO root fetch - main [MainThread]: End processing [asytest]: success
+[2023-05-09 08:58:20] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: New version: [16.0.20230508.0] Old Version: [16.0.20230504.0]
+[2023-05-09 08:58:20] INFO root fetch - processPackages [musegan]: Start processing: jpylib-jyrgenn
+[2023-05-09 08:58:20] INFO root fetch - main [MainThread]: End processing [musegan]: success
+[2023-05-09 08:58:20] INFO root fetch - processPackages [lbsntransform]: Start processing: AIFloodMaster
+[2023-05-09 08:58:20] INFO root fetch - main [MainThread]: End processing [lbsntransform]: success
+[2023-05-09 08:58:20] INFO root fetch - processPackages [jpylib-jyrgenn]: New version: [2023.509.855] Old Version: [2023.508.846]
+[2023-05-09 08:58:20] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/dc/8b/d89a576651fd0b67ed763c09d71916251358fc94272adbf9311e51cd0a6f/odoo_addons_oca_purchase_workflow-16.0.20230504.0-py3-none-any.whl
+[2023-05-09 08:58:20] INFO root fetch - processPackages [odoo-addon-purchase-order-uninvoiced-amount]: Downloading https://files.pythonhosted.org/packages/cb/03/933f3139ef6f6c9130d728cf056729bc94f96d65e868e5b8a6f0396ece90/odoo_addon_purchase_order_uninvoiced_amount-16.0.1.0.0.3-py3-none-any.whl
+[2023-05-09 08:58:20] WARNING root fetch - processPackages [AIFloodMaster]: Skipping, unable to determine old version
+[2023-05-09 08:58:20] INFO root fetch - processPackages [AIFloodMaster]: Start processing: grizzly-loadtester
+[2023-05-09 08:58:20] INFO root fetch - main [MainThread]: End processing [AIFloodMaster] error
+[2023-05-09 08:58:20] INFO root fetch - processPackages [grizzly-loadtester]: New version: [2.6.5] Old Version: [2.6.4]
+[2023-05-09 08:58:20] INFO root fetch - processPackages [odoo-addon-purchase-order-uninvoiced-amount]: executing diffoscope
+[2023-05-09 08:58:20] INFO root fetch - processPackages [odoo-addon-purchase-order-uninvoiced-amount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_purchase_order_uninvoiced_amount-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_purchase_order_uninvoiced_amount-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230509/o/odoo-addon-purchase-order-uninvoiced-amount/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-05-09 08:58:21] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/b0/1d/a0219aa16f5036d00b08c325f008dfc9cbaf89944c797bd778c334fc25f4/odoo_addons_oca_purchase_workflow-16.0.20230508.0-py3-none-any.whl
+[2023-05-09 08:58:21] INFO root fetch - processPackages [grizzly-loadtester]: Downloading https://files.pythonhosted.org/packages/d8/97/2dc584ece0be7cd39a0e8d055c9d5a23df5959383a6d266a9da5614f7af0/grizzly-loadtester-2.6.4.tar.gz
+[2023-05-09 08:58:21] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: executing diffoscope
+[2023-05-09 08:58:21] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_purchase_workflow-16.0.20230504.0-py3-none-any.whl.zip tmp/odoo_addons_oca_purchase_workflow-16.0.20230508.0-py3-none-any.whl.zip --markdown 20230509/o/odoo-addons-oca-purchase-workflow/16.0.20230504.0-16.0.20230508.0/diff.md --exclude *.pyd
+[2023-05-09 08:58:21] INFO root fetch - processPackages [Slpapy]: Start processing: pulumi-venafi
+[2023-05-09 08:58:21] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-05-09 08:58:21] INFO root fetch - processPackages [pulumi-venafi]: New version: [1.6.0a1683614082] Old Version: [1.6.0a1683354369]
+[2023-05-09 08:58:21] INFO root fetch - processPackages [jpylib-jyrgenn]: Downloading https://files.pythonhosted.org/packages/c1/16/3e90076262e77e4a61e8293c2c448419b4ef9a0269d0af613fadf67ed6c2/jpylib-jyrgenn-2023.509.855.tar.gz
+[2023-05-09 08:58:21] INFO root fetch - processPackages [jpylib-jyrgenn]: executing diffoscope
+[2023-05-09 08:58:21] INFO root fetch - processPackages [jpylib-jyrgenn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jpylib-jyrgenn-2023.508.846.tar.gz tmp/jpylib-jyrgenn-2023.509.855.tar.gz --markdown 20230509/j/jpylib-jyrgenn/2023.508.846-2023.509.855/diff.md --exclude *.pyd
+[2023-05-09 08:58:21] INFO root fetch - processPackages [pulumi-venafi]: Downloading https://files.pythonhosted.org/packages/45/a1/c400cdaa5bb4e86c93514135c9b099e493119552934cbadb17d1f996c057/pulumi_venafi-1.6.0a1683354369.tar.gz
+[2023-05-09 08:58:21] INFO root fetch - processPackages [odoo14-addon-purchase-order-type]: Start processing: qwak-sdk
+[2023-05-09 08:58:21] INFO root fetch - main [MainThread]: End processing [odoo14-addon-purchase-order-type]: success
+[2023-05-09 08:58:21] INFO root fetch - processPackages [qwak-sdk]: New version: [0.2.29rc0] Old Version: [0.2.28rc0]
+[2023-05-09 08:58:21] INFO root fetch - processPackages [grizzly-loadtester]: Downloading https://files.pythonhosted.org/packages/80/c7/6fbce2c9e62df80f91b2fcf88a3e4ad1a01f73c0dbbd1fb48c63dbfd17a2/grizzly-loadtester-2.6.5.tar.gz
+[2023-05-09 08:58:21] INFO root fetch - processPackages [qwak-sdk]: Downloading https://files.pythonhosted.org/packages/5d/a8/cc93e46665c09444e0e9c6a06cc8da0f8660d0d6d1a208c689da5587b742/qwak_sdk-0.2.28rc0.tar.gz
+[2023-05-09 08:58:21] INFO root fetch - processPackages [grizzly-loadtester]: executing diffoscope
+[2023-05-09 08:58:21] INFO root fetch - processPackages [grizzly-loadtester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grizzly-loadtester-2.6.4.tar.gz tmp/grizzly-loadtester-2.6.5.tar.gz --markdown 20230509/g/grizzly-loadtester/2.6.4-2.6.5/diff.md --exclude *.pyd
+[2023-05-09 08:58:21] INFO root fetch - processPackages [pulumi-venafi]: Downloading https://files.pythonhosted.org/packages/b0/3c/5de8fe6dadc30718719d87461fd0ae79c8603ee0c08b0d6cefd7803795db/pulumi_venafi-1.6.0a1683614082.tar.gz
+[2023-05-09 08:58:21] INFO root fetch - processPackages [pulumi-venafi]: executing diffoscope
+[2023-05-09 08:58:21] INFO root fetch - processPackages [pulumi-venafi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_venafi-1.6.0a1683354369.tar.gz tmp/pulumi_venafi-1.6.0a1683614082.tar.gz --markdown 20230509/p/pulumi-venafi/1.6.0a1683354369-1.6.0a1683614082/diff.md --exclude *.pyd
+[2023-05-09 08:58:21] INFO root fetch - processPackages [qwak-sdk]: Downloading https://files.pythonhosted.org/packages/75/2e/dba4e45a6f2c6d9511990521d9253fdaecbee2c0fc7a67c573bfbec4b412/qwak_sdk-0.2.29rc0.tar.gz
+[2023-05-09 08:58:21] INFO root fetch - processPackages [pulumi-mongodbatlas]: Start processing: pulumi-vsphere
+[2023-05-09 08:58:21] INFO root fetch - main [MainThread]: End processing [pulumi-mongodbatlas]: success
+[2023-05-09 08:58:21] INFO root fetch - processPackages [pulumi-vsphere]: New version: [4.5.0a1683614094] Old Version: [4.5.0a1683354453]
+[2023-05-09 08:58:22] INFO root fetch - processPackages [Xponge]: Start processing: pulumi-wavefront
+[2023-05-09 08:58:22] INFO root fetch - main [MainThread]: End processing [Xponge]: success
+[2023-05-09 08:58:22] INFO root fetch - processPackages [pulumi-wavefront]: New version: [1.4.0a1683614159] Old Version: [1.4.0a1683355805]
+[2023-05-09 08:58:22] INFO root fetch - processPackages [qwak-sdk]: executing diffoscope
+[2023-05-09 08:58:22] INFO root fetch - processPackages [qwak-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_sdk-0.2.28rc0.tar.gz tmp/qwak_sdk-0.2.29rc0.tar.gz --markdown 20230509/q/qwak-sdk/0.2.28rc0-0.2.29rc0/diff.md --exclude *.pyd
+[2023-05-09 08:58:22] INFO root fetch - processPackages [pulumi-vsphere]: Downloading https://files.pythonhosted.org/packages/47/3e/64ad6d332b6747cb5e538e9416fc0202c3b11606fdc048e1207cebc19fba/pulumi_vsphere-4.5.0a1683354453.tar.gz
+[2023-05-09 08:58:22] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-order-uninvoiced-amount]: success
+[2023-05-09 08:58:22] INFO root fetch - processPackages [pulumi-wavefront]: Downloading https://files.pythonhosted.org/packages/68/f8/2f2656000fc0b536f84c755cba46c2231e6c8830c929f87fd12ebb881274/pulumi_wavefront-1.4.0a1683355805.tar.gz
+[2023-05-09 08:58:22] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-purchase-workflow]: success
+[2023-05-09 08:58:22] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-09 08:58:22] INFO root fetch - processPackages [pulumi-vsphere]: Downloading https://files.pythonhosted.org/packages/33/2a/a191c1fd966e9ed0311dc57d9ee4f1a01c17883ecd9d04f1143cff4ab6df/pulumi_vsphere-4.5.0a1683614094.tar.gz
+[2023-05-09 08:58:22] INFO root fetch - processPackages [pulumi-wavefront]: Downloading https://files.pythonhosted.org/packages/b4/87/86e38e002229103b766eaf150c2c737f97bf493df8485c4072be8181c9cc/pulumi_wavefront-1.4.0a1683614159.tar.gz
+[2023-05-09 08:58:22] INFO root fetch - processPackages [pulumi-vsphere]: executing diffoscope
+[2023-05-09 08:58:22] INFO root fetch - processPackages [pulumi-vsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vsphere-4.5.0a1683354453.tar.gz tmp/pulumi_vsphere-4.5.0a1683614094.tar.gz --markdown 20230509/p/pulumi-vsphere/4.5.0a1683354453-4.5.0a1683614094/diff.md --exclude *.pyd
+[2023-05-09 08:58:22] INFO root fetch - processPackages [pulumi-wavefront]: executing diffoscope
+[2023-05-09 08:58:22] INFO root fetch - processPackages [pulumi-wavefront]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_wavefront-1.4.0a1683355805.tar.gz tmp/pulumi_wavefront-1.4.0a1683614159.tar.gz --markdown 20230509/p/pulumi-wavefront/1.4.0a1683355805-1.4.0a1683614159/diff.md --exclude *.pyd
+[2023-05-09 08:58:22] INFO root fetch - main [MainThread]: End processing [jpylib-jyrgenn]: success
+[2023-05-09 08:58:23] INFO root fetch - main [MainThread]: End processing [pulumi-venafi]: success
+[2023-05-09 08:58:24] INFO root fetch - main [MainThread]: End processing [pulumi-wavefront]: success
+[2023-05-09 08:58:24] INFO root fetch - main [MainThread]: End processing [pulumi-vsphere]: success
+[2023-05-09 08:58:24] INFO root fetch - main [MainThread]: End processing [grizzly-loadtester]: success
+[2023-05-09 08:58:24] INFO root fetch - main [MainThread]: End processing [qwak-sdk]: success
+[2023-05-09 08:58:25] INFO root fetch - main [MainThread]: End processing [hbshare]: success
+[2023-05-09 08:58:25] INFO root fetch - main [MainThread]: Store serial: [18028603]
