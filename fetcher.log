@@ -11891,3 +11891,94 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 09:57:59] INFO root fetch - main [MainThread]: End processing [pure-ocean-breeze]: success
 [2023-05-09 09:58:36] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-09 09:58:36] INFO root fetch - main [MainThread]: Store serial: [18029170]
+[2023-05-09 10:03:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029170]
+[2023-05-09 10:03:45] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: badgescale-ys-plt
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cluster-experiments
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: review-bot
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: local-recruitment-employer-python-backend
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ntscraper
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qiskit-machine-learning
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cloudnetpy-qc
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: floret
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cortex-python
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sheetcloud
+[2023-05-09 10:03:45] INFO root fetch - processPackages [sheetcloud]: New version: [0.1.0.post9] Old Version: [0.1.0.post8]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [cloudnetpy-qc]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [cluster-experiments]: New version: [0.7.0] Old Version: [0.6.5]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [badgescale-ys-plt]: New version: [7.0] Old Version: [6.0]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ntscraper]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [cloudnetpy-qc]: executing diffoscope
+[2023-05-09 10:03:45] INFO root fetch - processPackages [sheetcloud]: executing diffoscope
+[2023-05-09 10:03:45] INFO root fetch - processPackages [review-bot]: New version: [0.0.dev4] Old Version: [0.0.dev3]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [cloudnetpy-qc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudnetpy_qc-1.9.4.tar.gz tmp/cloudnetpy_qc-1.9.5.tar.gz --markdown 20230509/c/cloudnetpy-qc/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-09 10:03:45] INFO root fetch - processPackages [sheetcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sheetcloud-0.1.0.post8.tar.gz tmp/sheetcloud-0.1.0.post9.tar.gz --markdown 20230509/s/sheetcloud/0.1.0.post8-0.1.0.post9/diff.md --exclude *.pyd
+[2023-05-09 10:03:45] INFO root fetch - processPackages [qiskit-machine-learning]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [floret]: New version: [0.10.3] Old Version: [0.10.2]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [cortex-python]: New version: [6.3.1a3] Old Version: [6.3.1a2]
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ntscraper]: Downloading https://files.pythonhosted.org/packages/fa/f0/22e63969b3eb9724c913c1894b208624a9bd17e3551db6e62be7574b5cc7/ntscraper-0.1.3.tar.gz
+[2023-05-09 10:03:45] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: Downloading https://files.pythonhosted.org/packages/b0/ce/92589935edbc10ba64645c05680be1482a39b8595c6c030de82c085bec14/local-recruitment-employer-python-backend-0.0.3.tar.gz
+[2023-05-09 10:03:45] INFO root fetch - processPackages [qiskit-machine-learning]: Downloading https://files.pythonhosted.org/packages/53/ad/4019ce8278c0ef67f54068cea2aacd65dd862e7481f3709b98132679ec3e/qiskit-machine-learning-0.6.0.tar.gz
+[2023-05-09 10:03:45] INFO root fetch - processPackages [review-bot]: Downloading https://files.pythonhosted.org/packages/be/c1/17db5a2558f2e02d25d61a7abf65fd7d0fadef2130b0c807ae75f719a0a8/review-bot-0.0.dev3.tar.gz
+[2023-05-09 10:03:45] INFO root fetch - processPackages [floret]: Downloading https://files.pythonhosted.org/packages/a2/3e/3d7d6a346a42ed329a045dc14a9d22b7a4464f6a86c2d51df4894d9152b1/floret-0.10.2.tar.gz
+[2023-05-09 10:03:45] INFO root fetch - processPackages [cortex-python]: Downloading https://files.pythonhosted.org/packages/e5/a1/0431e31cffbad5628134bb65e41d909b5104f190a69608e865cd52a5dcbf/cortex-python-6.3.1a2.tar.gz
+[2023-05-09 10:03:45] INFO root fetch - processPackages [badgescale-ys-plt]: Downloading https://files.pythonhosted.org/packages/64/b8/4213f8e7b5c7a82904062a641cf745f2914e893d98e17c55614fb37313f1/badgescale_ys_plt-7.0-py3-none-any.whl
+[2023-05-09 10:03:45] INFO root fetch - processPackages [cluster-experiments]: Downloading https://files.pythonhosted.org/packages/06/a2/a0082e58624f137d3163d1e36f51423f30df73b920ddc78f9fed287a8699/cluster_experiments-0.7.0.tar.gz
+[2023-05-09 10:03:45] INFO root fetch - processPackages [badgescale-ys-plt]: executing diffoscope
+[2023-05-09 10:03:45] INFO root fetch - processPackages [badgescale-ys-plt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgescale_ys_plt-6.0-py3-none-any.whl.zip tmp/badgescale_ys_plt-7.0-py3-none-any.whl.zip --markdown 20230509/b/badgescale-ys-plt/6.0-7.0/diff.md --exclude *.pyd
+[2023-05-09 10:03:45] INFO root fetch - processPackages [ntscraper]: Downloading https://files.pythonhosted.org/packages/57/00/ac09203669b97e5c263837833e148865783a5ae3b82d966666ceb690cb76/ntscraper-0.1.4.tar.gz
+[2023-05-09 10:03:45] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: Downloading https://files.pythonhosted.org/packages/6b/af/59720d80cd3928ec2a73683279f3abc9f0db1d4461f6004cc25ab92ab181/local-recruitment-employer-python-backend-0.0.4.tar.gz
+[2023-05-09 10:03:45] INFO root fetch - processPackages [cluster-experiments]: executing diffoscope
+[2023-05-09 10:03:45] INFO root fetch - processPackages [cluster-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluster_experiments-0.6.5.tar.gz tmp/cluster_experiments-0.7.0.tar.gz --markdown 20230509/c/cluster-experiments/0.6.5-0.7.0/diff.md --exclude *.pyd
+[2023-05-09 10:03:46] INFO root fetch - processPackages [floret]: Downloading https://files.pythonhosted.org/packages/c7/ca/9354d6f98bff328d66d3a75db8ab158a43648122ee0210466a8237f80f9b/floret-0.10.3.tar.gz
+[2023-05-09 10:03:46] INFO root fetch - processPackages [ntscraper]: executing diffoscope
+[2023-05-09 10:03:46] INFO root fetch - processPackages [ntscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ntscraper-0.1.3.tar.gz tmp/ntscraper-0.1.4.tar.gz --markdown 20230509/n/ntscraper/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 10:03:46] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-09 10:03:46] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.3.tar.gz tmp/local-recruitment-employer-python-backend-0.0.4.tar.gz --markdown 20230509/l/local-recruitment-employer-python-backend/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 10:03:46] INFO root fetch - processPackages [review-bot]: Downloading https://files.pythonhosted.org/packages/a0/17/f6f68e81a703684415aba426576ee34d895e5f4e8bc234ab3d42f39be235/review-bot-0.0.dev4.tar.gz
+[2023-05-09 10:03:46] INFO root fetch - processPackages [qiskit-machine-learning]: Downloading https://files.pythonhosted.org/packages/09/c6/502e29169953df4a7c3f8539858d3546877198bf7cafa6318361d5d381c4/qiskit-machine-learning-0.6.1.tar.gz
+[2023-05-09 10:03:46] INFO root fetch - processPackages [cortex-python]: Downloading https://files.pythonhosted.org/packages/df/d9/ff859e9c5502ced8d046593585a9a19844c983f4760fae469eec726c3f57/cortex-python-6.3.1a3.tar.gz
+[2023-05-09 10:03:46] INFO root fetch - processPackages [review-bot]: executing diffoscope
+[2023-05-09 10:03:46] INFO root fetch - processPackages [review-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/review-bot-0.0.dev3.tar.gz tmp/review-bot-0.0.dev4.tar.gz --markdown 20230509/r/review-bot/0.0.dev3-0.0.dev4/diff.md --exclude *.pyd
+[2023-05-09 10:03:46] INFO root fetch - processPackages [qiskit-machine-learning]: executing diffoscope
+[2023-05-09 10:03:46] INFO root fetch - processPackages [qiskit-machine-learning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qiskit-machine-learning-0.6.0.tar.gz tmp/qiskit-machine-learning-0.6.1.tar.gz --markdown 20230509/q/qiskit-machine-learning/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-09 10:03:46] INFO root fetch - processPackages [cortex-python]: executing diffoscope
+[2023-05-09 10:03:46] INFO root fetch - processPackages [cortex-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortex-python-6.3.1a2.tar.gz tmp/cortex-python-6.3.1a3.tar.gz --markdown 20230509/c/cortex-python/6.3.1a2-6.3.1a3/diff.md --exclude *.pyd
+[2023-05-09 10:03:46] INFO root fetch - processPackages [floret]: executing diffoscope
+[2023-05-09 10:03:46] INFO root fetch - processPackages [floret]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/floret-0.10.2.tar.gz tmp/floret-0.10.3.tar.gz --markdown 20230509/f/floret/0.10.2-0.10.3/diff.md --exclude *.pyd
+[2023-05-09 10:03:47] INFO root fetch - processPackages [sheetcloud]: Start processing: lmz
+[2023-05-09 10:03:47] INFO root fetch - main [MainThread]: End processing [sheetcloud]: success
+[2023-05-09 10:03:47] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: Start processing: jy-utils
+[2023-05-09 10:03:47] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-09 10:03:47] INFO root fetch - processPackages [lmz]: New version: [0.1.9] Old Version: [0.1.7]
+[2023-05-09 10:03:47] INFO root fetch - processPackages [jy-utils]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 10:03:47] INFO root fetch - processPackages [ntscraper]: Start processing: toolium
+[2023-05-09 10:03:47] INFO root fetch - main [MainThread]: End processing [ntscraper]: success
+[2023-05-09 10:03:47] INFO root fetch - processPackages [badgescale-ys-plt]: Start processing: bridgecrew
+[2023-05-09 10:03:47] INFO root fetch - main [MainThread]: End processing [badgescale-ys-plt]: success
+[2023-05-09 10:03:47] INFO root fetch - processPackages [jy-utils]: executing diffoscope
+[2023-05-09 10:03:47] INFO root fetch - processPackages [jy-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jy_utils-0.0.1.tar.gz tmp/jy_utils-0.0.2.tar.gz --markdown 20230509/j/jy-utils/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 10:03:47] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-09 10:03:47] INFO root fetch - processPackages [toolium]: New version: [3.0.1.dev2] Old Version: [3.0.1.dev1]
+[2023-05-09 10:03:47] INFO root fetch - main [MainThread]: End processing [cluster-experiments]: success
+[2023-05-09 10:03:47] INFO root fetch - processPackages [lmz]: Downloading https://files.pythonhosted.org/packages/a5/48/d059b870df53a66e1d3f94d188c8787d7b9526239162c7bdef73b0026805/lmz-0.1.7.tar.gz
+[2023-05-09 10:03:47] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-09 10:03:47] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230509/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-09 10:03:47] INFO root fetch - main [MainThread]: End processing [review-bot]: success
+[2023-05-09 10:03:47] INFO root fetch - processPackages [toolium]: Downloading https://files.pythonhosted.org/packages/c3/2a/75a399e9abe8e36d0658035f4f9c78215a0556b824b7bd6bb1db0ffecd49/toolium-3.0.1.dev1.tar.gz
+[2023-05-09 10:03:48] INFO root fetch - main [MainThread]: End processing [cortex-python]: success
+[2023-05-09 10:03:48] INFO root fetch - processPackages [lmz]: Downloading https://files.pythonhosted.org/packages/c9/71/9b95426affd7f0862a65d8a3dd11b7fb69e31a97426f2f65a9f55f748424/lmz-0.1.9.tar.gz
+[2023-05-09 10:03:48] INFO root fetch - main [MainThread]: End processing [cloudnetpy-qc]: success
+[2023-05-09 10:03:48] INFO root fetch - processPackages [toolium]: Downloading https://files.pythonhosted.org/packages/9f/15/6f51258a13f82164ffe9065e142269d78edb60e2a2e129dd722beecff38f/toolium-3.0.1.dev2.tar.gz
+[2023-05-09 10:03:48] INFO root fetch - main [MainThread]: End processing [floret]: success
+[2023-05-09 10:03:48] INFO root fetch - processPackages [lmz]: executing diffoscope
+[2023-05-09 10:03:48] INFO root fetch - processPackages [lmz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmz-0.1.7.tar.gz tmp/lmz-0.1.9.tar.gz --markdown 20230509/l/lmz/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 10:03:48] INFO root fetch - processPackages [toolium]: executing diffoscope
+[2023-05-09 10:03:48] INFO root fetch - processPackages [toolium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolium-3.0.1.dev1.tar.gz tmp/toolium-3.0.1.dev2.tar.gz --markdown 20230509/t/toolium/3.0.1.dev1-3.0.1.dev2/diff.md --exclude *.pyd
+[2023-05-09 10:03:48] INFO root fetch - main [MainThread]: End processing [jy-utils]: success
+[2023-05-09 10:03:49] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-09 10:03:49] INFO root fetch - main [MainThread]: End processing [lmz]: success
+[2023-05-09 10:03:49] INFO root fetch - main [MainThread]: End processing [toolium]: success
+[2023-05-09 10:03:50] INFO root fetch - main [MainThread]: End processing [qiskit-machine-learning]: success
+[2023-05-09 10:03:50] INFO root fetch - main [MainThread]: Store serial: [18029238]
