@@ -10699,3 +10699,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 08:47:28] INFO root fetch - main [MainThread]: End processing [minium]: success
 [2023-05-09 08:47:33] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-09 08:47:33] INFO root fetch - main [MainThread]: Store serial: [18028518]
+[2023-05-09 08:52:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028518]
+[2023-05-09 08:52:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-09 08:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-alicloud
+[2023-05-09 08:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emrichen
+[2023-05-09 08:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo12-addon-purchase-request
+[2023-05-09 08:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: komora-syncer
+[2023-05-09 08:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cg
+[2023-05-09 08:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-snowflake
+[2023-05-09 08:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-splunk
+[2023-05-09 08:52:42] INFO root fetch - processPackages [komora-syncer]: New version: [2.3] Old Version: [2.2]
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-alicloud]: New version: [3.9.0a1637592974] Old Version: [3.9.0a1635778307]
+[2023-05-09 08:52:43] INFO root fetch - processPackages [emrichen]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-snowflake]: New version: [0.9.1a1656367704] Old Version: [0.9.1a1654087017]
+[2023-05-09 08:52:43] INFO root fetch - processPackages [odoo12-addon-purchase-request]: New version: [12.0.5.3.1.99.dev9] Old Version: [12.0.5.3.1.99.dev8]
+[2023-05-09 08:52:43] INFO root fetch - processPackages [cg]: New version: [29.8.4] Old Version: [29.8.3]
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-splunk]: New version: [1.3.0a1683613441] Old Version: [1.3.0a1683353733]
+[2023-05-09 08:52:43] INFO root fetch - processPackages [komora-syncer]: Downloading https://files.pythonhosted.org/packages/a7/33/e9d94774b7072f0f1cea1010f50c45893fe49fec9ee693f23bcc5510da63/komora_syncer-2.2.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-alicloud]: Downloading https://files.pythonhosted.org/packages/be/79/da6d86e1953fc7bde0762279ac850d45fe8ad91ff27a3c837009ede717a4/pulumi_alicloud-3.9.0a1635778307.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [odoo12-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/e8/d9/abd7242c7e6a2a6028581dd577cabb7eb48eb9682f10b368f5fe84dfd8d9/odoo12_addon_purchase_request-12.0.5.3.1.99.dev8-py3-none-any.whl
+[2023-05-09 08:52:43] INFO root fetch - processPackages [emrichen]: Downloading https://files.pythonhosted.org/packages/01/2f/8768d3ebf665600fa624e5fe6a6cdec1adfbcc210f457a07fa84e912f230/emrichen-0.3.0.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-snowflake]: Downloading https://files.pythonhosted.org/packages/ac/12/8a15836613d8faa0153d0c1b5818bfe83f875f5770e55c406bbc2e2f4297/pulumi_snowflake-0.9.1a1654087017.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/98/5e/05ac6b4f55b8f00de736b797b4df14d8f690859135bf2f1a534506fa40f5/cg-29.8.4.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-splunk]: Downloading https://files.pythonhosted.org/packages/8f/81/c3c7247acd7e14bd462e64c066341a44de3230e96f6855995c1ac2feb0e5/pulumi_splunk-1.3.0a1683353733.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-09 08:52:43] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-29.8.3.tar.gz tmp/cg-29.8.4.tar.gz --markdown 20230509/c/cg/29.8.3-29.8.4/diff.md --exclude *.pyd
+[2023-05-09 08:52:43] INFO root fetch - processPackages [komora-syncer]: Downloading https://files.pythonhosted.org/packages/d5/d6/3ac152a4d77b64a843bd6deaa771b2111e2e66ceac96fb24fa716e135016/komora_syncer-2.3.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-snowflake]: Downloading https://files.pythonhosted.org/packages/12/24/eac91fa678665e057906195a9e93366ecf0bc7997bd228eb1159a41ae631/pulumi_snowflake-0.9.1a1656367704.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [emrichen]: Downloading https://files.pythonhosted.org/packages/db/4c/3d4ecb32603060ad82eedf97e2fca323b96b612d8e5c55bd8b7b179bf89e/emrichen-0.4.0.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [komora-syncer]: executing diffoscope
+[2023-05-09 08:52:43] INFO root fetch - processPackages [komora-syncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/komora_syncer-2.2.tar.gz tmp/komora_syncer-2.3.tar.gz --markdown 20230509/k/komora-syncer/2.2-2.3/diff.md --exclude *.pyd
+[2023-05-09 08:52:43] INFO root fetch - processPackages [emrichen]: executing diffoscope
+[2023-05-09 08:52:43] INFO root fetch - processPackages [emrichen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emrichen-0.3.0.tar.gz tmp/emrichen-0.4.0.tar.gz --markdown 20230509/e/emrichen/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-09 08:52:43] INFO root fetch - processPackages [odoo12-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/f5/48/6e22a348e37f58f638a45b4b54cd20f78e391f87be769fe36f28c939593f/odoo12_addon_purchase_request-12.0.5.3.1.99.dev9-py3-none-any.whl
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-splunk]: Downloading https://files.pythonhosted.org/packages/8c/f7/dfb9582f21653c18e92971de494243f4195e082aeff7c824160f1d5a47b0/pulumi_splunk-1.3.0a1683613441.tar.gz
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-snowflake]: executing diffoscope
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_snowflake-0.9.1a1654087017.tar.gz tmp/pulumi_snowflake-0.9.1a1656367704.tar.gz --markdown 20230509/p/pulumi-snowflake/0.9.1a1654087017-0.9.1a1656367704/diff.md --exclude *.pyd
+[2023-05-09 08:52:43] INFO root fetch - processPackages [odoo12-addon-purchase-request]: executing diffoscope
+[2023-05-09 08:52:43] INFO root fetch - processPackages [odoo12-addon-purchase-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_purchase_request-12.0.5.3.1.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_purchase_request-12.0.5.3.1.99.dev9-py3-none-any.whl.zip --markdown 20230509/o/odoo12-addon-purchase-request/12.0.5.3.1.99.dev8-12.0.5.3.1.99.dev9/diff.md --exclude *.pyd
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-splunk]: executing diffoscope
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-splunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_splunk-1.3.0a1683353733.tar.gz tmp/pulumi_splunk-1.3.0a1683613441.tar.gz --markdown 20230509/p/pulumi-splunk/1.3.0a1683353733-1.3.0a1683613441/diff.md --exclude *.pyd
+[2023-05-09 08:52:43] INFO root fetch - processPackages [pulumi-alicloud]: Downloading https://files.pythonhosted.org/packages/7a/b5/f47603b555625f7ec29ec6dcdc2cf74fe00dc52cba5fad75ddd65d3bd99e/pulumi_alicloud-3.9.0a1637592974.tar.gz
+[2023-05-09 08:52:44] INFO root fetch - processPackages [pulumi-alicloud]: executing diffoscope
+[2023-05-09 08:52:44] INFO root fetch - processPackages [pulumi-alicloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz --markdown 20230509/p/pulumi-alicloud/3.9.0a1635778307-3.9.0a1637592974/diff.md --exclude *.pyd
+[2023-05-09 08:52:44] INFO root fetch - main [MainThread]: End processing [komora-syncer]: success
+[2023-05-09 08:52:44] INFO root fetch - main [MainThread]: End processing [emrichen]: success
+[2023-05-09 08:52:45] INFO root fetch - main [MainThread]: End processing [pulumi-splunk]: success
+[2023-05-09 08:52:45] INFO root fetch - main [MainThread]: End processing [odoo12-addon-purchase-request]: success
+[2023-05-09 08:52:48] INFO root fetch - main [MainThread]: End processing [pulumi-snowflake]: success
+[2023-05-09 08:52:54] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-09 08:53:08] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
+[2023-05-09 08:53:08] INFO root fetch - main [MainThread]: Store serial: [18028541]
