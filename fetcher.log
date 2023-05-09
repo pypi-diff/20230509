@@ -19926,3 +19926,71 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 17:52:26] INFO root fetch - main [MainThread]: End processing [firex-flame]: success
 [2023-05-09 17:52:29] INFO root fetch - main [MainThread]: End processing [blond]: success
 [2023-05-09 17:52:29] INFO root fetch - main [MainThread]: Store serial: [18034306]
+[2023-05-09 17:57:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034306]
+[2023-05-09 17:57:39] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepchecks-installer
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyproffit
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: captcha6
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: viazoom
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gradio
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyarinst
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gimera
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: plotnine
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: unpast
+[2023-05-09 17:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gpt-review
+[2023-05-09 17:57:39] WARNING root fetch - processPackages [deepchecks-installer]: Skipping, unable to determine old version
+[2023-05-09 17:57:39] INFO root fetch - processPackages [deepchecks-installer]: Start processing: pyfall
+[2023-05-09 17:57:39] INFO root fetch - main [MainThread]: End processing [deepchecks-installer] error
+[2023-05-09 17:57:39] INFO root fetch - processPackages [pyarinst]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 17:57:39] INFO root fetch - processPackages [captcha6]: New version: [0.6] Old Version: [0.5]
+[2023-05-09 17:57:39] INFO root fetch - processPackages [pyproffit]: New version: [0.8] Old Version: [0.7.1]
+[2023-05-09 17:57:39] INFO root fetch - processPackages [plotnine]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 17:57:39] WARNING root fetch - processPackages [viazoom]: Skipping, unable to determine old version
+[2023-05-09 17:57:39] INFO root fetch - processPackages [viazoom]: Start processing: nucliadb-contributor-assets
+[2023-05-09 17:57:39] INFO root fetch - main [MainThread]: End processing [viazoom] error
+[2023-05-09 17:57:39] INFO root fetch - processPackages [gradio]: New version: [3.9.1] Old Version: [3.9]
+[2023-05-09 17:57:39] INFO root fetch - processPackages [gpt-review]: New version: [0.8.0rc530.post1] Old Version: [0.8.0rc524.post1]
+[2023-05-09 17:57:39] INFO root fetch - processPackages [gimera]: New version: [0.6.9] Old Version: [0.6.85]
+[2023-05-09 17:57:39] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post756] Old Version: [1.0.0.post754]
+[2023-05-09 17:57:39] INFO root fetch - processPackages [gradio]: Downloading https://files.pythonhosted.org/packages/b2/2d/f8dc88b392cdaac54b5bf6b56af321211f705494f4a0b2a1589717c06ff5/gradio-3.9.tar.gz
+[2023-05-09 17:57:39] INFO root fetch - processPackages [unpast]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 17:57:39] WARNING root fetch - processPackages [pyfall]: Skipping, unable to determine old version
+[2023-05-09 17:57:39] INFO root fetch - processPackages [pyfall]: Start processing: ezneural
+[2023-05-09 17:57:39] INFO root fetch - main [MainThread]: End processing [pyfall] error
+[2023-05-09 17:57:39] INFO root fetch - processPackages [gpt-review]: executing diffoscope
+[2023-05-09 17:57:39] INFO root fetch - processPackages [gpt-review]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-review-0.8.0rc524.post1.tar.gz tmp/gpt-review-0.8.0rc530.post1.tar.gz --markdown 20230509/g/gpt-review/0.8.0rc524.post1-0.8.0rc530.post1/diff.md --exclude *.pyd
+[2023-05-09 17:57:39] WARNING root fetch - processPackages [ezneural]: Skipping, unable to determine old version
+[2023-05-09 17:57:39] INFO root fetch - main [MainThread]: End processing [ezneural] error
+[2023-05-09 17:57:39] ERROR root fetch - processPackages [captcha6]: Unable to fetch info: No such project/version 'captcha6' 0.5
+[2023-05-09 17:57:39] INFO root fetch - main [MainThread]: End processing [captcha6] error
+[2023-05-09 17:57:39] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-05-09 17:57:39] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post754-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post756-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-contributor-assets/1.0.0.post754-1.0.0.post756/diff.md --exclude *.pyd
+[2023-05-09 17:57:39] INFO root fetch - processPackages [gimera]: Downloading https://files.pythonhosted.org/packages/7a/bc/c1b0f37e4c5b8442a015087da2464c4c2cf597b7bc13b62b39e9e548fe4f/gimera-0.6.85.tar.gz
+[2023-05-09 17:57:39] INFO root fetch - processPackages [pyarinst]: Downloading https://files.pythonhosted.org/packages/37/0c/08455e516175f56d67acba40937fb1bb9951114da59988ad4aa103fe5069/pyarinst-1.0.0.tar.gz
+[2023-05-09 17:57:39] INFO root fetch - processPackages [plotnine]: Downloading https://files.pythonhosted.org/packages/03/30/358ad9133542f35888c3d20c064f4b19bfc6f3fb481cdc9b1018f8c36295/plotnine-0.8.0.tar.gz
+[2023-05-09 17:57:39] INFO root fetch - processPackages [pyproffit]: Downloading https://files.pythonhosted.org/packages/66/5b/d0af6d9048332e24e194fae0f6cd7abc403b4e96b5b67471d6577670a3e4/pyproffit-0.7.1.tar.gz
+[2023-05-09 17:57:39] WARNING root fetch - processPackages [gradio]: Skipping package: exceeds size limit 12444246>=10485760
+[2023-05-09 17:57:39] INFO root fetch - main [MainThread]: End processing [gradio] error
+[2023-05-09 17:57:39] INFO root fetch - processPackages [unpast]: Downloading https://files.pythonhosted.org/packages/3e/d3/701ea17e1fb4f42ec94a350bf81fd0521f84eb6d2abbbdc4ed755e57a92b/unpast-0.1.1.tar.gz
+[2023-05-09 17:57:39] INFO root fetch - processPackages [gimera]: executing diffoscope
+[2023-05-09 17:57:39] INFO root fetch - processPackages [gimera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gimera-0.6.85.tar.gz tmp/gimera-0.6.9.tar.gz --markdown 20230509/g/gimera/0.6.85-0.6.9/diff.md --exclude *.pyd
+[2023-05-09 17:57:40] INFO root fetch - processPackages [pyproffit]: Downloading https://files.pythonhosted.org/packages/84/82/70d5aa0dffb04c3284f006c444e2a9285313072610ddff54dbea1e43ec6a/pyproffit-0.8.tar.gz
+[2023-05-09 17:57:40] INFO root fetch - processPackages [pyarinst]: Downloading https://files.pythonhosted.org/packages/f5/46/d5ec0e9ce4f0ea6690dc63e06635bdf44ae49866b195ae78b0d7b5bf164d/pyarinst-1.0.1.tar.gz
+[2023-05-09 17:57:40] INFO root fetch - processPackages [unpast]: Downloading https://files.pythonhosted.org/packages/9d/35/c6361b940dc953da389e18a3f05e0506207af63d8916f372f24702a4756c/unpast-0.1.2.tar.gz
+[2023-05-09 17:57:40] INFO root fetch - processPackages [pyproffit]: executing diffoscope
+[2023-05-09 17:57:40] INFO root fetch - processPackages [pyproffit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproffit-0.7.1.tar.gz tmp/pyproffit-0.8.tar.gz --markdown 20230509/p/pyproffit/0.7.1-0.8/diff.md --exclude *.pyd
+[2023-05-09 17:57:40] INFO root fetch - processPackages [pyarinst]: executing diffoscope
+[2023-05-09 17:57:40] INFO root fetch - processPackages [pyarinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarinst-1.0.0.tar.gz tmp/pyarinst-1.0.1.tar.gz --markdown 20230509/p/pyarinst/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 17:57:40] INFO root fetch - processPackages [unpast]: executing diffoscope
+[2023-05-09 17:57:40] INFO root fetch - processPackages [unpast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unpast-0.1.1.tar.gz tmp/unpast-0.1.2.tar.gz --markdown 20230509/u/unpast/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 17:57:40] INFO root fetch - main [MainThread]: End processing [gimera]: success
+[2023-05-09 17:57:40] INFO root fetch - main [MainThread]: End processing [gpt-review]: success
+[2023-05-09 17:57:41] INFO root fetch - main [MainThread]: End processing [pyarinst]: success
+[2023-05-09 17:57:41] INFO root fetch - main [MainThread]: End processing [pyproffit]: success
+[2023-05-09 17:57:41] INFO root fetch - processPackages [plotnine]: Downloading https://files.pythonhosted.org/packages/59/55/73deed34f0c58eafd563f95b0dfa990f0c4a4e05bb6b0ee781f4f722726d/plotnine-0.9.0.tar.gz
+[2023-05-09 17:57:41] INFO root fetch - main [MainThread]: End processing [unpast]: success
+[2023-05-09 17:57:43] INFO root fetch - processPackages [plotnine]: executing diffoscope
+[2023-05-09 17:57:43] INFO root fetch - processPackages [plotnine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotnine-0.8.0.tar.gz tmp/plotnine-0.9.0.tar.gz --markdown 20230509/p/plotnine/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 17:57:46] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-05-09 17:57:51] INFO root fetch - main [MainThread]: End processing [plotnine]: success
+[2023-05-09 17:57:51] INFO root fetch - main [MainThread]: Store serial: [18034351]
