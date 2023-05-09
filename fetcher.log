@@ -15248,3 +15248,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 13:31:54] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
 [2023-05-09 13:31:55] INFO root fetch - main [MainThread]: End processing [omniplate]: success
 [2023-05-09 13:31:55] INFO root fetch - main [MainThread]: Store serial: [18031285]
+[2023-05-09 13:37:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031285]
+[2023-05-09 13:37:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-09 13:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf
+[2023-05-09 13:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchx-nightly
+[2023-05-09 13:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rape-identification
+[2023-05-09 13:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: localstack-core
+[2023-05-09 13:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: testbench-cli-reporter
+[2023-05-09 13:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rape-identification
+[2023-05-09 13:37:06] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230509101333] Old Version: [2.0.3.dev20230509094015]
+[2023-05-09 13:37:06] INFO root fetch - processPackages [cdktf]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 13:37:06] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-09 13:37:06] INFO root fetch - processPackages [testbench-cli-reporter]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-09 13:37:06] INFO root fetch - processPackages [cdktf]: executing diffoscope
+[2023-05-09 13:37:06] INFO root fetch - processPackages [cdktf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-0.9.3.tar.gz tmp/cdktf-0.9.4.tar.gz --markdown 20230509/c/cdktf/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: Downloading https://files.pythonhosted.org/packages/26/d3/72af25ae0bdba64d380e4ab3b9f01752082346f94779de5adbc2bb8f73f7/rape_identification-0.1.7.tar.gz
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: Downloading https://files.pythonhosted.org/packages/26/d3/72af25ae0bdba64d380e4ab3b9f01752082346f94779de5adbc2bb8f73f7/rape_identification-0.1.7.tar.gz
+[2023-05-09 13:37:06] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/a3/aa/146b796ee6f1450e6ca111966fb3450b22f272971a970f8a57db1a0f92e0/localstack-core-2.0.3.dev20230509101333.tar.gz
+[2023-05-09 13:37:06] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/6d/b7/ed69c31a8036a3dc777d8b47929adf15a85a8936d0f2a3ac0d9beacefe86/torchx_nightly-2023.5.8-py3-none-any.whl
+[2023-05-09 13:37:06] INFO root fetch - processPackages [testbench-cli-reporter]: Downloading https://files.pythonhosted.org/packages/58/1a/24cf0957199f3e237c6d9adf043c47d89e604b542506c83b7f8797c68b1b/testbench-cli-reporter-1.2.1.tar.gz
+[2023-05-09 13:37:06] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-09 13:37:06] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230509094015.tar.gz tmp/localstack-core-2.0.3.dev20230509101333.tar.gz --markdown 20230509/l/localstack-core/2.0.3.dev20230509094015-2.0.3.dev20230509101333/diff.md --exclude *.pyd
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: Downloading https://files.pythonhosted.org/packages/73/7d/cb9bd2976917272adb6116837727ab795525e260a2ae619b9b4bddd46b72/rape_identification-0.1.8.tar.gz
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: Downloading https://files.pythonhosted.org/packages/73/7d/cb9bd2976917272adb6116837727ab795525e260a2ae619b9b4bddd46b72/rape_identification-0.1.8.tar.gz
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: executing diffoscope
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rape_identification-0.1.7.tar.gz tmp/rape_identification-0.1.8.tar.gz --markdown 20230509/r/rape-identification/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 13:37:06] INFO root fetch - processPackages [testbench-cli-reporter]: Downloading https://files.pythonhosted.org/packages/6d/1c/af7ae730fef804481e7b06bc9f649b4cfbd7d2cb33620b777fb62ae9d888/testbench-cli-reporter-1.2.2.tar.gz
+[2023-05-09 13:37:06] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/47/b3/6e7994c7dcbddb791c906a4b7e7510035fd4e41d79c97f47b34ba6fb41af/torchx_nightly-2023.5.9-py3-none-any.whl
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: executing diffoscope
+[2023-05-09 13:37:06] INFO root fetch - processPackages [rape-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rape_identification-0.1.7.tar.gz tmp/rape_identification-0.1.8.tar.gz --markdown 20230509/r/rape-identification/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 13:37:06] INFO root fetch - processPackages [testbench-cli-reporter]: executing diffoscope
+[2023-05-09 13:37:06] INFO root fetch - processPackages [testbench-cli-reporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testbench-cli-reporter-1.2.1.tar.gz tmp/testbench-cli-reporter-1.2.2.tar.gz --markdown 20230509/t/testbench-cli-reporter/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-09 13:37:06] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-09 13:37:06] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230509/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 13:37:07] INFO root fetch - main [MainThread]: End processing [rape-identification]: success
+[2023-05-09 13:37:07] INFO root fetch - main [MainThread]: End processing [rape-identification]: success
+[2023-05-09 13:37:08] INFO root fetch - main [MainThread]: End processing [testbench-cli-reporter]: success
+[2023-05-09 13:37:08] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-09 13:37:09] INFO root fetch - main [MainThread]: End processing [cdktf]: success
+[2023-05-09 13:37:15] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-09 13:37:15] INFO root fetch - main [MainThread]: Store serial: [18031307]
