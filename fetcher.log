@@ -8780,3 +8780,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 06:09:45] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
 [2023-05-09 06:09:45] INFO root fetch - main [MainThread]: End processing [qucumber]: success
 [2023-05-09 06:09:45] INFO root fetch - main [MainThread]: Store serial: [18027453]
+[2023-05-09 06:14:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027453]
+[2023-05-09 06:14:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-09 06:14:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymap
+[2023-05-09 06:14:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BTS-dji
+[2023-05-09 06:14:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autocar
+[2023-05-09 06:14:54] INFO root fetch - processPackages [BTS-dji]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-09 06:14:54] INFO root fetch - processPackages [autocar]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 06:14:54] INFO root fetch - processPackages [pymap]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-09 06:14:54] INFO root fetch - processPackages [autocar]: Downloading https://files.pythonhosted.org/packages/da/05/6ab98dbcf5a59f7fb7432e3487bccb36c7fffa5fc75ce74f0a771bcd87f6/autocar-0.1.8.tar.gz
+[2023-05-09 06:14:54] INFO root fetch - processPackages [BTS-dji]: Downloading https://files.pythonhosted.org/packages/bb/56/713e364941d059def9b64367f1be8f44eab7b6f25711417c5efc6666763e/BTS_dji-0.1.6.tar.gz
+[2023-05-09 06:14:54] INFO root fetch - processPackages [BTS-dji]: executing diffoscope
+[2023-05-09 06:14:54] INFO root fetch - processPackages [BTS-dji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTS_dji-0.1.5.tar.gz tmp/BTS_dji-0.1.6.tar.gz --markdown 20230509/B/BTS-dji/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-09 06:14:54] INFO root fetch - processPackages [pymap]: executing diffoscope
+[2023-05-09 06:14:54] INFO root fetch - processPackages [pymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap-0.9.6.tar.gz tmp/pymap-0.9.7.tar.gz --markdown 20230509/p/pymap/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-09 06:14:54] INFO root fetch - processPackages [autocar]: Downloading https://files.pythonhosted.org/packages/24/f8/ebfc72288a215f2fcaf2e6eb5e5c62a8961f10f5ac27ea29e6d3695cabc5/autocar-0.1.9.tar.gz
+[2023-05-09 06:14:54] INFO root fetch - processPackages [autocar]: executing diffoscope
+[2023-05-09 06:14:54] INFO root fetch - processPackages [autocar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autocar-0.1.8.tar.gz tmp/autocar-0.1.9.tar.gz --markdown 20230509/a/autocar/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 06:14:55] INFO root fetch - main [MainThread]: End processing [BTS-dji]: success
+[2023-05-09 06:14:55] INFO root fetch - main [MainThread]: End processing [autocar]: success
+[2023-05-09 06:14:56] INFO root fetch - main [MainThread]: End processing [pymap]: success
+[2023-05-09 06:14:56] INFO root fetch - main [MainThread]: Store serial: [18027462]
