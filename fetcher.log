@@ -8229,3 +8229,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 
 [2023-05-09 05:30:06] INFO root fetch - main [MainThread]: End processing [tatarubot2] error
 [2023-05-09 05:30:06] INFO root fetch - main [MainThread]: Store serial: [18027197]
+[2023-05-09 05:35:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027197]
+[2023-05-09 05:35:16] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: intecomm-form-validators
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cuke
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: intecomm-edc
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-bunny
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: garastem
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ops-channel
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yohsin3d
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lspsp
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aliyun-python-sdk-imm
+[2023-05-09 05:35:16] INFO root fetch - processPackages [garastem]: New version: [0.1683603186.0] Old Version: [0.1679471384.0]
+[2023-05-09 05:35:16] INFO root fetch - processPackages [intecomm-edc]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 05:35:16] INFO root fetch - processPackages [intecomm-form-validators]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 05:35:16] INFO root fetch - processPackages [cuke]: New version: [0.1.1] Old Version: [0.0.1]
+[2023-05-09 05:35:16] INFO root fetch - processPackages [django-bunny]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-09 05:35:16] INFO root fetch - processPackages [aliyun-python-sdk-imm]: New version: [2.1.14] Old Version: [2.1.13]
+[2023-05-09 05:35:16] INFO root fetch - processPackages [lspsp]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 05:35:16] INFO root fetch - processPackages [yohsin3d]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ops-channel]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-05-09 05:35:16] INFO root fetch - processPackages [cuke]: Downloading https://files.pythonhosted.org/packages/ff/b7/f810bb9453665b0ec44d58429872fdf6731a165a014925c769befb593770/Cuke-0.0.1.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [garastem]: Downloading https://files.pythonhosted.org/packages/a2/81/d1803c84b5328921b9f0f80a6a4a2ed60edbfb7b5aa872db3b7a84c95bd6/garastem-0.1679471384.0.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [django-bunny]: Downloading https://files.pythonhosted.org/packages/32/8b/76e5444aca6b3a34c6779be0475f1b267465340eb6da6826c77d888c3c5c/django-bunny-1.0.3.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ops-channel]: Downloading https://files.pythonhosted.org/packages/0c/c5/5e3cb125515fa207463271423a53276732b54fff9388eea8a8989cc37899/ops_channel-0.5.5.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [aliyun-python-sdk-imm]: Downloading https://files.pythonhosted.org/packages/1f/22/ba17c6798d75c04f62e590d53658f9497cc46657ae86ac5a184ac0a1ccc0/aliyun-python-sdk-imm-2.1.13.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [yohsin3d]: Downloading https://files.pythonhosted.org/packages/2b/97/f30b36a64d0fb136267e615a7bce58a82f1298bd23c628d543ee3998a9d2/yohsin3d-0.4.3.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 05:35:16] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.2.tar.gz tmp/django-bunny-1.0.3.tar.gz --markdown 20230509/d/django-bunny/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-09 05:35:16] INFO root fetch - processPackages [yohsin3d]: executing diffoscope
+[2023-05-09 05:35:16] INFO root fetch - processPackages [yohsin3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yohsin3d-0.4.2.tar.gz tmp/yohsin3d-0.4.3.tar.gz --markdown 20230509/y/yohsin3d/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-09 05:35:16] INFO root fetch - processPackages [lspsp]: Downloading https://files.pythonhosted.org/packages/49/51/6f5c520aa459522d7cc476208996e80bb63d82fea2c43a683ad98021f0c8/lspsp-1.0.2.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [garastem]: Downloading https://files.pythonhosted.org/packages/d7/ec/b2e3210d52e546cb10c0bb41861e38faec242a2c0e8a5248a60331ba949c/garastem-0.1683603186.0.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [intecomm-form-validators]: executing diffoscope
+[2023-05-09 05:35:16] INFO root fetch - processPackages [intecomm-form-validators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intecomm-form-validators-0.1.8.tar.gz tmp/intecomm-form-validators-0.1.9.tar.gz --markdown 20230509/i/intecomm-form-validators/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 05:35:16] INFO root fetch - processPackages [intecomm-edc]: executing diffoscope
+[2023-05-09 05:35:16] INFO root fetch - processPackages [intecomm-edc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intecomm-edc-0.1.8.tar.gz tmp/intecomm-edc-0.1.9.tar.gz --markdown 20230509/i/intecomm-edc/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 05:35:16] INFO root fetch - processPackages [cuke]: Downloading https://files.pythonhosted.org/packages/78/c5/1a7a9c03d2ebba378f2c3870f8dd08b6ec723057257093f8a1c33aa2a5a8/cuke-0.1.1.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ops-channel]: Downloading https://files.pythonhosted.org/packages/7c/f3/09a220276b5847426efbad64093c056db9bb15af60bc9b2c7ea927f8e08a/ops_channel-0.5.6.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [aliyun-python-sdk-imm]: Downloading https://files.pythonhosted.org/packages/f1/06/42693256bc1309b1f5c76eca8b58aaea29ef337547180f8eb3f75d0bd1fa/aliyun-python-sdk-imm-2.1.14.tar.gz
+[2023-05-09 05:35:16] INFO root fetch - processPackages [cuke]: executing diffoscope
+[2023-05-09 05:35:16] INFO root fetch - processPackages [cuke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Cuke-0.0.1.tar.gz tmp/cuke-0.1.1.tar.gz --markdown 20230509/c/cuke/0.0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 05:35:16] INFO root fetch - processPackages [lspsp]: executing diffoscope
+[2023-05-09 05:35:16] INFO root fetch - processPackages [lspsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lspsp-1.0.1.tar.gz tmp/lspsp-1.0.2.tar.gz --markdown 20230509/l/lspsp/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 05:35:16] INFO root fetch - processPackages [garastem]: executing diffoscope
+[2023-05-09 05:35:16] INFO root fetch - processPackages [garastem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garastem-0.1679471384.0.tar.gz tmp/garastem-0.1683603186.0.tar.gz --markdown 20230509/g/garastem/0.1679471384.0-0.1683603186.0/diff.md --exclude *.pyd
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ops-channel]: executing diffoscope
+[2023-05-09 05:35:16] INFO root fetch - processPackages [ops-channel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ops_channel-0.5.5.tar.gz tmp/ops_channel-0.5.6.tar.gz --markdown 20230509/o/ops-channel/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-05-09 05:35:16] INFO root fetch - processPackages [aliyun-python-sdk-imm]: executing diffoscope
+[2023-05-09 05:35:16] INFO root fetch - processPackages [aliyun-python-sdk-imm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-imm-2.1.13.tar.gz tmp/aliyun-python-sdk-imm-2.1.14.tar.gz --markdown 20230509/a/aliyun-python-sdk-imm/2.1.13-2.1.14/diff.md --exclude *.pyd
+[2023-05-09 05:35:17] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 05:35:17] INFO root fetch - main [MainThread]: End processing [cuke]: success
+[2023-05-09 05:35:18] INFO root fetch - main [MainThread]: End processing [lspsp]: success
+[2023-05-09 05:35:18] INFO root fetch - main [MainThread]: End processing [garastem]: success
+[2023-05-09 05:35:18] INFO root fetch - main [MainThread]: End processing [intecomm-form-validators]: success
+[2023-05-09 05:35:18] INFO root fetch - main [MainThread]: End processing [ops-channel]: success
+[2023-05-09 05:35:18] INFO root fetch - main [MainThread]: End processing [yohsin3d]: success
+[2023-05-09 05:35:19] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-imm]: success
+[2023-05-09 05:35:21] INFO root fetch - main [MainThread]: End processing [intecomm-edc]: success
+[2023-05-09 05:35:21] INFO root fetch - main [MainThread]: Store serial: [18027224]
