@@ -13854,3 +13854,104 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 11:57:11] INFO root fetch - main [MainThread]: End processing [PyGithub]: success
 [2023-05-09 11:57:11] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor]: success
 [2023-05-09 11:57:11] INFO root fetch - main [MainThread]: Store serial: [18030397]
+[2023-05-09 12:02:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18030397]
+[2023-05-09 12:02:20] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-09 12:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyalgotrading
+[2023-05-09 12:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bmw-lobster-core
+[2023-05-09 12:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bmw-lobster
+[2023-05-09 12:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bmw-lobster-tool-codebeamer
+[2023-05-09 12:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bmw-lobster-tool-cpp
+[2023-05-09 12:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bmw-lobster-tool-gtest
+[2023-05-09 12:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bmw-lobster-tool-json
+[2023-05-09 12:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bmw-lobster-tool-python
+[2023-05-09 12:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bmw-lobster-tool-trlc
+[2023-05-09 12:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tcflow
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-codebeamer]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-cpp]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-09 12:02:21] WARNING root fetch - processPackages [bmw-lobster-tool-json]: Skipping, unable to determine old version
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-json]: Start processing: emgregs
+[2023-05-09 12:02:21] INFO root fetch - main [MainThread]: End processing [bmw-lobster-tool-json] error
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-gtest]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-09 12:02:21] INFO root fetch - processPackages [tcflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 12:02:21] WARNING root fetch - processPackages [bmw-lobster-tool-trlc]: Skipping, unable to determine old version
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-trlc]: Start processing: odoo14-addon-web-widget-datepicker-fulloptions
+[2023-05-09 12:02:21] INFO root fetch - main [MainThread]: End processing [bmw-lobster-tool-trlc] error
+[2023-05-09 12:02:21] INFO root fetch - processPackages [emgregs]: New version: [0.0.5] Old Version: [0.0.4.dev0]
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-core]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-09 12:02:21] INFO root fetch - processPackages [pyalgotrading]: New version: [2023.5.4] Old Version: [2023.5.3]
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-python]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-09 12:02:21] INFO root fetch - processPackages [tcflow]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [tcflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcflow-0.0.8.tar.gz tmp/tcflow-0.0.9.tar.gz --markdown 20230509/t/tcflow/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-codebeamer]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-codebeamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmw-lobster-tool-codebeamer-0.9.1.tar.gz tmp/bmw-lobster-tool-codebeamer-0.9.2.tar.gz --markdown 20230509/b/bmw-lobster-tool-codebeamer/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-09 12:02:21] WARNING root fetch - processPackages [odoo14-addon-web-widget-datepicker-fulloptions]: Skipping, unable to determine old version
+[2023-05-09 12:02:21] INFO root fetch - processPackages [odoo14-addon-web-widget-datepicker-fulloptions]: Start processing: drf-pydantic-openapi
+[2023-05-09 12:02:21] INFO root fetch - main [MainThread]: End processing [odoo14-addon-web-widget-datepicker-fulloptions] error
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-gtest]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-gtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmw-lobster-tool-gtest-0.9.1.tar.gz tmp/bmw-lobster-tool-gtest-0.9.2.tar.gz --markdown 20230509/b/bmw-lobster-tool-gtest/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-09 12:02:21] INFO root fetch - processPackages [emgregs]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [emgregs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emgregs-0.0.4.dev0.tar.gz tmp/emgregs-0.0.5.tar.gz --markdown 20230509/e/emgregs/0.0.4.dev0-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmw-lobster-0.9.1.tar.gz tmp/bmw-lobster-0.9.2.tar.gz --markdown 20230509/b/bmw-lobster/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-09 12:02:21] WARNING root fetch - processPackages [drf-pydantic-openapi]: Skipping, unable to determine old version
+[2023-05-09 12:02:21] INFO root fetch - processPackages [drf-pydantic-openapi]: Start processing: lib310-lite
+[2023-05-09 12:02:21] INFO root fetch - main [MainThread]: End processing [drf-pydantic-openapi] error
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-cpp]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-cpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmw-lobster-tool-cpp-0.9.1.tar.gz tmp/bmw-lobster-tool-cpp-0.9.2.tar.gz --markdown 20230509/b/bmw-lobster-tool-cpp/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-09 12:02:21] INFO root fetch - processPackages [lib310-lite]: New version: [0.0.5.dev8] Old Version: [0.0.5.dev7]
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-core]: Downloading https://files.pythonhosted.org/packages/40/37/ece585d323a98407d25eeac68bce678a964cf31753f69c7099381f5733d5/bmw-lobster-core-0.9.3.tar.gz
+[2023-05-09 12:02:21] INFO root fetch - processPackages [pyalgotrading]: Downloading https://files.pythonhosted.org/packages/39/95/213cd708c6a8fc166bbf4c27c48a2eb93fef79ba99cfa88e45738e31d823/pyalgotrading-2023.5.3-py3-none-any.whl
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-core]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmw-lobster-core-0.9.2.tar.gz tmp/bmw-lobster-core-0.9.3.tar.gz --markdown 20230509/b/bmw-lobster-core/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-09 12:02:21] INFO root fetch - processPackages [lib310-lite]: Downloading https://files.pythonhosted.org/packages/6b/56/a680e052b32c6e1eb1cd0c486ded6260ab4c9b3982fcbdebc0278b58da95/lib310_lite-0.0.5.dev8.tar.gz
+[2023-05-09 12:02:21] INFO root fetch - processPackages [pyalgotrading]: Downloading https://files.pythonhosted.org/packages/4b/2b/e800c284287be2815db24467799f018c80ebd6eb1ab2e6b76302b7f250f4/pyalgotrading-2023.5.4-py3-none-any.whl
+[2023-05-09 12:02:21] INFO root fetch - processPackages [lib310-lite]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [lib310-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib310_lite-0.0.5.dev7.tar.gz tmp/lib310_lite-0.0.5.dev8.tar.gz --markdown 20230509/l/lib310-lite/0.0.5.dev7-0.0.5.dev8/diff.md --exclude *.pyd
+[2023-05-09 12:02:21] INFO root fetch - processPackages [pyalgotrading]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [pyalgotrading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyalgotrading-2023.5.3-py3-none-any.whl.zip tmp/pyalgotrading-2023.5.4-py3-none-any.whl.zip --markdown 20230509/p/pyalgotrading/2023.5.3-2023.5.4/diff.md --exclude *.pyd
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-python]: Downloading https://files.pythonhosted.org/packages/b2/83/8d335ded58ee080d46c633b75d3fb710b7df84cc5450a9f5dcaa39aadb52/bmw-lobster-tool-python-0.9.3.tar.gz
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-python]: executing diffoscope
+[2023-05-09 12:02:21] INFO root fetch - processPackages [bmw-lobster-tool-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmw-lobster-tool-python-0.9.2.tar.gz tmp/bmw-lobster-tool-python-0.9.3.tar.gz --markdown 20230509/b/bmw-lobster-tool-python/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-09 12:02:22] INFO root fetch - processPackages [bmw-lobster-tool-gtest]: Start processing: x-decorator
+[2023-05-09 12:02:22] INFO root fetch - processPackages [bmw-lobster-tool-codebeamer]: Start processing: lexikos
+[2023-05-09 12:02:22] INFO root fetch - main [MainThread]: End processing [bmw-lobster-tool-gtest]: success
+[2023-05-09 12:02:22] INFO root fetch - main [MainThread]: End processing [bmw-lobster-tool-codebeamer]: success
+[2023-05-09 12:02:22] WARNING root fetch - processPackages [x-decorator]: Skipping, unable to determine old version
+[2023-05-09 12:02:22] INFO root fetch - processPackages [x-decorator]: Start processing: gcsaws
+[2023-05-09 12:02:22] INFO root fetch - main [MainThread]: End processing [x-decorator] error
+[2023-05-09 12:02:22] INFO root fetch - processPackages [lexikos]: New version: [0.0.1rc1] Old Version: [0.0.1rc0]
+[2023-05-09 12:02:22] INFO root fetch - processPackages [gcsaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 12:02:23] INFO root fetch - processPackages [bmw-lobster]: Start processing: westat
+[2023-05-09 12:02:23] INFO root fetch - main [MainThread]: End processing [bmw-lobster]: success
+[2023-05-09 12:02:23] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-09 12:02:23] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.8.tar.gz tmp/gcsaws-0.0.9.tar.gz --markdown 20230509/g/gcsaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 12:02:23] INFO root fetch - processPackages [tcflow]: Start processing: buteo
+[2023-05-09 12:02:23] INFO root fetch - main [MainThread]: End processing [tcflow]: success
+[2023-05-09 12:02:23] INFO root fetch - processPackages [buteo]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-05-09 12:02:23] INFO root fetch - processPackages [emgregs]: Start processing: djungle-rulesengine-client
+[2023-05-09 12:02:23] INFO root fetch - main [MainThread]: End processing [emgregs]: success
+[2023-05-09 12:02:23] INFO root fetch - processPackages [lexikos]: Downloading https://files.pythonhosted.org/packages/01/9e/3c8d01e73a1e35914851bcb7adecbfca04a13302e80d95724873f44e3b31/lexikos-0.0.1rc0.tar.gz
+[2023-05-09 12:02:23] WARNING root fetch - processPackages [djungle-rulesengine-client]: Skipping, unable to determine old version
+[2023-05-09 12:02:23] INFO root fetch - main [MainThread]: End processing [djungle-rulesengine-client] error
+[2023-05-09 12:02:23] INFO root fetch - processPackages [westat]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 12:02:23] INFO root fetch - main [MainThread]: End processing [bmw-lobster-tool-cpp]: success
+[2023-05-09 12:02:23] INFO root fetch - processPackages [buteo]: executing diffoscope
+[2023-05-09 12:02:23] INFO root fetch - processPackages [buteo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buteo-0.8.9.tar.gz tmp/buteo-0.9.0.tar.gz --markdown 20230509/b/buteo/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 12:02:23] INFO root fetch - main [MainThread]: End processing [lib310-lite]: success
+[2023-05-09 12:02:23] INFO root fetch - processPackages [westat]: Downloading https://files.pythonhosted.org/packages/1b/c1/e5ec77ac37a7132d64d4fdef5fcd8ddcb492653509c5fc5e56667fa29e05/westat-0.1.8.tar.gz
+[2023-05-09 12:02:23] INFO root fetch - main [MainThread]: End processing [bmw-lobster-tool-python]: success
+[2023-05-09 12:02:23] INFO root fetch - main [MainThread]: End processing [pyalgotrading]: success
+[2023-05-09 12:02:23] INFO root fetch - main [MainThread]: End processing [bmw-lobster-core]: success
+[2023-05-09 12:02:23] INFO root fetch - processPackages [lexikos]: Downloading https://files.pythonhosted.org/packages/13/05/c4415275caf99630f08ff79c53f24d5026ec706ed86df49defd83a9f6605/lexikos-0.0.1rc1.tar.gz
+[2023-05-09 12:02:23] INFO root fetch - processPackages [lexikos]: executing diffoscope
+[2023-05-09 12:02:23] INFO root fetch - processPackages [lexikos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lexikos-0.0.1rc0.tar.gz tmp/lexikos-0.0.1rc1.tar.gz --markdown 20230509/l/lexikos/0.0.1rc0-0.0.1rc1/diff.md --exclude *.pyd
+[2023-05-09 12:02:24] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-09 12:02:24] INFO root fetch - main [MainThread]: End processing [buteo]: success
+[2023-05-09 12:02:25] INFO root fetch - processPackages [westat]: Downloading https://files.pythonhosted.org/packages/4a/4d/b6ef220a906ddeda6cfa07a012ae2137848ef821a44dfb29a746d68e6aae/westat-0.1.9.tar.gz
+[2023-05-09 12:02:26] INFO root fetch - main [MainThread]: End processing [lexikos]: success
+[2023-05-09 12:02:26] INFO root fetch - processPackages [westat]: executing diffoscope
+[2023-05-09 12:02:26] INFO root fetch - processPackages [westat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/westat-0.1.8.tar.gz tmp/westat-0.1.9.tar.gz --markdown 20230509/w/westat/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 12:05:26] ERROR root fetch - processPackages [westat]: Timeout during execution of pkgdiff
+[2023-05-09 12:05:26] INFO root fetch - main [MainThread]: End processing [westat] error
+[2023-05-09 12:05:26] INFO root fetch - main [MainThread]: Store serial: [18030464]
