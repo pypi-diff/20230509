@@ -11430,3 +11430,71 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 09:30:58] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
 [2023-05-09 09:31:06] INFO root fetch - main [MainThread]: End processing [shared-atomic-enterprise]: success
 [2023-05-09 09:31:06] INFO root fetch - main [MainThread]: Store serial: [18028914]
+[2023-05-09 09:36:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028914]
+[2023-05-09 09:36:15] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyNyaaTa
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CNNtech-News
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: teemi
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ccdt
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tinybird-cli
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-yuvalbd-non-empty-list-soundness
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: garaprod
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: garaprod
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: garaprod
+[2023-05-09 09:36:15] INFO root fetch - processPackages [CNNtech-News]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 09:36:15] INFO root fetch - processPackages [PyNyaaTa]: New version: [202305090731] Old Version: [202305050938]
+[2023-05-09 09:36:15] WARNING root fetch - processPackages [certora-cli-alpha-yuvalbd-non-empty-list-soundness]: Skipping, unable to determine old version
+[2023-05-09 09:36:15] INFO root fetch - processPackages [certora-cli-alpha-yuvalbd-non-empty-list-soundness]: Start processing: lalsuite
+[2023-05-09 09:36:15] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-yuvalbd-non-empty-list-soundness] error
+[2023-05-09 09:36:15] INFO root fetch - processPackages [garaprod]: New version: [0.1683617637.0] Old Version: [0.1683617603.0]
+[2023-05-09 09:36:15] INFO root fetch - processPackages [teemi]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 09:36:15] INFO root fetch - processPackages [garaprod]: New version: [0.1683617637.0] Old Version: [0.1683617603.0]
+[2023-05-09 09:36:15] INFO root fetch - processPackages [garaprod]: New version: [0.1683617637.0] Old Version: [0.1683617603.0]
+[2023-05-09 09:36:15] INFO root fetch - processPackages [ccdt]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-05-09 09:36:15] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-09 09:36:15] INFO root fetch - processPackages [tinybird-cli]: New version: [1.0.0b99] Old Version: [1.0.0b98]
+[2023-05-09 09:36:15] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-09 09:36:15] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-09 09:36:15] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/20/71/d9a772842f09732dc7ff58c71e3fb55931e4724fc7112902e5daa25a848a/garaprod-0.1683617603.0.tar.gz
+[2023-05-09 09:36:15] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/20/71/d9a772842f09732dc7ff58c71e3fb55931e4724fc7112902e5daa25a848a/garaprod-0.1683617603.0.tar.gz
+[2023-05-09 09:36:15] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/20/71/d9a772842f09732dc7ff58c71e3fb55931e4724fc7112902e5daa25a848a/garaprod-0.1683617603.0.tar.gz
+[2023-05-09 09:36:15] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-05-09 09:36:15] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 09:36:15] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-09 09:36:15] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-09 09:36:15] INFO root fetch - processPackages [PyNyaaTa]: Downloading https://files.pythonhosted.org/packages/58/78/0609ecff4f0c3c56b1631da7bd5ae638514c4bc16979f1d54020105bda0d/PyNyaaTa-202305050938.tar.gz
+[2023-05-09 09:36:15] INFO root fetch - processPackages [teemi]: Downloading https://files.pythonhosted.org/packages/7a/a1/df7b43b82465d8c1da921affab950907a5a7fd3f2db8d0272d6d6de93d19/teemi-0.1.3.tar.gz
+[2023-05-09 09:36:15] INFO root fetch - processPackages [CNNtech-News]: Downloading https://files.pythonhosted.org/packages/56/c1/6e97039eccd9dd4feef362b839b51c03c526e62d45de9ed92f609d2b6dfb/CNNtech_News-0.1.2.tar.gz
+[2023-05-09 09:36:16] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/be/67/147d273a5dbd941d12098660120395ff29f6a6c4aa02a1990ade4366112a/ccdt-2.0.8.tar.gz
+[2023-05-09 09:36:16] INFO root fetch - processPackages [tinybird-cli]: executing diffoscope
+[2023-05-09 09:36:16] INFO root fetch - processPackages [tinybird-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cli-1.0.0b98.tar.gz tmp/tinybird-cli-1.0.0b99.tar.gz --markdown 20230509/t/tinybird-cli/1.0.0b98-1.0.0b99/diff.md --exclude *.pyd
+[2023-05-09 09:36:16] INFO root fetch - processPackages [CNNtech-News]: executing diffoscope
+[2023-05-09 09:36:16] INFO root fetch - processPackages [CNNtech-News]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CNNtech_News-0.1.1.tar.gz tmp/CNNtech_News-0.1.2.tar.gz --markdown 20230509/C/CNNtech-News/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 09:36:16] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2023-05-09 09:36:16] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-2.0.7.tar.gz tmp/ccdt-2.0.8.tar.gz --markdown 20230509/c/ccdt/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2023-05-09 09:36:16] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/bf/40/ea31857e3314631e83137af04dc6665c39a04840cd5217de09227516d0e9/garaprod-0.1683617637.0.tar.gz
+[2023-05-09 09:36:16] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/bf/40/ea31857e3314631e83137af04dc6665c39a04840cd5217de09227516d0e9/garaprod-0.1683617637.0.tar.gz
+[2023-05-09 09:36:16] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/bf/40/ea31857e3314631e83137af04dc6665c39a04840cd5217de09227516d0e9/garaprod-0.1683617637.0.tar.gz
+[2023-05-09 09:36:16] INFO root fetch - processPackages [PyNyaaTa]: Downloading https://files.pythonhosted.org/packages/c7/e1/712ac4ed25ad141a050764f9f00d86f8a7fe7ffecb6e2a43e24433513701/PyNyaaTa-202305090731.tar.gz
+[2023-05-09 09:36:16] INFO root fetch - processPackages [teemi]: Downloading https://files.pythonhosted.org/packages/b5/d1/202085a51bd85ebd2ff684b090102f3fd2439dc1f3a99be759bbf21789f9/teemi-0.1.4.tar.gz
+[2023-05-09 09:36:16] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 09:36:16] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683617603.0.tar.gz tmp/garaprod-0.1683617637.0.tar.gz --markdown 20230509/g/garaprod/0.1683617603.0-0.1683617637.0/diff.md --exclude *.pyd
+[2023-05-09 09:36:16] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 09:36:16] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683617603.0.tar.gz tmp/garaprod-0.1683617637.0.tar.gz --markdown 20230509/g/garaprod/0.1683617603.0-0.1683617637.0/diff.md --exclude *.pyd
+[2023-05-09 09:36:16] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 09:36:16] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683617603.0.tar.gz tmp/garaprod-0.1683617637.0.tar.gz --markdown 20230509/g/garaprod/0.1683617603.0-0.1683617637.0/diff.md --exclude *.pyd
+[2023-05-09 09:36:16] INFO root fetch - processPackages [teemi]: executing diffoscope
+[2023-05-09 09:36:16] INFO root fetch - processPackages [teemi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teemi-0.1.3.tar.gz tmp/teemi-0.1.4.tar.gz --markdown 20230509/t/teemi/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 09:36:16] INFO root fetch - processPackages [PyNyaaTa]: executing diffoscope
+[2023-05-09 09:36:16] INFO root fetch - processPackages [PyNyaaTa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyNyaaTa-202305050938.tar.gz tmp/PyNyaaTa-202305090731.tar.gz --markdown 20230509/P/PyNyaaTa/202305050938-202305090731/diff.md --exclude *.pyd
+[2023-05-09 09:36:17] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-05-09 09:36:17] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2023-05-09 09:36:17] INFO root fetch - main [MainThread]: End processing [CNNtech-News]: success
+[2023-05-09 09:36:17] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 09:36:17] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 09:36:17] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 09:36:18] INFO root fetch - main [MainThread]: End processing [tinybird-cli]: success
+[2023-05-09 09:36:18] INFO root fetch - main [MainThread]: End processing [teemi]: success
+[2023-05-09 09:36:19] INFO root fetch - main [MainThread]: End processing [PyNyaaTa]: success
+[2023-05-09 09:36:19] INFO root fetch - main [MainThread]: Store serial: [18028950]
