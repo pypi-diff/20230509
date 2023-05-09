@@ -12613,3 +12613,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 10:47:02] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-05-09 10:47:41] INFO root fetch - main [MainThread]: End processing [mera-tvm-runtime]: success
 [2023-05-09 10:47:41] INFO root fetch - main [MainThread]: Store serial: [18029612]
+[2023-05-09 10:52:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029612]
+[2023-05-09 10:52:55] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-09 10:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-gilad-CERT-1843-keep-canon-symbol-prefixes
+[2023-05-09 10:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stlog
+[2023-05-09 10:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: steamship
+[2023-05-09 10:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-l10n-es-ticketbai-pos
+[2023-05-09 10:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytheriak
+[2023-05-09 10:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Harshit-utils
+[2023-05-09 10:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: code-loader
+[2023-05-09 10:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: surquest-fastapi-utils
+[2023-05-09 10:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mkdocs-exporter
+[2023-05-09 10:52:55] WARNING root fetch - processPackages [certora-cli-alpha-gilad-CERT-1843-keep-canon-symbol-prefixes]: Skipping, unable to determine old version
+[2023-05-09 10:52:55] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-gilad-CERT-1843-keep-canon-symbol-prefixes] error
+[2023-05-09 10:52:55] INFO root fetch - processPackages [steamship]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-09 10:52:55] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 10:52:55] WARNING root fetch - processPackages [Harshit-utils]: Skipping, unable to determine old version
+[2023-05-09 10:52:55] INFO root fetch - main [MainThread]: End processing [Harshit-utils] error
+[2023-05-09 10:52:55] INFO root fetch - processPackages [stlog]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 10:52:55] INFO root fetch - processPackages [steamship]: Downloading https://files.pythonhosted.org/packages/d5/9d/2e877493befc03aade673fa8cbf159f77955b8658f16d4b0e16ad0ab106f/steamship-2.3.8.tar.gz
+[2023-05-09 10:52:55] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-09 10:52:55] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230509/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 10:52:55] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-pos]: New version: [14.0.1.1.1] Old Version: [14.0.1.1.0]
+[2023-05-09 10:52:55] INFO root fetch - processPackages [surquest-fastapi-utils]: New version: [0.2.2rc1] Old Version: [0.2.1]
+[2023-05-09 10:52:55] INFO root fetch - processPackages [pytheriak]: New version: [0.0.9] Old Version: [0.0.19]
+[2023-05-09 10:52:55] INFO root fetch - processPackages [mkdocs-exporter]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 10:52:55] INFO root fetch - processPackages [pytheriak]: Downloading https://files.pythonhosted.org/packages/19/1a/86ef7fd9f904970c9310f0d1af2147866be10b8c68b8c4f6138cebfd0227/pytheriak-0.0.19.tar.gz
+[2023-05-09 10:52:55] INFO root fetch - processPackages [surquest-fastapi-utils]: Downloading https://files.pythonhosted.org/packages/22/c2/d5a6ec52c68c4fc5553f868c5f0bc69b6ab1e95d9763251b0163589265ab/surquest_fastapi_utils-0.2.1.tar.gz
+[2023-05-09 10:52:55] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-pos]: Downloading https://files.pythonhosted.org/packages/d1/2e/70300ee686af0ce0bb165c9694090a0775b50be1ebb4331250df0d0906b9/odoo14_addon_l10n_es_ticketbai_pos-14.0.1.1.0-py3-none-any.whl
+[2023-05-09 10:52:55] INFO root fetch - processPackages [stlog]: Downloading https://files.pythonhosted.org/packages/b4/81/908380511979d80fde18415b2cd7b2af5e14cd7da216681684186f5f94cf/stlog-0.1.2.tar.gz
+[2023-05-09 10:52:55] INFO root fetch - processPackages [mkdocs-exporter]: Downloading https://files.pythonhosted.org/packages/59/f8/f99d53a05c064839ef1d7a0c576ca8b92dc4f10c078a4c23b67d4928c336/mkdocs_exporter-1.0.1.tar.gz
+[2023-05-09 10:52:55] INFO root fetch - processPackages [stlog]: executing diffoscope
+[2023-05-09 10:52:55] INFO root fetch - processPackages [stlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stlog-0.1.1.tar.gz tmp/stlog-0.1.2.tar.gz --markdown 20230509/s/stlog/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 10:52:55] INFO root fetch - processPackages [steamship]: Downloading https://files.pythonhosted.org/packages/8a/2c/45284b04a7bcb421510b1bbb2e3f826c87946551d954eb3a3cd6b481fe09/steamship-2.3.9.tar.gz
+[2023-05-09 10:52:55] INFO root fetch - processPackages [surquest-fastapi-utils]: Downloading https://files.pythonhosted.org/packages/c0/06/befb8f33cf49776e43b7d821f9ca17c6b6cf331029bbb12a68284e2f77f1/surquest_fastapi_utils-0.2.2rc1.tar.gz
+[2023-05-09 10:52:55] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-pos]: Downloading https://files.pythonhosted.org/packages/57/31/11ec345b1ce7da6b9a200e3c66bf588229a08a938170c6a3a304fb3fe676/odoo14_addon_l10n_es_ticketbai_pos-14.0.1.1.1-py3-none-any.whl
+[2023-05-09 10:52:55] INFO root fetch - processPackages [pytheriak]: Downloading https://files.pythonhosted.org/packages/04/7d/742a7d6de0d9b85470bcfac0aa877ff8d15d9f3019a24fb8852ff8f94ce6/pytheriak-0.0.9.tar.gz
+[2023-05-09 10:52:55] INFO root fetch - processPackages [steamship]: executing diffoscope
+[2023-05-09 10:52:55] INFO root fetch - processPackages [steamship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steamship-2.3.8.tar.gz tmp/steamship-2.3.9.tar.gz --markdown 20230509/s/steamship/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-09 10:52:55] INFO root fetch - processPackages [surquest-fastapi-utils]: executing diffoscope
+[2023-05-09 10:52:55] INFO root fetch - processPackages [surquest-fastapi-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surquest_fastapi_utils-0.2.1.tar.gz tmp/surquest_fastapi_utils-0.2.2rc1.tar.gz --markdown 20230509/s/surquest-fastapi-utils/0.2.1-0.2.2rc1/diff.md --exclude *.pyd
+[2023-05-09 10:52:55] INFO root fetch - processPackages [pytheriak]: executing diffoscope
+[2023-05-09 10:52:55] INFO root fetch - processPackages [pytheriak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytheriak-0.0.19.tar.gz tmp/pytheriak-0.0.9.tar.gz --markdown 20230509/p/pytheriak/0.0.19-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 10:52:55] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-pos]: executing diffoscope
+[2023-05-09 10:52:55] INFO root fetch - processPackages [odoo14-addon-l10n-es-ticketbai-pos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_es_ticketbai_pos-14.0.1.1.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_es_ticketbai_pos-14.0.1.1.1-py3-none-any.whl.zip --markdown 20230509/o/odoo14-addon-l10n-es-ticketbai-pos/14.0.1.1.0-14.0.1.1.1/diff.md --exclude *.pyd
+[2023-05-09 10:52:55] INFO root fetch - processPackages [mkdocs-exporter]: Downloading https://files.pythonhosted.org/packages/dd/11/60a4ec4dc3051b219505420125e54874c88f92bb850fc66747c7cce4650f/mkdocs_exporter-1.0.2.tar.gz
+[2023-05-09 10:52:56] INFO root fetch - processPackages [mkdocs-exporter]: executing diffoscope
+[2023-05-09 10:52:56] INFO root fetch - processPackages [mkdocs-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_exporter-1.0.1.tar.gz tmp/mkdocs_exporter-1.0.2.tar.gz --markdown 20230509/m/mkdocs-exporter/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 10:52:56] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-09 10:52:57] INFO root fetch - main [MainThread]: End processing [stlog]: success
+[2023-05-09 10:52:57] INFO root fetch - main [MainThread]: End processing [pytheriak]: success
+[2023-05-09 10:52:57] INFO root fetch - main [MainThread]: End processing [mkdocs-exporter]: success
+[2023-05-09 10:52:58] INFO root fetch - main [MainThread]: End processing [surquest-fastapi-utils]: success
+[2023-05-09 10:52:59] INFO root fetch - main [MainThread]: End processing [steamship]: success
+[2023-05-09 10:53:06] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-es-ticketbai-pos]: success
+[2023-05-09 10:53:06] INFO root fetch - main [MainThread]: Store serial: [18029692]
