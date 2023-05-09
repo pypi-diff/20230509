@@ -2504,3 +2504,61 @@
 [2023-05-09 03:00:29] INFO root fetch - main [MainThread]: End processing [isthmuslib]: success
 [2023-05-09 03:00:46] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-05-09 03:00:46] INFO root fetch - main [MainThread]: Store serial: [18024458]
+[2023-05-09 03:05:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18024458]
+[2023-05-09 03:05:55] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-curl
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipfskvs
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oganesson
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onvif-gui
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pynecone
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xcpcio-board-spider
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cpggen
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mkdocs-ultralytics-plugin
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: spaceone-notification
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: terminut
+[2023-05-09 03:05:55] INFO root fetch - processPackages [ipfskvs]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-09 03:05:55] WARNING root fetch - processPackages [oganesson]: Skipping, unable to determine old version
+[2023-05-09 03:05:55] INFO root fetch - processPackages [oganesson]: Start processing: cloudforet-console-api-v2
+[2023-05-09 03:05:55] INFO root fetch - main [MainThread]: End processing [oganesson] error
+[2023-05-09 03:05:55] INFO root fetch - processPackages [onvif-gui]: New version: [1.1.2] Old Version: [1.1.0]
+[2023-05-09 03:05:55] INFO root fetch - processPackages [pynecone]: New version: [0.1.29a1] Old Version: [0.1.29a0]
+[2023-05-09 03:05:55] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 03:05:55] INFO root fetch - processPackages [mkdocs-ultralytics-plugin]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 03:05:55] INFO root fetch - processPackages [terminut]: New version: [0.0.0.840] Old Version: [0.0.0.710]
+[2023-05-09 03:05:55] INFO root fetch - processPackages [cpggen]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-09 03:05:55] WARNING root fetch - processPackages [spaceone-notification]: Skipping, unable to determine old version
+[2023-05-09 03:05:55] INFO root fetch - main [MainThread]: End processing [spaceone-notification] error
+[2023-05-09 03:05:55] WARNING root fetch - processPackages [cloudforet-console-api-v2]: Skipping, unable to determine old version
+[2023-05-09 03:05:55] INFO root fetch - main [MainThread]: End processing [cloudforet-console-api-v2] error
+[2023-05-09 03:05:55] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-09 03:05:55] INFO root fetch - processPackages [xcpcio-board-spider]: Downloading https://files.pythonhosted.org/packages/d5/e8/93eb07becf872b6db723095bb3f0908214a3d2b21dc599973ab1af8f8e97/xcpcio_board_spider-0.0.8.tar.gz
+[2023-05-09 03:05:55] INFO root fetch - processPackages [mkdocs-ultralytics-plugin]: executing diffoscope
+[2023-05-09 03:05:55] INFO root fetch - processPackages [mkdocs-ultralytics-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-ultralytics-plugin-0.0.8.tar.gz tmp/mkdocs-ultralytics-plugin-0.0.9.tar.gz --markdown 20230509/m/mkdocs-ultralytics-plugin/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 03:05:55] INFO root fetch - processPackages [terminut]: Downloading https://files.pythonhosted.org/packages/ae/7b/d62c4964295a076680a5cfc0716cf54f46c722ed7553ac8a829f526273f7/terminut-0.0.0.840.tar.gz
+[2023-05-09 03:05:55] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/1b/b4/d866c7f2de21f0fe9b8de50aad35853c1adba1922f76af573e684f8cce41/cpggen-1.0.5.tar.gz
+[2023-05-09 03:05:55] INFO root fetch - processPackages [pynecone]: Downloading https://files.pythonhosted.org/packages/33/d3/ed9cabbc7835f9923e3a8618b1c4ab7c7a4003f6f97d6d7957ad26df8e57/pynecone-0.1.29a1.tar.gz
+[2023-05-09 03:05:55] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-05-09 03:05:55] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20230509/x/xcpcio-board-spider/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 03:05:56] INFO root fetch - processPackages [ipfskvs]: Downloading https://files.pythonhosted.org/packages/c7/73/32b9127bf6948b743dc67404305c8c1bf42967ce382ee28d518aa4671faa/ipfskvs-0.1.6.tar.gz
+[2023-05-09 03:05:56] INFO root fetch - processPackages [pynecone]: executing diffoscope
+[2023-05-09 03:05:56] INFO root fetch - processPackages [pynecone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynecone-0.1.29a0.tar.gz tmp/pynecone-0.1.29a1.tar.gz --markdown 20230509/p/pynecone/0.1.29a0-0.1.29a1/diff.md --exclude *.pyd
+[2023-05-09 03:05:56] INFO root fetch - processPackages [ipfskvs]: executing diffoscope
+[2023-05-09 03:05:56] INFO root fetch - processPackages [ipfskvs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipfskvs-0.1.5.tar.gz tmp/ipfskvs-0.1.6.tar.gz --markdown 20230509/i/ipfskvs/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-09 03:05:56] INFO root fetch - processPackages [onvif-gui]: Downloading https://files.pythonhosted.org/packages/0f/51/6759e5368e6eaa5150c34c699c2c92ea6b0069945bba426bb867f0c84c2a/onvif-gui-1.1.2.tar.gz
+[2023-05-09 03:05:56] INFO root fetch - processPackages [terminut]: executing diffoscope
+[2023-05-09 03:05:56] INFO root fetch - processPackages [terminut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminut-0.0.0.710.tar.gz tmp/terminut-0.0.0.840.tar.gz --markdown 20230509/t/terminut/0.0.0.710-0.0.0.840/diff.md --exclude *.pyd
+[2023-05-09 03:05:56] INFO root fetch - processPackages [cpggen]: executing diffoscope
+[2023-05-09 03:05:56] INFO root fetch - processPackages [cpggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpggen-1.0.4.tar.gz tmp/cpggen-1.0.5.tar.gz --markdown 20230509/c/cpggen/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-09 03:05:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-09 03:05:56] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230509/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-09 03:05:56] INFO root fetch - processPackages [onvif-gui]: executing diffoscope
+[2023-05-09 03:05:56] INFO root fetch - processPackages [onvif-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-gui-1.1.0.tar.gz tmp/onvif-gui-1.1.2.tar.gz --markdown 20230509/o/onvif-gui/1.1.0-1.1.2/diff.md --exclude *.pyd
+[2023-05-09 03:05:57] INFO root fetch - main [MainThread]: End processing [mkdocs-ultralytics-plugin]: success
+[2023-05-09 03:05:57] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-05-09 03:05:57] INFO root fetch - main [MainThread]: End processing [ipfskvs]: success
+[2023-05-09 03:05:57] INFO root fetch - main [MainThread]: End processing [cpggen]: success
+[2023-05-09 03:05:57] INFO root fetch - main [MainThread]: End processing [terminut]: success
+[2023-05-09 03:05:57] INFO root fetch - main [MainThread]: End processing [pynecone]: success
+[2023-05-09 03:06:00] INFO root fetch - main [MainThread]: End processing [onvif-gui]: success
+[2023-05-09 03:06:28] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-09 03:06:28] INFO root fetch - main [MainThread]: Store serial: [18024496]
