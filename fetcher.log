@@ -18361,3 +18361,139 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 16:40:17] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2023-05-09 16:40:44] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-05-09 16:40:44] INFO root fetch - main [MainThread]: Store serial: [18033231]
+[2023-05-09 16:45:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18033231]
+[2023-05-09 16:45:53] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bilby-pipe
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cog-airflow-notify-sns
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ssbh-data-py
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iewil
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: numpy-groupies
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: adapta
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: telenvi
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hrin-msb
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: montecarlodata
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: integra
+[2023-05-09 16:45:53] INFO root fetch - processPackages [bilby-pipe]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ssbh-data-py]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-09 16:45:53] INFO root fetch - processPackages [adapta]: New version: [2.2.4] Old Version: [2.2.3]
+[2023-05-09 16:45:53] INFO root fetch - processPackages [iewil]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 16:45:53] INFO root fetch - processPackages [cog-airflow-notify-sns]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-09 16:45:53] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 16:45:53] WARNING root fetch - processPackages [integra]: Skipping, unable to determine old version
+[2023-05-09 16:45:53] INFO root fetch - processPackages [integra]: Start processing: certora-cli-alpha-eric-topOfStack
+[2023-05-09 16:45:53] INFO root fetch - main [MainThread]: End processing [integra] error
+[2023-05-09 16:45:53] INFO root fetch - processPackages [telenvi]: New version: [5.0.9] Old Version: [5.0.8]
+[2023-05-09 16:45:53] INFO root fetch - processPackages [numpy-groupies]: New version: [0.9.9] Old Version: [0.9.8.4]
+[2023-05-09 16:45:53] INFO root fetch - processPackages [montecarlodata]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-09 16:45:53] INFO root fetch - processPackages [certora-cli-alpha-eric-topOfStack]: New version: [20230509.5.22.536164] Old Version: [20230509.14.43.964579]
+[2023-05-09 16:45:53] INFO root fetch - processPackages [numpy-groupies]: executing diffoscope
+[2023-05-09 16:45:53] INFO root fetch - processPackages [numpy-groupies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpy_groupies-0.9.8.4.tar.gz tmp/numpy_groupies-0.9.9.tar.gz --markdown 20230509/n/numpy-groupies/0.9.8.4-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 16:45:53] INFO root fetch - processPackages [iewil]: Downloading https://files.pythonhosted.org/packages/88/67/2fff1b94d9491dff0a1f99b78a8bcd08c942cb4df6e83563d247a0c25a62/iewil-0.0.2.tar.gz
+[2023-05-09 16:45:53] INFO root fetch - processPackages [cog-airflow-notify-sns]: Downloading https://files.pythonhosted.org/packages/1b/ee/39b756ff873b80f7b9208471be6519707aa3fcbf99c0b8906761680cf713/cog-airflow-notify-sns-1.0.3.tar.gz
+[2023-05-09 16:45:53] INFO root fetch - processPackages [telenvi]: Downloading https://files.pythonhosted.org/packages/49/8f/e913fb54b7237593a78d32ea53ad76ba1dc7283e9a06da5f4facec243aac/telenvi-5.0.8.tar.gz
+[2023-05-09 16:45:53] INFO root fetch - processPackages [adapta]: Downloading https://files.pythonhosted.org/packages/9d/70/a322021c72e5805f3f68443aaccc5639168bde943e393883d50411951615/adapta-2.2.3.tar.gz
+[2023-05-09 16:45:53] INFO root fetch - processPackages [ssbh-data-py]: Downloading https://files.pythonhosted.org/packages/72/65/b49d2fa3aa9a95255552717d2c130fbe718d8e7f24b733c9c34e48cc3868/ssbh_data_py-0.8.0-cp39-none-win_amd64.whl
+[2023-05-09 16:45:53] INFO root fetch - processPackages [certora-cli-alpha-eric-topOfStack]: Downloading https://files.pythonhosted.org/packages/3f/cd/c6ab329c59d84a757ae876bbc850161d65ced8ff0cce182e2be27a31aeb8/certora-cli-alpha-eric-topOfStack-20230509.14.43.964579.tar.gz
+[2023-05-09 16:45:53] INFO root fetch - processPackages [bilby-pipe]: Downloading https://files.pythonhosted.org/packages/bf/52/44b0bc41524796af334fc83b004cba56413c798d90d8988ce8a28affc5b5/bilby_pipe-1.0.9.tar.gz
+[2023-05-09 16:45:53] INFO root fetch - processPackages [montecarlodata]: Downloading https://files.pythonhosted.org/packages/db/0d/aecc03a79df2b9dfdaef8e4452e6b9e2947bf5ad211f43e5f9a4d27ac076/montecarlodata-0.9.1.tar.gz
+[2023-05-09 16:45:54] WARNING root fetch - processPackages [certora-cli-alpha-eric-topOfStack]: Skipping package: exceeds size limit 39213199>=10485760
+[2023-05-09 16:45:54] INFO root fetch - processPackages [certora-cli-alpha-eric-topOfStack]: Start processing: subgroups
+[2023-05-09 16:45:54] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-topOfStack] error
+[2023-05-09 16:45:54] WARNING root fetch - processPackages [bilby-pipe]: Skipping package: exceeds size limit 56563789>=10485760
+[2023-05-09 16:45:54] INFO root fetch - processPackages [bilby-pipe]: Start processing: pybritive
+[2023-05-09 16:45:54] INFO root fetch - main [MainThread]: End processing [bilby-pipe] error
+[2023-05-09 16:45:54] INFO root fetch - processPackages [subgroups]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 16:45:54] INFO root fetch - processPackages [cog-airflow-notify-sns]: Downloading https://files.pythonhosted.org/packages/ea/d3/4e734c810482149178250e6115d403ccb6cf9e2ec14a4f1d0a4b2ec4acbf/cog-airflow-notify-sns-1.0.4.tar.gz
+[2023-05-09 16:45:54] INFO root fetch - processPackages [iewil]: Downloading https://files.pythonhosted.org/packages/8f/cb/daaf8d44efe1ead221fe49a1642880d384c73c56cf7dad7a8ef459502a64/iewil-0.0.3.tar.gz
+[2023-05-09 16:45:54] INFO root fetch - processPackages [pybritive]: New version: [1.4.0rc1] Old Version: [1.3.0]
+[2023-05-09 16:45:54] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-09 16:45:54] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230509/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 16:45:54] INFO root fetch - processPackages [telenvi]: Downloading https://files.pythonhosted.org/packages/20/93/ca3c58221c21387908746ca9a655f5a9d36cb1dff5fbe0844ce2f03a4c9e/telenvi-5.0.9.tar.gz
+[2023-05-09 16:45:54] INFO root fetch - processPackages [adapta]: Downloading https://files.pythonhosted.org/packages/c8/49/a1f08a605d037cf6046288a46d5293f521d7e3f7c08d24b9d47bf2f5ace8/adapta-2.2.4.tar.gz
+[2023-05-09 16:45:54] INFO root fetch - processPackages [cog-airflow-notify-sns]: executing diffoscope
+[2023-05-09 16:45:54] INFO root fetch - processPackages [cog-airflow-notify-sns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cog-airflow-notify-sns-1.0.3.tar.gz tmp/cog-airflow-notify-sns-1.0.4.tar.gz --markdown 20230509/c/cog-airflow-notify-sns/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-09 16:45:54] INFO root fetch - processPackages [ssbh-data-py]: Downloading https://files.pythonhosted.org/packages/2f/bb/2aefbca787930266f314a31acc0a17d56148a1130fd8b8f69e09c38b2411/ssbh_data_py-0.8.1-cp39-cp39-manylinux_2_34_x86_64.whl
+[2023-05-09 16:45:54] INFO root fetch - processPackages [iewil]: executing diffoscope
+[2023-05-09 16:45:54] INFO root fetch - processPackages [iewil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iewil-0.0.2.tar.gz tmp/iewil-0.0.3.tar.gz --markdown 20230509/i/iewil/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 16:45:54] INFO root fetch - processPackages [subgroups]: Downloading https://files.pythonhosted.org/packages/94/9d/641385b4eb246b235f40bfe9b1ac5011d2b43975c8cc79ebd8476e585ec2/subgroups-0.0.8-py3-none-any.whl
+[2023-05-09 16:45:54] INFO root fetch - processPackages [pybritive]: Downloading https://files.pythonhosted.org/packages/08/d5/3f0b2dea1978eda951d1cfce52ba70837b9ea953616ad127aa0d07f6e10d/pybritive-1.3.0.tar.gz
+[2023-05-09 16:45:54] INFO root fetch - processPackages [telenvi]: executing diffoscope
+[2023-05-09 16:45:54] INFO root fetch - processPackages [telenvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telenvi-5.0.8.tar.gz tmp/telenvi-5.0.9.tar.gz --markdown 20230509/t/telenvi/5.0.8-5.0.9/diff.md --exclude *.pyd
+[2023-05-09 16:45:54] INFO root fetch - processPackages [adapta]: executing diffoscope
+[2023-05-09 16:45:54] INFO root fetch - processPackages [adapta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adapta-2.2.3.tar.gz tmp/adapta-2.2.4.tar.gz --markdown 20230509/a/adapta/2.2.3-2.2.4/diff.md --exclude *.pyd
+[2023-05-09 16:45:54] INFO root fetch - processPackages [ssbh-data-py]: executing diffoscope
+[2023-05-09 16:45:54] INFO root fetch - processPackages [ssbh-data-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssbh_data_py-0.8.0-cp39-none-win_amd64.whl.zip tmp/ssbh_data_py-0.8.1-cp39-cp39-manylinux_2_34_x86_64.whl.zip --markdown 20230509/s/ssbh-data-py/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-09 16:45:54] INFO root fetch - processPackages [pybritive]: Downloading https://files.pythonhosted.org/packages/b0/6e/0b5175d06f91b6d7fec75efc166737269b300d2471d0162991de01d50a01/pybritive-1.4.0rc1.tar.gz
+[2023-05-09 16:45:54] INFO root fetch - processPackages [subgroups]: Downloading https://files.pythonhosted.org/packages/90/ab/8df94c09059efe696a3b152596394b9dc26d96fe70316647aa7c98e5e9da/subgroups-0.0.9-py3-none-any.whl
+[2023-05-09 16:45:54] INFO root fetch - processPackages [montecarlodata]: Downloading https://files.pythonhosted.org/packages/db/e4/113cd728e2daba98e9a0ab50ceb4c29e0d6c8d370f1b4e6edf9b9fa5ae12/montecarlodata-0.9.2.tar.gz
+[2023-05-09 16:45:54] INFO root fetch - processPackages [pybritive]: executing diffoscope
+[2023-05-09 16:45:54] INFO root fetch - processPackages [pybritive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybritive-1.3.0.tar.gz tmp/pybritive-1.4.0rc1.tar.gz --markdown 20230509/p/pybritive/1.3.0-1.4.0rc1/diff.md --exclude *.pyd
+[2023-05-09 16:45:54] INFO root fetch - processPackages [montecarlodata]: executing diffoscope
+[2023-05-09 16:45:54] INFO root fetch - processPackages [montecarlodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/montecarlodata-0.9.1.tar.gz tmp/montecarlodata-0.9.2.tar.gz --markdown 20230509/m/montecarlodata/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-09 16:45:54] INFO root fetch - processPackages [subgroups]: executing diffoscope
+[2023-05-09 16:45:54] INFO root fetch - processPackages [subgroups]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subgroups-0.0.8-py3-none-any.whl.zip tmp/subgroups-0.0.9-py3-none-any.whl.zip --markdown 20230509/s/subgroups/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 16:45:55] INFO root fetch - processPackages [iewil]: Start processing: deep-pipe
+[2023-05-09 16:45:55] INFO root fetch - main [MainThread]: End processing [iewil]: success
+[2023-05-09 16:45:55] INFO root fetch - processPackages [deep-pipe]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-09 16:45:55] INFO root fetch - processPackages [numpy-groupies]: Start processing: x-decorator
+[2023-05-09 16:45:55] INFO root fetch - main [MainThread]: End processing [numpy-groupies]: success
+[2023-05-09 16:45:55] INFO root fetch - processPackages [cog-airflow-notify-sns]: Start processing: installpippython
+[2023-05-09 16:45:55] INFO root fetch - main [MainThread]: End processing [cog-airflow-notify-sns]: success
+[2023-05-09 16:45:55] INFO root fetch - processPackages [deep-pipe]: Downloading https://files.pythonhosted.org/packages/e4/d2/0f946b7a4d062f5d67631001d4b0e5ba7724722e1fe4844e5d16f6f8ea62/deep_pipe-0.2.2.tar.gz
+[2023-05-09 16:45:55] WARNING root fetch - processPackages [x-decorator]: Skipping, unable to determine old version
+[2023-05-09 16:45:55] INFO root fetch - processPackages [x-decorator]: Start processing: altair
+[2023-05-09 16:45:55] INFO root fetch - main [MainThread]: End processing [x-decorator] error
+[2023-05-09 16:45:55] WARNING root fetch - processPackages [installpippython]: Skipping, unable to determine old version
+[2023-05-09 16:45:55] INFO root fetch - processPackages [installpippython]: Start processing: screeny
+[2023-05-09 16:45:55] INFO root fetch - main [MainThread]: End processing [installpippython] error
+[2023-05-09 16:45:55] INFO root fetch - processPackages [altair]: New version: [5.0.0rc3] Old Version: [5.0.0rc2]
+[2023-05-09 16:45:55] INFO root fetch - processPackages [screeny]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-05-09 16:45:55] INFO root fetch - processPackages [hrin-msb]: Start processing: schatsi
+[2023-05-09 16:45:55] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-09 16:45:56] INFO root fetch - processPackages [altair]: Downloading https://files.pythonhosted.org/packages/1e/84/839da201198ddf68e6a628697a6042a6102e1e2c69dfc012c4b057650551/altair-5.0.0rc2.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - processPackages [telenvi]: Start processing: rmpy
+[2023-05-09 16:45:56] INFO root fetch - main [MainThread]: End processing [telenvi]: success
+[2023-05-09 16:45:56] WARNING root fetch - processPackages [rmpy]: Skipping, unable to determine old version
+[2023-05-09 16:45:56] INFO root fetch - processPackages [rmpy]: Start processing: nexora
+[2023-05-09 16:45:56] INFO root fetch - main [MainThread]: End processing [rmpy] error
+[2023-05-09 16:45:56] INFO root fetch - processPackages [ssbh-data-py]: Start processing: aws-adfs
+[2023-05-09 16:45:56] INFO root fetch - main [MainThread]: End processing [ssbh-data-py]: success
+[2023-05-09 16:45:56] INFO root fetch - processPackages [schatsi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 16:45:56] INFO root fetch - processPackages [screeny]: Downloading https://files.pythonhosted.org/packages/f9/fc/5550a3be3e202461241bcc2303b080c19b6e82f747d614c46890ea1808c0/screeny-0.0.3.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - processPackages [deep-pipe]: Downloading https://files.pythonhosted.org/packages/5b/9f/c4f5204dc349d4472963917fd492f6a50fe5730db5c9ea8693f1fbd2f66d/deep_pipe-0.2.3.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - processPackages [nexora]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 16:45:56] INFO root fetch - processPackages [aws-adfs]: New version: [2.7.0] Old Version: [2.6.3]
+[2023-05-09 16:45:56] INFO root fetch - processPackages [adapta]: Start processing: pdpykit
+[2023-05-09 16:45:56] INFO root fetch - main [MainThread]: End processing [adapta]: success
+[2023-05-09 16:45:56] INFO root fetch - processPackages [deep-pipe]: executing diffoscope
+[2023-05-09 16:45:56] INFO root fetch - processPackages [deep-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_pipe-0.2.2.tar.gz tmp/deep_pipe-0.2.3.tar.gz --markdown 20230509/d/deep-pipe/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-09 16:45:56] INFO root fetch - processPackages [schatsi]: Downloading https://files.pythonhosted.org/packages/4b/55/f796806f98761ad95fb17017bf49b4f748af1e03f583b41f82b844799ce2/schatsi-0.1.8.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - processPackages [altair]: Downloading https://files.pythonhosted.org/packages/2a/30/80e0254aa6fd39761044c3b50b2cd7a6deecb90b03cc3a5fd28929637f3b/altair-5.0.0rc3.tar.gz
+[2023-05-09 16:45:56] WARNING root fetch - processPackages [pdpykit]: Skipping, unable to determine old version
+[2023-05-09 16:45:56] INFO root fetch - main [MainThread]: End processing [pdpykit] error
+[2023-05-09 16:45:56] INFO root fetch - processPackages [nexora]: Downloading https://files.pythonhosted.org/packages/10/82/073ad59e34a1364057d8cedd7fe497e473c1139345eda79aeeda39276ae4/nexora-0.0.1.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - processPackages [screeny]: Downloading https://files.pythonhosted.org/packages/f7/fd/8dbda57695c18c445c4f12a4c80f22c776f0789d57322106a37e42e0fde5/screeny-0.1.0.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - processPackages [aws-adfs]: Downloading https://files.pythonhosted.org/packages/34/ec/151f0288b17537c6677f44096dd25579def8658e60e5324d1123abcc70cc/aws_adfs-2.6.3.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - main [MainThread]: End processing [pybritive]: success
+[2023-05-09 16:45:56] INFO root fetch - processPackages [altair]: executing diffoscope
+[2023-05-09 16:45:56] INFO root fetch - processPackages [altair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altair-5.0.0rc2.tar.gz tmp/altair-5.0.0rc3.tar.gz --markdown 20230509/a/altair/5.0.0rc2-5.0.0rc3/diff.md --exclude *.pyd
+[2023-05-09 16:45:56] INFO root fetch - processPackages [screeny]: executing diffoscope
+[2023-05-09 16:45:56] INFO root fetch - processPackages [screeny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screeny-0.0.3.tar.gz tmp/screeny-0.1.0.tar.gz --markdown 20230509/s/screeny/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 16:45:56] INFO root fetch - processPackages [schatsi]: Downloading https://files.pythonhosted.org/packages/ac/40/4affcfdce54f53f87b59fa0fc510effd70827bcc69241ab37ee18e47747e/schatsi-0.1.9.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - processPackages [nexora]: Downloading https://files.pythonhosted.org/packages/80/5d/9951f3febfcac03b48e6abfdb69428303ece49fa3c75e74988ee791c28db/nexora-0.0.2.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - processPackages [aws-adfs]: Downloading https://files.pythonhosted.org/packages/1c/45/d215d4d8007fd9eb6f8a3311e153b3e89ffc9582a660080392a2e6e24eb0/aws_adfs-2.7.0.tar.gz
+[2023-05-09 16:45:56] INFO root fetch - processPackages [schatsi]: executing diffoscope
+[2023-05-09 16:45:56] INFO root fetch - processPackages [schatsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schatsi-0.1.8.tar.gz tmp/schatsi-0.1.9.tar.gz --markdown 20230509/s/schatsi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 16:45:56] INFO root fetch - processPackages [nexora]: executing diffoscope
+[2023-05-09 16:45:56] INFO root fetch - processPackages [nexora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexora-0.0.1.tar.gz tmp/nexora-0.0.2.tar.gz --markdown 20230509/n/nexora/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 16:45:56] INFO root fetch - processPackages [aws-adfs]: executing diffoscope
+[2023-05-09 16:45:56] INFO root fetch - processPackages [aws-adfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_adfs-2.6.3.tar.gz tmp/aws_adfs-2.7.0.tar.gz --markdown 20230509/a/aws-adfs/2.6.3-2.7.0/diff.md --exclude *.pyd
+[2023-05-09 16:45:57] INFO root fetch - main [MainThread]: End processing [subgroups]: success
+[2023-05-09 16:45:57] INFO root fetch - main [MainThread]: End processing [screeny]: success
+[2023-05-09 16:45:57] INFO root fetch - main [MainThread]: End processing [montecarlodata]: success
+[2023-05-09 16:45:57] INFO root fetch - main [MainThread]: End processing [schatsi]: success
+[2023-05-09 16:45:58] INFO root fetch - main [MainThread]: End processing [nexora]: success
+[2023-05-09 16:45:58] INFO root fetch - main [MainThread]: End processing [aws-adfs]: success
+[2023-05-09 16:45:58] INFO root fetch - main [MainThread]: End processing [deep-pipe]: success
+[2023-05-09 16:46:00] INFO root fetch - main [MainThread]: End processing [altair]: success
+[2023-05-09 16:46:00] INFO root fetch - main [MainThread]: Store serial: [18033319]
