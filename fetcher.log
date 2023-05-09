@@ -15899,3 +15899,64 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 14:35:37] INFO root fetch - main [MainThread]: End processing [buteo]: success
 [2023-05-09 14:35:37] INFO root fetch - main [MainThread]: End processing [variation-normalizer]: success
 [2023-05-09 14:35:37] INFO root fetch - main [MainThread]: Store serial: [18031664]
+[2023-05-09 14:40:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031664]
+[2023-05-09 14:40:46] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-csgo-case-simulator
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syngen
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: organizations
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: driveup
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: GramGetter
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cg
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kalm
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rmpy
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aislib
+[2023-05-09 14:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: lime-stable
+[2023-05-09 14:40:46] INFO root fetch - processPackages [rmpy]: New version: [1.1.1] Old Version: [0.1.3]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [kalm]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [GramGetter]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [lime-stable]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [cg]: New version: [29.8.5] Old Version: [29.8.4]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [organizations]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [rmpy]: executing diffoscope
+[2023-05-09 14:40:46] INFO root fetch - processPackages [rmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmpy-0.1.3.tar.gz tmp/rmpy-1.1.1.tar.gz --markdown 20230509/r/rmpy/0.1.3-1.1.1/diff.md --exclude *.pyd
+[2023-05-09 14:40:46] INFO root fetch - processPackages [aislib]: New version: [0.1.9a0] Old Version: [0.1.8a0]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [driveup]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-05-09 14:40:46] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.4.4.tar.gz tmp/kalm-0.4.5.tar.gz --markdown 20230509/k/kalm/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-09 14:40:46] INFO root fetch - processPackages [syngen]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 14:40:46] INFO root fetch - processPackages [GramGetter]: executing diffoscope
+[2023-05-09 14:40:46] INFO root fetch - processPackages [GramGetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GramGetter-0.1.0.tar.gz tmp/GramGetter-0.2.0.tar.gz --markdown 20230509/G/GramGetter/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 14:40:46] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-09 14:40:46] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-29.8.4.tar.gz tmp/cg-29.8.5.tar.gz --markdown 20230509/c/cg/29.8.4-29.8.5/diff.md --exclude *.pyd
+[2023-05-09 14:40:47] INFO root fetch - processPackages [organizations]: Downloading https://files.pythonhosted.org/packages/c8/b3/a57391945372748ac1f456f6e1017956c9df1f346235b0cd491fc74c1c1c/organizations-0.1.0.tar.gz
+[2023-05-09 14:40:47] INFO root fetch - processPackages [lime-stable]: executing diffoscope
+[2023-05-09 14:40:47] INFO root fetch - processPackages [lime-stable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lime-stable-0.9.8.tar.gz tmp/lime-stable-0.9.9.tar.gz --markdown 20230509/l/lime-stable/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 14:40:47] INFO root fetch - processPackages [aislib]: Downloading https://files.pythonhosted.org/packages/4c/c8/8363a6d0ea75829c7d1ad11100d4ade1d7f2862654eabac98e4e20d75933/aislib-0.1.8a0.tar.gz
+[2023-05-09 14:40:47] INFO root fetch - processPackages [driveup]: Downloading https://files.pythonhosted.org/packages/07/f7/6480f9d42a8ac2bd8de9bd05175e013076d3d65eda373702353407b64090/driveup-0.3.0.tar.gz
+[2023-05-09 14:40:47] INFO root fetch - processPackages [syngen]: Downloading https://files.pythonhosted.org/packages/b7/7d/027d5778a737efb508df3344c06dc61233079b210f4cf21ff5841e69c2ca/syngen-0.0.98.tar.gz
+[2023-05-09 14:40:47] INFO root fetch - processPackages [organizations]: Downloading https://files.pythonhosted.org/packages/32/b3/5519542e518086c6d19db7c41161d2f9036d94136cb03e7dec71ff294025/organizations-0.1.1.tar.gz
+[2023-05-09 14:40:47] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: executing diffoscope
+[2023-05-09 14:40:47] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-csgo-case-simulator-0.1.8.tar.gz tmp/nonebot-plugin-csgo-case-simulator-0.1.9.tar.gz --markdown 20230509/n/nonebot-plugin-csgo-case-simulator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 14:40:47] INFO root fetch - processPackages [driveup]: Downloading https://files.pythonhosted.org/packages/f3/66/22b3ff5d9fc99ce63a1434f8f34271b06adacd78adcb2168925c141d5199/driveup-0.4.0.tar.gz
+[2023-05-09 14:40:47] INFO root fetch - processPackages [organizations]: executing diffoscope
+[2023-05-09 14:40:47] INFO root fetch - processPackages [organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/organizations-0.1.0.tar.gz tmp/organizations-0.1.1.tar.gz --markdown 20230509/o/organizations/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 14:40:47] INFO root fetch - processPackages [syngen]: Downloading https://files.pythonhosted.org/packages/49/7b/6502d6138ad86223545cacfee16db72c2909010a0a8d5c512ef362ce95f6/syngen-0.0.99.tar.gz
+[2023-05-09 14:40:47] INFO root fetch - processPackages [aislib]: Downloading https://files.pythonhosted.org/packages/6a/66/5867c041d926a8df108754ad599f5f406b31677ae3811f2ca767d0d718da/aislib-0.1.9a0.tar.gz
+[2023-05-09 14:40:47] INFO root fetch - processPackages [driveup]: executing diffoscope
+[2023-05-09 14:40:47] INFO root fetch - processPackages [driveup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/driveup-0.3.0.tar.gz tmp/driveup-0.4.0.tar.gz --markdown 20230509/d/driveup/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-09 14:40:47] INFO root fetch - processPackages [syngen]: executing diffoscope
+[2023-05-09 14:40:47] INFO root fetch - processPackages [syngen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syngen-0.0.98.tar.gz tmp/syngen-0.0.99.tar.gz --markdown 20230509/s/syngen/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 14:40:47] INFO root fetch - processPackages [aislib]: executing diffoscope
+[2023-05-09 14:40:47] INFO root fetch - processPackages [aislib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aislib-0.1.8a0.tar.gz tmp/aislib-0.1.9a0.tar.gz --markdown 20230509/a/aislib/0.1.8a0-0.1.9a0/diff.md --exclude *.pyd
+[2023-05-09 14:40:48] INFO root fetch - main [MainThread]: End processing [rmpy]: success
+[2023-05-09 14:40:48] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-05-09 14:40:48] INFO root fetch - main [MainThread]: End processing [lime-stable]: success
+[2023-05-09 14:40:49] INFO root fetch - main [MainThread]: End processing [driveup]: success
+[2023-05-09 14:40:49] INFO root fetch - main [MainThread]: End processing [GramGetter]: success
+[2023-05-09 14:40:49] INFO root fetch - main [MainThread]: End processing [aislib]: success
+[2023-05-09 14:40:49] INFO root fetch - main [MainThread]: End processing [organizations]: success
+[2023-05-09 14:40:49] INFO root fetch - main [MainThread]: End processing [syngen]: success
+[2023-05-09 14:40:58] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-09 14:41:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
+[2023-05-09 14:41:03] INFO root fetch - main [MainThread]: Store serial: [18031705]
