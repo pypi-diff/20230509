@@ -18757,3 +18757,147 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 16:56:36] INFO root fetch - main [MainThread]: End processing [prodigy-teams]: success
 [2023-05-09 16:56:36] INFO root fetch - main [MainThread]: End processing [pybrook]: success
 [2023-05-09 16:56:36] INFO root fetch - main [MainThread]: Store serial: [18033519]
+[2023-05-09 17:01:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18033519]
+[2023-05-09 17:01:46] INFO root fetch - main [MainThread]: Found 24 changed packages
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: encoded-core
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tumfl
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pop-create-idem
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: localstack-core
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PlexPreferNonForcedSubs
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: piszkespipe
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kaiko-research
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kaiko-reserch
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: geomulticorr
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ferns
+[2023-05-09 17:01:46] INFO root fetch - processPackages [encoded-core]: New version: [0.0.0.1b2] Old Version: [0.0.0.1b1]
+[2023-05-09 17:01:46] INFO root fetch - processPackages [tumfl]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 17:01:46] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: New version: [2.1.3] Old Version: [2.1.2]
+[2023-05-09 17:01:46] INFO root fetch - processPackages [pop-create-idem]: New version: [3.4.1] Old Version: [3.4.0]
+[2023-05-09 17:01:46] WARNING root fetch - processPackages [kaiko-reserch]: Skipping, unable to determine old version
+[2023-05-09 17:01:46] INFO root fetch - processPackages [kaiko-reserch]: Start processing: mythic-container
+[2023-05-09 17:01:46] WARNING root fetch - processPackages [kaiko-research]: Skipping, unable to determine old version
+[2023-05-09 17:01:46] INFO root fetch - processPackages [kaiko-research]: Start processing: stormware
+[2023-05-09 17:01:46] INFO root fetch - main [MainThread]: End processing [kaiko-reserch] error
+[2023-05-09 17:01:46] WARNING root fetch - processPackages [ferns]: Skipping, unable to determine old version
+[2023-05-09 17:01:46] INFO root fetch - main [MainThread]: End processing [kaiko-research] error
+[2023-05-09 17:01:46] INFO root fetch - processPackages [ferns]: Start processing: lnschema_core
+[2023-05-09 17:01:46] INFO root fetch - main [MainThread]: End processing [ferns] error
+[2023-05-09 17:01:46] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230509145706] Old Version: [2.0.3.dev20230509113331]
+[2023-05-09 17:01:46] WARNING root fetch - processPackages [piszkespipe]: Skipping, unable to determine old version
+[2023-05-09 17:01:46] INFO root fetch - processPackages [piszkespipe]: Start processing: django-qiyu-utils
+[2023-05-09 17:01:46] INFO root fetch - main [MainThread]: End processing [piszkespipe] error
+[2023-05-09 17:01:46] INFO root fetch - processPackages [geomulticorr]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 17:01:46] INFO root fetch - processPackages [mythic-container]: New version: [0.2.6rc2] Old Version: [0.2.6rc1]
+[2023-05-09 17:01:46] INFO root fetch - processPackages [stormware]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-09 17:01:47] INFO root fetch - processPackages [lnschema_core]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-09 17:01:47] INFO root fetch - processPackages [django-qiyu-utils]: New version: [0.5.0] Old Version: [0.4.4]
+[2023-05-09 17:01:47] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: Downloading https://files.pythonhosted.org/packages/12/59/f0a4e24e9b56c1591db43d68378c63a2edd64ad31e227ef55943c2a1e7cd/PlexPreferNonForcedSubs-2.1.2.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [encoded-core]: Downloading https://files.pythonhosted.org/packages/4e/a2/ca3cad4e3950ccbf690fa0f5f949a2e49119a95ca7047589fb6184756a79/encoded_core-0.0.0.1b1.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [mythic-container]: Downloading https://files.pythonhosted.org/packages/45/3d/f3f3c6637f7798d788a3ecd06622d41ad51fbf14e62b8c20db22ae304262/mythic_container-0.2.6rc2.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [pop-create-idem]: Downloading https://files.pythonhosted.org/packages/96/c5/20a30afba47f58c6060003af3191d689135c4bd9976d1e5571690e3f5f59/pop-create-idem-3.4.0.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/f0/19/e8375becfd6f0e9e6c7fc20ddb8829bb8b92c1533e0157b95c367333f709/localstack-core-2.0.3.dev20230509113331.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [lnschema_core]: Downloading https://files.pythonhosted.org/packages/7a/53/1459e32f6943488250f623718aeb560351a142d81c57a5fc8ef6b0dd1680/lnschema_core-0.8.1.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [django-qiyu-utils]: Downloading https://files.pythonhosted.org/packages/8f/98/7f244c314a5b60a02d21c59c156c49e926f5736f82ebcda3d285693fc4df/django-qiyu-utils-0.4.4.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [geomulticorr]: Downloading https://files.pythonhosted.org/packages/57/1d/1ff2f9706fb06f3b51e00456b390e4aaea596f7c37116cc1de499a3176fe/geomulticorr-0.1.2.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [stormware]: Downloading https://files.pythonhosted.org/packages/2f/6c/e060239b572d6b655eeb941e63f67964655c2cf2b1e2f88fe75a1d360204/stormware-1.1.0.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [mythic-container]: executing diffoscope
+[2023-05-09 17:01:47] INFO root fetch - processPackages [mythic-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mythic_container-0.2.6rc1.tar.gz tmp/mythic_container-0.2.6rc2.tar.gz --markdown 20230509/m/mythic-container/0.2.6rc1-0.2.6rc2/diff.md --exclude *.pyd
+[2023-05-09 17:01:47] INFO root fetch - processPackages [tumfl]: Downloading https://files.pythonhosted.org/packages/d3/5e/d945ea0e8315c8353a36cd8fa6e50d79e57b838072da801fb1d0fab515a8/tumfl-0.1.5.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [geomulticorr]: executing diffoscope
+[2023-05-09 17:01:47] INFO root fetch - processPackages [geomulticorr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geomulticorr-0.1.1.tar.gz tmp/geomulticorr-0.1.2.tar.gz --markdown 20230509/g/geomulticorr/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 17:01:47] INFO root fetch - processPackages [encoded-core]: Downloading https://files.pythonhosted.org/packages/77/a1/a59859500cbfa80a2dc5b3898945ab5ca45199e0aaa184fd867100f02d6d/encoded_core-0.0.0.1b2.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [pop-create-idem]: Downloading https://files.pythonhosted.org/packages/6b/ac/60f98a2004f05c3a782fefc6d487db82722b192c943e3856609dfc735a38/pop-create-idem-3.4.1.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [tumfl]: executing diffoscope
+[2023-05-09 17:01:47] INFO root fetch - processPackages [tumfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tumfl-0.1.4.tar.gz tmp/tumfl-0.1.5.tar.gz --markdown 20230509/t/tumfl/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 17:01:47] INFO root fetch - processPackages [django-qiyu-utils]: Downloading https://files.pythonhosted.org/packages/9f/7d/f4eefdca0ed35df67d3211af7465a5c8748b8cec31f64c061d9f24276a78/django_qiyu_utils-0.5.0.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/af/11/8e9df2814b41c77eff3cdd4d0e49c4db98219f2cbf37b38b3c30c8896262/localstack-core-2.0.3.dev20230509145706.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: Downloading https://files.pythonhosted.org/packages/cb/30/6e990c9f4a0cc3fb571ee228f3ccf51c22e43f9c04e56f000bd562c802f6/PlexPreferNonForcedSubs-2.1.3.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [stormware]: Downloading https://files.pythonhosted.org/packages/f7/a8/5f0fea0a74d18b999f4eff108855583a1108d836d2796802ed286a5285ba/stormware-1.2.0.tar.gz
+[2023-05-09 17:01:47] INFO root fetch - processPackages [encoded-core]: executing diffoscope
+[2023-05-09 17:01:47] INFO root fetch - processPackages [encoded-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encoded_core-0.0.0.1b1.tar.gz tmp/encoded_core-0.0.0.1b2.tar.gz --markdown 20230509/e/encoded-core/0.0.0.1b1-0.0.0.1b2/diff.md --exclude *.pyd
+[2023-05-09 17:01:47] INFO root fetch - processPackages [pop-create-idem]: executing diffoscope
+[2023-05-09 17:01:47] INFO root fetch - processPackages [pop-create-idem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pop-create-idem-3.4.0.tar.gz tmp/pop-create-idem-3.4.1.tar.gz --markdown 20230509/p/pop-create-idem/3.4.0-3.4.1/diff.md --exclude *.pyd
+[2023-05-09 17:01:47] INFO root fetch - processPackages [django-qiyu-utils]: executing diffoscope
+[2023-05-09 17:01:47] INFO root fetch - processPackages [django-qiyu-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-qiyu-utils-0.4.4.tar.gz tmp/django_qiyu_utils-0.5.0.tar.gz --markdown 20230509/d/django-qiyu-utils/0.4.4-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 17:01:47] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: executing diffoscope
+[2023-05-09 17:01:47] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PlexPreferNonForcedSubs-2.1.2.tar.gz tmp/PlexPreferNonForcedSubs-2.1.3.tar.gz --markdown 20230509/P/PlexPreferNonForcedSubs/2.1.2-2.1.3/diff.md --exclude *.pyd
+[2023-05-09 17:01:47] INFO root fetch - processPackages [stormware]: executing diffoscope
+[2023-05-09 17:01:47] INFO root fetch - processPackages [stormware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stormware-1.1.0.tar.gz tmp/stormware-1.2.0.tar.gz --markdown 20230509/s/stormware/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 17:01:47] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-09 17:01:47] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230509113331.tar.gz tmp/localstack-core-2.0.3.dev20230509145706.tar.gz --markdown 20230509/l/localstack-core/2.0.3.dev20230509113331-2.0.3.dev20230509145706/diff.md --exclude *.pyd
+[2023-05-09 17:01:48] INFO root fetch - processPackages [lnschema_core]: Downloading https://files.pythonhosted.org/packages/39/cd/cc4d91db21934f66692bedcbdb15fc2c82698c7cc9d0288133e8fa2f5cee/lnschema_core-0.9.0.tar.gz
+[2023-05-09 17:01:48] INFO root fetch - processPackages [lnschema_core]: executing diffoscope
+[2023-05-09 17:01:48] INFO root fetch - processPackages [lnschema_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_core-0.8.1.tar.gz tmp/lnschema_core-0.9.0.tar.gz --markdown 20230509/l/lnschema_core/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 17:01:49] INFO root fetch - processPackages [encoded-core]: Start processing: mongomancy
+[2023-05-09 17:01:49] INFO root fetch - main [MainThread]: End processing [encoded-core]: success
+[2023-05-09 17:01:49] INFO root fetch - processPackages [mongomancy]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 17:01:49] INFO root fetch - processPackages [django-qiyu-utils]: Start processing: pyowletapi
+[2023-05-09 17:01:49] INFO root fetch - main [MainThread]: End processing [django-qiyu-utils]: success
+[2023-05-09 17:01:49] INFO root fetch - processPackages [stormware]: Start processing: refineGEMs
+[2023-05-09 17:01:49] INFO root fetch - main [MainThread]: End processing [stormware]: success
+[2023-05-09 17:01:49] INFO root fetch - processPackages [tumfl]: Start processing: iewil
+[2023-05-09 17:01:49] INFO root fetch - processPackages [pyowletapi]: New version: [2023.5.9] Old Version: [2023.5.7]
+[2023-05-09 17:01:49] INFO root fetch - main [MainThread]: End processing [tumfl]: success
+[2023-05-09 17:01:49] INFO root fetch - processPackages [refineGEMs]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 17:01:49] INFO root fetch - processPackages [iewil]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 17:01:49] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: Start processing: deptry
+[2023-05-09 17:01:49] INFO root fetch - main [MainThread]: End processing [PlexPreferNonForcedSubs]: success
+[2023-05-09 17:01:49] INFO root fetch - processPackages [pyowletapi]: executing diffoscope
+[2023-05-09 17:01:49] INFO root fetch - processPackages [pyowletapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyowletapi-2023.5.7.tar.gz tmp/pyowletapi-2023.5.9.tar.gz --markdown 20230509/p/pyowletapi/2023.5.7-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 17:01:49] INFO root fetch - processPackages [deptry]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 17:01:49] INFO root fetch - processPackages [refineGEMs]: Downloading https://files.pythonhosted.org/packages/d2/b8/8ef4c06a17ee4711fa3f62b155e6ed7f748d444ac9c33d4b764044dc4ce9/refineGEMs-1.0.0.tar.gz
+[2023-05-09 17:01:49] INFO root fetch - processPackages [deptry]: executing diffoscope
+[2023-05-09 17:01:49] INFO root fetch - processPackages [deptry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deptry-0.8.0.tar.gz tmp/deptry-0.9.0.tar.gz --markdown 20230509/d/deptry/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 17:01:49] INFO root fetch - processPackages [mongomancy]: Downloading https://files.pythonhosted.org/packages/df/c0/0b53c5ff9997371acc31efb847f22204df26a009453f921c49d36e4763e1/mongomancy-0.1.3.tar.gz
+[2023-05-09 17:01:49] INFO root fetch - processPackages [iewil]: Downloading https://files.pythonhosted.org/packages/9d/16/1bf31b95d6bc829e9107f39881160a38cebfa8289f48faa47e79a20459fc/iewil-0.0.4.tar.gz
+[2023-05-09 17:01:49] INFO root fetch - processPackages [iewil]: executing diffoscope
+[2023-05-09 17:01:49] INFO root fetch - processPackages [iewil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iewil-0.0.3.tar.gz tmp/iewil-0.0.4.tar.gz --markdown 20230509/i/iewil/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 17:01:49] INFO root fetch - processPackages [refineGEMs]: Downloading https://files.pythonhosted.org/packages/69/43/027e689800aa28e9761241d2f7ec4afd16a991174f1b7973a80f6c6052a2/refineGEMs-1.0.1.tar.gz
+[2023-05-09 17:01:49] INFO root fetch - processPackages [mongomancy]: Downloading https://files.pythonhosted.org/packages/6c/39/7f26a534c6fd4d8a9341b3c52dcd6c7933c1cbdb477c69683071737ff68d/mongomancy-0.1.4.tar.gz
+[2023-05-09 17:01:49] INFO root fetch - processPackages [geomulticorr]: Start processing: loristrck
+[2023-05-09 17:01:49] INFO root fetch - main [MainThread]: End processing [geomulticorr]: success
+[2023-05-09 17:01:49] INFO root fetch - processPackages [loristrck]: New version: [1.5.6] Old Version: [1.5.5]
+[2023-05-09 17:01:49] INFO root fetch - processPackages [refineGEMs]: executing diffoscope
+[2023-05-09 17:01:49] INFO root fetch - processPackages [refineGEMs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refineGEMs-1.0.0.tar.gz tmp/refineGEMs-1.0.1.tar.gz --markdown 20230509/r/refineGEMs/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 17:01:49] INFO root fetch - processPackages [mongomancy]: executing diffoscope
+[2023-05-09 17:01:49] INFO root fetch - processPackages [mongomancy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongomancy-0.1.3.tar.gz tmp/mongomancy-0.1.4.tar.gz --markdown 20230509/m/mongomancy/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 17:01:50] INFO root fetch - processPackages [lnschema_core]: Start processing: goodai-ltm
+[2023-05-09 17:01:50] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
+[2023-05-09 17:01:50] INFO root fetch - processPackages [pop-create-idem]: Start processing: neulabs-cdk-constructs
+[2023-05-09 17:01:50] INFO root fetch - main [MainThread]: End processing [pop-create-idem]: success
+[2023-05-09 17:01:50] INFO root fetch - processPackages [goodai-ltm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-09 17:01:50] INFO root fetch - processPackages [neulabs-cdk-constructs]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-09 17:01:50] INFO root fetch - processPackages [loristrck]: Downloading https://files.pythonhosted.org/packages/69/f9/9df2dd769f5e8e20bbeb2c0662ca517aa2c74b06477d4e1005d9ff78aac8/loristrck-1.5.6.tar.gz
+[2023-05-09 17:01:50] INFO root fetch - processPackages [neulabs-cdk-constructs]: Downloading https://files.pythonhosted.org/packages/51/84/20d964945a153eb570a4642f82c0fd3563312c6722c195d7dbed0aff4323/neulabs-cdk-constructs-0.3.0.tar.gz
+[2023-05-09 17:01:50] INFO root fetch - processPackages [goodai-ltm]: Downloading https://files.pythonhosted.org/packages/18/63/9e57a19079245a5337fa4a557ae3b9ed1e34dbeb2275b83b5e89351b17eb/goodai-ltm-0.0.4.tar.gz
+[2023-05-09 17:01:50] INFO root fetch - processPackages [loristrck]: executing diffoscope
+[2023-05-09 17:01:50] INFO root fetch - processPackages [loristrck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loristrck-1.5.5-cp39-cp39-win_amd64.whl.zip tmp/loristrck-1.5.6.tar.gz --markdown 20230509/l/loristrck/1.5.5-1.5.6/diff.md --exclude *.pyd
+[2023-05-09 17:01:50] INFO root fetch - processPackages [mythic-container]: Start processing: weaviate-client
+[2023-05-09 17:01:50] INFO root fetch - main [MainThread]: End processing [mythic-container]: success
+[2023-05-09 17:01:50] INFO root fetch - processPackages [goodai-ltm]: Downloading https://files.pythonhosted.org/packages/b7/b7/9df6dd1a05d5cc2b8a454df1a077d206fde6546097eb685b8efb127b34ca/goodai-ltm-0.0.5.tar.gz
+[2023-05-09 17:01:50] INFO root fetch - processPackages [weaviate-client]: New version: [3.9.0b0] Old Version: [3.9.0.dev2]
+[2023-05-09 17:01:50] INFO root fetch - processPackages [neulabs-cdk-constructs]: Downloading https://files.pythonhosted.org/packages/d6/0a/c02f24561d7cab887b13754c84388c1f0a40a52170b1bc40eaee7a67192c/neulabs-cdk-constructs-0.3.1.tar.gz
+[2023-05-09 17:01:50] INFO root fetch - processPackages [pyowletapi]: Start processing: dxsp
+[2023-05-09 17:01:50] INFO root fetch - main [MainThread]: End processing [pyowletapi]: success
+[2023-05-09 17:01:50] INFO root fetch - processPackages [goodai-ltm]: executing diffoscope
+[2023-05-09 17:01:50] INFO root fetch - processPackages [goodai-ltm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goodai-ltm-0.0.4.tar.gz tmp/goodai-ltm-0.0.5.tar.gz --markdown 20230509/g/goodai-ltm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 17:01:50] INFO root fetch - processPackages [dxsp]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-09 17:01:50] INFO root fetch - processPackages [neulabs-cdk-constructs]: executing diffoscope
+[2023-05-09 17:01:50] INFO root fetch - processPackages [neulabs-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neulabs-cdk-constructs-0.3.0.tar.gz tmp/neulabs-cdk-constructs-0.3.1.tar.gz --markdown 20230509/n/neulabs-cdk-constructs/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-09 17:01:50] INFO root fetch - processPackages [weaviate-client]: Downloading https://files.pythonhosted.org/packages/a8/cb/8ca3061906481a9a6997baefa6ecc800dcaed0f08e1c84c55c609182fe2b/weaviate-client-3.9.0.dev2.tar.gz
+[2023-05-09 17:01:50] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-09 17:01:50] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.0.8.tar.gz tmp/dxsp-2.0.9.tar.gz --markdown 20230509/d/dxsp/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-09 17:01:51] INFO root fetch - main [MainThread]: End processing [iewil]: success
+[2023-05-09 17:01:51] INFO root fetch - main [MainThread]: End processing [deptry]: success
+[2023-05-09 17:01:51] INFO root fetch - processPackages [weaviate-client]: Downloading https://files.pythonhosted.org/packages/10/6b/0e242b95dd9ee12ed89f4af97e7bd0c82317c708e5a1de27406f7832d4e2/weaviate-client-3.9.0b0.tar.gz
+[2023-05-09 17:01:51] INFO root fetch - main [MainThread]: End processing [mongomancy]: success
+[2023-05-09 17:01:51] INFO root fetch - main [MainThread]: End processing [refineGEMs]: success
+[2023-05-09 17:01:51] INFO root fetch - processPackages [weaviate-client]: executing diffoscope
+[2023-05-09 17:01:51] INFO root fetch - processPackages [weaviate-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weaviate-client-3.9.0.dev2.tar.gz tmp/weaviate-client-3.9.0b0.tar.gz --markdown 20230509/w/weaviate-client/3.9.0.dev2-3.9.0b0/diff.md --exclude *.pyd
+[2023-05-09 17:01:52] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-09 17:01:52] INFO root fetch - main [MainThread]: End processing [goodai-ltm]: success
+[2023-05-09 17:01:52] INFO root fetch - main [MainThread]: End processing [loristrck]: success
+[2023-05-09 17:01:52] INFO root fetch - main [MainThread]: End processing [weaviate-client]: success
+[2023-05-09 17:01:54] INFO root fetch - main [MainThread]: End processing [neulabs-cdk-constructs]: success
+[2023-05-09 17:01:56] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-09 17:01:56] INFO root fetch - main [MainThread]: Store serial: [18033597]
