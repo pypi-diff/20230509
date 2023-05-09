@@ -8366,3 +8366,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 05:40:36] INFO root fetch - main [MainThread]: End processing [safe-eth-py-suraneti]: success
 [2023-05-09 05:40:37] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
 [2023-05-09 05:40:37] INFO root fetch - main [MainThread]: Store serial: [18027262]
+[2023-05-09 05:45:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027262]
+[2023-05-09 05:45:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-09 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protoletariat
+[2023-05-09 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: venakatest
+[2023-05-09 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ccdt
+[2023-05-09 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aind-data-schema
+[2023-05-09 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipybbycell
+[2023-05-09 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: garaprod
+[2023-05-09 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cuke
+[2023-05-09 05:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: OpenAccess
+[2023-05-09 05:45:46] INFO root fetch - processPackages [garaprod]: New version: [0.1683603820.0] Old Version: [0.1683603566.0]
+[2023-05-09 05:45:46] WARNING root fetch - processPackages [venakatest]: Skipping, unable to determine old version
+[2023-05-09 05:45:46] INFO root fetch - main [MainThread]: End processing [venakatest] error
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ipybbycell]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-09 05:45:46] INFO root fetch - processPackages [cuke]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 05:45:46] INFO root fetch - processPackages [protoletariat]: New version: [3.2.5] Old Version: [3.2.4]
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ccdt]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-09 05:45:46] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-09 05:45:46] INFO root fetch - processPackages [OpenAccess]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 05:45:46] INFO root fetch - processPackages [protoletariat]: Downloading https://files.pythonhosted.org/packages/a3/e9/9345ab15a0e74cff7289ca80aa80155baca52079a9ecd174396a00538610/protoletariat-3.2.4.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2023-05-09 05:45:46] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20230509/a/aind-data-schema/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ipybbycell]: Downloading https://files.pythonhosted.org/packages/a9/ea/afddd60b58b8f30bb86be9f84f4e45982485adf12db0aeb12d46f0c52e93/ipybbycell-0.3.5.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/0d/17/910cd010408a0fcaecd482b27b2f325c7f5db1c7f23309121e6b31b624a2/garaprod-0.1683603820.0.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [cuke]: Downloading https://files.pythonhosted.org/packages/93/6b/932379734dc0f143ca3d485d873449bacf9d5ebcb0e381705830c5fb2e3a/cuke-0.1.2.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/3a/05/ca0c15dee8b37428294567d2d8e001961068c468104d61f59ad3f7f3cd13/ccdt-2.0.4.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [OpenAccess]: Downloading https://files.pythonhosted.org/packages/58/1c/c5e5797007ac2c2837f3ddff93330ac054baeaee8a450ed29a946bd5dab3/OpenAccess-0.1.1.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 05:45:46] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683603566.0.tar.gz tmp/garaprod-0.1683603820.0.tar.gz --markdown 20230509/g/garaprod/0.1683603566.0-0.1683603820.0/diff.md --exclude *.pyd
+[2023-05-09 05:45:46] INFO root fetch - processPackages [cuke]: executing diffoscope
+[2023-05-09 05:45:46] INFO root fetch - processPackages [cuke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuke-0.1.1.tar.gz tmp/cuke-0.1.2.tar.gz --markdown 20230509/c/cuke/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/f6/d5/7319a6e8c45e776f0523a1fc3365d6cd23d91827ff988a35c889a714f94c/ccdt-2.0.5.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [OpenAccess]: Downloading https://files.pythonhosted.org/packages/80/91/3542408ad2b89db5f13b574192aaf41d56c0e4499687aae983b90ec386e5/OpenAccess-0.1.2.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [protoletariat]: Downloading https://files.pythonhosted.org/packages/04/0e/91529c513d1fcc29a09c5c1f6e5bb241899ac847ce4322c58eea14cbe528/protoletariat-3.2.5.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ipybbycell]: Downloading https://files.pythonhosted.org/packages/c6/9e/562c12a51982dfda081b05d7d041d3965984c3768edf78dd4d91c6eeb9e9/ipybbycell-0.3.6.tar.gz
+[2023-05-09 05:45:46] INFO root fetch - processPackages [protoletariat]: executing diffoscope
+[2023-05-09 05:45:46] INFO root fetch - processPackages [protoletariat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoletariat-3.2.4.tar.gz tmp/protoletariat-3.2.5.tar.gz --markdown 20230509/p/protoletariat/3.2.4-3.2.5/diff.md --exclude *.pyd
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-2.0.4.tar.gz tmp/ccdt-2.0.5.tar.gz --markdown 20230509/c/ccdt/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-09 05:45:46] INFO root fetch - processPackages [OpenAccess]: executing diffoscope
+[2023-05-09 05:45:46] INFO root fetch - processPackages [OpenAccess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenAccess-0.1.1.tar.gz tmp/OpenAccess-0.1.2.tar.gz --markdown 20230509/O/OpenAccess/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ipybbycell]: executing diffoscope
+[2023-05-09 05:45:46] INFO root fetch - processPackages [ipybbycell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipybbycell-0.3.5.tar.gz tmp/ipybbycell-0.3.6.tar.gz --markdown 20230509/i/ipybbycell/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-09 05:45:47] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 05:45:47] INFO root fetch - main [MainThread]: End processing [cuke]: success
+[2023-05-09 05:45:47] INFO root fetch - main [MainThread]: End processing [OpenAccess]: success
+[2023-05-09 05:45:48] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
+[2023-05-09 05:45:48] INFO root fetch - main [MainThread]: End processing [protoletariat]: success
+[2023-05-09 05:45:48] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2023-05-09 05:45:55] INFO root fetch - main [MainThread]: End processing [ipybbycell]: success
+[2023-05-09 05:45:55] INFO root fetch - main [MainThread]: Store serial: [18027290]
