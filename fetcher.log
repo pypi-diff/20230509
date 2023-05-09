@@ -15050,3 +15050,105 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 13:19:32] INFO root fetch - main [MainThread]: End processing [rexify]: success
 [2023-05-09 13:19:32] INFO root fetch - main [MainThread]: End processing [networkx-query]: success
 [2023-05-09 13:19:32] INFO root fetch - main [MainThread]: Store serial: [18031155]
+[2023-05-09 13:24:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031155]
+[2023-05-09 13:24:41] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-uri-eradicate-certora-dir
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: express-pascal-voc-tools
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: assisted-service-client
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: salure-helpers-elastic
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrippy-snmp
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: deezer-python
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SAPsim
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tensordict-nightly
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyUAMMD
+[2023-05-09 13:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torchtnt-nightly
+[2023-05-09 13:24:41] INFO root fetch - processPackages [SAPsim]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-09 13:24:41] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: New version: [20230509.10.3.145141] Old Version: [20230508.18.32.237387]
+[2023-05-09 13:24:41] INFO root fetch - processPackages [pyUAMMD]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 13:24:41] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.5.8] Old Version: [2023.5.7]
+[2023-05-09 13:24:41] WARNING root fetch - processPackages [express-pascal-voc-tools]: Skipping, unable to determine old version
+[2023-05-09 13:24:41] INFO root fetch - processPackages [express-pascal-voc-tools]: Start processing: KeyboardPaster
+[2023-05-09 13:24:41] INFO root fetch - main [MainThread]: End processing [express-pascal-voc-tools] error
+[2023-05-09 13:24:41] INFO root fetch - processPackages [deezer-python]: New version: [5.9.0] Old Version: [5.8.1]
+[2023-05-09 13:24:41] INFO root fetch - processPackages [KeyboardPaster]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 13:24:41] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Downloading https://files.pythonhosted.org/packages/3b/5c/2d780e3eb0b3e16592b0b11581b8f4c63d9ecb5f816dd4f36146ce0f1683/certora-cli-alpha-uri-eradicate_certora_dir-20230508.18.32.237387.tar.gz
+[2023-05-09 13:24:41] INFO root fetch - processPackages [scrippy-snmp]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 13:24:41] WARNING root fetch - processPackages [salure-helpers-elastic]: Skipping, unable to determine old version
+[2023-05-09 13:24:41] INFO root fetch - processPackages [salure-helpers-elastic]: Start processing: reversibledict
+[2023-05-09 13:24:41] INFO root fetch - main [MainThread]: End processing [salure-helpers-elastic] error
+[2023-05-09 13:24:41] INFO root fetch - processPackages [tensordict-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-09 13:24:41] INFO root fetch - processPackages [pyUAMMD]: executing diffoscope
+[2023-05-09 13:24:41] INFO root fetch - processPackages [pyUAMMD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyUAMMD-1.0.8.tar.gz tmp/pyUAMMD-1.0.9.tar.gz --markdown 20230509/p/pyUAMMD/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 13:24:41] WARNING root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Skipping package: exceeds size limit 38474178>=10485760
+[2023-05-09 13:24:41] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Start processing: scoi-lab3-json-xml-serializer
+[2023-05-09 13:24:41] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-uri-eradicate-certora-dir] error
+[2023-05-09 13:24:41] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-09 13:24:41] INFO root fetch - processPackages [KeyboardPaster]: executing diffoscope
+[2023-05-09 13:24:41] INFO root fetch - processPackages [KeyboardPaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KeyboardPaster-0.1.3.tar.gz tmp/KeyboardPaster-0.1.4.tar.gz --markdown 20230509/K/KeyboardPaster/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 13:24:41] INFO root fetch - processPackages [reversibledict]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-09 13:24:41] INFO root fetch - processPackages [scrippy-snmp]: Downloading https://files.pythonhosted.org/packages/49/5e/79a754705fd0e91bea6d34e70bd58c7ab71517ce16278105e57c7a218310/scrippy-snmp-1.0.1.tar.gz
+[2023-05-09 13:24:41] WARNING root fetch - processPackages [scoi-lab3-json-xml-serializer]: Skipping, unable to determine old version
+[2023-05-09 13:24:41] INFO root fetch - processPackages [scoi-lab3-json-xml-serializer]: Start processing: lib310-lite
+[2023-05-09 13:24:41] INFO root fetch - main [MainThread]: End processing [scoi-lab3-json-xml-serializer] error
+[2023-05-09 13:24:41] INFO root fetch - processPackages [SAPsim]: Downloading https://files.pythonhosted.org/packages/8e/63/dcc1b1bdd27b6a28565b7d4ccbd415e0190d6f63e5516ea02126339ca78c/SAPsim-1.0.8.tar.gz
+[2023-05-09 13:24:41] INFO root fetch - processPackages [lib310-lite]: New version: [0.0.5.dev9] Old Version: [0.0.5.dev8]
+[2023-05-09 13:24:41] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/62/33/9250703fd4c8e0207d7769383c0270233abc90f1561de61a72fefc4fb81a/tensordict_nightly-2023.5.8-py39-none-any.whl
+[2023-05-09 13:24:41] INFO root fetch - processPackages [deezer-python]: executing diffoscope
+[2023-05-09 13:24:41] INFO root fetch - processPackages [deezer-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deezer_python-5.8.1.tar.gz tmp/deezer_python-5.9.0.tar.gz --markdown 20230509/d/deezer-python/5.8.1-5.9.0/diff.md --exclude *.pyd
+[2023-05-09 13:24:41] INFO root fetch - processPackages [SAPsim]: executing diffoscope
+[2023-05-09 13:24:41] INFO root fetch - processPackages [SAPsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SAPsim-1.0.7.tar.gz tmp/SAPsim-1.0.8.tar.gz --markdown 20230509/S/SAPsim/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-09 13:24:41] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/b2/9e/fb94e3475576700c29b739a2c5e15d8cdec19b71ad4720793151bfefa39e/torchtnt-nightly-2023.5.8.tar.gz
+[2023-05-09 13:24:41] INFO root fetch - processPackages [lib310-lite]: executing diffoscope
+[2023-05-09 13:24:41] INFO root fetch - processPackages [lib310-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib310_lite-0.0.5.dev8.tar.gz tmp/lib310_lite-0.0.5.dev9.tar.gz --markdown 20230509/l/lib310-lite/0.0.5.dev8-0.0.5.dev9/diff.md --exclude *.pyd
+[2023-05-09 13:24:41] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-09 13:24:41] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230509/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-09 13:24:41] INFO root fetch - processPackages [reversibledict]: Downloading https://files.pythonhosted.org/packages/47/37/a7446cc68781807c5474d4f785ef5fadda2351f1009e7e79e47b84cc6c51/reversibledict-0.2.1.tar.gz
+[2023-05-09 13:24:41] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-05-09 13:24:41] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.5.7.tar.gz tmp/torchtnt-nightly-2023.5.8.tar.gz --markdown 20230509/t/torchtnt-nightly/2023.5.7-2023.5.8/diff.md --exclude *.pyd
+[2023-05-09 13:24:42] INFO root fetch - processPackages [scrippy-snmp]: Downloading https://files.pythonhosted.org/packages/7a/12/599c8f354b4a5ffbcd7b1c01881f7165227eedfe6eeccdb85b4c3dbcb51e/scrippy-snmp-1.0.2.tar.gz
+[2023-05-09 13:24:42] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/7c/a0/7c1245486e3080bdd8d23ef40da1a4f7e1e24f48905890ee9e0fb9e779e1/tensordict_nightly-2023.5.9-py39-none-any.whl
+[2023-05-09 13:24:42] INFO root fetch - processPackages [scrippy-snmp]: executing diffoscope
+[2023-05-09 13:24:42] INFO root fetch - processPackages [scrippy-snmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrippy-snmp-1.0.1.tar.gz tmp/scrippy-snmp-1.0.2.tar.gz --markdown 20230509/s/scrippy-snmp/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 13:24:42] INFO root fetch - processPackages [reversibledict]: Downloading https://files.pythonhosted.org/packages/b6/9c/16afc8722aef0bc162ae866a80630315932cf7e8a9d63fdfe8f692d6a84c/reversibledict-0.2.2.tar.gz
+[2023-05-09 13:24:42] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2023-05-09 13:24:42] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2023.5.8-py39-none-any.whl.zip tmp/tensordict_nightly-2023.5.9-py39-none-any.whl.zip --markdown 20230509/t/tensordict-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 13:24:42] INFO root fetch - processPackages [reversibledict]: executing diffoscope
+[2023-05-09 13:24:42] INFO root fetch - processPackages [reversibledict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reversibledict-0.2.1.tar.gz tmp/reversibledict-0.2.2.tar.gz --markdown 20230509/r/reversibledict/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-09 13:24:43] INFO root fetch - processPackages [KeyboardPaster]: Start processing: FlyHash
+[2023-05-09 13:24:43] INFO root fetch - main [MainThread]: End processing [KeyboardPaster]: success
+[2023-05-09 13:24:43] WARNING root fetch - processPackages [FlyHash]: Skipping, unable to determine old version
+[2023-05-09 13:24:43] INFO root fetch - processPackages [FlyHash]: Start processing: tb-nightly
+[2023-05-09 13:24:43] INFO root fetch - main [MainThread]: End processing [FlyHash] error
+[2023-05-09 13:24:43] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-09 13:24:43] INFO root fetch - processPackages [lib310-lite]: Start processing: kstreams
+[2023-05-09 13:24:43] INFO root fetch - main [MainThread]: End processing [lib310-lite]: success
+[2023-05-09 13:24:43] INFO root fetch - processPackages [scrippy-snmp]: Start processing: volkswagencarnet
+[2023-05-09 13:24:43] INFO root fetch - main [MainThread]: End processing [scrippy-snmp]: success
+[2023-05-09 13:24:43] INFO root fetch - processPackages [kstreams]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 13:24:43] INFO root fetch - processPackages [volkswagencarnet]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-09 13:24:43] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-09 13:24:43] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230509/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-09 13:24:43] INFO root fetch - processPackages [reversibledict]: Start processing: rape-identification
+[2023-05-09 13:24:43] INFO root fetch - main [MainThread]: End processing [reversibledict]: success
+[2023-05-09 13:24:43] INFO root fetch - processPackages [kstreams]: Downloading https://files.pythonhosted.org/packages/9a/1d/ca3e2b8b740d2aa5987bc32e9793e218566beceff074a61554892e99e7b2/kstreams-0.9.0.tar.gz
+[2023-05-09 13:24:43] INFO root fetch - main [MainThread]: End processing [deezer-python]: success
+[2023-05-09 13:24:43] INFO root fetch - processPackages [rape-identification]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 13:24:44] INFO root fetch - processPackages [volkswagencarnet]: Downloading https://files.pythonhosted.org/packages/c2/2e/907289c04898d780852479b828f4f848f7105c0bda53b775e181a13c63da/volkswagencarnet-4.4.8.tar.gz
+[2023-05-09 13:24:44] INFO root fetch - main [MainThread]: End processing [SAPsim]: success
+[2023-05-09 13:24:44] INFO root fetch - processPackages [rape-identification]: executing diffoscope
+[2023-05-09 13:24:44] INFO root fetch - processPackages [rape-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rape_identification-0.1.4.tar.gz tmp/rape_identification-0.1.5.tar.gz --markdown 20230509/r/rape-identification/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 13:24:44] INFO root fetch - processPackages [volkswagencarnet]: Downloading https://files.pythonhosted.org/packages/62/42/c2520e78a7ac0b40108eb76b73ffc24514c8a4a054040c76ffe63e07d305/volkswagencarnet-4.4.9.tar.gz
+[2023-05-09 13:24:44] INFO root fetch - processPackages [kstreams]: Downloading https://files.pythonhosted.org/packages/62/9f/51bb919a10a681dae9c3fa7686fbdb1d017488a680b89797d87c871743e4/kstreams-0.9.1.tar.gz
+[2023-05-09 13:24:44] INFO root fetch - processPackages [volkswagencarnet]: executing diffoscope
+[2023-05-09 13:24:44] INFO root fetch - processPackages [volkswagencarnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volkswagencarnet-4.4.8.tar.gz tmp/volkswagencarnet-4.4.9.tar.gz --markdown 20230509/v/volkswagencarnet/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-09 13:24:44] INFO root fetch - processPackages [kstreams]: executing diffoscope
+[2023-05-09 13:24:44] INFO root fetch - processPackages [kstreams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kstreams-0.9.0.tar.gz tmp/kstreams-0.9.1.tar.gz --markdown 20230509/k/kstreams/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 13:24:44] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-05-09 13:24:44] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2023-05-09 13:24:45] INFO root fetch - main [MainThread]: End processing [pyUAMMD]: success
+[2023-05-09 13:24:45] INFO root fetch - main [MainThread]: End processing [rape-identification]: success
+[2023-05-09 13:24:45] INFO root fetch - main [MainThread]: End processing [volkswagencarnet]: success
+[2023-05-09 13:24:46] INFO root fetch - main [MainThread]: End processing [kstreams]: success
+[2023-05-09 13:24:47] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-09 13:24:47] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-09 13:24:47] INFO root fetch - main [MainThread]: Store serial: [18031216]
