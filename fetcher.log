@@ -2055,3 +2055,44 @@
 [2023-05-09 02:32:24] INFO root fetch - main [MainThread]: End processing [delphix-dct-api]: success
 [2023-05-09 02:32:24] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
 [2023-05-09 02:32:24] INFO root fetch - main [MainThread]: Store serial: [18024219]
+[2023-05-09 02:37:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18024219]
+[2023-05-09 02:37:33] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-09 02:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepperize.cdk-github
+[2023-05-09 02:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyjourney
+[2023-05-09 02:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-05-09 02:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llamatry
+[2023-05-09 02:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-eric-topOfStack
+[2023-05-09 02:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: state-machine-semaphore
+[2023-05-09 02:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfirebird
+[2023-05-09 02:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: greenlab
+[2023-05-09 02:37:33] INFO root fetch - processPackages [llamatry]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-09 02:37:33] INFO root fetch - processPackages [pyjourney]: New version: [0.1.7] Old Version: [0.1.4]
+[2023-05-09 02:37:33] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 02:37:33] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 02:37:33] WARNING root fetch - processPackages [certora-cli-alpha-eric-topOfStack]: Skipping, unable to determine old version
+[2023-05-09 02:37:33] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-topOfStack] error
+[2023-05-09 02:37:33] WARNING root fetch - processPackages [greenlab]: Skipping, unable to determine old version
+[2023-05-09 02:37:33] INFO root fetch - main [MainThread]: End processing [greenlab] error
+[2023-05-09 02:37:33] INFO root fetch - processPackages [pepperize.cdk-github]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 02:37:33] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-09 02:37:34] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-05-09 02:37:34] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230509/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-09 02:37:34] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 02:37:34] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.8.tar.gz tmp/pyfirebird-0.0.9.tar.gz --markdown 20230509/p/pyfirebird/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 02:37:34] INFO root fetch - processPackages [pyjourney]: Downloading https://files.pythonhosted.org/packages/ec/ce/b529bf0bf7b36bd9a34578e25e301527a6250008ff389bc14130378bc371/pyjourney-0.1.7.tar.gz
+[2023-05-09 02:37:34] INFO root fetch - processPackages [llamatry]: Downloading https://files.pythonhosted.org/packages/61/e2/fae487d651eb0a004a565b775746c21573bdde7a6b51e6d455b57b73b1d2/llamatry-0.1.6.tar.gz
+[2023-05-09 02:37:34] INFO root fetch - processPackages [pyjourney]: executing diffoscope
+[2023-05-09 02:37:34] INFO root fetch - processPackages [pyjourney]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjourney-0.1.4.tar.gz tmp/pyjourney-0.1.7.tar.gz --markdown 20230509/p/pyjourney/0.1.4-0.1.7/diff.md --exclude *.pyd
+[2023-05-09 02:37:34] INFO root fetch - processPackages [llamatry]: executing diffoscope
+[2023-05-09 02:37:34] INFO root fetch - processPackages [llamatry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamatry-0.1.5.tar.gz tmp/llamatry-0.1.6.tar.gz --markdown 20230509/l/llamatry/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-09 02:37:34] INFO root fetch - processPackages [pepperize.cdk-github]: executing diffoscope
+[2023-05-09 02:37:34] INFO root fetch - processPackages [pepperize.cdk-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-github-0.0.98.tar.gz tmp/pepperize.cdk-github-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-github/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 02:37:34] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-05-09 02:37:34] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230509/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 02:37:35] INFO root fetch - main [MainThread]: End processing [pyjourney]: success
+[2023-05-09 02:37:35] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-05-09 02:37:35] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 02:37:35] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-github]: success
+[2023-05-09 02:37:35] INFO root fetch - main [MainThread]: End processing [llamatry]: success
+[2023-05-09 02:37:36] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-05-09 02:37:36] INFO root fetch - main [MainThread]: Store serial: [18024248]
