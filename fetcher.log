@@ -12132,3 +12132,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 10:14:47] INFO root fetch - main [MainThread]: End processing [sarus-data-spec-public]: success
 [2023-05-09 10:14:47] INFO root fetch - main [MainThread]: End processing [exabel-data-sdk]: success
 [2023-05-09 10:14:47] INFO root fetch - main [MainThread]: Store serial: [18029315]
+[2023-05-09 10:19:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029315]
+[2023-05-09 10:19:56] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Slpapy
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyacmi
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ambient-package-update
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psgspecialelements
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ccxt
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: outerbounds
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cg
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ccdt
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ptrlib
+[2023-05-09 10:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: beam-ds
+[2023-05-09 10:19:56] INFO root fetch - processPackages [pyacmi]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [psgspecialelements]: New version: [1.0.2.3] Old Version: [1.0.2.2]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ambient-package-update]: New version: [23.5.6] Old Version: [23.5.5]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [outerbounds]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [Slpapy]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [beam-ds]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ptrlib]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ccdt]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [cg]: New version: [29.8.5] Old Version: [29.8.4]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ccxt]: New version: [3.0.98] Old Version: [3.0.97]
+[2023-05-09 10:19:57] INFO root fetch - processPackages [psgspecialelements]: Downloading https://files.pythonhosted.org/packages/af/be/f21a7f259e2da9848a6259323106922461cf1b1b0b553f05116da28bb0c6/psgspecialelements-1.0.2.2.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ptrlib]: Downloading https://files.pythonhosted.org/packages/6d/89/baa15625624a9771c99f8028a917ab8f73064697784d5f6578423ead5d59/ptrlib-2.0.5-py3-none-any.whl
+[2023-05-09 10:19:57] INFO root fetch - processPackages [beam-ds]: Downloading https://files.pythonhosted.org/packages/2e/ec/3c29ee254a37624dbc3288021216bd3255aa4475b0b12163fc9b4c6cfbd7/beam-ds-2.0.2.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ambient-package-update]: Downloading https://files.pythonhosted.org/packages/d4/30/5329edf368e65a17829bd065316a71bf90bc9554b93e54f69d149dbb7c49/ambient-package-update-23.5.5.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [outerbounds]: Downloading https://files.pythonhosted.org/packages/db/c3/414322f3ea100053ac3662e6bb112f6d3bc83f54c5c0996e89fef5c3d384/outerbounds-0.3.8-py3-none-any.whl
+[2023-05-09 10:19:57] INFO root fetch - processPackages [pyacmi]: Downloading https://files.pythonhosted.org/packages/38/6c/aae6604fa4453b248f27272d94ac45dd8e06745b491056bab18defe15f01/pyacmi-1.1.0.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/75/35/9c740ba2d0292920eeef09765768db22cb4607ac9c84b4e36431c4643b4d/Slpapy-0.3.3.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/a1/a2/8b50d5b714eb2456d0ab827fdba04b15ed99b514630b7bdf272d81b2894f/cg-29.8.5.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/ca/50/782762d60cc87c8905a7332fcddcbb65ed137e219876fab43704d6916f94/ccdt-2.0.9.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/72/ff/1354b114369fa772754f1105e77d28b757941f27c8cd19e8b77840cfed48/ccxt-3.0.98.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [psgspecialelements]: Downloading https://files.pythonhosted.org/packages/c3/e7/0c5039fc66ca0ff46d1dc23a3347546fbce816b16f895db1bae5ec6e08dc/psgspecialelements-1.0.2.3.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [pyacmi]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [pyacmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyacmi-1.0.2.tar.gz tmp/pyacmi-1.1.0.tar.gz --markdown 20230509/p/pyacmi/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 10:19:57] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.3.2.tar.gz tmp/Slpapy-0.3.3.tar.gz --markdown 20230509/S/Slpapy/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-09 10:19:57] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-29.8.4.tar.gz tmp/cg-29.8.5.tar.gz --markdown 20230509/c/cg/29.8.4-29.8.5/diff.md --exclude *.pyd
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ambient-package-update]: Downloading https://files.pythonhosted.org/packages/e6/29/08917dec008553163ffe3e677b2074f38026324f295b9baa0930afacfa55/ambient-package-update-23.5.6.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ptrlib]: Downloading https://files.pythonhosted.org/packages/9a/00/cb6065e4268cd33714f495589e7648285d028a4893134a460a4fb410b6d6/ptrlib-2.0.6-py3-none-any.whl
+[2023-05-09 10:19:57] INFO root fetch - processPackages [psgspecialelements]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [psgspecialelements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgspecialelements-1.0.2.2.tar.gz tmp/psgspecialelements-1.0.2.3.tar.gz --markdown 20230509/p/psgspecialelements/1.0.2.2-1.0.2.3/diff.md --exclude *.pyd
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [beam-ds]: Downloading https://files.pythonhosted.org/packages/74/7c/625744797541d4b4c9842fb02a2424f7453617fc08af3683bf1b0e5d3421/beam-ds-2.0.3.tar.gz
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-2.0.8.tar.gz tmp/ccdt-2.0.9.tar.gz --markdown 20230509/c/ccdt/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ambient-package-update]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ambient-package-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient-package-update-23.5.5.tar.gz tmp/ambient-package-update-23.5.6.tar.gz --markdown 20230509/a/ambient-package-update/23.5.5-23.5.6/diff.md --exclude *.pyd
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ptrlib]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ptrlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptrlib-2.0.5-py3-none-any.whl.zip tmp/ptrlib-2.0.6-py3-none-any.whl.zip --markdown 20230509/p/ptrlib/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-09 10:19:57] INFO root fetch - processPackages [outerbounds]: Downloading https://files.pythonhosted.org/packages/eb/c8/c87d25484be12f66ee78314f7ebd89ca4200a29e85c757b1d2e469e06c52/outerbounds-0.3.9-py3-none-any.whl
+[2023-05-09 10:19:57] INFO root fetch - processPackages [beam-ds]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [beam-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beam-ds-2.0.2.tar.gz tmp/beam-ds-2.0.3.tar.gz --markdown 20230509/b/beam-ds/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-09 10:19:57] INFO root fetch - processPackages [outerbounds]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [outerbounds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outerbounds-0.3.8-py3-none-any.whl.zip tmp/outerbounds-0.3.9-py3-none-any.whl.zip --markdown 20230509/o/outerbounds/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-05-09 10:19:57] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.97.tar.gz tmp/ccxt-3.0.98.tar.gz --markdown 20230509/c/ccxt/3.0.97-3.0.98/diff.md --exclude *.pyd
+[2023-05-09 10:19:59] INFO root fetch - processPackages [pyacmi]: Start processing: djungle-rulesengine-client
+[2023-05-09 10:19:59] INFO root fetch - main [MainThread]: End processing [pyacmi]: success
+[2023-05-09 10:19:59] WARNING root fetch - processPackages [djungle-rulesengine-client]: Skipping, unable to determine old version
+[2023-05-09 10:19:59] INFO root fetch - main [MainThread]: End processing [djungle-rulesengine-client] error
+[2023-05-09 10:19:59] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2023-05-09 10:19:59] INFO root fetch - main [MainThread]: End processing [outerbounds]: success
+[2023-05-09 10:19:59] INFO root fetch - main [MainThread]: End processing [ambient-package-update]: success
+[2023-05-09 10:19:59] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-05-09 10:19:59] INFO root fetch - main [MainThread]: End processing [psgspecialelements]: success
+[2023-05-09 10:20:00] INFO root fetch - main [MainThread]: End processing [ptrlib]: success
+[2023-05-09 10:20:00] INFO root fetch - main [MainThread]: End processing [beam-ds]: success
+[2023-05-09 10:20:07] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-05-09 10:20:09] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-09 10:20:09] INFO root fetch - main [MainThread]: Store serial: [18029351]
