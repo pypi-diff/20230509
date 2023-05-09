@@ -1722,3 +1722,123 @@
 [2023-05-09 02:16:32] INFO root fetch - main [MainThread]: End processing [gtdbtk]: success
 [2023-05-09 02:16:33] INFO root fetch - main [MainThread]: End processing [django-autotask]: success
 [2023-05-09 02:16:33] INFO root fetch - main [MainThread]: Store serial: [18024037]
+[2023-05-09 02:21:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18024037]
+[2023-05-09 02:21:42] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckdbt
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piplet
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lattice-graph-manipulation
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simfire
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdklabs.appsync-utils
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-fragments
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-secret-manager-wrapper-layer
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: custodes
+[2023-05-09 02:21:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-gitlab-runner
+[2023-05-09 02:21:42] INFO root fetch - processPackages [duckdbt]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-09 02:21:42] INFO root fetch - processPackages [simfire]: New version: [1.4.34] Old Version: [1.4.33]
+[2023-05-09 02:21:42] WARNING root fetch - processPackages [piplet]: Skipping, unable to determine old version
+[2023-05-09 02:21:42] INFO root fetch - processPackages [piplet]: Start processing: kgcl-schema
+[2023-05-09 02:21:42] INFO root fetch - main [MainThread]: End processing [piplet] error
+[2023-05-09 02:21:42] INFO root fetch - processPackages [lattice-graph-manipulation]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2023-05-09 02:21:42] INFO root fetch - processPackages [custodes]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 02:21:42] INFO root fetch - processPackages [django-fragments]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.9] Old Version: [0.0.83]
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-09 02:21:42] INFO root fetch - processPackages [kgcl-schema]: New version: [0.4.0rc1] Old Version: [0.4.0]
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20230509/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-09 02:21:42] INFO root fetch - processPackages [simfire]: Downloading https://files.pythonhosted.org/packages/0a/88/78ef508458192681142a128a8fa2b75dbe2fb219cf8fdd5dcddc1f5cfd67/simfire-1.4.33.tar.gz
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/c2/9b/22ea7d319303b6f31fbea53ffea0973cfa1a5ef9ec2a5ac5059498a8b99d/cdklabs.appsync-utils-0.0.83.tar.gz
+[2023-05-09 02:21:42] INFO root fetch - processPackages [custodes]: Downloading https://files.pythonhosted.org/packages/12/49/70c86781a1104e491c8686706176d7ba25e4c9f3a97d84a59c731087319a/custodes-0.0.8.tar.gz
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.1.98.tar.gz tmp/cdk-gitlab-runner-2.1.99.tar.gz --markdown 20230509/c/cdk-gitlab-runner/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-09 02:21:42] INFO root fetch - processPackages [lattice-graph-manipulation]: Downloading https://files.pythonhosted.org/packages/47/f9/1d6a5f2ac73820a6b1b8ae1f31578c8e661b6c7cbc2ddc54638cb0012443/Lattice-Graph-Manipulation-1.1.0.tar.gz
+[2023-05-09 02:21:42] INFO root fetch - processPackages [django-fragments]: Downloading https://files.pythonhosted.org/packages/94/90/f6acd55ca90df02dce21554ae09d2920c2d8694f16960297fcd048dfe772/django_fragments-0.0.3.tar.gz
+[2023-05-09 02:21:42] INFO root fetch - processPackages [kgcl-schema]: Downloading https://files.pythonhosted.org/packages/bd/c5/bcd5275059c2b548eca6989b43987b1b6624f27a853048292467618429a0/kgcl_schema-0.4.0.tar.gz
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2023-05-09 02:21:42] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20230509/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/diff.md --exclude *.pyd
+[2023-05-09 02:21:42] INFO root fetch - processPackages [duckdbt]: Downloading https://files.pythonhosted.org/packages/ab/49/2141adc09553681eade3fab3475c97ab0679ac6684cb33ede3cb7f2bf783/duckdbt-0.3.1.tar.gz
+[2023-05-09 02:21:42] INFO root fetch - processPackages [django-fragments]: executing diffoscope
+[2023-05-09 02:21:42] INFO root fetch - processPackages [django-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_fragments-0.0.2.tar.gz tmp/django_fragments-0.0.3.tar.gz --markdown 20230509/d/django-fragments/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 02:21:42] INFO root fetch - processPackages [lattice-graph-manipulation]: executing diffoscope
+[2023-05-09 02:21:42] INFO root fetch - processPackages [lattice-graph-manipulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Lattice-Graph-Manipulation-1.0.0.tar.gz tmp/Lattice-Graph-Manipulation-1.1.0.tar.gz --markdown 20230509/l/lattice-graph-manipulation/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 02:21:43] INFO root fetch - processPackages [duckdbt]: executing diffoscope
+[2023-05-09 02:21:43] INFO root fetch - processPackages [duckdbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdbt-0.3.0.tar.gz tmp/duckdbt-0.3.1.tar.gz --markdown 20230509/d/duckdbt/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-09 02:21:43] INFO root fetch - processPackages [simfire]: Downloading https://files.pythonhosted.org/packages/8d/a0/72c33022f8b641dddf8ced6e875bcadc22b5d1e0b5ebcd47be4c1b5b310a/simfire-1.4.34.tar.gz
+[2023-05-09 02:21:43] INFO root fetch - processPackages [custodes]: Downloading https://files.pythonhosted.org/packages/30/69/235f53c7c0300e47bd508e17a2ea3c73ba2106b7635331a2f2cb2f5e5975/custodes-0.0.9.tar.gz
+[2023-05-09 02:21:43] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2023-05-09 02:21:43] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.83.tar.gz tmp/cdklabs.appsync-utils-0.0.9.tar.gz --markdown 20230509/c/cdklabs.appsync-utils/0.0.83-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 02:21:43] INFO root fetch - processPackages [kgcl-schema]: Downloading https://files.pythonhosted.org/packages/0b/5c/e6199efe749c383d9b660a533d5e708279399df8afab94c3279b464d4304/kgcl_schema-0.4.0rc1.tar.gz
+[2023-05-09 02:21:43] INFO root fetch - processPackages [custodes]: executing diffoscope
+[2023-05-09 02:21:43] INFO root fetch - processPackages [custodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custodes-0.0.8.tar.gz tmp/custodes-0.0.9.tar.gz --markdown 20230509/c/custodes/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 02:21:43] INFO root fetch - processPackages [simfire]: executing diffoscope
+[2023-05-09 02:21:43] INFO root fetch - processPackages [simfire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simfire-1.4.33.tar.gz tmp/simfire-1.4.34.tar.gz --markdown 20230509/s/simfire/1.4.33-1.4.34/diff.md --exclude *.pyd
+[2023-05-09 02:21:43] INFO root fetch - processPackages [kgcl-schema]: executing diffoscope
+[2023-05-09 02:21:43] INFO root fetch - processPackages [kgcl-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgcl_schema-0.4.0.tar.gz tmp/kgcl_schema-0.4.0rc1.tar.gz --markdown 20230509/k/kgcl-schema/0.4.0-0.4.0rc1/diff.md --exclude *.pyd
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-gitlab-runner]: Start processing: cdk-amazon-chime-resources
+[2023-05-09 02:21:44] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-amazon-chime-resources]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Start processing: cdk-budibase
+[2023-05-09 02:21:44] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-amazon-chime-resources]: Downloading https://files.pythonhosted.org/packages/15/ac/bee4d7971c4b31f5809d546f8f4d120d37a258cdbfb28775825c6a72b324/cdk-amazon-chime-resources-2.3.8.tar.gz
+[2023-05-09 02:21:44] INFO root fetch - processPackages [django-fragments]: Start processing: cdk8s-valheim
+[2023-05-09 02:21:44] INFO root fetch - main [MainThread]: End processing [django-fragments]: success
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk8s-valheim]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 02:21:44] WARNING root fetch - processPackages [cdk-amazon-chime-resources]: Skipping package: exceeds size limit 14200774>=10485760
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-amazon-chime-resources]: Start processing: cdk-nag
+[2023-05-09 02:21:44] INFO root fetch - main [MainThread]: End processing [cdk-amazon-chime-resources] error
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-nag]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.8.tar.gz tmp/cdk-budibase-0.0.9.tar.gz --markdown 20230509/c/cdk-budibase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk8s-valheim]: executing diffoscope
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk8s-valheim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-valheim-0.0.8.tar.gz tmp/cdk8s-valheim-0.0.9.tar.gz --markdown 20230509/c/cdk8s-valheim/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 02:21:44] INFO root fetch - processPackages [lattice-graph-manipulation]: Start processing: cdktf-surreal-backend
+[2023-05-09 02:21:44] INFO root fetch - main [MainThread]: End processing [lattice-graph-manipulation]: success
+[2023-05-09 02:21:44] INFO root fetch - processPackages [duckdbt]: Start processing: aws-cdk.asset-node-proxy-agent-v5
+[2023-05-09 02:21:44] INFO root fetch - main [MainThread]: End processing [duckdbt]: success
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdktf-surreal-backend]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-nag]: executing diffoscope
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdk-nag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-nag-2.9.6.tar.gz tmp/cdk-nag-2.9.7.tar.gz --markdown 20230509/c/cdk-nag/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-05-09 02:21:44] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdktf-surreal-backend]: executing diffoscope
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdktf-surreal-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-surreal-backend-1.0.98.tar.gz tmp/cdktf-surreal-backend-1.0.99.tar.gz --markdown 20230509/c/cdktf-surreal-backend/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Start processing: langchain-util
+[2023-05-09 02:21:44] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2023-05-09 02:21:44] INFO root fetch - processPackages [langchain-util]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 02:21:44] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: executing diffoscope
+[2023-05-09 02:21:44] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.asset-node-proxy-agent-v5-2.0.98.tar.gz tmp/aws-cdk.asset-node-proxy-agent-v5-2.0.99.tar.gz --markdown 20230509/a/aws-cdk.asset-node-proxy-agent-v5/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-09 02:21:44] INFO root fetch - processPackages [kgcl-schema]: Start processing: cdklabs.cdk-ethereum-node
+[2023-05-09 02:21:44] INFO root fetch - main [MainThread]: End processing [kgcl-schema]: success
+[2023-05-09 02:21:44] INFO root fetch - processPackages [custodes]: Start processing: datatorch
+[2023-05-09 02:21:44] INFO root fetch - main [MainThread]: End processing [custodes]: success
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 02:21:44] INFO root fetch - processPackages [langchain-util]: Downloading https://files.pythonhosted.org/packages/11/fe/d1acee6a5dc826a9982be88bcb94f6c4f3f52c7cb09a2788ce91a34c4991/langchain_util-0.1.0.tar.gz
+[2023-05-09 02:21:44] INFO root fetch - processPackages [datatorch]: New version: [0.4.7.0] Old Version: [0.4.6.9]
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2023-05-09 02:21:44] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20230509/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 02:21:45] INFO root fetch - processPackages [datatorch]: Downloading https://files.pythonhosted.org/packages/da/1c/ea55f8dd775fecc421e87b5d129466a8a3e1f6212f3b0959f7dc1f263338/datatorch-0.4.6.9.tar.gz
+[2023-05-09 02:21:45] INFO root fetch - processPackages [langchain-util]: Downloading https://files.pythonhosted.org/packages/22/40/0ecc91de4780f8f3a17e393b2615e17fe86e75de46da60c0c29a45e398d7/langchain_util-0.1.1.tar.gz
+[2023-05-09 02:21:45] INFO root fetch - processPackages [cdklabs.appsync-utils]: Start processing: cdk-aurora-globaldatabase
+[2023-05-09 02:21:45] INFO root fetch - main [MainThread]: End processing [cdklabs.appsync-utils]: success
+[2023-05-09 02:21:45] INFO root fetch - processPackages [langchain-util]: executing diffoscope
+[2023-05-09 02:21:45] INFO root fetch - processPackages [langchain-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_util-0.1.0.tar.gz tmp/langchain_util-0.1.1.tar.gz --markdown 20230509/l/langchain-util/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 02:21:45] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-09 02:21:45] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-05-09 02:21:45] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230509/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-09 02:21:45] INFO root fetch - processPackages [datatorch]: Downloading https://files.pythonhosted.org/packages/17/7e/ca25e3fa9bc2237b5e7b9a063a49effc1119872aba884433719aba6744e1/datatorch-0.4.7.0.tar.gz
+[2023-05-09 02:21:45] INFO root fetch - processPackages [datatorch]: executing diffoscope
+[2023-05-09 02:21:45] INFO root fetch - processPackages [datatorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datatorch-0.4.6.9.tar.gz tmp/datatorch-0.4.7.0.tar.gz --markdown 20230509/d/datatorch/0.4.6.9-0.4.7.0/diff.md --exclude *.pyd
+[2023-05-09 02:21:46] INFO root fetch - main [MainThread]: End processing [cdktf-surreal-backend]: success
+[2023-05-09 02:21:46] INFO root fetch - main [MainThread]: End processing [langchain-util]: success
+[2023-05-09 02:21:46] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2023-05-09 02:21:46] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-05-09 02:21:46] INFO root fetch - main [MainThread]: End processing [cdk8s-valheim]: success
+[2023-05-09 02:21:46] INFO root fetch - main [MainThread]: End processing [datatorch]: success
+[2023-05-09 02:21:46] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
+[2023-05-09 02:21:47] INFO root fetch - main [MainThread]: End processing [simfire]: success
+[2023-05-09 02:21:47] INFO root fetch - main [MainThread]: End processing [cdk-nag]: success
+[2023-05-09 02:21:48] INFO root fetch - main [MainThread]: End processing [aws-cdk.asset-node-proxy-agent-v5]: success
+[2023-05-09 02:21:48] INFO root fetch - main [MainThread]: Store serial: [18024102]
