@@ -20981,3 +20981,102 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 18:42:50] INFO root fetch - main [MainThread]: End processing [z0bug-odoo]: success
 [2023-05-09 18:43:20] INFO root fetch - main [MainThread]: End processing [lets-plot]: success
 [2023-05-09 18:43:20] INFO root fetch - main [MainThread]: Store serial: [18034928]
+[2023-05-09 18:48:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034928]
+[2023-05-09 18:48:30] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beewi-smartclim-ble
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ms-mint
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anywidget
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SigMF
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stackmanager
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: garatool
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyboil
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dnstwist
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: arithmetica-py
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: guimplOUI
+[2023-05-09 18:48:30] INFO root fetch - processPackages [ms-mint]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-09 18:48:30] INFO root fetch - processPackages [anywidget]: New version: [0.3.0] Old Version: [0.2.4]
+[2023-05-09 18:48:30] INFO root fetch - processPackages [stackmanager]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-05-09 18:48:30] INFO root fetch - processPackages [SigMF]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-09 18:48:30] INFO root fetch - processPackages [pyboil]: New version: [0.5.4] Old Version: [0.5.2]
+[2023-05-09 18:48:30] INFO root fetch - processPackages [dnstwist]: New version: [20230509] Old Version: [20230413]
+[2023-05-09 18:48:30] WARNING root fetch - processPackages [guimplOUI]: Skipping, unable to determine old version
+[2023-05-09 18:48:30] INFO root fetch - processPackages [guimplOUI]: Start processing: gpt4all
+[2023-05-09 18:48:30] INFO root fetch - main [MainThread]: End processing [guimplOUI] error
+[2023-05-09 18:48:30] INFO root fetch - processPackages [arithmetica-py]: New version: [1.0.201] Old Version: [1.0.200]
+[2023-05-09 18:48:30] INFO root fetch - processPackages [garatool]: New version: [0.1683650648.0] Old Version: [0.1683650517.0]
+[2023-05-09 18:48:30] INFO root fetch - processPackages [gpt4all]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 18:48:30] ERROR root fetch - processPackages [beewi-smartclim-ble]: Unable to get metadata: No such project 'beewi-smartclim-ble'
+[2023-05-09 18:48:30] INFO root fetch - processPackages [beewi-smartclim-ble]: Start processing: turbine-py
+[2023-05-09 18:48:30] INFO root fetch - main [MainThread]: End processing [beewi-smartclim-ble] error
+[2023-05-09 18:48:30] INFO root fetch - processPackages [turbine-py]: New version: [1.8.3] Old Version: [1.8.2]
+[2023-05-09 18:48:31] INFO root fetch - processPackages [stackmanager]: Downloading https://files.pythonhosted.org/packages/88/45/82f335e5ffd985c6c6a3e7c16f685c7d651ff1ddd9cb90bcfdc7969e420e/stackmanager-1.4.2.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [ms-mint]: Downloading https://files.pythonhosted.org/packages/c7/cc/dd22f785e42a09ca772a6676ee276911aa3a986a26d5ec2c2c25f875412e/ms-mint-0.2.3.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [dnstwist]: Downloading https://files.pythonhosted.org/packages/d6/29/fd443d1730c3da3679bf1f6bf2d870688c1a2d55dec60b650309de744712/dnstwist-20230413.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/d1/40/41649abadd6692f43038005d72d694bbb3ef30c8f32c801325c40493bd16/garatool-0.1683650648.0.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [SigMF]: Downloading https://files.pythonhosted.org/packages/15/6c/aef73ae593410077b204d0c129a3c593e1aed17e83ec7db19f4330644779/SigMF-1.1.0.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [pyboil]: Downloading https://files.pythonhosted.org/packages/28/49/5fea1d414333f0f7341ae1fb7e3ad0cfe50a9896ac98297baa93ba294c06/pyboil-0.5.4.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [arithmetica-py]: Downloading https://files.pythonhosted.org/packages/46/c1/d02aaa779ca232f21a7ba3914e3e4179c750d632d407a38932ef83681f45/arithmetica-py-1.0.200.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683650517.0.tar.gz tmp/garatool-0.1683650648.0.tar.gz --markdown 20230509/g/garatool/0.1683650517.0-0.1683650648.0/diff.md --exclude *.pyd
+[2023-05-09 18:48:31] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.2.tar.gz tmp/pyboil-0.5.4.tar.gz --markdown 20230509/p/pyboil/0.5.2-0.5.4/diff.md --exclude *.pyd
+[2023-05-09 18:48:31] INFO root fetch - processPackages [turbine-py]: Downloading https://files.pythonhosted.org/packages/87/e6/36f4e690d617e287da69ad210f9216f9c6e13a2f0b09b11f59bfbcb788be/turbine-py-1.8.2.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [anywidget]: Downloading https://files.pythonhosted.org/packages/43/bf/9957cb7a4bcacedf7114863a22b073cf7ba6dd2f54a208f8e41eebcbb317/anywidget-0.3.0.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [gpt4all]: Downloading https://files.pythonhosted.org/packages/c4/10/f7742ac130b197cc600e4eb1fdf36b4652818bdd88a6d4149515039e804f/gpt4all-0.1.8-py3-none-win_amd64.whl
+[2023-05-09 18:48:31] INFO root fetch - processPackages [anywidget]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [anywidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anywidget-0.2.4.tar.gz tmp/anywidget-0.3.0.tar.gz --markdown 20230509/a/anywidget/0.2.4-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 18:48:31] INFO root fetch - processPackages [gpt4all]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [gpt4all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt4all-0.1.7-py3-none-any.whl.zip tmp/gpt4all-0.1.8-py3-none-win_amd64.whl.zip --markdown 20230509/g/gpt4all/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 18:48:31] INFO root fetch - processPackages [SigMF]: Downloading https://files.pythonhosted.org/packages/c6/eb/0ae02b53a391e99907cc745e28e6486585a7ec8330dda2dfc700b9072009/SigMF-1.1.1-py3-none-any.whl
+[2023-05-09 18:48:31] INFO root fetch - processPackages [stackmanager]: Downloading https://files.pythonhosted.org/packages/f1/3b/0d3c2b5514bedb2336a98193efd57997b3c5ffc46f7f15a79df1e3cf2358/stackmanager-1.4.3.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [ms-mint]: Downloading https://files.pythonhosted.org/packages/04/1a/537bdf6ece91186343960b1f2f03ff258ccef9e27f958494a6d9c97a77d0/ms-mint-0.2.4.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [SigMF]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [SigMF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SigMF-1.1.0.tar.gz tmp/SigMF-1.1.1-py3-none-any.whl.zip --markdown 20230509/S/SigMF/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-09 18:48:31] INFO root fetch - processPackages [dnstwist]: Downloading https://files.pythonhosted.org/packages/dc/7e/e473c19e6a885cdebfd6c6d18fcdb4c1f00d9caf17d72112a366023628e9/dnstwist-20230509.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [stackmanager]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [stackmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackmanager-1.4.2.tar.gz tmp/stackmanager-1.4.3.tar.gz --markdown 20230509/s/stackmanager/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-05-09 18:48:31] INFO root fetch - processPackages [arithmetica-py]: Downloading https://files.pythonhosted.org/packages/03/82/fa79fb2d72bbf21e6170fd1426a9fc9d67b27226a9172a3895c7b94c0c00/arithmetica-py-1.0.201.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [turbine-py]: Downloading https://files.pythonhosted.org/packages/7d/55/81d0ab3a35848a1fad8dc5cd7707208d4c74265b846350b7b347e0d50df2/turbine-py-1.8.3.tar.gz
+[2023-05-09 18:48:31] INFO root fetch - processPackages [ms-mint]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [ms-mint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ms-mint-0.2.3.tar.gz tmp/ms-mint-0.2.4.tar.gz --markdown 20230509/m/ms-mint/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-09 18:48:31] INFO root fetch - processPackages [dnstwist]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [dnstwist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnstwist-20230413.tar.gz tmp/dnstwist-20230509.tar.gz --markdown 20230509/d/dnstwist/20230413-20230509/diff.md --exclude *.pyd
+[2023-05-09 18:48:31] INFO root fetch - processPackages [arithmetica-py]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [arithmetica-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arithmetica-py-1.0.200.tar.gz tmp/arithmetica-py-1.0.201.tar.gz --markdown 20230509/a/arithmetica-py/1.0.200-1.0.201/diff.md --exclude *.pyd
+[2023-05-09 18:48:31] INFO root fetch - processPackages [turbine-py]: executing diffoscope
+[2023-05-09 18:48:31] INFO root fetch - processPackages [turbine-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbine-py-1.8.2.tar.gz tmp/turbine-py-1.8.3.tar.gz --markdown 20230509/t/turbine-py/1.8.2-1.8.3/diff.md --exclude *.pyd
+[2023-05-09 18:48:32] INFO root fetch - processPackages [garatool]: Start processing: aws-arn
+[2023-05-09 18:48:32] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 18:48:32] INFO root fetch - processPackages [aws-arn]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-09 18:48:32] INFO root fetch - processPackages [aws-arn]: Downloading https://files.pythonhosted.org/packages/b7/5d/4f22a0cb7ce3952c4fae6466edbfde319147f88f32a31d3ad8b3b556700e/aws-arn-0.0.6.tar.gz
+[2023-05-09 18:48:32] INFO root fetch - processPackages [pyboil]: Start processing: firepup650
+[2023-05-09 18:48:32] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 18:48:32] INFO root fetch - processPackages [firepup650]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 18:48:32] INFO root fetch - processPackages [firepup650]: executing diffoscope
+[2023-05-09 18:48:32] INFO root fetch - processPackages [firepup650]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firepup650-1.0.8.tar.gz tmp/firepup650-1.0.9.tar.gz --markdown 20230509/f/firepup650/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:48:32] INFO root fetch - processPackages [aws-arn]: Downloading https://files.pythonhosted.org/packages/ad/e7/50ace5b08075139bbf05ec25b5fe55b111e7823ead39d094eeaa80ef3ceb/aws-arn-0.0.7.tar.gz
+[2023-05-09 18:48:33] INFO root fetch - processPackages [aws-arn]: executing diffoscope
+[2023-05-09 18:48:33] INFO root fetch - processPackages [aws-arn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-arn-0.0.6.tar.gz tmp/aws-arn-0.0.7.tar.gz --markdown 20230509/a/aws-arn/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-09 18:48:33] INFO root fetch - processPackages [gpt4all]: Start processing: certora-cli-alpha-uri-eradicate-certora-dir
+[2023-05-09 18:48:33] INFO root fetch - main [MainThread]: End processing [gpt4all]: success
+[2023-05-09 18:48:33] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: New version: [20230509.14.7.767571] Old Version: [20230509.12.41.395294]
+[2023-05-09 18:48:33] INFO root fetch - processPackages [dnstwist]: Start processing: numalogic
+[2023-05-09 18:48:33] INFO root fetch - main [MainThread]: End processing [dnstwist]: success
+[2023-05-09 18:48:33] INFO root fetch - main [MainThread]: End processing [stackmanager]: success
+[2023-05-09 18:48:33] INFO root fetch - processPackages [numalogic]: New version: [0.4.dev4] Old Version: [0.4.dev3]
+[2023-05-09 18:48:33] INFO root fetch - main [MainThread]: End processing [ms-mint]: success
+[2023-05-09 18:48:33] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Downloading https://files.pythonhosted.org/packages/16/2b/2f471d6b928ec329385cee97fd0f1271f43dd54df9dfc08f9defed9f44f1/certora-cli-alpha-uri-eradicate_certora_dir-20230509.12.41.395294.tar.gz
+[2023-05-09 18:48:33] WARNING root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Skipping package: exceeds size limit 38474197>=10485760
+[2023-05-09 18:48:33] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-uri-eradicate-certora-dir] error
+[2023-05-09 18:48:33] INFO root fetch - main [MainThread]: End processing [turbine-py]: success
+[2023-05-09 18:48:33] INFO root fetch - processPackages [numalogic]: Downloading https://files.pythonhosted.org/packages/d3/fa/5dc1791dc8d2bd6423b41773515dbc1604a2d851c33333c123e82f0ec65c/numalogic-0.4.dev3.tar.gz
+[2023-05-09 18:48:33] INFO root fetch - processPackages [numalogic]: Downloading https://files.pythonhosted.org/packages/db/b4/66e03e3e5583b06e4a0ae9db503adf87d85937693a45045818ced58116ea/numalogic-0.4.dev4.tar.gz
+[2023-05-09 18:48:33] INFO root fetch - processPackages [numalogic]: executing diffoscope
+[2023-05-09 18:48:33] INFO root fetch - processPackages [numalogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numalogic-0.4.dev3.tar.gz tmp/numalogic-0.4.dev4.tar.gz --markdown 20230509/n/numalogic/0.4.dev3-0.4.dev4/diff.md --exclude *.pyd
+[2023-05-09 18:48:33] INFO root fetch - main [MainThread]: End processing [SigMF]: success
+[2023-05-09 18:48:34] INFO root fetch - main [MainThread]: End processing [firepup650]: success
+[2023-05-09 18:48:34] INFO root fetch - main [MainThread]: End processing [arithmetica-py]: success
+[2023-05-09 18:48:34] INFO root fetch - main [MainThread]: End processing [anywidget]: success
+[2023-05-09 18:48:35] INFO root fetch - main [MainThread]: End processing [numalogic]: success
+[2023-05-09 18:48:35] INFO root fetch - main [MainThread]: End processing [aws-arn]: success
+[2023-05-09 18:48:35] INFO root fetch - main [MainThread]: Store serial: [18034994]
