@@ -15960,3 +15960,82 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 14:40:58] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-09 14:41:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
 [2023-05-09 14:41:03] INFO root fetch - main [MainThread]: Store serial: [18031705]
+[2023-05-09 14:46:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031705]
+[2023-05-09 14:46:13] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antspymm
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SpaGoG
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-uri-eradicate-certora-dir
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dop-integration-libs
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: parse-it
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lnschema_bionty
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hagis
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tigeropen
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bambooai
+[2023-05-09 14:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: parse-it
+[2023-05-09 14:46:13] INFO root fetch - processPackages [dop-integration-libs]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: New version: [20230509.12.41.395294] Old Version: [20230509.11.19.447387]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [antspymm]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [hagis]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [SpaGoG]: New version: [0.13] Old Version: [0.12]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [lnschema_bionty]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [tigeropen]: New version: [2.3.8] Old Version: [2.3.7]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: New version: [3.8.0] Old Version: [3.7.0]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [bambooai]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: New version: [3.8.0] Old Version: [3.7.0]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [lnschema_bionty]: executing diffoscope
+[2023-05-09 14:46:13] INFO root fetch - processPackages [lnschema_bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_bionty-0.8.1.tar.gz tmp/lnschema_bionty-0.9.0.tar.gz --markdown 20230509/l/lnschema_bionty/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 14:46:13] INFO root fetch - processPackages [hagis]: Downloading https://files.pythonhosted.org/packages/23/47/afbbdcd01a09a773cd9a569a3d77fdfde7d2a1cfcca419c70a1c4a45e6f7/hagis-0.7.1.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Downloading https://files.pythonhosted.org/packages/f1/c3/247ef7f44f1e0e7d2f94406a52a2886b647525dd9fe590fde54c2b9922b8/certora-cli-alpha-uri-eradicate_certora_dir-20230509.11.19.447387.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [tigeropen]: Downloading https://files.pythonhosted.org/packages/a8/a3/c30ffbfb0944cc5cead7ec962da03172912353cb588f311ea32547253e2c/tigeropen-2.3.7.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/cd/52/dbb13663fccbffb09d020cc56e8a7a1b551efa4c47759a518f758bba3f02/parse_it-3.7.0.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/5b/4a/8edd1c54e1d3c6896c20238d0259da44a705485c4913a18cd61213246727/bambooai-0.1.0.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [SpaGoG]: Downloading https://files.pythonhosted.org/packages/42/b4/dfad340f5c1512da69b93d23e60ab9646c8c9e0c88b8d6ab55e457d883a8/SpaGoG-0.12.tar.gz
+[2023-05-09 14:46:13] WARNING root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Skipping package: exceeds size limit 38474181>=10485760
+[2023-05-09 14:46:13] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Start processing: chapter-converter
+[2023-05-09 14:46:13] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-uri-eradicate-certora-dir] error
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/cd/52/dbb13663fccbffb09d020cc56e8a7a1b551efa4c47759a518f758bba3f02/parse_it-3.7.0.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [chapter-converter]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-09 14:46:13] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-09 14:46:13] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.0.9.tar.gz tmp/bambooai-0.1.0.tar.gz --markdown 20230509/b/bambooai/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 14:46:13] INFO root fetch - processPackages [antspymm]: Downloading https://files.pythonhosted.org/packages/38/d3/b5205d924f304813d7c6a27044153fce2136b198a85a09549c57b8917ea7/antspymm-0.9.4.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [antspymm]: executing diffoscope
+[2023-05-09 14:46:13] INFO root fetch - processPackages [antspymm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antspymm-0.9.3.tar.gz tmp/antspymm-0.9.4.tar.gz --markdown 20230509/a/antspymm/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-09 14:46:13] INFO root fetch - processPackages [dop-integration-libs]: executing diffoscope
+[2023-05-09 14:46:13] INFO root fetch - processPackages [dop-integration-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dop_integration_libs-0.1.8.tar.gz tmp/dop_integration_libs-0.1.9.tar.gz --markdown 20230509/d/dop-integration-libs/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 14:46:13] INFO root fetch - processPackages [chapter-converter]: Downloading https://files.pythonhosted.org/packages/e1/92/daa5a525def7da35d5827e436c129a04ed28d3c25b9ed2830a219eed737c/chapter_converter-1.1.1.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/3b/d8/0a3f4a732fa677a35dbea4e9c72741f55e44859dc1c79bf5edfce61d95f0/parse_it-3.8.0.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/3b/d8/0a3f4a732fa677a35dbea4e9c72741f55e44859dc1c79bf5edfce61d95f0/parse_it-3.8.0.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [hagis]: Downloading https://files.pythonhosted.org/packages/d9/58/c8f55710804b09df90300a0e2ba3772f4cc0a56e7fc1f3b9fb2929c8e6e8/hagis-0.7.2.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [SpaGoG]: Downloading https://files.pythonhosted.org/packages/d9/d5/4680c9bfccc3965c9db9de58ea075cef44f773aa259123c4a49ae8bb3583/SpaGoG-0.13.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [tigeropen]: Downloading https://files.pythonhosted.org/packages/c7/d3/c03658685c36c141515b49eeae69f16b4cb87d41f81db75c189f059a3bdd/tigeropen-2.3.8.tar.gz
+[2023-05-09 14:46:13] INFO root fetch - processPackages [hagis]: executing diffoscope
+[2023-05-09 14:46:13] INFO root fetch - processPackages [hagis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagis-0.7.1.tar.gz tmp/hagis-0.7.2.tar.gz --markdown 20230509/h/hagis/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: executing diffoscope
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_it-3.7.0.tar.gz tmp/parse_it-3.8.0.tar.gz --markdown 20230509/p/parse-it/3.7.0-3.8.0/diff.md --exclude *.pyd
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: executing diffoscope
+[2023-05-09 14:46:13] INFO root fetch - processPackages [parse-it]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_it-3.7.0.tar.gz tmp/parse_it-3.8.0.tar.gz --markdown 20230509/p/parse-it/3.7.0-3.8.0/diff.md --exclude *.pyd
+[2023-05-09 14:46:13] INFO root fetch - processPackages [SpaGoG]: executing diffoscope
+[2023-05-09 14:46:13] INFO root fetch - processPackages [SpaGoG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpaGoG-0.12.tar.gz tmp/SpaGoG-0.13.tar.gz --markdown 20230509/S/SpaGoG/0.12-0.13/diff.md --exclude *.pyd
+[2023-05-09 14:46:13] INFO root fetch - processPackages [tigeropen]: executing diffoscope
+[2023-05-09 14:46:13] INFO root fetch - processPackages [tigeropen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tigeropen-2.3.7.tar.gz tmp/tigeropen-2.3.8.tar.gz --markdown 20230509/t/tigeropen/2.3.7-2.3.8/diff.md --exclude *.pyd
+[2023-05-09 14:46:14] INFO root fetch - processPackages [chapter-converter]: Downloading https://files.pythonhosted.org/packages/54/68/102bb400297617758235c058fb7f6de67d0ea969f5c12771b32a09f0dc45/chapter_converter-1.2.0.tar.gz
+[2023-05-09 14:46:14] INFO root fetch - processPackages [chapter-converter]: executing diffoscope
+[2023-05-09 14:46:14] INFO root fetch - processPackages [chapter-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chapter_converter-1.1.1.tar.gz tmp/chapter_converter-1.2.0.tar.gz --markdown 20230509/c/chapter-converter/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 14:46:15] INFO root fetch - processPackages [lnschema_bionty]: Start processing: aedttest
+[2023-05-09 14:46:15] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
+[2023-05-09 14:46:15] INFO root fetch - processPackages [aedttest]: New version: [0.0.2] Old Version: [0.0.1.dev9]
+[2023-05-09 14:46:15] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-09 14:46:15] INFO root fetch - main [MainThread]: End processing [dop-integration-libs]: success
+[2023-05-09 14:46:15] INFO root fetch - processPackages [aedttest]: Downloading https://files.pythonhosted.org/packages/4d/4c/dac69ab5af526790a5e423d8323a5a740056919267129613c8f870b3ef9a/aedttest-0.0.1.dev9.tar.gz
+[2023-05-09 14:46:15] INFO root fetch - main [MainThread]: End processing [hagis]: success
+[2023-05-09 14:46:15] INFO root fetch - main [MainThread]: End processing [antspymm]: success
+[2023-05-09 14:46:15] INFO root fetch - processPackages [aedttest]: Downloading https://files.pythonhosted.org/packages/71/2c/d2aa2653b55ecc26f52e320415df4642150a82d9c98133d829f8b63c7c0d/aedttest-0.0.2.tar.gz
+[2023-05-09 14:46:15] INFO root fetch - main [MainThread]: End processing [parse-it]: success
+[2023-05-09 14:46:15] INFO root fetch - main [MainThread]: End processing [chapter-converter]: success
+[2023-05-09 14:46:16] INFO root fetch - processPackages [aedttest]: executing diffoscope
+[2023-05-09 14:46:16] INFO root fetch - processPackages [aedttest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aedttest-0.0.1.dev9.tar.gz tmp/aedttest-0.0.2.tar.gz --markdown 20230509/a/aedttest/0.0.1.dev9-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 14:46:16] INFO root fetch - main [MainThread]: End processing [parse-it]: success
+[2023-05-09 14:46:16] INFO root fetch - main [MainThread]: End processing [SpaGoG]: success
+[2023-05-09 14:46:17] INFO root fetch - main [MainThread]: End processing [aedttest]: success
+[2023-05-09 14:46:18] INFO root fetch - main [MainThread]: End processing [tigeropen]: success
+[2023-05-09 14:46:18] INFO root fetch - main [MainThread]: Store serial: [18031768]
