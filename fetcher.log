@@ -14996,3 +14996,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 13:14:10] INFO root fetch - main [MainThread]: End processing [alphaz]: success
 [2023-05-09 13:14:20] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-05-09 13:14:20] INFO root fetch - main [MainThread]: Store serial: [18031110]
+[2023-05-09 13:19:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031110]
+[2023-05-09 13:19:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rape-identification
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ops-scenario
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-l10n-it-asset-history-import-queue
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: networkx-query
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: express-pascal-voc-tools
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: duckdb-kernel
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: prodigy-teams
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dinosaurs
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pepperize.cdk-private-bucket
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rexify
+[2023-05-09 13:19:30] INFO root fetch - processPackages [dinosaurs]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-05-09 13:19:30] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rape-identification]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 13:19:30] WARNING root fetch - processPackages [odoo14-addon-l10n-it-asset-history-import-queue]: Skipping, unable to determine old version
+[2023-05-09 13:19:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-it-asset-history-import-queue] error
+[2023-05-09 13:19:30] INFO root fetch - processPackages [networkx-query]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 13:19:30] WARNING root fetch - processPackages [express-pascal-voc-tools]: Skipping, unable to determine old version
+[2023-05-09 13:19:30] INFO root fetch - main [MainThread]: End processing [express-pascal-voc-tools] error
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ops-scenario]: New version: [3.0a1] Old Version: [3.0.1]
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rexify]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 13:19:30] WARNING root fetch - processPackages [prodigy-teams]: Skipping, unable to determine old version
+[2023-05-09 13:19:30] INFO root fetch - main [MainThread]: End processing [prodigy-teams] error
+[2023-05-09 13:19:30] WARNING root fetch - processPackages [duckdb-kernel]: Skipping, unable to determine old version
+[2023-05-09 13:19:30] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: executing diffoscope
+[2023-05-09 13:19:30] INFO root fetch - main [MainThread]: End processing [duckdb-kernel] error
+[2023-05-09 13:19:30] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-private-bucket-0.0.98.tar.gz tmp/pepperize.cdk-private-bucket-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-private-bucket/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 13:19:30] INFO root fetch - processPackages [dinosaurs]: Downloading https://files.pythonhosted.org/packages/79/7f/984d339b66f7dac4cb1c61130ddb2ae6da324cb84e298b33e9f63d692b20/dinosaurs-1.0.0.tar.gz
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rape-identification]: Downloading https://files.pythonhosted.org/packages/b4/e4/f09fec099ea9440986a53d13e2e8477def955b6b7cdb4adebfc4fdc5c02b/rape_identification-0.1.4.tar.gz
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ops-scenario]: Downloading https://files.pythonhosted.org/packages/a1/b9/d1b27a54d385f987583bf449963958375e4db5a0a1d8061c3d4e2d41a8e6/ops-scenario-3.0.1.tar.gz
+[2023-05-09 13:19:30] INFO root fetch - processPackages [networkx-query]: Downloading https://files.pythonhosted.org/packages/38/37/1869daa4e0c5ff21e7305441f316e58962de3cc1cb015b2b29e49facd09f/networkx_query-1.0.1.tar.gz
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rexify]: Downloading https://files.pythonhosted.org/packages/db/ca/5caf512af9804d4520c9435633891d8844baf0e5678a310dddf16c0237c8/rexify-0.1.8.tar.gz
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rape-identification]: Downloading https://files.pythonhosted.org/packages/68/a4/148e6e5a6f8954e3a7dc7a07e3b083318026a3355b1117ac0c20e05f8412/rape_identification-0.1.5.tar.gz
+[2023-05-09 13:19:30] INFO root fetch - processPackages [dinosaurs]: Downloading https://files.pythonhosted.org/packages/53/af/d52939b783434be9e7a2046298dc5860991af6da8ad93650cd7edf075c4f/dinosaurs-2.0.0.tar.gz
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ops-scenario]: executing diffoscope
+[2023-05-09 13:19:30] INFO root fetch - processPackages [ops-scenario]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ops-scenario-3.0.1.tar.gz tmp/ops-scenario-3.0a1.tar.gz --markdown 20230509/o/ops-scenario/3.0.1-3.0a1/diff.md --exclude *.pyd
+[2023-05-09 13:19:30] INFO root fetch - processPackages [networkx-query]: Downloading https://files.pythonhosted.org/packages/d9/b5/a94aed43788b770587039e8e7d7eca4f6bc5d5c7e6e4f70923d47fd1fc94/networkx_query-1.0.2.tar.gz
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rape-identification]: executing diffoscope
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rape-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rape_identification-0.1.4.tar.gz tmp/rape_identification-0.1.5.tar.gz --markdown 20230509/r/rape-identification/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 13:19:30] INFO root fetch - processPackages [dinosaurs]: executing diffoscope
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rexify]: Downloading https://files.pythonhosted.org/packages/31/b7/9674b1299c3837975a0f5982f8ffe982a712ee2e6e5bac6c2bbc09396d18/rexify-0.1.9.tar.gz
+[2023-05-09 13:19:30] INFO root fetch - processPackages [dinosaurs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinosaurs-1.0.0.tar.gz tmp/dinosaurs-2.0.0.tar.gz --markdown 20230509/d/dinosaurs/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rexify]: executing diffoscope
+[2023-05-09 13:19:30] INFO root fetch - processPackages [rexify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rexify-0.1.8.tar.gz tmp/rexify-0.1.9.tar.gz --markdown 20230509/r/rexify/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 13:19:30] INFO root fetch - processPackages [networkx-query]: executing diffoscope
+[2023-05-09 13:19:30] INFO root fetch - processPackages [networkx-query]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_query-1.0.1.tar.gz tmp/networkx_query-1.0.2.tar.gz --markdown 20230509/n/networkx-query/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 13:19:31] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-private-bucket]: success
+[2023-05-09 13:19:32] INFO root fetch - main [MainThread]: End processing [rape-identification]: success
+[2023-05-09 13:19:32] INFO root fetch - main [MainThread]: End processing [dinosaurs]: success
+[2023-05-09 13:19:32] INFO root fetch - main [MainThread]: End processing [ops-scenario]: success
+[2023-05-09 13:19:32] INFO root fetch - main [MainThread]: End processing [rexify]: success
+[2023-05-09 13:19:32] INFO root fetch - main [MainThread]: End processing [networkx-query]: success
+[2023-05-09 13:19:32] INFO root fetch - main [MainThread]: Store serial: [18031155]
