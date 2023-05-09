@@ -22902,3 +22902,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 20:42:11] INFO root fetch - main [MainThread]: End processing [pg8000]: success
 [2023-05-09 20:42:11] INFO root fetch - main [MainThread]: End processing [stepcount]: success
 [2023-05-09 20:42:11] INFO root fetch - main [MainThread]: Store serial: [18036066]
+[2023-05-09 20:47:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18036066]
+[2023-05-09 20:47:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-09 20:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: renderit
+[2023-05-09 20:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: splight-lib
+[2023-05-09 20:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gpt-review
+[2023-05-09 20:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-kraken-sdk
+[2023-05-09 20:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aislib
+[2023-05-09 20:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: petab-select
+[2023-05-09 20:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: leechcorepyc
+[2023-05-09 20:47:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sympy2c
+[2023-05-09 20:47:21] INFO root fetch - processPackages [splight-lib]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-09 20:47:21] INFO root fetch - processPackages [renderit]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 20:47:21] INFO root fetch - processPackages [aislib]: New version: [0.1.9a0] Old Version: [0.1.8a0]
+[2023-05-09 20:47:21] INFO root fetch - processPackages [python-kraken-sdk]: New version: [1.2.0] Old Version: [1.1.1.dev2]
+[2023-05-09 20:47:21] INFO root fetch - processPackages [petab-select]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-09 20:47:21] INFO root fetch - processPackages [leechcorepyc]: New version: [2.8.1] Old Version: [2.8.0]
+[2023-05-09 20:47:21] INFO root fetch - processPackages [gpt-review]: New version: [0.8.0rc561.post1] Old Version: [0.8.0rc560.post1]
+[2023-05-09 20:47:21] INFO root fetch - processPackages [sympy2c]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-05-09 20:47:21] INFO root fetch - processPackages [aislib]: executing diffoscope
+[2023-05-09 20:47:21] INFO root fetch - processPackages [aislib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aislib-0.1.8a0.tar.gz tmp/aislib-0.1.9a0.tar.gz --markdown 20230509/a/aislib/0.1.8a0-0.1.9a0/diff.md --exclude *.pyd
+[2023-05-09 20:47:21] INFO root fetch - processPackages [python-kraken-sdk]: Downloading https://files.pythonhosted.org/packages/27/d1/9aede8dd0acd12cf6e7e0bbd2374f32408dedf1f58f5a6a9b3e29dcbc00e/python_kraken_sdk-1.1.1.dev2-py3-none-any.whl
+[2023-05-09 20:47:22] INFO root fetch - processPackages [petab-select]: Downloading https://files.pythonhosted.org/packages/16/57/dfa8ed72e34596c26a46f0bf30ebafd44f8991cccb28094650cdc73baa05/petab_select-0.1.7.tar.gz
+[2023-05-09 20:47:22] INFO root fetch - processPackages [leechcorepyc]: Downloading https://files.pythonhosted.org/packages/54/9e/10b361cfa728f728beecfacdc1e4fc2ca0462f56c8e73fd7e8738f5c8f36/leechcorepyc-2.8.0.tar.gz
+[2023-05-09 20:47:22] INFO root fetch - processPackages [renderit]: Downloading https://files.pythonhosted.org/packages/3a/95/e7dcc1827ae9019841d869ac8aaa0e4d8d6dc83a1efa229104e2c256181f/renderit-0.0.1.tar.gz
+[2023-05-09 20:47:22] INFO root fetch - processPackages [gpt-review]: Downloading https://files.pythonhosted.org/packages/27/7d/acbbc5dcd0b28624e9f34d34a19f925b121cff034c013eb7bc2945ebfd61/gpt-review-0.8.0rc561.post1.tar.gz
+[2023-05-09 20:47:22] INFO root fetch - processPackages [sympy2c]: Downloading https://files.pythonhosted.org/packages/49/9d/3b53c3cdf5f213d0403c57110b2d5bf2e90981a6d5b86b7757efbabf34a5/sympy2c-2.2.2.tar.gz
+[2023-05-09 20:47:22] INFO root fetch - processPackages [petab-select]: executing diffoscope
+[2023-05-09 20:47:22] INFO root fetch - processPackages [petab-select]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petab_select-0.1.6.tar.gz tmp/petab_select-0.1.7.tar.gz --markdown 20230509/p/petab-select/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-09 20:47:22] INFO root fetch - processPackages [gpt-review]: executing diffoscope
+[2023-05-09 20:47:22] INFO root fetch - processPackages [gpt-review]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-review-0.8.0rc560.post1.tar.gz tmp/gpt-review-0.8.0rc561.post1.tar.gz --markdown 20230509/g/gpt-review/0.8.0rc560.post1-0.8.0rc561.post1/diff.md --exclude *.pyd
+[2023-05-09 20:47:22] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-05-09 20:47:22] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.3.8.tar.gz tmp/splight-lib-2.3.9.tar.gz --markdown 20230509/s/splight-lib/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-09 20:47:22] INFO root fetch - processPackages [renderit]: Downloading https://files.pythonhosted.org/packages/11/00/4d3f8b3873936256b31a5f44698367ee039d1efa05b4ae8c6b448c131058/renderit-0.0.2.tar.gz
+[2023-05-09 20:47:22] INFO root fetch - processPackages [python-kraken-sdk]: Downloading https://files.pythonhosted.org/packages/92/7b/5053c760eede464deab9c8c51f8322f8a682f58c07fdeb520d69c9649e1f/python_kraken_sdk-1.2.0-py3-none-any.whl
+[2023-05-09 20:47:22] INFO root fetch - processPackages [renderit]: executing diffoscope
+[2023-05-09 20:47:22] INFO root fetch - processPackages [renderit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renderit-0.0.1.tar.gz tmp/renderit-0.0.2.tar.gz --markdown 20230509/r/renderit/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 20:47:22] INFO root fetch - processPackages [leechcorepyc]: Downloading https://files.pythonhosted.org/packages/e6/52/24292fbdc9d104ec939737b4a4b656fcc87a4a658d6cf8281f31a4ae82e8/leechcorepyc-2.8.1.tar.gz
+[2023-05-09 20:47:22] INFO root fetch - processPackages [sympy2c]: Downloading https://files.pythonhosted.org/packages/60/4c/c245241b4a7103594845ba0b22843f5c4fb51aa76cc72f7bc5651246816a/sympy2c-2.2.3.tar.gz
+[2023-05-09 20:47:22] INFO root fetch - processPackages [python-kraken-sdk]: executing diffoscope
+[2023-05-09 20:47:22] INFO root fetch - processPackages [python-kraken-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_kraken_sdk-1.1.1.dev2-py3-none-any.whl.zip tmp/python_kraken_sdk-1.2.0-py3-none-any.whl.zip --markdown 20230509/p/python-kraken-sdk/1.1.1.dev2-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 20:47:22] INFO root fetch - processPackages [leechcorepyc]: executing diffoscope
+[2023-05-09 20:47:22] INFO root fetch - processPackages [leechcorepyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leechcorepyc-2.8.0.tar.gz tmp/leechcorepyc-2.8.1.tar.gz --markdown 20230509/l/leechcorepyc/2.8.0-2.8.1/diff.md --exclude *.pyd
+[2023-05-09 20:47:22] INFO root fetch - processPackages [sympy2c]: executing diffoscope
+[2023-05-09 20:47:22] INFO root fetch - processPackages [sympy2c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sympy2c-2.2.2.tar.gz tmp/sympy2c-2.2.3.tar.gz --markdown 20230509/s/sympy2c/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-05-09 20:47:23] INFO root fetch - main [MainThread]: End processing [aislib]: success
+[2023-05-09 20:47:23] INFO root fetch - main [MainThread]: End processing [renderit]: success
+[2023-05-09 20:47:23] INFO root fetch - main [MainThread]: End processing [python-kraken-sdk]: success
+[2023-05-09 20:47:24] INFO root fetch - main [MainThread]: End processing [leechcorepyc]: success
+[2023-05-09 20:47:24] INFO root fetch - main [MainThread]: End processing [gpt-review]: success
+[2023-05-09 20:47:24] INFO root fetch - main [MainThread]: End processing [petab-select]: success
+[2023-05-09 20:47:25] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
+[2023-05-09 20:47:26] INFO root fetch - main [MainThread]: End processing [sympy2c]: success
+[2023-05-09 20:47:26] INFO root fetch - main [MainThread]: Store serial: [18036091]
