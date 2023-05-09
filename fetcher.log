@@ -23368,3 +23368,125 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 21:14:57] INFO root fetch - main [MainThread]: End processing [e-models]: success
 [2023-05-09 21:15:01] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2023-05-09 21:15:01] INFO root fetch - main [MainThread]: Store serial: [18036333]
+[2023-05-09 21:20:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18036333]
+[2023-05-09 21:20:11] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytecplot
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepchem
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qcs-sdk-python
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tc-admin
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sbase
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-minio
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyHarshit
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cloud-sql-python-connector
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: selenium-base
+[2023-05-09 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pytest-sbase
+[2023-05-09 21:20:11] INFO root fetch - processPackages [selenium-base]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [cloud-sql-python-connector]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [PyHarshit]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [pytecplot]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [tc-admin]: New version: [3.3.2] Old Version: [3.3.1]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [pulumi-minio]: New version: [0.9.1a1682440158] Old Version: [0.9.1a1681933919]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [pytest-sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [qcs-sdk-python]: New version: [0.6.0rc2] Old Version: [0.6.0rc1]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [deepchem]: New version: [2.7.2.dev20230509191324] Old Version: [2.7.2.dev20230508181654]
+[2023-05-09 21:20:11] INFO root fetch - processPackages [selenium-base]: executing diffoscope
+[2023-05-09 21:20:11] INFO root fetch - processPackages [selenium-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-base-4.9.8.tar.gz tmp/selenium-base-4.9.9.tar.gz --markdown 20230509/s/selenium-base/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:20:11] INFO root fetch - processPackages [tc-admin]: Downloading https://files.pythonhosted.org/packages/03/ed/d2aaaf5a29827a437362a3e8fe3f9c810a1f5df583a80577f38801f71c30/tc-admin-3.3.1.tar.gz
+[2023-05-09 21:20:11] INFO root fetch - processPackages [cloud-sql-python-connector]: Downloading https://files.pythonhosted.org/packages/32/04/fbf7f82a7a17c932ba9cd35cb37d8b3c7de84147a0e34ae164fd541fa497/cloud-sql-python-connector-1.2.2.tar.gz
+[2023-05-09 21:20:12] INFO root fetch - processPackages [pytecplot]: Downloading https://files.pythonhosted.org/packages/cb/6a/f469ddd85b0c947870da404d33de28cadbeb71b14a3fbf8bed5c122c7416/pytecplot-1.5.1.zip
+[2023-05-09 21:20:12] INFO root fetch - processPackages [pulumi-minio]: executing diffoscope
+[2023-05-09 21:20:12] INFO root fetch - processPackages [pulumi-minio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_minio-0.9.1a1681933919.tar.gz tmp/pulumi_minio-0.9.1a1682440158.tar.gz --markdown 20230509/p/pulumi-minio/0.9.1a1681933919-0.9.1a1682440158/diff.md --exclude *.pyd
+[2023-05-09 21:20:12] WARNING root fetch - processPackages [pytecplot]: Skipping package: exceeds size limit 23982165>=10485760
+[2023-05-09 21:20:12] INFO root fetch - processPackages [pytecplot]: Start processing: pytest-seleniumbase
+[2023-05-09 21:20:12] INFO root fetch - main [MainThread]: End processing [pytecplot] error
+[2023-05-09 21:20:12] INFO root fetch - processPackages [PyHarshit]: Downloading https://files.pythonhosted.org/packages/fe/5c/287ca7d58c85cf950a588999662d66ebcd5ade6b8ed14067b24f0cdabd15/PyHarshit-0.0.4-py3-none-any.whl
+[2023-05-09 21:20:12] INFO root fetch - processPackages [sbase]: executing diffoscope
+[2023-05-09 21:20:12] INFO root fetch - processPackages [sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbase-4.9.8.tar.gz tmp/sbase-4.9.9.tar.gz --markdown 20230509/s/sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:20:12] INFO root fetch - processPackages [qcs-sdk-python]: Downloading https://files.pythonhosted.org/packages/da/a5/b5517ad88cbebd60bf16b78e77cbd94fb99af261cdde16900440aab9c344/qcs_sdk_python-0.6.0rc2-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl
+[2023-05-09 21:20:12] INFO root fetch - processPackages [pytest-sbase]: executing diffoscope
+[2023-05-09 21:20:12] INFO root fetch - processPackages [pytest-sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-sbase-4.9.8.tar.gz tmp/pytest-sbase-4.9.9.tar.gz --markdown 20230509/p/pytest-sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:20:12] INFO root fetch - processPackages [pytest-seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 21:20:12] INFO root fetch - processPackages [tc-admin]: Downloading https://files.pythonhosted.org/packages/60/14/a011ef4748455d021e1f1803c7c7496109de334dae78b6cd3f94402f4332/tc-admin-3.3.2.tar.gz
+[2023-05-09 21:20:12] WARNING root fetch - processPackages [qcs-sdk-python]: Skipping package: exceeds size limit 11697605>=10485760
+[2023-05-09 21:20:12] INFO root fetch - processPackages [qcs-sdk-python]: Start processing: med-imagetools
+[2023-05-09 21:20:12] INFO root fetch - main [MainThread]: End processing [qcs-sdk-python] error
+[2023-05-09 21:20:12] INFO root fetch - processPackages [cloud-sql-python-connector]: Downloading https://files.pythonhosted.org/packages/ff/43/1b36195e69ccc009c83d944d4aa513dd14f54e73af8cc9dcce58abe8a026/cloud-sql-python-connector-1.2.3.tar.gz
+[2023-05-09 21:20:12] INFO root fetch - processPackages [tc-admin]: executing diffoscope
+[2023-05-09 21:20:12] INFO root fetch - processPackages [tc-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tc-admin-3.3.1.tar.gz tmp/tc-admin-3.3.2.tar.gz --markdown 20230509/t/tc-admin/3.3.1-3.3.2/diff.md --exclude *.pyd
+[2023-05-09 21:20:12] INFO root fetch - processPackages [deepchem]: Downloading https://files.pythonhosted.org/packages/df/82/eab37a8935f03d7ebd22868ceb6f439f526568cd78019f764019cdafb48e/deepchem-2.7.2.dev20230509191324.tar.gz
+[2023-05-09 21:20:12] INFO root fetch - processPackages [med-imagetools]: New version: [1.1.5] Old Version: [1.1.3]
+[2023-05-09 21:20:12] INFO root fetch - processPackages [cloud-sql-python-connector]: executing diffoscope
+[2023-05-09 21:20:12] INFO root fetch - processPackages [cloud-sql-python-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-sql-python-connector-1.2.2.tar.gz tmp/cloud-sql-python-connector-1.2.3.tar.gz --markdown 20230509/c/cloud-sql-python-connector/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-09 21:20:12] INFO root fetch - processPackages [PyHarshit]: Downloading https://files.pythonhosted.org/packages/bc/6f/2672d2becba72fb4ffd8f29bf5a50a5ad05829ffe5fea37978eb3c2f8345/PyHarshit-0.0.5.tar.gz
+[2023-05-09 21:20:13] INFO root fetch - processPackages [PyHarshit]: executing diffoscope
+[2023-05-09 21:20:13] INFO root fetch - processPackages [PyHarshit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyHarshit-0.0.4-py3-none-any.whl.zip tmp/PyHarshit-0.0.5.tar.gz --markdown 20230509/P/PyHarshit/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 21:20:13] INFO root fetch - processPackages [deepchem]: executing diffoscope
+[2023-05-09 21:20:13] INFO root fetch - processPackages [deepchem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepchem-2.7.2.dev20230508181654.tar.gz tmp/deepchem-2.7.2.dev20230509191324.tar.gz --markdown 20230509/d/deepchem/2.7.2.dev20230508181654-2.7.2.dev20230509191324/diff.md --exclude *.pyd
+[2023-05-09 21:20:13] INFO root fetch - processPackages [selenium-base]: Start processing: gofigr
+[2023-05-09 21:20:13] INFO root fetch - main [MainThread]: End processing [selenium-base]: success
+[2023-05-09 21:20:13] INFO root fetch - processPackages [gofigr]: New version: [0.11.0] Old Version: [0.10.6]
+[2023-05-09 21:20:13] INFO root fetch - processPackages [pytest-seleniumbase]: executing diffoscope
+[2023-05-09 21:20:13] INFO root fetch - processPackages [pytest-seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-seleniumbase-4.9.8.tar.gz tmp/pytest-seleniumbase-4.9.9.tar.gz --markdown 20230509/p/pytest-seleniumbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:20:13] INFO root fetch - processPackages [med-imagetools]: Downloading https://files.pythonhosted.org/packages/40/9a/3d2ab28d452e83868c6fec751c3c57a22e4baa951261df0c1da118439b86/med-imagetools-1.1.3.tar.gz
+[2023-05-09 21:20:13] INFO root fetch - processPackages [tc-admin]: Start processing: chyp
+[2023-05-09 21:20:13] INFO root fetch - main [MainThread]: End processing [tc-admin]: success
+[2023-05-09 21:20:13] INFO root fetch - processPackages [pytest-sbase]: Start processing: srtranslator
+[2023-05-09 21:20:13] INFO root fetch - main [MainThread]: End processing [pytest-sbase]: success
+[2023-05-09 21:20:14] INFO root fetch - processPackages [pulumi-minio]: Start processing: mibi-bin-tools
+[2023-05-09 21:20:14] INFO root fetch - main [MainThread]: End processing [pulumi-minio]: success
+[2023-05-09 21:20:14] INFO root fetch - processPackages [med-imagetools]: Downloading https://files.pythonhosted.org/packages/eb/cc/85d1e58f2b9069b9c19e15e899d041d7f897fad0794825c46c14b722a474/med-imagetools-1.1.5.tar.gz
+[2023-05-09 21:20:14] INFO root fetch - processPackages [PyHarshit]: Start processing: pawflim
+[2023-05-09 21:20:14] INFO root fetch - main [MainThread]: End processing [PyHarshit]: success
+[2023-05-09 21:20:14] INFO root fetch - processPackages [chyp]: New version: [0.3] Old Version: [0.2.2]
+[2023-05-09 21:20:14] INFO root fetch - processPackages [srtranslator]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-09 21:20:14] INFO root fetch - processPackages [mibi-bin-tools]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 21:20:14] INFO root fetch - processPackages [med-imagetools]: executing diffoscope
+[2023-05-09 21:20:14] INFO root fetch - processPackages [med-imagetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/med-imagetools-1.1.3.tar.gz tmp/med-imagetools-1.1.5.tar.gz --markdown 20230509/m/med-imagetools/1.1.3-1.1.5/diff.md --exclude *.pyd
+[2023-05-09 21:20:14] INFO root fetch - processPackages [pawflim]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 21:20:14] INFO root fetch - processPackages [gofigr]: Downloading https://files.pythonhosted.org/packages/c7/c3/f2bd5e65214029a118abd97a15f7049680a926350287db54764f3dc14f47/gofigr-0.10.6.tar.gz
+[2023-05-09 21:20:14] INFO root fetch - processPackages [cloud-sql-python-connector]: Start processing: log21
+[2023-05-09 21:20:14] INFO root fetch - main [MainThread]: End processing [cloud-sql-python-connector]: success
+[2023-05-09 21:20:14] INFO root fetch - processPackages [sbase]: Start processing: pulumi-spotinst
+[2023-05-09 21:20:14] INFO root fetch - main [MainThread]: End processing [sbase]: success
+[2023-05-09 21:20:14] INFO root fetch - processPackages [log21]: New version: [2.4.6] Old Version: [2.4.5]
+[2023-05-09 21:20:14] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2023-05-09 21:20:14] INFO root fetch - processPackages [pytest-seleniumbase]: Start processing: draw-isabelle
+[2023-05-09 21:20:14] INFO root fetch - main [MainThread]: End processing [pytest-seleniumbase]: success
+[2023-05-09 21:20:14] INFO root fetch - processPackages [chyp]: Downloading https://files.pythonhosted.org/packages/9a/c1/5f9d14ee882e00beab9677fd67bc7a858690abd2b9b0749810416007844d/chyp-0.2.2.tar.gz
+[2023-05-09 21:20:14] INFO root fetch - processPackages [srtranslator]: Downloading https://files.pythonhosted.org/packages/06/6c/92afa75463cbdad02bba46084a045ebfb81071fd1dcd362dcfa1bf2b6903/srtranslator-0.2.6.tar.gz
+[2023-05-09 21:20:14] INFO root fetch - processPackages [mibi-bin-tools]: Downloading https://files.pythonhosted.org/packages/f8/a0/4302a9795982a64be95c52c7569c44e19a1348b53066a74e0d09feb91c5f/mibi-bin-tools-0.2.8.tar.gz
+[2023-05-09 21:20:14] INFO root fetch - processPackages [pawflim]: Downloading https://files.pythonhosted.org/packages/45/8f/d7c920a9cabcb766a5040025ed169ae89c125d299398995ca15e60c0633b/pawflim-1.0.0.tar.gz
+[2023-05-09 21:20:14] INFO root fetch - processPackages [gofigr]: Downloading https://files.pythonhosted.org/packages/0d/87/c56c275bbfe0c571e4a0095310e0631afa957e58fd827360f2ac5bc289df/gofigr-0.11.0.tar.gz
+[2023-05-09 21:20:14] INFO root fetch - processPackages [log21]: Downloading https://files.pythonhosted.org/packages/61/31/596d761487ed8f2af2e1ba88421f42d6bfec14cf40c261837a52f8b0d44e/log21-2.4.5.tar.gz
+[2023-05-09 21:20:14] WARNING root fetch - processPackages [draw-isabelle]: Skipping, unable to determine old version
+[2023-05-09 21:20:14] INFO root fetch - main [MainThread]: End processing [draw-isabelle] error
+[2023-05-09 21:20:14] INFO root fetch - processPackages [gofigr]: executing diffoscope
+[2023-05-09 21:20:14] INFO root fetch - processPackages [gofigr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gofigr-0.10.6.tar.gz tmp/gofigr-0.11.0.tar.gz --markdown 20230509/g/gofigr/0.10.6-0.11.0/diff.md --exclude *.pyd
+[2023-05-09 21:20:15] INFO root fetch - processPackages [chyp]: Downloading https://files.pythonhosted.org/packages/7b/e0/46f32433370770db3ee418221ae7c1bd860edcaf9417b7a697195c992cd1/chyp-0.3.tar.gz
+[2023-05-09 21:20:15] INFO root fetch - processPackages [srtranslator]: Downloading https://files.pythonhosted.org/packages/88/18/1b93798485f90f600951b5664598316bf21f28dfc61ac16d2de86d8be70d/srtranslator-0.2.7.tar.gz
+[2023-05-09 21:20:15] INFO root fetch - processPackages [chyp]: executing diffoscope
+[2023-05-09 21:20:15] INFO root fetch - processPackages [chyp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chyp-0.2.2.tar.gz tmp/chyp-0.3.tar.gz --markdown 20230509/c/chyp/0.2.2-0.3/diff.md --exclude *.pyd
+[2023-05-09 21:20:15] INFO root fetch - processPackages [srtranslator]: executing diffoscope
+[2023-05-09 21:20:15] INFO root fetch - processPackages [srtranslator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srtranslator-0.2.6.tar.gz tmp/srtranslator-0.2.7.tar.gz --markdown 20230509/s/srtranslator/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-09 21:20:15] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2023-05-09 21:20:15] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20230509/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/diff.md --exclude *.pyd
+[2023-05-09 21:20:15] INFO root fetch - processPackages [pawflim]: Downloading https://files.pythonhosted.org/packages/e2/c5/662abf47dd1e1a4dbef9e1b4eb99ed0ba70cffb9cfde34011b2862c4a216/pawflim-1.0.1.tar.gz
+[2023-05-09 21:20:15] INFO root fetch - processPackages [log21]: Downloading https://files.pythonhosted.org/packages/62/33/655fa88cd9b754f252845b0c1730b89ddc29dc3620a754f7c3befee24133/log21-2.4.6.tar.gz
+[2023-05-09 21:20:15] INFO root fetch - main [MainThread]: End processing [med-imagetools]: success
+[2023-05-09 21:20:15] INFO root fetch - processPackages [mibi-bin-tools]: Downloading https://files.pythonhosted.org/packages/7e/8b/94ed9782d0a9e51a61f828b58bef4867b8c08f8b694c1f803475e45f596b/mibi-bin-tools-0.2.9.tar.gz
+[2023-05-09 21:20:15] INFO root fetch - processPackages [pawflim]: executing diffoscope
+[2023-05-09 21:20:15] INFO root fetch - processPackages [pawflim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pawflim-1.0.0.tar.gz tmp/pawflim-1.0.1.tar.gz --markdown 20230509/p/pawflim/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 21:20:15] INFO root fetch - processPackages [mibi-bin-tools]: executing diffoscope
+[2023-05-09 21:20:15] INFO root fetch - processPackages [mibi-bin-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mibi-bin-tools-0.2.8.tar.gz tmp/mibi-bin-tools-0.2.9.tar.gz --markdown 20230509/m/mibi-bin-tools/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 21:20:16] INFO root fetch - main [MainThread]: End processing [deepchem]: success
+[2023-05-09 21:20:16] INFO root fetch - processPackages [log21]: executing diffoscope
+[2023-05-09 21:20:16] INFO root fetch - processPackages [log21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/log21-2.4.5.tar.gz tmp/log21-2.4.6.tar.gz --markdown 20230509/l/log21/2.4.5-2.4.6/diff.md --exclude *.pyd
+[2023-05-09 21:20:16] INFO root fetch - main [MainThread]: End processing [gofigr]: success
+[2023-05-09 21:20:16] INFO root fetch - main [MainThread]: End processing [srtranslator]: success
+[2023-05-09 21:20:16] INFO root fetch - main [MainThread]: End processing [pawflim]: success
+[2023-05-09 21:20:16] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2023-05-09 21:20:17] INFO root fetch - main [MainThread]: End processing [log21]: success
+[2023-05-09 21:20:17] INFO root fetch - main [MainThread]: End processing [chyp]: success
+[2023-05-09 21:20:17] INFO root fetch - main [MainThread]: End processing [mibi-bin-tools]: success
+[2023-05-09 21:20:17] INFO root fetch - main [MainThread]: Store serial: [18036412]
