@@ -15562,3 +15562,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 13:53:22] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-6.5.3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-6.5.4-cp39-cp39-manylinux2014_aarch64.whl.zip --markdown 20230509/h/hiddifypanel/6.5.3-6.5.4/diff.md --exclude *.pyd
 [2023-05-09 13:53:37] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-09 13:53:37] INFO root fetch - main [MainThread]: Store serial: [18031429]
+[2023-05-09 13:58:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031429]
+[2023-05-09 13:58:49] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: infodeslib
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vcf-batcher
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: buteo
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tuf
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: emlib
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: as400
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfoundt
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rmpy
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: madai
+[2023-05-09 13:58:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: emlib
+[2023-05-09 13:58:49] WARNING root fetch - processPackages [rmpy]: Skipping, unable to determine old version
+[2023-05-09 13:58:49] INFO root fetch - main [MainThread]: End processing [rmpy] error
+[2023-05-09 13:58:49] INFO root fetch - processPackages [pyfoundt]: New version: [0.7.9] Old Version: [0.6.8]
+[2023-05-09 13:58:50] INFO root fetch - processPackages [buteo]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-09 13:58:50] INFO root fetch - processPackages [infodeslib]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 13:58:50] WARNING root fetch - processPackages [vcf-batcher]: Skipping, unable to determine old version
+[2023-05-09 13:58:50] INFO root fetch - main [MainThread]: End processing [vcf-batcher] error
+[2023-05-09 13:58:50] INFO root fetch - processPackages [pyfoundt]: executing diffoscope
+[2023-05-09 13:58:50] INFO root fetch - processPackages [pyfoundt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfoundt-0.6.8.tar.gz tmp/pyfoundt-0.7.9.tar.gz --markdown 20230509/p/pyfoundt/0.6.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-09 13:58:50] INFO root fetch - processPackages [tuf]: New version: [3.0.0] Old Version: [2.1.0]
+[2023-05-09 13:58:50] WARNING root fetch - processPackages [as400]: Skipping, unable to determine old version
+[2023-05-09 13:58:50] INFO root fetch - processPackages [madai]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-09 13:58:50] INFO root fetch - main [MainThread]: End processing [as400] error
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-09 13:58:50] INFO root fetch - processPackages [buteo]: Downloading https://files.pythonhosted.org/packages/43/bc/fc7ef467525544170985fa932a485a7ee2e666f4c67d63eead9003bd39a7/buteo-0.9.3.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [infodeslib]: Downloading https://files.pythonhosted.org/packages/5e/a9/682746c949efa23b5d66f5e7fae91a4becb7561741ca54568a88e54487e0/infodeslib-0.1.1.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: Downloading https://files.pythonhosted.org/packages/ea/67/fcf1b6dc7769f14e2b9f7d88a82eceead943a9d14bd5e7491c508bda8545/emlib-1.9.1.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [tuf]: Downloading https://files.pythonhosted.org/packages/7c/c4/21b1a9d82119b801917ba55d5974be61a410b3f2fdaca5b7e2f1d5ce5808/tuf-2.1.0.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: Downloading https://files.pythonhosted.org/packages/ea/67/fcf1b6dc7769f14e2b9f7d88a82eceead943a9d14bd5e7491c508bda8545/emlib-1.9.1.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [buteo]: executing diffoscope
+[2023-05-09 13:58:50] INFO root fetch - processPackages [buteo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buteo-0.9.2.tar.gz tmp/buteo-0.9.3.tar.gz --markdown 20230509/b/buteo/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-09 13:58:50] INFO root fetch - processPackages [madai]: Downloading https://files.pythonhosted.org/packages/e5/6c/178e2ec3b9975f87dc2e6467876fd29c897613d4cd93dbeff9e4106bc5cb/madai-0.2.0.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [infodeslib]: Downloading https://files.pythonhosted.org/packages/96/94/201c85568bfa8d42da7bf2871ac08d59fc0132e763475920ed7ecce6c89c/infodeslib-0.1.2.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [infodeslib]: executing diffoscope
+[2023-05-09 13:58:50] INFO root fetch - processPackages [infodeslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infodeslib-0.1.1.tar.gz tmp/infodeslib-0.1.2.tar.gz --markdown 20230509/i/infodeslib/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 13:58:50] INFO root fetch - processPackages [tuf]: Downloading https://files.pythonhosted.org/packages/9e/d0/6729ae30a6537c8923e9d6cb6a6a6babc534f910ab6af5d86f9b3e03d54f/tuf-3.0.0.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: Downloading https://files.pythonhosted.org/packages/2a/c4/46ac55b0f07ecc3157df3355733a20fad3d385671267e699bd178aabd98b/emlib-1.9.2.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: Downloading https://files.pythonhosted.org/packages/2a/c4/46ac55b0f07ecc3157df3355733a20fad3d385671267e699bd178aabd98b/emlib-1.9.2.tar.gz
+[2023-05-09 13:58:50] INFO root fetch - processPackages [madai]: executing diffoscope
+[2023-05-09 13:58:50] INFO root fetch - processPackages [madai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madai-0.1.5.tar.gz tmp/madai-0.2.0.tar.gz --markdown 20230509/m/madai/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: executing diffoscope
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emlib-1.9.1.tar.gz tmp/emlib-1.9.2.tar.gz --markdown 20230509/e/emlib/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-09 13:58:50] INFO root fetch - processPackages [tuf]: executing diffoscope
+[2023-05-09 13:58:50] INFO root fetch - processPackages [tuf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuf-2.1.0.tar.gz tmp/tuf-3.0.0.tar.gz --markdown 20230509/t/tuf/2.1.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: executing diffoscope
+[2023-05-09 13:58:50] INFO root fetch - processPackages [emlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emlib-1.9.1.tar.gz tmp/emlib-1.9.2.tar.gz --markdown 20230509/e/emlib/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-09 13:58:51] INFO root fetch - main [MainThread]: End processing [pyfoundt]: success
+[2023-05-09 13:58:51] INFO root fetch - main [MainThread]: End processing [infodeslib]: success
+[2023-05-09 13:58:51] INFO root fetch - main [MainThread]: End processing [madai]: success
+[2023-05-09 13:58:52] INFO root fetch - main [MainThread]: End processing [emlib]: success
+[2023-05-09 13:58:52] INFO root fetch - main [MainThread]: End processing [emlib]: success
+[2023-05-09 13:58:53] INFO root fetch - main [MainThread]: End processing [tuf]: success
+[2023-05-09 13:58:53] INFO root fetch - main [MainThread]: End processing [buteo]: success
+[2023-05-09 13:58:53] INFO root fetch - main [MainThread]: Store serial: [18031468]
