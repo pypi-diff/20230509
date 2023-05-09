@@ -10031,3 +10031,129 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 08:12:24] INFO root fetch - main [MainThread]: End processing [DXR]: success
 [2023-05-09 08:12:26] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
 [2023-05-09 08:12:26] INFO root fetch - main [MainThread]: Store serial: [18028092]
+[2023-05-09 08:17:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028092]
+[2023-05-09 08:17:36] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stigg-api-client
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-ss-logging-tool
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: calcutils
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-openupgrade-scripts
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zope.structuredtext
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bridgecrew
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-minio
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: taichu-serve
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bp-data-visualization
+[2023-05-09 08:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: stigg-api-client
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [taichu-serve]: New version: [2.0.9] Old Version: [2.0.27]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [zope.structuredtext]: New version: [5.0] Old Version: [4.4]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: New version: [14.0.1.0.2.dev99] Old Version: [14.0.1.0.2.dev95]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [calcutils]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [python-ss-logging-tool]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [bp-data-visualization]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [pulumi-minio]: New version: [0.9.1a1682440158] Old Version: [0.9.1a1681933919]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-09 08:17:36] INFO root fetch - processPackages [taichu-serve]: Downloading https://files.pythonhosted.org/packages/ee/40/6f6051634b791a6da0e2e88ae13a00f2c196a31ec700f61eee05da0880ba/taichu-serve-2.0.27.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/ec/50/ce82e83016d56e83f3ba41393c3470ef868ae1581c3f47640932504291c8/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev95-py3-none-any.whl
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/f2/a6/77e21119c120e1b8882d864eec25f05031dca8e701ccf6fb5fb46bc40148/stigg_api_client-0.4.0.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/f2/a6/77e21119c120e1b8882d864eec25f05031dca8e701ccf6fb5fb46bc40148/stigg_api_client-0.4.0.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-09 08:17:36] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230509/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-09 08:17:36] INFO root fetch - processPackages [calcutils]: Downloading https://files.pythonhosted.org/packages/e7/1f/fab68a0fddd1eef8c8ec43324efb8bf214db40aa314cfc6c776fcb17d903/calcutils-0.1.4.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [zope.structuredtext]: Downloading https://files.pythonhosted.org/packages/15/0f/174993bba0c5588373a9ec7623904c8f2c8679ede18f42e05a8aedaa216e/zope.structuredtext-4.4.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [python-ss-logging-tool]: Downloading https://files.pythonhosted.org/packages/aa/54/6ee7e649e4ddfa3ba454b79ad07081f521a640e9d2da5882179139188faa/python-ss-logging-tool-0.1.0.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [bp-data-visualization]: Downloading https://files.pythonhosted.org/packages/89/4b/a08de120f001f0abe9d367fb0ca925cd458279cde72fa8278999838e5eb4/bp-data-visualization-1.0.1.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [calcutils]: executing diffoscope
+[2023-05-09 08:17:36] INFO root fetch - processPackages [calcutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calcutils-0.1.3.tar.gz tmp/calcutils-0.1.4.tar.gz --markdown 20230509/c/calcutils/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 08:17:36] INFO root fetch - processPackages [pulumi-minio]: executing diffoscope
+[2023-05-09 08:17:36] INFO root fetch - processPackages [pulumi-minio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_minio-0.9.1a1681933919.tar.gz tmp/pulumi_minio-0.9.1a1682440158.tar.gz --markdown 20230509/p/pulumi-minio/0.9.1a1681933919-0.9.1a1682440158/diff.md --exclude *.pyd
+[2023-05-09 08:17:36] INFO root fetch - processPackages [taichu-serve]: executing diffoscope
+[2023-05-09 08:17:36] INFO root fetch - processPackages [taichu-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taichu-serve-2.0.27.tar.gz tmp/taichu-serve-2.0.9.tar.gz --markdown 20230509/t/taichu-serve/2.0.27-2.0.9/diff.md --exclude *.pyd
+[2023-05-09 08:17:36] INFO root fetch - processPackages [zope.structuredtext]: Downloading https://files.pythonhosted.org/packages/65/91/d4f9c0f809f373fcc4cb9adbacd55649d2a0bb774c02f30a6c7cc499f013/zope.structuredtext-5.0.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [python-ss-logging-tool]: Downloading https://files.pythonhosted.org/packages/09/d0/fb2adc840ede303f0d35086e740c837ad14fa6d7443a99c4b76da532e56d/python-ss-logging-tool-0.1.1.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [bp-data-visualization]: Downloading https://files.pythonhosted.org/packages/0e/0e/da9660c8307c34772ce2ac33b20e006b099a85ef7b941d3cad795717e72e/bp-data-visualization-1.0.2.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/6f/d2/ae3138d8e73b06a33bdd8d29d234ac4387d7bf23217c13b557d497089bbf/stigg_api_client-0.5.0.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/6f/d2/ae3138d8e73b06a33bdd8d29d234ac4387d7bf23217c13b557d497089bbf/stigg_api_client-0.5.0.tar.gz
+[2023-05-09 08:17:36] INFO root fetch - processPackages [zope.structuredtext]: executing diffoscope
+[2023-05-09 08:17:36] INFO root fetch - processPackages [zope.structuredtext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zope.structuredtext-4.4.tar.gz tmp/zope.structuredtext-5.0.tar.gz --markdown 20230509/z/zope.structuredtext/4.4-5.0/diff.md --exclude *.pyd
+[2023-05-09 08:17:36] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/d0/8c/a24d16c65bf9fe5ae4605a1657606542a2bb75c0ac9281be45aa9cb0464d/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev99-py3-none-any.whl
+[2023-05-09 08:17:36] INFO root fetch - processPackages [python-ss-logging-tool]: executing diffoscope
+[2023-05-09 08:17:36] INFO root fetch - processPackages [python-ss-logging-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-ss-logging-tool-0.1.0.tar.gz tmp/python-ss-logging-tool-0.1.1.tar.gz --markdown 20230509/p/python-ss-logging-tool/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-0.4.0.tar.gz tmp/stigg_api_client-0.5.0.tar.gz --markdown 20230509/s/stigg-api-client/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 08:17:36] INFO root fetch - processPackages [bp-data-visualization]: executing diffoscope
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2023-05-09 08:17:36] INFO root fetch - processPackages [bp-data-visualization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bp-data-visualization-1.0.1.tar.gz tmp/bp-data-visualization-1.0.2.tar.gz --markdown 20230509/b/bp-data-visualization/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 08:17:36] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-0.4.0.tar.gz tmp/stigg_api_client-0.5.0.tar.gz --markdown 20230509/s/stigg-api-client/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 08:17:37] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: executing diffoscope
+[2023-05-09 08:17:37] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev95-py3-none-any.whl.zip tmp/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev99-py3-none-any.whl.zip --markdown 20230509/o/odoo14-addon-openupgrade-scripts/14.0.1.0.2.dev95-14.0.1.0.2.dev99/diff.md --exclude *.pyd
+[2023-05-09 08:17:38] INFO root fetch - processPackages [bridgecrew]: Start processing: pandas-indexing
+[2023-05-09 08:17:38] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pandas-indexing]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-09 08:17:38] INFO root fetch - processPackages [calcutils]: Start processing: inverse
+[2023-05-09 08:17:38] INFO root fetch - main [MainThread]: End processing [calcutils]: success
+[2023-05-09 08:17:38] INFO root fetch - processPackages [inverse]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-minio]: Start processing: pulumi-f5bigip
+[2023-05-09 08:17:38] INFO root fetch - main [MainThread]: End processing [pulumi-minio]: success
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-f5bigip]: New version: [3.9.0a1661535806] Old Version: [3.9.0a1654086391]
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pandas-indexing]: Downloading https://files.pythonhosted.org/packages/ff/42/6368c88ab571fc848bd3ceabf92b3e55f910412e49c9182cc035d301edc0/pandas-indexing-0.2.4.tar.gz
+[2023-05-09 08:17:38] INFO root fetch - processPackages [python-ss-logging-tool]: Start processing: pulumi-mysql
+[2023-05-09 08:17:38] INFO root fetch - main [MainThread]: End processing [python-ss-logging-tool]: success
+[2023-05-09 08:17:38] INFO root fetch - processPackages [inverse]: executing diffoscope
+[2023-05-09 08:17:38] INFO root fetch - processPackages [inverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverse-0.0.8-py3-none-any.whl.zip tmp/inverse-0.0.9-py3-none-any.whl.zip --markdown 20230509/i/inverse/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-mysql]: New version: [3.2.0a1683611293] Old Version: [3.2.0a1683351911]
+[2023-05-09 08:17:38] INFO root fetch - processPackages [taichu-serve]: Start processing: loggate
+[2023-05-09 08:17:38] INFO root fetch - main [MainThread]: End processing [taichu-serve]: success
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-f5bigip]: Downloading https://files.pythonhosted.org/packages/80/30/a8f0c17436ad6bc5580473fb6cbaf5a135b8828a6bdaacc76510bfd52499/pulumi_f5bigip-3.9.0a1654086391.tar.gz
+[2023-05-09 08:17:38] INFO root fetch - processPackages [loggate]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pandas-indexing]: Downloading https://files.pythonhosted.org/packages/e0/9d/eff18b6b43d80e4ce72c795c4ebce9a15e66b2fcdbe2869c79badc921d5e/pandas-indexing-0.2.5.tar.gz
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-mysql]: Downloading https://files.pythonhosted.org/packages/0f/d6/d533857b8f37d615fe77ccdb7a612bc0d61b3878355cf9fc8817551a76a9/pulumi_mysql-3.2.0a1683351911.tar.gz
+[2023-05-09 08:17:38] INFO root fetch - processPackages [stigg-api-client]: Start processing: pulumi-nomad
+[2023-05-09 08:17:38] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-nomad]: New version: [0.4.2a1683611299] Old Version: [0.4.2a1683352048]
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pandas-indexing]: executing diffoscope
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pandas-indexing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandas-indexing-0.2.4.tar.gz tmp/pandas-indexing-0.2.5.tar.gz --markdown 20230509/p/pandas-indexing/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-09 08:17:38] INFO root fetch - processPackages [loggate]: Downloading https://files.pythonhosted.org/packages/ae/20/604d971754fdc97d0cf169ca00bfc2c01e817ff7acf02ce6d685d7da1b0a/loggate-1.8.0.tar.gz
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-f5bigip]: Downloading https://files.pythonhosted.org/packages/d9/48/9b104ca1340b985069c84fa75b1acc149cc375561d0e98bee7b09b74cb7f/pulumi_f5bigip-3.9.0a1661535806.tar.gz
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-mysql]: Downloading https://files.pythonhosted.org/packages/89/06/ae53c7ce79c74b452ec8b851898ff806ef6d3cedb542449079ead0245003/pulumi_mysql-3.2.0a1683611293.tar.gz
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-nomad]: Downloading https://files.pythonhosted.org/packages/0f/1c/127213c76ca3783db90b334c17fbaa1847bab83542466cec0d61582a57b6/pulumi_nomad-0.4.2a1683352048.tar.gz
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-mysql]: executing diffoscope
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mysql-3.2.0a1683351911.tar.gz tmp/pulumi_mysql-3.2.0a1683611293.tar.gz --markdown 20230509/p/pulumi-mysql/3.2.0a1683351911-3.2.0a1683611293/diff.md --exclude *.pyd
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-f5bigip]: executing diffoscope
+[2023-05-09 08:17:38] INFO root fetch - processPackages [pulumi-f5bigip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_f5bigip-3.9.0a1654086391.tar.gz tmp/pulumi_f5bigip-3.9.0a1661535806.tar.gz --markdown 20230509/p/pulumi-f5bigip/3.9.0a1654086391-3.9.0a1661535806/diff.md --exclude *.pyd
+[2023-05-09 08:17:38] INFO root fetch - processPackages [loggate]: Downloading https://files.pythonhosted.org/packages/ad/3d/d86bb7f1a32bdc4e3b37bfa0487baef5e8488f8a42c54f503275a115c4a6/loggate-1.9.0.tar.gz
+[2023-05-09 08:17:39] INFO root fetch - processPackages [pulumi-nomad]: Downloading https://files.pythonhosted.org/packages/07/7e/97c3a60ba77b037158215c820b2ba8890efbf98dbe5eb4d713468a4cf327/pulumi_nomad-0.4.2a1683611299.tar.gz
+[2023-05-09 08:17:39] INFO root fetch - processPackages [loggate]: executing diffoscope
+[2023-05-09 08:17:39] INFO root fetch - processPackages [loggate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loggate-1.8.0.tar.gz tmp/loggate-1.9.0.tar.gz --markdown 20230509/l/loggate/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 08:17:39] INFO root fetch - processPackages [pulumi-nomad]: executing diffoscope
+[2023-05-09 08:17:39] INFO root fetch - processPackages [pulumi-nomad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_nomad-0.4.2a1683352048.tar.gz tmp/pulumi_nomad-0.4.2a1683611299.tar.gz --markdown 20230509/p/pulumi-nomad/0.4.2a1683352048-0.4.2a1683611299/diff.md --exclude *.pyd
+[2023-05-09 08:17:39] INFO root fetch - processPackages [stigg-api-client]: Start processing: pulumi-ns1
+[2023-05-09 08:17:39] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2023-05-09 08:17:39] INFO root fetch - processPackages [pulumi-ns1]: New version: [3.1.0a1683611465] Old Version: [3.1.0a1683352358]
+[2023-05-09 08:17:39] INFO root fetch - processPackages [zope.structuredtext]: Start processing: pyfirebird
+[2023-05-09 08:17:39] INFO root fetch - main [MainThread]: End processing [zope.structuredtext]: success
+[2023-05-09 08:17:39] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.40] Old Version: [0.0.39]
+[2023-05-09 08:17:39] INFO root fetch - processPackages [pulumi-ns1]: Downloading https://files.pythonhosted.org/packages/5c/37/e3ffa09c1b3a837319dec13f770b7fb7a689fdbdfa237427c3442758e37e/pulumi_ns1-3.1.0a1683352358.tar.gz
+[2023-05-09 08:17:39] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/08/1c/3b8afb30b92d4dc391d077d8a0e01fda9354266a2eacf0fed98c86e7b6a7/pyfirebird-0.0.39.tar.gz
+[2023-05-09 08:17:40] INFO root fetch - processPackages [inverse]: Start processing: med-data-science-helper-utility
+[2023-05-09 08:17:40] INFO root fetch - main [MainThread]: End processing [inverse]: success
+[2023-05-09 08:17:40] INFO root fetch - processPackages [pulumi-ns1]: Downloading https://files.pythonhosted.org/packages/c6/1e/0c4324146285693ee7c7119c3f829a5f67148ea8d36ad7eea54162dc0209/pulumi_ns1-3.1.0a1683611465.tar.gz
+[2023-05-09 08:17:40] INFO root fetch - main [MainThread]: End processing [pulumi-mysql]: success
+[2023-05-09 08:17:40] INFO root fetch - processPackages [med-data-science-helper-utility]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 08:17:40] INFO root fetch - processPackages [pulumi-ns1]: executing diffoscope
+[2023-05-09 08:17:40] INFO root fetch - processPackages [pulumi-ns1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ns1-3.1.0a1683352358.tar.gz tmp/pulumi_ns1-3.1.0a1683611465.tar.gz --markdown 20230509/p/pulumi-ns1/3.1.0a1683352358-3.1.0a1683611465/diff.md --exclude *.pyd
+[2023-05-09 08:17:40] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/9d/e3/5737a66011b7375baf899cb9a69940fbda694406cdad54f8d1f7a02554ab/pyfirebird-0.0.40.tar.gz
+[2023-05-09 08:17:40] INFO root fetch - main [MainThread]: End processing [loggate]: success
+[2023-05-09 08:17:40] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 08:17:40] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.39.tar.gz tmp/pyfirebird-0.0.40.tar.gz --markdown 20230509/p/pyfirebird/0.0.39-0.0.40/diff.md --exclude *.pyd
+[2023-05-09 08:17:40] INFO root fetch - processPackages [med-data-science-helper-utility]: executing diffoscope
+[2023-05-09 08:17:40] INFO root fetch - processPackages [med-data-science-helper-utility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/med-data-science-helper-utility-0.0.8.tar.gz tmp/med-data-science-helper-utility-0.0.9.tar.gz --markdown 20230509/m/med-data-science-helper-utility/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 08:17:40] INFO root fetch - main [MainThread]: End processing [pulumi-nomad]: success
+[2023-05-09 08:17:41] INFO root fetch - main [MainThread]: End processing [pulumi-ns1]: success
+[2023-05-09 08:17:41] INFO root fetch - main [MainThread]: End processing [med-data-science-helper-utility]: success
+[2023-05-09 08:17:42] INFO root fetch - main [MainThread]: End processing [pulumi-f5bigip]: success
+[2023-05-09 08:17:44] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 08:17:44] INFO root fetch - main [MainThread]: End processing [odoo14-addon-openupgrade-scripts]: success
+[2023-05-09 08:17:57] INFO root fetch - main [MainThread]: End processing [pandas-indexing]: success
+[2023-05-09 08:18:00] INFO root fetch - main [MainThread]: End processing [bp-data-visualization]: success
+[2023-05-09 08:18:00] INFO root fetch - main [MainThread]: Store serial: [18028149]
