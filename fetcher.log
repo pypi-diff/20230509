@@ -6583,3 +6583,224 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 72: invalid
 [2023-05-09 04:42:13] INFO root fetch - main [MainThread]: End processing [spaceone-repository]: success
 [2023-05-09 04:42:13] INFO root fetch - main [MainThread]: End processing [spaceone-plugin]: success
 [2023-05-09 04:42:13] INFO root fetch - main [MainThread]: Store serial: [18026336]
+[2023-05-09 04:47:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18026336]
+[2023-05-09 04:47:22] INFO root fetch - main [MainThread]: Found 34 changed packages
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spaceone-inventory
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-csip
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spaceone-identity
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tencentcloud-sdk-python-cvm
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spaceone-config
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spaceone-secret
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tencentcloud-sdk-python-cwp
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spaceone-statistics
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: SpatialGlue
+[2023-05-09 04:47:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tencentcloud-sdk-python-cws
+[2023-05-09 04:47:22] INFO root fetch - processPackages [spaceone-config]: New version: [1.9.7rc1] Old Version: [1.9.7.1]
+[2023-05-09 04:47:22] INFO root fetch - processPackages [SpatialGlue]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-09 04:47:22] WARNING root fetch - processPackages [tencentcloud-sdk-python-csip]: Skipping, unable to determine old version
+[2023-05-09 04:47:22] INFO root fetch - processPackages [tencentcloud-sdk-python-csip]: Start processing: spaceone-monitoring
+[2023-05-09 04:47:22] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-csip] error
+[2023-05-09 04:47:22] INFO root fetch - processPackages [spaceone-statistics]: New version: [1.9.7rc1] Old Version: [1.9.7.1]
+[2023-05-09 04:47:22] INFO root fetch - processPackages [spaceone-secret]: New version: [1.9.7rc1] Old Version: [1.9.7.1]
+[2023-05-09 04:47:22] INFO root fetch - processPackages [spaceone-inventory]: New version: [1.9.7rc1] Old Version: [1.9.7.3]
+[2023-05-09 04:47:22] INFO root fetch - processPackages [tencentcloud-sdk-python-cws]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:22] INFO root fetch - processPackages [tencentcloud-sdk-python-cwp]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:22] INFO root fetch - processPackages [tencentcloud-sdk-python-cvm]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:22] INFO root fetch - processPackages [spaceone-monitoring]: New version: [1.9.7rc1] Old Version: [1.9.7.1]
+[2023-05-09 04:47:22] INFO root fetch - processPackages [spaceone-identity]: New version: [1.9.7rc2] Old Version: [1.9.7rc1]
+[2023-05-09 04:47:22] INFO root fetch - processPackages [spaceone-config]: Downloading https://files.pythonhosted.org/packages/08/28/a6ce3345230d3f14eda6a5c108839017b971498dd9b3a4c8ff660bdd3ae7/spaceone_config-1.9.7.1-py3-none-any.whl
+[2023-05-09 04:47:22] INFO root fetch - processPackages [spaceone-statistics]: Downloading https://files.pythonhosted.org/packages/c4/cd/89cbaa5162f9dcaf485930e348ccbab424a9547c14941e7949b917ba2397/spaceone_statistics-1.9.7.1-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-secret]: Downloading https://files.pythonhosted.org/packages/f9/0a/b0db39cfa927121fe0322281b733f6c509647d8bd40c54b566a8f3ebb08f/spaceone_secret-1.9.7.1-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [tencentcloud-sdk-python-cwp]: Downloading https://files.pythonhosted.org/packages/82/fa/b54bda6f51f0a92959f4a5f8e160dbff6c187f2ad448122085e39bba10de/tencentcloud-sdk-python-cwp-3.0.887.tar.gz
+[2023-05-09 04:47:23] INFO root fetch - processPackages [SpatialGlue]: Downloading https://files.pythonhosted.org/packages/19/82/dd68b7f90525f04246fcadaa67e426e2e0399d23e94a6d7306aba7f0e389/SpatialGlue-1.0.5.tar.gz
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/a9/82/c593d30951fa8a48a0777598d6512a6f1c3d737ee4831063408619868fff/spaceone_inventory-1.9.7.3-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-identity]: Downloading https://files.pythonhosted.org/packages/60/aa/ad6f2d637740b2091883707db26053c4633dec76ccabc1af7b0ea0753106/spaceone_identity-1.9.7rc1-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-monitoring]: Downloading https://files.pythonhosted.org/packages/31/50/1785bbc97bdfb08a3303bb03b26d953cde9e97d4e2e70c591a6acd91bd55/spaceone_monitoring-1.9.7.1-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [tencentcloud-sdk-python-cws]: Downloading https://files.pythonhosted.org/packages/a3/98/433b8abbee85ead3b04c137fe3a68c1fad936197cc12421d62644deafb2a/tencentcloud-sdk-python-cws-3.0.887.tar.gz
+[2023-05-09 04:47:23] INFO root fetch - processPackages [tencentcloud-sdk-python-cwp]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [tencentcloud-sdk-python-cwp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cwp-3.0.886.tar.gz tmp/tencentcloud-sdk-python-cwp-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-cwp/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:23] INFO root fetch - processPackages [tencentcloud-sdk-python-cvm]: Downloading https://files.pythonhosted.org/packages/b9/fa/f084fe7744c1d0a31a7d0ae9987262a4c48e060cd2fe2766ab8187c90475/tencentcloud-sdk-python-cvm-3.0.887.tar.gz
+[2023-05-09 04:47:23] INFO root fetch - processPackages [SpatialGlue]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [SpatialGlue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpatialGlue-1.0.4.tar.gz tmp/SpatialGlue-1.0.5.tar.gz --markdown 20230509/S/SpatialGlue/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-09 04:47:23] INFO root fetch - processPackages [tencentcloud-sdk-python-cws]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [tencentcloud-sdk-python-cws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cws-3.0.886.tar.gz tmp/tencentcloud-sdk-python-cws-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-cws/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:23] INFO root fetch - processPackages [tencentcloud-sdk-python-cvm]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [tencentcloud-sdk-python-cvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cvm-3.0.886.tar.gz tmp/tencentcloud-sdk-python-cvm-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-cvm/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-config]: Downloading https://files.pythonhosted.org/packages/2e/52/933581152a4ad53294053afa4f1e01b4306b1cc56d69a4b3b5bf10067b9a/spaceone_config-1.9.7rc1-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-statistics]: Downloading https://files.pythonhosted.org/packages/d8/90/c82400b8d58297dc11095bbdb405ef1da35645a64f284e3f7024b4234ff6/spaceone_statistics-1.9.7rc1-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-secret]: Downloading https://files.pythonhosted.org/packages/75/44/b92d2532a1c1a1ec9c13a58d77760d51c0bc17b65ca3f67bf0944c9476db/spaceone_secret-1.9.7rc1-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/8b/3e/9b66d8ee4c516bd667673a5577cc4743104de117a9cf1693532b741e45c4/spaceone_inventory-1.9.7rc1-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-identity]: Downloading https://files.pythonhosted.org/packages/50/45/8e8840de775e39139fb06889be9ab1840dd86ff941971f3ceaa2e62488c0/spaceone_identity-1.9.7rc2-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-monitoring]: Downloading https://files.pythonhosted.org/packages/5c/43/1bcb4990406f113187354a4bc48e34799ab22b38cce64bbf832545718082/spaceone_monitoring-1.9.7rc1-py3-none-any.whl
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-config]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_config-1.9.7.1-py3-none-any.whl.zip tmp/spaceone_config-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-config/1.9.7.1-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-monitoring]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-monitoring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_monitoring-1.9.7.1-py3-none-any.whl.zip tmp/spaceone_monitoring-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-monitoring/1.9.7.1-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-statistics]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-statistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_statistics-1.9.7.1-py3-none-any.whl.zip tmp/spaceone_statistics-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-statistics/1.9.7.1-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-secret]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-secret]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_secret-1.9.7.1-py3-none-any.whl.zip tmp/spaceone_secret-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-secret/1.9.7.1-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-identity]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-identity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_identity-1.9.7rc1-py3-none-any.whl.zip tmp/spaceone_identity-1.9.7rc2-py3-none-any.whl.zip --markdown 20230509/s/spaceone-identity/1.9.7rc1-1.9.7rc2/diff.md --exclude *.pyd
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-inventory]: executing diffoscope
+[2023-05-09 04:47:23] INFO root fetch - processPackages [spaceone-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_inventory-1.9.7.3-py3-none-any.whl.zip tmp/spaceone_inventory-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-inventory/1.9.7.3-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 04:47:24] INFO root fetch - processPackages [tencentcloud-sdk-python-cws]: Start processing: tencentcloud-sdk-python-cynosdb
+[2023-05-09 04:47:24] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cws]: success
+[2023-05-09 04:47:24] INFO root fetch - processPackages [tencentcloud-sdk-python-cynosdb]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-cynosdb]: Downloading https://files.pythonhosted.org/packages/09/fc/f0138218175f0a113f5306330f0eb0be9532f3085bc80402e3ba7d1ccafc/tencentcloud-sdk-python-cynosdb-3.0.887.tar.gz
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-config]: Start processing: spaceone-cost-analysis
+[2023-05-09 04:47:25] INFO root fetch - main [MainThread]: End processing [spaceone-config]: success
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-cost-analysis]: New version: [1.9.7rc1] Old Version: [1.9.7.1]
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-cynosdb]: executing diffoscope
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-cynosdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cynosdb-3.0.886.tar.gz tmp/tencentcloud-sdk-python-cynosdb-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-cynosdb/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-statistics]: Start processing: tencentcloud-sdk-python-dasb
+[2023-05-09 04:47:25] INFO root fetch - main [MainThread]: End processing [spaceone-statistics]: success
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dasb]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-cost-analysis]: Downloading https://files.pythonhosted.org/packages/ca/57/274de01859938ee0ea18fde02a27bd004721324e14d9173c1aed6ce505f5/spaceone_cost_analysis-1.9.7.1-py3-none-any.whl
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-secret]: Start processing: edc-subject-dashboard
+[2023-05-09 04:47:25] INFO root fetch - main [MainThread]: End processing [spaceone-secret]: success
+[2023-05-09 04:47:25] INFO root fetch - processPackages [edc-subject-dashboard]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dasb]: Downloading https://files.pythonhosted.org/packages/59/1f/7be1dab9fcda7b51ed4cbcb139cebb1a2ccd02a0084a3ab7e0c78ecdd3c5/tencentcloud-sdk-python-dasb-3.0.887.tar.gz
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dasb]: executing diffoscope
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dasb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dasb-3.0.886.tar.gz tmp/tencentcloud-sdk-python-dasb-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-dasb/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:25] INFO root fetch - processPackages [edc-subject-dashboard]: Downloading https://files.pythonhosted.org/packages/e2/de/4ac899f759846a1ffcc6a6347a85e786c1b637d41680d2cae0a6c2007b55/edc_subject_dashboard-0.3.8-py3-none-any.whl
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-cost-analysis]: Downloading https://files.pythonhosted.org/packages/cf/26/f9d82f22108804a06ee9380b339d652897bc5997f046962edc93c30d5f6a/spaceone_cost_analysis-1.9.7rc1-py3-none-any.whl
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-identity]: Start processing: spaceone-notification
+[2023-05-09 04:47:25] INFO root fetch - main [MainThread]: End processing [spaceone-identity]: success
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-monitoring]: Start processing: tencentcloud-sdk-python-dataintegration
+[2023-05-09 04:47:25] INFO root fetch - main [MainThread]: End processing [spaceone-monitoring]: success
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-notification]: New version: [1.12.dev3] Old Version: [1.11.0]
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dataintegration]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-inventory]: Start processing: tencentcloud-sdk-python-dayu
+[2023-05-09 04:47:25] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-cost-analysis]: executing diffoscope
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-cost-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_cost_analysis-1.9.7.1-py3-none-any.whl.zip tmp/spaceone_cost_analysis-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-cost-analysis/1.9.7.1-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dayu]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dataintegration]: Downloading https://files.pythonhosted.org/packages/2a/54/0bb74a567e3a2e8ad5603a89b76164b6a14efe1739b8878d9f58e66a7289/tencentcloud-sdk-python-dataintegration-3.0.887.tar.gz
+[2023-05-09 04:47:25] INFO root fetch - processPackages [spaceone-notification]: Downloading https://files.pythonhosted.org/packages/ef/b9/7c318b516be1347a53c10a90efc9602fbe2cdfd8a94f47f8e7013863e66b/spaceone-notification-1.11.0.tar.gz
+[2023-05-09 04:47:25] INFO root fetch - processPackages [edc-subject-dashboard]: Downloading https://files.pythonhosted.org/packages/dc/b2/f27cfd5946aaa1c7ae940b84f419cae29f450e721aac2786e84e4a456a12/edc_subject_dashboard-0.3.9-py3-none-any.whl
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dataintegration]: executing diffoscope
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dataintegration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dataintegration-3.0.886.tar.gz tmp/tencentcloud-sdk-python-dataintegration-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-dataintegration/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:25] INFO root fetch - processPackages [tencentcloud-sdk-python-dayu]: Downloading https://files.pythonhosted.org/packages/36/fd/e82131092dd849b8505d1bceb4fe02777ae1630a8180310c30bc3058991e/tencentcloud-sdk-python-dayu-3.0.887.tar.gz
+[2023-05-09 04:47:25] INFO root fetch - processPackages [edc-subject-dashboard]: executing diffoscope
+[2023-05-09 04:47:25] INFO root fetch - processPackages [edc-subject-dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_subject_dashboard-0.3.8-py3-none-any.whl.zip tmp/edc_subject_dashboard-0.3.9-py3-none-any.whl.zip --markdown 20230509/e/edc-subject-dashboard/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-dayu]: executing diffoscope
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-dayu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dayu-3.0.886.tar.gz tmp/tencentcloud-sdk-python-dayu-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-dayu/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:26] INFO root fetch - processPackages [spaceone-notification]: Downloading https://files.pythonhosted.org/packages/c2/9e/727dc8ad6563212964adbeddbac2ca760c69182900563898895662b3bf2c/spaceone-notification-1.12.dev3.tar.gz
+[2023-05-09 04:47:26] INFO root fetch - processPackages [spaceone-notification]: executing diffoscope
+[2023-05-09 04:47:26] INFO root fetch - processPackages [spaceone-notification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-notification-1.11.0.tar.gz tmp/spaceone-notification-1.12.dev3.tar.gz --markdown 20230509/s/spaceone-notification/1.11.0-1.12.dev3/diff.md --exclude *.pyd
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-cvm]: Start processing: spaceone-board
+[2023-05-09 04:47:26] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cvm]: success
+[2023-05-09 04:47:26] INFO root fetch - processPackages [spaceone-board]: New version: [1.9.7rc1] Old Version: [1.9.7]
+[2023-05-09 04:47:26] INFO root fetch - processPackages [spaceone-board]: Downloading https://files.pythonhosted.org/packages/f5/66/e3fde81dfecfe1b911035bf54d30137e630f2b55fefc30aa5c025d264ef6/spaceone_board-1.9.7-py3-none-any.whl
+[2023-05-09 04:47:26] INFO root fetch - processPackages [SpatialGlue]: Start processing: tencentcloud-sdk-python-dbbrain
+[2023-05-09 04:47:26] INFO root fetch - main [MainThread]: End processing [SpatialGlue]: success
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-dasb]: Start processing: tencentcloud-sdk-python-dbdc
+[2023-05-09 04:47:26] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dasb]: success
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: Downloading https://files.pythonhosted.org/packages/a8/ff/9e48d4a423d4b7c243b1b53d4da60b687e6219f140d3f5a790cddac726a5/tencentcloud-sdk-python-dbbrain-3.0.887.tar.gz
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: executing diffoscope
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dbbrain-3.0.886.tar.gz tmp/tencentcloud-sdk-python-dbbrain-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-dbbrain/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:26] INFO root fetch - processPackages [spaceone-board]: Downloading https://files.pythonhosted.org/packages/6c/99/76c76da493b5a9ae9d6064d18ad2cc9d486b74675a1c2f37ff58337a7878/spaceone_board-1.9.7rc1-py3-none-any.whl
+[2023-05-09 04:47:26] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: Downloading https://files.pythonhosted.org/packages/f0/6d/865ce2b36e7ced5966a505d306977dacb270f7d380e6a999160bb10a6045/tencentcloud-sdk-python-dbdc-3.0.887.tar.gz
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: executing diffoscope
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dbdc-3.0.886.tar.gz tmp/tencentcloud-sdk-python-dbdc-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-dbdc/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-board]: executing diffoscope
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_board-1.9.7-py3-none-any.whl.zip tmp/spaceone_board-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-board/1.9.7-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-dataintegration]: Start processing: spaceone-file-manager
+[2023-05-09 04:47:27] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dataintegration]: success
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-file-manager]: New version: [1.8.11rc1] Old Version: [1.8.11]
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-cynosdb]: Start processing: spaceone-dashboard
+[2023-05-09 04:47:27] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cynosdb]: success
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-dashboard]: New version: [1.12.dev3] Old Version: [1.11.0rc4]
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-dayu]: Start processing: tencentcloud-sdk-python-dc
+[2023-05-09 04:47:27] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dayu]: success
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-dc]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-file-manager]: Downloading https://files.pythonhosted.org/packages/39/83/53e3265ff092fe178def112f8d649eaf4f4a6c624252d955923c5c2404d3/spaceone_file_manager-1.8.11-py3-none-any.whl
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-dashboard]: Downloading https://files.pythonhosted.org/packages/a4/e9/3dc965c4c4f628add577c812c30948c63698ec87ab47916491261c03403c/spaceone_dashboard-1.11.0rc4-py3-none-any.whl
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-dc]: Downloading https://files.pythonhosted.org/packages/77/24/cffe15d58c012793c36813c89fe45a4e0eeeb594df2450cacaa7d8271ade/tencentcloud-sdk-python-dc-3.0.887.tar.gz
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-cwp]: Start processing: cloudforet-console-api-v2
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-notification]: Start processing: tencentcloud-sdk-python-dcdb
+[2023-05-09 04:47:27] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cwp]: success
+[2023-05-09 04:47:27] INFO root fetch - main [MainThread]: End processing [spaceone-notification]: success
+[2023-05-09 04:47:27] INFO root fetch - processPackages [cloudforet-console-api-v2]: New version: [1.12.dev3] Old Version: [1.11.0.2]
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-cost-analysis]: Start processing: spaceone-supervisor
+[2023-05-09 04:47:27] INFO root fetch - main [MainThread]: End processing [spaceone-cost-analysis]: success
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-dcdb]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-dc]: executing diffoscope
+[2023-05-09 04:47:27] INFO root fetch - processPackages [tencentcloud-sdk-python-dc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dc-3.0.886.tar.gz tmp/tencentcloud-sdk-python-dc-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-dc/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-supervisor]: New version: [1.9.7rc1] Old Version: [1.9.7]
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-dashboard]: Downloading https://files.pythonhosted.org/packages/52/97/3165bae7b5c155751eba24a9cbf502057b502a6a8a3c3242df9a70fa4ef1/spaceone-dashboard-1.12.dev3.tar.gz
+[2023-05-09 04:47:27] INFO root fetch - processPackages [edc-subject-dashboard]: Start processing: pyfirebird
+[2023-05-09 04:47:27] INFO root fetch - main [MainThread]: End processing [edc-subject-dashboard]: success
+[2023-05-09 04:47:27] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.28] Old Version: [0.0.27]
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-dashboard]: executing diffoscope
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_dashboard-1.11.0rc4-py3-none-any.whl.zip tmp/spaceone-dashboard-1.12.dev3.tar.gz --markdown 20230509/s/spaceone-dashboard/1.11.0rc4-1.12.dev3/diff.md --exclude *.pyd
+[2023-05-09 04:47:27] INFO root fetch - processPackages [spaceone-file-manager]: Downloading https://files.pythonhosted.org/packages/cb/7c/347b7347009395177c4a6bf9d242a111b632144ff1d3c7aca938749477a7/spaceone_file_manager-1.8.11rc1-py3-none-any.whl
+[2023-05-09 04:47:27] INFO root fetch - processPackages [cloudforet-console-api-v2]: Downloading https://files.pythonhosted.org/packages/64/fe/340bddef448cb7119ee37e679926039aed47b361c089ae10f0440767a40a/cloudforet-console-api-v2-1.11.0.2.tar.gz
+[2023-05-09 04:47:28] INFO root fetch - processPackages [spaceone-supervisor]: Downloading https://files.pythonhosted.org/packages/bc/4e/e44f5c097613b695cd86c690f9a2f2adb2e6611936c7e20945b00850af51/spaceone_supervisor-1.9.7-py3-none-any.whl
+[2023-05-09 04:47:28] INFO root fetch - processPackages [tencentcloud-sdk-python-dcdb]: Downloading https://files.pythonhosted.org/packages/de/00/741d3fe0b32a9d4248428e0fd33e99cadb97ab840010c318c73f6db3e600/tencentcloud-sdk-python-dcdb-3.0.887.tar.gz
+[2023-05-09 04:47:28] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/09/7a/55df90802d459b40210daf09abe4799f4282accaa3318604db0d7614270c/pyfirebird-0.0.27.tar.gz
+[2023-05-09 04:47:28] INFO root fetch - processPackages [tencentcloud-sdk-python-dcdb]: executing diffoscope
+[2023-05-09 04:47:28] INFO root fetch - processPackages [tencentcloud-sdk-python-dcdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dcdb-3.0.886.tar.gz tmp/tencentcloud-sdk-python-dcdb-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-dcdb/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:28] INFO root fetch - processPackages [spaceone-file-manager]: executing diffoscope
+[2023-05-09 04:47:28] INFO root fetch - processPackages [spaceone-file-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_file_manager-1.8.11-py3-none-any.whl.zip tmp/spaceone_file_manager-1.8.11rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-file-manager/1.8.11-1.8.11rc1/diff.md --exclude *.pyd
+[2023-05-09 04:47:28] INFO root fetch - processPackages [cloudforet-console-api-v2]: Downloading https://files.pythonhosted.org/packages/32/9a/d0f21535ea9dbe33d8ccbee8a31b0a465700273806c90dfffe26bde14513/cloudforet-console-api-v2-1.12.dev3.tar.gz
+[2023-05-09 04:47:28] INFO root fetch - processPackages [cloudforet-console-api-v2]: executing diffoscope
+[2023-05-09 04:47:28] INFO root fetch - processPackages [cloudforet-console-api-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudforet-console-api-v2-1.11.0.2.tar.gz tmp/cloudforet-console-api-v2-1.12.dev3.tar.gz --markdown 20230509/c/cloudforet-console-api-v2/1.11.0.2-1.12.dev3/diff.md --exclude *.pyd
+[2023-05-09 04:47:28] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/27/f4/83311854efdcd23f535319dcd47b7e478741967ebc58a769ec97ed406cd3/pyfirebird-0.0.28.tar.gz
+[2023-05-09 04:47:28] INFO root fetch - processPackages [spaceone-supervisor]: Downloading https://files.pythonhosted.org/packages/c5/4a/438439fb9504f6e4326e0800484696c26133a7d54090b11f66d719f4e7d4/spaceone_supervisor-1.9.7rc1-py3-none-any.whl
+[2023-05-09 04:47:28] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 04:47:28] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.27.tar.gz tmp/pyfirebird-0.0.28.tar.gz --markdown 20230509/p/pyfirebird/0.0.27-0.0.28/diff.md --exclude *.pyd
+[2023-05-09 04:47:28] INFO root fetch - processPackages [tencentcloud-sdk-python-dbdc]: Start processing: tencentcloud-sdk-python-dlc
+[2023-05-09 04:47:28] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dbdc]: success
+[2023-05-09 04:47:28] INFO root fetch - processPackages [tencentcloud-sdk-python-dlc]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:28] INFO root fetch - processPackages [spaceone-supervisor]: executing diffoscope
+[2023-05-09 04:47:28] INFO root fetch - processPackages [spaceone-supervisor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_supervisor-1.9.7-py3-none-any.whl.zip tmp/spaceone_supervisor-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-supervisor/1.9.7-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 04:47:28] INFO root fetch - processPackages [spaceone-board]: Start processing: spacectl
+[2023-05-09 04:47:28] INFO root fetch - main [MainThread]: End processing [spaceone-board]: success
+[2023-05-09 04:47:28] INFO root fetch - processPackages [spacectl]: New version: [1.9.7rc3] Old Version: [1.9.7rc2]
+[2023-05-09 04:47:28] INFO root fetch - processPackages [tencentcloud-sdk-python-dlc]: Downloading https://files.pythonhosted.org/packages/16/3b/1354f94c028f7537597e2de34de2a4eb680c2be4539ecff4159802daf0cc/tencentcloud-sdk-python-dlc-3.0.887.tar.gz
+[2023-05-09 04:47:28] INFO root fetch - processPackages [tencentcloud-sdk-python-dlc]: executing diffoscope
+[2023-05-09 04:47:28] INFO root fetch - processPackages [tencentcloud-sdk-python-dlc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dlc-3.0.886.tar.gz tmp/tencentcloud-sdk-python-dlc-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-dlc/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:28] INFO root fetch - processPackages [spacectl]: Downloading https://files.pythonhosted.org/packages/b3/27/e799059f3e001604527846931a848e862d1ad030a1cc7edd924252da68df/spacectl-1.9.7rc2-py3-none-any.whl
+[2023-05-09 04:47:29] INFO root fetch - processPackages [spaceone-dashboard]: Start processing: carchive
+[2023-05-09 04:47:29] INFO root fetch - main [MainThread]: End processing [spaceone-dashboard]: success
+[2023-05-09 04:47:29] INFO root fetch - processPackages [carchive]: New version: [0.0.56] Old Version: [0.0.55]
+[2023-05-09 04:47:29] INFO root fetch - processPackages [spacectl]: Downloading https://files.pythonhosted.org/packages/da/a2/f9541d99ec71dc462fab5ef7223ea12aa1e6dfa973832fa463ba2aa1cdb6/spacectl-1.9.7rc3-py3-none-any.whl
+[2023-05-09 04:47:29] INFO root fetch - processPackages [tencentcloud-sdk-python-dbbrain]: Start processing: wsiserver
+[2023-05-09 04:47:29] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dbbrain]: success
+[2023-05-09 04:47:29] INFO root fetch - processPackages [spacectl]: executing diffoscope
+[2023-05-09 04:47:29] INFO root fetch - processPackages [spacectl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacectl-1.9.7rc2-py3-none-any.whl.zip tmp/spacectl-1.9.7rc3-py3-none-any.whl.zip --markdown 20230509/s/spacectl/1.9.7rc2-1.9.7rc3/diff.md --exclude *.pyd
+[2023-05-09 04:47:29] INFO root fetch - processPackages [wsiserver]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-09 04:47:29] INFO root fetch - processPackages [tencentcloud-sdk-python-dcdb]: Start processing: tencentcloud-sdk-python-dnspod
+[2023-05-09 04:47:29] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dcdb]: success
+[2023-05-09 04:47:29] INFO root fetch - processPackages [wsiserver]: Downloading https://files.pythonhosted.org/packages/26/88/00bc140ca7cfaeba1461ee60dd7b49219484b08af152709763e18153b7c2/wsiserver-1.0.3.tar.gz
+[2023-05-09 04:47:29] INFO root fetch - processPackages [carchive]: Downloading https://files.pythonhosted.org/packages/7c/3d/b17e5c577b0d169daca6eb1d63b9d3bd7f6e0b5edc1f7c10f0ca2f07332c/carchive-0.0.56.tar.gz
+[2023-05-09 04:47:29] INFO root fetch - processPackages [tencentcloud-sdk-python-dnspod]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:29] INFO root fetch - processPackages [tencentcloud-sdk-python-dc]: Start processing: tencentcloud-sdk-python-domain
+[2023-05-09 04:47:29] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dc]: success
+[2023-05-09 04:47:29] INFO root fetch - processPackages [tencentcloud-sdk-python-domain]: New version: [3.0.887] Old Version: [3.0.886]
+[2023-05-09 04:47:29] INFO root fetch - main [MainThread]: End processing [spaceone-file-manager]: success
+[2023-05-09 04:47:29] INFO root fetch - processPackages [carchive]: executing diffoscope
+[2023-05-09 04:47:29] INFO root fetch - processPackages [carchive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carchive-0.0.55.tar.gz tmp/carchive-0.0.56.tar.gz --markdown 20230509/c/carchive/0.0.55-0.0.56/diff.md --exclude *.pyd
+[2023-05-09 04:47:29] INFO root fetch - processPackages [tencentcloud-sdk-python-dnspod]: Downloading https://files.pythonhosted.org/packages/c1/ac/f6e40bb1e6cca81215714de5aca912c2c13dde2634d280ea2e8c64f2d8db/tencentcloud-sdk-python-dnspod-3.0.887.tar.gz
+[2023-05-09 04:47:29] INFO root fetch - processPackages [tencentcloud-sdk-python-domain]: Downloading https://files.pythonhosted.org/packages/55/87/bf7d2577faf5e8e27498ba17ee8e0a99963ab16718c38fde60e4edb179c1/tencentcloud-sdk-python-domain-3.0.887.tar.gz
+[2023-05-09 04:47:29] INFO root fetch - processPackages [wsiserver]: Downloading https://files.pythonhosted.org/packages/6a/54/03e53ac5337c21edd92a59ba8d204bf75145e55e74c9d7f6fc425d702221/wsiserver-1.0.4.tar.gz
+[2023-05-09 04:47:29] INFO root fetch - processPackages [tencentcloud-sdk-python-dnspod]: executing diffoscope
+[2023-05-09 04:47:29] INFO root fetch - processPackages [tencentcloud-sdk-python-dnspod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-dnspod-3.0.886.tar.gz tmp/tencentcloud-sdk-python-dnspod-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-dnspod/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:29] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 04:47:29] INFO root fetch - processPackages [wsiserver]: executing diffoscope
+[2023-05-09 04:47:29] INFO root fetch - processPackages [wsiserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsiserver-1.0.3.tar.gz tmp/wsiserver-1.0.4.tar.gz --markdown 20230509/w/wsiserver/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-09 04:47:30] INFO root fetch - main [MainThread]: End processing [spaceone-supervisor]: success
+[2023-05-09 04:47:30] INFO root fetch - processPackages [tencentcloud-sdk-python-domain]: executing diffoscope
+[2023-05-09 04:47:30] INFO root fetch - processPackages [tencentcloud-sdk-python-domain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-domain-3.0.886.tar.gz tmp/tencentcloud-sdk-python-domain-3.0.887.tar.gz --markdown 20230509/t/tencentcloud-sdk-python-domain/3.0.886-3.0.887/diff.md --exclude *.pyd
+[2023-05-09 04:47:30] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dlc]: success
+[2023-05-09 04:47:30] INFO root fetch - main [MainThread]: End processing [carchive]: success
+[2023-05-09 04:47:30] INFO root fetch - main [MainThread]: End processing [spacectl]: success
+[2023-05-09 04:47:31] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-dnspod]: success
+[2023-05-09 04:47:31] INFO root fetch - main [MainThread]: End processing [wsiserver]: success
+[2023-05-09 04:47:31] INFO root fetch - main [MainThread]: End processing [cloudforet-console-api-v2]: success
+[2023-05-09 04:47:31] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-domain]: success
+[2023-05-09 04:47:31] INFO root fetch - main [MainThread]: Store serial: [18026439]
