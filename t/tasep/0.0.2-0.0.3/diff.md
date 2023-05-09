@@ -1,14 +1,14 @@
-# Comparing `tmp/tasep-0.0.2.tar.gz` & `tmp/tasep-0.0.3.tar.gz`
+# Comparing `tmp/tasep-0.0.2.tar.gz` & `tmp/tasep-0.0.3-1.tar.gz`
 
 ## filetype from file(1)
 
 ```diff
 @@ -1 +1 @@
 -gzip compressed data, was "tasep-0.0.2.tar", last modified: Tue May  9 04:58:45 2023, max compression
-+gzip compressed data, was "tasep-0.0.3.tar", last modified: Tue May  9 05:11:50 2023, max compression
++gzip compressed data, was "tasep-0.0.3.tar", last modified: Tue May  9 05:24:51 2023, max compression
 ```
 
-## Comparing `tasep-0.0.2.tar` & `tasep-0.0.3.tar`
+## Comparing `tasep-0.0.2.tar` & `tasep-0.0.3-1.tar`
 
 ### file list
 
@@ -39,31 +39,31 @@
 --rw-r--r--   0 rohnch    (1000) rohnch    (1000)      383 2023-05-09 04:58:45.000000 tasep-0.0.2/src/tasep.egg-info/SOURCES.txt
 --rw-r--r--   0 rohnch    (1000) rohnch    (1000)        1 2023-05-09 04:58:45.000000 tasep-0.0.2/src/tasep.egg-info/dependency_links.txt
 --rw-r--r--   0 rohnch    (1000) rohnch    (1000)        6 2023-05-09 04:58:45.000000 tasep-0.0.2/src/tasep.egg-info/top_level.txt
-+drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:11:50.462411 tasep-0.0.3/
++drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:24:51.939638 tasep-0.0.3/
 +-rw-r--r--   0 rohnch    (1000) rohnch    (1000)    35149 2023-05-09 04:49:15.000000 tasep-0.0.3/LICENSE
-+-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      875 2023-05-09 05:11:50.462411 tasep-0.0.3/PKG-INFO
-+-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      628 2023-05-09 04:57:43.000000 tasep-0.0.3/README.md
-+drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:11:50.462411 tasep-0.0.3/c_tasep_include/
++-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      874 2023-05-09 05:24:51.939638 tasep-0.0.3/PKG-INFO
++-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      627 2023-05-09 05:24:33.000000 tasep-0.0.3/README.md
++drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:24:51.939638 tasep-0.0.3/c_tasep_include/
 +-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      660 2023-04-28 14:34:36.000000 tasep-0.0.3/c_tasep_include/UI_tools.h
 +-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      241 2023-05-01 02:56:17.000000 tasep-0.0.3/c_tasep_include/lk_tasep.h
 +-rw-r--r--   0 rohnch    (1000) rohnch    (1000)     1134 2023-04-28 12:12:37.000000 tasep-0.0.3/c_tasep_include/random.h
 +-rw-------   0 rohnch    (1000) rohnch    (1000)      517 2023-05-01 03:28:10.000000 tasep-0.0.3/c_tasep_include/tasep.h
-+drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:11:50.462411 tasep-0.0.3/c_tasep_lib/
++drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:24:51.939638 tasep-0.0.3/c_tasep_lib/
 +-rw-r--r--   0 rohnch    (1000) rohnch    (1000)     1832 2023-04-28 14:35:18.000000 tasep-0.0.3/c_tasep_lib/UI_tools.c
-+-rw-r--r--   0 rohnch    (1000) rohnch    (1000)     1491 2023-05-03 17:42:09.000000 tasep-0.0.3/c_tasep_lib/lk_tasep.c
++-rw-r--r--   0 rohnch    (1000) rohnch    (1000)     1491 2023-05-09 05:15:56.000000 tasep-0.0.3/c_tasep_lib/lk_tasep.c
 +-rw-r--r--   0 rohnch    (1000) rohnch    (1000)     2737 2023-04-28 12:12:23.000000 tasep-0.0.3/c_tasep_lib/random.c
 +-rw-r--r--   0 rohnch    (1000) rohnch    (1000)     1556 2023-05-01 03:26:30.000000 tasep-0.0.3/c_tasep_lib/tasep.c
 +-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      533 2023-05-09 05:11:33.000000 tasep-0.0.3/pyproject.toml
-+-rw-r--r--   0 rohnch    (1000) rohnch    (1000)       38 2023-05-09 05:11:50.462411 tasep-0.0.3/setup.cfg
++-rw-r--r--   0 rohnch    (1000) rohnch    (1000)       38 2023-05-09 05:24:51.939638 tasep-0.0.3/setup.cfg
 +-rw-r--r--   0 rohnch    (1000) rohnch    (1000)     1014 2023-05-09 05:10:23.000000 tasep-0.0.3/setup.py
-+drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:11:50.459077 tasep-0.0.3/src/
-+drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:11:50.462411 tasep-0.0.3/src/tasep/
-+-rw-r--r--   0 rohnch    (1000) rohnch    (1000)     5680 2023-05-09 04:47:06.000000 tasep-0.0.3/src/tasep/pytasep.c
-+drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:11:50.462411 tasep-0.0.3/src/tasep.egg-info/
-+-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      875 2023-05-09 05:11:50.000000 tasep-0.0.3/src/tasep.egg-info/PKG-INFO
-+-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      383 2023-05-09 05:11:50.000000 tasep-0.0.3/src/tasep.egg-info/SOURCES.txt
-+-rw-r--r--   0 rohnch    (1000) rohnch    (1000)        1 2023-05-09 05:11:50.000000 tasep-0.0.3/src/tasep.egg-info/dependency_links.txt
-+-rw-r--r--   0 rohnch    (1000) rohnch    (1000)        6 2023-05-09 05:11:50.000000 tasep-0.0.3/src/tasep.egg-info/top_level.txt
++drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:24:51.939638 tasep-0.0.3/src/
++drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:24:51.939638 tasep-0.0.3/src/tasep/
++-rw-r--r--   0 rohnch    (1000) rohnch    (1000)     5680 2023-05-09 05:22:57.000000 tasep-0.0.3/src/tasep/pytasep.c
++drwxr-xr-x   0 rohnch    (1000) rohnch    (1000)        0 2023-05-09 05:24:51.939638 tasep-0.0.3/src/tasep.egg-info/
++-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      874 2023-05-09 05:24:51.000000 tasep-0.0.3/src/tasep.egg-info/PKG-INFO
++-rw-r--r--   0 rohnch    (1000) rohnch    (1000)      383 2023-05-09 05:24:51.000000 tasep-0.0.3/src/tasep.egg-info/SOURCES.txt
++-rw-r--r--   0 rohnch    (1000) rohnch    (1000)        1 2023-05-09 05:24:51.000000 tasep-0.0.3/src/tasep.egg-info/dependency_links.txt
++-rw-r--r--   0 rohnch    (1000) rohnch    (1000)        6 2023-05-09 05:24:51.000000 tasep-0.0.3/src/tasep.egg-info/top_level.txt
 ```
 
 ### Comparing `tasep-0.0.2/LICENSE` & `tasep-0.0.3/LICENSE`
@@ -72,7 +72,30 @@
 
 ### Comparing `tasep-0.0.2/README.md` & `tasep-0.0.3/README.md`
 
- * *Files identical despite different names*
+ * *Files 4% similar despite different names*
+
+```diff
+@@ -14,16 +14,16 @@
+ r = tasep.RandState() # This provides random numbers for tasep.
+ 
+ # normal tasep
+ #rho = t.evolve(alpha=0.8, beta=0.8, mc_step=10000000, rand=r)
+ 
+ # lk_tasep
+ # simulate
+-rho = t.lk_evolve(alpha=0.4, beta=0.4, Omega_a=0.3, Omega_d=0.3,
+-                  mc_step=1000000, rand=r)
++rho = t.lk_evolve(alpha=0.2, beta=0.2, Omega_a=0.3, Omega_d=0.3,
++                  mc_step=100000, rand=r)
+ 
+ # plot the density.
+ plt.plot(rho)
+-plt.xlim(0, 1)
++plt.xlim(1, N)
+ plt.ylim(0, 1)
+ plt.show()
+ ```
+```
 
 ### Comparing `tasep-0.0.2/c_tasep_include/UI_tools.h` & `tasep-0.0.3/c_tasep_include/UI_tools.h`
 

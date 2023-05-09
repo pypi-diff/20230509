@@ -9376,3 +9376,153 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 07:22:38] INFO root fetch - main [MainThread]: End processing [jijbench]: success
 [2023-05-09 07:24:13] INFO root fetch - main [MainThread]: End processing [lino]: success
 [2023-05-09 07:24:13] INFO root fetch - main [MainThread]: Store serial: [18027773]
+[2023-05-09 07:29:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027773]
+[2023-05-09 07:29:22] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: code-loader
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cjen
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfirebird
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-eric-topOfStack
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lino-noi
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-bunny
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: np-queuey
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Jlab
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lino-amici
+[2023-05-09 07:29:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mongogettersetter
+[2023-05-09 07:29:22] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.37] Old Version: [0.0.36]
+[2023-05-09 07:29:22] INFO root fetch - processPackages [certora-cli-alpha-eric-topOfStack]: New version: [20230509.5.22.536164] Old Version: [20230509.0.33.95609]
+[2023-05-09 07:29:22] INFO root fetch - processPackages [cjen]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 07:29:22] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 07:29:22] INFO root fetch - processPackages [lino-noi]: New version: [23.5.0] Old Version: [23.4.0]
+[2023-05-09 07:29:22] INFO root fetch - processPackages [lino-amici]: New version: [23.5.0] Old Version: [23.4.0]
+[2023-05-09 07:29:22] INFO root fetch - processPackages [mongogettersetter]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-09 07:29:22] INFO root fetch - processPackages [django-bunny]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 07:29:22] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-09 07:29:22] INFO root fetch - processPackages [np-queuey]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-09 07:29:23] INFO root fetch - processPackages [lino-noi]: Downloading https://files.pythonhosted.org/packages/99/72/dcf2504bc336bc885da42dfb6f5de42d04807cc9571bff4360670e244cae/lino-noi-23.4.0.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [certora-cli-alpha-eric-topOfStack]: Downloading https://files.pythonhosted.org/packages/76/f1/8802769841ba70ae4be4b20f4a67bd49b7667d0b1a741504adee47e08a1b/certora-cli-alpha-eric-topOfStack-20230509.0.33.95609.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [Jlab]: Downloading https://files.pythonhosted.org/packages/fa/3e/32d71787edae05b219b476dd39839ffb17efb97aaeb221f98cbcba3cce0f/Jlab-1.1.8.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [cjen]: Downloading https://files.pythonhosted.org/packages/c4/c3/85099160a102f6612d9781eaebd817bc7e4fb3b5856c78af6823c4b85714/cjen-1.0.8.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [lino-amici]: Downloading https://files.pythonhosted.org/packages/eb/ab/8f7a316e58c10f2075b3687740921ab146abc7f63502af0cfb6a3c525660/lino-amici-23.4.0.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/34/1b/3f4f75a774550d729085fd252b24e9308a10b47f523d39acbcaabf3efc28/np_queuey-0.2.6.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [mongogettersetter]: Downloading https://files.pythonhosted.org/packages/1c/55/a9313744fb32ff2264c295d6ffb18c854031a41bf34097cd565b991d58c1/mongogettersetter-1.4.0.tar.gz
+[2023-05-09 07:29:23] WARNING root fetch - processPackages [certora-cli-alpha-eric-topOfStack]: Skipping package: exceeds size limit 39213809>=10485760
+[2023-05-09 07:29:23] INFO root fetch - processPackages [certora-cli-alpha-eric-topOfStack]: Start processing: django-bunny
+[2023-05-09 07:29:23] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-topOfStack] error
+[2023-05-09 07:29:23] INFO root fetch - processPackages [django-bunny]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 07:29:23] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/19/70/2bb11f0d39987dac44986aeb97e5dd61d002b243e936ceb7a11c91e06522/pyfirebird-0.0.37.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.8.tar.gz tmp/django-bunny-1.0.9.tar.gz --markdown 20230509/d/django-bunny/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 07:29:23] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.36.tar.gz tmp/pyfirebird-0.0.37.tar.gz --markdown 20230509/p/pyfirebird/0.0.36-0.0.37/diff.md --exclude *.pyd
+[2023-05-09 07:29:23] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.8.tar.gz tmp/django-bunny-1.0.9.tar.gz --markdown 20230509/d/django-bunny/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 07:29:23] INFO root fetch - processPackages [lino-amici]: Downloading https://files.pythonhosted.org/packages/db/e1/02dfe0061742e79795e5a6f0deac440d0c97fb35a577c780b991e2c2f1c9/lino-amici-23.5.0.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [lino-noi]: Downloading https://files.pythonhosted.org/packages/1e/e5/ca090b682b59507f27344e5db4028eff477c4cf8a296c25862220e9cd912/lino-noi-23.5.0.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [np-queuey]: Downloading https://files.pythonhosted.org/packages/27/1c/e88b27091981272d5ffc30eebba21959ef04a6095bf298c8306d6bf62895/np_queuey-0.2.7.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [Jlab]: Downloading https://files.pythonhosted.org/packages/ac/66/0597393cb75d6bf1c5b7558e5044e2658b628fee443c2e839df2ac8944b4/Jlab-1.1.9.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [mongogettersetter]: Downloading https://files.pythonhosted.org/packages/ad/69/9e39d17c0da15bc198ee414567c11f8200c9446c4d8f351c8246f90c7c75/mongogettersetter-1.4.1.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [lino-amici]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [lino-amici]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lino-amici-23.4.0.tar.gz tmp/lino-amici-23.5.0.tar.gz --markdown 20230509/l/lino-amici/23.4.0-23.5.0/diff.md --exclude *.pyd
+[2023-05-09 07:29:23] INFO root fetch - processPackages [np-queuey]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [np-queuey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_queuey-0.2.6.tar.gz tmp/np_queuey-0.2.7.tar.gz --markdown 20230509/n/np-queuey/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-09 07:29:23] INFO root fetch - processPackages [lino-noi]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [lino-noi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lino-noi-23.4.0.tar.gz tmp/lino-noi-23.5.0.tar.gz --markdown 20230509/l/lino-noi/23.4.0-23.5.0/diff.md --exclude *.pyd
+[2023-05-09 07:29:23] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230509/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-09 07:29:23] INFO root fetch - processPackages [mongogettersetter]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [mongogettersetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongogettersetter-1.4.0.tar.gz tmp/mongogettersetter-1.4.1.tar.gz --markdown 20230509/m/mongogettersetter/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-09 07:29:23] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230509/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 07:29:23] INFO root fetch - processPackages [cjen]: Downloading https://files.pythonhosted.org/packages/a1/00/887993a7565ab66c0ef3223dfbc2ab2b85b96933e0e89867e421db51797b/cjen-1.0.9.tar.gz
+[2023-05-09 07:29:23] INFO root fetch - processPackages [cjen]: executing diffoscope
+[2023-05-09 07:29:23] INFO root fetch - processPackages [cjen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cjen-1.0.8.tar.gz tmp/cjen-1.0.9.tar.gz --markdown 20230509/c/cjen/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 07:29:24] INFO root fetch - processPackages [django-bunny]: Start processing: flowclient
+[2023-05-09 07:29:24] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 07:29:24] INFO root fetch - processPackages [flowclient]: New version: [1.9.4.post0.dev76] Old Version: [1.9.4.post0.dev70]
+[2023-05-09 07:29:24] INFO root fetch - processPackages [django-bunny]: Start processing: flowetl
+[2023-05-09 07:29:24] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 07:29:25] INFO root fetch - processPackages [flowetl]: New version: [1.9.4.post0.dev76] Old Version: [1.9.4.post0.dev70]
+[2023-05-09 07:29:25] INFO root fetch - processPackages [np-queuey]: Start processing: flowmachine
+[2023-05-09 07:29:25] INFO root fetch - main [MainThread]: End processing [np-queuey]: success
+[2023-05-09 07:29:25] INFO root fetch - processPackages [flowmachine]: New version: [1.9.4.post0.dev76] Old Version: [1.9.4.post0.dev70]
+[2023-05-09 07:29:25] INFO root fetch - processPackages [pyfirebird]: Start processing: rcs-pydantic
+[2023-05-09 07:29:25] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 07:29:25] INFO root fetch - processPackages [flowclient]: Downloading https://files.pythonhosted.org/packages/6e/37/bfddd70659fed8e7ba3a486ccedc2b55d3a84bf6338dbd6fda2fc4b2d415/flowclient-1.9.4.post0.dev70-py3-none-any.whl
+[2023-05-09 07:29:25] INFO root fetch - processPackages [rcs-pydantic]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 07:29:25] INFO root fetch - processPackages [flowetl]: Downloading https://files.pythonhosted.org/packages/7d/68/60330ef4aed6e6a0e8c8f1474a60a9868ed4e2bf928a79eae26c2becd5cb/flowetl-1.9.4.post0.dev70-py3-none-any.whl
+[2023-05-09 07:29:25] INFO root fetch - processPackages [mongogettersetter]: Start processing: uproot-browser
+[2023-05-09 07:29:25] INFO root fetch - main [MainThread]: End processing [mongogettersetter]: success
+[2023-05-09 07:29:25] INFO root fetch - processPackages [flowmachine]: Downloading https://files.pythonhosted.org/packages/ff/bf/14ac068a066254bcc3b11ea0939b748a8b86f4e7e01bff260e84c6428c02/flowmachine-1.9.4.post0.dev70-py3-none-any.whl
+[2023-05-09 07:29:25] INFO root fetch - processPackages [uproot-browser]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-09 07:29:25] INFO root fetch - processPackages [code-loader]: Start processing: crabpy
+[2023-05-09 07:29:25] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-09 07:29:25] INFO root fetch - processPackages [rcs-pydantic]: Downloading https://files.pythonhosted.org/packages/04/84/cc387d95ea07c8c49ec9862bda2f0e89d7363df0941baeb5f91dde7477b8/rcs_pydantic-0.8.0.tar.gz
+[2023-05-09 07:29:25] INFO root fetch - processPackages [crabpy]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-09 07:29:25] INFO root fetch - processPackages [Jlab]: Start processing: tasep
+[2023-05-09 07:29:25] INFO root fetch - main [MainThread]: End processing [Jlab]: success
+[2023-05-09 07:29:25] INFO root fetch - processPackages [cjen]: Start processing: linktest
+[2023-05-09 07:29:25] INFO root fetch - main [MainThread]: End processing [cjen]: success
+[2023-05-09 07:29:25] INFO root fetch - processPackages [tasep]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 07:29:25] INFO root fetch - processPackages [linktest]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-09 07:29:25] INFO root fetch - processPackages [uproot-browser]: Downloading https://files.pythonhosted.org/packages/13/8e/1412f5d2568cfca0f81a40cd465be8d4c16b4e88ccf3102a3ddf5f86ebda/uproot_browser-0.6.2.tar.gz
+[2023-05-09 07:29:25] INFO root fetch - processPackages [lino-amici]: Start processing: crazy-thursday
+[2023-05-09 07:29:25] INFO root fetch - main [MainThread]: End processing [lino-amici]: success
+[2023-05-09 07:29:25] INFO root fetch - processPackages [flowclient]: Downloading https://files.pythonhosted.org/packages/3e/ea/cf6edcf54b4b9f2c2c6149b4a6c3d8c57011245b7036b7468a43028bb1db/flowclient-1.9.4.post0.dev76-py3-none-any.whl
+[2023-05-09 07:29:25] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-09 07:29:25] INFO root fetch - processPackages [crabpy]: Downloading https://files.pythonhosted.org/packages/38/79/ea2a1c0c04170f88b5399bb6881742c13cb5fc3a08661afd2797e64d9870/crabpy-1.2.1.tar.gz
+[2023-05-09 07:29:25] INFO root fetch - processPackages [flowetl]: Downloading https://files.pythonhosted.org/packages/aa/29/1fe11f39e3155139661660c2caf8caf80ccb6e0fce150e201a56d2aaf812/flowetl-1.9.4.post0.dev76-py3-none-any.whl
+[2023-05-09 07:29:25] INFO root fetch - processPackages [rcs-pydantic]: Downloading https://files.pythonhosted.org/packages/20/ab/4e7a8029697db6775569e8c83746f86d5f281de4c674bfbed82809bf24f6/rcs_pydantic-0.9.0.tar.gz
+[2023-05-09 07:29:25] INFO root fetch - processPackages [flowclient]: executing diffoscope
+[2023-05-09 07:29:25] INFO root fetch - processPackages [flowclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowclient-1.9.4.post0.dev70-py3-none-any.whl.zip tmp/flowclient-1.9.4.post0.dev76-py3-none-any.whl.zip --markdown 20230509/f/flowclient/1.9.4.post0.dev70-1.9.4.post0.dev76/diff.md --exclude *.pyd
+[2023-05-09 07:29:25] INFO root fetch - processPackages [uproot-browser]: Downloading https://files.pythonhosted.org/packages/d3/6d/2bb858d4ab62c0dcd34ac3d915ff13b9964a23e72b8522d0009fa751b522/uproot_browser-0.6.3.tar.gz
+[2023-05-09 07:29:25] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/b8/8e/43365d018b0f1833776d94dea6cbc54eadb59a1f178b85cad521c695b3a5/crazy-thursday-2023.5.9.0.tar.gz
+[2023-05-09 07:29:25] INFO root fetch - processPackages [tasep]: Downloading https://files.pythonhosted.org/packages/f4/cd/2f41947d476d5add8183c71c8f3d1ee66bb26dee48ab4bdef586ea34e906/tasep-0.0.3-1.tar.gz
+[2023-05-09 07:29:25] INFO root fetch - processPackages [rcs-pydantic]: executing diffoscope
+[2023-05-09 07:29:25] INFO root fetch - processPackages [rcs-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcs_pydantic-0.8.0.tar.gz tmp/rcs_pydantic-0.9.0.tar.gz --markdown 20230509/r/rcs-pydantic/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 07:29:25] INFO root fetch - processPackages [crabpy]: Downloading https://files.pythonhosted.org/packages/cc/81/dacac7938666e650bbd4408be38430293089f3a41daf0d2ca782365b883a/crabpy-1.2.2.tar.gz
+[2023-05-09 07:29:25] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/1a/99/3505a8a8c946fb693b353a010673b2ebd247e8e0c575e1a91d6f94c41c76/linktest-2.0.3.tar.gz
+[2023-05-09 07:29:25] INFO root fetch - processPackages [uproot-browser]: executing diffoscope
+[2023-05-09 07:29:25] INFO root fetch - processPackages [uproot-browser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uproot_browser-0.6.2.tar.gz tmp/uproot_browser-0.6.3.tar.gz --markdown 20230509/u/uproot-browser/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-09 07:29:25] INFO root fetch - processPackages [crabpy]: executing diffoscope
+[2023-05-09 07:29:25] INFO root fetch - processPackages [crabpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crabpy-1.2.1.tar.gz tmp/crabpy-1.2.2.tar.gz --markdown 20230509/c/crabpy/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-09 07:29:26] INFO root fetch - processPackages [tasep]: executing diffoscope
+[2023-05-09 07:29:26] INFO root fetch - processPackages [tasep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tasep-0.0.2.tar.gz tmp/tasep-0.0.3-1.tar.gz --markdown 20230509/t/tasep/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 07:29:26] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/90/ef44e7da09a509715fa71be220e4b092d4cb0821620f0469b6591825f25f/crazy-thursday-2023.5.9.1.tar.gz
+[2023-05-09 07:29:26] INFO root fetch - processPackages [flowetl]: executing diffoscope
+[2023-05-09 07:29:26] INFO root fetch - processPackages [flowetl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowetl-1.9.4.post0.dev70-py3-none-any.whl.zip tmp/flowetl-1.9.4.post0.dev76-py3-none-any.whl.zip --markdown 20230509/f/flowetl/1.9.4.post0.dev70-1.9.4.post0.dev76/diff.md --exclude *.pyd
+[2023-05-09 07:29:26] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/fb/e4/f44af850b1a7d5ace165f3027c46dc480798daa4a2f3720045c678761efd/linktest-2.0.4.tar.gz
+[2023-05-09 07:29:26] INFO root fetch - processPackages [flowmachine]: Downloading https://files.pythonhosted.org/packages/25/d8/7f2f3ed6764c57835d2e49a0547b3be72952a62e845b2f82cfb00d4847df/flowmachine-1.9.4.post0.dev76-py3-none-any.whl
+[2023-05-09 07:29:26] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-09 07:29:26] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230509/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-09 07:29:26] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2023-05-09 07:29:26] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.0.3.tar.gz tmp/linktest-2.0.4.tar.gz --markdown 20230509/l/linktest/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-09 07:29:26] INFO root fetch - processPackages [flowmachine]: executing diffoscope
+[2023-05-09 07:29:26] INFO root fetch - processPackages [flowmachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowmachine-1.9.4.post0.dev70-py3-none-any.whl.zip tmp/flowmachine-1.9.4.post0.dev76-py3-none-any.whl.zip --markdown 20230509/f/flowmachine/1.9.4.post0.dev70-1.9.4.post0.dev76/diff.md --exclude *.pyd
+[2023-05-09 07:29:27] INFO root fetch - processPackages [flowclient]: Start processing: pgmini
+[2023-05-09 07:29:27] INFO root fetch - main [MainThread]: End processing [flowclient]: success
+[2023-05-09 07:29:27] INFO root fetch - processPackages [pgmini]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-09 07:29:27] INFO root fetch - processPackages [rcs-pydantic]: Start processing: django-bunny
+[2023-05-09 07:29:27] INFO root fetch - main [MainThread]: End processing [rcs-pydantic]: success
+[2023-05-09 07:29:27] INFO root fetch - processPackages [django-bunny]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 07:29:27] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 07:29:27] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.8.tar.gz tmp/django-bunny-1.0.9.tar.gz --markdown 20230509/d/django-bunny/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 07:29:27] INFO root fetch - processPackages [lino-noi]: Start processing: django-bunny
+[2023-05-09 07:29:27] INFO root fetch - main [MainThread]: End processing [lino-noi]: success
+[2023-05-09 07:29:27] INFO root fetch - processPackages [django-bunny]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 07:29:27] INFO root fetch - processPackages [pgmini]: Downloading https://files.pythonhosted.org/packages/d8/1f/b11f70a2999affbbc3b43a2c96d9a638dfd517d9cc91a144e4cd5408a8f4/pgmini-0.1.6.tar.gz
+[2023-05-09 07:29:27] INFO root fetch - main [MainThread]: End processing [tasep]: success
+[2023-05-09 07:29:27] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 07:29:27] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.8.tar.gz tmp/django-bunny-1.0.9.tar.gz --markdown 20230509/d/django-bunny/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 07:29:27] INFO root fetch - main [MainThread]: End processing [flowetl]: success
+[2023-05-09 07:29:27] INFO root fetch - processPackages [pgmini]: Downloading https://files.pythonhosted.org/packages/96/65/e06b7c66aa08ed5632c56110cca8065fdab3e8d786e7f85afd49a69d57f7/pgmini-0.1.7.tar.gz
+[2023-05-09 07:29:27] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-09 07:29:27] INFO root fetch - main [MainThread]: End processing [uproot-browser]: success
+[2023-05-09 07:29:27] INFO root fetch - processPackages [pgmini]: executing diffoscope
+[2023-05-09 07:29:27] INFO root fetch - processPackages [pgmini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgmini-0.1.6.tar.gz tmp/pgmini-0.1.7.tar.gz --markdown 20230509/p/pgmini/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-09 07:29:28] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 07:29:28] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 07:29:28] INFO root fetch - main [MainThread]: End processing [crabpy]: success
+[2023-05-09 07:29:28] INFO root fetch - main [MainThread]: End processing [flowmachine]: success
+[2023-05-09 07:29:29] INFO root fetch - main [MainThread]: End processing [pgmini]: success
+[2023-05-09 07:29:29] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2023-05-09 07:29:29] INFO root fetch - main [MainThread]: Store serial: [18027844]
