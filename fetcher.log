@@ -13573,3 +13573,116 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 11:41:11] INFO root fetch - main [MainThread]: End processing [ckanext-versioned-tiledmap]: success
 [2023-05-09 11:41:16] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-05-09 11:41:16] INFO root fetch - main [MainThread]: Store serial: [18030245]
+[2023-05-09 11:46:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18030245]
+[2023-05-09 11:46:25] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: KeyboardPaster
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lib310-lite
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: makejinja
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: astro-tiptop
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cashfree-lrs-client
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xj-role
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: alibabacloud-appstream-center20210901-py2
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-shays-CERT-2066-b
+[2023-05-09 11:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: alibabacloud-appstream-center20210901
+[2023-05-09 11:46:25] INFO root fetch - processPackages [makejinja]: New version: [1.1.5b3] Old Version: [1.1.5b2]
+[2023-05-09 11:46:25] INFO root fetch - processPackages [cashfree-lrs-client]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-09 11:46:25] INFO root fetch - processPackages [certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support]: New version: [20230508.14.58.782754] Old Version: [20230508.13.9.718076]
+[2023-05-09 11:46:26] WARNING root fetch - processPackages [astro-tiptop]: Skipping, unable to determine old version
+[2023-05-09 11:46:26] INFO root fetch - processPackages [astro-tiptop]: Start processing: easycheck
+[2023-05-09 11:46:26] INFO root fetch - main [MainThread]: End processing [astro-tiptop] error
+[2023-05-09 11:46:26] INFO root fetch - processPackages [KeyboardPaster]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901-py2]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-09 11:46:26] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2066-b]: New version: [20230509.9.43.762343] Old Version: [20230508.15.44.123036]
+[2023-05-09 11:46:26] INFO root fetch - processPackages [lib310-lite]: New version: [0.0.5.dev6] Old Version: [0.0.5.dev5]
+[2023-05-09 11:46:26] INFO root fetch - processPackages [xj-role]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 11:46:26] INFO root fetch - processPackages [makejinja]: Downloading https://files.pythonhosted.org/packages/21/86/833083c1c497e8001f1be53be0535e0906bacc972331be174f257a456a9e/makejinja-1.1.5b3.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [cashfree-lrs-client]: Downloading https://files.pythonhosted.org/packages/f8/82/56accebafe375d5655856e2c8178176457f9f4e17b63c580f09b67d2278d/cashfree_lrs_client-1.0.7.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support]: Downloading https://files.pythonhosted.org/packages/fd/e1/8229f8dbbaad16e4f618c0906a37be6f080d3db1b473581f64b62ba49800/certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support-20230508.13.9.718076.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [easycheck]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-09 11:46:26] INFO root fetch - processPackages [lib310-lite]: Downloading https://files.pythonhosted.org/packages/64/00/7123330150501ff217db98f6e90a7fe30a81cf91cfd24a864ff11c2a8785/lib310_lite-0.0.5.dev5.tar.gz
+[2023-05-09 11:46:26] WARNING root fetch - processPackages [certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support]: Skipping package: exceeds size limit 38474731>=10485760
+[2023-05-09 11:46:26] INFO root fetch - processPackages [certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support]: Start processing: bioplotz
+[2023-05-09 11:46:26] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-Liav-Add-Internal-Only-Lib-Support] error
+[2023-05-09 11:46:26] INFO root fetch - processPackages [cashfree-lrs-client]: executing diffoscope
+[2023-05-09 11:46:26] INFO root fetch - processPackages [cashfree-lrs-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cashfree_lrs_client-1.0.6.tar.gz tmp/cashfree_lrs_client-1.0.7.tar.gz --markdown 20230509/c/cashfree-lrs-client/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-09 11:46:26] INFO root fetch - processPackages [makejinja]: executing diffoscope
+[2023-05-09 11:46:26] INFO root fetch - processPackages [makejinja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makejinja-1.1.5b2.tar.gz tmp/makejinja-1.1.5b3.tar.gz --markdown 20230509/m/makejinja/1.1.5b2-1.1.5b3/diff.md --exclude *.pyd
+[2023-05-09 11:46:26] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2066-b]: Downloading https://files.pythonhosted.org/packages/20/02/a0bada35dd11a4145ae6370c914476420a0fafb563ba2c628d0409350905/certora-cli-alpha-shays-CERT-2066-b-20230508.15.44.123036.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901-py2]: Downloading https://files.pythonhosted.org/packages/de/6c/8a87e39fd862e0c5e0fd230391f3a5f247d6eee62d4f755a5c105814df85/alibabacloud_appstream-center20210901_py2-1.0.6.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901]: Downloading https://files.pythonhosted.org/packages/fd/55/2c2e193be8b922f86576bcb52f4b6d2936810edfa9611ac8de26f8e93c06/alibabacloud_appstream-center20210901-1.0.6.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [xj-role]: Downloading https://files.pythonhosted.org/packages/6b/8b/97965272d3462d0f7d0a27d169efd5145a23039e46eb22ce86c516d7eb65/xj_role-1.0.8.tar.gz
+[2023-05-09 11:46:26] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-2066-b]: Skipping package: exceeds size limit 38474413>=10485760
+[2023-05-09 11:46:26] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2066-b]: Start processing: particlespy
+[2023-05-09 11:46:26] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-2066-b] error
+[2023-05-09 11:46:26] INFO root fetch - processPackages [KeyboardPaster]: Downloading https://files.pythonhosted.org/packages/5a/5a/68e90d6e5fdc2543942de656f51688deb24e70946af6337048b26cf23870/KeyboardPaster-0.1.4.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [bioplotz]: New version: [0.1.0.dev6] Old Version: [0.1.0.dev5]
+[2023-05-09 11:46:26] INFO root fetch - processPackages [easycheck]: Downloading https://files.pythonhosted.org/packages/b8/d7/a711e6c2cc41821da6cf379790e65d71623dfdfa5e425771212483b5e508/easycheck-0.5.0-py3-none-any.whl
+[2023-05-09 11:46:26] INFO root fetch - processPackages [particlespy]: New version: [0.6.2] Old Version: [0.6.0]
+[2023-05-09 11:46:26] INFO root fetch - processPackages [KeyboardPaster]: executing diffoscope
+[2023-05-09 11:46:26] INFO root fetch - processPackages [KeyboardPaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KeyboardPaster-0.1.3.tar.gz tmp/KeyboardPaster-0.1.4.tar.gz --markdown 20230509/K/KeyboardPaster/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 11:46:26] INFO root fetch - processPackages [lib310-lite]: Downloading https://files.pythonhosted.org/packages/ed/8b/be5e8b34a0d8811928ad7f4a2404c41d415a0ab9ca111eb39822132546c8/lib310_lite-0.0.5.dev6.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901-py2]: Downloading https://files.pythonhosted.org/packages/40/bc/837ca2bef9aad6efdfe568fab356df9c0ba37922306af3554130228b1852/alibabacloud_appstream-center20210901_py2-1.0.7.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901]: Downloading https://files.pythonhosted.org/packages/39/c7/f39279537112bff75097c1e1b4504df02e7502c89c8b727877959c38a94a/alibabacloud_appstream-center20210901-1.0.7.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [lib310-lite]: executing diffoscope
+[2023-05-09 11:46:26] INFO root fetch - processPackages [lib310-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib310_lite-0.0.5.dev5.tar.gz tmp/lib310_lite-0.0.5.dev6.tar.gz --markdown 20230509/l/lib310-lite/0.0.5.dev5-0.0.5.dev6/diff.md --exclude *.pyd
+[2023-05-09 11:46:26] INFO root fetch - processPackages [easycheck]: Downloading https://files.pythonhosted.org/packages/ad/36/4c4daa0043e9e1d0336951407363352047317ccd6a2f1df6ed2b86b894e7/easycheck-0.6.0.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [particlespy]: Downloading https://files.pythonhosted.org/packages/a5/65/cc0df11754f7dd58009f21df5f8db86e103d8a9bbaeead5083a866a8eb59/particlespy-0.6.0.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [bioplotz]: Downloading https://files.pythonhosted.org/packages/ac/04/d8586c567d8a2efeb73f0e9327dd0f73011d7f999fed3b5877c886c96884/bioplotz-0.1.0.dev6.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [xj-role]: Downloading https://files.pythonhosted.org/packages/2c/77/ebb1d3254b61bd786e3aaebbd01dfa15310557c1a927f61995a6b9e0531e/xj_role-1.0.9.tar.gz
+[2023-05-09 11:46:26] INFO root fetch - processPackages [easycheck]: executing diffoscope
+[2023-05-09 11:46:26] INFO root fetch - processPackages [easycheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easycheck-0.5.0-py3-none-any.whl.zip tmp/easycheck-0.6.0.tar.gz --markdown 20230509/e/easycheck/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901]: executing diffoscope
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_appstream-center20210901-1.0.6.tar.gz tmp/alibabacloud_appstream-center20210901-1.0.7.tar.gz --markdown 20230509/a/alibabacloud-appstream-center20210901/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901-py2]: executing diffoscope
+[2023-05-09 11:46:26] INFO root fetch - processPackages [alibabacloud-appstream-center20210901-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_appstream-center20210901_py2-1.0.6.tar.gz tmp/alibabacloud_appstream-center20210901_py2-1.0.7.tar.gz --markdown 20230509/a/alibabacloud-appstream-center20210901-py2/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-09 11:46:26] INFO root fetch - processPackages [bioplotz]: executing diffoscope
+[2023-05-09 11:46:26] INFO root fetch - processPackages [bioplotz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioplotz-0.1.0.dev5.tar.gz tmp/bioplotz-0.1.0.dev6.tar.gz --markdown 20230509/b/bioplotz/0.1.0.dev5-0.1.0.dev6/diff.md --exclude *.pyd
+[2023-05-09 11:46:26] INFO root fetch - processPackages [xj-role]: executing diffoscope
+[2023-05-09 11:46:26] INFO root fetch - processPackages [xj-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_role-1.0.8.tar.gz tmp/xj_role-1.0.9.tar.gz --markdown 20230509/x/xj-role/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 11:46:26] INFO root fetch - processPackages [particlespy]: Downloading https://files.pythonhosted.org/packages/e4/4a/91a547d9c40ecadbfc71dd48283ee747145074fb3a69351f02ede1c5625a/particlespy-0.6.2.tar.gz
+[2023-05-09 11:46:27] INFO root fetch - processPackages [particlespy]: executing diffoscope
+[2023-05-09 11:46:27] INFO root fetch - processPackages [particlespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/particlespy-0.6.0.tar.gz tmp/particlespy-0.6.2.tar.gz --markdown 20230509/p/particlespy/0.6.0-0.6.2/diff.md --exclude *.pyd
+[2023-05-09 11:46:27] INFO root fetch - processPackages [KeyboardPaster]: Start processing: nanosurf
+[2023-05-09 11:46:27] INFO root fetch - main [MainThread]: End processing [KeyboardPaster]: success
+[2023-05-09 11:46:28] INFO root fetch - processPackages [nanosurf]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-05-09 11:46:28] INFO root fetch - processPackages [makejinja]: Start processing: spotON_sdk
+[2023-05-09 11:46:28] INFO root fetch - main [MainThread]: End processing [makejinja]: success
+[2023-05-09 11:46:28] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.2.8] Old Version: [0.0.2.7]
+[2023-05-09 11:46:28] INFO root fetch - processPackages [easycheck]: Start processing: Py-SPW
+[2023-05-09 11:46:28] INFO root fetch - main [MainThread]: End processing [easycheck]: success
+[2023-05-09 11:46:28] INFO root fetch - processPackages [nanosurf]: Downloading https://files.pythonhosted.org/packages/e6/d0/c483b3e51ca61d37b80d5e2bfa44c6b312a4f2e6112987a072544d26b054/nanosurf-1.6.1.tar.gz
+[2023-05-09 11:46:28] INFO root fetch - processPackages [lib310-lite]: Start processing: darwin-py
+[2023-05-09 11:46:28] INFO root fetch - main [MainThread]: End processing [lib310-lite]: success
+[2023-05-09 11:46:28] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-09 11:46:28] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.2.7.tar.gz tmp/spotON_sdk-0.0.2.8.tar.gz --markdown 20230509/s/spotON_sdk/0.0.2.7-0.0.2.8/diff.md --exclude *.pyd
+[2023-05-09 11:46:28] INFO root fetch - processPackages [Py-SPW]: New version: [1.5.0] Old Version: [1.4.4]
+[2023-05-09 11:46:28] INFO root fetch - processPackages [darwin-py]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-05-09 11:46:28] INFO root fetch - processPackages [bioplotz]: Start processing: danling
+[2023-05-09 11:46:28] INFO root fetch - main [MainThread]: End processing [bioplotz]: success
+[2023-05-09 11:46:28] INFO root fetch - processPackages [danling]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-09 11:46:28] INFO root fetch - processPackages [nanosurf]: Downloading https://files.pythonhosted.org/packages/96/03/cdc42712fb8969bfecfd5671b7eb2a9edb4c50c7c1182251a6e9c9fd6f89/nanosurf-1.6.2.tar.gz
+[2023-05-09 11:46:28] INFO root fetch - processPackages [Py-SPW]: Downloading https://files.pythonhosted.org/packages/b4/49/333c09d97375edded6662fcc54eb297547ea22119b1e7727b123d789e904/py-spw-1.4.4.tar.gz
+[2023-05-09 11:46:28] INFO root fetch - processPackages [danling]: executing diffoscope
+[2023-05-09 11:46:28] INFO root fetch - processPackages [danling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danling-0.2.5.tar.gz tmp/danling-0.2.6.tar.gz --markdown 20230509/d/danling/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-09 11:46:28] INFO root fetch - processPackages [darwin-py]: Downloading https://files.pythonhosted.org/packages/93/f6/a0986edeb7fdef1e834f8d1de3051e64d7a11b558e66dd6f541d41841c09/darwin_py-0.8.9.tar.gz
+[2023-05-09 11:46:28] INFO root fetch - processPackages [nanosurf]: executing diffoscope
+[2023-05-09 11:46:28] INFO root fetch - processPackages [nanosurf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanosurf-1.6.1.tar.gz tmp/nanosurf-1.6.2.tar.gz --markdown 20230509/n/nanosurf/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-09 11:46:28] INFO root fetch - processPackages [Py-SPW]: Downloading https://files.pythonhosted.org/packages/d7/82/98cf65b51a185e0ab29fd2421705c1b37999c4caeb38c5d61f7320f448b3/Py-SPW-1.5.0.tar.gz
+[2023-05-09 11:46:28] INFO root fetch - main [MainThread]: End processing [xj-role]: success
+[2023-05-09 11:46:29] INFO root fetch - main [MainThread]: End processing [alibabacloud-appstream-center20210901-py2]: success
+[2023-05-09 11:46:29] INFO root fetch - processPackages [Py-SPW]: executing diffoscope
+[2023-05-09 11:46:29] INFO root fetch - processPackages [Py-SPW]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-spw-1.4.4.tar.gz tmp/Py-SPW-1.5.0.tar.gz --markdown 20230509/P/Py-SPW/1.4.4-1.5.0/diff.md --exclude *.pyd
+[2023-05-09 11:46:29] INFO root fetch - processPackages [darwin-py]: Downloading https://files.pythonhosted.org/packages/c5/56/e34f4f67858e6b507fb799ab789e82144a84a51233dfaaea764b8c51ad5d/darwin_py-0.9.0.tar.gz
+[2023-05-09 11:46:29] INFO root fetch - processPackages [darwin-py]: executing diffoscope
+[2023-05-09 11:46:29] INFO root fetch - processPackages [darwin-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/darwin_py-0.8.9.tar.gz tmp/darwin_py-0.9.0.tar.gz --markdown 20230509/d/darwin-py/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 11:46:29] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-09 11:46:29] INFO root fetch - main [MainThread]: End processing [alibabacloud-appstream-center20210901]: success
+[2023-05-09 11:46:30] INFO root fetch - main [MainThread]: End processing [Py-SPW]: success
+[2023-05-09 11:46:30] INFO root fetch - main [MainThread]: End processing [cashfree-lrs-client]: success
+[2023-05-09 11:46:30] INFO root fetch - main [MainThread]: End processing [particlespy]: success
+[2023-05-09 11:46:30] INFO root fetch - main [MainThread]: End processing [danling]: success
+[2023-05-09 11:46:32] INFO root fetch - main [MainThread]: End processing [darwin-py]: success
+[2023-05-09 11:46:32] INFO root fetch - main [MainThread]: End processing [nanosurf]: success
+[2023-05-09 11:46:32] INFO root fetch - main [MainThread]: Store serial: [18030304]
