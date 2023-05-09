@@ -9228,3 +9228,88 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 07:08:11] INFO root fetch - main [MainThread]: End processing [ml-logger]: success
 [2023-05-09 07:11:00] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-05-09 07:11:00] INFO root fetch - main [MainThread]: Store serial: [18027696]
+[2023-05-09 07:16:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027696]
+[2023-05-09 07:16:09] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ethhelper
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-bunny
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hypergrid
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jquants-api-client
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-hmac-authentication
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gqt
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zytlib
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tasep
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyfirebird
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: django-bunny
+[2023-05-09 07:16:09] WARNING root fetch - processPackages [hypergrid]: Skipping, unable to determine old version
+[2023-05-09 07:16:09] WARNING root fetch - processPackages [django-hmac-authentication]: Skipping, unable to determine old version
+[2023-05-09 07:16:09] INFO root fetch - processPackages [hypergrid]: Start processing: odoo12-addon-l10n-it-fatturapa-out
+[2023-05-09 07:16:09] INFO root fetch - processPackages [django-hmac-authentication]: Start processing: TagScript
+[2023-05-09 07:16:09] INFO root fetch - main [MainThread]: End processing [hypergrid] error
+[2023-05-09 07:16:09] INFO root fetch - main [MainThread]: End processing [django-hmac-authentication] error
+[2023-05-09 07:16:09] INFO root fetch - processPackages [tasep]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 07:16:09] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.36] Old Version: [0.0.35]
+[2023-05-09 07:16:09] INFO root fetch - processPackages [django-bunny]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-09 07:16:09] INFO root fetch - processPackages [django-bunny]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-09 07:16:09] INFO root fetch - processPackages [odoo12-addon-l10n-it-fatturapa-out]: New version: [12.0.3.2.1.99.dev1] Old Version: [12.0.3.2.1]
+[2023-05-09 07:16:09] INFO root fetch - processPackages [jquants-api-client]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-05-09 07:16:09] INFO root fetch - processPackages [ethhelper]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-09 07:16:09] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-05-09 07:16:09] INFO root fetch - processPackages [TagScript]: New version: [2.6.4] Old Version: [2.6.3]
+[2023-05-09 07:16:09] INFO root fetch - processPackages [zytlib]: New version: [0.3.336] Old Version: [0.3.335]
+[2023-05-09 07:16:10] INFO root fetch - processPackages [odoo12-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/ac/0c/cc7a03e11f308ef7b71aa3a320366d3d3b4944cfa966e385ea5880a882a8/odoo12_addon_l10n_it_fatturapa_out-12.0.3.2.1-py3-none-any.whl
+[2023-05-09 07:16:10] INFO root fetch - processPackages [django-bunny]: Downloading https://files.pythonhosted.org/packages/31/5d/54f40c12bcde0dbf856342d97ba166d91831a62d0eee7e6c6a0ee1575ad9/django-bunny-1.0.7.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [django-bunny]: Downloading https://files.pythonhosted.org/packages/31/5d/54f40c12bcde0dbf856342d97ba166d91831a62d0eee7e6c6a0ee1575ad9/django-bunny-1.0.7.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [ethhelper]: Downloading https://files.pythonhosted.org/packages/38/da/bb14070e0dfa10ab2bd32eb1411b92d08c6e0337a9e5c7f63adaeeeac3a8/ethhelper-0.3.5.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/fc/05/071e8cdfe45a19cb723984c7117c280859b25de4c51ad83734d9638f3833/zytlib-0.3.335-py3-none-any.whl
+[2023-05-09 07:16:10] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/99/5b/f01566d817f67bd9bff27628c801415ca9d6eac49cbd450a0ca03e77ee12/pyfirebird-0.0.36.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [tasep]: Downloading https://files.pythonhosted.org/packages/28/2a/36da6165a7341cf7aad305a64cf4aa08b54f68feb229de08c1c2eb2318f5/tasep-0.0.3.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [TagScript]: Downloading https://files.pythonhosted.org/packages/09/1d/199e67ae88be911d311ad2d291cb86369ad0b2a8131afbd1589995585d65/TagScript-2.6.3.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [jquants-api-client]: Downloading https://files.pythonhosted.org/packages/bf/01/715c7c0f0110c6da00d621d94ed1d15eed9f4998534c9e94ab4133e02798/jquants_api_client-1.1.2.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.35.tar.gz tmp/pyfirebird-0.0.36.tar.gz --markdown 20230509/p/pyfirebird/0.0.35-0.0.36/diff.md --exclude *.pyd
+[2023-05-09 07:16:10] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230509/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-05-09 07:16:10] INFO root fetch - processPackages [tasep]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [tasep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tasep-0.0.2.tar.gz tmp/tasep-0.0.3.tar.gz --markdown 20230509/t/tasep/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 07:16:10] INFO root fetch - processPackages [odoo12-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/78/f7/9ed5a9f2636a421c1176e6c1bae2f50350a9f8c5f4b9c6bdc14fe3fc2437/odoo12_addon_l10n_it_fatturapa_out-12.0.3.2.1.99.dev1-py3-none-any.whl
+[2023-05-09 07:16:10] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/c8/15/a01c71f352e0f3ec75852be01a748a05254ef8ea751147a12a1a6f3d5a93/zytlib-0.3.336-py3-none-any.whl
+[2023-05-09 07:16:10] INFO root fetch - processPackages [ethhelper]: Downloading https://files.pythonhosted.org/packages/e5/39/20a7a1284c4206179baaaea41e3275aadea606b08316225ee5d86e5b205c/ethhelper-0.3.6.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [django-bunny]: Downloading https://files.pythonhosted.org/packages/0b/3f/0831c333186a3fc88694222023e431ba7d55458aff70d0084c16451f07d4/django-bunny-1.0.8.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [TagScript]: Downloading https://files.pythonhosted.org/packages/2f/8f/1686e99a011d541656683cffcc95c8a4364d76a27d84744385e0386cfadb/TagScript-2.6.4.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [django-bunny]: Downloading https://files.pythonhosted.org/packages/0b/3f/0831c333186a3fc88694222023e431ba7d55458aff70d0084c16451f07d4/django-bunny-1.0.8.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [jquants-api-client]: Downloading https://files.pythonhosted.org/packages/8f/50/8d97adc00651d4c831639d91f61831bef6439e941d8cb152127e6810e3d1/jquants_api_client-1.2.0.tar.gz
+[2023-05-09 07:16:10] INFO root fetch - processPackages [ethhelper]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [ethhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethhelper-0.3.5.tar.gz tmp/ethhelper-0.3.6.tar.gz --markdown 20230509/e/ethhelper/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-09 07:16:10] INFO root fetch - processPackages [TagScript]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [TagScript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TagScript-2.6.3.tar.gz tmp/TagScript-2.6.4.tar.gz --markdown 20230509/T/TagScript/2.6.3-2.6.4/diff.md --exclude *.pyd
+[2023-05-09 07:16:10] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.335-py3-none-any.whl.zip tmp/zytlib-0.3.336-py3-none-any.whl.zip --markdown 20230509/z/zytlib/0.3.335-0.3.336/diff.md --exclude *.pyd
+[2023-05-09 07:16:10] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.7.tar.gz tmp/django-bunny-1.0.8.tar.gz --markdown 20230509/d/django-bunny/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-09 07:16:10] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.7.tar.gz tmp/django-bunny-1.0.8.tar.gz --markdown 20230509/d/django-bunny/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-09 07:16:10] INFO root fetch - processPackages [jquants-api-client]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [jquants-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jquants_api_client-1.1.2.tar.gz tmp/jquants_api_client-1.2.0.tar.gz --markdown 20230509/j/jquants-api-client/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 07:16:10] INFO root fetch - processPackages [odoo12-addon-l10n-it-fatturapa-out]: executing diffoscope
+[2023-05-09 07:16:10] INFO root fetch - processPackages [odoo12-addon-l10n-it-fatturapa-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_l10n_it_fatturapa_out-12.0.3.2.1-py3-none-any.whl.zip tmp/odoo12_addon_l10n_it_fatturapa_out-12.0.3.2.1.99.dev1-py3-none-any.whl.zip --markdown 20230509/o/odoo12-addon-l10n-it-fatturapa-out/12.0.3.2.1-12.0.3.2.1.99.dev1/diff.md --exclude *.pyd
+[2023-05-09 07:16:12] INFO root fetch - processPackages [ethhelper]: Start processing: django-bunny
+[2023-05-09 07:16:12] INFO root fetch - main [MainThread]: End processing [ethhelper]: success
+[2023-05-09 07:16:12] INFO root fetch - processPackages [gqt]: Start processing: rapidpe-rift-pipe
+[2023-05-09 07:16:12] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-05-09 07:16:12] INFO root fetch - processPackages [django-bunny]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-09 07:16:12] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.2.2.dev20230508] Old Version: [0.2.2.dev20230507]
+[2023-05-09 07:16:12] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 07:16:12] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.7.tar.gz tmp/django-bunny-1.0.8.tar.gz --markdown 20230509/d/django-bunny/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-09 07:16:12] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-05-09 07:16:12] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.2.2.dev20230507.tar.gz tmp/rapidpe_rift_pipe-0.2.2.dev20230508.tar.gz --markdown 20230509/r/rapidpe-rift-pipe/0.2.2.dev20230507-0.2.2.dev20230508/diff.md --exclude *.pyd
+[2023-05-09 07:16:12] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 07:16:12] INFO root fetch - main [MainThread]: End processing [tasep]: success
+[2023-05-09 07:16:12] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 07:16:12] INFO root fetch - main [MainThread]: End processing [zytlib]: success
+[2023-05-09 07:16:12] INFO root fetch - main [MainThread]: End processing [TagScript]: success
+[2023-05-09 07:16:12] INFO root fetch - main [MainThread]: End processing [jquants-api-client]: success
+[2023-05-09 07:16:13] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 07:16:13] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-it-fatturapa-out]: success
+[2023-05-09 07:16:13] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 07:16:13] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2023-05-09 07:16:13] INFO root fetch - main [MainThread]: Store serial: [18027739]
