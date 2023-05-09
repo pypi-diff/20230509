@@ -8417,3 +8417,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 05:45:48] INFO root fetch - main [MainThread]: End processing [ccdt]: success
 [2023-05-09 05:45:55] INFO root fetch - main [MainThread]: End processing [ipybbycell]: success
 [2023-05-09 05:45:55] INFO root fetch - main [MainThread]: Store serial: [18027290]
+[2023-05-09 05:50:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027290]
+[2023-05-09 05:51:04] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geodata-harvester
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alibabacloud-btripopen20220520-py2
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: accelbyte-py-sdk
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alibabacloud-btripopen20220520
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sum-pai
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ccdt
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: venakatest
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spaceone-api
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: LarpixParser
+[2023-05-09 05:51:04] INFO root fetch - processPackages [sum-pai]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-09 05:51:04] INFO root fetch - processPackages [geodata-harvester]: New version: [1.0.0] Old Version: [0.2.2]
+[2023-05-09 05:51:04] INFO root fetch - processPackages [alibabacloud-btripopen20220520]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ccdt]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-09 05:51:04] INFO root fetch - processPackages [venakatest]: New version: [0.1.23] Old Version: [0.1.11]
+[2023-05-09 05:51:04] INFO root fetch - processPackages [LarpixParser]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-09 05:51:04] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 05:51:04] INFO root fetch - processPackages [accelbyte-py-sdk]: New version: [0.40.0] Old Version: [0.39.0]
+[2023-05-09 05:51:04] INFO root fetch - processPackages [spaceone-api]: New version: [1.9.7rc1] Old Version: [1.9.7.dev3]
+[2023-05-09 05:51:04] INFO root fetch - processPackages [spaceone-api]: executing diffoscope
+[2023-05-09 05:51:04] INFO root fetch - processPackages [spaceone-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone_api-1.9.7.dev3-py3-none-any.whl.zip tmp/spaceone_api-1.9.7rc1-py3-none-any.whl.zip --markdown 20230509/s/spaceone-api/1.9.7.dev3-1.9.7rc1/diff.md --exclude *.pyd
+[2023-05-09 05:51:04] INFO root fetch - processPackages [venakatest]: Downloading https://files.pythonhosted.org/packages/ef/d3/d49470eab2322169069cd804e8411bcf59a33b1f262261c804020c69841c/venakatest-0.1.11.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [LarpixParser]: Downloading https://files.pythonhosted.org/packages/cb/1e/9b8d683da5ab4ae7846738b1356868a47571b2ed2979892d12aa9f322527/LarpixParser-0.0.7.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [geodata-harvester]: Downloading https://files.pythonhosted.org/packages/f1/16/8ac858adf87f3af033c964f7769859ca193b49b33d3e270a6976bd20df0d/geodata-harvester-0.2.2.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [accelbyte-py-sdk]: Downloading https://files.pythonhosted.org/packages/90/39/1cb52789a3debf427484d059e0081555ff98ded8f995591ef154c954269e/accelbyte_py_sdk-0.39.0.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/4f/b2/00668cf0fabc3177abc3488e1b3bbedda7b9017cbab933f9f91784f2dc9b/ccdt-2.0.6.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [sum-pai]: Downloading https://files.pythonhosted.org/packages/1e/1f/f76f96805b497efd80fafd6b25c2a6cd97620ba490a61b1d648c4fee6a15/sum_pai-0.4.0.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2023-05-09 05:51:04] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-2.0.5.tar.gz tmp/ccdt-2.0.6.tar.gz --markdown 20230509/c/ccdt/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-09 05:51:04] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: executing diffoscope
+[2023-05-09 05:51:04] INFO root fetch - processPackages [alibabacloud-btripopen20220520-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_btripopen20220520_py2-1.0.8.tar.gz tmp/alibabacloud_btripopen20220520_py2-1.0.9.tar.gz --markdown 20230509/a/alibabacloud-btripopen20220520-py2/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 05:51:04] INFO root fetch - processPackages [venakatest]: Downloading https://files.pythonhosted.org/packages/83/b5/250e648f1a69f2c734ec2459d86af851e69dd45c67fad65b7999eafa8d13/venakatest-0.1.23.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [sum-pai]: executing diffoscope
+[2023-05-09 05:51:04] INFO root fetch - processPackages [sum-pai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sum_pai-0.3.0.tar.gz tmp/sum_pai-0.4.0.tar.gz --markdown 20230509/s/sum-pai/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-09 05:51:04] INFO root fetch - processPackages [alibabacloud-btripopen20220520]: executing diffoscope
+[2023-05-09 05:51:04] INFO root fetch - processPackages [alibabacloud-btripopen20220520]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_btripopen20220520-1.0.8.tar.gz tmp/alibabacloud_btripopen20220520-1.0.9.tar.gz --markdown 20230509/a/alibabacloud-btripopen20220520/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 05:51:04] INFO root fetch - processPackages [accelbyte-py-sdk]: Downloading https://files.pythonhosted.org/packages/f4/23/736e6703a013055ddf34d717f12e7fa877871f7881396cc3c2db3a5e4fc0/accelbyte_py_sdk-0.40.0.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [geodata-harvester]: Downloading https://files.pythonhosted.org/packages/04/6d/78c7e2f29d5659b3393631a8c4168781b4a5fd7cf4e149e4cef99a105ea7/geodata-harvester-1.0.0.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [venakatest]: executing diffoscope
+[2023-05-09 05:51:04] INFO root fetch - processPackages [venakatest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/venakatest-0.1.11.tar.gz tmp/venakatest-0.1.23.tar.gz --markdown 20230509/v/venakatest/0.1.11-0.1.23/diff.md --exclude *.pyd
+[2023-05-09 05:51:04] INFO root fetch - processPackages [LarpixParser]: Downloading https://files.pythonhosted.org/packages/19/86/a365abf0c671e939a7ce2693f818e7e9a20b09db4e5bec8422386f6939f5/LarpixParser-0.0.8.tar.gz
+[2023-05-09 05:51:04] INFO root fetch - processPackages [geodata-harvester]: executing diffoscope
+[2023-05-09 05:51:04] INFO root fetch - processPackages [geodata-harvester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geodata-harvester-0.2.2.tar.gz tmp/geodata-harvester-1.0.0.tar.gz --markdown 20230509/g/geodata-harvester/0.2.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-09 05:51:05] INFO root fetch - processPackages [LarpixParser]: executing diffoscope
+[2023-05-09 05:51:05] INFO root fetch - processPackages [LarpixParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LarpixParser-0.0.7.tar.gz tmp/LarpixParser-0.0.8.tar.gz --markdown 20230509/L/LarpixParser/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-09 05:51:05] INFO root fetch - processPackages [accelbyte-py-sdk]: executing diffoscope
+[2023-05-09 05:51:05] INFO root fetch - processPackages [accelbyte-py-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accelbyte_py_sdk-0.39.0.tar.gz tmp/accelbyte_py_sdk-0.40.0.tar.gz --markdown 20230509/a/accelbyte-py-sdk/0.39.0-0.40.0/diff.md --exclude *.pyd
+[2023-05-09 05:51:06] INFO root fetch - main [MainThread]: End processing [alibabacloud-btripopen20220520-py2]: success
+[2023-05-09 05:51:06] INFO root fetch - main [MainThread]: End processing [alibabacloud-btripopen20220520]: success
+[2023-05-09 05:51:06] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2023-05-09 05:51:06] INFO root fetch - main [MainThread]: End processing [venakatest]: success
+[2023-05-09 05:51:06] INFO root fetch - main [MainThread]: End processing [sum-pai]: success
+[2023-05-09 05:51:07] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
+[2023-05-09 05:51:07] INFO root fetch - main [MainThread]: End processing [geodata-harvester]: success
+[2023-05-09 05:51:08] INFO root fetch - main [MainThread]: End processing [LarpixParser]: success
+[2023-05-09 05:54:05] ERROR root fetch - processPackages [accelbyte-py-sdk]: Timeout during execution of pkgdiff
+[2023-05-09 05:54:05] INFO root fetch - main [MainThread]: End processing [accelbyte-py-sdk] error
+[2023-05-09 05:54:05] INFO root fetch - main [MainThread]: Store serial: [18027319]
