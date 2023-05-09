@@ -12049,3 +12049,86 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 10:09:04] INFO root fetch - main [MainThread]: End processing [IP2Trace]: success
 [2023-05-09 10:09:32] INFO root fetch - main [MainThread]: End processing [psgspecialelements]: success
 [2023-05-09 10:09:32] INFO root fetch - main [MainThread]: Store serial: [18029270]
+[2023-05-09 10:14:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029270]
+[2023-05-09 10:14:41] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arithmetica-py
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exabel-data-sdk
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jptranstokenizer
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flgo
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lusid-drive-sdk-preview
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lusid-drive-sdk
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kognic-io
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: datatoolbox
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: psgspecialelements
+[2023-05-09 10:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sarus-data-spec-public
+[2023-05-09 10:14:41] INFO root fetch - processPackages [flgo]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 10:14:41] INFO root fetch - processPackages [jptranstokenizer]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-09 10:14:41] INFO root fetch - processPackages [exabel-data-sdk]: New version: [4.3.0] Old Version: [4.2.0]
+[2023-05-09 10:14:41] INFO root fetch - processPackages [psgspecialelements]: New version: [1.0.2.1] Old Version: [1.0.2]
+[2023-05-09 10:14:42] INFO root fetch - processPackages [arithmetica-py]: New version: [1.0.189] Old Version: [1.0.186]
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk-preview]: New version: [0.1.96] Old Version: [0.1.95]
+[2023-05-09 10:14:42] INFO root fetch - processPackages [kognic-io]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-05-09 10:14:42] INFO root fetch - processPackages [datatoolbox]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-09 10:14:42] INFO root fetch - processPackages [sarus-data-spec-public]: New version: [3.2.1.dev2] Old Version: [3.2.1.dev0]
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk]: New version: [0.1.96] Old Version: [0.1.95]
+[2023-05-09 10:14:42] INFO root fetch - processPackages [flgo]: executing diffoscope
+[2023-05-09 10:14:42] INFO root fetch - processPackages [flgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flgo-0.0.3.tar.gz tmp/flgo-0.0.4.tar.gz --markdown 20230509/f/flgo/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 10:14:42] INFO root fetch - processPackages [jptranstokenizer]: Downloading https://files.pythonhosted.org/packages/8b/0a/57d34d4506051279b58328f5f560938b1b43ab013f539d2e2cbc1b4f1b08/jptranstokenizer-0.3.1.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [exabel-data-sdk]: Downloading https://files.pythonhosted.org/packages/08/d9/0fdf55bf2a9f2244053184a87d68b85d9d35589b2e80797b9c7da259d9e5/exabel-data-sdk-4.2.0.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk-preview]: Downloading https://files.pythonhosted.org/packages/3c/36/7ba764c059e4db444f6cf2e73cd8a04b8f90fa2ed8bc8e663f775912d783/lusid-drive-sdk-preview-0.1.95.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [psgspecialelements]: Downloading https://files.pythonhosted.org/packages/e4/93/4b262e79c38c43192bd1f0ec2c6726d9a2ccdd907509f0e7f84872552537/psgspecialelements-1.0.2.1.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [psgspecialelements]: executing diffoscope
+[2023-05-09 10:14:42] INFO root fetch - processPackages [psgspecialelements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgspecialelements-1.0.2.tar.gz tmp/psgspecialelements-1.0.2.1.tar.gz --markdown 20230509/p/psgspecialelements/1.0.2-1.0.2.1/diff.md --exclude *.pyd
+[2023-05-09 10:14:42] INFO root fetch - processPackages [sarus-data-spec-public]: Downloading https://files.pythonhosted.org/packages/96/df/f0e9486b8d7304a2720e8eb336b5ebf8b3b677a93f1040b0bbda4c42e1bf/sarus_data_spec_public-3.2.1.dev0.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [datatoolbox]: Downloading https://files.pythonhosted.org/packages/5c/29/ec3033c9bafde26e20209c8da676c4222dbeb6c0ff1afd488ddb85b19895/datatoolbox-0.5.4.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [kognic-io]: Downloading https://files.pythonhosted.org/packages/e1/5a/5a91756d782bd7137cc30c69c02754e8f395827e626b7c08c08a90ffa933/kognic-io-1.1.9.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [arithmetica-py]: Downloading https://files.pythonhosted.org/packages/1c/0a/c550b0d9ce5e72082a39d0e013e694b48ba5b23afd368e42b522b50f8497/arithmetica-py-1.0.189.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk]: Downloading https://files.pythonhosted.org/packages/de/c4/d650d6220b8a796e210b789647cfcab1357ab3bd9085ea87d503604999f7/lusid-drive-sdk-0.1.95.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [exabel-data-sdk]: Downloading https://files.pythonhosted.org/packages/da/9c/2109dd8a17ca294152b4ce5b2b8c5c2027c48966c2d6c656d287b7b3435f/exabel-data-sdk-4.3.0.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [exabel-data-sdk]: executing diffoscope
+[2023-05-09 10:14:42] INFO root fetch - processPackages [exabel-data-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exabel-data-sdk-4.2.0.tar.gz tmp/exabel-data-sdk-4.3.0.tar.gz --markdown 20230509/e/exabel-data-sdk/4.2.0-4.3.0/diff.md --exclude *.pyd
+[2023-05-09 10:14:42] INFO root fetch - processPackages [arithmetica-py]: executing diffoscope
+[2023-05-09 10:14:42] INFO root fetch - processPackages [arithmetica-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arithmetica-py-1.0.186.tar.gz tmp/arithmetica-py-1.0.189.tar.gz --markdown 20230509/a/arithmetica-py/1.0.186-1.0.189/diff.md --exclude *.pyd
+[2023-05-09 10:14:42] INFO root fetch - processPackages [jptranstokenizer]: Downloading https://files.pythonhosted.org/packages/1b/87/102949c0ff3e3a597070140706ff2ba7fc1acd1f1ffd8081e346e41b39b0/jptranstokenizer-0.3.2.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk-preview]: Downloading https://files.pythonhosted.org/packages/61/f8/d24acce70923cfb6b98f767d1ae2f0c298d30f53032363ce65751be8b091/lusid-drive-sdk-preview-0.1.96.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [kognic-io]: Downloading https://files.pythonhosted.org/packages/2b/fb/c931eb9ad6cfe4030ec6b15f208cfd0ba7bee85957e925ac09748b497f0d/kognic-io-1.2.0.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [jptranstokenizer]: executing diffoscope
+[2023-05-09 10:14:42] INFO root fetch - processPackages [jptranstokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jptranstokenizer-0.3.1.tar.gz tmp/jptranstokenizer-0.3.2.tar.gz --markdown 20230509/j/jptranstokenizer/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk]: Downloading https://files.pythonhosted.org/packages/df/40/34d8137d43f70f7a96037ba54cbbab838b9ae0bc84531d2be22cb7d3a967/lusid-drive-sdk-0.1.96.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [sarus-data-spec-public]: Downloading https://files.pythonhosted.org/packages/75/03/dfbac70e6bf025ad3180daaa0ac2995ce5c246e190963fe43e57f3d7a6f2/sarus_data_spec_public-3.2.1.dev2.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk-preview]: executing diffoscope
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-drive-sdk-preview-0.1.95.tar.gz tmp/lusid-drive-sdk-preview-0.1.96.tar.gz --markdown 20230509/l/lusid-drive-sdk-preview/0.1.95-0.1.96/diff.md --exclude *.pyd
+[2023-05-09 10:14:42] WARNING root fetch - processPackages [kognic-io]: Skipping package: exceeds size limit 13066652>=10485760
+[2023-05-09 10:14:42] INFO root fetch - processPackages [kognic-io]: Start processing: emBRICK
+[2023-05-09 10:14:42] INFO root fetch - main [MainThread]: End processing [kognic-io] error
+[2023-05-09 10:14:42] INFO root fetch - processPackages [datatoolbox]: Downloading https://files.pythonhosted.org/packages/9d/be/5ee381ea1802f2c14ce786577ddb6e198ad9dadcec9a481f552e71d6fb8d/datatoolbox-0.5.5.tar.gz
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk]: executing diffoscope
+[2023-05-09 10:14:42] INFO root fetch - processPackages [lusid-drive-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-drive-sdk-0.1.95.tar.gz tmp/lusid-drive-sdk-0.1.96.tar.gz --markdown 20230509/l/lusid-drive-sdk/0.1.95-0.1.96/diff.md --exclude *.pyd
+[2023-05-09 10:14:42] INFO root fetch - processPackages [sarus-data-spec-public]: executing diffoscope
+[2023-05-09 10:14:42] INFO root fetch - processPackages [sarus-data-spec-public]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarus_data_spec_public-3.2.1.dev0.tar.gz tmp/sarus_data_spec_public-3.2.1.dev2.tar.gz --markdown 20230509/s/sarus-data-spec-public/3.2.1.dev0-3.2.1.dev2/diff.md --exclude *.pyd
+[2023-05-09 10:14:42] INFO root fetch - processPackages [emBRICK]: New version: [0.21] Old Version: [0.20]
+[2023-05-09 10:14:43] INFO root fetch - processPackages [datatoolbox]: executing diffoscope
+[2023-05-09 10:14:43] INFO root fetch - processPackages [datatoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datatoolbox-0.5.4.tar.gz tmp/datatoolbox-0.5.5.tar.gz --markdown 20230509/d/datatoolbox/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-09 10:14:43] INFO root fetch - processPackages [emBRICK]: Downloading https://files.pythonhosted.org/packages/ef/a9/3eaef31905d8c6d017ecc59f7fafdd34ca6ed412a3dacd46e55d39fb7c6d/emBRICK-0.20.tar.gz
+[2023-05-09 10:14:43] INFO root fetch - processPackages [emBRICK]: Downloading https://files.pythonhosted.org/packages/b1/49/480767448bcf90d6395348be8b006091a701007334ba6892e86a3643a753/emBRICK-0.21.tar.gz
+[2023-05-09 10:14:43] INFO root fetch - processPackages [emBRICK]: executing diffoscope
+[2023-05-09 10:14:43] INFO root fetch - processPackages [emBRICK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emBRICK-0.20.tar.gz tmp/emBRICK-0.21.tar.gz --markdown 20230509/e/emBRICK/0.20-0.21/diff.md --exclude *.pyd
+[2023-05-09 10:14:44] INFO root fetch - processPackages [jptranstokenizer]: Start processing: muffin-rest
+[2023-05-09 10:14:44] INFO root fetch - main [MainThread]: End processing [jptranstokenizer]: success
+[2023-05-09 10:14:44] INFO root fetch - processPackages [muffin-rest]: New version: [5.0.0] Old Version: [4.9.0]
+[2023-05-09 10:14:44] INFO root fetch - processPackages [muffin-rest]: executing diffoscope
+[2023-05-09 10:14:44] INFO root fetch - processPackages [muffin-rest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muffin_rest-4.9.0.tar.gz tmp/muffin_rest-5.0.0.tar.gz --markdown 20230509/m/muffin-rest/4.9.0-5.0.0/diff.md --exclude *.pyd
+[2023-05-09 10:14:44] INFO root fetch - processPackages [psgspecialelements]: Start processing: fractal-repositories
+[2023-05-09 10:14:44] INFO root fetch - main [MainThread]: End processing [psgspecialelements]: success
+[2023-05-09 10:14:44] INFO root fetch - main [MainThread]: End processing [flgo]: success
+[2023-05-09 10:14:44] WARNING root fetch - processPackages [fractal-repositories]: Skipping, unable to determine old version
+[2023-05-09 10:14:44] INFO root fetch - main [MainThread]: End processing [fractal-repositories] error
+[2023-05-09 10:14:44] INFO root fetch - main [MainThread]: End processing [lusid-drive-sdk]: success
+[2023-05-09 10:14:44] INFO root fetch - main [MainThread]: End processing [lusid-drive-sdk-preview]: success
+[2023-05-09 10:14:44] INFO root fetch - main [MainThread]: End processing [emBRICK]: success
+[2023-05-09 10:14:45] INFO root fetch - main [MainThread]: End processing [muffin-rest]: success
+[2023-05-09 10:14:45] INFO root fetch - main [MainThread]: End processing [arithmetica-py]: success
+[2023-05-09 10:14:47] INFO root fetch - main [MainThread]: End processing [datatoolbox]: success
+[2023-05-09 10:14:47] INFO root fetch - main [MainThread]: End processing [sarus-data-spec-public]: success
+[2023-05-09 10:14:47] INFO root fetch - main [MainThread]: End processing [exabel-data-sdk]: success
+[2023-05-09 10:14:47] INFO root fetch - main [MainThread]: Store serial: [18029315]
