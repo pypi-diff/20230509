@@ -5807,3 +5807,67 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 72: invalid
 [2023-05-09 04:09:30] INFO root fetch - main [MainThread]: End processing [DXR]: success
 [2023-05-09 04:09:59] INFO root fetch - main [MainThread]: End processing [forust]: success
 [2023-05-09 04:09:59] INFO root fetch - main [MainThread]: Store serial: [18025941]
+[2023-05-09 04:15:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18025941]
+[2023-05-09 04:15:08] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TCLR
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypcapkit
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myrippled
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TCLR
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dreamai
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BTS-dji
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sinabs-dynapcnn
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dreamai-dl
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: airbyte-cdk
+[2023-05-09 04:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dreamai-pdf
+[2023-05-09 04:15:08] INFO root fetch - processPackages [TCLR]: New version: [1.7.3] Old Version: [1.7.2]
+[2023-05-09 04:15:08] INFO root fetch - processPackages [TCLR]: New version: [1.7.3] Old Version: [1.7.2]
+[2023-05-09 04:15:08] INFO root fetch - processPackages [dreamai-dl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 04:15:08] INFO root fetch - processPackages [dreamai]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 04:15:08] WARNING root fetch - processPackages [myrippled]: Skipping, unable to determine old version
+[2023-05-09 04:15:08] INFO root fetch - processPackages [myrippled]: Start processing: pyfirebird
+[2023-05-09 04:15:08] INFO root fetch - main [MainThread]: End processing [myrippled] error
+[2023-05-09 04:15:08] WARNING root fetch - processPackages [BTS-dji]: Skipping, unable to determine old version
+[2023-05-09 04:15:08] INFO root fetch - main [MainThread]: End processing [BTS-dji] error
+[2023-05-09 04:15:08] INFO root fetch - processPackages [sinabs-dynapcnn]: New version: [1.0.9.dev97] Old Version: [1.0.9.dev9]
+[2023-05-09 04:15:08] INFO root fetch - processPackages [airbyte-cdk]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-09 04:15:08] INFO root fetch - processPackages [pypcapkit]: New version: [1.0.0rc1] Old Version: [1.0.0b9]
+[2023-05-09 04:15:08] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 04:15:08] INFO root fetch - processPackages [dreamai-dl]: executing diffoscope
+[2023-05-09 04:15:08] INFO root fetch - processPackages [dreamai-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai_dl-0.0.8.tar.gz tmp/dreamai_dl-0.0.9.tar.gz --markdown 20230509/d/dreamai-dl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 04:15:08] INFO root fetch - processPackages [dreamai-pdf]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 04:15:08] INFO root fetch - processPackages [TCLR]: Downloading https://files.pythonhosted.org/packages/d7/8a/38bc689a30054dcaad70ea960879b327d03198e7daa750d87f1b5c1fc36b/TCLR-1.7.2.tar.gz
+[2023-05-09 04:15:08] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 04:15:08] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.8.tar.gz tmp/pyfirebird-0.0.9.tar.gz --markdown 20230509/p/pyfirebird/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 04:15:08] INFO root fetch - processPackages [TCLR]: Downloading https://files.pythonhosted.org/packages/d7/8a/38bc689a30054dcaad70ea960879b327d03198e7daa750d87f1b5c1fc36b/TCLR-1.7.2.tar.gz
+[2023-05-09 04:15:08] INFO root fetch - processPackages [dreamai-pdf]: executing diffoscope
+[2023-05-09 04:15:08] INFO root fetch - processPackages [dreamai-pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai_pdf-0.0.8.tar.gz tmp/dreamai_pdf-0.0.9.tar.gz --markdown 20230509/d/dreamai-pdf/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 04:15:08] INFO root fetch - processPackages [airbyte-cdk]: Downloading https://files.pythonhosted.org/packages/a6/6c/5db8c1f4ef1f82d0d51a3df308363222107d0773276235a4acbc31f7f8dc/airbyte-cdk-0.9.4.tar.gz
+[2023-05-09 04:15:08] INFO root fetch - processPackages [pypcapkit]: Downloading https://files.pythonhosted.org/packages/4b/ff/3549c591c20441517230d15f32bd51d0ef41681692ada768156dbb64ec4c/pypcapkit-1.0.0b9.tar.gz
+[2023-05-09 04:15:08] INFO root fetch - processPackages [sinabs-dynapcnn]: Downloading https://files.pythonhosted.org/packages/82/bf/ec8e2cab4ffce5ad7925db9b678d19ccf571f8aecd864f2c15534b204553/sinabs-dynapcnn-1.0.9.dev9.tar.gz
+[2023-05-09 04:15:08] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2023-05-09 04:15:08] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-0.8.0.tar.gz tmp/dreamai-0.9.0.tar.gz --markdown 20230509/d/dreamai/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 04:15:09] INFO root fetch - processPackages [TCLR]: Downloading https://files.pythonhosted.org/packages/33/e6/13d420044fa5845448b7cd39a0458675591dda298519a79a0369d82cae81/TCLR-1.7.3.tar.gz
+[2023-05-09 04:15:09] INFO root fetch - processPackages [TCLR]: Downloading https://files.pythonhosted.org/packages/33/e6/13d420044fa5845448b7cd39a0458675591dda298519a79a0369d82cae81/TCLR-1.7.3.tar.gz
+[2023-05-09 04:15:09] INFO root fetch - processPackages [TCLR]: executing diffoscope
+[2023-05-09 04:15:09] INFO root fetch - processPackages [TCLR]: executing diffoscope
+[2023-05-09 04:15:09] INFO root fetch - processPackages [TCLR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TCLR-1.7.2.tar.gz tmp/TCLR-1.7.3.tar.gz --markdown 20230509/T/TCLR/1.7.2-1.7.3/diff.md --exclude *.pyd
+[2023-05-09 04:15:09] INFO root fetch - processPackages [TCLR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TCLR-1.7.2.tar.gz tmp/TCLR-1.7.3.tar.gz --markdown 20230509/T/TCLR/1.7.2-1.7.3/diff.md --exclude *.pyd
+[2023-05-09 04:15:09] INFO root fetch - processPackages [sinabs-dynapcnn]: Downloading https://files.pythonhosted.org/packages/1c/1e/ed5b2ee8f910d900e5e7f01220f393cf59ffac99dd0e6a4170b4c6be2a10/sinabs-dynapcnn-1.0.9.dev97.tar.gz
+[2023-05-09 04:15:09] INFO root fetch - processPackages [pypcapkit]: Downloading https://files.pythonhosted.org/packages/21/9e/3dd1f3748e34c2bc3447b669c972db086da945301764392d4478c19f5825/pypcapkit-1.0.0rc1.tar.gz
+[2023-05-09 04:15:09] INFO root fetch - processPackages [pypcapkit]: executing diffoscope
+[2023-05-09 04:15:09] INFO root fetch - processPackages [pypcapkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypcapkit-1.0.0b9.tar.gz tmp/pypcapkit-1.0.0rc1.tar.gz --markdown 20230509/p/pypcapkit/1.0.0b9-1.0.0rc1/diff.md --exclude *.pyd
+[2023-05-09 04:15:09] INFO root fetch - processPackages [sinabs-dynapcnn]: executing diffoscope
+[2023-05-09 04:15:09] INFO root fetch - processPackages [sinabs-dynapcnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinabs-dynapcnn-1.0.9.dev9.tar.gz tmp/sinabs-dynapcnn-1.0.9.dev97.tar.gz --markdown 20230509/s/sinabs-dynapcnn/1.0.9.dev9-1.0.9.dev97/diff.md --exclude *.pyd
+[2023-05-09 04:15:09] INFO root fetch - processPackages [airbyte-cdk]: Downloading https://files.pythonhosted.org/packages/9f/96/b471868d256cf73e3745675013847705a79a47e5a529e1c026d6032228bb/airbyte-cdk-0.9.5.tar.gz
+[2023-05-09 04:15:10] INFO root fetch - main [MainThread]: End processing [dreamai-dl]: success
+[2023-05-09 04:15:10] INFO root fetch - processPackages [airbyte-cdk]: executing diffoscope
+[2023-05-09 04:15:10] INFO root fetch - processPackages [airbyte-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-cdk-0.9.4.tar.gz tmp/airbyte-cdk-0.9.5.tar.gz --markdown 20230509/a/airbyte-cdk/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-09 04:15:10] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 04:15:10] INFO root fetch - main [MainThread]: End processing [dreamai-pdf]: success
+[2023-05-09 04:15:10] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2023-05-09 04:15:10] INFO root fetch - main [MainThread]: End processing [TCLR]: success
+[2023-05-09 04:15:10] INFO root fetch - main [MainThread]: End processing [TCLR]: success
+[2023-05-09 04:15:11] INFO root fetch - main [MainThread]: End processing [sinabs-dynapcnn]: success
+[2023-05-09 04:15:12] INFO root fetch - main [MainThread]: End processing [airbyte-cdk]: success
+[2023-05-09 04:15:17] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
+[2023-05-09 04:15:17] INFO root fetch - main [MainThread]: Store serial: [18025986]
