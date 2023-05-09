@@ -14634,3 +14634,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 12:51:21] INFO root fetch - main [MainThread]: End processing [spaceone-api]: success
 [2023-05-09 12:52:02] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
 [2023-05-09 12:52:02] INFO root fetch - main [MainThread]: Store serial: [18030903]
+[2023-05-09 12:57:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18030903]
+[2023-05-09 12:57:14] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkontap
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transcript-transformer
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easy-patents
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: elastix-napari
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: e2xgrader
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fenjing
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: regex-learner
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rape-identification
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fwhunt-scan
+[2023-05-09 12:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: unidata-blocks
+[2023-05-09 12:57:14] INFO root fetch - processPackages [rape-identification]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 12:57:14] INFO root fetch - processPackages [easy-patents]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 12:57:14] INFO root fetch - processPackages [transcript-transformer]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-09 12:57:15] INFO root fetch - processPackages [transcript-transformer]: Downloading https://files.pythonhosted.org/packages/2a/81/f7bab5188426ad6acf23513ec5eaec7b338044414d4b01f0a2a185c199e1/transcript%20transformer-0.3.0.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [checkontap]: New version: [0.1a8] Old Version: [0.1a6]
+[2023-05-09 12:57:15] INFO root fetch - processPackages [fwhunt-scan]: New version: [2.2.6] Old Version: [2.2.5]
+[2023-05-09 12:57:15] INFO root fetch - processPackages [fenjing]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-09 12:57:15] INFO root fetch - processPackages [easy-patents]: executing diffoscope
+[2023-05-09 12:57:15] INFO root fetch - processPackages [easy-patents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_patents-1.0.8.tar.gz tmp/easy_patents-1.0.9.tar.gz --markdown 20230509/e/easy-patents/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 12:57:15] INFO root fetch - processPackages [unidata-blocks]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-09 12:57:15] WARNING root fetch - processPackages [e2xgrader]: Skipping, unable to determine old version
+[2023-05-09 12:57:15] INFO root fetch - main [MainThread]: End processing [e2xgrader] error
+[2023-05-09 12:57:15] INFO root fetch - processPackages [elastix-napari]: New version: [0.2.0] Old Version: [0.1.8]
+[2023-05-09 12:57:15] WARNING root fetch - processPackages [regex-learner]: Skipping, unable to determine old version
+[2023-05-09 12:57:15] INFO root fetch - main [MainThread]: End processing [regex-learner] error
+[2023-05-09 12:57:15] WARNING root fetch - processPackages [transcript-transformer]: Skipping package: exceeds size limit 11130679>=10485760
+[2023-05-09 12:57:15] INFO root fetch - main [MainThread]: End processing [transcript-transformer] error
+[2023-05-09 12:57:15] INFO root fetch - processPackages [rape-identification]: Downloading https://files.pythonhosted.org/packages/bf/4d/3b7caa096d46d5f7ea5d47509571a0913d0f8da118a466c8a0e09dea22a8/rape_identification-0.1.0.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [unidata-blocks]: Downloading https://files.pythonhosted.org/packages/de/01/d2798825f0fbadd74f7adda903d0979157eb03f2249fcedb5a9677624034/unidata-blocks-0.0.0.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [elastix-napari]: Downloading https://files.pythonhosted.org/packages/12/5e/7b540c1981e6a17a86ad280e222cdb45216e8c1e8f666934b6d1b7a8263c/elastix_napari-0.1.8.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [fwhunt-scan]: Downloading https://files.pythonhosted.org/packages/85/96/e1174104ede13556a012c5f7de262fa73f4588a110c3ab9eaf3d4f8b5d90/fwhunt_scan-2.2.6.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [fenjing]: Downloading https://files.pythonhosted.org/packages/7f/dd/14f5c3548331ddd69b4e89c72e8f57a1d02ec7e9e6cba8ad39b0fafdbdb0/fenjing-0.2.5.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [checkontap]: Downloading https://files.pythonhosted.org/packages/92/53/2ca71c2c530cffb4bcc3a8009fda2a2cf71a4faf8bc635655339ff46dc83/checkontap-0.1a8.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [rape-identification]: Downloading https://files.pythonhosted.org/packages/f1/3c/af18b1d967c25e51320ade85fa9b25c254962b2bf451129219736995c0b1/rape_identification-0.1.1.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [unidata-blocks]: Downloading https://files.pythonhosted.org/packages/cc/b9/54b4116c449a07b5a985a887ac9991529f598ab9d29aff013fed368c4520/unidata-blocks-0.0.1.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [fenjing]: executing diffoscope
+[2023-05-09 12:57:15] INFO root fetch - processPackages [fenjing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fenjing-0.2.4.tar.gz tmp/fenjing-0.2.5.tar.gz --markdown 20230509/f/fenjing/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-09 12:57:15] INFO root fetch - processPackages [checkontap]: executing diffoscope
+[2023-05-09 12:57:15] INFO root fetch - processPackages [checkontap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkontap-0.1a6.tar.gz tmp/checkontap-0.1a8.tar.gz --markdown 20230509/c/checkontap/0.1a6-0.1a8/diff.md --exclude *.pyd
+[2023-05-09 12:57:15] INFO root fetch - processPackages [elastix-napari]: Downloading https://files.pythonhosted.org/packages/57/55/24b1c142120f781fe8f75985015a37d81b21593267d2c629366f8de2005e/elastix_napari-0.2.0.tar.gz
+[2023-05-09 12:57:15] INFO root fetch - processPackages [rape-identification]: executing diffoscope
+[2023-05-09 12:57:15] INFO root fetch - processPackages [rape-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rape_identification-0.1.0.tar.gz tmp/rape_identification-0.1.1.tar.gz --markdown 20230509/r/rape-identification/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 12:57:15] INFO root fetch - processPackages [fwhunt-scan]: executing diffoscope
+[2023-05-09 12:57:15] INFO root fetch - processPackages [fwhunt-scan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fwhunt_scan-2.2.5.tar.gz tmp/fwhunt_scan-2.2.6.tar.gz --markdown 20230509/f/fwhunt-scan/2.2.5-2.2.6/diff.md --exclude *.pyd
+[2023-05-09 12:57:15] INFO root fetch - processPackages [elastix-napari]: executing diffoscope
+[2023-05-09 12:57:15] INFO root fetch - processPackages [elastix-napari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elastix_napari-0.1.8.tar.gz tmp/elastix_napari-0.2.0.tar.gz --markdown 20230509/e/elastix-napari/0.1.8-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 12:57:15] INFO root fetch - processPackages [unidata-blocks]: executing diffoscope
+[2023-05-09 12:57:15] INFO root fetch - processPackages [unidata-blocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unidata-blocks-0.0.0.tar.gz tmp/unidata-blocks-0.0.1.tar.gz --markdown 20230509/u/unidata-blocks/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-09 12:57:16] INFO root fetch - main [MainThread]: End processing [easy-patents]: success
+[2023-05-09 12:57:16] INFO root fetch - main [MainThread]: End processing [checkontap]: success
+[2023-05-09 12:57:16] INFO root fetch - main [MainThread]: End processing [fenjing]: success
+[2023-05-09 12:57:17] INFO root fetch - main [MainThread]: End processing [rape-identification]: success
+[2023-05-09 12:57:17] INFO root fetch - main [MainThread]: End processing [unidata-blocks]: success
+[2023-05-09 12:57:17] INFO root fetch - main [MainThread]: End processing [fwhunt-scan]: success
+[2023-05-09 12:57:17] INFO root fetch - main [MainThread]: End processing [elastix-napari]: success
+[2023-05-09 12:57:17] INFO root fetch - main [MainThread]: Store serial: [18030941]
