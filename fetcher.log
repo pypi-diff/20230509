@@ -19994,3 +19994,100 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 17:57:46] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
 [2023-05-09 17:57:51] INFO root fetch - main [MainThread]: End processing [plotnine]: success
 [2023-05-09 17:57:51] INFO root fetch - main [MainThread]: Store serial: [18034351]
+[2023-05-09 18:02:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034351]
+[2023-05-09 18:03:01] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jadecobra
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bose
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: x-transformers
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LbNightlyTools
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: configcrunch
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: logmaster
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: panther-analysis-tool
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: langchain-serve
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: discovery-transition-ds
+[2023-05-09 18:03:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: AutoAI-patryk-package
+[2023-05-09 18:03:01] WARNING root fetch - processPackages [logmaster]: Skipping, unable to determine old version
+[2023-05-09 18:03:01] INFO root fetch - processPackages [logmaster]: Start processing: epispread
+[2023-05-09 18:03:01] INFO root fetch - main [MainThread]: End processing [logmaster] error
+[2023-05-09 18:03:01] INFO root fetch - processPackages [bose]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-09 18:03:01] INFO root fetch - processPackages [jadecobra]: New version: [0.3.7] Old Version: [0.3.65]
+[2023-05-09 18:03:01] INFO root fetch - processPackages [x-transformers]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-09 18:03:01] INFO root fetch - processPackages [epispread]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-05-09 18:03:01] WARNING root fetch - processPackages [AutoAI-patryk-package]: Skipping, unable to determine old version
+[2023-05-09 18:03:01] INFO root fetch - processPackages [AutoAI-patryk-package]: Start processing: pylink-square
+[2023-05-09 18:03:01] INFO root fetch - main [MainThread]: End processing [AutoAI-patryk-package] error
+[2023-05-09 18:03:01] INFO root fetch - processPackages [LbNightlyTools]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-09 18:03:01] INFO root fetch - processPackages [configcrunch]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-09 18:03:01] INFO root fetch - processPackages [langchain-serve]: New version: [0.0.9.dev9] Old Version: [0.0.9.dev22]
+[2023-05-09 18:03:01] INFO root fetch - processPackages [panther-analysis-tool]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-05-09 18:03:01] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 18:03:01] INFO root fetch - processPackages [pylink-square]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-09 18:03:01] INFO root fetch - processPackages [LbNightlyTools]: executing diffoscope
+[2023-05-09 18:03:01] INFO root fetch - processPackages [LbNightlyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LbNightlyTools-3.0.8.tar.gz tmp/LbNightlyTools-3.0.9.tar.gz --markdown 20230509/L/LbNightlyTools/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:03:01] INFO root fetch - processPackages [langchain-serve]: executing diffoscope
+[2023-05-09 18:03:01] INFO root fetch - processPackages [langchain-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-serve-0.0.9.dev22.tar.gz tmp/langchain-serve-0.0.9.dev9.tar.gz --markdown 20230509/l/langchain-serve/0.0.9.dev22-0.0.9.dev9/diff.md --exclude *.pyd
+[2023-05-09 18:03:01] INFO root fetch - processPackages [jadecobra]: Downloading https://files.pythonhosted.org/packages/7a/9f/5c7781daa9b399792c27195bd80672c96a2f4bc42e3fc0c9435de751731d/jadecobra-0.3.65.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [epispread]: Downloading https://files.pythonhosted.org/packages/ed/b9/a0938cf3fd6d2daad927a8eeb93ac3ce9b73079d4674133e378d5effe88a/epispread-0.1.0.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [panther-analysis-tool]: Downloading https://files.pythonhosted.org/packages/25/cf/5c87943f90bc11af4cdacde3d5c0400087ed9290bf037b10ab4feec7ed0a/panther_analysis_tool-0.8.3.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [bose]: Downloading https://files.pythonhosted.org/packages/6d/8f/0c7858eeda6a1e07d56deef70dee465f3f6e99c2ec7b92a3d239368b05c2/bose-1.0.0.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [pylink-square]: Downloading https://files.pythonhosted.org/packages/f0/ca/dbdb3c24b12445559289c0cac779569b2bbcdad693da4e68d01d2d095ad1/pylink-square-1.0.0.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [configcrunch]: Downloading https://files.pythonhosted.org/packages/b9/6a/12cce8a2f9f4292ee06c28f7c294f637d92456486d4edfe1863cd95b5154/configcrunch-1.0.3-cp39-cp39-win_amd64.whl
+[2023-05-09 18:03:01] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-05-09 18:03:01] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230509/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 18:03:01] INFO root fetch - processPackages [x-transformers]: executing diffoscope
+[2023-05-09 18:03:01] INFO root fetch - processPackages [x-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-transformers-1.9.1.tar.gz tmp/x-transformers-1.9.2.tar.gz --markdown 20230509/x/x-transformers/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-09 18:03:01] INFO root fetch - processPackages [jadecobra]: Downloading https://files.pythonhosted.org/packages/db/43/7ac67232d67590d397ff6b3e32f979f382e27426eecc6fcbc42ebec76c7c/jadecobra-0.3.7.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [bose]: Downloading https://files.pythonhosted.org/packages/4d/88/4c63d41558a5fedc98a3709dfd5b8794f027bbed77eea21fb3f558d5328a/bose-1.1.0.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [pylink-square]: Downloading https://files.pythonhosted.org/packages/ae/4e/461d9afa070ed312210911b1def8305f3cb453bf37217877414c41016a33/pylink-square-1.1.0.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [epispread]: Downloading https://files.pythonhosted.org/packages/c0/a1/9f27b970c8452efc5727e3e7852cd13a58049c6be8f6fe02aff53d382360/epispread-1.0.0.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [panther-analysis-tool]: Downloading https://files.pythonhosted.org/packages/8a/be/c59804c311208907cfa13b402d4bb7ab90cf93490a44736ea7bbc0523c98/panther_analysis_tool-0.9.0.tar.gz
+[2023-05-09 18:03:01] INFO root fetch - processPackages [configcrunch]: Downloading https://files.pythonhosted.org/packages/17/a8/24a66aee64c96ed4857400c1837ca1439af1739becd9e171dc398717ce50/configcrunch-1.0.4-cp39-cp39-win_amd64.whl
+[2023-05-09 18:03:01] INFO root fetch - processPackages [bose]: executing diffoscope
+[2023-05-09 18:03:01] INFO root fetch - processPackages [bose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bose-1.0.0.tar.gz tmp/bose-1.1.0.tar.gz --markdown 20230509/b/bose/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 18:03:01] INFO root fetch - processPackages [jadecobra]: executing diffoscope
+[2023-05-09 18:03:01] INFO root fetch - processPackages [jadecobra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jadecobra-0.3.65.tar.gz tmp/jadecobra-0.3.7.tar.gz --markdown 20230509/j/jadecobra/0.3.65-0.3.7/diff.md --exclude *.pyd
+[2023-05-09 18:03:01] INFO root fetch - processPackages [pylink-square]: executing diffoscope
+[2023-05-09 18:03:01] INFO root fetch - processPackages [pylink-square]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylink-square-1.0.0.tar.gz tmp/pylink-square-1.1.0.tar.gz --markdown 20230509/p/pylink-square/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 18:03:01] INFO root fetch - processPackages [epispread]: executing diffoscope
+[2023-05-09 18:03:01] INFO root fetch - processPackages [epispread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epispread-0.1.0.tar.gz tmp/epispread-1.0.0.tar.gz --markdown 20230509/e/epispread/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-09 18:03:01] INFO root fetch - processPackages [configcrunch]: executing diffoscope
+[2023-05-09 18:03:01] INFO root fetch - processPackages [configcrunch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configcrunch-1.0.3-cp39-cp39-win_amd64.whl.zip tmp/configcrunch-1.0.4-cp39-cp39-win_amd64.whl.zip --markdown 20230509/c/configcrunch/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-09 18:03:02] INFO root fetch - processPackages [panther-analysis-tool]: executing diffoscope
+[2023-05-09 18:03:02] INFO root fetch - processPackages [panther-analysis-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panther_analysis_tool-0.8.3.tar.gz tmp/panther_analysis_tool-0.9.0.tar.gz --markdown 20230509/p/panther-analysis-tool/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 18:03:03] INFO root fetch - processPackages [x-transformers]: Start processing: django-pg-simple-hll
+[2023-05-09 18:03:03] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
+[2023-05-09 18:03:03] INFO root fetch - processPackages [django-pg-simple-hll]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 18:03:03] INFO root fetch - processPackages [bose]: Start processing: pyVLMP
+[2023-05-09 18:03:03] INFO root fetch - main [MainThread]: End processing [bose]: success
+[2023-05-09 18:03:03] INFO root fetch - processPackages [pyVLMP]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-09 18:03:03] INFO root fetch - processPackages [django-pg-simple-hll]: Downloading https://files.pythonhosted.org/packages/32/8a/7115328838cb5729c7069e950d8c3aa6c39dde18f7d7281ad3c461a45313/django_pg_simple_hll-0.1.0.tar.gz
+[2023-05-09 18:03:03] INFO root fetch - processPackages [panther-analysis-tool]: Start processing: twscrape
+[2023-05-09 18:03:03] INFO root fetch - main [MainThread]: End processing [panther-analysis-tool]: success
+[2023-05-09 18:03:03] INFO root fetch - processPackages [configcrunch]: Start processing: Fred-Frechet
+[2023-05-09 18:03:03] INFO root fetch - main [MainThread]: End processing [configcrunch]: success
+[2023-05-09 18:03:03] INFO root fetch - processPackages [Fred-Frechet]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-09 18:03:03] INFO root fetch - processPackages [pyVLMP]: Downloading https://files.pythonhosted.org/packages/a6/95/d93dc58b75667950b89bd76d039ae0ff0008a9e14652ef36f818b3fa102a/pyVLMP-1.0.3.tar.gz
+[2023-05-09 18:03:03] WARNING root fetch - processPackages [twscrape]: Skipping, unable to determine old version
+[2023-05-09 18:03:03] INFO root fetch - processPackages [twscrape]: Start processing: langchain-serve
+[2023-05-09 18:03:03] INFO root fetch - main [MainThread]: End processing [twscrape] error
+[2023-05-09 18:03:03] INFO root fetch - processPackages [django-pg-simple-hll]: Downloading https://files.pythonhosted.org/packages/71/58/3f47c05fd5a470487544103f18eea707fd266ebec30d600c9189aca722eb/django_pg_simple_hll-0.1.1.tar.gz
+[2023-05-09 18:03:03] INFO root fetch - processPackages [langchain-serve]: New version: [0.0.9.dev9] Old Version: [0.0.9.dev22]
+[2023-05-09 18:03:03] INFO root fetch - main [MainThread]: End processing [jadecobra]: success
+[2023-05-09 18:03:03] INFO root fetch - processPackages [django-pg-simple-hll]: executing diffoscope
+[2023-05-09 18:03:03] INFO root fetch - processPackages [django-pg-simple-hll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pg_simple_hll-0.1.0.tar.gz tmp/django_pg_simple_hll-0.1.1.tar.gz --markdown 20230509/d/django-pg-simple-hll/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 18:03:03] INFO root fetch - processPackages [langchain-serve]: executing diffoscope
+[2023-05-09 18:03:03] INFO root fetch - processPackages [langchain-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-serve-0.0.9.dev22.tar.gz tmp/langchain-serve-0.0.9.dev9.tar.gz --markdown 20230509/l/langchain-serve/0.0.9.dev22-0.0.9.dev9/diff.md --exclude *.pyd
+[2023-05-09 18:03:03] INFO root fetch - processPackages [pyVLMP]: executing diffoscope
+[2023-05-09 18:03:03] INFO root fetch - processPackages [pyVLMP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyVLMP-1.0.2.tar.gz tmp/pyVLMP-1.0.3.tar.gz --markdown 20230509/p/pyVLMP/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-09 18:03:03] INFO root fetch - processPackages [Fred-Frechet]: executing diffoscope
+[2023-05-09 18:03:03] INFO root fetch - processPackages [Fred-Frechet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fred-Frechet-1.9.8.tar.gz tmp/Fred-Frechet-1.9.9.tar.gz --markdown 20230509/F/Fred-Frechet/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-09 18:03:03] INFO root fetch - main [MainThread]: End processing [epispread]: success
+[2023-05-09 18:03:04] INFO root fetch - main [MainThread]: End processing [langchain-serve]: success
+[2023-05-09 18:03:04] INFO root fetch - main [MainThread]: End processing [pylink-square]: success
+[2023-05-09 18:03:04] INFO root fetch - main [MainThread]: End processing [django-pg-simple-hll]: success
+[2023-05-09 18:03:05] INFO root fetch - main [MainThread]: End processing [pyVLMP]: success
+[2023-05-09 18:03:05] INFO root fetch - main [MainThread]: End processing [langchain-serve]: success
+[2023-05-09 18:03:05] INFO root fetch - main [MainThread]: End processing [Fred-Frechet]: success
+[2023-05-09 18:03:05] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-05-09 18:03:08] INFO root fetch - main [MainThread]: End processing [LbNightlyTools]: success
+[2023-05-09 18:03:08] INFO root fetch - main [MainThread]: Store serial: [18034425]
