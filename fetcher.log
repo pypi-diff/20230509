@@ -21178,3 +21178,124 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 18:53:55] INFO root fetch - main [MainThread]: End processing [google-cloud-pipeline-components]: success
 [2023-05-09 18:54:06] INFO root fetch - main [MainThread]: End processing [edgeimpulse-api]: success
 [2023-05-09 18:54:06] INFO root fetch - main [MainThread]: Store serial: [18035050]
+[2023-05-09 18:59:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18035050]
+[2023-05-09 18:59:16] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genochain
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: motiontrackerbeta
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phdi
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gradio-client
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pgx
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: metloom
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: beewi-smartclim-ble
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-ditto
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pisces
+[2023-05-09 18:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyboil
+[2023-05-09 18:59:16] WARNING root fetch - processPackages [genochain]: Skipping, unable to determine old version
+[2023-05-09 18:59:16] INFO root fetch - processPackages [genochain]: Start processing: seldom
+[2023-05-09 18:59:16] INFO root fetch - main [MainThread]: End processing [genochain] error
+[2023-05-09 18:59:16] INFO root fetch - processPackages [motiontrackerbeta]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-09 18:59:16] INFO root fetch - processPackages [pyboil]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-05-09 18:59:16] INFO root fetch - processPackages [phdi]: New version: [1.0.2] Old Version: [0.1.0.dev5]
+[2023-05-09 18:59:16] INFO root fetch - processPackages [gradio-client]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-09 18:59:16] INFO root fetch - processPackages [pisces]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-09 18:59:16] INFO root fetch - processPackages [metloom]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-05-09 18:59:16] INFO root fetch - processPackages [pgx]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-09 18:59:16] ERROR root fetch - processPackages [beewi-smartclim-ble]: Unable to get metadata: No such project 'beewi-smartclim-ble'
+[2023-05-09 18:59:16] INFO root fetch - processPackages [beewi-smartclim-ble]: Start processing: xia-api
+[2023-05-09 18:59:16] INFO root fetch - processPackages [django-ditto]: New version: [3.0.0] Old Version: [2.3.0]
+[2023-05-09 18:59:16] INFO root fetch - main [MainThread]: End processing [beewi-smartclim-ble] error
+[2023-05-09 18:59:16] INFO root fetch - processPackages [seldom]: New version: [3.2.2] Old Version: [3.2.1]
+[2023-05-09 18:59:16] INFO root fetch - processPackages [xia-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 18:59:16] INFO root fetch - processPackages [gradio-client]: Downloading https://files.pythonhosted.org/packages/87/f6/7076ec850c10758d6764238fb1bcc1bfdd3b2330eab5e9b9e36ea0cab653/gradio_client-0.2.2.tar.gz
+[2023-05-09 18:59:16] INFO root fetch - processPackages [metloom]: Downloading https://files.pythonhosted.org/packages/66/e2/32d1285b899dad6b54d5ede025b26c40baaa67b3d55cc1867eb47917ab00/metloom-0.3.7.tar.gz
+[2023-05-09 18:59:16] INFO root fetch - processPackages [motiontrackerbeta]: Downloading https://files.pythonhosted.org/packages/52/92/109bdf914cf0e789e5446affe0a74073fa2bc730275cb98285cbd2027f4e/motiontrackerbeta-0.1.5.tar.gz
+[2023-05-09 18:59:16] INFO root fetch - processPackages [django-ditto]: Downloading https://files.pythonhosted.org/packages/6e/92/aa540a60240233857d21645a28095de6262f3d90c3aadb89da4cc0bc4a57/django-ditto-2.3.0.tar.gz
+[2023-05-09 18:59:16] INFO root fetch - processPackages [pgx]: Downloading https://files.pythonhosted.org/packages/5c/08/dba93b92047aa752cc8505e889ebcf52105323fb4508dd08bef80e1eed9d/pgx-0.7.1.tar.gz
+[2023-05-09 18:59:16] INFO root fetch - processPackages [pisces]: Downloading https://files.pythonhosted.org/packages/3d/4c/d7cfcc9b8114a436dfa35dc55231532e057f19764cc8f65ffc8d8f0bd5b7/pisces-0.4.1.tar.gz
+[2023-05-09 18:59:16] INFO root fetch - processPackages [xia-api]: Downloading https://files.pythonhosted.org/packages/03/34/ab780d6d5347efe87e347bee4b874eece57adcc318fee6ee9099cd87cfb6/xia_api-0.1.8-cp39-none-win_amd64.whl
+[2023-05-09 18:59:16] INFO root fetch - processPackages [seldom]: Downloading https://files.pythonhosted.org/packages/1f/bf/87340642e902051e40888a7ad117648cbe1ddc9203e5e45eac5e6f021b58/seldom-3.2.1.tar.gz
+[2023-05-09 18:59:16] INFO root fetch - processPackages [gradio-client]: executing diffoscope
+[2023-05-09 18:59:16] INFO root fetch - processPackages [gradio-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_client-0.2.1.tar.gz tmp/gradio_client-0.2.2.tar.gz --markdown 20230509/g/gradio-client/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-09 18:59:17] INFO root fetch - processPackages [pyboil]: Downloading https://files.pythonhosted.org/packages/5d/9d/c611ecaf8c3d63ec4726419155637989bef8fcfc9136346b8621afd90c3f/pyboil-0.5.7.tar.gz
+[2023-05-09 18:59:17] INFO root fetch - processPackages [django-ditto]: Downloading https://files.pythonhosted.org/packages/fd/ab/af4a02682f82f57948e53b43d3b6a25b095c7d4dd703049f943de4f03771/django-ditto-3.0.0.tar.gz
+[2023-05-09 18:59:17] INFO root fetch - processPackages [pisces]: Downloading https://files.pythonhosted.org/packages/9a/0c/2a60b626f6d249e544a00120d2a12ba4dce8a61a6a943fcaab379b85df1f/pisces-0.4.2.tar.gz
+[2023-05-09 18:59:17] INFO root fetch - processPackages [metloom]: Downloading https://files.pythonhosted.org/packages/df/b0/593593b04fc94f03362773eb4b8dbce78ab14c5b9c759150a694b807ffe0/metloom-0.3.8.tar.gz
+[2023-05-09 18:59:17] INFO root fetch - processPackages [seldom]: Downloading https://files.pythonhosted.org/packages/cc/cd/ccc72fc2c0d53185342fc9627e3083677f07d4d7409447d35f37ee46df24/seldom-3.2.2.tar.gz
+[2023-05-09 18:59:17] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 18:59:17] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.6.tar.gz tmp/pyboil-0.5.7.tar.gz --markdown 20230509/p/pyboil/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-05-09 18:59:17] INFO root fetch - processPackages [motiontrackerbeta]: Downloading https://files.pythonhosted.org/packages/52/f7/5289617355dfbdafaa05a8db41e034f1ea32d85284fa29db0e1c681e923c/motiontrackerbeta-0.1.6.tar.gz
+[2023-05-09 18:59:17] INFO root fetch - processPackages [xia-api]: Downloading https://files.pythonhosted.org/packages/b7/11/b0e6b74b74dc6c80180d6725511c9582793a237ccd42ad7173ef316fbd68/xia_api-0.1.9-cp39-none-win_amd64.whl
+[2023-05-09 18:59:17] INFO root fetch - processPackages [pgx]: Downloading https://files.pythonhosted.org/packages/2e/92/0178dbca448f058228649968847f4692b60cbedfa9f83e580acaf09cabcc/pgx-0.7.2.tar.gz
+[2023-05-09 18:59:17] INFO root fetch - processPackages [pisces]: executing diffoscope
+[2023-05-09 18:59:17] INFO root fetch - processPackages [pisces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pisces-0.4.1.tar.gz tmp/pisces-0.4.2.tar.gz --markdown 20230509/p/pisces/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-09 18:59:17] INFO root fetch - processPackages [django-ditto]: executing diffoscope
+[2023-05-09 18:59:17] INFO root fetch - processPackages [django-ditto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ditto-2.3.0.tar.gz tmp/django-ditto-3.0.0.tar.gz --markdown 20230509/d/django-ditto/2.3.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-09 18:59:17] INFO root fetch - processPackages [phdi]: Downloading https://files.pythonhosted.org/packages/68/cd/726cc06838d1af944f0c3e3ac7b11afacd883065b7c455fc0da8d7d2441b/phdi-1.0.2.tar.gz
+[2023-05-09 18:59:17] INFO root fetch - processPackages [metloom]: executing diffoscope
+[2023-05-09 18:59:17] INFO root fetch - processPackages [metloom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metloom-0.3.7.tar.gz tmp/metloom-0.3.8.tar.gz --markdown 20230509/m/metloom/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-05-09 18:59:17] INFO root fetch - processPackages [motiontrackerbeta]: executing diffoscope
+[2023-05-09 18:59:17] INFO root fetch - processPackages [motiontrackerbeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motiontrackerbeta-0.1.5.tar.gz tmp/motiontrackerbeta-0.1.6.tar.gz --markdown 20230509/m/motiontrackerbeta/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-09 18:59:17] INFO root fetch - processPackages [phdi]: executing diffoscope
+[2023-05-09 18:59:17] INFO root fetch - processPackages [phdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phdi-0.1.0.dev5.tar.gz tmp/phdi-1.0.2.tar.gz --markdown 20230509/p/phdi/0.1.0.dev5-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 18:59:17] INFO root fetch - processPackages [pgx]: executing diffoscope
+[2023-05-09 18:59:17] INFO root fetch - processPackages [pgx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgx-0.7.1.tar.gz tmp/pgx-0.7.2.tar.gz --markdown 20230509/p/pgx/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-09 18:59:17] INFO root fetch - processPackages [seldom]: executing diffoscope
+[2023-05-09 18:59:17] INFO root fetch - processPackages [seldom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seldom-3.2.1.tar.gz tmp/seldom-3.2.2.tar.gz --markdown 20230509/s/seldom/3.2.1-3.2.2/diff.md --exclude *.pyd
+[2023-05-09 18:59:17] INFO root fetch - processPackages [xia-api]: executing diffoscope
+[2023-05-09 18:59:17] INFO root fetch - processPackages [xia-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_api-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_api-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230509/x/xia-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 18:59:18] INFO root fetch - processPackages [pyboil]: Start processing: rapidtide
+[2023-05-09 18:59:18] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 18:59:18] INFO root fetch - processPackages [rapidtide]: New version: [2.5.3.1] Old Version: [2.5.3]
+[2023-05-09 18:59:18] INFO root fetch - processPackages [rapidtide]: Downloading https://files.pythonhosted.org/packages/b1/b5/80d2e393693719e2f06628e515ce5fbcc03f743a2866ae79e548564ceff7/rapidtide-2.5.3.tar.gz
+[2023-05-09 18:59:18] WARNING root fetch - processPackages [rapidtide]: Skipping package: exceeds size limit 10764763>=10485760
+[2023-05-09 18:59:18] INFO root fetch - processPackages [rapidtide]: Start processing: edgeimpulse-api
+[2023-05-09 18:59:18] INFO root fetch - main [MainThread]: End processing [rapidtide] error
+[2023-05-09 18:59:18] INFO root fetch - processPackages [edgeimpulse-api]: New version: [1.23.0] Old Version: [1.22.3]
+[2023-05-09 18:59:19] INFO root fetch - processPackages [xia-api]: Start processing: garatool
+[2023-05-09 18:59:19] INFO root fetch - main [MainThread]: End processing [xia-api]: success
+[2023-05-09 18:59:19] INFO root fetch - processPackages [garatool]: New version: [0.1683651445.0] Old Version: [0.1683650907.0]
+[2023-05-09 18:59:19] INFO root fetch - processPackages [phdi]: Start processing: google-cloud-datastore
+[2023-05-09 18:59:19] INFO root fetch - main [MainThread]: End processing [phdi]: success
+[2023-05-09 18:59:19] INFO root fetch - processPackages [google-cloud-datastore]: New version: [2.9.0] Old Version: [2.8.3]
+[2023-05-09 18:59:19] INFO root fetch - processPackages [edgeimpulse-api]: Downloading https://files.pythonhosted.org/packages/a3/19/c4938fbb917b38a494b70c7160d91fc5199895f6c2506e514bd8aab5b830/edgeimpulse_api-1.23.0.tar.gz
+[2023-05-09 18:59:19] INFO root fetch - processPackages [metloom]: Start processing: domino-py
+[2023-05-09 18:59:19] INFO root fetch - main [MainThread]: End processing [metloom]: success
+[2023-05-09 18:59:19] INFO root fetch - processPackages [domino-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 18:59:19] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/8f/24/4710a3ca837ceaf877ec2b96cdb2336c3c9bf194ebe7325d44370bf10171/garatool-0.1683651445.0.tar.gz
+[2023-05-09 18:59:19] INFO root fetch - processPackages [motiontrackerbeta]: Start processing: cdk-valheim
+[2023-05-09 18:59:19] INFO root fetch - main [MainThread]: End processing [motiontrackerbeta]: success
+[2023-05-09 18:59:19] INFO root fetch - processPackages [edgeimpulse-api]: executing diffoscope
+[2023-05-09 18:59:19] INFO root fetch - processPackages [edgeimpulse-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgeimpulse_api-1.22.3.tar.gz tmp/edgeimpulse_api-1.23.0.tar.gz --markdown 20230509/e/edgeimpulse-api/1.22.3-1.23.0/diff.md --exclude *.pyd
+[2023-05-09 18:59:19] INFO root fetch - processPackages [cdk-valheim]: New version: [0.0.9] Old Version: [0.0.26]
+[2023-05-09 18:59:19] INFO root fetch - processPackages [google-cloud-datastore]: Downloading https://files.pythonhosted.org/packages/17/ab/d5edc6a885f82a07969e8548bad18c842c61f64697854cf6221226718ae7/google-cloud-datastore-2.8.3.tar.gz
+[2023-05-09 18:59:19] INFO root fetch - processPackages [domino-py]: executing diffoscope
+[2023-05-09 18:59:19] INFO root fetch - processPackages [domino-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domino-py-0.1.8.tar.gz tmp/domino-py-0.1.9.tar.gz --markdown 20230509/d/domino-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 18:59:19] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 18:59:19] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683650907.0.tar.gz tmp/garatool-0.1683651445.0.tar.gz --markdown 20230509/g/garatool/0.1683650907.0-0.1683651445.0/diff.md --exclude *.pyd
+[2023-05-09 18:59:19] INFO root fetch - processPackages [cdk-valheim]: Downloading https://files.pythonhosted.org/packages/0a/49/313b4b51aac1fda459a16ebef2566c5e92f3c495b76e9eb8d9993cca7468/cdk-valheim-0.0.26.tar.gz
+[2023-05-09 18:59:19] INFO root fetch - processPackages [seldom]: Start processing: antigranular
+[2023-05-09 18:59:19] INFO root fetch - main [MainThread]: End processing [seldom]: success
+[2023-05-09 18:59:19] ERROR root fetch - processPackages [antigranular]: Unable to get metadata: No such project 'antigranular'
+[2023-05-09 18:59:19] INFO root fetch - processPackages [antigranular]: Start processing: aind-data-transfer
+[2023-05-09 18:59:19] INFO root fetch - main [MainThread]: End processing [antigranular] error
+[2023-05-09 18:59:19] INFO root fetch - main [MainThread]: End processing [pisces]: success
+[2023-05-09 18:59:19] INFO root fetch - processPackages [aind-data-transfer]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-09 18:59:19] INFO root fetch - processPackages [cdk-valheim]: executing diffoscope
+[2023-05-09 18:59:19] INFO root fetch - processPackages [cdk-valheim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-valheim-0.0.26.tar.gz tmp/cdk-valheim-0.0.9.tar.gz --markdown 20230509/c/cdk-valheim/0.0.26-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:59:19] INFO root fetch - processPackages [google-cloud-datastore]: Downloading https://files.pythonhosted.org/packages/1f/f0/315d082cccc89c23034d4f06bcf6b6fca4cee0b1789e20a35af8655d8807/google-cloud-datastore-2.9.0.tar.gz
+[2023-05-09 18:59:19] INFO root fetch - processPackages [aind-data-transfer]: Downloading https://files.pythonhosted.org/packages/c6/c0/d43cf5b63152fa04e14114f721f196be5dd4bdfdd260c46ab01f94dbc621/aind-data-transfer-0.9.2.tar.gz
+[2023-05-09 18:59:19] INFO root fetch - processPackages [google-cloud-datastore]: executing diffoscope
+[2023-05-09 18:59:19] INFO root fetch - processPackages [google-cloud-datastore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-datastore-2.8.3.tar.gz tmp/google-cloud-datastore-2.9.0.tar.gz --markdown 20230509/g/google-cloud-datastore/2.8.3-2.9.0/diff.md --exclude *.pyd
+[2023-05-09 18:59:20] INFO root fetch - main [MainThread]: End processing [pgx]: success
+[2023-05-09 18:59:20] INFO root fetch - processPackages [aind-data-transfer]: Downloading https://files.pythonhosted.org/packages/ee/dc/9a630eab65d1c84402e0889b488d378cf516a68beee16401bf6e0c916cff/aind-data-transfer-0.9.3.tar.gz
+[2023-05-09 18:59:20] INFO root fetch - main [MainThread]: End processing [gradio-client]: success
+[2023-05-09 18:59:20] INFO root fetch - processPackages [aind-data-transfer]: executing diffoscope
+[2023-05-09 18:59:20] INFO root fetch - processPackages [aind-data-transfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-transfer-0.9.2.tar.gz tmp/aind-data-transfer-0.9.3.tar.gz --markdown 20230509/a/aind-data-transfer/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-09 18:59:20] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 18:59:20] INFO root fetch - main [MainThread]: End processing [cdk-valheim]: success
+[2023-05-09 18:59:21] INFO root fetch - main [MainThread]: End processing [domino-py]: success
+[2023-05-09 18:59:22] INFO root fetch - main [MainThread]: End processing [google-cloud-datastore]: success
+[2023-05-09 18:59:22] INFO root fetch - main [MainThread]: End processing [aind-data-transfer]: success
+[2023-05-09 18:59:23] INFO root fetch - main [MainThread]: End processing [django-ditto]: success
+[2023-05-09 18:59:26] INFO root fetch - main [MainThread]: End processing [edgeimpulse-api]: success
+[2023-05-09 18:59:26] INFO root fetch - main [MainThread]: Store serial: [18035119]
