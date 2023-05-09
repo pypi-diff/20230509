@@ -16476,3 +16476,111 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 15:08:17] INFO root fetch - main [MainThread]: End processing [dls-servbase]: success
 [2023-05-09 15:08:18] INFO root fetch - main [MainThread]: End processing [asdm]: success
 [2023-05-09 15:08:18] INFO root fetch - main [MainThread]: Store serial: [18032031]
+[2023-05-09 15:13:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032031]
+[2023-05-09 15:13:29] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: barbell2-bodycomp
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kalm
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: parsedmarc
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-shelly-whenwillitbeoverinternalfunctions
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: windmill-api
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wmill
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wmill-pg
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: certora-cli-alpha-rahav-cert-1987-update-regTest
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kalm
+[2023-05-09 15:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pepperize.cdk-route53-health-check
+[2023-05-09 15:13:29] INFO root fetch - processPackages [kalm]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-09 15:13:29] INFO root fetch - processPackages [wmill]: New version: [1.97.0] Old Version: [1.96.3]
+[2023-05-09 15:13:29] INFO root fetch - processPackages [windmill-api]: New version: [1.97.0] Old Version: [1.96.3]
+[2023-05-09 15:13:29] INFO root fetch - processPackages [kalm]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-09 15:13:29] INFO root fetch - processPackages [wmill-pg]: New version: [1.97.0] Old Version: [1.96.3]
+[2023-05-09 15:13:29] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: New version: [20230509.5.5.661313] Old Version: [20230509.11.1.577856]
+[2023-05-09 15:13:29] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 15:13:30] INFO root fetch - processPackages [barbell2-bodycomp]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 15:13:30] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.5.0.tar.gz tmp/kalm-0.5.1.tar.gz --markdown 20230509/k/kalm/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-09 15:13:30] WARNING root fetch - processPackages [certora-cli-alpha-shelly-whenwillitbeoverinternalfunctions]: Skipping, unable to determine old version
+[2023-05-09 15:13:30] INFO root fetch - processPackages [certora-cli-alpha-shelly-whenwillitbeoverinternalfunctions]: Start processing: business-validator
+[2023-05-09 15:13:30] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-whenwillitbeoverinternalfunctions] error
+[2023-05-09 15:13:30] INFO root fetch - processPackages [parsedmarc]: New version: [8.6.0] Old Version: [8.5.0]
+[2023-05-09 15:13:30] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.5.0.tar.gz tmp/kalm-0.5.1.tar.gz --markdown 20230509/k/kalm/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-09 15:13:30] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.96.3.tar.gz tmp/wmill_pg-1.97.0.tar.gz --markdown 20230509/w/wmill-pg/1.96.3-1.97.0/diff.md --exclude *.pyd
+[2023-05-09 15:13:30] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-route53-health-check-0.0.98.tar.gz tmp/pepperize.cdk-route53-health-check-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-route53-health-check/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 15:13:30] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Downloading https://files.pythonhosted.org/packages/8c/17/73d73f61331f5cd740942bfa0327b8ef99534e03bc7bf14eae1d4507656c/certora-cli-alpha-rahav-cert-1987_update_regTest-20230509.11.1.577856.tar.gz
+[2023-05-09 15:13:30] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/e7/50/2e64d1f3e1b49269f4f761a06f70dd9475d379d3cef11689e797fbf29bc0/wmill-1.97.0.tar.gz
+[2023-05-09 15:13:30] INFO root fetch - processPackages [business-validator]: New version: [2.0.0] Old Version: [1.0.2]
+[2023-05-09 15:13:30] WARNING root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Skipping package: exceeds size limit 39213737>=10485760
+[2023-05-09 15:13:30] INFO root fetch - processPackages [certora-cli-alpha-rahav-cert-1987-update-regTest]: Start processing: vantage6-common
+[2023-05-09 15:13:30] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-rahav-cert-1987-update-regTest] error
+[2023-05-09 15:13:30] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/cf/ef/b1186b547459dcc2fce5423ac1615f348c80116d2c2af78ddb000940e688/windmill_api-1.97.0.tar.gz
+[2023-05-09 15:13:30] INFO root fetch - processPackages [barbell2-bodycomp]: Downloading https://files.pythonhosted.org/packages/67/d5/4bf343dbcb552ce4e0d45469f1ad42b9895ccc7f37341e8faffecbd05726/barbell2_bodycomp-0.8.0.tar.gz
+[2023-05-09 15:13:30] INFO root fetch - processPackages [vantage6-common]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 15:13:30] INFO root fetch - processPackages [parsedmarc]: Downloading https://files.pythonhosted.org/packages/f6/55/c6a7c1024bda9296b99b0b7a4ecd9b85b4c2a5a4cb42a20ccee4c53b9f6a/parsedmarc-8.5.0.tar.gz
+[2023-05-09 15:13:30] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.96.3.tar.gz tmp/wmill-1.97.0.tar.gz --markdown 20230509/w/wmill/1.96.3-1.97.0/diff.md --exclude *.pyd
+[2023-05-09 15:13:30] INFO root fetch - processPackages [vantage6-common]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [vantage6-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-common-3.8.5.tar.gz tmp/vantage6-common-3.8.6.tar.gz --markdown 20230509/v/vantage6-common/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 15:13:30] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.96.3.tar.gz tmp/windmill_api-1.97.0.tar.gz --markdown 20230509/w/windmill-api/1.96.3-1.97.0/diff.md --exclude *.pyd
+[2023-05-09 15:13:30] INFO root fetch - processPackages [business-validator]: Downloading https://files.pythonhosted.org/packages/fd/b5/4e9a6e63609674563a78ca412104b80321bdff82171e666494934657361b/business_validator-1.0.2.tar.gz
+[2023-05-09 15:13:30] INFO root fetch - processPackages [barbell2-bodycomp]: Downloading https://files.pythonhosted.org/packages/d7/b2/5c4c1c66995b10cf7e25ca1730dd1b837cea894e9f0d0ce2f17ac75d6066/barbell2_bodycomp-0.9.0.tar.gz
+[2023-05-09 15:13:30] INFO root fetch - processPackages [parsedmarc]: Downloading https://files.pythonhosted.org/packages/05/ff/fb41a2595846868e361a5e71a45b39db951bd30975369b40f646bdeb6eeb/parsedmarc-8.6.0.tar.gz
+[2023-05-09 15:13:30] INFO root fetch - processPackages [barbell2-bodycomp]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [barbell2-bodycomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barbell2_bodycomp-0.8.0.tar.gz tmp/barbell2_bodycomp-0.9.0.tar.gz --markdown 20230509/b/barbell2-bodycomp/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 15:13:30] INFO root fetch - processPackages [business-validator]: Downloading https://files.pythonhosted.org/packages/ce/52/9aebeacb6261bbda49ea14e3fc5c95946c4c8be224f50edef6010b0a7205/business_validator-2.0.0.tar.gz
+[2023-05-09 15:13:30] INFO root fetch - processPackages [parsedmarc]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [parsedmarc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsedmarc-8.5.0.tar.gz tmp/parsedmarc-8.6.0.tar.gz --markdown 20230509/p/parsedmarc/8.5.0-8.6.0/diff.md --exclude *.pyd
+[2023-05-09 15:13:30] INFO root fetch - processPackages [business-validator]: executing diffoscope
+[2023-05-09 15:13:30] INFO root fetch - processPackages [business-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/business_validator-1.0.2.tar.gz tmp/business_validator-2.0.0.tar.gz --markdown 20230509/b/business-validator/1.0.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-09 15:13:31] INFO root fetch - processPackages [kalm]: Start processing: gstorm
+[2023-05-09 15:13:31] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-05-09 15:13:31] INFO root fetch - processPackages [gstorm]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 15:13:31] INFO root fetch - processPackages [wmill-pg]: Start processing: vantage6-client
+[2023-05-09 15:13:31] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-05-09 15:13:31] INFO root fetch - processPackages [vantage6-client]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 15:13:31] INFO root fetch - processPackages [kalm]: Start processing: vantage6
+[2023-05-09 15:13:31] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-05-09 15:13:31] INFO root fetch - processPackages [vantage6]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 15:13:31] INFO root fetch - processPackages [vantage6-client]: executing diffoscope
+[2023-05-09 15:13:31] INFO root fetch - processPackages [vantage6-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-client-3.8.5.tar.gz tmp/vantage6-client-3.8.6.tar.gz --markdown 20230509/v/vantage6-client/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 15:13:31] INFO root fetch - processPackages [wmill]: Start processing: vantage6-node
+[2023-05-09 15:13:31] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-09 15:13:31] INFO root fetch - processPackages [gstorm]: Downloading https://files.pythonhosted.org/packages/9f/a1/30feaf36752eeae282357576ff85d5f17911c2f30e1fb92817f649a452ff/gstorm-0.9.0.tar.gz
+[2023-05-09 15:13:32] INFO root fetch - processPackages [vantage6-node]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 15:13:32] INFO root fetch - processPackages [vantage6]: executing diffoscope
+[2023-05-09 15:13:32] INFO root fetch - processPackages [vantage6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-3.8.5.tar.gz tmp/vantage6-3.8.6.tar.gz --markdown 20230509/v/vantage6/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 15:13:32] INFO root fetch - processPackages [vantage6-node]: executing diffoscope
+[2023-05-09 15:13:32] INFO root fetch - processPackages [vantage6-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-node-3.8.5.tar.gz tmp/vantage6-node-3.8.6.tar.gz --markdown 20230509/v/vantage6-node/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 15:13:32] INFO root fetch - processPackages [gstorm]: Downloading https://files.pythonhosted.org/packages/73/3a/6676bb8388f664d7ae75892aa92faaa495e0a88570b2721698f44a08131e/gstorm-0.9.1-py3.8.egg
+[2023-05-09 15:13:32] INFO root fetch - processPackages [gstorm]: executing diffoscope
+[2023-05-09 15:13:32] INFO root fetch - processPackages [gstorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gstorm-0.9.0.tar.gz tmp/gstorm-0.9.1-py3.8.egg --markdown 20230509/g/gstorm/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 15:13:32] INFO root fetch - processPackages [business-validator]: Start processing: vantage6-server
+[2023-05-09 15:13:32] INFO root fetch - main [MainThread]: End processing [business-validator]: success
+[2023-05-09 15:13:32] INFO root fetch - processPackages [vantage6-server]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 15:13:32] INFO root fetch - processPackages [vantage6-common]: Start processing: graph-z-c
+[2023-05-09 15:13:32] INFO root fetch - main [MainThread]: End processing [vantage6-common]: success
+[2023-05-09 15:13:32] INFO root fetch - processPackages [vantage6-server]: executing diffoscope
+[2023-05-09 15:13:32] INFO root fetch - processPackages [vantage6-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-server-3.8.5.tar.gz tmp/vantage6-server-3.8.6.tar.gz --markdown 20230509/v/vantage6-server/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 15:13:32] INFO root fetch - processPackages [graph-z-c]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 15:13:32] INFO root fetch - processPackages [barbell2-bodycomp]: Start processing: cog-airflow-notify-sns
+[2023-05-09 15:13:32] INFO root fetch - main [MainThread]: End processing [barbell2-bodycomp]: success
+[2023-05-09 15:13:32] INFO root fetch - processPackages [cog-airflow-notify-sns]: New version: [1.0.1] Old Version: [0.0.1]
+[2023-05-09 15:13:33] INFO root fetch - processPackages [graph-z-c]: Downloading https://files.pythonhosted.org/packages/54/08/0a80795ca0e39925c1229bffe865e7675f69ad7d187498b24d3252bc5af9/graph_z_c-0.0.4.tar.gz
+[2023-05-09 15:13:33] INFO root fetch - processPackages [graph-z-c]: executing diffoscope
+[2023-05-09 15:13:33] INFO root fetch - processPackages [cog-airflow-notify-sns]: Downloading https://files.pythonhosted.org/packages/7f/f8/032924b7a152c45b0cb0762cea4b7a7913748f1f32c26f9b33b0f9c17d45/cog-airflow-notify-sns-1.0.1.tar.gz
+[2023-05-09 15:13:33] INFO root fetch - processPackages [graph-z-c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph_z_c-0.0.3.tar.gz tmp/graph_z_c-0.0.4.tar.gz --markdown 20230509/g/graph-z-c/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 15:13:33] INFO root fetch - main [MainThread]: End processing [vantage6-client]: success
+[2023-05-09 15:13:33] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
+[2023-05-09 15:13:33] INFO root fetch - processPackages [cog-airflow-notify-sns]: executing diffoscope
+[2023-05-09 15:13:33] INFO root fetch - processPackages [cog-airflow-notify-sns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cog-airflow-notify-sns-0.0.1.tar.gz tmp/cog-airflow-notify-sns-1.0.1.tar.gz --markdown 20230509/c/cog-airflow-notify-sns/0.0.1-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 15:13:33] INFO root fetch - main [MainThread]: End processing [vantage6-node]: success
+[2023-05-09 15:13:33] INFO root fetch - main [MainThread]: End processing [vantage6]: success
+[2023-05-09 15:13:33] INFO root fetch - main [MainThread]: End processing [gstorm]: success
+[2023-05-09 15:13:34] INFO root fetch - main [MainThread]: End processing [graph-z-c]: success
+[2023-05-09 15:13:36] INFO root fetch - main [MainThread]: End processing [vantage6-server]: success
+[2023-05-09 15:13:36] INFO root fetch - main [MainThread]: End processing [parsedmarc]: success
+[2023-05-09 15:13:53] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-09 15:13:57] INFO root fetch - main [MainThread]: End processing [cog-airflow-notify-sns]: success
+[2023-05-09 15:13:57] INFO root fetch - main [MainThread]: Store serial: [18032098]
