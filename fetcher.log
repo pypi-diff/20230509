@@ -22433,3 +22433,170 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 20:02:55] INFO root fetch - main [MainThread]: End processing [ruamel.yaml]: success
 [2023-05-09 20:02:59] INFO root fetch - main [MainThread]: End processing [docutils]: success
 [2023-05-09 20:02:59] INFO root fetch - main [MainThread]: Store serial: [18035776]
+[2023-05-09 20:08:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18035776]
+[2023-05-09 20:08:09] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyboil
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-uri-eradicate-certora-dir
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ssm-ps-template
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proventosweb
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: assemblyline-service-client
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: logpyle
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyboil
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: assemblyline-service-server
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: piperider-nightly
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: assemblyline-ui
+[2023-05-09 20:08:09] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: New version: [20230509.16.47.214531] Old Version: [20230509.14.7.767571]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ssm-ps-template]: New version: [1.0.0b2] Old Version: [1.0.0b1]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [logpyle]: New version: [2023.2] Old Version: [2023.1]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [assemblyline-service-client]: New version: [4.4.1.dev9] Old Version: [4.4.1.dev8]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [assemblyline-ui]: New version: [4.4.1.dev9] Old Version: [4.4.1.dev8]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [proventosweb]: New version: [0.7] Old Version: [0.66]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 20:08:09] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ssm-ps-template]: executing diffoscope
+[2023-05-09 20:08:09] INFO root fetch - processPackages [ssm-ps-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssm-ps-template-1.0.0b1.tar.gz tmp/ssm-ps-template-1.0.0b2.tar.gz --markdown 20230509/s/ssm-ps-template/1.0.0b1-1.0.0b2/diff.md --exclude *.pyd
+[2023-05-09 20:08:09] INFO root fetch - processPackages [logpyle]: executing diffoscope
+[2023-05-09 20:08:09] INFO root fetch - processPackages [logpyle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logpyle-2023.1.tar.gz tmp/logpyle-2023.2.tar.gz --markdown 20230509/l/logpyle/2023.1-2023.2/diff.md --exclude *.pyd
+[2023-05-09 20:08:09] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 20:08:09] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 20:08:09] INFO root fetch - processPackages [assemblyline-service-server]: New version: [4.4.1.dev9] Old Version: [4.4.1.dev8]
+[2023-05-09 20:08:09] INFO root fetch - processPackages [assemblyline-ui]: executing diffoscope
+[2023-05-09 20:08:09] INFO root fetch - processPackages [assemblyline-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_ui-4.4.1.dev8-py3-none-any.whl.zip tmp/assemblyline_ui-4.4.1.dev9-py3-none-any.whl.zip --markdown 20230509/a/assemblyline-ui/4.4.1.dev8-4.4.1.dev9/diff.md --exclude *.pyd
+[2023-05-09 20:08:09] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-05-09 20:08:09] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230509/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-05-09 20:08:09] INFO root fetch - processPackages [assemblyline-service-client]: executing diffoscope
+[2023-05-09 20:08:09] INFO root fetch - processPackages [assemblyline-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_client-4.4.1.dev8-py3-none-any.whl.zip tmp/assemblyline_service_client-4.4.1.dev9-py3-none-any.whl.zip --markdown 20230509/a/assemblyline-service-client/4.4.1.dev8-4.4.1.dev9/diff.md --exclude *.pyd
+[2023-05-09 20:08:10] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Downloading https://files.pythonhosted.org/packages/83/70/2083ae1960dd102dd57bb2dd4524663072ffbbadc1c63f59171dfcbf1a81/certora-cli-alpha-uri-eradicate_certora_dir-20230509.14.7.767571.tar.gz
+[2023-05-09 20:08:10] WARNING root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Skipping package: exceeds size limit 38474157>=10485760
+[2023-05-09 20:08:10] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Start processing: assemblyline-v4-service
+[2023-05-09 20:08:10] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-uri-eradicate-certora-dir] error
+[2023-05-09 20:08:10] INFO root fetch - processPackages [assemblyline-service-server]: executing diffoscope
+[2023-05-09 20:08:10] INFO root fetch - processPackages [assemblyline-service-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_server-4.4.1.dev8-py3-none-any.whl.zip tmp/assemblyline_service_server-4.4.1.dev9-py3-none-any.whl.zip --markdown 20230509/a/assemblyline-service-server/4.4.1.dev8-4.4.1.dev9/diff.md --exclude *.pyd
+[2023-05-09 20:08:10] INFO root fetch - processPackages [proventosweb]: Downloading https://files.pythonhosted.org/packages/f9/9e/512d4d431ed7737cc08a94daad89c2fe92e0fc372e985b902bba0ab91c34/proventosweb-0.66.tar.gz
+[2023-05-09 20:08:10] INFO root fetch - processPackages [assemblyline-v4-service]: New version: [4.4.1.dev9] Old Version: [4.4.1.dev8]
+[2023-05-09 20:08:10] INFO root fetch - processPackages [assemblyline-v4-service]: executing diffoscope
+[2023-05-09 20:08:10] INFO root fetch - processPackages [assemblyline-v4-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_v4_service-4.4.1.dev8-py3-none-any.whl.zip tmp/assemblyline_v4_service-4.4.1.dev9-py3-none-any.whl.zip --markdown 20230509/a/assemblyline-v4-service/4.4.1.dev8-4.4.1.dev9/diff.md --exclude *.pyd
+[2023-05-09 20:08:10] INFO root fetch - processPackages [proventosweb]: Downloading https://files.pythonhosted.org/packages/ec/6c/0fad2856a988e5b388e68bd56f10409f3975e429e62c4339f3fe6b79abf2/proventosweb-0.7.tar.gz
+[2023-05-09 20:08:10] INFO root fetch - processPackages [proventosweb]: executing diffoscope
+[2023-05-09 20:08:10] INFO root fetch - processPackages [proventosweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proventosweb-0.66.tar.gz tmp/proventosweb-0.7.tar.gz --markdown 20230509/p/proventosweb/0.66-0.7/diff.md --exclude *.pyd
+[2023-05-09 20:08:11] INFO root fetch - processPackages [assemblyline-service-client]: Start processing: assemblyline
+[2023-05-09 20:08:11] INFO root fetch - main [MainThread]: End processing [assemblyline-service-client]: success
+[2023-05-09 20:08:11] INFO root fetch - processPackages [assemblyline]: New version: [4.4.1.dev9] Old Version: [4.4.1.dev8]
+[2023-05-09 20:08:11] INFO root fetch - processPackages [logpyle]: Start processing: assemblyline-core
+[2023-05-09 20:08:11] INFO root fetch - main [MainThread]: End processing [logpyle]: success
+[2023-05-09 20:08:11] INFO root fetch - processPackages [assemblyline-core]: New version: [4.4.1.dev9] Old Version: [4.4.1.dev8]
+[2023-05-09 20:08:11] INFO root fetch - processPackages [pyboil]: Start processing: napari-feature-classifier
+[2023-05-09 20:08:11] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 20:08:11] INFO root fetch - processPackages [assemblyline]: executing diffoscope
+[2023-05-09 20:08:11] INFO root fetch - processPackages [assemblyline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-4.4.1.dev8.tar.gz tmp/assemblyline-4.4.1.dev9.tar.gz --markdown 20230509/a/assemblyline/4.4.1.dev8-4.4.1.dev9/diff.md --exclude *.pyd
+[2023-05-09 20:08:11] INFO root fetch - processPackages [assemblyline-service-server]: Start processing: lnhub_rest
+[2023-05-09 20:08:11] INFO root fetch - main [MainThread]: End processing [assemblyline-service-server]: success
+[2023-05-09 20:08:11] INFO root fetch - processPackages [assemblyline-core]: executing diffoscope
+[2023-05-09 20:08:11] INFO root fetch - processPackages [assemblyline-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-core-4.4.1.dev8.tar.gz tmp/assemblyline-core-4.4.1.dev9.tar.gz --markdown 20230509/a/assemblyline-core/4.4.1.dev8-4.4.1.dev9/diff.md --exclude *.pyd
+[2023-05-09 20:08:11] INFO root fetch - processPackages [pyboil]: Start processing: rcsb.workflow
+[2023-05-09 20:08:11] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 20:08:11] INFO root fetch - processPackages [napari-feature-classifier]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-05-09 20:08:11] INFO root fetch - processPackages [lnhub_rest]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-09 20:08:11] INFO root fetch - processPackages [rcsb.workflow]: New version: [0.38] Old Version: [0.37]
+[2023-05-09 20:08:11] INFO root fetch - processPackages [ssm-ps-template]: Start processing: modal-client
+[2023-05-09 20:08:11] INFO root fetch - main [MainThread]: End processing [ssm-ps-template]: success
+[2023-05-09 20:08:11] INFO root fetch - processPackages [modal-client]: New version: [0.49.2148] Old Version: [0.49.2147]
+[2023-05-09 20:08:11] INFO root fetch - processPackages [napari-feature-classifier]: Downloading https://files.pythonhosted.org/packages/4f/9f/96e24e94d13df21ead7cb1e92a5dcd1c7dd0ce52404266268ec383762a4f/napari-feature-classifier-0.0.3.tar.gz
+[2023-05-09 20:08:11] INFO root fetch - processPackages [assemblyline-ui]: Start processing: edulint
+[2023-05-09 20:08:11] INFO root fetch - main [MainThread]: End processing [assemblyline-ui]: success
+[2023-05-09 20:08:12] INFO root fetch - processPackages [proventosweb]: Start processing: proventosweb
+[2023-05-09 20:08:12] INFO root fetch - main [MainThread]: End processing [proventosweb]: success
+[2023-05-09 20:08:12] INFO root fetch - processPackages [rcsb.workflow]: Downloading https://files.pythonhosted.org/packages/02/74/ca633488c03152fff2454f2304e9687626680f2856e1bc4802b19f536668/rcsb.workflow-0.37.tar.gz
+[2023-05-09 20:08:12] INFO root fetch - processPackages [proventosweb]: New version: [0.7] Old Version: [0.66]
+[2023-05-09 20:08:12] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2023-05-09 20:08:12] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.49.2147-py3-none-any.whl.zip tmp/modal_client-0.49.2148-py3-none-any.whl.zip --markdown 20230509/m/modal-client/0.49.2147-0.49.2148/diff.md --exclude *.pyd
+[2023-05-09 20:08:12] INFO root fetch - processPackages [edulint]: New version: [2.6.2] Old Version: [2.6.1]
+[2023-05-09 20:08:12] INFO root fetch - processPackages [lnhub_rest]: Downloading https://files.pythonhosted.org/packages/99/0a/0201350cec9723df83d6ab5ce5d2483abcbd43613b6832943e106facab4d/lnhub_rest-0.9.4.tar.gz
+[2023-05-09 20:08:12] INFO root fetch - processPackages [proventosweb]: executing diffoscope
+[2023-05-09 20:08:12] INFO root fetch - processPackages [proventosweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proventosweb-0.66.tar.gz tmp/proventosweb-0.7.tar.gz --markdown 20230509/p/proventosweb/0.66-0.7/diff.md --exclude *.pyd
+[2023-05-09 20:08:12] INFO root fetch - processPackages [edulint]: Downloading https://files.pythonhosted.org/packages/b8/e0/02653d3781aeac06182c18e5053f798d9795a76decb8bc0f882d9c495875/edulint-2.6.1.tar.gz
+[2023-05-09 20:08:12] INFO root fetch - processPackages [napari-feature-classifier]: Downloading https://files.pythonhosted.org/packages/fb/36/a9614d2b92312b5e799853a50373d5e576af0dba4fcfa04b6f780c87352e/napari-feature-classifier-0.1.0.tar.gz
+[2023-05-09 20:08:12] INFO root fetch - processPackages [lnhub_rest]: Downloading https://files.pythonhosted.org/packages/4e/60/51363dfbfbf8c2c9097fef62e12c69e0764c0e749168b11373fc43958432/lnhub_rest-0.9.5.tar.gz
+[2023-05-09 20:08:12] INFO root fetch - processPackages [rcsb.workflow]: Downloading https://files.pythonhosted.org/packages/fa/97/2b988fac338477a8a2b7b18703a7bcde60776b9764990276a41c17d40945/rcsb.workflow-0.38.tar.gz
+[2023-05-09 20:08:12] INFO root fetch - processPackages [edulint]: Downloading https://files.pythonhosted.org/packages/7e/79/ac2c4a947f831208a284cf243f983b3e4beaa95f9af0e9fd5300580cad85/edulint-2.6.2.tar.gz
+[2023-05-09 20:08:12] INFO root fetch - processPackages [napari-feature-classifier]: executing diffoscope
+[2023-05-09 20:08:12] INFO root fetch - processPackages [napari-feature-classifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-feature-classifier-0.0.3.tar.gz tmp/napari-feature-classifier-0.1.0.tar.gz --markdown 20230509/n/napari-feature-classifier/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 20:08:12] INFO root fetch - processPackages [rcsb.workflow]: executing diffoscope
+[2023-05-09 20:08:12] INFO root fetch - processPackages [rcsb.workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcsb.workflow-0.37.tar.gz tmp/rcsb.workflow-0.38.tar.gz --markdown 20230509/r/rcsb.workflow/0.37-0.38/diff.md --exclude *.pyd
+[2023-05-09 20:08:12] INFO root fetch - processPackages [lnhub_rest]: executing diffoscope
+[2023-05-09 20:08:12] INFO root fetch - processPackages [lnhub_rest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnhub_rest-0.9.4.tar.gz tmp/lnhub_rest-0.9.5.tar.gz --markdown 20230509/l/lnhub_rest/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-09 20:08:12] INFO root fetch - processPackages [edulint]: executing diffoscope
+[2023-05-09 20:08:12] INFO root fetch - processPackages [edulint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edulint-2.6.1.tar.gz tmp/edulint-2.6.2.tar.gz --markdown 20230509/e/edulint/2.6.1-2.6.2/diff.md --exclude *.pyd
+[2023-05-09 20:08:13] INFO root fetch - processPackages [proventosweb]: Start processing: hccpy
+[2023-05-09 20:08:13] INFO root fetch - main [MainThread]: End processing [proventosweb]: success
+[2023-05-09 20:08:13] INFO root fetch - main [MainThread]: End processing [assemblyline-core]: success
+[2023-05-09 20:08:13] INFO root fetch - processPackages [hccpy]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-09 20:08:13] INFO root fetch - processPackages [hccpy]: Downloading https://files.pythonhosted.org/packages/a4/fa/49772a2f85c243bcc0972603d144fc76dce840e51d7b7a3e907925865a88/hccpy-0.1.5.tar.gz
+[2023-05-09 20:08:13] INFO root fetch - main [MainThread]: End processing [assemblyline-v4-service]: success
+[2023-05-09 20:08:14] INFO root fetch - main [MainThread]: End processing [rcsb.workflow]: success
+[2023-05-09 20:08:14] INFO root fetch - processPackages [hccpy]: Downloading https://files.pythonhosted.org/packages/ae/bd/8be355da36a1f093815f019a83ab95a0edf1d0ca0468bfb97285aaad1314/hccpy-0.1.6.tar.gz
+[2023-05-09 20:08:14] INFO root fetch - main [MainThread]: End processing [napari-feature-classifier]: success
+[2023-05-09 20:08:14] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-05-09 20:08:14] INFO root fetch - processPackages [hccpy]: executing diffoscope
+[2023-05-09 20:08:14] INFO root fetch - processPackages [hccpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hccpy-0.1.5.tar.gz tmp/hccpy-0.1.6.tar.gz --markdown 20230509/h/hccpy/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-09 20:08:14] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2023-05-09 20:08:14] INFO root fetch - main [MainThread]: End processing [assemblyline]: success
+[2023-05-09 20:08:14] INFO root fetch - main [MainThread]: End processing [lnhub_rest]: success
+[2023-05-09 20:08:15] INFO root fetch - main [MainThread]: End processing [edulint]: success
+[2023-05-09 20:08:15] ERROR root fetch - processPackages [hccpy]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-05-09 20:08:15] INFO root fetch - main [MainThread]: End processing [hccpy] error
+[2023-05-09 20:08:15] INFO root fetch - main [MainThread]: Store serial: [18035847]
