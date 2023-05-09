@@ -5608,3 +5608,53 @@
 [2023-05-09 03:58:44] INFO root fetch - main [MainThread]: End processing [SpatialGlue]: success
 [2023-05-09 03:58:45] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
 [2023-05-09 03:58:45] INFO root fetch - main [MainThread]: Store serial: [18025884]
+[2023-05-09 04:03:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18025884]
+[2023-05-09 04:03:54] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-09 04:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hostphot
+[2023-05-09 04:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglet
+[2023-05-09 04:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scriptconfig
+[2023-05-09 04:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tracer-spans-python
+[2023-05-09 04:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-jtoman-source-copy-refactor
+[2023-05-09 04:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-photofolio-ds
+[2023-05-09 04:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfirebird
+[2023-05-09 04:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: DXR
+[2023-05-09 04:03:54] INFO root fetch - processPackages [hostphot]: New version: [2.6.1] Old Version: [2.6.0]
+[2023-05-09 04:03:54] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-source-copy-refactor]: Skipping, unable to determine old version
+[2023-05-09 04:03:54] INFO root fetch - processPackages [django-photofolio-ds]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-09 04:03:54] INFO root fetch - processPackages [pyglet]: New version: [2.0b3] Old Version: [2.0b2]
+[2023-05-09 04:03:55] INFO root fetch - processPackages [tracer-spans-python]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 04:03:55] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-source-copy-refactor] error
+[2023-05-09 04:03:55] INFO root fetch - processPackages [scriptconfig]: New version: [0.7.8] Old Version: [0.7.7]
+[2023-05-09 04:03:55] INFO root fetch - processPackages [DXR]: New version: [1.8.5] Old Version: [1.8.4]
+[2023-05-09 04:03:55] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 04:03:55] INFO root fetch - processPackages [DXR]: executing diffoscope
+[2023-05-09 04:03:55] INFO root fetch - processPackages [DXR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DXR-1.8.4.tar.gz tmp/DXR-1.8.5.tar.gz --markdown 20230509/D/DXR/1.8.4-1.8.5/diff.md --exclude *.pyd
+[2023-05-09 04:03:55] INFO root fetch - processPackages [tracer-spans-python]: Downloading https://files.pythonhosted.org/packages/ac/3d/222645f1d17ea2da746ca9782f9a568f5460f0bfc3c47b0a7c09098d3580/tracer_spans_python-0.0.1.tar.gz
+[2023-05-09 04:03:55] INFO root fetch - processPackages [django-photofolio-ds]: Downloading https://files.pythonhosted.org/packages/29/8f/027255721249d9f42511a5205ff19e591c70fc65f51beb8c623427bdfef4/django-photofolio_ds-0.3.5.tar.gz
+[2023-05-09 04:03:55] INFO root fetch - processPackages [pyglet]: Downloading https://files.pythonhosted.org/packages/b0/66/c72605c7f840838246e73a415b7327e6296b828ba374f2f6525b58f9c39d/pyglet-2.0b2.zip
+[2023-05-09 04:03:55] INFO root fetch - processPackages [scriptconfig]: Downloading https://files.pythonhosted.org/packages/44/51/076d75638c72277bf6fa21f00120ab6c1873528078a5fc28e2127bb5b476/scriptconfig-0.7.7-py3-none-any.whl
+[2023-05-09 04:03:55] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 04:03:55] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.8.tar.gz tmp/pyfirebird-0.0.9.tar.gz --markdown 20230509/p/pyfirebird/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 04:03:55] INFO root fetch - processPackages [hostphot]: Downloading https://files.pythonhosted.org/packages/58/c3/fabae4c015b56e63c958c6fa03afb5ace91017cd906d04a743f53af465a7/hostphot-2.6.1.tar.gz
+[2023-05-09 04:03:55] INFO root fetch - processPackages [tracer-spans-python]: Downloading https://files.pythonhosted.org/packages/47/21/01b4011194594b3fe224aadff38a11d9643928c010b602139da6f20c4241/tracer_spans_python-0.0.2.tar.gz
+[2023-05-09 04:03:55] INFO root fetch - processPackages [hostphot]: executing diffoscope
+[2023-05-09 04:03:55] INFO root fetch - processPackages [hostphot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hostphot-2.6.0.tar.gz tmp/hostphot-2.6.1.tar.gz --markdown 20230509/h/hostphot/2.6.0-2.6.1/diff.md --exclude *.pyd
+[2023-05-09 04:03:55] INFO root fetch - processPackages [scriptconfig]: Downloading https://files.pythonhosted.org/packages/f1/5b/b62be232c4105ace83e4ae54febe6dd0edb5abe8344b508a0c38a954de88/scriptconfig-0.7.8-py3-none-any.whl
+[2023-05-09 04:03:55] INFO root fetch - processPackages [tracer-spans-python]: executing diffoscope
+[2023-05-09 04:03:55] INFO root fetch - processPackages [tracer-spans-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tracer_spans_python-0.0.1.tar.gz tmp/tracer_spans_python-0.0.2.tar.gz --markdown 20230509/t/tracer-spans-python/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 04:03:55] INFO root fetch - processPackages [scriptconfig]: executing diffoscope
+[2023-05-09 04:03:55] INFO root fetch - processPackages [scriptconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scriptconfig-0.7.7-py3-none-any.whl.zip tmp/scriptconfig-0.7.8-py3-none-any.whl.zip --markdown 20230509/s/scriptconfig/0.7.7-0.7.8/diff.md --exclude *.pyd
+[2023-05-09 04:03:56] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 04:03:56] INFO root fetch - main [MainThread]: End processing [DXR]: success
+[2023-05-09 04:03:56] INFO root fetch - main [MainThread]: End processing [tracer-spans-python]: success
+[2023-05-09 04:03:56] INFO root fetch - main [MainThread]: End processing [scriptconfig]: success
+[2023-05-09 04:03:56] INFO root fetch - processPackages [django-photofolio-ds]: Downloading https://files.pythonhosted.org/packages/99/32/2cad57a34abe11714f0602e2028aedcf20d4c3518a26d5d49c3b961b6cd6/django-photofolio_ds-0.3.6.tar.gz
+[2023-05-09 04:03:57] INFO root fetch - processPackages [django-photofolio-ds]: executing diffoscope
+[2023-05-09 04:03:57] INFO root fetch - processPackages [django-photofolio-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-photofolio_ds-0.3.5.tar.gz tmp/django-photofolio_ds-0.3.6.tar.gz --markdown 20230509/d/django-photofolio-ds/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-09 04:03:57] INFO root fetch - processPackages [pyglet]: Downloading https://files.pythonhosted.org/packages/e5/d7/8898edcdc4dc6df2512d51739c4e6c1e6261d8ebd7e27cb59923c7a2cbb5/pyglet-2.0b3.zip
+[2023-05-09 04:03:58] INFO root fetch - main [MainThread]: End processing [hostphot]: success
+[2023-05-09 04:03:59] INFO root fetch - main [MainThread]: End processing [django-photofolio-ds]: success
+[2023-05-09 04:04:07] INFO root fetch - processPackages [pyglet]: executing diffoscope
+[2023-05-09 04:04:07] INFO root fetch - processPackages [pyglet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglet-2.0b2.zip tmp/pyglet-2.0b3.zip --markdown 20230509/p/pyglet/2.0b2-2.0b3/diff.md --exclude *.pyd
+[2023-05-09 04:04:18] INFO root fetch - main [MainThread]: End processing [pyglet]: success
+[2023-05-09 04:04:18] INFO root fetch - main [MainThread]: Store serial: [18025905]
