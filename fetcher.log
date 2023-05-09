@@ -9030,3 +9030,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 06:41:35] INFO root fetch - main [MainThread]: End processing [hotkeynet]: success
 [2023-05-09 06:41:35] INFO root fetch - main [MainThread]: End processing [AkvoResponseGrouper]: success
 [2023-05-09 06:41:35] INFO root fetch - main [MainThread]: Store serial: [18027588]
+[2023-05-09 06:46:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027588]
+[2023-05-09 06:46:44] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-09 06:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: np-tools
+[2023-05-09 06:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-hr-expense
+[2023-05-09 06:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: macaw-auth
+[2023-05-09 06:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sans
+[2023-05-09 06:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: toolplot
+[2023-05-09 06:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lspsp
+[2023-05-09 06:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: shared-atomic-enterprise
+[2023-05-09 06:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: simple-parquet-viewer
+[2023-05-09 06:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: toolstr
+[2023-05-09 06:46:44] WARNING root fetch - processPackages [macaw-auth]: Skipping, unable to determine old version
+[2023-05-09 06:46:44] INFO root fetch - main [MainThread]: End processing [macaw-auth] error
+[2023-05-09 06:46:44] INFO root fetch - processPackages [sans]: New version: [1.0.0a2] Old Version: [1.0.0a1]
+[2023-05-09 06:46:44] INFO root fetch - processPackages [lspsp]: New version: [1.0.2.post2] Old Version: [1.0.1]
+[2023-05-09 06:46:44] INFO root fetch - processPackages [toolplot]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-09 06:46:44] INFO root fetch - processPackages [odoo-addons-oca-hr-expense]: New version: [15.0.20230509.0] Old Version: [15.0.20230419.0]
+[2023-05-09 06:46:44] INFO root fetch - processPackages [np-tools]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 06:46:44] INFO root fetch - processPackages [toolstr]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-09 06:46:44] INFO root fetch - processPackages [shared-atomic-enterprise]: New version: [5!2.3.3] Old Version: [5!2.3.2]
+[2023-05-09 06:46:44] INFO root fetch - processPackages [simple-parquet-viewer]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 06:46:45] INFO root fetch - processPackages [toolstr]: executing diffoscope
+[2023-05-09 06:46:45] INFO root fetch - processPackages [toolstr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolstr-0.9.2.tar.gz tmp/toolstr-0.9.3.tar.gz --markdown 20230509/t/toolstr/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-09 06:46:45] INFO root fetch - processPackages [sans]: Downloading https://files.pythonhosted.org/packages/5a/70/8f564bc9174ce4c48550d15e6528ee11aefc2987c61447fe8cdce53b9021/sans-1.0.0a2.tar.gz
+[2023-05-09 06:46:45] INFO root fetch - processPackages [toolplot]: Downloading https://files.pythonhosted.org/packages/a3/e2/4ce693ec2f015c2a8b27722200e1aeedda63fa1a14b3e47c7e10fe614a0b/toolplot-0.3.2.tar.gz
+[2023-05-09 06:46:45] INFO root fetch - processPackages [odoo-addons-oca-hr-expense]: Downloading https://files.pythonhosted.org/packages/b7/68/91de2114795f4e50e94a8a40bf9d441cf6dc756da646bc9be61da6c0661e/odoo_addons_oca_hr_expense-15.0.20230419.0-py3-none-any.whl
+[2023-05-09 06:46:45] INFO root fetch - processPackages [np-tools]: Downloading https://files.pythonhosted.org/packages/7d/00/4ffdf7879b57a53675c0a072a6994ee222cef3f6c1623e7c822a02d2d8be/np_tools-0.1.8.tar.gz
+[2023-05-09 06:46:45] INFO root fetch - processPackages [shared-atomic-enterprise]: Downloading https://files.pythonhosted.org/packages/e1/77/8e940d79d06d5ec7ea9d60432891da2abae421bf524e6d9657ca718c48dc/shared_atomic_enterprise-5!2.3.2-py39-none-win_amd64.whl
+[2023-05-09 06:46:45] INFO root fetch - processPackages [simple-parquet-viewer]: Downloading https://files.pythonhosted.org/packages/a4/ed/35bb243f49ceaf61673a4d4a596b0c6c10dd0a5e862043be8f947a09d941/simple_parquet_viewer-0.9.0.tar.gz
+[2023-05-09 06:46:45] INFO root fetch - processPackages [np-tools]: executing diffoscope
+[2023-05-09 06:46:45] INFO root fetch - processPackages [np-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_tools-0.1.7.tar.gz tmp/np_tools-0.1.8.tar.gz --markdown 20230509/n/np-tools/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 06:46:45] INFO root fetch - processPackages [sans]: executing diffoscope
+[2023-05-09 06:46:45] INFO root fetch - processPackages [sans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sans-1.0.0a1.tar.gz tmp/sans-1.0.0a2.tar.gz --markdown 20230509/s/sans/1.0.0a1-1.0.0a2/diff.md --exclude *.pyd
+[2023-05-09 06:46:45] INFO root fetch - processPackages [lspsp]: Downloading https://files.pythonhosted.org/packages/9e/fe/2b052154e7a65b376a50e60803e45cb983adf358c93308e5bb39c3f63470/lspsp-1.0.2.post2.tar.gz
+[2023-05-09 06:46:45] INFO root fetch - processPackages [lspsp]: executing diffoscope
+[2023-05-09 06:46:45] INFO root fetch - processPackages [lspsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lspsp-1.0.1.tar.gz tmp/lspsp-1.0.2.post2.tar.gz --markdown 20230509/l/lspsp/1.0.1-1.0.2.post2/diff.md --exclude *.pyd
+[2023-05-09 06:46:45] INFO root fetch - processPackages [toolplot]: Downloading https://files.pythonhosted.org/packages/c0/05/866c436ed74f750c11a5f7c9166e9e48be818e186fc94ff487899645d85d/toolplot-0.3.3.tar.gz
+[2023-05-09 06:46:45] INFO root fetch - processPackages [odoo-addons-oca-hr-expense]: Downloading https://files.pythonhosted.org/packages/49/f7/833304d7cbea5509fdf89fb7ab935887bfba0beb82e3cd461299fe26ab61/odoo_addons_oca_hr_expense-15.0.20230509.0-py3-none-any.whl
+[2023-05-09 06:46:45] INFO root fetch - processPackages [toolplot]: executing diffoscope
+[2023-05-09 06:46:45] INFO root fetch - processPackages [toolplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolplot-0.3.2.tar.gz tmp/toolplot-0.3.3.tar.gz --markdown 20230509/t/toolplot/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-09 06:46:45] INFO root fetch - processPackages [simple-parquet-viewer]: Downloading https://files.pythonhosted.org/packages/35/e5/8ca829f932bff664515fb6070fba5ad22c4321849d3e788be1fc6d89686e/simple_parquet_viewer-0.9.1.tar.gz
+[2023-05-09 06:46:45] INFO root fetch - processPackages [odoo-addons-oca-hr-expense]: executing diffoscope
+[2023-05-09 06:46:45] INFO root fetch - processPackages [odoo-addons-oca-hr-expense]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_hr_expense-15.0.20230419.0-py3-none-any.whl.zip tmp/odoo_addons_oca_hr_expense-15.0.20230509.0-py3-none-any.whl.zip --markdown 20230509/o/odoo-addons-oca-hr-expense/15.0.20230419.0-15.0.20230509.0/diff.md --exclude *.pyd
+[2023-05-09 06:46:45] INFO root fetch - processPackages [simple-parquet-viewer]: executing diffoscope
+[2023-05-09 06:46:45] INFO root fetch - processPackages [simple-parquet-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_parquet_viewer-0.9.0.tar.gz tmp/simple_parquet_viewer-0.9.1.tar.gz --markdown 20230509/s/simple-parquet-viewer/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 06:46:46] INFO root fetch - main [MainThread]: End processing [np-tools]: success
+[2023-05-09 06:46:46] INFO root fetch - main [MainThread]: End processing [sans]: success
+[2023-05-09 06:46:46] INFO root fetch - main [MainThread]: End processing [lspsp]: success
+[2023-05-09 06:46:46] INFO root fetch - main [MainThread]: End processing [toolplot]: success
+[2023-05-09 06:46:46] INFO root fetch - processPackages [shared-atomic-enterprise]: Downloading https://files.pythonhosted.org/packages/65/57/1923fc6ae0b83b5ab5fedc8e692e61d722b7ede4e327bcd31ed103596ce0/shared_atomic_enterprise-5!2.3.3-py39-none-win_amd64.whl
+[2023-05-09 06:46:46] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-hr-expense]: success
+[2023-05-09 06:46:47] INFO root fetch - processPackages [shared-atomic-enterprise]: executing diffoscope
+[2023-05-09 06:46:47] INFO root fetch - processPackages [shared-atomic-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shared_atomic_enterprise-5!2.3.2-py39-none-win_amd64.whl.zip tmp/shared_atomic_enterprise-5!2.3.3-py39-none-win_amd64.whl.zip --markdown 20230509/s/shared-atomic-enterprise/5!2.3.2-5!2.3.3/diff.md --exclude *.pyd
+[2023-05-09 06:46:47] INFO root fetch - main [MainThread]: End processing [toolstr]: success
+[2023-05-09 06:46:47] INFO root fetch - main [MainThread]: End processing [simple-parquet-viewer]: success
+[2023-05-09 06:46:59] INFO root fetch - main [MainThread]: End processing [shared-atomic-enterprise]: success
+[2023-05-09 06:46:59] INFO root fetch - main [MainThread]: Store serial: [18027622]
