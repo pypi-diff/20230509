@@ -15152,3 +15152,66 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 13:24:47] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-05-09 13:24:47] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-05-09 13:24:47] INFO root fetch - main [MainThread]: Store serial: [18031216]
+[2023-05-09 13:29:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031216]
+[2023-05-09 13:29:56] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiotiktok
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: licensekeygentest
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchrl-nightly
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Pyfall
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inference-server
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: teaspoon
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: construct-editor
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: money-to-prisoners-common
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: numba-stats
+[2023-05-09 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: certora-cli-alpha-master
+[2023-05-09 13:29:56] INFO root fetch - processPackages [licensekeygentest]: New version: [0.1.1] Old Version: [0.0.4]
+[2023-05-09 13:29:56] INFO root fetch - processPackages [teaspoon]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-09 13:29:56] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230509.9.27.572322] Old Version: [20230509.10.30.674061]
+[2023-05-09 13:29:56] INFO root fetch - processPackages [aiotiktok]: New version: [2.5.4] Old Version: [2.5.3]
+[2023-05-09 13:29:56] ERROR root fetch - processPackages [Pyfall]: Unable to get metadata: No such project 'Pyfall'
+[2023-05-09 13:29:56] INFO root fetch - main [MainThread]: End processing [Pyfall] error
+[2023-05-09 13:29:56] INFO root fetch - processPackages [inference-server]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 13:29:56] INFO root fetch - processPackages [construct-editor]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 13:29:56] INFO root fetch - processPackages [teaspoon]: executing diffoscope
+[2023-05-09 13:29:56] INFO root fetch - processPackages [teaspoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teaspoon-1.3.8.tar.gz tmp/teaspoon-1.3.9.tar.gz --markdown 20230509/t/teaspoon/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-09 13:29:56] INFO root fetch - processPackages [numba-stats]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-09 13:29:56] INFO root fetch - processPackages [money-to-prisoners-common]: New version: [9.9.0] Old Version: [9.8.1]
+[2023-05-09 13:29:56] INFO root fetch - processPackages [torchrl-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-09 13:29:56] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/be/07/0a3bfe7fb5952394ccfec3204e46d9c3761be912d0eb7c0504d41f6e64ef/certora-cli-alpha-master-20230509.10.30.674061.tar.gz
+[2023-05-09 13:29:56] INFO root fetch - processPackages [licensekeygentest]: Downloading https://files.pythonhosted.org/packages/9e/80/08ed11856e03cc596c1e8283d70c2413bc6eeb77bb3ee03de11b2ed1eb72/licensekeygentest-0.1.1.tar.gz
+[2023-05-09 13:29:56] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39212725>=10485760
+[2023-05-09 13:29:56] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-09 13:29:56] INFO root fetch - processPackages [construct-editor]: Downloading https://files.pythonhosted.org/packages/9e/1c/dbd56046ec27aebc3b24ea2a6f1c281a20125f1817670440c4b7db91b2ae/construct-editor-0.1.1.tar.gz
+[2023-05-09 13:29:56] INFO root fetch - processPackages [money-to-prisoners-common]: Downloading https://files.pythonhosted.org/packages/5d/cb/95bfd4475c748becd98f582fde7f77917f81d82dc5fe5adff0015bd4b6ba/money-to-prisoners-common-9.8.1.tar.gz
+[2023-05-09 13:29:56] INFO root fetch - processPackages [numba-stats]: Downloading https://files.pythonhosted.org/packages/58/f3/68d9fac0374598b8a136739d1e61ed038548f83926236b37021dd60d89e5/numba-stats-1.1.1.tar.gz
+[2023-05-09 13:29:56] INFO root fetch - processPackages [inference-server]: Downloading https://files.pythonhosted.org/packages/f3/7e/953b97ad7c6dfbe884ec78829c13592cfbff13002dd225b7452b5ede920f/inference-server-1.0.0.tar.gz
+[2023-05-09 13:29:56] INFO root fetch - processPackages [licensekeygentest]: executing diffoscope
+[2023-05-09 13:29:56] INFO root fetch - processPackages [licensekeygentest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/licensekeygentest-0.0.4.tar.gz tmp/licensekeygentest-0.1.1.tar.gz --markdown 20230509/l/licensekeygentest/0.0.4-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 13:29:56] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/70/13/8cbe47345c0e418e44de0be9cfdb382877a55f35fb6df8e6ebdf8bbece3f/torchrl_nightly-2023.5.8-cp39-cp39-win_amd64.whl
+[2023-05-09 13:29:57] INFO root fetch - processPackages [aiotiktok]: Downloading https://files.pythonhosted.org/packages/a2/04/36be1685a228aafedeb6959337eff0857a34f96d88fcbc97a3dcaab5b4bb/aiotiktok-2.5.4.tar.gz
+[2023-05-09 13:29:57] INFO root fetch - processPackages [aiotiktok]: executing diffoscope
+[2023-05-09 13:29:57] INFO root fetch - processPackages [aiotiktok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotiktok-2.5.3.tar.gz tmp/aiotiktok-2.5.4.tar.gz --markdown 20230509/a/aiotiktok/2.5.3-2.5.4/diff.md --exclude *.pyd
+[2023-05-09 13:29:57] INFO root fetch - processPackages [construct-editor]: Downloading https://files.pythonhosted.org/packages/f9/4d/4f4a0d56809ab85d4a37d8489436ffa03ba6809320d2020105a40f3b2572/construct-editor-0.1.2.tar.gz
+[2023-05-09 13:29:57] INFO root fetch - processPackages [inference-server]: Downloading https://files.pythonhosted.org/packages/39/b0/3b9c5e6adbbe5f613e477d5466a1912bd2575c4d1c58e40df6b384633974/inference-server-1.0.1.tar.gz
+[2023-05-09 13:29:57] INFO root fetch - processPackages [numba-stats]: Downloading https://files.pythonhosted.org/packages/1e/8b/ee7b37e75b9fca0dcadb7564e5e6aa3347d787da2d62c18da11533d3489f/numba-stats-1.2.0.tar.gz
+[2023-05-09 13:29:57] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/c6/41/e1cddf7875baadaeeb390de1a900e03e19b03adc9413503cdd83419ab093/torchrl_nightly-2023.5.9-cp39-cp39-win_amd64.whl
+[2023-05-09 13:29:57] INFO root fetch - processPackages [construct-editor]: executing diffoscope
+[2023-05-09 13:29:57] INFO root fetch - processPackages [construct-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/construct-editor-0.1.1.tar.gz tmp/construct-editor-0.1.2.tar.gz --markdown 20230509/c/construct-editor/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 13:29:57] INFO root fetch - processPackages [inference-server]: executing diffoscope
+[2023-05-09 13:29:57] INFO root fetch - processPackages [inference-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inference-server-1.0.0.tar.gz tmp/inference-server-1.0.1.tar.gz --markdown 20230509/i/inference-server/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 13:29:57] INFO root fetch - processPackages [numba-stats]: executing diffoscope
+[2023-05-09 13:29:57] INFO root fetch - processPackages [numba-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numba-stats-1.1.1.tar.gz tmp/numba-stats-1.2.0.tar.gz --markdown 20230509/n/numba-stats/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 13:29:57] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2023-05-09 13:29:57] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2023.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2023.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20230509/t/torchrl-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 13:29:57] INFO root fetch - processPackages [money-to-prisoners-common]: Downloading https://files.pythonhosted.org/packages/9f/de/a4ca88665fa8d15ad865b1d50ac7c401a42a4cafb79ae3bd4f77999d3708/money-to-prisoners-common-9.9.0.tar.gz
+[2023-05-09 13:29:57] INFO root fetch - processPackages [money-to-prisoners-common]: executing diffoscope
+[2023-05-09 13:29:57] INFO root fetch - processPackages [money-to-prisoners-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/money-to-prisoners-common-9.8.1.tar.gz tmp/money-to-prisoners-common-9.9.0.tar.gz --markdown 20230509/m/money-to-prisoners-common/9.8.1-9.9.0/diff.md --exclude *.pyd
+[2023-05-09 13:29:58] INFO root fetch - main [MainThread]: End processing [licensekeygentest]: success
+[2023-05-09 13:29:58] INFO root fetch - main [MainThread]: End processing [teaspoon]: success
+[2023-05-09 13:29:58] INFO root fetch - main [MainThread]: End processing [aiotiktok]: success
+[2023-05-09 13:29:59] INFO root fetch - main [MainThread]: End processing [inference-server]: success
+[2023-05-09 13:30:00] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2023-05-09 13:30:00] INFO root fetch - main [MainThread]: End processing [construct-editor]: success
+[2023-05-09 13:30:00] INFO root fetch - main [MainThread]: End processing [money-to-prisoners-common]: success
+[2023-05-09 13:30:01] INFO root fetch - main [MainThread]: End processing [numba-stats]: success
+[2023-05-09 13:30:01] INFO root fetch - main [MainThread]: Store serial: [18031268]
