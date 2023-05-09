@@ -1468,3 +1468,88 @@
 [2023-05-09 02:00:37] INFO root fetch - main [MainThread]: End processing [psgspecialelements]: success
 [2023-05-09 02:00:37] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
 [2023-05-09 02:00:37] INFO root fetch - main [MainThread]: Store serial: [18023901]
+[2023-05-09 02:05:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18023901]
+[2023-05-09 02:05:45] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain-util
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: render-engine
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: caterpillar-api
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rime-sdk
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchdatasets-nightly
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mct-nightly
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zoterotex
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: happi
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: caterpillar-api
+[2023-05-09 02:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: SpaGoG
+[2023-05-09 02:05:45] WARNING root fetch - processPackages [langchain-util]: Skipping, unable to determine old version
+[2023-05-09 02:05:45] INFO root fetch - processPackages [langchain-util]: Start processing: jaxkern-nightly
+[2023-05-09 02:05:45] INFO root fetch - main [MainThread]: End processing [langchain-util] error
+[2023-05-09 02:05:45] INFO root fetch - processPackages [render-engine]: New version: [2023.5.1a2] Old Version: [2023.5.1a1]
+[2023-05-09 02:05:45] INFO root fetch - processPackages [caterpillar-api]: New version: [1.60] Old Version: [1.6]
+[2023-05-09 02:05:45] WARNING root fetch - processPackages [SpaGoG]: Skipping, unable to determine old version
+[2023-05-09 02:05:45] INFO root fetch - processPackages [SpaGoG]: Start processing: gnssanalysis
+[2023-05-09 02:05:45] INFO root fetch - processPackages [happi]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-05-09 02:05:45] INFO root fetch - main [MainThread]: End processing [SpaGoG] error
+[2023-05-09 02:05:45] INFO root fetch - processPackages [zoterotex]: New version: [0.0.1a9] Old Version: [0.0.1a8]
+[2023-05-09 02:05:45] INFO root fetch - processPackages [caterpillar-api]: New version: [1.60] Old Version: [1.6]
+[2023-05-09 02:05:45] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-05-09 02:05:45] INFO root fetch - processPackages [rime-sdk]: New version: [2.1.0rc2] Old Version: [2.1.0rc1]
+[2023-05-09 02:05:45] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1683504227] Old Version: [1683417797]
+[2023-05-09 02:05:45] INFO root fetch - processPackages [gnssanalysis]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 02:05:45] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-09 02:05:45] INFO root fetch - processPackages [rime-sdk]: executing diffoscope
+[2023-05-09 02:05:45] INFO root fetch - processPackages [rime-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rime_sdk-2.1.0rc1.tar.gz tmp/rime_sdk-2.1.0rc2.tar.gz --markdown 20230509/r/rime-sdk/2.1.0rc1-2.1.0rc2/diff.md --exclude *.pyd
+[2023-05-09 02:05:45] INFO root fetch - processPackages [zoterotex]: executing diffoscope
+[2023-05-09 02:05:45] INFO root fetch - processPackages [zoterotex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zoterotex-0.0.1a8.tar.gz tmp/zoterotex-0.0.1a9.tar.gz --markdown 20230509/z/zoterotex/0.0.1a8-0.0.1a9/diff.md --exclude *.pyd
+[2023-05-09 02:05:45] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-05-09 02:05:45] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230509/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-05-09 02:05:45] INFO root fetch - processPackages [caterpillar-api]: Downloading https://files.pythonhosted.org/packages/6b/5d/b26bff51e9c50f3d104a3e018dcaa8f774b53baa945081b4d2d6bed226aa/caterpillar_api-1.6.tar.gz
+[2023-05-09 02:05:45] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-09 02:05:45] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230509/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-09 02:05:45] INFO root fetch - processPackages [gnssanalysis]: executing diffoscope
+[2023-05-09 02:05:45] INFO root fetch - processPackages [gnssanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnssanalysis-0.0.8.tar.gz tmp/gnssanalysis-0.0.9.tar.gz --markdown 20230509/g/gnssanalysis/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 02:05:45] INFO root fetch - processPackages [caterpillar-api]: Downloading https://files.pythonhosted.org/packages/6b/5d/b26bff51e9c50f3d104a3e018dcaa8f774b53baa945081b4d2d6bed226aa/caterpillar_api-1.6.tar.gz
+[2023-05-09 02:05:46] INFO root fetch - processPackages [render-engine]: Downloading https://files.pythonhosted.org/packages/cd/76/b183c221656b5f3fa195047c479abe3168861d31f93857e427aad7cbd3b7/render_engine-2023.5.1a2.tar.gz
+[2023-05-09 02:05:46] INFO root fetch - processPackages [happi]: Downloading https://files.pythonhosted.org/packages/3d/86/fd59d681e0c6c867ca0f5e14c8ab569a22d2e134c7dc221e4ccb133eacae/happi-2.1.1.tar.gz
+[2023-05-09 02:05:46] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/2d/37/c569693a3b868e62fcae2ba2c789bfae3f889f291203af73e18e36fcde8a/torchdatasets-nightly-1683504227.tar.gz
+[2023-05-09 02:05:46] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-05-09 02:05:46] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1683417797.tar.gz tmp/torchdatasets-nightly-1683504227.tar.gz --markdown 20230509/t/torchdatasets-nightly/1683417797-1683504227/diff.md --exclude *.pyd
+[2023-05-09 02:05:46] INFO root fetch - processPackages [caterpillar-api]: Downloading https://files.pythonhosted.org/packages/0f/9d/6d7b812bb109f458fbf1a42d05c0fca68e3de49bd135d6d656eb534b25b9/caterpillar_api-1.60.tar.gz
+[2023-05-09 02:05:46] INFO root fetch - processPackages [caterpillar-api]: Downloading https://files.pythonhosted.org/packages/0f/9d/6d7b812bb109f458fbf1a42d05c0fca68e3de49bd135d6d656eb534b25b9/caterpillar_api-1.60.tar.gz
+[2023-05-09 02:05:46] INFO root fetch - processPackages [render-engine]: executing diffoscope
+[2023-05-09 02:05:46] INFO root fetch - processPackages [render-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/render_engine-2023.5.1a1.tar.gz tmp/render_engine-2023.5.1a2.tar.gz --markdown 20230509/r/render-engine/2023.5.1a1-2023.5.1a2/diff.md --exclude *.pyd
+[2023-05-09 02:05:46] INFO root fetch - processPackages [happi]: Downloading https://files.pythonhosted.org/packages/ab/91/e3e5a60bb7318a6b0e8d8beb582c1c79c888f660820f287f5193fec9d2ef/happi-2.2.0.tar.gz
+[2023-05-09 02:05:46] INFO root fetch - processPackages [happi]: executing diffoscope
+[2023-05-09 02:05:46] INFO root fetch - processPackages [happi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/happi-2.1.1.tar.gz tmp/happi-2.2.0.tar.gz --markdown 20230509/h/happi/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-05-09 02:05:46] INFO root fetch - processPackages [caterpillar-api]: executing diffoscope
+[2023-05-09 02:05:46] INFO root fetch - processPackages [caterpillar-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caterpillar_api-1.6.tar.gz tmp/caterpillar_api-1.60.tar.gz --markdown 20230509/c/caterpillar-api/1.6-1.60/diff.md --exclude *.pyd
+[2023-05-09 02:05:46] INFO root fetch - processPackages [caterpillar-api]: executing diffoscope
+[2023-05-09 02:05:46] INFO root fetch - processPackages [caterpillar-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caterpillar_api-1.6.tar.gz tmp/caterpillar_api-1.60.tar.gz --markdown 20230509/c/caterpillar-api/1.6-1.60/diff.md --exclude *.pyd
+[2023-05-09 02:05:47] INFO root fetch - processPackages [zoterotex]: Start processing: jefferson-street-singer-ingest
+[2023-05-09 02:05:47] INFO root fetch - main [MainThread]: End processing [zoterotex]: success
+[2023-05-09 02:05:47] INFO root fetch - processPackages [jefferson-street-singer-ingest]: New version: [2.9.0] Old Version: [2.8.5]
+[2023-05-09 02:05:47] INFO root fetch - processPackages [jaxkern-nightly]: Start processing: perpetuo
+[2023-05-09 02:05:47] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-09 02:05:47] INFO root fetch - processPackages [jefferson-street-singer-ingest]: Downloading https://files.pythonhosted.org/packages/4a/8f/81ecdd73518cebb3e83d0b5bffb537a1e5a8136c5bc9b6d3cbf6e8770dc3/jefferson-street-singer-ingest-2.9.0.tar.gz
+[2023-05-09 02:05:47] INFO root fetch - processPackages [perpetuo]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-09 02:05:47] INFO root fetch - processPackages [caterpillar-api]: Start processing: SAPsim
+[2023-05-09 02:05:47] INFO root fetch - main [MainThread]: End processing [caterpillar-api]: success
+[2023-05-09 02:05:47] INFO root fetch - processPackages [SAPsim]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-09 02:05:47] INFO root fetch - processPackages [jefferson-street-singer-ingest]: executing diffoscope
+[2023-05-09 02:05:47] INFO root fetch - processPackages [jefferson-street-singer-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jefferson-street-singer-ingest-2.8.5.tar.gz tmp/jefferson-street-singer-ingest-2.9.0.tar.gz --markdown 20230509/j/jefferson-street-singer-ingest/2.8.5-2.9.0/diff.md --exclude *.pyd
+[2023-05-09 02:05:47] INFO root fetch - main [MainThread]: End processing [caterpillar-api]: success
+[2023-05-09 02:05:47] INFO root fetch - processPackages [SAPsim]: executing diffoscope
+[2023-05-09 02:05:47] INFO root fetch - processPackages [SAPsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SAPsim-1.0.6.tar.gz tmp/SAPsim-1.0.7.tar.gz --markdown 20230509/S/SAPsim/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-09 02:05:47] INFO root fetch - processPackages [perpetuo]: Downloading https://files.pythonhosted.org/packages/be/0e/049e0524577081894373a48d9ad17688bc52ac3b0a4bd630a4878f57322a/perpetuo-0.3.2.tar.gz
+[2023-05-09 02:05:47] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-05-09 02:05:48] INFO root fetch - main [MainThread]: End processing [gnssanalysis]: success
+[2023-05-09 02:05:48] INFO root fetch - processPackages [perpetuo]: Downloading https://files.pythonhosted.org/packages/23/99/ccce793e1cf97387fb7afb1afb7baeb7cbb6c331fac808c6986264b60438/perpetuo-0.4.0.tar.gz
+[2023-05-09 02:05:48] INFO root fetch - main [MainThread]: End processing [happi]: success
+[2023-05-09 02:05:48] INFO root fetch - main [MainThread]: End processing [render-engine]: success
+[2023-05-09 02:05:48] INFO root fetch - processPackages [perpetuo]: executing diffoscope
+[2023-05-09 02:05:48] INFO root fetch - processPackages [perpetuo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perpetuo-0.3.2.tar.gz tmp/perpetuo-0.4.0.tar.gz --markdown 20230509/p/perpetuo/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-09 02:05:48] INFO root fetch - main [MainThread]: End processing [jefferson-street-singer-ingest]: success
+[2023-05-09 02:05:48] INFO root fetch - main [MainThread]: End processing [SAPsim]: success
+[2023-05-09 02:05:49] INFO root fetch - main [MainThread]: End processing [perpetuo]: success
+[2023-05-09 02:05:52] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
+[2023-05-09 02:05:54] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-05-09 02:05:54] INFO root fetch - main [MainThread]: Store serial: [18023950]
