@@ -9777,3 +9777,104 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 07:56:03] INFO root fetch - main [MainThread]: End processing [mpyl]: success
 [2023-05-09 07:56:04] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
 [2023-05-09 07:56:04] INFO root fetch - main [MainThread]: Store serial: [18027971]
+[2023-05-09 08:01:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027971]
+[2023-05-09 08:01:14] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-dnsimple
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chalkpy
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: formkit-ninja
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: veevatools
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: KeepSoft-AIFloodMaster
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-aiven
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bp-query-tool
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-fastly
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: macrometa-source-collection
+[2023-05-09 08:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: practica1-pandas-erika
+[2023-05-09 08:01:14] INFO root fetch - processPackages [veevatools]: New version: [0.0.97] Old Version: [0.0.96]
+[2023-05-09 08:01:14] INFO root fetch - processPackages [bp-query-tool]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-09 08:01:14] INFO root fetch - processPackages [formkit-ninja]: New version: [0.3.1] Old Version: [0.3.0a1]
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-dnsimple]: New version: [3.5.0a1683610131] Old Version: [3.5.0a1683350830]
+[2023-05-09 08:01:14] WARNING root fetch - processPackages [KeepSoft-AIFloodMaster]: Skipping, unable to determine old version
+[2023-05-09 08:01:14] INFO root fetch - processPackages [KeepSoft-AIFloodMaster]: Start processing: macrometa-target-mongo
+[2023-05-09 08:01:14] INFO root fetch - main [MainThread]: End processing [KeepSoft-AIFloodMaster] error
+[2023-05-09 08:01:14] WARNING root fetch - processPackages [practica1-pandas-erika]: Skipping, unable to determine old version
+[2023-05-09 08:01:14] INFO root fetch - processPackages [macrometa-source-collection]: New version: [0.0.27] Old Version: [0.0.26]
+[2023-05-09 08:01:14] INFO root fetch - processPackages [practica1-pandas-erika]: Start processing: Slpapy
+[2023-05-09 08:01:14] INFO root fetch - main [MainThread]: End processing [practica1-pandas-erika] error
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-aiven]: New version: [6.2.0a1683609864] Old Version: [6.2.0a1683350550]
+[2023-05-09 08:01:14] INFO root fetch - processPackages [chalkpy]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-fastly]: New version: [7.4.0a1683610349] Old Version: [7.4.0a1683351244]
+[2023-05-09 08:01:14] INFO root fetch - processPackages [macrometa-target-mongo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 08:01:14] INFO root fetch - processPackages [Slpapy]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-05-09 08:01:14] INFO root fetch - processPackages [bp-query-tool]: Downloading https://files.pythonhosted.org/packages/e7/56/02456a493bc193bebb93a49a06a12374c6f8268733f23fdab5c4afce41e0/bp_query_tool-1.0.2.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/4f/cc/133b6e5145eca08b4a77c1dcab26bcfad8b4973b3198454fab70e4fdafc7/pulumi_dnsimple-3.5.0a1683350830.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [formkit-ninja]: Downloading https://files.pythonhosted.org/packages/48/52/b2c5e4042e8be194d2aba7135c5223003428427f73c5832c2a82d4078c80/formkit_ninja-0.3.1.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/a6/d5/964ec4e75bd00f17c4d477b9a1f45488f3db6ade3d721820cb56321b48ac/pulumi_aiven-6.2.0a1683350550.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/e8/0f/e5764d6dcf83f8829e643ca44cc798b02c5c2f1640c4009ab278949dc84b/pulumi_fastly-7.4.0a1683351244.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/dd/89/be527b8d299d1d2d3c7930d21022f1238fddc197b2491020a1082f5d1a0a/chalkpy-2.2.0.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [macrometa-source-collection]: Downloading https://files.pythonhosted.org/packages/92/29/add3e779f0ec780e4470c4e9c6425156a51263dde6a5ad53c3d576f2d841/macrometa-source-collection-0.0.26.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [macrometa-target-mongo]: Downloading https://files.pythonhosted.org/packages/ef/d4/a749f2e67e9171099f2c4ed2c75142cadd30ab1784967ffc875704a40ee6/macrometa-target-mongo-0.0.8.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/06/4d/ecfc567b0acb571b78843101e4348cdef30a98fbf3da9a90913ce0b8f203/Slpapy-0.2.9.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [formkit-ninja]: executing diffoscope
+[2023-05-09 08:01:14] INFO root fetch - processPackages [formkit-ninja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formkit_ninja-0.3.0a1.tar.gz tmp/formkit_ninja-0.3.1.tar.gz --markdown 20230509/f/formkit-ninja/0.3.0a1-0.3.1/diff.md --exclude *.pyd
+[2023-05-09 08:01:14] INFO root fetch - processPackages [veevatools]: Downloading https://files.pythonhosted.org/packages/c7/6a/53d43dcfd97ee33e18859c6d59fdbafddc280629ea0239f7f1eb6727516e/veevatools-0.0.97.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [bp-query-tool]: Downloading https://files.pythonhosted.org/packages/d8/73/63066146558e17ec49f786888f1ab7a88b2ecd36f16d393a81b1cb1826fe/bp_query_tool-1.0.3.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [Slpapy]: Downloading https://files.pythonhosted.org/packages/37/92/21e1de51b537a5dab35ebc51ce9deb0f6e4f83e9b4d9dc4527f512a40a49/Slpapy-0.3.0-py3-none-any.whl
+[2023-05-09 08:01:14] INFO root fetch - processPackages [veevatools]: executing diffoscope
+[2023-05-09 08:01:14] INFO root fetch - processPackages [veevatools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veevatools-0.0.96.tar.gz tmp/veevatools-0.0.97.tar.gz --markdown 20230509/v/veevatools/0.0.96-0.0.97/diff.md --exclude *.pyd
+[2023-05-09 08:01:14] INFO root fetch - processPackages [macrometa-source-collection]: Downloading https://files.pythonhosted.org/packages/c7/86/4b6202954f8b331b0608a20f672c96cfc16884e3ede29fb86fd8d49cd98e/macrometa-source-collection-0.0.27.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/1c/ad/2599d6cdadd1c8cf853a801078f474f92d3f33c55593d416209928f0b359/chalkpy-2.3.0.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [Slpapy]: executing diffoscope
+[2023-05-09 08:01:14] INFO root fetch - processPackages [Slpapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Slpapy-0.2.9.tar.gz tmp/Slpapy-0.3.0-py3-none-any.whl.zip --markdown 20230509/S/Slpapy/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 08:01:14] INFO root fetch - processPackages [bp-query-tool]: executing diffoscope
+[2023-05-09 08:01:14] INFO root fetch - processPackages [bp-query-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bp_query_tool-1.0.2.tar.gz tmp/bp_query_tool-1.0.3.tar.gz --markdown 20230509/b/bp-query-tool/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-09 08:01:14] INFO root fetch - processPackages [macrometa-source-collection]: executing diffoscope
+[2023-05-09 08:01:14] INFO root fetch - processPackages [macrometa-source-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-collection-0.0.26.tar.gz tmp/macrometa-source-collection-0.0.27.tar.gz --markdown 20230509/m/macrometa-source-collection/0.0.26-0.0.27/diff.md --exclude *.pyd
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/3b/1a/674b615b0b260ae24b5f2e90934dc4a67e23355a01adafbe9f943a34a548/pulumi_dnsimple-3.5.0a1683610131.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-05-09 08:01:14] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.2.0.tar.gz tmp/chalkpy-2.3.0.tar.gz --markdown 20230509/c/chalkpy/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/28/c4/0a49b6dc6bdad9ea192204fb89db8f77db36170b61874a35cfede79afc4f/pulumi_fastly-7.4.0a1683610349.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [macrometa-target-mongo]: Downloading https://files.pythonhosted.org/packages/7d/ba/e4d42212a121d6658bf7d01b8b0e4fde578004371ebe2f5ad0d4905926e9/macrometa-target-mongo-0.0.9.tar.gz
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-dnsimple]: executing diffoscope
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-dnsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_dnsimple-3.5.0a1683350830.tar.gz tmp/pulumi_dnsimple-3.5.0a1683610131.tar.gz --markdown 20230509/p/pulumi-dnsimple/3.5.0a1683350830-3.5.0a1683610131/diff.md --exclude *.pyd
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-fastly]: executing diffoscope
+[2023-05-09 08:01:14] INFO root fetch - processPackages [pulumi-fastly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_fastly-7.4.0a1683351244.tar.gz tmp/pulumi_fastly-7.4.0a1683610349.tar.gz --markdown 20230509/p/pulumi-fastly/7.4.0a1683351244-7.4.0a1683610349/diff.md --exclude *.pyd
+[2023-05-09 08:01:15] INFO root fetch - processPackages [macrometa-target-mongo]: executing diffoscope
+[2023-05-09 08:01:15] INFO root fetch - processPackages [macrometa-target-mongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-mongo-0.0.8.tar.gz tmp/macrometa-target-mongo-0.0.9.tar.gz --markdown 20230509/m/macrometa-target-mongo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 08:01:15] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/f7/30/e6ef5c4de70e64afb67cf8c88b542d51953e62abc464e261ea0d1ac4c8c6/pulumi_aiven-6.2.0a1683609864.tar.gz
+[2023-05-09 08:01:15] INFO root fetch - processPackages [pulumi-aiven]: executing diffoscope
+[2023-05-09 08:01:15] INFO root fetch - processPackages [pulumi-aiven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aiven-6.2.0a1683350550.tar.gz tmp/pulumi_aiven-6.2.0a1683609864.tar.gz --markdown 20230509/p/pulumi-aiven/6.2.0a1683350550-6.2.0a1683609864/diff.md --exclude *.pyd
+[2023-05-09 08:01:16] INFO root fetch - processPackages [Slpapy]: Start processing: django-bunny
+[2023-05-09 08:01:16] INFO root fetch - main [MainThread]: End processing [Slpapy]: success
+[2023-05-09 08:01:16] INFO root fetch - processPackages [django-bunny]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 08:01:16] INFO root fetch - processPackages [macrometa-source-collection]: Start processing: bp-data-fabric
+[2023-05-09 08:01:16] INFO root fetch - main [MainThread]: End processing [macrometa-source-collection]: success
+[2023-05-09 08:01:16] INFO root fetch - processPackages [bp-data-fabric]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-09 08:01:16] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 08:01:16] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.8.tar.gz tmp/django-bunny-1.0.9.tar.gz --markdown 20230509/d/django-bunny/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 08:01:16] INFO root fetch - processPackages [bp-data-fabric]: Downloading https://files.pythonhosted.org/packages/13/73/7630457128797e72dc6211fa38f5fbbf33ee6d7ac3929dd7a59ee5b639bf/bp_data_fabric-1.0.6.tar.gz
+[2023-05-09 08:01:16] INFO root fetch - processPackages [pulumi-dnsimple]: Start processing: pulumi-digitalocean
+[2023-05-09 08:01:16] INFO root fetch - main [MainThread]: End processing [pulumi-dnsimple]: success
+[2023-05-09 08:01:16] INFO root fetch - processPackages [bp-data-fabric]: Downloading https://files.pythonhosted.org/packages/5d/ab/f55bdd49a5c9df9afb35356cc8e90100086a5a13b678d68ee32a63ec0511/bp_data_fabric-1.0.7.tar.gz
+[2023-05-09 08:01:16] INFO root fetch - processPackages [bp-data-fabric]: executing diffoscope
+[2023-05-09 08:01:16] INFO root fetch - processPackages [bp-data-fabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bp_data_fabric-1.0.6.tar.gz tmp/bp_data_fabric-1.0.7.tar.gz --markdown 20230509/b/bp-data-fabric/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-09 08:01:16] INFO root fetch - processPackages [pulumi-digitalocean]: New version: [4.9.0a1637244514] Old Version: [4.9.0]
+[2023-05-09 08:01:16] INFO root fetch - processPackages [formkit-ninja]: Start processing: pulumi-confluentcloud
+[2023-05-09 08:01:16] INFO root fetch - main [MainThread]: End processing [formkit-ninja]: success
+[2023-05-09 08:01:16] INFO root fetch - main [MainThread]: End processing [macrometa-target-mongo]: success
+[2023-05-09 08:01:16] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2023-05-09 08:01:16] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2023-05-09 08:01:16] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20230509/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/diff.md --exclude *.pyd
+[2023-05-09 08:01:16] INFO root fetch - processPackages [pulumi-digitalocean]: Downloading https://files.pythonhosted.org/packages/27/fe/88f79d9daf961f609409c5330a59d5bf5ff3effa841b5317256e773c92dd/pulumi_digitalocean-4.9.0.tar.gz
+[2023-05-09 08:01:16] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
+[2023-05-09 08:01:17] INFO root fetch - main [MainThread]: End processing [veevatools]: success
+[2023-05-09 08:01:17] INFO root fetch - processPackages [pulumi-digitalocean]: Downloading https://files.pythonhosted.org/packages/aa/e4/0dfa539667fb3462b4c16072050ebf8e1a80d862ac88c8b00ae29b019195/pulumi_digitalocean-4.9.0a1637244514.tar.gz
+[2023-05-09 08:01:17] INFO root fetch - processPackages [pulumi-digitalocean]: executing diffoscope
+[2023-05-09 08:01:17] INFO root fetch - processPackages [pulumi-digitalocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_digitalocean-4.9.0.tar.gz tmp/pulumi_digitalocean-4.9.0a1637244514.tar.gz --markdown 20230509/p/pulumi-digitalocean/4.9.0-4.9.0a1637244514/diff.md --exclude *.pyd
+[2023-05-09 08:01:17] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 08:01:17] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
+[2023-05-09 08:01:17] INFO root fetch - main [MainThread]: End processing [bp-data-fabric]: success
+[2023-05-09 08:01:18] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2023-05-09 08:01:18] INFO root fetch - main [MainThread]: End processing [bp-query-tool]: success
+[2023-05-09 08:01:19] INFO root fetch - main [MainThread]: End processing [pulumi-digitalocean]: success
+[2023-05-09 08:01:20] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-05-09 08:01:20] INFO root fetch - main [MainThread]: Store serial: [18028019]
