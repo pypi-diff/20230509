@@ -19292,3 +19292,182 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 17:18:00] INFO root fetch - processPackages [pylyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylyzer-0.0.8-py3-none-win_amd64.whl.zip tmp/pylyzer-0.0.9-py3-none-win_amd64.whl.zip --markdown 20230509/p/pylyzer/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-05-09 17:19:00] INFO root fetch - main [MainThread]: End processing [pylyzer]: success
 [2023-05-09 17:19:00] INFO root fetch - main [MainThread]: Store serial: [18033938]
+[2023-05-09 17:24:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18033938]
+[2023-05-09 17:24:36] INFO root fetch - main [MainThread]: Found 32 changed packages
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EdgeGPT
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FlexGet
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prodigy-teams
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webuiapi
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scsd
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: firepup650
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: docarray
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: enos
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pepperize.cdk-security-group
+[2023-05-09 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cluster-experiments
+[2023-05-09 17:24:36] INFO root fetch - processPackages [webuiapi]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [scsd]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [prodigy-teams]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [EdgeGPT]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [firepup650]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [enos]: New version: [8.0.0a3] Old Version: [8.0.0a2]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [cluster-experiments]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [docarray]: New version: [0.9.9.dev5] Old Version: [0.9.9.dev4]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [pepperize.cdk-security-group]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [FlexGet]: New version: [3.6.9] Old Version: [3.6.8]
+[2023-05-09 17:24:36] INFO root fetch - processPackages [webuiapi]: Downloading https://files.pythonhosted.org/packages/ed/33/ed148df983a1d01042c73a2317a5b746a20dd40eef86070c867d80d31ac1/webuiapi-0.6.2-py3-none-any.whl
+[2023-05-09 17:24:36] INFO root fetch - processPackages [cluster-experiments]: Downloading https://files.pythonhosted.org/packages/c0/b8/dff4fcb5f529ee8f4faea8f9dcabe2a2bdb603f9cfb15473fbe330a7812e/cluster_experiments-0.7.1.tar.gz
+[2023-05-09 17:24:36] INFO root fetch - processPackages [scsd]: Downloading https://files.pythonhosted.org/packages/99/63/61e5583b7e64ec1c28adfcd2ca8500fdc9288b334a184e1d6b05175ca457/scsd-0.0.4.tar.gz
+[2023-05-09 17:24:36] INFO root fetch - processPackages [enos]: Downloading https://files.pythonhosted.org/packages/a6/53/c482947a0667155b88e15517e191ea93c561bd963a05e6c822df52d4051d/enos-8.0.0a3.tar.gz
+[2023-05-09 17:24:37] INFO root fetch - processPackages [cluster-experiments]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [cluster-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluster_experiments-0.7.0.tar.gz tmp/cluster_experiments-0.7.1.tar.gz --markdown 20230509/c/cluster-experiments/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-09 17:24:37] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/8d/f8/09cc1c4d2d5d8bda33b6cff70f3df88f99d970685aa748ec003d41bf2f6c/EdgeGPT-0.3.7.tar.gz
+[2023-05-09 17:24:37] INFO root fetch - processPackages [firepup650]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [firepup650]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firepup650-1.0.8.tar.gz tmp/firepup650-1.0.9.tar.gz --markdown 20230509/f/firepup650/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:37] INFO root fetch - processPackages [pepperize.cdk-security-group]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [pepperize.cdk-security-group]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-security-group-0.0.98.tar.gz tmp/pepperize.cdk-security-group-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-security-group/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 17:24:37] INFO root fetch - processPackages [prodigy-teams]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [prodigy-teams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prodigy-teams-0.1.8.tar.gz tmp/prodigy-teams-0.1.9.tar.gz --markdown 20230509/p/prodigy-teams/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:37] INFO root fetch - processPackages [docarray]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [docarray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docarray-0.9.9.dev4.tar.gz tmp/docarray-0.9.9.dev5.tar.gz --markdown 20230509/d/docarray/0.9.9.dev4-0.9.9.dev5/diff.md --exclude *.pyd
+[2023-05-09 17:24:37] INFO root fetch - processPackages [FlexGet]: Downloading https://files.pythonhosted.org/packages/d1/62/d2855fb5468a41c844caad003d282621e043698ed2e42ea997416da713da/FlexGet-3.6.9.tar.gz
+[2023-05-09 17:24:37] INFO root fetch - processPackages [webuiapi]: Downloading https://files.pythonhosted.org/packages/c5/04/5752905d81608d9f7fdbb01dc72fcfb6f856bc43d092670d0403f2a382be/webuiapi-0.7.0-py3-none-any.whl
+[2023-05-09 17:24:37] INFO root fetch - processPackages [enos]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [enos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enos-8.0.0a2.tar.gz tmp/enos-8.0.0a3.tar.gz --markdown 20230509/e/enos/8.0.0a2-8.0.0a3/diff.md --exclude *.pyd
+[2023-05-09 17:24:37] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.3.6.tar.gz tmp/EdgeGPT-0.3.7.tar.gz --markdown 20230509/E/EdgeGPT/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-09 17:24:37] INFO root fetch - processPackages [scsd]: Downloading https://files.pythonhosted.org/packages/68/54/ab75b58a5b61988996698655a8786990d74a388bd914889e1e85f4da9ae5/scsd-0.0.5.tar.gz
+[2023-05-09 17:24:37] INFO root fetch - processPackages [webuiapi]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [webuiapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webuiapi-0.6.2-py3-none-any.whl.zip tmp/webuiapi-0.7.0-py3-none-any.whl.zip --markdown 20230509/w/webuiapi/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-09 17:24:37] INFO root fetch - processPackages [scsd]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [scsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scsd-0.0.4.tar.gz tmp/scsd-0.0.5.tar.gz --markdown 20230509/s/scsd/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 17:24:37] INFO root fetch - processPackages [FlexGet]: executing diffoscope
+[2023-05-09 17:24:37] INFO root fetch - processPackages [FlexGet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlexGet-3.6.8.tar.gz tmp/FlexGet-3.6.9.tar.gz --markdown 20230509/F/FlexGet/3.6.8-3.6.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:38] INFO root fetch - processPackages [EdgeGPT]: Start processing: geveze
+[2023-05-09 17:24:38] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-09 17:24:38] WARNING root fetch - processPackages [geveze]: Skipping, unable to determine old version
+[2023-05-09 17:24:38] INFO root fetch - processPackages [geveze]: Start processing: getsmarter-api-clients
+[2023-05-09 17:24:38] INFO root fetch - main [MainThread]: End processing [geveze] error
+[2023-05-09 17:24:38] INFO root fetch - processPackages [getsmarter-api-clients]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-09 17:24:38] INFO root fetch - processPackages [firepup650]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-09 17:24:38] INFO root fetch - main [MainThread]: End processing [firepup650]: success
+[2023-05-09 17:24:38] INFO root fetch - processPackages [pepperize.cdk-security-group]: Start processing: ardilla
+[2023-05-09 17:24:38] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-security-group]: success
+[2023-05-09 17:24:38] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230509.15.20.621163] Old Version: [20230509.13.16.449997]
+[2023-05-09 17:24:38] WARNING root fetch - processPackages [ardilla]: Skipping, unable to determine old version
+[2023-05-09 17:24:38] INFO root fetch - processPackages [ardilla]: Start processing: pystacker
+[2023-05-09 17:24:38] INFO root fetch - main [MainThread]: End processing [ardilla] error
+[2023-05-09 17:24:38] INFO root fetch - processPackages [pystacker]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-09 17:24:38] INFO root fetch - processPackages [webuiapi]: Start processing: pystacker
+[2023-05-09 17:24:38] INFO root fetch - main [MainThread]: End processing [webuiapi]: success
+[2023-05-09 17:24:38] INFO root fetch - processPackages [getsmarter-api-clients]: Downloading https://files.pythonhosted.org/packages/67/8f/7eff03fc990e2718f1a29a260a2d9fb9f4adad7345a8059ad8d2125e2dd3/getsmarter-api-clients-0.5.3.tar.gz
+[2023-05-09 17:24:38] INFO root fetch - processPackages [pystacker]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-09 17:24:38] INFO root fetch - processPackages [scsd]: Start processing: mama
+[2023-05-09 17:24:38] INFO root fetch - main [MainThread]: End processing [scsd]: success
+[2023-05-09 17:24:39] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/29/db/4c5498fe5ff32fe89fce673d23b3d5cd7fab7db5d6f7b0337d7d4c152ca4/certora-cli-alpha-roy-CERT-1955-assertHits-20230509.13.16.449997.tar.gz
+[2023-05-09 17:24:39] INFO root fetch - processPackages [mama]: New version: [0.7.9] Old Version: [0.7.7]
+[2023-05-09 17:24:39] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38475394>=10485760
+[2023-05-09 17:24:39] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Start processing: splight-lib
+[2023-05-09 17:24:39] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-09 17:24:39] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/f4/e5/d547f784a1fb7e410605afd1f3afded20566aef3f71e4bd2c111077141b8/pystacker-1.2.8.tar.gz
+[2023-05-09 17:24:39] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/f4/e5/d547f784a1fb7e410605afd1f3afded20566aef3f71e4bd2c111077141b8/pystacker-1.2.8.tar.gz
+[2023-05-09 17:24:39] INFO root fetch - processPackages [enos]: Start processing: hrin-msb
+[2023-05-09 17:24:39] INFO root fetch - main [MainThread]: End processing [enos]: success
+[2023-05-09 17:24:39] INFO root fetch - processPackages [splight-lib]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-09 17:24:39] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 17:24:39] INFO root fetch - processPackages [mama]: executing diffoscope
+[2023-05-09 17:24:39] INFO root fetch - processPackages [mama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mama-0.7.7.tar.gz tmp/mama-0.7.9.tar.gz --markdown 20230509/m/mama/0.7.7-0.7.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:39] INFO root fetch - processPackages [cluster-experiments]: Start processing: parsigs
+[2023-05-09 17:24:39] INFO root fetch - main [MainThread]: End processing [cluster-experiments]: success
+[2023-05-09 17:24:39] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-05-09 17:24:39] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.3.8.tar.gz tmp/splight-lib-2.3.9.tar.gz --markdown 20230509/s/splight-lib/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:39] INFO root fetch - processPackages [parsigs]: New version: [0.0.4b0] Old Version: [0.0.3b0]
+[2023-05-09 17:24:39] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-09 17:24:39] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230509/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:39] INFO root fetch - processPackages [getsmarter-api-clients]: Downloading https://files.pythonhosted.org/packages/39/9a/a29c8aa10079b1e7e1a5f51e2ece6f532ece3c1efb2166bb655ca375649c/getsmarter-api-clients-0.5.4.tar.gz
+[2023-05-09 17:24:39] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/8c/24/0eeee80193cf061d0406639fb1514c409281ce630c71938249aa58c72c4a/pystacker-1.2.9-py3.10.egg
+[2023-05-09 17:24:39] INFO root fetch - processPackages [pystacker]: Downloading https://files.pythonhosted.org/packages/8c/24/0eeee80193cf061d0406639fb1514c409281ce630c71938249aa58c72c4a/pystacker-1.2.9-py3.10.egg
+[2023-05-09 17:24:39] INFO root fetch - processPackages [parsigs]: Downloading https://files.pythonhosted.org/packages/de/74/cfc1baa4b9a7503997acbfa2b75d39d5d5a8654c46ec9ead5288e8f0861d/parsigs-0.0.3b0.tar.gz
+[2023-05-09 17:24:39] INFO root fetch - processPackages [getsmarter-api-clients]: executing diffoscope
+[2023-05-09 17:24:39] INFO root fetch - processPackages [getsmarter-api-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getsmarter-api-clients-0.5.3.tar.gz tmp/getsmarter-api-clients-0.5.4.tar.gz --markdown 20230509/g/getsmarter-api-clients/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-09 17:24:39] INFO root fetch - processPackages [pystacker]: executing diffoscope
+[2023-05-09 17:24:39] INFO root fetch - processPackages [pystacker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystacker-1.2.8.tar.gz tmp/pystacker-1.2.9-py3.10.egg --markdown 20230509/p/pystacker/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:39] INFO root fetch - processPackages [pystacker]: executing diffoscope
+[2023-05-09 17:24:39] INFO root fetch - processPackages [pystacker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystacker-1.2.8.tar.gz tmp/pystacker-1.2.9-py3.10.egg --markdown 20230509/p/pystacker/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:39] INFO root fetch - processPackages [parsigs]: Downloading https://files.pythonhosted.org/packages/24/ac/5ddd9da5732e317ab9d94557b88216f7bc99373f3241cb1f66d6e58171c2/parsigs-0.0.4b0.tar.gz
+[2023-05-09 17:24:39] INFO root fetch - processPackages [docarray]: Start processing: cybrid-api-organization-python
+[2023-05-09 17:24:39] INFO root fetch - main [MainThread]: End processing [docarray]: success
+[2023-05-09 17:24:39] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 17:24:39] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-09 17:24:39] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:39] INFO root fetch - processPackages [parsigs]: executing diffoscope
+[2023-05-09 17:24:39] INFO root fetch - processPackages [parsigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsigs-0.0.3b0.tar.gz tmp/parsigs-0.0.4b0.tar.gz --markdown 20230509/p/parsigs/0.0.3b0-0.0.4b0/diff.md --exclude *.pyd
+[2023-05-09 17:24:40] INFO root fetch - processPackages [prodigy-teams]: Start processing: certora-cli-alpha-roy-CERT-1891-allocId-c
+[2023-05-09 17:24:40] INFO root fetch - main [MainThread]: End processing [prodigy-teams]: success
+[2023-05-09 17:24:40] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1891-allocId-c]: New version: [20230509.15.22.75654] Old Version: [20230509.13.14.61130]
+[2023-05-09 17:24:40] INFO root fetch - processPackages [mama]: Start processing: cohere-sagemaker
+[2023-05-09 17:24:40] INFO root fetch - main [MainThread]: End processing [mama]: success
+[2023-05-09 17:24:40] INFO root fetch - processPackages [cohere-sagemaker]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-09 17:24:40] INFO root fetch - processPackages [pystacker]: Start processing: tumfl
+[2023-05-09 17:24:40] INFO root fetch - main [MainThread]: End processing [pystacker]: success
+[2023-05-09 17:24:40] INFO root fetch - processPackages [pystacker]: Start processing: pandera
+[2023-05-09 17:24:40] INFO root fetch - main [MainThread]: End processing [pystacker]: success
+[2023-05-09 17:24:40] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1891-allocId-c]: Downloading https://files.pythonhosted.org/packages/37/ba/a98a0a0d269bfcb2504cdda5952c69eac7a242bde47f805494a538169258/certora-cli-alpha-roy-CERT-1891-allocId-c-20230509.13.14.61130.tar.gz
+[2023-05-09 17:24:40] INFO root fetch - processPackages [tumfl]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-09 17:24:40] INFO root fetch - processPackages [pandera]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-09 17:24:40] INFO root fetch - processPackages [getsmarter-api-clients]: Start processing: nomnomdata-engine
+[2023-05-09 17:24:40] INFO root fetch - main [MainThread]: End processing [getsmarter-api-clients]: success
+[2023-05-09 17:24:40] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1891-allocId-c]: Skipping package: exceeds size limit 38482203>=10485760
+[2023-05-09 17:24:40] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1891-allocId-c]: Start processing: cybrid-api-id-python
+[2023-05-09 17:24:40] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1891-allocId-c] error
+[2023-05-09 17:24:40] INFO root fetch - processPackages [cohere-sagemaker]: Downloading https://files.pythonhosted.org/packages/3e/82/b50bae19d37841ac0194e84d50a6bca03f539324362a2365fb1310531052/cohere-sagemaker-0.6.1.tar.gz
+[2023-05-09 17:24:40] INFO root fetch - processPackages [nomnomdata-engine]: New version: [1.1.9] Old Version: [1.1.8.post6.dev0]
+[2023-05-09 17:24:41] INFO root fetch - processPackages [nomnomdata-engine]: executing diffoscope
+[2023-05-09 17:24:41] INFO root fetch - processPackages [nomnomdata-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomnomdata-engine-1.1.8.post6.dev0.tar.gz tmp/nomnomdata-engine-1.1.9.tar.gz --markdown 20230509/n/nomnomdata-engine/1.1.8.post6.dev0-1.1.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:41] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 17:24:41] INFO root fetch - processPackages [tumfl]: Downloading https://files.pythonhosted.org/packages/1c/35/360d9145aee5aa2208a03e101c085e81fe634a749b2a3b68335e5f3c2499/tumfl-0.1.6.tar.gz
+[2023-05-09 17:24:41] INFO root fetch - processPackages [cohere-sagemaker]: executing diffoscope
+[2023-05-09 17:24:41] INFO root fetch - processPackages [cohere-sagemaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cohere-sagemaker-0.6.0.tar.gz tmp/cohere-sagemaker-0.6.1.tar.gz --markdown 20230509/c/cohere-sagemaker/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-09 17:24:41] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-09 17:24:41] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:41] INFO root fetch - processPackages [parsigs]: Start processing: eoshep
+[2023-05-09 17:24:41] INFO root fetch - main [MainThread]: End processing [parsigs]: success
+[2023-05-09 17:24:41] INFO root fetch - processPackages [tumfl]: executing diffoscope
+[2023-05-09 17:24:41] INFO root fetch - processPackages [tumfl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tumfl-0.1.5.tar.gz tmp/tumfl-0.1.6.tar.gz --markdown 20230509/t/tumfl/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-09 17:24:41] INFO root fetch - processPackages [eoshep]: New version: [1.0.8.dev1231] Old Version: [1.0.7.dev1230]
+[2023-05-09 17:24:41] INFO root fetch - processPackages [eoshep]: Downloading https://files.pythonhosted.org/packages/e7/22/1e521bbcb17fe13e8ffba3135bc3fd990bd104057fbef4ea7fda8b6f69b2/eoshep-1.0.7.dev1230-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-09 17:24:41] INFO root fetch - processPackages [pandera]: executing diffoscope
+[2023-05-09 17:24:41] INFO root fetch - processPackages [pandera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandera-0.8.1.tar.gz tmp/pandera-0.9.0.tar.gz --markdown 20230509/p/pandera/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 17:24:41] INFO root fetch - processPackages [cybrid-api-organization-python]: Start processing: pymx2
+[2023-05-09 17:24:41] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-09 17:24:41] WARNING root fetch - processPackages [eoshep]: Skipping package: exceeds size limit 68543759>=10485760
+[2023-05-09 17:24:41] INFO root fetch - processPackages [eoshep]: Start processing: overwatch-client
+[2023-05-09 17:24:41] INFO root fetch - main [MainThread]: End processing [eoshep] error
+[2023-05-09 17:24:41] INFO root fetch - processPackages [pymx2]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 17:24:41] WARNING root fetch - processPackages [overwatch-client]: Skipping, unable to determine old version
+[2023-05-09 17:24:41] INFO root fetch - processPackages [overwatch-client]: Start processing: cybrid-api-bank-python
+[2023-05-09 17:24:41] INFO root fetch - main [MainThread]: End processing [overwatch-client] error
+[2023-05-09 17:24:41] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 17:24:41] INFO root fetch - processPackages [pymx2]: Downloading https://files.pythonhosted.org/packages/98/cd/ef09465a57588bf39b6d3a98fad427eb9f535a3966c611417230d3d30a5f/pymx2-0.1.4.tar.gz
+[2023-05-09 17:24:41] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-09 17:24:41] INFO root fetch - processPackages [splight-lib]: Start processing: shellgenius
+[2023-05-09 17:24:41] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 17:24:41] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
+[2023-05-09 17:24:42] INFO root fetch - processPackages [shellgenius]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 17:24:42] INFO root fetch - processPackages [pymx2]: Downloading https://files.pythonhosted.org/packages/62/50/a8a9fc20cefd24f881f498d85d97799e39a2ead90147e9fd05087d40bfca/pymx2-0.1.5.tar.gz
+[2023-05-09 17:24:42] INFO root fetch - processPackages [shellgenius]: Downloading https://files.pythonhosted.org/packages/9c/73/76d03a4e8a7bd8744210e943fd04161418522803404602b823b3dcfe4d8e/shellgenius-0.1.4.tar.gz
+[2023-05-09 17:24:42] INFO root fetch - processPackages [pymx2]: executing diffoscope
+[2023-05-09 17:24:42] INFO root fetch - processPackages [pymx2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymx2-0.1.4.tar.gz tmp/pymx2-0.1.5.tar.gz --markdown 20230509/p/pymx2/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 17:24:42] INFO root fetch - processPackages [shellgenius]: Downloading https://files.pythonhosted.org/packages/a7/7a/72b016df1ad65fc7ca8cd6aad88d541347df67d88f689da9b5946c7607c1/shellgenius-0.1.5.tar.gz
+[2023-05-09 17:24:42] INFO root fetch - main [MainThread]: End processing [cohere-sagemaker]: success
+[2023-05-09 17:24:42] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-09 17:24:42] INFO root fetch - processPackages [shellgenius]: executing diffoscope
+[2023-05-09 17:24:42] INFO root fetch - processPackages [shellgenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellgenius-0.1.4.tar.gz tmp/shellgenius-0.1.5.tar.gz --markdown 20230509/s/shellgenius/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 17:24:42] INFO root fetch - main [MainThread]: End processing [nomnomdata-engine]: success
+[2023-05-09 17:24:42] INFO root fetch - main [MainThread]: End processing [tumfl]: success
+[2023-05-09 17:24:43] INFO root fetch - main [MainThread]: End processing [pymx2]: success
+[2023-05-09 17:24:43] INFO root fetch - main [MainThread]: End processing [shellgenius]: success
+[2023-05-09 17:24:44] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-09 17:24:45] INFO root fetch - main [MainThread]: End processing [pandera]: success
+[2023-05-09 17:24:46] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-09 17:24:51] INFO root fetch - main [MainThread]: End processing [FlexGet]: success
+[2023-05-09 17:24:51] INFO root fetch - main [MainThread]: Store serial: [18034041]
