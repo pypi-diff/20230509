@@ -5535,3 +5535,76 @@
 [2023-05-09 03:53:29] INFO root fetch - main [MainThread]: End processing [circuitpython-styles]: success
 [2023-05-09 03:53:30] INFO root fetch - main [MainThread]: End processing [static-frame]: success
 [2023-05-09 03:53:30] INFO root fetch - main [MainThread]: Store serial: [18025848]
+[2023-05-09 03:58:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18025848]
+[2023-05-09 03:58:39] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 03:58:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: np-tools
+[2023-05-09 03:58:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edgartools
+[2023-05-09 03:58:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: terminut
+[2023-05-09 03:58:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mecsimcalc
+[2023-05-09 03:58:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: video-subtitles
+[2023-05-09 03:58:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ykenan-fragments
+[2023-05-09 03:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mctthermalface
+[2023-05-09 03:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: alibabacloud-dingtalk
+[2023-05-09 03:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nail
+[2023-05-09 03:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Zeraora
+[2023-05-09 03:58:40] INFO root fetch - processPackages [mecsimcalc]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [ykenan-fragments]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [edgartools]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [mctthermalface]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [terminut]: New version: [0.0.0.869] Old Version: [0.0.0.840]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [video-subtitles]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [np-tools]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [alibabacloud-dingtalk]: New version: [2.0.11] Old Version: [2.0.10]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [nail]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [Zeraora]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-09 03:58:40] INFO root fetch - processPackages [video-subtitles]: Downloading https://files.pythonhosted.org/packages/1e/1f/2a5967de32e833bf2ec393defb304720bbdc406794b3978ea311d47ed6c4/video-subtitles-1.0.2.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [mecsimcalc]: Downloading https://files.pythonhosted.org/packages/13/c0/7475b07e102672fe8ef9096ae2f51e4016e284ca9a0a2314464a8b39f474/mecsimcalc-0.0.2.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [terminut]: Downloading https://files.pythonhosted.org/packages/0a/c0/a6132c28dc4320fd016c33c7279300e3051bca24edf56a2a57338e61b246/terminut-0.0.0.869.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [alibabacloud-dingtalk]: Downloading https://files.pythonhosted.org/packages/be/a0/3146663b18df68e79e747742c682993fb6e2fc6eee51197c60217e2b0e92/alibabacloud_dingtalk-2.0.10.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [edgartools]: Downloading https://files.pythonhosted.org/packages/76/aa/ebb268156805abc8802c88304b9ddbd86e796b9ffa0ec20c9ebfd2b551e7/edgartools-1.8.0.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [np-tools]: Downloading https://files.pythonhosted.org/packages/c7/92/8224707c2552157ecd45ecf6395ae21132d42f4480fd245e3143e49d9750/np_tools-0.1.6.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [Zeraora]: Downloading https://files.pythonhosted.org/packages/74/14/83d31d897102a20d02793f062bddb920de68a77444b812928d93ae242924/Zeraora-0.2.6.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [ykenan-fragments]: executing diffoscope
+[2023-05-09 03:58:40] INFO root fetch - processPackages [ykenan-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_fragments-1.1.8.tar.gz tmp/ykenan_fragments-1.1.9.tar.gz --markdown 20230509/y/ykenan-fragments/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-09 03:58:40] INFO root fetch - processPackages [nail]: Downloading https://files.pythonhosted.org/packages/4a/86/35736e5bf66a1e1f00b7e19465b29aab112c8af6522e523268724f33acc7/nail-0.1.1.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [video-subtitles]: executing diffoscope
+[2023-05-09 03:58:40] INFO root fetch - processPackages [video-subtitles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/video-subtitles-1.0.1.tar.gz tmp/video-subtitles-1.0.2.tar.gz --markdown 20230509/v/video-subtitles/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 03:58:40] INFO root fetch - processPackages [terminut]: executing diffoscope
+[2023-05-09 03:58:40] INFO root fetch - processPackages [terminut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminut-0.0.0.840.tar.gz tmp/terminut-0.0.0.869.tar.gz --markdown 20230509/t/terminut/0.0.0.840-0.0.0.869/diff.md --exclude *.pyd
+[2023-05-09 03:58:40] INFO root fetch - processPackages [mctthermalface]: Downloading https://files.pythonhosted.org/packages/ea/9a/298f56d79592e6fd03b76b5d627c70656e7aa890f511e3efc4bc12beedc9/mctthermalface-0.2.0.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [mecsimcalc]: Downloading https://files.pythonhosted.org/packages/b6/d4/2d3560723998786aa7c54888ac2e6e2e87a93472878393b4f8d5c8426464/mecsimcalc-0.0.3.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [np-tools]: Downloading https://files.pythonhosted.org/packages/c9/22/a2785b3b5484300f46774d4f51c0051b94507e648337cf5a12239ada4ace/np_tools-0.1.7.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [mecsimcalc]: executing diffoscope
+[2023-05-09 03:58:40] INFO root fetch - processPackages [mecsimcalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecsimcalc-0.0.2.tar.gz tmp/mecsimcalc-0.0.3.tar.gz --markdown 20230509/m/mecsimcalc/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 03:58:40] INFO root fetch - processPackages [nail]: Downloading https://files.pythonhosted.org/packages/35/81/291d75534c7264fe5b8c1e8d1005592c3da057d028ea18ad6a6304399c71/nail-0.1.2.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [alibabacloud-dingtalk]: Downloading https://files.pythonhosted.org/packages/b5/0c/108e63d327435cf36a8a32a1e58eecd878e6baa95cb25f5eb6a6251313b4/alibabacloud_dingtalk-2.0.11.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [Zeraora]: Downloading https://files.pythonhosted.org/packages/fc/71/bed2b4cdb1d98d3185173a2e17e7ad062b0dc3827955b7354119cc931ea4/Zeraora-0.2.7.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [edgartools]: Downloading https://files.pythonhosted.org/packages/95/4d/ba04ca89fe945efed60356f76abfc11629cd667eb29602362888354a580c/edgartools-1.9.0.tar.gz
+[2023-05-09 03:58:40] INFO root fetch - processPackages [mctthermalface]: executing diffoscope
+[2023-05-09 03:58:40] INFO root fetch - processPackages [mctthermalface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mctthermalface-0.1.1.tar.gz tmp/mctthermalface-0.2.0.tar.gz --markdown 20230509/m/mctthermalface/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 03:58:40] INFO root fetch - processPackages [np-tools]: executing diffoscope
+[2023-05-09 03:58:40] INFO root fetch - processPackages [np-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_tools-0.1.6.tar.gz tmp/np_tools-0.1.7.tar.gz --markdown 20230509/n/np-tools/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-09 03:58:40] INFO root fetch - processPackages [nail]: executing diffoscope
+[2023-05-09 03:58:40] INFO root fetch - processPackages [nail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nail-0.1.1.tar.gz tmp/nail-0.1.2.tar.gz --markdown 20230509/n/nail/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 03:58:40] INFO root fetch - processPackages [edgartools]: executing diffoscope
+[2023-05-09 03:58:40] INFO root fetch - processPackages [edgartools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgartools-1.8.0.tar.gz tmp/edgartools-1.9.0.tar.gz --markdown 20230509/e/edgartools/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 03:58:40] INFO root fetch - processPackages [Zeraora]: executing diffoscope
+[2023-05-09 03:58:40] INFO root fetch - processPackages [Zeraora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Zeraora-0.2.6.tar.gz tmp/Zeraora-0.2.7.tar.gz --markdown 20230509/Z/Zeraora/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-09 03:58:41] INFO root fetch - processPackages [alibabacloud-dingtalk]: executing diffoscope
+[2023-05-09 03:58:41] INFO root fetch - processPackages [alibabacloud-dingtalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dingtalk-2.0.10.tar.gz tmp/alibabacloud_dingtalk-2.0.11.tar.gz --markdown 20230509/a/alibabacloud-dingtalk/2.0.10-2.0.11/diff.md --exclude *.pyd
+[2023-05-09 03:58:41] INFO root fetch - processPackages [terminut]: Start processing: SpatialGlue
+[2023-05-09 03:58:41] INFO root fetch - main [MainThread]: End processing [terminut]: success
+[2023-05-09 03:58:41] INFO root fetch - processPackages [SpatialGlue]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 03:58:41] INFO root fetch - processPackages [SpatialGlue]: executing diffoscope
+[2023-05-09 03:58:41] INFO root fetch - processPackages [SpatialGlue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpatialGlue-1.0.0.tar.gz tmp/SpatialGlue-1.0.2.tar.gz --markdown 20230509/S/SpatialGlue/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 03:58:42] INFO root fetch - main [MainThread]: End processing [mecsimcalc]: success
+[2023-05-09 03:58:42] INFO root fetch - main [MainThread]: End processing [np-tools]: success
+[2023-05-09 03:58:42] INFO root fetch - main [MainThread]: End processing [ykenan-fragments]: success
+[2023-05-09 03:58:42] INFO root fetch - main [MainThread]: End processing [nail]: success
+[2023-05-09 03:58:42] INFO root fetch - main [MainThread]: End processing [mctthermalface]: success
+[2023-05-09 03:58:42] INFO root fetch - main [MainThread]: End processing [Zeraora]: success
+[2023-05-09 03:58:42] INFO root fetch - main [MainThread]: End processing [video-subtitles]: success
+[2023-05-09 03:58:44] INFO root fetch - main [MainThread]: End processing [edgartools]: success
+[2023-05-09 03:58:44] INFO root fetch - main [MainThread]: End processing [SpatialGlue]: success
+[2023-05-09 03:58:45] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
+[2023-05-09 03:58:45] INFO root fetch - main [MainThread]: Store serial: [18025884]

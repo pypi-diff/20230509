@@ -1,0 +1,813 @@
+# Comparing `tmp/mecsimcalc-0.0.2.tar.gz` & `tmp/mecsimcalc-0.0.3.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "mecsimcalc-0.0.2.tar", last modified: Sat May  6 03:56:47 2023, max compression
++gzip compressed data, was "mecsimcalc-0.0.3.tar", last modified: Tue May  9 01:53:37 2023, max compression
+```
+
+## Comparing `mecsimcalc-0.0.2.tar` & `mecsimcalc-0.0.3.tar`
+
+### file list
+
+```diff
+@@ -1,15 +1,15 @@
+-drwxrwxrwx   0        0        0        0 2023-05-06 03:56:47.148438 mecsimcalc-0.0.2/
+--rw-rw-rw-   0        0        0     1088 2023-05-01 03:16:58.000000 mecsimcalc-0.0.2/LICENSE
+-drwxrwxrwx   0        0        0        0 2023-05-06 03:56:47.140931 mecsimcalc-0.0.2/MecSimCalc.egg-info/
+--rw-rw-rw-   0        0        0      908 2023-05-06 03:56:46.000000 mecsimcalc-0.0.2/MecSimCalc.egg-info/PKG-INFO
+--rw-rw-rw-   0        0        0      412 2023-05-06 03:56:47.000000 mecsimcalc-0.0.2/MecSimCalc.egg-info/SOURCES.txt
+--rw-rw-rw-   0        0        0        1 2023-05-06 03:56:46.000000 mecsimcalc-0.0.2/MecSimCalc.egg-info/dependency_links.txt
+--rw-rw-rw-   0        0        0       46 2023-05-06 03:56:46.000000 mecsimcalc-0.0.2/MecSimCalc.egg-info/requires.txt
+--rw-rw-rw-   0        0        0       11 2023-05-06 03:56:46.000000 mecsimcalc-0.0.2/MecSimCalc.egg-info/top_level.txt
+--rw-rw-rw-   0        0        0      908 2023-05-06 03:56:47.147437 mecsimcalc-0.0.2/PKG-INFO
+--rw-rw-rw-   0        0        0       18 2023-05-01 03:16:58.000000 mecsimcalc-0.0.2/README.md
+-drwxrwxrwx   0        0        0        0 2023-05-06 03:56:47.144437 mecsimcalc-0.0.2/mecsimcalc/
+--rw-rw-rw-   0        0        0     4814 2023-05-06 03:45:21.000000 mecsimcalc-0.0.2/mecsimcalc/MecSimCalc.py
+--rw-rw-rw-   0        0        0        0 2023-05-06 03:45:22.000000 mecsimcalc-0.0.2/mecsimcalc/__init__.py
+--rw-rw-rw-   0        0        0       42 2023-05-06 03:56:47.148438 mecsimcalc-0.0.2/setup.cfg
+--rw-rw-rw-   0        0        0     1466 2023-05-06 03:55:46.000000 mecsimcalc-0.0.2/setup.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-09 01:53:37.303190 mecsimcalc-0.0.3/
++-rw-r--r--   0 runner    (1001) docker     (123)     1067 2023-05-09 01:53:22.000000 mecsimcalc-0.0.3/LICENSE
++-rw-r--r--   0 runner    (1001) docker     (123)      783 2023-05-09 01:53:37.303190 mecsimcalc-0.0.3/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)       18 2023-05-09 01:53:22.000000 mecsimcalc-0.0.3/README.md
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-09 01:53:37.303190 mecsimcalc-0.0.3/mecsimcalc/
++-rw-r--r--   0 runner    (1001) docker     (123)     4997 2023-05-09 01:53:22.000000 mecsimcalc-0.0.3/mecsimcalc/MecSimCalc.py
++-rw-r--r--   0 runner    (1001) docker     (123)        0 2023-05-09 01:53:22.000000 mecsimcalc-0.0.3/mecsimcalc/__init__.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-09 01:53:37.303190 mecsimcalc-0.0.3/mecsimcalc.egg-info/
++-rw-r--r--   0 runner    (1001) docker     (123)      783 2023-05-09 01:53:37.000000 mecsimcalc-0.0.3/mecsimcalc.egg-info/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)      243 2023-05-09 01:53:37.000000 mecsimcalc-0.0.3/mecsimcalc.egg-info/SOURCES.txt
++-rw-r--r--   0 runner    (1001) docker     (123)        1 2023-05-09 01:53:37.000000 mecsimcalc-0.0.3/mecsimcalc.egg-info/dependency_links.txt
++-rw-r--r--   0 runner    (1001) docker     (123)       46 2023-05-09 01:53:37.000000 mecsimcalc-0.0.3/mecsimcalc.egg-info/requires.txt
++-rw-r--r--   0 runner    (1001) docker     (123)       11 2023-05-09 01:53:37.000000 mecsimcalc-0.0.3/mecsimcalc.egg-info/top_level.txt
++-rw-r--r--   0 runner    (1001) docker     (123)       38 2023-05-09 01:53:37.303190 mecsimcalc-0.0.3/setup.cfg
++-rw-r--r--   0 runner    (1001) docker     (123)     1325 2023-05-09 01:53:22.000000 mecsimcalc-0.0.3/setup.py
+```
+
+### Comparing `mecsimcalc-0.0.2/LICENSE` & `mecsimcalc-0.0.3/LICENSE`
+
+ * *Ordering differences only*
+
+ * *Files 20% similar despite different names*
+
+```diff
+@@ -1,21 +1,21 @@
+-MIT License
+-
+-Copyright (c) 2023 MecSimCalc
+-
+-Permission is hereby granted, free of charge, to any person obtaining a copy
+-of this software and associated documentation files (the "Software"), to deal
+-in the Software without restriction, including without limitation the rights
+-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+-copies of the Software, and to permit persons to whom the Software is
+-furnished to do so, subject to the following conditions:
+-
+-The above copyright notice and this permission notice shall be included in all
+-copies or substantial portions of the Software.
+-
+-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+-SOFTWARE.
++MIT License
++
++Copyright (c) 2023 MecSimCalc
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.
+```
+
+### Comparing `mecsimcalc-0.0.2/mecsimcalc/MecSimCalc.py` & `mecsimcalc-0.0.3/mecsimcalc/MecSimCalc.py`
+
+ * *Files 24% similar despite different names*
+
+```diff
+@@ -1,301 +1,313 @@
+ 00000000: 6672 6f6d 2050 494c 2069 6d70 6f72 7420  from PIL import 
+-00000010: 496d 6167 650d 0a69 6d70 6f72 7420 6261  Image..import ba
+-00000020: 7365 3634 0d0a 696d 706f 7274 2069 6f0d  se64..import io.
+-00000030: 0a69 6d70 6f72 7420 7061 6e64 6173 2061  .import pandas a
+-00000040: 7320 7064 0d0a 6672 6f6d 2074 7970 696e  s pd..from typin
+-00000050: 6720 696d 706f 7274 2054 7570 6c65 2c20  g import Tuple, 
+-00000060: 556e 696f 6e0d 0a0d 0a0d 0a64 6566 2064  Union......def d
+-00000070: 6563 6f64 655f 6669 6c65 5f64 6174 6128  ecode_file_data(
+-00000080: 0d0a 2020 2020 656e 636f 6465 645f 6461  ..    encoded_da
+-00000090: 7461 2c20 6d65 7461 6461 7461 3a20 626f  ta, metadata: bo
+-000000a0: 6f6c 203d 2046 616c 7365 0d0a 2920 2d3e  ol = False..) ->
+-000000b0: 2055 6e69 6f6e 5b69 6f2e 4279 7465 7349   Union[io.BytesI
+-000000c0: 4f2c 2054 7570 6c65 5b73 7472 2c20 696f  O, Tuple[str, io
+-000000d0: 2e42 7974 6573 494f 5d5d 3a0d 0a20 2020  .BytesIO]]:..   
+-000000e0: 2022 2222 0d0a 2020 2020 436f 6e76 6572   """..    Conver
+-000000f0: 7473 2061 2062 6173 6536 3420 656e 636f  ts a base64 enco
+-00000100: 6465 6420 6669 6c65 2064 6174 6120 696e  ded file data in
+-00000110: 746f 2061 2066 696c 6520 6f62 6a65 6374  to a file object
+-00000120: 2e0d 0a0d 0a20 2020 2041 7267 733a 0d0a  .....    Args:..
+-00000130: 2020 2020 2020 2020 656e 636f 6465 645f          encoded_
+-00000140: 6461 7461 2028 7374 7229 3a20 4261 7365  data (str): Base
+-00000150: 3634 2065 6e63 6f64 6564 2066 696c 6520  64 encoded file 
+-00000160: 6461 7461 0d0a 2020 2020 2020 2020 6d65  data..        me
+-00000170: 7461 6461 7461 2028 626f 6f6c 2c20 6f70  tadata (bool, op
+-00000180: 7469 6f6e 616c 293a 2049 6620 5472 7565  tional): If True
+-00000190: 2c20 7265 7475 726e 7320 6120 7475 706c  , returns a tupl
+-000001a0: 6520 6f66 2028 6669 6c65 4461 7461 2c20  e of (fileData, 
+-000001b0: 6d65 7461 6461 7461 292e 2044 6566 6175  metadata). Defau
+-000001c0: 6c74 7320 746f 2046 616c 7365 2e0d 0a0d  lts to False....
+-000001d0: 0a20 2020 2052 6574 7572 6e73 3a0d 0a20  .    Returns:.. 
+-000001e0: 2020 2020 2020 2069 6f2e 4279 7465 7349         io.BytesI
+-000001f0: 4f3a 2066 696c 6544 6174 610d 0a20 2020  O: fileData..   
+-00000200: 2020 2020 2028 696f 2e42 7974 6573 494f       (io.BytesIO
+-00000210: 2c20 7374 7229 3a20 6669 6c65 4461 7461  , str): fileData
+-00000220: 2c20 6d65 7461 6461 7461 0d0a 0d0a 2020  , metadata....  
+-00000230: 2020 2222 220d 0a0d 0a20 2020 206d 6574    """....    met
+-00000240: 612c 2064 6174 6120 3d20 656e 636f 6465  a, data = encode
+-00000250: 645f 6461 7461 2e73 706c 6974 2822 3b62  d_data.split(";b
+-00000260: 6173 6536 342c 2229 0d0a 0d0a 2020 2020  ase64,")....    
+-00000270: 6669 6c65 5f64 6174 6120 3d20 696f 2e42  file_data = io.B
+-00000280: 7974 6573 494f 2862 6173 6536 342e 6236  ytesIO(base64.b6
+-00000290: 3464 6563 6f64 6528 6461 7461 2929 0d0a  4decode(data))..
+-000002a0: 2020 2020 6d65 7461 5f64 6174 6120 3d20      meta_data = 
+-000002b0: 6622 7b6d 6574 617d 3b62 6173 6536 342c  f"{meta};base64,
+-000002c0: 220d 0a0d 0a20 2020 2072 6574 7572 6e20  "....    return 
+-000002d0: 2866 696c 655f 6461 7461 2c20 6d65 7461  (file_data, meta
+-000002e0: 5f64 6174 6129 2069 6620 6d65 7461 6461  _data) if metada
+-000002f0: 7461 2065 6c73 6520 6669 6c65 5f64 6174  ta else file_dat
+-00000300: 610d 0a0d 0a0d 0a64 6566 2066 696c 655f  a......def file_
+-00000310: 6461 7461 5f74 6f5f 6461 7461 6672 616d  data_to_datafram
+-00000320: 6528 6669 6c65 5f64 6174 6129 202d 3e20  e(file_data) -> 
+-00000330: 7064 2e44 6174 6146 7261 6d65 3a0d 0a20  pd.DataFrame:.. 
+-00000340: 2020 2022 2222 0d0a 2020 2020 436f 6e76     """..    Conv
+-00000350: 6572 7473 2061 2066 696c 6520 6f62 6a65  erts a file obje
+-00000360: 6374 2069 6e74 6f20 6120 7061 6e64 6173  ct into a pandas
+-00000370: 2064 6174 6166 7261 6d65 0d0a 0d0a 2020   dataframe....  
+-00000380: 2020 4172 6773 3a0d 0a20 2020 2020 2020    Args:..       
+-00000390: 2066 696c 655f 6461 7461 2028 696f 2e42   file_data (io.B
+-000003a0: 7974 6573 494f 293a 2044 6563 6f64 6564  ytesIO): Decoded
+-000003b0: 2066 696c 6520 6461 7461 2066 726f 6d20   file data from 
+-000003c0: 6465 636f 6465 5f66 696c 655f 6461 7461  decode_file_data
+-000003d0: 2829 0d0a 0d0a 2020 2020 5261 6973 6573  ()....    Raises
+-000003e0: 3a0d 0a20 2020 2020 2020 2070 642e 6572  :..        pd.er
+-000003f0: 726f 7273 2e50 6172 7365 7245 7272 6f72  rors.ParserError
+-00000400: 3a20 4966 2074 6865 2066 696c 6520 6973  : If the file is
+-00000410: 206e 6f74 2061 2043 5356 206f 7220 4578   not a CSV or Ex
+-00000420: 6365 6c20 6669 6c65 2028 6f72 2069 6620  cel file (or if 
+-00000430: 7468 6520 6669 6c65 2069 7320 636f 7272  the file is corr
+-00000440: 7570 7429 0d0a 0d0a 2020 2020 5265 7475  upt)....    Retu
+-00000450: 726e 733a 0d0a 2020 2020 2020 2020 7064  rns:..        pd
+-00000460: 2e44 6174 6146 7261 6d65 3a20 6120 6461  .DataFrame: a da
+-00000470: 7461 6672 616d 6520 6f66 2074 6865 2066  taframe of the f
+-00000480: 696c 6520 6461 7461 0d0a 2020 2020 2222  ile data..    ""
+-00000490: 220d 0a0d 0a20 2020 2074 7279 3a0d 0a20  "....    try:.. 
+-000004a0: 2020 2020 2020 2064 6620 3d20 7064 2e72         df = pd.r
+-000004b0: 6561 645f 6373 7628 6669 6c65 5f64 6174  ead_csv(file_dat
+-000004c0: 6129 0d0a 2020 2020 6578 6365 7074 2070  a)..    except p
+-000004d0: 642e 6572 726f 7273 2e50 6172 7365 7245  d.errors.ParserE
+-000004e0: 7272 6f72 3a0d 0a20 2020 2020 2020 2064  rror:..        d
+-000004f0: 6620 3d20 7064 2e72 6561 645f 6578 6365  f = pd.read_exce
+-00000500: 6c28 6669 6c65 5f64 6174 6129 0d0a 2020  l(file_data)..  
+-00000510: 2020 6578 6365 7074 3a0d 0a20 2020 2020    except:..     
+-00000520: 2020 2072 6169 7365 2045 7863 6570 7469     raise Excepti
+-00000530: 6f6e 2822 4669 6c65 2074 7970 6520 6e6f  on("File type no
+-00000540: 7420 7375 7070 6f72 7465 6422 2c20 7064  t supported", pd
+-00000550: 2e65 7272 6f72 732e 5061 7273 6572 4572  .errors.ParserEr
+-00000560: 726f 7229 0d0a 2020 2020 7265 7475 726e  ror)..    return
+-00000570: 2064 660d 0a0d 0a0d 0a64 6566 2069 6e70   df......def inp
+-00000580: 7574 5f74 6f5f 6461 7461 6672 616d 6528  ut_to_dataframe(
+-00000590: 6669 6c65 2920 2d3e 2070 642e 4461 7461  file) -> pd.Data
+-000005a0: 4672 616d 653a 0d0a 2020 2020 2222 220d  Frame:..    """.
+-000005b0: 0a20 2020 2043 6f6e 7665 7274 7320 6120  .    Converts a 
+-000005c0: 6261 7365 3634 2065 6e63 6f64 6564 2066  base64 encoded f
+-000005d0: 696c 6520 6461 7461 2069 6e74 6f20 6120  ile data into a 
+-000005e0: 7061 6e64 6173 2064 6174 6166 7261 6d65  pandas dataframe
+-000005f0: 0d0a 0d0a 2020 2020 4172 6773 3a0d 0a20  ....    Args:.. 
+-00000600: 2020 2020 2020 2066 696c 6520 2873 7472         file (str
+-00000610: 293a 2062 6173 6536 3420 656e 636f 6465  ): base64 encode
+-00000620: 6420 6669 6c65 2064 6174 610d 0a0d 0a20  d file data.... 
+-00000630: 2020 2052 6574 7572 6e73 3a0d 0a20 2020     Returns:..   
+-00000640: 2020 2020 2070 642e 4461 7461 4672 616d       pd.DataFram
+-00000650: 653a 2061 2064 6174 6166 7261 6d65 206f  e: a dataframe o
+-00000660: 6620 7468 6520 6669 6c65 2064 6174 610d  f the file data.
+-00000670: 0a20 2020 2022 2222 0d0a 0d0a 2020 2020  .    """....    
+-00000680: 6669 6c65 4461 7461 203d 2064 6563 6f64  fileData = decod
+-00000690: 655f 6669 6c65 5f64 6174 6128 6669 6c65  e_file_data(file
+-000006a0: 290d 0a20 2020 2072 6574 7572 6e20 6669  )..    return fi
+-000006b0: 6c65 5f64 6174 615f 746f 5f64 6174 6166  le_data_to_dataf
+-000006c0: 7261 6d65 2866 696c 6544 6174 6129 0d0a  rame(fileData)..
+-000006d0: 0d0a 0d0a 6465 6620 6461 7461 6672 616d  ....def datafram
+-000006e0: 655f 746f 5f6f 7574 7075 7428 0d0a 2020  e_to_output(..  
+-000006f0: 2020 6466 2c20 446f 776e 6c6f 6164 5465    df, DownloadTe
+-00000700: 7874 3a20 7374 7220 3d20 2244 6f77 6e6c  xt: str = "Downl
+-00000710: 6f61 6420 4669 6c65 222c 2044 6f77 6e6c  oad File", Downl
+-00000720: 6f61 6446 696c 654e 616d 653a 2073 7472  oadFileName: str
+-00000730: 203d 2022 6d79 6669 6c65 220d 0a29 202d   = "myfile"..) -
+-00000740: 3e20 5475 706c 655b 7374 722c 2073 7472  > Tuple[str, str
+-00000750: 5d3a 0d0a 2020 2020 2222 220d 0a20 2020  ]:..    """..   
+-00000760: 2043 6f6e 7665 7274 7320 6120 7061 6e64   Converts a pand
+-00000770: 6173 2064 6174 6166 7261 6d65 2069 6e74  as dataframe int
+-00000780: 6f20 616e 2048 544d 4c20 7461 626c 6520  o an HTML table 
+-00000790: 616e 6420 6120 646f 776e 6c6f 6164 206c  and a download l
+-000007a0: 696e 6b0d 0a0d 0a20 2020 2041 7267 733a  ink....    Args:
+-000007b0: 0d0a 2020 2020 2020 2020 6466 2028 6466  ..        df (df
+-000007c0: 293a 2070 616e 6461 7320 6461 7461 6672  ): pandas datafr
+-000007d0: 616d 650d 0a20 2020 2020 2020 2044 6f77  ame..        Dow
+-000007e0: 6e6c 6f61 6454 6578 7420 2873 7472 2c20  nloadText (str, 
+-000007f0: 6f70 7469 6f6e 616c 293a 2064 6f77 6e6c  optional): downl
+-00000800: 6f61 6420 6c69 6e6b 2074 6578 742e 2044  oad link text. D
+-00000810: 6566 6175 6c74 7320 746f 2027 446f 776e  efaults to 'Down
+-00000820: 6c6f 6164 2046 696c 6527 2e0d 0a20 2020  load File'...   
+-00000830: 2020 2020 2044 6f77 6e6c 6f61 6446 696c       DownloadFil
+-00000840: 654e 616d 6520 2873 7472 2c20 6f70 7469  eName (str, opti
+-00000850: 6f6e 616c 293a 2064 6f77 6e6c 6f61 6420  onal): download 
+-00000860: 6669 6c65 206e 616d 652e 2044 6566 6175  file name. Defau
+-00000870: 6c74 7320 746f 2027 6d79 6669 6c65 2e63  lts to 'myfile.c
+-00000880: 7376 272e 0d0a 0d0a 2020 2020 5265 7475  sv'.....    Retu
+-00000890: 726e 733a 0d0a 2020 2020 2020 2020 5475  rns:..        Tu
+-000008a0: 706c 655b 7374 722c 2073 7472 5d3a 2048  ple[str, str]: H
+-000008b0: 544d 4c20 7461 626c 652c 2064 6f77 6e6c  TML table, downl
+-000008c0: 6f61 6420 6c69 6e6b 0d0a 2020 2020 2222  oad link..    ""
+-000008d0: 220d 0a0d 0a20 2020 2063 7376 5f66 696c  "....    csv_fil
+-000008e0: 6520 3d20 6466 2e74 6f5f 6373 7628 696e  e = df.to_csv(in
+-000008f0: 6465 783d 4661 6c73 6529 0d0a 2020 2020  dex=False)..    
+-00000900: 656e 636f 6465 645f 6461 7461 203d 2028  encoded_data = (
+-00000910: 0d0a 2020 2020 2020 2020 2264 6174 613a  ..        "data:
+-00000920: 7465 7874 2f63 7376 3b62 6173 6536 342c  text/csv;base64,
+-00000930: 2220 2b20 6261 7365 3634 2e62 3634 656e  " + base64.b64en
+-00000940: 636f 6465 2863 7376 5f66 696c 652e 656e  code(csv_file.en
+-00000950: 636f 6465 2829 292e 6465 636f 6465 2829  code()).decode()
+-00000960: 0d0a 2020 2020 290d 0a0d 0a20 2020 2072  ..    )....    r
+-00000970: 6574 7572 6e20 280d 0a20 2020 2020 2020  eturn (..       
+-00000980: 2064 662e 746f 5f68 746d 6c28 292c 0d0a   df.to_html(),..
+-00000990: 2020 2020 2020 2020 6622 3c61 2068 7265          f"<a hre
+-000009a0: 663d 277b 656e 636f 6465 645f 6461 7461  f='{encoded_data
+-000009b0: 7d27 646f 776e 6c6f 6164 3d27 7b44 6f77  }'download='{Dow
+-000009c0: 6e6c 6f61 6446 696c 654e 616d 657d 2e63  nloadFileName}.c
+-000009d0: 7376 273e 7b44 6f77 6e6c 6f61 6454 6578  sv'>{DownloadTex
+-000009e0: 747d 3c2f 613e 222c 0d0a 2020 2020 290d  t}</a>",..    ).
+-000009f0: 0a0d 0a0d 0a64 6566 2070 7269 6e74 5f69  .....def print_i
+-00000a00: 6d67 280d 0a20 2020 2069 6d67 2c0d 0a20  mg(..    img,.. 
+-00000a10: 2020 206d 6574 6164 6174 612c 0d0a 2020     metadata,..  
+-00000a20: 2020 5749 4454 483a 2069 6e74 203d 2032    WIDTH: int = 2
+-00000a30: 3030 2c0d 0a20 2020 2048 4549 4748 543a  00,..    HEIGHT:
+-00000a40: 2069 6e74 203d 2032 3030 2c0d 0a20 2020   int = 200,..   
+-00000a50: 204f 7269 6769 6e61 6c53 697a 653a 2062   OriginalSize: b
+-00000a60: 6f6f 6c20 3d20 4661 6c73 652c 0d0a 2020  ool = False,..  
+-00000a70: 2020 446f 776e 6c6f 6164 5465 7874 3a20    DownloadText: 
+-00000a80: 7374 7220 3d20 2244 6f77 6e6c 6f61 6420  str = "Download 
+-00000a90: 496d 6167 6522 2c0d 0a20 2020 2049 6d61  Image",..    Ima
+-00000aa0: 6765 4e61 6d65 3a20 7374 7220 3d20 226d  geName: str = "m
+-00000ab0: 7969 6d67 222c 0d0a 2920 2d3e 2054 7570  yimg",..) -> Tup
+-00000ac0: 6c65 5b73 7472 2c20 7374 725d 3a0d 0a20  le[str, str]:.. 
+-00000ad0: 2020 2022 2222 0d0a 2020 2020 436f 6e76     """..    Conv
+-00000ae0: 6572 7473 2061 2070 696c 6c6f 7720 696d  erts a pillow im
+-00000af0: 6167 6520 696e 746f 2061 6e20 4854 4d4c  age into an HTML
+-00000b00: 2069 6d61 6765 2061 6e64 2061 2064 6f77   image and a dow
+-00000b10: 6e6c 6f61 6420 6c69 6e6b 0d0a 0d0a 2020  nload link....  
+-00000b20: 2020 4172 6773 3a0d 0a20 2020 2020 2020    Args:..       
+-00000b30: 2069 6d67 2028 5049 4c2e 496d 6167 6529   img (PIL.Image)
+-00000b40: 3a20 7069 6c6c 6f77 2069 6d61 6765 0d0a  : pillow image..
+-00000b50: 2020 2020 2020 2020 6d65 7461 6461 7461          metadata
+-00000b60: 2028 7374 7229 3a20 696d 6167 6520 6d65   (str): image me
+-00000b70: 7461 6461 7461 0d0a 2020 2020 2020 2020  tadata..        
+-00000b80: 5749 4454 4820 2869 6e74 2c20 6f70 7469  WIDTH (int, opti
+-00000b90: 6f6e 616c 293a 2077 6964 7468 206f 6620  onal): width of 
+-00000ba0: 7468 6520 696d 6167 652e 2044 6566 6175  the image. Defau
+-00000bb0: 6c74 7320 746f 2032 3030 2e0d 0a20 2020  lts to 200...   
+-00000bc0: 2020 2020 2048 4549 4748 5420 2869 6e74       HEIGHT (int
+-00000bd0: 2c20 6f70 7469 6f6e 616c 293a 2068 6569  , optional): hei
+-00000be0: 6768 7420 6f66 2074 6865 2069 6d61 6765  ght of the image
+-00000bf0: 2e20 4465 6661 756c 7473 2074 6f20 3230  . Defaults to 20
+-00000c00: 302e 0d0a 2020 2020 2020 2020 4f72 6967  0...        Orig
+-00000c10: 696e 616c 5369 7a65 2028 626f 6f6c 2c20  inalSize (bool, 
+-00000c20: 6f70 7469 6f6e 616c 293a 2049 6620 5472  optional): If Tr
+-00000c30: 7565 2c20 7468 6520 696d 6167 6520 7769  ue, the image wi
+-00000c40: 6c6c 206e 6f74 2062 6520 7265 7369 7a65  ll not be resize
+-00000c50: 642e 2044 6566 6175 6c74 7320 746f 2046  d. Defaults to F
+-00000c60: 616c 7365 2e0d 0a20 2020 2020 2020 2044  alse...        D
+-00000c70: 6f77 6e6c 6f61 6454 6578 7420 2873 7472  ownloadText (str
+-00000c80: 2c20 6f70 7469 6f6e 616c 293a 2064 6f77  , optional): dow
+-00000c90: 6e6c 6f61 6420 6c69 6e6b 2074 6578 742e  nload link text.
+-00000ca0: 2044 6566 6175 6c74 7320 746f 2027 446f   Defaults to 'Do
+-00000cb0: 776e 6c6f 6164 2049 6d61 6765 272e 0d0a  wnload Image'...
+-00000cc0: 2020 2020 2020 2020 496d 6167 654e 616d          ImageNam
+-00000cd0: 6520 2873 7472 2c20 6f70 7469 6f6e 616c  e (str, optional
+-00000ce0: 293a 2064 6f77 6e6c 6f61 6420 6669 6c65  ): download file
+-00000cf0: 206e 616d 652e 2044 6566 6175 6c74 7320   name. Defaults 
+-00000d00: 746f 2027 6d79 696d 6727 2e0d 0a0d 0a20  to 'myimg'..... 
+-00000d10: 2020 2052 6574 7572 6e73 3a0d 0a20 2020     Returns:..   
+-00000d20: 2020 2020 2054 7570 6c65 5b73 7472 2c20       Tuple[str, 
+-00000d30: 7374 725d 3a20 4854 4d4c 2069 6d61 6765  str]: HTML image
+-00000d40: 2c20 646f 776e 6c6f 6164 206c 696e 6b0d  , download link.
+-00000d50: 0a20 2020 2022 2222 0d0a 0d0a 2020 2020  .    """....    
+-00000d60: 6469 7370 6c61 7949 6d67 203d 2069 6d67  displayImg = img
+-00000d70: 2e63 6f70 7928 290d 0a0d 0a20 2020 2069  .copy()....    i
+-00000d80: 6620 6e6f 7420 4f72 6967 696e 616c 5369  f not OriginalSi
+-00000d90: 7a65 3a0d 0a20 2020 2020 2020 2064 6973  ze:..        dis
+-00000da0: 706c 6179 496d 672e 7468 756d 626e 6169  playImg.thumbnai
+-00000db0: 6c28 2857 4944 5448 2c20 4845 4947 4854  l((WIDTH, HEIGHT
+-00000dc0: 2929 0d0a 0d0a 2020 2020 2320 4765 7420  ))....    # Get 
+-00000dd0: 646f 776e 6c6f 6164 6162 6c65 2064 6174  downloadable dat
+-00000de0: 6120 2846 756c 6c20 5265 736f 6c75 7469  a (Full Resoluti
+-00000df0: 6f6e 290d 0a20 2020 2062 7566 6665 7220  on)..    buffer 
+-00000e00: 3d20 696f 2e42 7974 6573 494f 2829 0d0a  = io.BytesIO()..
+-00000e10: 2020 2020 696d 672e 7361 7665 2862 7566      img.save(buf
+-00000e20: 6665 722c 2066 6f72 6d61 743d 696d 672e  fer, format=img.
+-00000e30: 666f 726d 6174 290d 0a20 2020 2065 6e63  format)..    enc
+-00000e40: 6f64 6564 5f64 6174 6120 3d20 6d65 7461  oded_data = meta
+-00000e50: 6461 7461 202b 2062 6173 6536 342e 6236  data + base64.b6
+-00000e60: 3465 6e63 6f64 6528 6275 6666 6572 2e67  4encode(buffer.g
+-00000e70: 6574 7661 6c75 6528 2929 2e64 6563 6f64  etvalue()).decod
+-00000e80: 6528 290d 0a0d 0a20 2020 2023 2047 6574  e()....    # Get
+-00000e90: 2064 6973 706c 6179 6162 6c65 2064 6174   displayable dat
+-00000ea0: 6120 2843 7573 746f 6d20 5265 736f 6c75  a (Custom Resolu
+-00000eb0: 7469 6f6e 290d 0a20 2020 2064 6973 706c  tion)..    displ
+-00000ec0: 6179 4275 6666 6572 203d 2069 6f2e 4279  ayBuffer = io.By
+-00000ed0: 7465 7349 4f28 290d 0a20 2020 2064 6973  tesIO()..    dis
+-00000ee0: 706c 6179 496d 672e 7361 7665 280d 0a20  playImg.save(.. 
+-00000ef0: 2020 2020 2020 2064 6973 706c 6179 4275         displayBu
+-00000f00: 6666 6572 2c20 666f 726d 6174 3d69 6d67  ffer, format=img
+-00000f10: 2e66 6f72 6d61 740d 0a20 2020 2029 2020  .format..    )  
+-00000f20: 2320 4974 2073 6565 6d73 2074 656d 7074  # It seems tempt
+-00000f30: 696e 6720 746f 2075 7365 2064 6973 706c  ing to use displ
+-00000f40: 6179 496d 672e 666f 726d 6174 2068 6572  ayImg.format her
+-00000f50: 652c 2062 7574 2069 7420 646f 6573 6e27  e, but it doesn'
+-00000f60: 7420 776f 726b 2066 6f72 2073 6f6d 6520  t work for some 
+-00000f70: 7265 6173 6f6e 0d0a 2020 2020 656e 636f  reason..    enco
+-00000f80: 6465 645f 6469 7370 6c61 795f 6461 7461  ded_display_data
+-00000f90: 203d 2028 0d0a 2020 2020 2020 2020 6d65   = (..        me
+-00000fa0: 7461 6461 7461 202b 2062 6173 6536 342e  tadata + base64.
+-00000fb0: 6236 3465 6e63 6f64 6528 6469 7370 6c61  b64encode(displa
+-00000fc0: 7942 7566 6665 722e 6765 7476 616c 7565  yBuffer.getvalue
+-00000fd0: 2829 292e 6465 636f 6465 2829 0d0a 2020  ()).decode()..  
+-00000fe0: 2020 290d 0a0d 0a20 2020 2023 2043 6f6e    )....    # Con
+-00000ff0: 7665 7274 2044 6973 706c 6179 2069 6d61  vert Display ima
+-00001000: 6765 2074 6f20 4854 4d4c 0d0a 2020 2020  ge to HTML..    
+-00001010: 696d 6167 6520 3d20 6622 3c69 6d67 2073  image = f"<img s
+-00001020: 7263 3d27 7b65 6e63 6f64 6564 5f64 6973  rc='{encoded_dis
+-00001030: 706c 6179 5f64 6174 617d 273e 220d 0a0d  play_data}'>"...
+-00001040: 0a20 2020 2023 2043 6f6e 7665 7274 2066  .    # Convert f
+-00001050: 756c 6c20 7265 736f 6c75 7469 6f6e 2069  ull resolution i
+-00001060: 6d61 6765 2074 6f20 616e 2048 544d 4c20  mage to an HTML 
+-00001070: 646f 776e 6c6f 6164 206c 696e 6b0d 0a20  download link.. 
+-00001080: 2020 2064 6f77 6e6c 6f61 644c 696e 6b20     downloadLink 
+-00001090: 3d20 6622 3c61 2068 7265 663d 277b 656e  = f"<a href='{en
+-000010a0: 636f 6465 645f 6461 7461 7d27 2064 6f77  coded_data}' dow
+-000010b0: 6e6c 6f61 643d 277b 496d 6167 654e 616d  nload='{ImageNam
+-000010c0: 657d 2e7b 696d 672e 666f 726d 6174 7d27  e}.{img.format}'
+-000010d0: 3e7b 446f 776e 6c6f 6164 5465 7874 7d3c  >{DownloadText}<
+-000010e0: 2f61 3e22 0d0a 0d0a 2020 2020 7265 7475  /a>"....    retu
+-000010f0: 726e 2069 6d61 6765 2c20 646f 776e 6c6f  rn image, downlo
+-00001100: 6164 4c69 6e6b 0d0a 0d0a 0d0a 6465 6620  adLink......def 
+-00001110: 696e 7075 745f 746f 5f50 494c 2866 696c  input_to_PIL(fil
+-00001120: 6529 202d 3e20 5475 706c 655b 496d 6167  e) -> Tuple[Imag
+-00001130: 652e 496d 6167 652c 2073 7472 5d3a 0d0a  e.Image, str]:..
+-00001140: 2020 2020 2222 220d 0a20 2020 2063 6f6e      """..    con
+-00001150: 7665 7274 7320 6120 6261 7365 3634 2065  verts a base64 e
+-00001160: 6e63 6f64 6564 2066 696c 6520 6461 7461  ncoded file data
+-00001170: 2069 6e74 6f20 6120 7069 6c6c 6f77 2069   into a pillow i
+-00001180: 6d61 6765 0d0a 0d0a 2020 2020 4172 6773  mage....    Args
+-00001190: 3a0d 0a20 2020 2020 2020 2066 696c 6520  :..        file 
+-000011a0: 2873 7472 293a 2062 6173 6536 3420 656e  (str): base64 en
+-000011b0: 636f 6465 6420 6669 6c65 2064 6174 610d  coded file data.
+-000011c0: 0a0d 0a20 2020 2052 6574 7572 6e73 3a0d  ...    Returns:.
+-000011d0: 0a20 2020 2020 2020 2054 7570 6c65 5b49  .        Tuple[I
+-000011e0: 6d61 6765 2e49 6d61 6765 2c20 7374 725d  mage.Image, str]
+-000011f0: 3a20 7069 6c6c 6f77 2069 6d61 6765 2c20  : pillow image, 
+-00001200: 696d 6167 6520 6d65 7461 6461 7461 0d0a  image metadata..
+-00001210: 2020 2020 2222 220d 0a0d 0a20 2020 205b      """....    [
+-00001220: 6669 6c65 4461 7461 2c20 6d65 7461 4461  fileData, metaDa
+-00001230: 7461 5d20 3d20 6465 636f 6465 5f66 696c  ta] = decode_fil
+-00001240: 655f 6461 7461 2866 696c 652c 206d 6574  e_data(file, met
+-00001250: 6164 6174 613d 5472 7565 290d 0a0d 0a20  adata=True).... 
+-00001260: 2020 2023 2043 6f6e 7665 7274 2074 6865     # Convert the
+-00001270: 2066 696c 6520 6461 7461 2069 6e74 6f20   file data into 
+-00001280: 6120 5069 6c6c 6f77 2773 2049 6d61 6765  a Pillow's Image
+-00001290: 0d0a 2020 2020 696d 6720 3d20 496d 6167  ..    img = Imag
+-000012a0: 652e 6f70 656e 2866 696c 6544 6174 6129  e.open(fileData)
+-000012b0: 0d0a 0d0a 2020 2020 7265 7475 726e 2069  ....    return i
+-000012c0: 6d67 2c20 6d65 7461 4461 7461 0d0a       mg, metaData..
++00000010: 496d 6167 650a 696d 706f 7274 2062 6173  Image.import bas
++00000020: 6536 340a 696d 706f 7274 2069 6f0a 696d  e64.import io.im
++00000030: 706f 7274 2070 616e 6461 7320 6173 2070  port pandas as p
++00000040: 640a 6672 6f6d 2074 7970 696e 6720 696d  d.from typing im
++00000050: 706f 7274 2054 7570 6c65 2c20 556e 696f  port Tuple, Unio
++00000060: 6e0a 0a0a 6465 6620 6465 636f 6465 5f66  n...def decode_f
++00000070: 696c 655f 6461 7461 280a 2020 2020 656e  ile_data(.    en
++00000080: 636f 6465 645f 6461 7461 2c20 6d65 7461  coded_data, meta
++00000090: 6461 7461 3a20 626f 6f6c 203d 2046 616c  data: bool = Fal
++000000a0: 7365 0a29 202d 3e20 556e 696f 6e5b 696f  se.) -> Union[io
++000000b0: 2e42 7974 6573 494f 2c20 5475 706c 655b  .BytesIO, Tuple[
++000000c0: 696f 2e42 7974 6573 494f 2c20 7374 725d  io.BytesIO, str]
++000000d0: 5d3a 0a20 2020 2022 2222 0a20 2020 2043  ]:.    """.    C
++000000e0: 6f6e 7665 7274 7320 6120 6261 7365 3634  onverts a base64
++000000f0: 2065 6e63 6f64 6564 2066 696c 6520 6461   encoded file da
++00000100: 7461 2069 6e74 6f20 6120 6669 6c65 206f  ta into a file o
++00000110: 626a 6563 7420 616e 6420 6d65 7461 6461  bject and metada
++00000120: 7461 0a0a 2020 2020 4172 6773 3a0a 2020  ta..    Args:.  
++00000130: 2020 2020 2020 656e 636f 6465 645f 6461        encoded_da
++00000140: 7461 2028 7374 7229 3a20 4261 7365 3634  ta (str): Base64
++00000150: 2065 6e63 6f64 6564 2066 696c 6520 6461   encoded file da
++00000160: 7461 0a20 2020 2020 2020 206d 6574 6164  ta.        metad
++00000170: 6174 6120 2862 6f6f 6c2c 206f 7074 696f  ata (bool, optio
++00000180: 6e61 6c29 3a20 4966 2054 7275 652c 2066  nal): If True, f
++00000190: 756e 6374 696f 6e20 7265 7475 726e 7320  unction returns 
++000001a0: 6669 6c65 2061 6e64 206d 6574 6164 6174  file and metadat
++000001b0: 6120 2844 6566 6175 6c74 7320 746f 2046  a (Defaults to F
++000001c0: 616c 7365 290a 0a20 2020 2052 6574 7572  alse)..    Retur
++000001d0: 6e73 3a0a 2020 2020 2020 2020 696f 2e42  ns:.        io.B
++000001e0: 7974 6573 494f 3a20 5468 6520 6465 636f  ytesIO: The deco
++000001f0: 6465 6420 6669 6c65 2064 6174 6120 2869  ded file data (i
++00000200: 6620 6d65 7461 6461 7461 2069 7320 4661  f metadata is Fa
++00000210: 6c73 6529 0a20 2020 2020 2020 2028 696f  lse).        (io
++00000220: 2e42 7974 6573 494f 2c20 7374 7229 3a20  .BytesIO, str): 
++00000230: 5468 6520 6465 636f 6465 6420 6669 6c65  The decoded file
++00000240: 2061 6e64 206d 6574 6164 6174 6120 2869   and metadata (i
++00000250: 6620 6d65 7461 6461 7461 2069 7320 5472  f metadata is Tr
++00000260: 7565 290a 0a20 2020 2022 2222 0a0a 2020  ue)..    """..  
++00000270: 2020 6d65 7461 2c20 6461 7461 203d 2065    meta, data = e
++00000280: 6e63 6f64 6564 5f64 6174 612e 7370 6c69  ncoded_data.spli
++00000290: 7428 223b 6261 7365 3634 2c22 290a 0a20  t(";base64,").. 
++000002a0: 2020 2066 696c 655f 6461 7461 203d 2069     file_data = i
++000002b0: 6f2e 4279 7465 7349 4f28 6261 7365 3634  o.BytesIO(base64
++000002c0: 2e62 3634 6465 636f 6465 2864 6174 6129  .b64decode(data)
++000002d0: 290a 2020 2020 6d65 7461 5f64 6174 6120  ).    meta_data 
++000002e0: 3d20 6622 7b6d 6574 617d 3b62 6173 6536  = f"{meta};base6
++000002f0: 342c 220a 0a20 2020 2072 6574 7572 6e20  4,"..    return 
++00000300: 2866 696c 655f 6461 7461 2c20 6d65 7461  (file_data, meta
++00000310: 5f64 6174 6129 2069 6620 6d65 7461 6461  _data) if metada
++00000320: 7461 2065 6c73 6520 6669 6c65 5f64 6174  ta else file_dat
++00000330: 610a 0a0a 6465 6620 6669 6c65 5f64 6174  a...def file_dat
++00000340: 615f 746f 5f64 6174 6166 7261 6d65 2866  a_to_dataframe(f
++00000350: 696c 655f 6461 7461 2920 2d3e 2070 642e  ile_data) -> pd.
++00000360: 4461 7461 4672 616d 653a 0a20 2020 2022  DataFrame:.    "
++00000370: 2222 0a20 2020 2043 6f6e 7665 7274 7320  "".    Converts 
++00000380: 6120 6669 6c65 206f 626a 6563 7420 696e  a file object in
++00000390: 746f 2061 2070 616e 6461 7320 4461 7461  to a pandas Data
++000003a0: 4672 616d 650a 0a20 2020 2041 7267 733a  Frame..    Args:
++000003b0: 0a20 2020 2020 2020 2066 696c 655f 6461  .        file_da
++000003c0: 7461 2028 696f 2e42 7974 6573 494f 293a  ta (io.BytesIO):
++000003d0: 2044 6563 6f64 6564 2066 696c 6520 6461   Decoded file da
++000003e0: 7461 2028 652e 672e 2066 726f 6d20 6465  ta (e.g. from de
++000003f0: 636f 6465 5f66 696c 655f 6461 7461 290a  code_file_data).
++00000400: 0a20 2020 2052 6169 7365 733a 0a20 2020  .    Raises:.   
++00000410: 2020 2020 2070 642e 6572 726f 7273 2e50       pd.errors.P
++00000420: 6172 7365 7245 7272 6f72 3a20 4966 2074  arserError: If t
++00000430: 6865 2066 696c 6520 6461 7461 2063 616e  he file data can
++00000440: 6e6f 7420 6265 2063 6f6e 7665 7274 6564  not be converted
++00000450: 2074 6f20 6120 4461 7461 4672 616d 6520   to a DataFrame 
++00000460: 2869 2e65 2e20 6669 6c65 2069 7320 6e6f  (i.e. file is no
++00000470: 7420 616e 2045 7863 656c 206f 7220 4353  t an Excel or CS
++00000480: 5620 6669 6c65 206f 7220 6973 2063 6f72  V file or is cor
++00000490: 7275 7074 6564 290a 0a20 2020 2052 6574  rupted)..    Ret
++000004a0: 7572 6e73 3a0a 2020 2020 2020 2020 7064  urns:.        pd
++000004b0: 2e44 6174 6146 7261 6d65 3a20 4461 7461  .DataFrame: Data
++000004c0: 4672 616d 6520 6372 6561 7465 6420 6672  Frame created fr
++000004d0: 6f6d 2066 696c 6520 6461 7461 0a20 2020  om file data.   
++000004e0: 2022 2222 0a0a 2020 2020 7472 793a 0a20   """..    try:. 
++000004f0: 2020 2020 2020 2064 6620 3d20 7064 2e72         df = pd.r
++00000500: 6561 645f 6373 7628 6669 6c65 5f64 6174  ead_csv(file_dat
++00000510: 6129 0a20 2020 2065 7863 6570 7420 7064  a).    except pd
++00000520: 2e65 7272 6f72 732e 5061 7273 6572 4572  .errors.ParserEr
++00000530: 726f 723a 0a20 2020 2020 2020 2064 6620  ror:.        df 
++00000540: 3d20 7064 2e72 6561 645f 6578 6365 6c28  = pd.read_excel(
++00000550: 6669 6c65 5f64 6174 6129 0a20 2020 2065  file_data).    e
++00000560: 7863 6570 743a 0a20 2020 2020 2020 2072  xcept:.        r
++00000570: 6169 7365 2045 7863 6570 7469 6f6e 2822  aise Exception("
++00000580: 4669 6c65 2074 7970 6520 6e6f 7420 7375  File type not su
++00000590: 7070 6f72 7465 6422 2c20 7064 2e65 7272  pported", pd.err
++000005a0: 6f72 732e 5061 7273 6572 4572 726f 7229  ors.ParserError)
++000005b0: 0a20 2020 2072 6574 7572 6e20 6466 0a0a  .    return df..
++000005c0: 0a64 6566 2069 6e70 7574 5f74 6f5f 6461  .def input_to_da
++000005d0: 7461 6672 616d 6528 6669 6c65 2920 2d3e  taframe(file) ->
++000005e0: 2070 642e 4461 7461 4672 616d 653a 0a20   pd.DataFrame:. 
++000005f0: 2020 2022 2222 0a20 2020 2043 6f6e 7665     """.    Conve
++00000600: 7274 7320 6120 6261 7365 3634 2065 6e63  rts a base64 enc
++00000610: 6f64 6564 2066 696c 6520 6461 7461 2069  oded file data i
++00000620: 6e74 6f20 6120 7061 6e64 6173 2044 6174  nto a pandas Dat
++00000630: 6146 7261 6d65 0a0a 2020 2020 4172 6773  aFrame..    Args
++00000640: 3a0a 2020 2020 2020 2020 6669 6c65 2028  :.        file (
++00000650: 7374 7229 3a20 4261 7365 3634 2065 6e63  str): Base64 enc
++00000660: 6f64 6564 2066 696c 6520 6461 7461 0a0a  oded file data..
++00000670: 2020 2020 5265 7475 726e 733a 0a20 2020      Returns:.   
++00000680: 2020 2020 2070 642e 4461 7461 4672 616d       pd.DataFram
++00000690: 653a 2044 6174 6146 7261 6d65 2063 7265  e: DataFrame cre
++000006a0: 6174 6564 2066 726f 6d20 6669 6c65 2064  ated from file d
++000006b0: 6174 610a 2020 2020 2222 220a 0a20 2020  ata.    """..   
++000006c0: 2066 696c 6544 6174 6120 3d20 6465 636f   fileData = deco
++000006d0: 6465 5f66 696c 655f 6461 7461 2866 696c  de_file_data(fil
++000006e0: 6529 0a20 2020 2072 6574 7572 6e20 6669  e).    return fi
++000006f0: 6c65 5f64 6174 615f 746f 5f64 6174 6166  le_data_to_dataf
++00000700: 7261 6d65 2866 696c 6544 6174 6129 0a0a  rame(fileData)..
++00000710: 0a64 6566 2064 6174 6166 7261 6d65 5f74  .def dataframe_t
++00000720: 6f5f 6f75 7470 7574 280a 2020 2020 6466  o_output(.    df
++00000730: 2c20 446f 776e 6c6f 6164 5465 7874 3a20  , DownloadText: 
++00000740: 7374 7220 3d20 2244 6f77 6e6c 6f61 6420  str = "Download 
++00000750: 4669 6c65 222c 2044 6f77 6e6c 6f61 6446  File", DownloadF
++00000760: 696c 654e 616d 653a 2073 7472 203d 2022  ileName: str = "
++00000770: 6d79 6669 6c65 220a 2920 2d3e 2054 7570  myfile".) -> Tup
++00000780: 6c65 5b73 7472 2c20 7374 725d 3a0a 2020  le[str, str]:.  
++00000790: 2020 2320 544f 444f 3a20 4164 6420 7365    # TODO: Add se
++000007a0: 6c65 6374 696f 6e20 6f66 2043 5356 206f  lection of CSV o
++000007b0: 7220 4578 6365 6c20 666f 7220 646f 776e  r Excel for down
++000007c0: 6c6f 6164 0a20 2020 2022 2222 0a20 2020  load.    """.   
++000007d0: 2043 7265 6174 6573 2061 6e20 4854 4d4c   Creates an HTML
++000007e0: 2074 6162 6c65 2061 6e64 2061 2064 6f77   table and a dow
++000007f0: 6e6c 6f61 6420 6c69 6e6b 2066 6f72 2061  nload link for a
++00000800: 2067 6976 656e 2044 6174 6146 7261 6d65   given DataFrame
++00000810: 0a0a 2020 2020 4172 6773 3a0a 2020 2020  ..    Args:.    
++00000820: 2020 2020 6466 2028 7061 6e64 6173 2e64      df (pandas.d
++00000830: 6629 3a20 4461 7461 4672 616d 6520 746f  f): DataFrame to
++00000840: 2062 6520 636f 6e76 6572 7465 640a 2020   be converted.  
++00000850: 2020 2020 2020 446f 776e 6c6f 6164 5465        DownloadTe
++00000860: 7874 2028 7374 722c 206f 7074 696f 6e61  xt (str, optiona
++00000870: 6c29 3a20 5465 7874 2074 6f20 6265 2064  l): Text to be d
++00000880: 6973 706c 6179 6564 2061 7320 7468 6520  isplayed as the 
++00000890: 646f 776e 6c6f 6164 206c 696e 6b20 2844  download link (D
++000008a0: 6566 6175 6c74 7320 746f 2022 446f 776e  efaults to "Down
++000008b0: 6c6f 6164 2046 696c 6522 290a 2020 2020  load File").    
++000008c0: 2020 2020 446f 776e 6c6f 6164 4669 6c65      DownloadFile
++000008d0: 4e61 6d65 2028 7374 722c 206f 7074 696f  Name (str, optio
++000008e0: 6e61 6c29 3a20 4e61 6d65 206f 6620 6669  nal): Name of fi
++000008f0: 6c65 2077 6865 6e20 646f 776e 6c6f 6164  le when download
++00000900: 6564 2028 4465 6661 756c 7473 2074 6f20  ed (Defaults to 
++00000910: 226d 7966 696c 6522 290a 0a20 2020 2052  "myfile")..    R
++00000920: 6574 7572 6e73 3a0a 2020 2020 2020 2020  eturns:.        
++00000930: 5475 706c 655b 7374 722c 2073 7472 5d3a  Tuple[str, str]:
++00000940: 2048 544d 4c20 7461 626c 652c 2064 6f77   HTML table, dow
++00000950: 6e6c 6f61 6420 6c69 6e6b 0a20 2020 2022  nload link.    "
++00000960: 2222 0a0a 2020 2020 6373 765f 6669 6c65  ""..    csv_file
++00000970: 203d 2064 662e 746f 5f63 7376 2869 6e64   = df.to_csv(ind
++00000980: 6578 3d46 616c 7365 290a 2020 2020 656e  ex=False).    en
++00000990: 636f 6465 645f 6461 7461 203d 2028 0a20  coded_data = (. 
++000009a0: 2020 2020 2020 2022 6461 7461 3a74 6578         "data:tex
++000009b0: 742f 6373 763b 6261 7365 3634 2c22 202b  t/csv;base64," +
++000009c0: 2062 6173 6536 342e 6236 3465 6e63 6f64   base64.b64encod
++000009d0: 6528 6373 765f 6669 6c65 2e65 6e63 6f64  e(csv_file.encod
++000009e0: 6528 2929 2e64 6563 6f64 6528 290a 2020  e()).decode().  
++000009f0: 2020 290a 0a20 2020 2072 6574 7572 6e20    )..    return 
++00000a00: 280a 2020 2020 2020 2020 6466 2e74 6f5f  (.        df.to_
++00000a10: 6874 6d6c 2829 2c0a 2020 2020 2020 2020  html(),.        
++00000a20: 6622 3c61 2068 7265 663d 277b 656e 636f  f"<a href='{enco
++00000a30: 6465 645f 6461 7461 7d27 646f 776e 6c6f  ded_data}'downlo
++00000a40: 6164 3d27 7b44 6f77 6e6c 6f61 6446 696c  ad='{DownloadFil
++00000a50: 654e 616d 657d 2e63 7376 273e 7b44 6f77  eName}.csv'>{Dow
++00000a60: 6e6c 6f61 6454 6578 747d 3c2f 613e 222c  nloadText}</a>",
++00000a70: 0a20 2020 2029 0a0a 0a64 6566 2069 6e70  .    )...def inp
++00000a80: 7574 5f74 6f5f 5049 4c28 6669 6c65 2920  ut_to_PIL(file) 
++00000a90: 2d3e 2054 7570 6c65 5b49 6d61 6765 2e49  -> Tuple[Image.I
++00000aa0: 6d61 6765 2c20 7374 725d 3a0a 2020 2020  mage, str]:.    
++00000ab0: 2222 220a 2020 2020 636f 6e76 6572 7473  """.    converts
++00000ac0: 2061 2042 6173 6536 3420 656e 636f 6465   a Base64 encode
++00000ad0: 6420 6669 6c65 2064 6174 6120 696e 746f  d file data into
++00000ae0: 2061 2070 696c 6c6f 7720 696d 6167 650a   a pillow image.
++00000af0: 0a20 2020 2041 7267 733a 0a20 2020 2020  .    Args:.     
++00000b00: 2020 2066 696c 6520 2873 7472 293a 2042     file (str): B
++00000b10: 6173 6536 3420 656e 636f 6465 6420 6669  ase64 encoded fi
++00000b20: 6c65 2064 6174 610a 0a20 2020 2052 6574  le data..    Ret
++00000b30: 7572 6e73 3a0a 2020 2020 2020 2020 5475  urns:.        Tu
++00000b40: 706c 655b 496d 6167 652e 496d 6167 652c  ple[Image.Image,
++00000b50: 2073 7472 5d3a 2070 696c 6c6f 7720 696d   str]: pillow im
++00000b60: 6167 652c 206d 6574 6164 6174 610a 2020  age, metadata.  
++00000b70: 2020 2222 220a 0a20 2020 205b 6669 6c65    """..    [file
++00000b80: 4461 7461 2c20 6d65 7461 4461 7461 5d20  Data, metaData] 
++00000b90: 3d20 6465 636f 6465 5f66 696c 655f 6461  = decode_file_da
++00000ba0: 7461 2866 696c 652c 206d 6574 6164 6174  ta(file, metadat
++00000bb0: 613d 5472 7565 290a 0a20 2020 2023 2043  a=True)..    # C
++00000bc0: 6f6e 7665 7274 2074 6865 2066 696c 6520  onvert the file 
++00000bd0: 6461 7461 2069 6e74 6f20 6120 5069 6c6c  data into a Pill
++00000be0: 6f77 2773 2049 6d61 6765 0a20 2020 2069  ow's Image.    i
++00000bf0: 6d67 203d 2049 6d61 6765 2e6f 7065 6e28  mg = Image.open(
++00000c00: 6669 6c65 4461 7461 290a 0a20 2020 2072  fileData)..    r
++00000c10: 6574 7572 6e20 696d 672c 206d 6574 6144  eturn img, metaD
++00000c20: 6174 610a 0a0a 6465 6620 7072 696e 745f  ata...def print_
++00000c30: 696d 6728 0a20 2020 2069 6d67 3a20 496d  img(.    img: Im
++00000c40: 6167 652e 496d 6167 652c 0a20 2020 206d  age.Image,.    m
++00000c50: 6574 6164 6174 613a 2073 7472 2c0a 2020  etadata: str,.  
++00000c60: 2020 5749 4454 483a 2069 6e74 203d 2032    WIDTH: int = 2
++00000c70: 3030 2c0a 2020 2020 4845 4947 4854 3a20  00,.    HEIGHT: 
++00000c80: 696e 7420 3d20 3230 302c 0a20 2020 204f  int = 200,.    O
++00000c90: 7269 6769 6e61 6c53 697a 653a 2062 6f6f  riginalSize: boo
++00000ca0: 6c20 3d20 4661 6c73 652c 0a20 2020 2044  l = False,.    D
++00000cb0: 6f77 6e6c 6f61 6454 6578 743a 2073 7472  ownloadText: str
++00000cc0: 203d 2022 446f 776e 6c6f 6164 2049 6d61   = "Download Ima
++00000cd0: 6765 222c 0a20 2020 2049 6d61 6765 4e61  ge",.    ImageNa
++00000ce0: 6d65 3a20 7374 7220 3d20 226d 7969 6d67  me: str = "myimg
++00000cf0: 222c 0a29 202d 3e20 5475 706c 655b 7374  ",.) -> Tuple[st
++00000d00: 722c 2073 7472 5d3a 0a20 2020 2022 2222  r, str]:.    """
++00000d10: 0a20 2020 2043 6f6e 7665 7274 7320 6120  .    Converts a 
++00000d20: 7069 6c6c 6f77 2069 6d61 6765 2069 6e74  pillow image int
++00000d30: 6f20 616e 2048 544d 4c20 696d 6167 6520  o an HTML image 
++00000d40: 616e 6420 6120 646f 776e 6c6f 6164 206c  and a download l
++00000d50: 696e 6b0a 0a20 2020 2041 7267 733a 0a20  ink..    Args:. 
++00000d60: 2020 2020 2020 2069 6d67 2028 5049 4c2e         img (PIL.
++00000d70: 496d 6167 652e 496d 6167 6529 3a20 5069  Image.Image): Pi
++00000d80: 6c6c 6f77 2069 6d61 6765 0a20 2020 2020  llow image.     
++00000d90: 2020 206d 6574 6164 6174 6120 2873 7472     metadata (str
++00000da0: 293a 2049 6d61 6765 206d 6574 6164 6174  ): Image metadat
++00000db0: 610a 2020 2020 2020 2020 5749 4454 4820  a.        WIDTH 
++00000dc0: 2869 6e74 2c20 6f70 7469 6f6e 616c 293a  (int, optional):
++00000dd0: 204f 7574 7075 7420 7769 6474 6820 6f66   Output width of
++00000de0: 2074 6865 2069 6d61 6765 2069 6e20 7069   the image in pi
++00000df0: 7865 6c73 2028 4465 6661 756c 7473 2074  xels (Defaults t
++00000e00: 6f20 3230 3029 0a20 2020 2020 2020 2048  o 200).        H
++00000e10: 4549 4748 5420 2869 6e74 2c20 6f70 7469  EIGHT (int, opti
++00000e20: 6f6e 616c 293a 204f 7574 7075 7420 6865  onal): Output he
++00000e30: 6967 6874 206f 6620 7468 6520 696d 6167  ight of the imag
++00000e40: 6520 696e 2070 6978 656c 7320 2844 6566  e in pixels (Def
++00000e50: 6175 6c74 7320 746f 2032 3030 290a 2020  aults to 200).  
++00000e60: 2020 2020 2020 4f72 6967 696e 616c 5369        OriginalSi
++00000e70: 7a65 2028 626f 6f6c 2c20 6f70 7469 6f6e  ze (bool, option
++00000e80: 616c 293a 2049 6620 5472 7565 2c20 7468  al): If True, th
++00000e90: 6520 4854 4d4c 2069 6d61 6765 2077 696c  e HTML image wil
++00000ea0: 6c20 6265 2064 6973 706c 6179 6564 2069  l be displayed i
++00000eb0: 6e20 6974 7320 6f72 6967 696e 616c 2073  n its original s
++00000ec0: 697a 6520 2844 6566 6175 6c74 7320 746f  ize (Defaults to
++00000ed0: 2046 616c 7365 290a 2020 2020 2020 2020   False).        
++00000ee0: 446f 776e 6c6f 6164 5465 7874 2028 7374  DownloadText (st
++00000ef0: 722c 206f 7074 696f 6e61 6c29 3a20 5468  r, optional): Th
++00000f00: 6520 7465 7874 2074 6f20 6265 2064 6973  e text to be dis
++00000f10: 706c 6179 6564 206f 6e20 7468 6520 646f  played on the do
++00000f20: 776e 6c6f 6164 206c 696e 6b20 2844 6566  wnload link (Def
++00000f30: 6175 6c74 7320 746f 2022 446f 776e 6c6f  aults to "Downlo
++00000f40: 6164 2049 6d61 6765 2229 0a20 2020 2020  ad Image").     
++00000f50: 2020 2049 6d61 6765 4e61 6d65 2028 7374     ImageName (st
++00000f60: 722c 206f 7074 696f 6e61 6c29 3a20 646f  r, optional): do
++00000f70: 776e 6c6f 6164 2066 696c 6520 6e61 6d65  wnload file name
++00000f80: 2028 4465 6661 756c 7473 2074 6f20 276d   (Defaults to 'm
++00000f90: 7969 6d67 2729 0a0a 2020 2020 5265 7475  yimg')..    Retu
++00000fa0: 726e 733a 0a20 2020 2020 2020 2054 7570  rns:.        Tup
++00000fb0: 6c65 5b73 7472 2c20 7374 725d 3a20 4854  le[str, str]: HT
++00000fc0: 4d4c 2069 6d61 6765 2c20 646f 776e 6c6f  ML image, downlo
++00000fd0: 6164 206c 696e 6b0a 2020 2020 2222 220a  ad link.    """.
++00000fe0: 0a20 2020 2064 6973 706c 6179 496d 6720  .    displayImg 
++00000ff0: 3d20 696d 672e 636f 7079 2829 0a0a 2020  = img.copy()..  
++00001000: 2020 6966 206e 6f74 204f 7269 6769 6e61    if not Origina
++00001010: 6c53 697a 653a 0a20 2020 2020 2020 2064  lSize:.        d
++00001020: 6973 706c 6179 496d 672e 7468 756d 626e  isplayImg.thumbn
++00001030: 6169 6c28 2857 4944 5448 2c20 4845 4947  ail((WIDTH, HEIG
++00001040: 4854 2929 0a0a 2020 2020 2320 4765 7420  HT))..    # Get 
++00001050: 646f 776e 6c6f 6164 6162 6c65 2064 6174  downloadable dat
++00001060: 6120 2846 756c 6c20 5265 736f 6c75 7469  a (Full Resoluti
++00001070: 6f6e 290a 2020 2020 6275 6666 6572 203d  on).    buffer =
++00001080: 2069 6f2e 4279 7465 7349 4f28 290a 2020   io.BytesIO().  
++00001090: 2020 696d 672e 7361 7665 2862 7566 6665    img.save(buffe
++000010a0: 722c 2066 6f72 6d61 743d 696d 672e 666f  r, format=img.fo
++000010b0: 726d 6174 290a 2020 2020 656e 636f 6465  rmat).    encode
++000010c0: 645f 6461 7461 203d 206d 6574 6164 6174  d_data = metadat
++000010d0: 6120 2b20 6261 7365 3634 2e62 3634 656e  a + base64.b64en
++000010e0: 636f 6465 2862 7566 6665 722e 6765 7476  code(buffer.getv
++000010f0: 616c 7565 2829 292e 6465 636f 6465 2829  alue()).decode()
++00001100: 0a0a 2020 2020 2320 4765 7420 6469 7370  ..    # Get disp
++00001110: 6c61 7961 626c 6520 6461 7461 2028 4375  layable data (Cu
++00001120: 7374 6f6d 2052 6573 6f6c 7574 696f 6e29  stom Resolution)
++00001130: 0a20 2020 2064 6973 706c 6179 4275 6666  .    displayBuff
++00001140: 6572 203d 2069 6f2e 4279 7465 7349 4f28  er = io.BytesIO(
++00001150: 290a 0a20 2020 2023 2049 7420 7365 656d  )..    # It seem
++00001160: 7320 7465 6d70 7469 6e67 2074 6f20 7573  s tempting to us
++00001170: 6520 6469 7370 6c61 7949 6d67 2e66 6f72  e displayImg.for
++00001180: 6d61 7420 6865 7265 2c20 6275 7420 6974  mat here, but it
++00001190: 2064 6f65 736e 2774 2077 6f72 6b20 666f   doesn't work fo
++000011a0: 7220 736f 6d65 2072 6561 736f 6e0a 2020  r some reason.  
++000011b0: 2020 6469 7370 6c61 7949 6d67 2e73 6176    displayImg.sav
++000011c0: 6528 6469 7370 6c61 7942 7566 6665 722c  e(displayBuffer,
++000011d0: 2066 6f72 6d61 743d 696d 672e 666f 726d   format=img.form
++000011e0: 6174 290a 0a20 2020 2023 2047 6574 2074  at)..    # Get t
++000011f0: 6865 2065 6e63 6f64 6564 2064 6174 610a  he encoded data.
++00001200: 2020 2020 656e 636f 6465 645f 6469 7370      encoded_disp
++00001210: 6c61 795f 6461 7461 203d 2028 0a20 2020  lay_data = (.   
++00001220: 2020 2020 206d 6574 6164 6174 6120 2b20       metadata + 
++00001230: 6261 7365 3634 2e62 3634 656e 636f 6465  base64.b64encode
++00001240: 2864 6973 706c 6179 4275 6666 6572 2e67  (displayBuffer.g
++00001250: 6574 7661 6c75 6528 2929 2e64 6563 6f64  etvalue()).decod
++00001260: 6528 290a 2020 2020 290a 0a20 2020 2023  e().    )..    #
++00001270: 2043 6f6e 7665 7274 2044 6973 706c 6179   Convert Display
++00001280: 2069 6d61 6765 2074 6f20 4854 4d4c 0a20   image to HTML. 
++00001290: 2020 2069 6d61 6765 203d 2066 223c 696d     image = f"<im
++000012a0: 6720 7372 633d 277b 656e 636f 6465 645f  g src='{encoded_
++000012b0: 6469 7370 6c61 795f 6461 7461 7d27 3e22  display_data}'>"
++000012c0: 0a0a 2020 2020 2320 436f 6e76 6572 7420  ..    # Convert 
++000012d0: 6675 6c6c 2072 6573 6f6c 7574 696f 6e20  full resolution 
++000012e0: 696d 6167 6520 746f 2061 6e20 4854 4d4c  image to an HTML
++000012f0: 2064 6f77 6e6c 6f61 6420 6c69 6e6b 0a20   download link. 
++00001300: 2020 2064 6f77 6e6c 6f61 644c 696e 6b20     downloadLink 
++00001310: 3d20 6622 3c61 2068 7265 663d 277b 656e  = f"<a href='{en
++00001320: 636f 6465 645f 6461 7461 7d27 2064 6f77  coded_data}' dow
++00001330: 6e6c 6f61 643d 277b 496d 6167 654e 616d  nload='{ImageNam
++00001340: 657d 2e7b 696d 672e 666f 726d 6174 7d27  e}.{img.format}'
++00001350: 3e7b 446f 776e 6c6f 6164 5465 7874 7d3c  >{DownloadText}<
++00001360: 2f61 3e22 0a0a 2020 2020 7265 7475 726e  /a>"..    return
++00001370: 2069 6d61 6765 2c20 646f 776e 6c6f 6164   image, download
++00001380: 4c69 6e6b 0a                             Link.
+```
+
+### Comparing `mecsimcalc-0.0.2/setup.py` & `mecsimcalc-0.0.3/setup.py`
+
+ * *Files 25% similar despite different names*
+
+```diff
+@@ -1,43 +1,41 @@
+-from setuptools import setup, find_packages
+-import codecs
+-import os
+-
+-here = os.path.abspath(os.path.dirname(__file__))
+-
+-with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
+-    long_description = "\n" + fh.read()
+-
+-VERSION = "0.0.2"
+-DESCRIPTION = "Useful functions for MecSimCalc.com"
+-LONG_DESCRIPTION = "Useful functions for MecSimCalc.com"
+-
+-# Setting up
+-setup(
+-    name="mecsimcalc",
+-    version=VERSION,
+-    author="MecSimCalc",
+-    author_email="<info@mecsimcalc.com>",
+-    description=DESCRIPTION,
+-    long_description_content_type="text/markdown",
+-    long_description=long_description,
+-    packages=find_packages(),
+-    install_requires=["Pillow", "pandas"],
+-    keywords=["python", "MecSimCalc", "Calculator", "Simple"],
+-    classifiers=[
+-        "Development Status :: 3 - Alpha",
+-        "Intended Audience :: Developers",
+-        "Programming Language :: Python :: 3.6",
+-        "Programming Language :: Python :: 3.7",
+-        "Programming Language :: Python :: 3.8",
+-        "Programming Language :: Python :: 3.9",
+-        "Programming Language :: Python :: 3.10",
+-        "Programming Language :: Python :: 3.11",
+-        "Programming Language :: Python :: 3.12",
+-        "Operating System :: Unix",
+-        "Operating System :: MacOS :: MacOS X",
+-        "Operating System :: Microsoft :: Windows",
+-    ],
+-    extras_require={
+-        "dev": ["pytest>=7.0", "twine >= 4.0.2"],
+-    },
+-)
++from setuptools import setup, find_packages
++import codecs
++import os
++
++here = os.path.abspath(os.path.dirname(__file__))
++
++with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
++    long_description = "\n" + fh.read()
++
++VERSION = "0.0.3"
++DESCRIPTION = "Useful functions for MecSimCalc.com"
++LONG_DESCRIPTION = "Useful functions for MecSimCalc.com"
++
++# Setting up
++setup(
++    name="mecsimcalc",
++    version=VERSION,
++    author="MecSimCalc",
++    author_email="<info@mecsimcalc.com>",
++    description=DESCRIPTION,
++    long_description_content_type="text/markdown",
++    long_description=long_description,
++    packages=find_packages(),
++    install_requires=["Pillow", "pandas"],
++    keywords=["python", "MecSimCalc", "Calculator", "Simple"],
++    classifiers=[
++        "Development Status :: 3 - Alpha",
++        "Intended Audience :: Developers",
++        "Programming Language :: Python :: 3.8",
++        "Programming Language :: Python :: 3.9",
++        "Programming Language :: Python :: 3.10",
++        "Programming Language :: Python :: 3.11",
++        "Programming Language :: Python :: 3.12",
++        "Operating System :: Unix",
++        "Operating System :: MacOS :: MacOS X",
++        "Operating System :: Microsoft :: Windows",
++    ],
++    extras_require={
++        "dev": ["pytest>=7.0", "twine >= 4.0.2"],
++    },
++)
+```
+
