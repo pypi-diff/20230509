@@ -22041,3 +22041,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 19:36:13] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
 [2023-05-09 19:36:34] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-05-09 19:36:34] INFO root fetch - main [MainThread]: Store serial: [18035538]
+[2023-05-09 19:41:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18035538]
+[2023-05-09 19:41:43] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyGFETdb
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyboil
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gradio-tools
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-kit-annotation
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: integra
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: matrix-synapse
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: garatool
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: deeplc
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: wodoo
+[2023-05-09 19:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyboil
+[2023-05-09 19:41:43] INFO root fetch - processPackages [garatool]: New version: [0.1683653830.0] Old Version: [0.1683653555.0]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [PyGFETdb]: New version: [0.5.1] Old Version: [0.4.3]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [integra]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [gradio-tools]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [deeplc]: New version: [2.1.8] Old Version: [2.1.7]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: New version: [20230509.9.22.669299] Old Version: [20230509.17.36.303148]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [wodoo]: New version: [0.3.99] Old Version: [0.3.96]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [matrix-synapse]: New version: [1.9.1] Old Version: [1.9.0rc1]
+[2023-05-09 19:41:43] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2023-05-09 19:41:43] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.3.96.tar.gz tmp/wodoo-0.3.99.tar.gz --markdown 20230509/w/wodoo/0.3.96-0.3.99/diff.md --exclude *.pyd
+[2023-05-09 19:41:43] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: Downloading https://files.pythonhosted.org/packages/48/73/5dc419fde97362ad7f4d5491af387e4f3ff72c915e738878dfc2e24d8700/certora-cli-alpha-kit-annotation-20230509.17.36.303148.tar.gz
+[2023-05-09 19:41:43] INFO root fetch - processPackages [PyGFETdb]: Downloading https://files.pythonhosted.org/packages/55/aa/d9c9129d83854d673280aad82337633633149265ae9c47e3952693acd9a2/PyGFETdb-0.4.3.tar.gz
+[2023-05-09 19:41:43] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/c8/93/a5707e0c27847cb248291be58e8744999c46fc8135cd7a5a2e37523d80df/garatool-0.1683653830.0.tar.gz
+[2023-05-09 19:41:43] INFO root fetch - processPackages [gradio-tools]: Downloading https://files.pythonhosted.org/packages/28/b4/83b652e88c83530f8583746626307206407ea149969f7d8f21a8fd72244a/gradio_tools-0.0.7.tar.gz
+[2023-05-09 19:41:43] INFO root fetch - processPackages [integra]: Downloading https://files.pythonhosted.org/packages/ae/c6/0228ecf423ed7dc31a0b71b79c3c5d6ba842573cf1e1397e77219095efbb/integra-0.0.3.tar.gz
+[2023-05-09 19:41:43] WARNING root fetch - processPackages [certora-cli-alpha-kit-annotation]: Skipping package: exceeds size limit 39223294>=10485760
+[2023-05-09 19:41:43] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: Start processing: pyboil
+[2023-05-09 19:41:43] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-kit-annotation] error
+[2023-05-09 19:41:43] INFO root fetch - processPackages [deeplc]: Downloading https://files.pythonhosted.org/packages/98/b2/8d45f93842be4d2eb8a99d729ff43ff078a6a3338d6512eaa02cd0cc3be4/deeplc-2.1.7.tar.gz
+[2023-05-09 19:41:43] INFO root fetch - processPackages [matrix-synapse]: Downloading https://files.pythonhosted.org/packages/38/92/fe537943f778c5448a77d841fc4b23f0aadfb189248bdaa757b3135d13ba/matrix-synapse-1.9.0rc1.tar.gz
+[2023-05-09 19:41:43] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 19:41:43] WARNING root fetch - processPackages [deeplc]: Skipping package: exceeds size limit 77887569>=10485760
+[2023-05-09 19:41:44] INFO root fetch - processPackages [deeplc]: Start processing: hatchling
+[2023-05-09 19:41:44] INFO root fetch - main [MainThread]: End processing [deeplc] error
+[2023-05-09 19:41:44] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 19:41:44] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683653555.0.tar.gz tmp/garatool-0.1683653830.0.tar.gz --markdown 20230509/g/garatool/0.1683653555.0-0.1683653830.0/diff.md --exclude *.pyd
+[2023-05-09 19:41:44] INFO root fetch - processPackages [integra]: executing diffoscope
+[2023-05-09 19:41:44] INFO root fetch - processPackages [integra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/integra-0.0.2.tar.gz tmp/integra-0.0.3.tar.gz --markdown 20230509/i/integra/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 19:41:44] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 19:41:44] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 19:41:44] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 19:41:44] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 19:41:44] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 19:41:44] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 19:41:44] INFO root fetch - processPackages [hatchling]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-09 19:41:44] INFO root fetch - processPackages [PyGFETdb]: Downloading https://files.pythonhosted.org/packages/08/f1/e2f9a88b92db9f26144c8527606826c9d33bfff1108bb92d38fb4cc84762/PyGFETdb-0.5.1.tar.gz
+[2023-05-09 19:41:44] INFO root fetch - processPackages [PyGFETdb]: executing diffoscope
+[2023-05-09 19:41:44] INFO root fetch - processPackages [PyGFETdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGFETdb-0.4.3.tar.gz tmp/PyGFETdb-0.5.1.tar.gz --markdown 20230509/P/PyGFETdb/0.4.3-0.5.1/diff.md --exclude *.pyd
+[2023-05-09 19:41:44] INFO root fetch - processPackages [hatchling]: Downloading https://files.pythonhosted.org/packages/a1/e0/e22e343e7e5853b1d10c5f6fb5072ca3d38aa05e51c9920bb373d393e40c/hatchling-1.8.1.tar.gz
+[2023-05-09 19:41:44] INFO root fetch - processPackages [gradio-tools]: Downloading https://files.pythonhosted.org/packages/79/ee/2af99afbc986247f58fb4fa1f2412218fb183ea6eaf6c762b84e7bc30557/gradio_tools-0.0.8.tar.gz
+[2023-05-09 19:41:44] INFO root fetch - processPackages [matrix-synapse]: Downloading https://files.pythonhosted.org/packages/ca/c7/4673bb5cb9ec9a2b850f118077e24c3f5fda08b973bbed512caf26dd9604/matrix-synapse-1.9.1.tar.gz
+[2023-05-09 19:41:44] INFO root fetch - processPackages [gradio-tools]: executing diffoscope
+[2023-05-09 19:41:44] INFO root fetch - processPackages [gradio-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_tools-0.0.7.tar.gz tmp/gradio_tools-0.0.8.tar.gz --markdown 20230509/g/gradio-tools/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-09 19:41:44] INFO root fetch - processPackages [hatchling]: Downloading https://files.pythonhosted.org/packages/0e/7a/bc6679c4c8814b8f09957d255825e75a09220660c272f95719c512538811/hatchling-1.9.0.tar.gz
+[2023-05-09 19:41:44] INFO root fetch - processPackages [hatchling]: executing diffoscope
+[2023-05-09 19:41:44] INFO root fetch - processPackages [hatchling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatchling-1.8.1.tar.gz tmp/hatchling-1.9.0.tar.gz --markdown 20230509/h/hatchling/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 19:41:44] INFO root fetch - processPackages [matrix-synapse]: executing diffoscope
+[2023-05-09 19:41:44] INFO root fetch - processPackages [matrix-synapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matrix-synapse-1.9.0rc1.tar.gz tmp/matrix-synapse-1.9.1.tar.gz --markdown 20230509/m/matrix-synapse/1.9.0rc1-1.9.1/diff.md --exclude *.pyd
+[2023-05-09 19:41:45] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 19:41:45] INFO root fetch - main [MainThread]: End processing [integra]: success
+[2023-05-09 19:41:45] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 19:41:45] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 19:41:45] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 19:41:46] INFO root fetch - main [MainThread]: End processing [PyGFETdb]: success
+[2023-05-09 19:41:46] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2023-05-09 19:41:47] INFO root fetch - main [MainThread]: End processing [hatchling]: success
+[2023-05-09 19:41:48] INFO root fetch - main [MainThread]: End processing [gradio-tools]: success
+[2023-05-09 19:41:56] INFO root fetch - main [MainThread]: End processing [matrix-synapse]: success
+[2023-05-09 19:41:56] INFO root fetch - main [MainThread]: Store serial: [18035587]
