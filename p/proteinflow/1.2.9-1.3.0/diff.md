@@ -1,0 +1,6269 @@
+# Comparing `tmp/proteinflow-1.2.9.tar.gz` & `tmp/proteinflow-1.3.0.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "proteinflow-1.2.9.tar", last modified: Mon Apr 17 15:36:40 2023, max compression
++gzip compressed data, was "proteinflow-1.3.0.tar", last modified: Tue May  9 16:52:22 2023, max compression
+```
+
+## Comparing `proteinflow-1.2.9.tar` & `proteinflow-1.3.0.tar`
+
+### file list
+
+```diff
+@@ -1,31 +1,32 @@
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-04-17 15:36:40.683986 proteinflow-1.2.9/
+--rw-r--r--   0 runner    (1001) docker     (123)     1518 2023-04-17 15:36:28.000000 proteinflow-1.2.9/LICENSE
+--rw-r--r--   0 runner    (1001) docker     (123)     8018 2023-04-17 15:36:40.683986 proteinflow-1.2.9/PKG-INFO
+--rw-r--r--   0 runner    (1001) docker     (123)     7603 2023-04-17 15:36:28.000000 proteinflow-1.2.9/README.md
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-04-17 15:36:40.679986 proteinflow-1.2.9/proteinflow/
+--rw-r--r--   0 runner    (1001) docker     (123)    75424 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/__init__.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-04-17 15:36:40.679986 proteinflow-1.2.9/proteinflow/scripts/
+--rw-r--r--   0 runner    (1001) docker     (123)        0 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/scripts/__init__.py
+--rw-r--r--   0 runner    (1001) docker     (123)     5250 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/scripts/proteinflow_cli.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-04-17 15:36:40.679986 proteinflow-1.2.9/proteinflow/utils/
+--rw-r--r--   0 runner    (1001) docker     (123)        0 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/utils/__init__.py
+--rw-r--r--   0 runner    (1001) docker     (123)     2476 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/utils/async_download.py
+--rw-r--r--   0 runner    (1001) docker     (123)     5010 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/utils/biotite_sse.py
+--rw-r--r--   0 runner    (1001) docker     (123)    11077 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/utils/build_pdb.py
+--rw-r--r--   0 runner    (1001) docker     (123)    34257 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/utils/cluster_and_partition.py
+--rw-r--r--   0 runner    (1001) docker     (123)     3254 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/utils/filter_database.py
+--rw-r--r--   0 runner    (1001) docker     (123)     1483 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/utils/mmcif_fix.py
+--rw-r--r--   0 runner    (1001) docker     (123)    14143 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/utils/process_pdb.py
+--rw-r--r--   0 runner    (1001) docker     (123)     4873 2023-04-17 15:36:28.000000 proteinflow-1.2.9/proteinflow/utils/split_dataset.py
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-04-17 15:36:40.679986 proteinflow-1.2.9/proteinflow.egg-info/
+--rw-r--r--   0 runner    (1001) docker     (123)     8018 2023-04-17 15:36:40.000000 proteinflow-1.2.9/proteinflow.egg-info/PKG-INFO
+--rw-r--r--   0 runner    (1001) docker     (123)      694 2023-04-17 15:36:40.000000 proteinflow-1.2.9/proteinflow.egg-info/SOURCES.txt
+--rw-r--r--   0 runner    (1001) docker     (123)        1 2023-04-17 15:36:40.000000 proteinflow-1.2.9/proteinflow.egg-info/dependency_links.txt
+--rw-r--r--   0 runner    (1001) docker     (123)       72 2023-04-17 15:36:40.000000 proteinflow-1.2.9/proteinflow.egg-info/entry_points.txt
+--rw-r--r--   0 runner    (1001) docker     (123)      234 2023-04-17 15:36:40.000000 proteinflow-1.2.9/proteinflow.egg-info/requires.txt
+--rw-r--r--   0 runner    (1001) docker     (123)       39 2023-04-17 15:36:40.000000 proteinflow-1.2.9/proteinflow.egg-info/top_level.txt
+--rw-r--r--   0 runner    (1001) docker     (123)     1014 2023-04-17 15:36:28.000000 proteinflow-1.2.9/pyproject.toml
+--rw-r--r--   0 runner    (1001) docker     (123)       38 2023-04-17 15:36:40.683986 proteinflow-1.2.9/setup.cfg
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-04-17 15:36:40.683986 proteinflow-1.2.9/tests/
+--rw-r--r--   0 runner    (1001) docker     (123)     2025 2023-04-17 15:36:28.000000 proteinflow-1.2.9/tests/test_download.py
+--rw-r--r--   0 runner    (1001) docker     (123)     2276 2023-04-17 15:36:28.000000 proteinflow-1.2.9/tests/test_generate.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-09 16:52:22.335201 proteinflow-1.3.0/
++-rw-r--r--   0 runner    (1001) docker     (123)     1518 2023-05-09 16:52:07.000000 proteinflow-1.3.0/LICENSE
++-rw-r--r--   0 runner    (1001) docker     (123)     8779 2023-05-09 16:52:22.335201 proteinflow-1.3.0/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)     8369 2023-05-09 16:52:07.000000 proteinflow-1.3.0/README.md
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-09 16:52:22.331201 proteinflow-1.3.0/proteinflow/
++-rw-r--r--   0 runner    (1001) docker     (123)    93730 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/__init__.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-09 16:52:22.335201 proteinflow-1.3.0/proteinflow/scripts/
++-rw-r--r--   0 runner    (1001) docker     (123)        0 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/scripts/__init__.py
++-rw-r--r--   0 runner    (1001) docker     (123)     6372 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/scripts/proteinflow_cli.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-09 16:52:22.335201 proteinflow-1.3.0/proteinflow/utils/
++-rw-r--r--   0 runner    (1001) docker     (123)        0 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/utils/__init__.py
++-rw-r--r--   0 runner    (1001) docker     (123)     2479 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/utils/async_download.py
++-rw-r--r--   0 runner    (1001) docker     (123)     5010 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/utils/biotite_sse.py
++-rw-r--r--   0 runner    (1001) docker     (123)    11349 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/utils/build_pdb.py
++-rw-r--r--   0 runner    (1001) docker     (123)    41037 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/utils/cluster_and_partition.py
++-rw-r--r--   0 runner    (1001) docker     (123)     3254 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/utils/filter_database.py
++-rw-r--r--   0 runner    (1001) docker     (123)     1483 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/utils/mmcif_fix.py
++-rw-r--r--   0 runner    (1001) docker     (123)    16990 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/utils/process_pdb.py
++-rw-r--r--   0 runner    (1001) docker     (123)     6534 2023-05-09 16:52:07.000000 proteinflow-1.3.0/proteinflow/utils/split_dataset.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-09 16:52:22.335201 proteinflow-1.3.0/proteinflow.egg-info/
++-rw-r--r--   0 runner    (1001) docker     (123)     8779 2023-05-09 16:52:22.000000 proteinflow-1.3.0/proteinflow.egg-info/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)      715 2023-05-09 16:52:22.000000 proteinflow-1.3.0/proteinflow.egg-info/SOURCES.txt
++-rw-r--r--   0 runner    (1001) docker     (123)        1 2023-05-09 16:52:22.000000 proteinflow-1.3.0/proteinflow.egg-info/dependency_links.txt
++-rw-r--r--   0 runner    (1001) docker     (123)       72 2023-05-09 16:52:22.000000 proteinflow-1.3.0/proteinflow.egg-info/entry_points.txt
++-rw-r--r--   0 runner    (1001) docker     (123)      238 2023-05-09 16:52:22.000000 proteinflow-1.3.0/proteinflow.egg-info/requires.txt
++-rw-r--r--   0 runner    (1001) docker     (123)       51 2023-05-09 16:52:22.000000 proteinflow-1.3.0/proteinflow.egg-info/top_level.txt
++-rw-r--r--   0 runner    (1001) docker     (123)     1031 2023-05-09 16:52:07.000000 proteinflow-1.3.0/pyproject.toml
++-rw-r--r--   0 runner    (1001) docker     (123)       38 2023-05-09 16:52:22.335201 proteinflow-1.3.0/setup.cfg
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-09 16:52:22.335201 proteinflow-1.3.0/tests/
++-rw-r--r--   0 runner    (1001) docker     (123)     2025 2023-05-09 16:52:07.000000 proteinflow-1.3.0/tests/test_download.py
++-rw-r--r--   0 runner    (1001) docker     (123)     2276 2023-05-09 16:52:07.000000 proteinflow-1.3.0/tests/test_generate.py
++-rw-r--r--   0 runner    (1001) docker     (123)     2055 2023-05-09 16:52:07.000000 proteinflow-1.3.0/tests/test_sabdab.py
+```
+
+### Comparing `proteinflow-1.2.9/LICENSE` & `proteinflow-1.3.0/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `proteinflow-1.2.9/PKG-INFO` & `proteinflow-1.3.0/PKG-INFO`
+
+ * *Files 8% similar despite different names*
+
+```diff
+@@ -1,502 +1,549 @@
+ 00000000: 4d65 7461 6461 7461 2d56 6572 7369 6f6e  Metadata-Version
+ 00000010: 3a20 322e 310a 4e61 6d65 3a20 7072 6f74  : 2.1.Name: prot
+ 00000020: 6569 6e66 6c6f 770a 5665 7273 696f 6e3a  einflow.Version:
+-00000030: 2031 2e32 2e39 0a53 756d 6d61 7279 3a20   1.2.9.Summary: 
++00000030: 2031 2e33 2e30 0a53 756d 6d61 7279 3a20   1.3.0.Summary: 
+ 00000040: 5665 7273 6174 696c 6520 7069 7065 6c69  Versatile pipeli
+ 00000050: 6e65 2066 6f72 2070 726f 6365 7373 696e  ne for processin
+ 00000060: 6720 7072 6f74 6569 6e20 7374 7275 6374  g protein struct
+ 00000070: 7572 6520 6461 7461 2066 6f72 2064 6565  ure data for dee
+ 00000080: 7020 6c65 6172 6e69 6e67 2061 7070 6c69  p learning appli
+ 00000090: 6361 7469 6f6e 732e 0a41 7574 686f 722d  cations..Author-
+-000000a0: 656d 6169 6c3a 2045 6c69 7a61 7665 7461  email: Elizaveta
+-000000b0: 204b 6f7a 6c6f 7661 203c 6c69 7a61 4061   Kozlova <liza@a
+-000000c0: 6461 7074 7976 6269 6f2e 636f 6d3e 2c20  daptyvbio.com>, 
+-000000d0: 4172 7468 7572 2056 616c 656e 7469 6e20  Arthur Valentin 
+-000000e0: 3c61 7274 6875 7240 6164 6170 7479 7662  <arthur@adaptyvb
+-000000f0: 696f 2e63 6f6d 3e0a 4c69 6365 6e73 653a  io.com>.License:
+-00000100: 2042 5344 2d33 2d43 6c61 7573 650a 4b65   BSD-3-Clause.Ke
+-00000110: 7977 6f72 6473 3a20 6269 6f69 6e66 6f72  ywords: bioinfor
+-00000120: 6d61 7469 6373 2c64 6174 6173 6574 2c70  matics,dataset,p
+-00000130: 726f 7465 696e 2c50 4442 2c64 6565 7020  rotein,PDB,deep 
+-00000140: 6c65 6172 6e69 6e67 0a52 6571 7569 7265  learning.Require
+-00000150: 732d 5079 7468 6f6e 3a20 3e3d 332e 380a  s-Python: >=3.8.
+-00000160: 4465 7363 7269 7074 696f 6e2d 436f 6e74  Description-Cont
+-00000170: 656e 742d 5479 7065 3a20 7465 7874 2f6d  ent-Type: text/m
+-00000180: 6172 6b64 6f77 6e0a 4c69 6365 6e73 652d  arkdown.License-
+-00000190: 4669 6c65 3a20 4c49 4345 4e53 450a 0a23  File: LICENSE..#
+-000001a0: 2050 726f 7465 696e 466c 6f77 0a0a 5b21   ProteinFlow..[!
+-000001b0: 5b4c 6963 656e 7365 5d28 6874 7470 733a  [License](https:
+-000001c0: 2f2f 696d 672e 7368 6965 6c64 732e 696f  //img.shields.io
+-000001d0: 2f62 6164 6765 2f4c 6963 656e 7365 2d42  /badge/License-B
+-000001e0: 5344 5f33 2d2d 436c 6175 7365 2d62 6c75  SD_3--Clause-blu
+-000001f0: 652e 7376 6729 5d28 6874 7470 733a 2f2f  e.svg)](https://
+-00000200: 6f70 656e 736f 7572 6365 2e6f 7267 2f6c  opensource.org/l
+-00000210: 6963 656e 7365 732f 4253 442d 332d 436c  icenses/BSD-3-Cl
+-00000220: 6175 7365 290a 5b21 5b43 6f64 6520 7374  ause).[![Code st
+-00000230: 796c 653a 2062 6c61 636b 5d28 6874 7470  yle: black](http
+-00000240: 733a 2f2f 696d 672e 7368 6965 6c64 732e  s://img.shields.
+-00000250: 696f 2f62 6164 6765 2f63 6f64 6525 3230  io/badge/code%20
+-00000260: 7374 796c 652d 626c 6163 6b2d 3030 3030  style-black-0000
+-00000270: 3030 2e73 7667 295d 2868 7474 7073 3a2f  00.svg)](https:/
+-00000280: 2f67 6974 6875 622e 636f 6d2f 7073 662f  /github.com/psf/
+-00000290: 626c 6163 6b29 0a5b 215b 5079 5049 5d28  black).[![PyPI](
+-000002a0: 6874 7470 733a 2f2f 696d 672e 7368 6965  https://img.shie
+-000002b0: 6c64 732e 696f 2f70 7970 692f 762f 7072  lds.io/pypi/v/pr
+-000002c0: 6f74 6569 6e66 6c6f 7729 5d28 6874 7470  oteinflow)](http
+-000002d0: 733a 2f2f 7079 7069 2e6f 7267 2f70 726f  s://pypi.org/pro
+-000002e0: 6a65 6374 2f70 726f 7465 696e 666c 6f77  ject/proteinflow
+-000002f0: 2f29 0a5b 215b 446f 636b 6572 2049 6d61  /).[![Docker Ima
+-00000300: 6765 2056 6572 7369 6f6e 2028 6c61 7465  ge Version (late
+-00000310: 7374 2073 656d 7665 7229 5d28 6874 7470  st semver)](http
+-00000320: 733a 2f2f 696d 672e 7368 6965 6c64 732e  s://img.shields.
+-00000330: 696f 2f64 6f63 6b65 722f 762f 6164 6170  io/docker/v/adap
+-00000340: 7479 7662 696f 2f70 726f 7465 696e 666c  tyvbio/proteinfl
+-00000350: 6f77 3f6c 6162 656c 3d64 6f63 6b65 7229  ow?label=docker)
+-00000360: 5d28 6874 7470 733a 2f2f 6875 622e 646f  ](https://hub.do
+-00000370: 636b 6572 2e63 6f6d 2f72 2f61 6461 7074  cker.com/r/adapt
+-00000380: 7976 6269 6f2f 7072 6f74 6569 6e66 6c6f  yvbio/proteinflo
+-00000390: 772f 7461 6773 290a 215b 4765 6e65 7269  w/tags).![Generi
+-000003a0: 6320 6261 6467 655d 2868 7474 7073 3a2f  c badge](https:/
+-000003b0: 2f69 6d67 2e73 6869 656c 6473 2e69 6f2f  /img.shields.io/
+-000003c0: 6261 6467 652f 436f 6e74 7269 6275 7469  badge/Contributi
+-000003d0: 6f6e 732d 5765 6c63 6f6d 652d 6272 6967  ons-Welcome-brig
+-000003e0: 6874 6772 6565 6e2e 7376 6729 0a0a 4120  htgreen.svg)..A 
+-000003f0: 6461 7461 2070 726f 6365 7373 696e 6720  data processing 
+-00000400: 7069 7065 6c69 6e65 2066 6f72 2061 6c6c  pipeline for all
+-00000410: 2079 6f75 7220 7072 6f74 6569 6e20 6465   your protein de
+-00000420: 7369 676e 206e 6565 6473 2e0a 0a5b 5265  sign needs...[Re
+-00000430: 6164 2074 6865 2064 6f63 756d 656e 7461  ad the documenta
+-00000440: 7469 6f6e 2e5d 2868 7474 7073 3a2f 2f61  tion.](https://a
+-00000450: 6461 7074 7976 6269 6f2e 6769 7468 7562  daptyvbio.github
+-00000460: 2e69 6f2f 5072 6f74 6569 6e46 6c6f 772f  .io/ProteinFlow/
+-00000470: 290a 0a21 5b6f 7665 7276 6965 775d 2868  )..![overview](h
+-00000480: 7474 7073 3a2f 2f72 6177 2e67 6974 6875  ttps://raw.githu
+-00000490: 6275 7365 7263 6f6e 7465 6e74 2e63 6f6d  busercontent.com
+-000004a0: 2f61 6461 7074 7976 6269 6f2f 5072 6f74  /adaptyvbio/Prot
+-000004b0: 6569 6e46 6c6f 772f 6d61 696e 2f6d 6564  einFlow/main/med
+-000004c0: 6961 2f66 6967 5f70 6970 656c 696e 652e  ia/fig_pipeline.
+-000004d0: 706e 6729 0a0a 2323 2049 6e73 7461 6c6c  png)..## Install
+-000004e0: 6174 696f 6e0a 5265 636f 6d6d 656e 6465  ation.Recommende
+-000004f0: 643a 2063 7265 6174 6520 6120 6e65 7720  d: create a new 
+-00000500: 6063 6f6e 6461 6020 656e 7669 726f 6e6d  `conda` environm
+-00000510: 656e 7420 616e 6420 696e 7374 616c 6c20  ent and install 
+-00000520: 6070 726f 7465 696e 666c 6f77 6020 7769  `proteinflow` wi
+-00000530: 7468 2060 7069 7060 2e20 0a60 6060 6261  th `pip`. .```ba
+-00000540: 7368 0a63 6f6e 6461 2063 7265 6174 6520  sh.conda create 
+-00000550: 2d2d 6e61 6d65 2070 726f 7465 696e 666c  --name proteinfl
+-00000560: 6f77 202d 790a 636f 6e64 6120 6163 7469  ow -y.conda acti
+-00000570: 7661 7465 2070 726f 7465 696e 666c 6f77  vate proteinflow
+-00000580: 0a70 7974 686f 6e20 2d6d 2070 6970 2069  .python -m pip i
+-00000590: 6e73 7461 6c6c 2070 726f 7465 696e 666c  nstall proteinfl
+-000005a0: 6f77 0a60 6060 0a0a 4966 2079 6f75 2061  ow.```..If you a
+-000005b0: 7265 2075 7369 6e67 2060 7079 7468 6f6e  re using `python
+-000005c0: 2033 2e31 3060 2061 6e64 2065 6e63 6f75   3.10` and encou
+-000005d0: 6e74 6572 696e 6720 696e 7374 616c 6c61  ntering installa
+-000005e0: 7469 6f6e 2070 726f 626c 656d 732c 2074  tion problems, t
+-000005f0: 7279 2072 756e 6e69 6e67 2060 7079 7468  ry running `pyth
+-00000600: 6f6e 202d 6d20 7069 7020 696e 7374 616c  on -m pip instal
+-00000610: 6c20 7072 6f64 793d 3d32 2e34 2e30 6020  l prody==2.4.0` 
+-00000620: 6265 666f 7265 2069 6e73 7461 6c6c 696e  before installin
+-00000630: 6720 6070 726f 7465 696e 666c 6f77 602e  g `proteinflow`.
+-00000640: 0a0a 2323 2320 4164 6469 7469 6f6e 616c  ..### Additional
+-00000650: 2072 6571 7569 7265 6d65 6e74 730a 496e   requirements.In
+-00000660: 206d 6f73 7420 6361 7365 732c 2072 756e   most cases, run
+-00000670: 6e69 6e67 2074 6865 2063 6f6d 6d61 6e64  ning the command
+-00000680: 7320 6973 2065 6e6f 7567 682e 2048 6f77  s is enough. How
+-00000690: 6576 6572 2c20 6966 2079 6f75 2061 7265  ever, if you are
+-000006a0: 2070 6c61 6e6e 696e 6720 746f 2067 656e   planning to gen
+-000006b0: 6572 6174 6520 6120 6e65 7720 6461 7461  erate a new data
+-000006c0: 7365 742c 2074 6865 7265 2069 7320 6120  set, there is a 
+-000006d0: 636f 7570 6c65 2061 6464 6974 696f 6e61  couple additiona
+-000006e0: 6c20 7265 7175 6972 656d 656e 7473 2e0a  l requirements..
+-000006f0: 0a46 6972 7374 2c20 796f 7520 7769 6c6c  .First, you will
+-00000700: 206e 6565 6420 746f 2069 6e73 7461 6c6c   need to install
+-00000710: 2060 6d6d 7365 7173 602e 2054 6865 2072   `mmseqs`. The r
+-00000720: 6563 6f6d 6d65 6e64 6564 2077 6179 2069  ecommended way i
+-00000730: 7320 746f 2072 756e 2074 6865 2066 6f6c  s to run the fol
+-00000740: 6c6f 7769 6e67 2063 6f6d 6d61 6e64 2069  lowing command i
+-00000750: 6e20 796f 7572 2060 636f 6e64 6160 2065  n your `conda` e
+-00000760: 6e76 6972 6f6e 6d65 6e74 2062 7574 2074  nvironment but t
+-00000770: 6865 7265 2061 7265 2061 6c74 6572 6e61  here are alterna
+-00000780: 7469 7665 206d 6574 686f 6473 2079 6f75  tive methods you
+-00000790: 2063 616e 2073 6565 205b 6865 7265 5d28   can see [here](
+-000007a0: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
+-000007b0: 6f6d 2f73 6f65 6469 6e67 6c61 622f 4d4d  om/soedinglab/MM
+-000007c0: 7365 7173 3229 2e0a 6060 6062 6173 680a  seqs2)..```bash.
+-000007d0: 636f 6e64 6120 696e 7374 616c 6c20 2d79  conda install -y
+-000007e0: 202d 6320 636f 6e64 612d 666f 7267 6520   -c conda-forge 
+-000007f0: 2d63 2062 696f 636f 6e64 6120 6d6d 7365  -c bioconda mmse
+-00000800: 7173 320a 6060 600a 0a49 6e20 6164 6469  qs2.```..In addi
+-00000810: 7469 6f6e 2c20 6070 726f 7465 696e 666c  tion, `proteinfl
+-00000820: 6f77 6020 6465 7065 6e64 7320 6f6e 2074  ow` depends on t
+-00000830: 6865 2060 7263 7362 7365 6172 6368 6020  he `rcsbsearch` 
+-00000840: 7061 636b 6167 6520 616e 6420 7468 6520  package and the 
+-00000850: 6c61 7465 7374 2072 656c 6561 7365 205b  latest release [
+-00000860: 7630 2e32 2e33 5d28 6874 7470 733a 2f2f  v0.2.3](https://
+-00000870: 6769 7468 7562 2e63 6f6d 2f73 626c 6976  github.com/sbliv
+-00000880: 656e 2f72 6373 6273 6561 7263 682f 7265  en/rcsbsearch/re
+-00000890: 6c65 6173 6573 2f74 6167 2f76 302e 322e  leases/tag/v0.2.
+-000008a0: 3329 2069 7320 6375 7272 656e 746c 7920  3) is currently 
+-000008b0: 6e6f 7420 776f 726b 696e 6720 636f 7272  not working corr
+-000008c0: 6563 746c 792e 2046 6f6c 6c6f 7720 7468  ectly. Follow th
+-000008d0: 6520 7265 636f 6d6d 656e 6465 6420 6669  e recommended fi
+-000008e0: 783a 0a60 6060 6261 7368 0a70 7974 686f  x:.```bash.pytho
+-000008f0: 6e20 2d6d 2070 6970 2069 6e73 7461 6c6c  n -m pip install
+-00000900: 2022 7263 7362 7365 6172 6368 2040 2067   "rcsbsearch @ g
+-00000910: 6974 2b68 7474 7073 3a2f 2f67 6974 6875  it+https://githu
+-00000920: 622e 636f 6d2f 7362 6c69 7665 6e2f 7263  b.com/sbliven/rc
+-00000930: 7362 7365 6172 6368 4064 6264 6665 3338  sbsearch@dbdfe38
+-00000940: 3830 6363 3838 6230 6365 3537 3136 3339  80cc88b0ce571639
+-00000950: 3837 6462 3631 3364 3537 3934 3030 6338  87db613d579400c8
+-00000960: 6522 0a60 6060 0a0a 4669 6e61 6c6c 792c  e".```..Finally,
+-00000970: 2079 6f75 2063 616e 2075 7365 206f 7572   you can use our
+-00000980: 205b 646f 636b 6572 2069 6d61 6765 5d28   [docker image](
+-00000990: 6874 7470 733a 2f2f 6875 622e 646f 636b  https://hub.dock
+-000009a0: 6572 2e63 6f6d 2f72 2f61 6461 7074 7976  er.com/r/adaptyv
+-000009b0: 6269 6f2f 7072 6f74 6569 6e66 6c6f 772f  bio/proteinflow/
+-000009c0: 7461 6773 2920 6173 2061 6e20 616c 7465  tags) as an alte
+-000009d0: 726e 6174 6976 652e 0a60 6060 6261 7368  rnative..```bash
+-000009e0: 0a64 6f63 6b65 7220 7275 6e20 2d69 7420  .docker run -it 
+-000009f0: 2d76 202f 7061 7468 2f74 6f2f 6461 7461  -v /path/to/data
+-00000a00: 3a2f 6d65 6469 6120 6164 6170 7479 7662  :/media adaptyvb
+-00000a10: 696f 2f70 726f 7465 696e 666c 6f77 2062  io/proteinflow b
+-00000a20: 6173 680a 6060 600a 0a23 2320 5573 6167  ash.```..## Usag
+-00000a30: 650a 2323 2320 446f 776e 6c6f 6164 696e  e.### Downloadin
+-00000a40: 6720 7072 652d 636f 6d70 7574 6564 2064  g pre-computed d
+-00000a50: 6174 6173 6574 7320 2873 7461 626c 6529  atasets (stable)
+-00000a60: 0a41 6c72 6561 6479 2070 7265 636f 6d70  .Already precomp
+-00000a70: 7574 6564 2064 6174 6173 6574 7320 7769  uted datasets wi
+-00000a80: 7468 2063 6f6e 7365 6e73 7573 2073 6574  th consensus set
+-00000a90: 206f 6620 7061 7261 6d65 7465 7273 2061   of parameters a
+-00000aa0: 6e64 2063 616e 2062 6520 6163 6365 7373  nd can be access
+-00000ab0: 6564 2061 6e64 2064 6f77 6e6c 6f61 6465  ed and downloade
+-00000ac0: 6420 7573 696e 6720 7468 6520 6070 726f  d using the `pro
+-00000ad0: 7465 696e 666c 6f77 602e 2070 6163 6b61  teinflow`. packa
+-00000ae0: 6765 2e20 4368 6563 6b20 7468 6520 6f75  ge. Check the ou
+-00000af0: 7470 7574 206f 6620 6070 726f 7465 696e  tput of `protein
+-00000b00: 666c 6f77 2063 6865 636b 5f74 6167 7360  flow check_tags`
+-00000b10: 2066 6f72 2061 206c 6973 7420 6f66 2061   for a list of a
+-00000b20: 7661 696c 6162 6c65 2074 6167 732e 0a60  vailable tags..`
+-00000b30: 6060 6261 7368 0a70 726f 7465 696e 666c  ``bash.proteinfl
+-00000b40: 6f77 2064 6f77 6e6c 6f61 6420 2d2d 7461  ow download --ta
+-00000b50: 6720 3230 3232 3131 3130 200a 6060 600a  g 20221110 .```.
+-00000b60: 0a23 2323 2052 756e 6e69 6e67 2074 6865  .### Running the
+-00000b70: 2070 6970 656c 696e 650a 596f 7520 6361   pipeline.You ca
+-00000b80: 6e20 616c 736f 2072 756e 2060 7072 6f74  n also run `prot
+-00000b90: 6569 6e66 6c6f 7760 2077 6974 6820 796f  einflow` with yo
+-00000ba0: 7572 206f 776e 2070 6172 616d 6574 6572  ur own parameter
+-00000bb0: 732e 2043 6865 636b 2074 6865 206f 7574  s. Check the out
+-00000bc0: 7075 7420 6f66 2060 7072 6f74 6569 6e66  put of `proteinf
+-00000bd0: 6c6f 7720 6368 6563 6b5f 736e 6170 7368  low check_snapsh
+-00000be0: 6f74 7360 2066 6f72 2061 206c 6973 7420  ots` for a list 
+-00000bf0: 6f66 2061 7661 696c 6162 6c65 2050 4442  of available PDB
+-00000c00: 2073 6e61 7073 686f 7473 2028 6e61 6d69   snapshots (nami
+-00000c10: 6e67 2072 756c 653a 2060 7979 7979 6d6d  ng rule: `yyyymm
+-00000c20: 6464 6029 2e0a 0a46 6f72 2069 6e73 7461  dd`)...For insta
+-00000c30: 6e63 652c 206c 6574 2773 2067 656e 6572  nce, let's gener
+-00000c40: 6174 6520 6120 6461 7461 7365 7420 7769  ate a dataset wi
+-00000c50: 7468 2074 6865 2066 6f6c 6c6f 7769 6e67  th the following
+-00000c60: 2064 6573 6372 6970 7469 6f6e 3a0a 2d20   description:.- 
+-00000c70: 7265 736f 6c75 7469 6f6e 2074 6872 6573  resolution thres
+-00000c80: 686f 6c64 3a20 3520 616e 6773 7472 6f6d  hold: 5 angstrom
+-00000c90: 2c0a 2d20 5044 4220 736e 6170 7368 6f74  ,.- PDB snapshot
+-00000ca0: 3a20 3230 3139 3031 3031 2c0a 2d20 7374  : 20190101,.- st
+-00000cb0: 7275 6374 7572 6520 6d65 7468 6f64 7320  ructure methods 
+-00000cc0: 6163 6365 7074 6564 3a20 616c 6c20 2878  accepted: all (x
+-00000cd0: 2d72 6179 2063 6872 6973 746f 6c6f 6772  -ray christologr
+-00000ce0: 6170 6879 2c20 4e52 4d2c 2043 7279 6f2d  aphy, NRM, Cryo-
+-00000cf0: 454d 292c 0a2d 2073 6571 7565 6e63 6520  EM),.- sequence 
+-00000d00: 6964 656e 7469 7479 2074 6872 6573 686f  identity thresho
+-00000d10: 6c64 2066 6f72 2063 6c75 7374 6572 696e  ld for clusterin
+-00000d20: 673a 2034 3025 2073 6571 7565 6e63 6520  g: 40% sequence 
+-00000d30: 7369 6d69 6c61 7269 7479 2c0a 2d20 6d61  similarity,.- ma
+-00000d40: 7869 6d75 6d20 6c65 6e67 7468 2070 6572  ximum length per
+-00000d50: 2073 6571 7565 6e63 653a 2031 3030 3020   sequence: 1000 
+-00000d60: 7265 7369 6475 6573 2c0a 2d20 6d69 6e69  residues,.- mini
+-00000d70: 6d75 6d20 6c65 6e67 7468 2070 6572 2073  mum length per s
+-00000d80: 6571 7565 6e63 653a 2035 2072 6573 6964  equence: 5 resid
+-00000d90: 7565 732c 0a2d 206d 6178 696d 756d 2066  ues,.- maximum f
+-00000da0: 7261 6374 696f 6e20 6f66 206d 6973 7369  raction of missi
+-00000db0: 6e67 2076 616c 7565 7320 6174 2074 6865  ng values at the
+-00000dc0: 2065 6e64 733a 2031 3025 2c0a 2d20 7369   ends: 10%,.- si
+-00000dd0: 7a65 206f 6620 7661 6c69 6461 7469 6f6e  ze of validation
+-00000de0: 2073 7562 7365 743a 2031 3025 2e0a 0a60   subset: 10%...`
+-00000df0: 6060 6261 7368 0a70 726f 7465 696e 666c  ``bash.proteinfl
+-00000e00: 6f77 2067 656e 6572 6174 6520 2d2d 7461  ow generate --ta
+-00000e10: 6720 6e65 7720 2d2d 7265 736f 6c75 7469  g new --resoluti
+-00000e20: 6f6e 5f74 6872 2035 202d 2d70 6462 5f73  on_thr 5 --pdb_s
+-00000e30: 6e61 7073 686f 7420 3230 3139 3031 3031  napshot 20190101
+-00000e40: 202d 2d6e 6f74 5f66 696c 7465 725f 6d65   --not_filter_me
+-00000e50: 7468 6f64 7320 2d2d 6d69 6e5f 7365 715f  thods --min_seq_
+-00000e60: 6964 2030 2e34 202d 2d6d 6178 5f6c 656e  id 0.4 --max_len
+-00000e70: 6774 6820 3130 3030 202d 2d6d 696e 5f6c  gth 1000 --min_l
+-00000e80: 656e 6774 6820 3520 2d2d 6d69 7373 696e  ength 5 --missin
+-00000e90: 675f 656e 6473 5f74 6872 2030 2e31 202d  g_ends_thr 0.1 -
+-00000ea0: 2d76 616c 6964 5f73 706c 6974 2030 2e31  -valid_split 0.1
+-00000eb0: 0a60 6060 0a53 6565 2074 6865 205b 646f  .```.See the [do
+-00000ec0: 6373 5d28 6874 7470 733a 2f2f 6164 6170  cs](https://adap
+-00000ed0: 7479 7662 696f 2e67 6974 6875 622e 696f  tyvbio.github.io
+-00000ee0: 2f50 726f 7465 696e 466c 6f77 2f29 2028  /ProteinFlow/) (
+-00000ef0: 6f72 2060 7072 6f74 6569 6e66 6c6f 7720  or `proteinflow 
+-00000f00: 6765 6e65 7261 7465 202d 2d68 656c 7060  generate --help`
+-00000f10: 2920 666f 7220 7468 6520 6675 6c6c 206c  ) for the full l
+-00000f20: 6973 7420 6f66 2070 6172 616d 6574 6572  ist of parameter
+-00000f30: 7320 616e 6420 6d6f 7265 2069 6e66 6f72  s and more infor
+-00000f40: 6d61 7469 6f6e 2e0a 0a41 2072 6567 6973  mation...A regis
+-00000f50: 7472 7920 6f66 2061 6c6c 2074 6865 2066  try of all the f
+-00000f60: 696c 6573 2074 6861 7420 6172 6520 7265  iles that are re
+-00000f70: 6d6f 7665 6420 6475 7269 6e67 2074 6865  moved during the
+-00000f80: 2066 696c 7465 7269 6e67 2061 7320 7765   filtering as we
+-00000f90: 6c6c 2061 7320 6465 7363 7269 7074 696f  ll as descriptio
+-00000fa0: 6e20 7769 7468 2074 6865 2072 6561 736f  n with the reaso
+-00000fb0: 6e20 666f 7220 7468 6569 7220 7265 6d6f  n for their remo
+-00000fc0: 7661 6c20 6973 2063 7265 6174 6564 2061  val is created a
+-00000fd0: 7574 6f6d 6174 6963 616c 6c79 2066 6f72  utomatically for
+-00000fe0: 2065 6163 6820 6067 656e 6572 6174 6560   each `generate`
+-00000ff0: 2063 6f6d 6d61 6e64 2e20 5468 6520 6c6f   command. The lo
+-00001000: 6720 6669 6c65 7320 6172 6520 7361 7665  g files are save
+-00001010: 2028 6174 2060 6461 7461 2f6c 6f67 7360   (at `data/logs`
+-00001020: 2062 7920 6465 6661 756c 7429 2061 6e64   by default) and
+-00001030: 2061 2073 756d 6d61 7279 2063 616e 2062   a summary can b
+-00001040: 6520 6163 6365 7373 6564 2072 756e 6e69  e accessed runni
+-00001050: 6e67 2060 7072 6f74 6569 6e66 6c6f 7720  ng `proteinflow 
+-00001060: 6765 745f 7375 6d6d 6172 7920 7b6c 6f67  get_summary {log
+-00001070: 5f70 6174 687d 602e 0a0a 2323 2320 5370  _path}`...### Sp
+-00001080: 6c69 7474 696e 670a 4279 2064 6566 6175  litting.By defau
+-00001090: 6c74 2c20 626f 7468 2060 7072 6f74 6569  lt, both `protei
+-000010a0: 6e66 6c6f 7720 6765 6e65 7261 7465 6020  nflow generate` 
+-000010b0: 616e 6420 6070 726f 7465 696e 666c 6f77  and `proteinflow
+-000010c0: 2064 6f77 6e6c 6f61 6460 2077 696c 6c20   download` will 
+-000010d0: 616c 736f 2073 706c 6974 2079 6f75 7220  also split your 
+-000010e0: 6461 7461 2069 6e74 6f20 7472 6169 6e69  data into traini
+-000010f0: 6e67 2c20 7465 7374 2061 6e64 2076 616c  ng, test and val
+-00001100: 6964 6174 696f 6e20 6163 636f 7264 696e  idation accordin
+-00001110: 6720 746f 204d 4d73 6571 7332 2063 6c75  g to MMseqs2 clu
+-00001120: 7374 6572 696e 6720 616e 6420 686f 6d6f  stering and homo
+-00001130: 6d65 722f 6865 7465 726f 6d65 722f 7369  mer/heteromer/si
+-00001140: 6e67 6c65 2063 6861 696e 2070 726f 706f  ngle chain propo
+-00001150: 7274 696f 6e73 2e20 486f 7765 7665 722c  rtions. However,
+-00001160: 2079 6f75 2063 616e 2073 6b69 7020 7468   you can skip th
+-00001170: 6973 2073 7465 7020 7769 7468 2061 2060  is step with a `
+-00001180: 2d2d 736b 6970 5f73 706c 6974 7469 6e67  --skip_splitting
+-00001190: 6020 666c 6167 2061 6e64 2074 6865 6e20  ` flag and then 
+-000011a0: 7065 7266 6f72 6d20 6974 2073 6570 6172  perform it separ
+-000011b0: 6174 656c 7920 7769 7468 2074 6865 2060  ately with the `
+-000011c0: 7072 6f74 6569 6e66 6c6f 7720 7370 6c69  proteinflow spli
+-000011d0: 7460 2063 6f6d 6d61 6e64 2e0a 0a54 6865  t` command...The
+-000011e0: 2066 6f6c 6c6f 7769 6e67 2063 6f6d 6d61   following comma
+-000011f0: 6e64 2077 696c 6c20 7065 7266 6f72 6d20  nd will perform 
+-00001200: 7468 6520 7370 6c69 7474 696e 6720 7769  the splitting wi
+-00001210: 7468 2061 2031 3025 2076 616c 6964 6174  th a 10% validat
+-00001220: 696f 6e20 7365 742c 2061 2035 2520 7465  ion set, a 5% te
+-00001230: 7374 2073 6574 2061 6e64 2061 2035 3025  st set and a 50%
+-00001240: 2074 6872 6573 686f 6c64 2066 6f72 2073   threshold for s
+-00001250: 6571 7565 6e63 6520 6964 656e 7469 7479  equence identity
+-00001260: 2063 6c75 7374 6572 732e 0a60 6060 6261   clusters..```ba
+-00001270: 7368 0a70 726f 7465 696e 666c 6f77 2073  sh.proteinflow s
+-00001280: 706c 6974 202d 2d74 6167 206e 6577 202d  plit --tag new -
+-00001290: 2d76 616c 6964 5f73 706c 6974 2030 2e31  -valid_split 0.1
+-000012a0: 202d 2d74 6573 745f 7370 6c69 7420 302e   --test_split 0.
+-000012b0: 3520 2d2d 6d69 6e5f 7365 715f 6964 2030  5 --min_seq_id 0
+-000012c0: 2e35 0a60 6060 0a0a 2323 2320 5573 696e  .5.```..### Usin
+-000012d0: 6720 7468 6520 6461 7461 0a54 6865 206f  g the data.The o
+-000012e0: 7574 7075 7420 6669 6c65 7320 6172 6520  utput files are 
+-000012f0: 7069 636b 6c65 6420 6e65 7374 6564 2064  pickled nested d
+-00001300: 6963 7469 6f6e 6172 6965 7320 7768 6572  ictionaries wher
+-00001310: 6520 6669 7273 742d 6c65 7665 6c20 6b65  e first-level ke
+-00001320: 7973 2061 7265 2063 6861 696e 2049 6473  ys are chain Ids
+-00001330: 2061 6e64 2073 6563 6f6e 642d 6c65 7665   and second-leve
+-00001340: 6c20 6b65 7973 2061 7265 2074 6865 2066  l keys are the f
+-00001350: 6f6c 6c6f 7769 6e67 3a0a 2d20 6027 6372  ollowing:.- `'cr
+-00001360: 645f 6262 2760 3a20 6120 606e 756d 7079  d_bb'`: a `numpy
+-00001370: 6020 6172 7261 7920 6f66 2073 6861 7065  ` array of shape
+-00001380: 2060 284c 2c20 342c 2033 2960 2077 6974   `(L, 4, 3)` wit
+-00001390: 6820 6261 636b 626f 6e65 2061 746f 6d20  h backbone atom 
+-000013a0: 636f 6f72 6469 6e61 7465 7320 284e 2c20  coordinates (N, 
+-000013b0: 432c 2043 412c 204f 292c 0a2d 2060 2763  C, CA, O),.- `'c
+-000013c0: 7264 5f73 6327 603a 2061 2060 6e75 6d70  rd_sc'`: a `nump
+-000013d0: 7960 2061 7272 6179 206f 6620 7368 6170  y` array of shap
+-000013e0: 6520 6028 4c2c 2031 302c 2033 2960 2077  e `(L, 10, 3)` w
+-000013f0: 6974 6820 7369 6465 6368 6169 6e20 6174  ith sidechain at
+-00001400: 6f6d 2063 6f6f 7264 696e 6174 6573 2028  om coordinates (
+-00001410: 6368 6563 6b20 6070 726f 7465 696e 666c  check `proteinfl
+-00001420: 6f77 2e73 6964 6563 6861 696e 5f6f 7264  ow.sidechain_ord
+-00001430: 6572 2829 6020 666f 7220 7468 6520 6f72  er()` for the or
+-00001440: 6465 7220 6f66 2061 746f 6d73 292c 0a2d  der of atoms),.-
+-00001450: 2060 276d 736b 2760 3a20 6120 606e 756d   `'msk'`: a `num
+-00001460: 7079 6020 6172 7261 7920 6f66 2073 6861  py` array of sha
+-00001470: 7065 2060 284c 2c29 6020 7768 6572 6520  pe `(L,)` where 
+-00001480: 6f6e 6573 2063 6f72 7265 7370 6f6e 6420  ones correspond 
+-00001490: 746f 2072 6573 6964 7565 7320 7769 7468  to residues with
+-000014a0: 206b 6e6f 776e 2063 6f6f 7264 696e 6174   known coordinat
+-000014b0: 6573 2061 6e64 0a20 2020 207a 6572 6f73  es and.    zeros
+-000014c0: 2074 6f20 6d69 7373 696e 6720 7661 6c75   to missing valu
+-000014d0: 6573 2c0a 2d20 6027 7365 7127 603a 2061  es,.- `'seq'`: a
+-000014e0: 2073 7472 696e 6720 6f66 206c 656e 6774   string of lengt
+-000014f0: 6820 604c 6020 7769 7468 2072 6573 6964  h `L` with resid
+-00001500: 7565 2074 7970 6573 2e0a 0a4f 6e63 6520  ue types...Once 
+-00001510: 796f 7572 2064 6174 6120 6973 2072 6561  your data is rea
+-00001520: 6479 2c20 796f 7520 6361 6e20 6f70 656e  dy, you can open
+-00001530: 2074 6865 2066 696c 6573 2064 6972 6563   the files direc
+-00001540: 746c 7920 7769 7468 2060 7069 636b 6c65  tly with `pickle
+-00001550: 6020 746f 2061 6363 6573 7320 7468 6973  ` to access this
+-00001560: 2064 6174 612e 0a0a 6060 6070 7974 686f   data...```pytho
+-00001570: 6e0a 696d 706f 7274 2070 6963 6b6c 650a  n.import pickle.
+-00001580: 696d 706f 7274 206f 730a 0a74 7261 696e  import os..train
+-00001590: 5f66 6f6c 6465 7220 3d20 222e 2f64 6174  _folder = "./dat
+-000015a0: 612f 7072 6f74 6569 6e66 6c6f 775f 6e65  a/proteinflow_ne
+-000015b0: 772f 7472 6169 6e69 6e67 220a 666f 7220  w/training".for 
+-000015c0: 6669 6c65 6e61 6d65 2069 6e20 6f73 2e6c  filename in os.l
+-000015d0: 6973 7464 6972 2874 7261 696e 5f66 6f6c  istdir(train_fol
+-000015e0: 6465 7229 3a0a 2020 2020 7769 7468 206f  der):.    with o
+-000015f0: 7065 6e28 6f73 2e70 6174 682e 6a6f 696e  pen(os.path.join
+-00001600: 2874 7261 696e 5f66 6f6c 6465 722c 2066  (train_folder, f
+-00001610: 696c 656e 616d 6529 2c20 2272 6222 2920  ilename), "rb") 
+-00001620: 6173 2066 3a0a 2020 2020 2020 2020 6461  as f:.        da
+-00001630: 7461 203d 2070 6963 6b6c 652e 6c6f 6164  ta = pickle.load
+-00001640: 2866 290a 2020 2020 6372 645f 6262 203d  (f).    crd_bb =
+-00001650: 2064 6174 615b 2263 7264 5f62 6222 5d0a   data["crd_bb"].
+-00001660: 2020 2020 7365 7120 3d20 6461 7461 5b22      seq = data["
+-00001670: 7365 7122 5d0a 2020 2020 2e2e 2e0a 6060  seq"].    ....``
+-00001680: 600a 0a41 6c74 6572 6e61 7469 7665 6c79  `..Alternatively
+-00001690: 2c20 796f 7520 6361 6e20 7573 6520 6f75  , you can use ou
+-000016a0: 7220 6050 726f 7465 696e 4461 7461 7365  r `ProteinDatase
+-000016b0: 7460 206f 7220 6050 726f 7465 696e 4c6f  t` or `ProteinLo
+-000016c0: 6164 6572 6020 636c 6173 7365 7320 0a66  ader` classes .f
+-000016d0: 6f72 2063 6f6e 7665 6e69 656e 7420 7072  or convenient pr
+-000016e0: 6f63 6573 7369 6e67 2e20 416d 6f6e 6720  ocessing. Among 
+-000016f0: 6f74 6865 7220 7468 696e 6773 2c20 7468  other things, th
+-00001700: 6579 2061 6c6c 6f77 2066 6f72 2066 6561  ey allow for fea
+-00001710: 7475 7265 2065 7874 7261 6374 696f 6e2c  ture extraction,
+-00001720: 2073 696e 676c 6520 6368 6169 6e20 2f20   single chain / 
+-00001730: 686f 6d6f 6d65 7220 2f20 6865 7465 726f  homomer / hetero
+-00001740: 6d65 7220 6669 6c74 6572 696e 6720 616e  mer filtering an
+-00001750: 6420 7261 6e64 6f6d 697a 6564 2073 616d  d randomized sam
+-00001760: 706c 696e 6720 6672 6f6d 2073 6571 7565  pling from seque
+-00001770: 6e63 6520 6964 656e 7469 7479 2063 6c75  nce identity clu
+-00001780: 7374 6572 732e 0a0a 466f 7220 6578 616d  sters...For exam
+-00001790: 706c 652c 2068 6572 6520 6973 2068 6f77  ple, here is how
+-000017a0: 2077 6520 6361 6e20 6372 6561 7465 2061   we can create a
+-000017b0: 2064 6174 6120 6c6f 6164 6572 2074 6861   data loader tha
+-000017c0: 743a 0a2d 2073 616d 706c 6573 2061 2064  t:.- samples a d
+-000017d0: 6966 6665 7265 6e74 2063 6c75 7374 6572  ifferent cluster
+-000017e0: 2072 6570 7265 7365 6e74 6174 6976 6520   representative 
+-000017f0: 6174 2065 7665 7279 2065 706f 6368 2c0a  at every epoch,.
+-00001800: 2d20 6578 7472 6163 7473 2064 6968 6564  - extracts dihed
+-00001810: 7261 6c20 616e 676c 6573 2c20 7369 6465  ral angles, side
+-00001820: 6368 6169 6e20 6f72 6965 6e74 6174 696f  chain orientatio
+-00001830: 6e20 616e 6420 7365 636f 6e64 6172 7920  n and secondary 
+-00001840: 7374 7275 6374 7572 6520 6665 6174 7572  structure featur
+-00001850: 6573 2c0a 2d20 6f6e 6c79 206c 6f61 6473  es,.- only loads
+-00001860: 2070 6169 7273 206f 6620 696e 7465 7261   pairs of intera
+-00001870: 6374 696e 6720 7072 6f74 6569 6e73 2028  cting proteins (
+-00001880: 6c61 7267 6572 2062 696f 756e 6974 7320  larger biounits 
+-00001890: 6172 6520 6272 6f6b 656e 2075 7020 696e  are broken up in
+-000018a0: 746f 2070 6169 7273 292c 0a2d 2068 6173  to pairs),.- has
+-000018b0: 2062 6174 6368 2073 697a 6520 382e 0a0a   batch size 8...
+-000018c0: 6060 6070 7974 686f 6e0a 6672 6f6d 2070  ```python.from p
+-000018d0: 726f 7465 696e 666c 6f77 2069 6d70 6f72  roteinflow impor
+-000018e0: 7420 5072 6f74 6569 6e4c 6f61 6465 720a  t ProteinLoader.
+-000018f0: 7472 6169 6e5f 6c6f 6164 6572 203d 2050  train_loader = P
+-00001900: 726f 7465 696e 4c6f 6164 6572 2e66 726f  roteinLoader.fro
+-00001910: 6d5f 6172 6773 280a 2020 2020 222e 2f64  m_args(.    "./d
+-00001920: 6174 612f 7072 6f74 6569 6e66 6c6f 775f  ata/proteinflow_
+-00001930: 6e65 772f 7472 6169 6e69 6e67 222c 200a  new/training", .
+-00001940: 2020 2020 636c 7573 7465 7269 6e67 5f64      clustering_d
+-00001950: 6963 745f 7061 7468 3d22 2e2f 6461 7461  ict_path="./data
+-00001960: 2f70 726f 7465 696e 666c 6f77 5f6e 6577  /proteinflow_new
+-00001970: 2f73 706c 6974 735f 6469 6374 2f74 7261  /splits_dict/tra
+-00001980: 696e 2e70 6963 6b6c 6522 2c0a 2020 2020  in.pickle",.    
+-00001990: 6e6f 6465 5f66 6561 7475 7265 735f 7479  node_features_ty
+-000019a0: 7065 3d22 6469 6865 6472 616c 2b73 6964  pe="dihedral+sid
+-000019b0: 6563 6861 696e 5f6f 7269 656e 7461 7469  echain_orientati
+-000019c0: 6f6e 2b73 6563 6f6e 6461 7279 5f73 7472  on+secondary_str
+-000019d0: 7563 7475 7265 222c 0a20 2020 2065 6e74  ucture",.    ent
+-000019e0: 7279 5f74 7970 653d 2270 6169 7222 2c0a  ry_type="pair",.
+-000019f0: 2020 2020 6261 7463 685f 7369 7a65 3d38      batch_size=8
+-00001a00: 2c0a 290a 666f 7220 6261 7463 6820 696e  ,.).for batch in
+-00001a10: 2074 7261 696e 5f6c 6f61 6465 723a 0a20   train_loader:. 
+-00001a20: 2020 2063 7264 5f62 6220 3d20 6261 7463     crd_bb = batc
+-00001a30: 685b 2258 225d 2023 2842 2c20 4c2c 2034  h["X"] #(B, L, 4
+-00001a40: 2c20 3329 0a20 2020 2073 6571 203d 2062  , 3).    seq = b
+-00001a50: 6174 6368 5b22 5322 5d20 2328 422c 204c  atch["S"] #(B, L
+-00001a60: 290a 2020 2020 7373 6520 3d20 6261 7463  ).    sse = batc
+-00001a70: 685b 2273 6563 6f6e 6461 7279 5f73 7472  h["secondary_str
+-00001a80: 7563 7475 7265 225d 2023 2842 2c20 4c2c  ucture"] #(B, L,
+-00001a90: 2033 290a 2020 2020 746f 5f70 7265 6469   3).    to_predi
+-00001aa0: 6374 203d 2062 6174 6368 5b22 6d61 736b  ct = batch["mask
+-00001ab0: 6564 5f72 6573 225d 2023 2842 2c20 4c29  ed_res"] #(B, L)
+-00001ac0: 2c20 3120 7768 6572 6520 7468 6520 7265  , 1 where the re
+-00001ad0: 7369 6475 6573 2073 686f 756c 6420 6265  sidues should be
+-00001ae0: 206d 6173 6b65 642c 2030 206f 7468 6572   masked, 0 other
+-00001af0: 7769 7365 0a20 2020 202e 2e2e 0a60 6060  wise.    ....```
+-00001b00: 0a53 6565 206d 6f72 6520 6465 7461 696c  .See more detail
+-00001b10: 7320 6f6e 2061 7661 696c 6162 6c65 2070  s on available p
+-00001b20: 6172 616d 6574 6572 7320 616e 6420 7468  arameters and th
+-00001b30: 6520 6461 7461 2066 6f72 6d61 7420 696e  e data format in
+-00001b40: 2074 6865 205b 646f 6373 5d28 6874 7470   the [docs](http
+-00001b50: 733a 2f2f 6164 6170 7479 7662 696f 2e67  s://adaptyvbio.g
+-00001b60: 6974 6875 622e 696f 2f50 726f 7465 696e  ithub.io/Protein
+-00001b70: 466c 6f77 2f29 202b 205b 7468 6973 2072  Flow/) + [this r
+-00001b80: 6570 6f73 6974 6f72 795d 2868 7474 7073  epository](https
+-00001b90: 3a2f 2f67 6974 6875 622e 636f 6d2f 6164  ://github.com/ad
+-00001ba0: 6170 7479 7662 696f 2f50 726f 7465 696e  aptyvbio/Protein
+-00001bb0: 466c 6f77 2d6d 6f64 656c 7329 2066 6f72  Flow-models) for
+-00001bc0: 2061 2075 7365 2063 6173 652e 0a0a 2323   a use case...##
+-00001bd0: 2050 726f 7465 696e 466c 6f77 2053 7461   ProteinFlow Sta
+-00001be0: 626c 6520 5265 6c65 6173 6573 0a59 6f75  ble Releases.You
+-00001bf0: 2063 616e 2064 6f77 6e6c 6f61 6420 7468   can download th
+-00001c00: 656d 2077 6974 6820 6070 726f 7465 696e  em with `protein
+-00001c10: 666c 6f77 2064 6f77 6e6c 6f61 6420 2d2d  flow download --
+-00001c20: 7461 6720 7b74 6167 7d60 2069 6e20 7468  tag {tag}` in th
+-00001c30: 6520 636f 6d6d 616e 6420 6c69 6e65 206f  e command line o
+-00001c40: 7220 6272 6f77 7365 2069 6e20 7468 6520  r browse in the 
+-00001c50: 5b69 6e74 6572 6661 6365 5d28 6874 7470  [interface](http
+-00001c60: 733a 2f2f 7072 6f74 6569 6e66 6c6f 772d  s://proteinflow-
+-00001c70: 6461 7461 7365 7473 2e73 332e 6575 2d77  datasets.s3.eu-w
+-00001c80: 6573 742d 312e 616d 617a 6f6e 6177 732e  est-1.amazonaws.
+-00001c90: 636f 6d2f 696e 6465 782e 6874 6d6c 292e  com/index.html).
+-00001ca0: 0a0a 7c54 6167 2020 2020 7c44 6174 6520  ..|Tag    |Date 
+-00001cb0: 2020 207c 536e 6170 7368 6f74 7c53 697a     |Snapshot|Siz
+-00001cc0: 657c 4d69 6e20 7265 737c 4d69 6e20 6c65  e|Min res|Min le
+-00001cd0: 6e7c 4d61 7820 6c65 6e7c 4d4d 7365 7173  n|Max len|MMseqs
+-00001ce0: 2074 6872 7c53 706c 6974 2028 7472 6169   thr|Split (trai
+-00001cf0: 6e2f 7661 6c2f 7465 7374 297c 4d69 7373  n/val/test)|Miss
+-00001d00: 696e 6720 7468 7220 2865 6e64 732f 6d69  ing thr (ends/mi
+-00001d10: 6464 6c65 297c 4e6f 7465 7c0a 7c2d 2d2d  ddle)|Note|.|---
+-00001d20: 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 2d7c 2d2d  ----|--------|--
+-00001d30: 2d2d 2d2d 2d2d 7c2d 2d2d 2d7c 2d2d 2d2d  ------|----|----
+-00001d40: 2d2d 2d7c 2d2d 2d2d 2d2d 2d7c 2d2d 2d2d  ---|-------|----
+-00001d50: 2d2d 2d7c 2d2d 2d2d 2d2d 2d2d 2d2d 7c2d  ---|----------|-
+-00001d60: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001d70: 2d2d 2d2d 2d7c 2d2d 2d2d 2d2d 2d2d 2d2d  -----|----------
+-00001d80: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d7c  ---------------|
+-00001d90: 2d2d 2d2d 7c0a 7c70 6170 6572 7c31 302e  ----|.|paper|10.
+-00001da0: 3131 2e32 327c 3230 3232 3031 3033 7c32  11.22|20220103|2
+-00001db0: 3447 7c33 2e35 7c33 307c 3130 2730 3030  4G|3.5|30|10'000
+-00001dc0: 7c30 2e33 7c39 302f 352f 357c 302e 332f  |0.3|90/5/5|0.3/
+-00001dd0: 302e 317c 6669 7273 7420 7265 6c65 6173  0.1|first releas
+-00001de0: 652c 206e 6f20 6d6d 4349 4620 6669 6c65  e, no mmCIF file
+-00001df0: 737c 0a7c 3230 3233 3031 3032 5f73 7461  s|.|20230102_sta
+-00001e00: 626c 657c 3237 2e30 322e 3233 7c32 3032  ble|27.02.23|202
+-00001e10: 3330 3130 327c 3238 477c 332e 357c 3330  30102|28G|3.5|30
+-00001e20: 7c31 3027 3030 307c 302e 337c 3930 2f35  |10'000|0.3|90/5
+-00001e30: 2f35 7c30 2e33 2f30 2e31 7c20 7631 2e31  /5|0.3/0.1| v1.1
+-00001e40: 2e31 7c0a 0a23 2320 4c69 6365 6e73 650a  .1|..## License.
+-00001e50: 5468 6520 6070 726f 7465 696e 666c 6f77  The `proteinflow
+-00001e60: 6020 7061 636b 6167 6520 616e 6420 6461  ` package and da
+-00001e70: 7461 2061 7265 2072 656c 6561 7365 6420  ta are released 
+-00001e80: 616e 6420 6469 7374 7269 6275 7465 6420  and distributed 
+-00001e90: 756e 6465 7220 7468 6520 4253 4420 332d  under the BSD 3-
+-00001ea0: 436c 6175 7365 204c 6963 656e 7365 0a0a  Clause License..
+-00001eb0: 0a23 2320 436f 6e74 7269 6275 7469 6f6e  .## Contribution
+-00001ec0: 730a 5468 6973 2069 7320 616e 206f 7065  s.This is an ope
+-00001ed0: 6e20 736f 7572 6365 2070 726f 6a65 6374  n source project
+-00001ee0: 2073 7570 706f 7274 6564 2062 7920 5b41   supported by [A
+-00001ef0: 6461 7074 7976 2042 696f 5d28 6874 7470  daptyv Bio](http
+-00001f00: 733a 2f2f 7777 772e 6164 6170 7479 7662  s://www.adaptyvb
+-00001f10: 696f 2e63 6f6d 2f29 2e20 436f 6e74 7269  io.com/). Contri
+-00001f20: 6275 7469 6f6e 732c 2073 7567 6765 7374  butions, suggest
+-00001f30: 696f 6e73 2061 6e64 2062 7567 2d66 6978  ions and bug-fix
+-00001f40: 6573 2061 7265 2077 656c 636f 6d65 642e  es are welcomed.
+-00001f50: 0a0a                                     ..
++000000a0: 656d 6169 6c3a 204c 697a 6120 4b6f 7a6c  email: Liza Kozl
++000000b0: 6f76 6120 3c6c 697a 6140 6164 6170 7479  ova <liza@adapty
++000000c0: 7662 696f 2e63 6f6d 3e2c 2041 7274 6875  vbio.com>, Arthu
++000000d0: 7220 5661 6c65 6e74 696e 203c 6172 7468  r Valentin <arth
++000000e0: 7572 4061 6461 7074 7976 6269 6f2e 636f  ur@adaptyvbio.co
++000000f0: 6d3e 0a4c 6963 656e 7365 3a20 4253 442d  m>.License: BSD-
++00000100: 332d 436c 6175 7365 0a4b 6579 776f 7264  3-Clause.Keyword
++00000110: 733a 2062 696f 696e 666f 726d 6174 6963  s: bioinformatic
++00000120: 732c 6461 7461 7365 742c 7072 6f74 6569  s,dataset,protei
++00000130: 6e2c 5044 422c 6465 6570 206c 6561 726e  n,PDB,deep learn
++00000140: 696e 670a 5265 7175 6972 6573 2d50 7974  ing.Requires-Pyt
++00000150: 686f 6e3a 203e 3d33 2e38 0a44 6573 6372  hon: >=3.8.Descr
++00000160: 6970 7469 6f6e 2d43 6f6e 7465 6e74 2d54  iption-Content-T
++00000170: 7970 653a 2074 6578 742f 6d61 726b 646f  ype: text/markdo
++00000180: 776e 0a4c 6963 656e 7365 2d46 696c 653a  wn.License-File:
++00000190: 204c 4943 454e 5345 0a0a 3c70 2061 6c69   LICENSE..<p ali
++000001a0: 676e 3d22 6365 6e74 6572 223e 0a20 2020  gn="center">.   
++000001b0: 203c 623e 2050 726f 7465 696e 466c 6f77   <b> ProteinFlow
++000001c0: 202d 2041 2064 6174 6120 7072 6f63 6573   - A data proces
++000001d0: 7369 6e67 2070 6970 656c 696e 6520 666f  sing pipeline fo
++000001e0: 7220 616c 6c20 796f 7572 2070 726f 7465  r all your prote
++000001f0: 696e 2064 6573 6967 6e20 6e65 6564 7320  in design needs 
++00000200: 3c2f 623e 203c 6272 202f 3e0a 3c2f 703e  </b> <br />.</p>
++00000210: 0a0a 3c70 2061 6c69 676e 3d22 6365 6e74  ..<p align="cent
++00000220: 6572 223e 0a20 203c 6120 6872 6566 3d22  er">.  <a href="
++00000230: 6874 7470 733a 2f2f 6164 6170 7479 7662  https://adaptyvb
++00000240: 696f 2e67 6974 6875 622e 696f 2f50 726f  io.github.io/Pro
++00000250: 7465 696e 466c 6f77 2f22 2074 6172 6765  teinFlow/" targe
++00000260: 743d 225f 626c 616e 6b22 3e0a 2020 2020  t="_blank">.    
++00000270: 2020 446f 6373 0a20 203c 2f61 3e0a 3c2f    Docs.  </a>.</
++00000280: 703e 0a0a 2d2d 2d0a 0a5b 215b 4c69 6365  p>..---..[![Lice
++00000290: 6e73 655d 2868 7474 7073 3a2f 2f69 6d67  nse](https://img
++000002a0: 2e73 6869 656c 6473 2e69 6f2f 6261 6467  .shields.io/badg
++000002b0: 652f 4c69 6365 6e73 652d 4253 445f 332d  e/License-BSD_3-
++000002c0: 2d43 6c61 7573 652d 626c 7565 2e73 7667  -Clause-blue.svg
++000002d0: 295d 2868 7474 7073 3a2f 2f6f 7065 6e73  )](https://opens
++000002e0: 6f75 7263 652e 6f72 672f 6c69 6365 6e73  ource.org/licens
++000002f0: 6573 2f42 5344 2d33 2d43 6c61 7573 6529  es/BSD-3-Clause)
++00000300: 0a5b 215b 436f 6465 2073 7479 6c65 3a20  .[![Code style: 
++00000310: 626c 6163 6b5d 2868 7474 7073 3a2f 2f69  black](https://i
++00000320: 6d67 2e73 6869 656c 6473 2e69 6f2f 6261  mg.shields.io/ba
++00000330: 6467 652f 636f 6465 2532 3073 7479 6c65  dge/code%20style
++00000340: 2d62 6c61 636b 2d30 3030 3030 302e 7376  -black-000000.sv
++00000350: 6729 5d28 6874 7470 733a 2f2f 6769 7468  g)](https://gith
++00000360: 7562 2e63 6f6d 2f70 7366 2f62 6c61 636b  ub.com/psf/black
++00000370: 290a 5b21 5b50 7950 495d 2868 7474 7073  ).[![PyPI](https
++00000380: 3a2f 2f69 6d67 2e73 6869 656c 6473 2e69  ://img.shields.i
++00000390: 6f2f 7079 7069 2f76 2f70 726f 7465 696e  o/pypi/v/protein
++000003a0: 666c 6f77 295d 2868 7474 7073 3a2f 2f70  flow)](https://p
++000003b0: 7970 692e 6f72 672f 7072 6f6a 6563 742f  ypi.org/project/
++000003c0: 7072 6f74 6569 6e66 6c6f 772f 290a 5b21  proteinflow/).[!
++000003d0: 5b43 6f6e 6461 5d28 6874 7470 733a 2f2f  [Conda](https://
++000003e0: 696d 672e 7368 6965 6c64 732e 696f 2f63  img.shields.io/c
++000003f0: 6f6e 6461 2f76 2f61 6461 7074 7976 6269  onda/v/adaptyvbi
++00000400: 6f2f 7072 6f74 6569 6e66 6c6f 7729 5d28  o/proteinflow)](
++00000410: 6874 7470 733a 2f2f 616e 6163 6f6e 6461  https://anaconda
++00000420: 2e6f 7267 2f61 6461 7074 7976 6269 6f2f  .org/adaptyvbio/
++00000430: 7072 6f74 6569 6e66 6c6f 7729 0a5b 215b  proteinflow).[![
++00000440: 446f 636b 6572 2049 6d61 6765 2056 6572  Docker Image Ver
++00000450: 7369 6f6e 2028 6c61 7465 7374 2073 656d  sion (latest sem
++00000460: 7665 7229 5d28 6874 7470 733a 2f2f 696d  ver)](https://im
++00000470: 672e 7368 6965 6c64 732e 696f 2f64 6f63  g.shields.io/doc
++00000480: 6b65 722f 762f 6164 6170 7479 7662 696f  ker/v/adaptyvbio
++00000490: 2f70 726f 7465 696e 666c 6f77 3f6c 6162  /proteinflow?lab
++000004a0: 656c 3d64 6f63 6b65 7229 5d28 6874 7470  el=docker)](http
++000004b0: 733a 2f2f 6875 622e 646f 636b 6572 2e63  s://hub.docker.c
++000004c0: 6f6d 2f72 2f61 6461 7074 7976 6269 6f2f  om/r/adaptyvbio/
++000004d0: 7072 6f74 6569 6e66 6c6f 772f 7461 6773  proteinflow/tags
++000004e0: 290a 215b 4765 6e65 7269 6320 6261 6467  ).![Generic badg
++000004f0: 655d 2868 7474 7073 3a2f 2f69 6d67 2e73  e](https://img.s
++00000500: 6869 656c 6473 2e69 6f2f 6261 6467 652f  hields.io/badge/
++00000510: 436f 6e74 7269 6275 7469 6f6e 732d 5765  Contributions-We
++00000520: 6c63 6f6d 652d 6272 6967 6874 6772 6565  lcome-brightgree
++00000530: 6e2e 7376 6729 0a0a 0a50 726f 7465 696e  n.svg)...Protein
++00000540: 466c 6f77 2069 7320 616e 206f 7065 6e2d  Flow is an open-
++00000550: 736f 7572 6365 2050 7974 686f 6e20 6c69  source Python li
++00000560: 6272 6172 7920 7468 6174 2073 7472 6561  brary that strea
++00000570: 6d6c 696e 6573 2074 6865 2070 7265 2d70  mlines the pre-p
++00000580: 726f 6365 7373 696e 6720 6f66 2070 726f  rocessing of pro
++00000590: 7465 696e 2073 7472 7563 7475 7265 2064  tein structure d
++000005a0: 6174 6120 666f 7220 6465 6570 206c 6561  ata for deep lea
++000005b0: 726e 696e 6720 6170 706c 6963 6174 696f  rning applicatio
++000005c0: 6e73 2e20 5072 6f74 6569 6e46 6c6f 7720  ns. ProteinFlow 
++000005d0: 656e 6162 6c65 7320 7573 6572 7320 746f  enables users to
++000005e0: 2065 6666 6963 6965 6e74 6c79 2066 696c   efficiently fil
++000005f0: 7465 722c 2063 6c75 7374 6572 2c20 616e  ter, cluster, an
++00000600: 6420 6765 6e65 7261 7465 206e 6577 2064  d generate new d
++00000610: 6174 6173 6574 7320 6672 6f6d 2072 6573  atasets from res
++00000620: 6f75 7263 6573 206c 696b 6520 7468 6520  ources like the 
++00000630: 5072 6f74 6569 6e20 4461 7461 2042 616e  Protein Data Ban
++00000640: 6b20 2850 4442 292e 0a0a 4865 7265 2061  k (PDB)...Here a
++00000650: 7265 2073 6f6d 6520 6f66 2074 6865 206b  re some of the k
++00000660: 6579 2066 6561 7475 7265 7320 7765 2063  ey features we c
++00000670: 7572 7265 6e74 6c79 2073 7570 706f 7274  urrently support
++00000680: 3a0a 0a2d 20e2 9b93 efb8 8f20 5072 6f63  :..- ...... Proc
++00000690: 6573 7369 6e67 206f 6620 626f 7468 2073  essing of both s
++000006a0: 696e 676c 652d 6368 6169 6e20 616e 6420  ingle-chain and 
++000006b0: 6d75 6c74 692d 6368 6169 6e20 7072 6f74  multi-chain prot
++000006c0: 6569 6e20 7374 7275 6374 7572 6573 2028  ein structures (
++000006d0: 4269 6f75 6e69 7420 5044 4220 6465 6669  Biounit PDB defi
++000006e0: 6e69 7469 6f6e 290a 2d20 f09f 8fb7 efb8  nition).- ......
++000006f0: 8f20 5661 7269 6f75 7320 6665 6174 7572  . Various featur
++00000700: 697a 6174 696f 6e20 6f70 7469 6f6e 7320  ization options 
++00000710: 6361 6e20 6265 2063 6f6d 7075 7465 642c  can be computed,
++00000720: 2069 6e63 6c75 6469 6e67 2073 6563 6f6e   including secon
++00000730: 6461 7279 2073 7472 7563 7475 7265 2066  dary structure f
++00000740: 6561 7475 7265 732c 2074 6f72 7369 6f6e  eatures, torsion
++00000750: 2061 6e67 6c65 732c 2065 7463 2e0a 2d20   angles, etc..- 
++00000760: f09f 92be 2041 2076 6172 6965 7479 206f  .... A variety o
++00000770: 6620 6461 7461 206c 6f61 6469 6e67 206f  f data loading o
++00000780: 7074 696f 6e73 2061 6e64 2063 6f6e 7665  ptions and conve
++00000790: 7273 696f 6e73 2074 6f20 6361 7465 7220  rsions to cater 
++000007a0: 746f 2064 6966 6665 7265 6e74 2064 6f77  to different dow
++000007b0: 6e73 7472 6561 6d20 7472 6169 6e69 6e67  nstream training
++000007c0: 2066 7261 6d65 776f 726b 730a 2d20 f09f   frameworks.- ..
++000007d0: a7ac 2041 6363 6573 7320 746f 2075 702d  .. Access to up-
++000007e0: 746f 2d64 6174 652c 2070 7265 2d63 6f6d  to-date, pre-com
++000007f0: 7075 7465 6420 7072 6f74 6569 6e20 7374  puted protein st
++00000800: 7275 6374 7572 6520 6461 7461 7365 7473  ructure datasets
++00000810: 0a0a 215b 6f76 6572 7669 6577 5d28 6874  ..![overview](ht
++00000820: 7470 733a 2f2f 7261 772e 6769 7468 7562  tps://raw.github
++00000830: 7573 6572 636f 6e74 656e 742e 636f 6d2f  usercontent.com/
++00000840: 6164 6170 7479 7662 696f 2f50 726f 7465  adaptyvbio/Prote
++00000850: 696e 466c 6f77 2f6d 6169 6e2f 6d65 6469  inFlow/main/medi
++00000860: 612f 7066 2d31 2e70 6e67 290a 0a2d 2d2d  a/pf-1.png)..---
++00000870: 0a0a 2323 2049 6e73 7461 6c6c 6174 696f  ..## Installatio
++00000880: 6e0a 636f 6e64 613a 0a60 6060 6261 7368  n.conda:.```bash
++00000890: 0a23 2054 6869 7320 7368 6f75 6c64 2074  .# This should t
++000008a0: 616b 6520 6120 6665 7720 6d69 6e75 7465  ake a few minute
++000008b0: 732c 2062 6520 7061 7469 656e 740a 636f  s, be patient.co
++000008c0: 6e64 6120 696e 7374 616c 6c20 2d63 2063  nda install -c c
++000008d0: 6f6e 6461 2d66 6f72 6765 202d 6320 6269  onda-forge -c bi
++000008e0: 6f63 6f6e 6461 202d 6320 6164 6170 7479  oconda -c adapty
++000008f0: 7662 696f 2070 726f 7465 696e 666c 6f77  vbio proteinflow
++00000900: 0a60 6060 0a0a 7069 703a 0a60 6060 6261  .```..pip:.```ba
++00000910: 7368 0a70 6970 2069 6e73 7461 6c6c 2070  sh.pip install p
++00000920: 726f 7465 696e 666c 6f77 0a60 6060 0a0a  roteinflow.```..
++00000930: 646f 636b 6572 3a0a 6060 6062 6173 680a  docker:.```bash.
++00000940: 646f 636b 6572 2070 756c 6c20 6164 6170  docker pull adap
++00000950: 7479 7662 696f 2f70 726f 7465 696e 666c  tyvbio/proteinfl
++00000960: 6f77 0a60 6060 0a0a 2323 2320 5472 6f75  ow.```..### Trou
++00000970: 626c 6573 686f 6f74 696e 670a 2d20 4966  bleshooting.- If
++00000980: 2079 6f75 2061 7265 2075 7369 6e67 2070   you are using p
++00000990: 7974 686f 6e20 332e 3130 2061 6e64 2065  ython 3.10 and e
++000009a0: 6e63 6f75 6e74 6572 696e 6720 696e 7374  ncountering inst
++000009b0: 616c 6c61 7469 6f6e 2070 726f 626c 656d  allation problem
++000009c0: 732c 2074 7279 2072 756e 6e69 6e67 2060  s, try running `
++000009d0: 7079 7468 6f6e 202d 6d20 7069 7020 696e  python -m pip in
++000009e0: 7374 616c 6c20 7072 6f64 793d 3d32 2e34  stall prody==2.4
++000009f0: 2e30 6020 6265 666f 7265 2069 6e73 7461  .0` before insta
++00000a00: 6c6c 696e 6720 6070 726f 7465 696e 666c  lling `proteinfl
++00000a10: 6f77 602e 0a2d 2049 6620 796f 7520 6172  ow`..- If you ar
++00000a20: 6520 706c 616e 6e69 6e67 2074 6f20 6765  e planning to ge
++00000a30: 6e65 7261 7465 206e 6577 2064 6174 6173  nerate new datas
++00000a40: 6574 7320 616e 6420 696e 7374 616c 6c65  ets and installe
++00000a50: 6420 6070 726f 7465 696e 666c 6f77 6020  d `proteinflow` 
++00000a60: 7769 7468 2060 7069 7060 2c20 796f 7520  with `pip`, you 
++00000a70: 7769 6c6c 206e 6565 6420 746f 2061 6464  will need to add
++00000a80: 6974 696f 6e61 6c6c 7920 696e 7374 616c  itionally instal
++00000a90: 6c20 5b60 6d6d 7365 7173 605d 2868 7474  l [`mmseqs`](htt
++00000aa0: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
++00000ab0: 736f 6564 696e 676c 6162 2f4d 4d73 6571  soedinglab/MMseq
++00000ac0: 7332 292e 0a2d 2047 656e 6572 6174 696e  s2)..- Generatin
++00000ad0: 6720 6e65 7720 6461 7461 7365 7473 2061  g new datasets a
++00000ae0: 6c73 6f20 6465 7065 6e64 7320 6f6e 2074  lso depends on t
++00000af0: 6865 2060 7263 7362 7365 6172 6368 6020  he `rcsbsearch` 
++00000b00: 7061 636b 6167 6520 616e 6420 7468 6520  package and the 
++00000b10: 6c61 7465 7374 2072 656c 6561 7365 205b  latest release [
++00000b20: 7630 2e32 2e33 5d28 6874 7470 733a 2f2f  v0.2.3](https://
++00000b30: 6769 7468 7562 2e63 6f6d 2f73 626c 6976  github.com/sbliv
++00000b40: 656e 2f72 6373 6273 6561 7263 682f 7265  en/rcsbsearch/re
++00000b50: 6c65 6173 6573 2f74 6167 2f76 302e 322e  leases/tag/v0.2.
++00000b60: 3329 2069 7320 6375 7272 656e 746c 7920  3) is currently 
++00000b70: 6e6f 7420 776f 726b 696e 6720 636f 7272  not working corr
++00000b80: 6563 746c 792e 2054 6865 2072 6563 6f6d  ectly. The recom
++00000b90: 6d65 6e64 6564 2066 6978 2069 7320 696e  mended fix is in
++00000ba0: 7374 616c 6c69 6e67 2074 6865 2076 6572  stalling the ver
++00000bb0: 7369 6f6e 2066 726f 6d20 5b74 6869 7320  sion from [this 
++00000bc0: 7075 6c6c 2072 6571 7565 7374 5d28 6874  pull request](ht
++00000bd0: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++00000be0: 2f73 626c 6976 656e 2f72 6373 6273 6561  /sbliven/rcsbsea
++00000bf0: 7263 682f 7075 6c6c 2f36 292e 0a60 6060  rch/pull/6)..```
++00000c00: 6261 7368 0a70 7974 686f 6e20 2d6d 2070  bash.python -m p
++00000c10: 6970 2069 6e73 7461 6c6c 2022 7263 7362  ip install "rcsb
++00000c20: 7365 6172 6368 2040 2067 6974 2b68 7474  search @ git+htt
++00000c30: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
++00000c40: 7362 6c69 7665 6e2f 7263 7362 7365 6172  sbliven/rcsbsear
++00000c50: 6368 4064 6264 6665 3338 3830 6363 3838  ch@dbdfe3880cc88
++00000c60: 6230 6365 3537 3136 3339 3837 6462 3631  b0ce57163987db61
++00000c70: 3364 3537 3934 3030 6338 6522 0a60 6060  3d579400c8e".```
++00000c80: 0a2d 2054 6865 2064 6f63 6b65 7220 696d  .- The docker im
++00000c90: 6167 6520 6361 6e20 6265 2061 6363 6573  age can be acces
++00000ca0: 7365 6420 696e 2069 6e74 6572 6163 7469  sed in interacti
++00000cb0: 7665 206d 6f64 6520 7769 7468 2074 6869  ve mode with thi
++00000cc0: 7320 636f 6d6d 616e 642e 0a60 6060 6261  s command..```ba
++00000cd0: 7368 0a64 6f63 6b65 7220 7275 6e20 2d69  sh.docker run -i
++00000ce0: 7420 2d76 202f 7061 7468 2f74 6f2f 6461  t -v /path/to/da
++00000cf0: 7461 3a2f 6d65 6469 6120 6164 6170 7479  ta:/media adapty
++00000d00: 7662 696f 2f70 726f 7465 696e 666c 6f77  vbio/proteinflow
++00000d10: 2062 6173 680a 6060 600a 0a23 2320 5573   bash.```..## Us
++00000d20: 6167 650a 2323 2320 446f 776e 6c6f 6164  age.### Download
++00000d30: 696e 6720 7072 652d 636f 6d70 7574 6564  ing pre-computed
++00000d40: 2064 6174 6173 6574 7320 2873 7461 626c   datasets (stabl
++00000d50: 6529 0a41 6c72 6561 6479 2070 7265 636f  e).Already preco
++00000d60: 6d70 7574 6564 2064 6174 6173 6574 7320  mputed datasets 
++00000d70: 7769 7468 2063 6f6e 7365 6e73 7573 2073  with consensus s
++00000d80: 6574 206f 6620 7061 7261 6d65 7465 7273  et of parameters
++00000d90: 2061 6e64 2063 616e 2062 6520 6163 6365   and can be acce
++00000da0: 7373 6564 2061 6e64 2064 6f77 6e6c 6f61  ssed and downloa
++00000db0: 6465 6420 7573 696e 6720 7468 6520 6070  ded using the `p
++00000dc0: 726f 7465 696e 666c 6f77 602e 2070 6163  roteinflow`. pac
++00000dd0: 6b61 6765 2e20 4368 6563 6b20 7468 6520  kage. Check the 
++00000de0: 6f75 7470 7574 206f 6620 6070 726f 7465  output of `prote
++00000df0: 696e 666c 6f77 2063 6865 636b 5f74 6167  inflow check_tag
++00000e00: 7360 2066 6f72 2061 206c 6973 7420 6f66  s` for a list of
++00000e10: 2061 7661 696c 6162 6c65 2074 6167 732e   available tags.
++00000e20: 0a60 6060 6261 7368 0a70 726f 7465 696e  .```bash.protein
++00000e30: 666c 6f77 2064 6f77 6e6c 6f61 6420 2d2d  flow download --
++00000e40: 7461 6720 3230 3233 3031 3032 5f73 7461  tag 20230102_sta
++00000e50: 626c 6520 0a60 6060 0a0a 2323 2320 5275  ble .```..### Ru
++00000e60: 6e6e 696e 6720 7468 6520 7069 7065 6c69  nning the pipeli
++00000e70: 6e65 0a59 6f75 2063 616e 2061 6c73 6f20  ne.You can also 
++00000e80: 7275 6e20 6070 726f 7465 696e 666c 6f77  run `proteinflow
++00000e90: 6020 7769 7468 2079 6f75 7220 6f77 6e20  ` with your own 
++00000ea0: 7061 7261 6d65 7465 7273 2e20 4368 6563  parameters. Chec
++00000eb0: 6b20 7468 6520 6f75 7470 7574 206f 6620  k the output of 
++00000ec0: 6070 726f 7465 696e 666c 6f77 2063 6865  `proteinflow che
++00000ed0: 636b 5f73 6e61 7073 686f 7473 6020 666f  ck_snapshots` fo
++00000ee0: 7220 6120 6c69 7374 206f 6620 6176 6169  r a list of avai
++00000ef0: 6c61 626c 6520 5044 4220 736e 6170 7368  lable PDB snapsh
++00000f00: 6f74 7320 286e 616d 696e 6720 7275 6c65  ots (naming rule
++00000f10: 3a20 6079 7979 796d 6d64 6460 292e 0a0a  : `yyyymmdd`)...
++00000f20: 466f 7220 696e 7374 616e 6365 2c20 6c65  For instance, le
++00000f30: 7427 7320 6765 6e65 7261 7465 2061 2064  t's generate a d
++00000f40: 6174 6173 6574 2077 6974 6820 7468 6520  ataset with the 
++00000f50: 666f 6c6c 6f77 696e 6720 6465 7363 7269  following descri
++00000f60: 7074 696f 6e3a 0a2d 2072 6573 6f6c 7574  ption:.- resolut
++00000f70: 696f 6e20 7468 7265 7368 6f6c 643a 2035  ion threshold: 5
++00000f80: 2061 6e67 7374 726f 6d2c 0a2d 2050 4442   angstrom,.- PDB
++00000f90: 2073 6e61 7073 686f 743a 2032 3031 3930   snapshot: 20190
++00000fa0: 3130 312c 0a2d 2073 7472 7563 7475 7265  101,.- structure
++00000fb0: 206d 6574 686f 6473 2061 6363 6570 7465   methods accepte
++00000fc0: 643a 2061 6c6c 2028 782d 7261 7920 6368  d: all (x-ray ch
++00000fd0: 7269 7374 6f6c 6f67 7261 7068 792c 204e  ristolography, N
++00000fe0: 524d 2c20 4372 796f 2d45 4d29 2c0a 2d20  RM, Cryo-EM),.- 
++00000ff0: 7365 7175 656e 6365 2069 6465 6e74 6974  sequence identit
++00001000: 7920 7468 7265 7368 6f6c 6420 666f 7220  y threshold for 
++00001010: 636c 7573 7465 7269 6e67 3a20 3430 2520  clustering: 40% 
++00001020: 7365 7175 656e 6365 2073 696d 696c 6172  sequence similar
++00001030: 6974 792c 0a2d 206d 6178 696d 756d 206c  ity,.- maximum l
++00001040: 656e 6774 6820 7065 7220 7365 7175 656e  ength per sequen
++00001050: 6365 3a20 3130 3030 2072 6573 6964 7565  ce: 1000 residue
++00001060: 732c 0a2d 206d 696e 696d 756d 206c 656e  s,.- minimum len
++00001070: 6774 6820 7065 7220 7365 7175 656e 6365  gth per sequence
++00001080: 3a20 3520 7265 7369 6475 6573 2c0a 2d20  : 5 residues,.- 
++00001090: 6d61 7869 6d75 6d20 6672 6163 7469 6f6e  maximum fraction
++000010a0: 206f 6620 6d69 7373 696e 6720 7661 6c75   of missing valu
++000010b0: 6573 2061 7420 7468 6520 656e 6473 3a20  es at the ends: 
++000010c0: 3130 252c 0a2d 2073 697a 6520 6f66 2076  10%,.- size of v
++000010d0: 616c 6964 6174 696f 6e20 7375 6273 6574  alidation subset
++000010e0: 3a20 3130 252e 0a0a 6060 6062 6173 680a  : 10%...```bash.
++000010f0: 7072 6f74 6569 6e66 6c6f 7720 6765 6e65  proteinflow gene
++00001100: 7261 7465 202d 2d74 6167 206e 6577 202d  rate --tag new -
++00001110: 2d72 6573 6f6c 7574 696f 6e5f 7468 7220  -resolution_thr 
++00001120: 3520 2d2d 7064 625f 736e 6170 7368 6f74  5 --pdb_snapshot
++00001130: 2032 3031 3930 3130 3120 2d2d 6e6f 745f   20190101 --not_
++00001140: 6669 6c74 6572 5f6d 6574 686f 6473 202d  filter_methods -
++00001150: 2d6d 696e 5f73 6571 5f69 6420 302e 3420  -min_seq_id 0.4 
++00001160: 2d2d 6d61 785f 6c65 6e67 7468 2031 3030  --max_length 100
++00001170: 3020 2d2d 6d69 6e5f 6c65 6e67 7468 2035  0 --min_length 5
++00001180: 202d 2d6d 6973 7369 6e67 5f65 6e64 735f   --missing_ends_
++00001190: 7468 7220 302e 3120 2d2d 7661 6c69 645f  thr 0.1 --valid_
++000011a0: 7370 6c69 7420 302e 310a 6060 600a 5365  split 0.1.```.Se
++000011b0: 6520 7468 6520 5b64 6f63 735d 2868 7474  e the [docs](htt
++000011c0: 7073 3a2f 2f61 6461 7074 7976 6269 6f2e  ps://adaptyvbio.
++000011d0: 6769 7468 7562 2e69 6f2f 5072 6f74 6569  github.io/Protei
++000011e0: 6e46 6c6f 772f 2920 286f 7220 6070 726f  nFlow/) (or `pro
++000011f0: 7465 696e 666c 6f77 2067 656e 6572 6174  teinflow generat
++00001200: 6520 2d2d 6865 6c70 6029 2066 6f72 2074  e --help`) for t
++00001210: 6865 2066 756c 6c20 6c69 7374 206f 6620  he full list of 
++00001220: 7061 7261 6d65 7465 7273 2061 6e64 206d  parameters and m
++00001230: 6f72 6520 696e 666f 726d 6174 696f 6e2e  ore information.
++00001240: 0a0a 4120 7265 6769 7374 7279 206f 6620  ..A registry of 
++00001250: 616c 6c20 7468 6520 6669 6c65 7320 7468  all the files th
++00001260: 6174 2061 7265 2072 656d 6f76 6564 2064  at are removed d
++00001270: 7572 696e 6720 7468 6520 6669 6c74 6572  uring the filter
++00001280: 696e 6720 6173 2077 656c 6c20 6173 2064  ing as well as d
++00001290: 6573 6372 6970 7469 6f6e 2077 6974 6820  escription with 
++000012a0: 7468 6520 7265 6173 6f6e 2066 6f72 2074  the reason for t
++000012b0: 6865 6972 2072 656d 6f76 616c 2069 7320  heir removal is 
++000012c0: 6372 6561 7465 6420 6175 746f 6d61 7469  created automati
++000012d0: 6361 6c6c 7920 666f 7220 6561 6368 2060  cally for each `
++000012e0: 6765 6e65 7261 7465 6020 636f 6d6d 616e  generate` comman
++000012f0: 642e 2054 6865 206c 6f67 2066 696c 6573  d. The log files
++00001300: 2061 7265 2073 6176 6520 2861 7420 6064   are save (at `d
++00001310: 6174 612f 6c6f 6773 6020 6279 2064 6566  ata/logs` by def
++00001320: 6175 6c74 2920 616e 6420 6120 7375 6d6d  ault) and a summ
++00001330: 6172 7920 6361 6e20 6265 2061 6363 6573  ary can be acces
++00001340: 7365 6420 7275 6e6e 696e 6720 6070 726f  sed running `pro
++00001350: 7465 696e 666c 6f77 2067 6574 5f73 756d  teinflow get_sum
++00001360: 6d61 7279 207b 6c6f 675f 7061 7468 7d60  mary {log_path}`
++00001370: 2e0a 0a23 2323 2053 706c 6974 7469 6e67  ...### Splitting
++00001380: 0a42 7920 6465 6661 756c 742c 2062 6f74  .By default, bot
++00001390: 6820 6070 726f 7465 696e 666c 6f77 2067  h `proteinflow g
++000013a0: 656e 6572 6174 6560 2061 6e64 2060 7072  enerate` and `pr
++000013b0: 6f74 6569 6e66 6c6f 7720 646f 776e 6c6f  oteinflow downlo
++000013c0: 6164 6020 7769 6c6c 2061 6c73 6f20 7370  ad` will also sp
++000013d0: 6c69 7420 796f 7572 2064 6174 6120 696e  lit your data in
++000013e0: 746f 2074 7261 696e 696e 672c 2074 6573  to training, tes
++000013f0: 7420 616e 6420 7661 6c69 6461 7469 6f6e  t and validation
++00001400: 2061 6363 6f72 6469 6e67 2074 6f20 4d4d   according to MM
++00001410: 7365 7173 3220 636c 7573 7465 7269 6e67  seqs2 clustering
++00001420: 2061 6e64 2068 6f6d 6f6d 6572 2f68 6574   and homomer/het
++00001430: 6572 6f6d 6572 2f73 696e 676c 6520 6368  eromer/single ch
++00001440: 6169 6e20 7072 6f70 6f72 7469 6f6e 732e  ain proportions.
++00001450: 2048 6f77 6576 6572 2c20 796f 7520 6361   However, you ca
++00001460: 6e20 736b 6970 2074 6869 7320 7374 6570  n skip this step
++00001470: 2077 6974 6820 6120 602d 2d73 6b69 705f   with a `--skip_
++00001480: 7370 6c69 7474 696e 6760 2066 6c61 6720  splitting` flag 
++00001490: 616e 6420 7468 656e 2070 6572 666f 726d  and then perform
++000014a0: 2069 7420 7365 7061 7261 7465 6c79 2077   it separately w
++000014b0: 6974 6820 7468 6520 6070 726f 7465 696e  ith the `protein
++000014c0: 666c 6f77 2073 706c 6974 6020 636f 6d6d  flow split` comm
++000014d0: 616e 642e 0a0a 5468 6520 666f 6c6c 6f77  and...The follow
++000014e0: 696e 6720 636f 6d6d 616e 6420 7769 6c6c  ing command will
++000014f0: 2070 6572 666f 726d 2074 6865 2073 706c   perform the spl
++00001500: 6974 7469 6e67 2077 6974 6820 6120 3130  itting with a 10
++00001510: 2520 7661 6c69 6461 7469 6f6e 2073 6574  % validation set
++00001520: 2c20 6120 3525 2074 6573 7420 7365 7420  , a 5% test set 
++00001530: 616e 6420 6120 3530 2520 7468 7265 7368  and a 50% thresh
++00001540: 6f6c 6420 666f 7220 7365 7175 656e 6365  old for sequence
++00001550: 2069 6465 6e74 6974 7920 636c 7573 7465   identity cluste
++00001560: 7273 2e0a 6060 6062 6173 680a 7072 6f74  rs..```bash.prot
++00001570: 6569 6e66 6c6f 7720 7370 6c69 7420 2d2d  einflow split --
++00001580: 7461 6720 6e65 7720 2d2d 7661 6c69 645f  tag new --valid_
++00001590: 7370 6c69 7420 302e 3120 2d2d 7465 7374  split 0.1 --test
++000015a0: 5f73 706c 6974 2030 2e35 202d 2d6d 696e  _split 0.5 --min
++000015b0: 5f73 6571 5f69 6420 302e 350a 6060 600a  _seq_id 0.5.```.
++000015c0: 0a23 2323 2055 7369 6e67 2074 6865 2064  .### Using the d
++000015d0: 6174 610a 5468 6520 6f75 7470 7574 2066  ata.The output f
++000015e0: 696c 6573 2061 7265 2070 6963 6b6c 6564  iles are pickled
++000015f0: 206e 6573 7465 6420 6469 6374 696f 6e61   nested dictiona
++00001600: 7269 6573 2077 6865 7265 2066 6972 7374  ries where first
++00001610: 2d6c 6576 656c 206b 6579 7320 6172 6520  -level keys are 
++00001620: 6368 6169 6e20 4964 7320 616e 6420 7365  chain Ids and se
++00001630: 636f 6e64 2d6c 6576 656c 206b 6579 7320  cond-level keys 
++00001640: 6172 6520 7468 6520 666f 6c6c 6f77 696e  are the followin
++00001650: 673a 0a2d 2060 2763 7264 5f62 6227 603a  g:.- `'crd_bb'`:
++00001660: 2061 2060 6e75 6d70 7960 2061 7272 6179   a `numpy` array
++00001670: 206f 6620 7368 6170 6520 6028 4c2c 2034   of shape `(L, 4
++00001680: 2c20 3329 6020 7769 7468 2062 6163 6b62  , 3)` with backb
++00001690: 6f6e 6520 6174 6f6d 2063 6f6f 7264 696e  one atom coordin
++000016a0: 6174 6573 2028 4e2c 2043 2c20 4341 2c20  ates (N, C, CA, 
++000016b0: 4f29 2c0a 2d20 6027 6372 645f 7363 2760  O),.- `'crd_sc'`
++000016c0: 3a20 6120 606e 756d 7079 6020 6172 7261  : a `numpy` arra
++000016d0: 7920 6f66 2073 6861 7065 2060 284c 2c20  y of shape `(L, 
++000016e0: 3130 2c20 3329 6020 7769 7468 2073 6964  10, 3)` with sid
++000016f0: 6563 6861 696e 2061 746f 6d20 636f 6f72  echain atom coor
++00001700: 6469 6e61 7465 7320 2863 6865 636b 2060  dinates (check `
++00001710: 7072 6f74 6569 6e66 6c6f 772e 7369 6465  proteinflow.side
++00001720: 6368 6169 6e5f 6f72 6465 7228 2960 2066  chain_order()` f
++00001730: 6f72 2074 6865 206f 7264 6572 206f 6620  or the order of 
++00001740: 6174 6f6d 7329 2c0a 2d20 6027 6d73 6b27  atoms),.- `'msk'
++00001750: 603a 2061 2060 6e75 6d70 7960 2061 7272  `: a `numpy` arr
++00001760: 6179 206f 6620 7368 6170 6520 6028 4c2c  ay of shape `(L,
++00001770: 2960 2077 6865 7265 206f 6e65 7320 636f  )` where ones co
++00001780: 7272 6573 706f 6e64 2074 6f20 7265 7369  rrespond to resi
++00001790: 6475 6573 2077 6974 6820 6b6e 6f77 6e20  dues with known 
++000017a0: 636f 6f72 6469 6e61 7465 7320 616e 640a  coordinates and.
++000017b0: 2020 2020 7a65 726f 7320 746f 206d 6973      zeros to mis
++000017c0: 7369 6e67 2076 616c 7565 732c 0a2d 2060  sing values,.- `
++000017d0: 2773 6571 2760 3a20 6120 7374 7269 6e67  'seq'`: a string
++000017e0: 206f 6620 6c65 6e67 7468 2060 4c60 2077   of length `L` w
++000017f0: 6974 6820 7265 7369 6475 6520 7479 7065  ith residue type
++00001800: 732e 0a0a 4f6e 6365 2079 6f75 7220 6461  s...Once your da
++00001810: 7461 2069 7320 7265 6164 792c 2079 6f75  ta is ready, you
++00001820: 2063 616e 206f 7065 6e20 7468 6520 6669   can open the fi
++00001830: 6c65 7320 6469 7265 6374 6c79 2077 6974  les directly wit
++00001840: 6820 6070 6963 6b6c 6560 2074 6f20 6163  h `pickle` to ac
++00001850: 6365 7373 2074 6869 7320 6461 7461 2e0a  cess this data..
++00001860: 0a60 6060 7079 7468 6f6e 0a69 6d70 6f72  .```python.impor
++00001870: 7420 7069 636b 6c65 0a69 6d70 6f72 7420  t pickle.import 
++00001880: 6f73 0a0a 7472 6169 6e5f 666f 6c64 6572  os..train_folder
++00001890: 203d 2022 2e2f 6461 7461 2f70 726f 7465   = "./data/prote
++000018a0: 696e 666c 6f77 5f6e 6577 2f74 7261 696e  inflow_new/train
++000018b0: 696e 6722 0a66 6f72 2066 696c 656e 616d  ing".for filenam
++000018c0: 6520 696e 206f 732e 6c69 7374 6469 7228  e in os.listdir(
++000018d0: 7472 6169 6e5f 666f 6c64 6572 293a 0a20  train_folder):. 
++000018e0: 2020 2077 6974 6820 6f70 656e 286f 732e     with open(os.
++000018f0: 7061 7468 2e6a 6f69 6e28 7472 6169 6e5f  path.join(train_
++00001900: 666f 6c64 6572 2c20 6669 6c65 6e61 6d65  folder, filename
++00001910: 292c 2022 7262 2229 2061 7320 663a 0a20  ), "rb") as f:. 
++00001920: 2020 2020 2020 2064 6174 6120 3d20 7069         data = pi
++00001930: 636b 6c65 2e6c 6f61 6428 6629 0a20 2020  ckle.load(f).   
++00001940: 2063 7264 5f62 6220 3d20 6461 7461 5b22   crd_bb = data["
++00001950: 6372 645f 6262 225d 0a20 2020 2073 6571  crd_bb"].    seq
++00001960: 203d 2064 6174 615b 2273 6571 225d 0a20   = data["seq"]. 
++00001970: 2020 202e 2e2e 0a60 6060 0a0a 416c 7465     ....```..Alte
++00001980: 726e 6174 6976 656c 792c 2079 6f75 2063  rnatively, you c
++00001990: 616e 2075 7365 206f 7572 2060 5072 6f74  an use our `Prot
++000019a0: 6569 6e44 6174 6173 6574 6020 6f72 2060  einDataset` or `
++000019b0: 5072 6f74 6569 6e4c 6f61 6465 7260 2063  ProteinLoader` c
++000019c0: 6c61 7373 6573 200a 666f 7220 636f 6e76  lasses .for conv
++000019d0: 656e 6965 6e74 2070 726f 6365 7373 696e  enient processin
++000019e0: 672e 2041 6d6f 6e67 206f 7468 6572 2074  g. Among other t
++000019f0: 6869 6e67 732c 2074 6865 7920 616c 6c6f  hings, they allo
++00001a00: 7720 666f 7220 6665 6174 7572 6520 6578  w for feature ex
++00001a10: 7472 6163 7469 6f6e 2c20 7369 6e67 6c65  traction, single
++00001a20: 2063 6861 696e 202f 2068 6f6d 6f6d 6572   chain / homomer
++00001a30: 202f 2068 6574 6572 6f6d 6572 2066 696c   / heteromer fil
++00001a40: 7465 7269 6e67 2061 6e64 2072 616e 646f  tering and rando
++00001a50: 6d69 7a65 6420 7361 6d70 6c69 6e67 2066  mized sampling f
++00001a60: 726f 6d20 7365 7175 656e 6365 2069 6465  rom sequence ide
++00001a70: 6e74 6974 7920 636c 7573 7465 7273 2e0a  ntity clusters..
++00001a80: 0a46 6f72 2065 7861 6d70 6c65 2c20 6865  .For example, he
++00001a90: 7265 2069 7320 686f 7720 7765 2063 616e  re is how we can
++00001aa0: 2063 7265 6174 6520 6120 6461 7461 206c   create a data l
++00001ab0: 6f61 6465 7220 7468 6174 3a0a 2d20 7361  oader that:.- sa
++00001ac0: 6d70 6c65 7320 6120 6469 6666 6572 656e  mples a differen
++00001ad0: 7420 636c 7573 7465 7220 7265 7072 6573  t cluster repres
++00001ae0: 656e 7461 7469 7665 2061 7420 6576 6572  entative at ever
++00001af0: 7920 6570 6f63 682c 0a2d 2065 7874 7261  y epoch,.- extra
++00001b00: 6374 7320 6469 6865 6472 616c 2061 6e67  cts dihedral ang
++00001b10: 6c65 732c 2073 6964 6563 6861 696e 206f  les, sidechain o
++00001b20: 7269 656e 7461 7469 6f6e 2061 6e64 2073  rientation and s
++00001b30: 6563 6f6e 6461 7279 2073 7472 7563 7475  econdary structu
++00001b40: 7265 2066 6561 7475 7265 732c 0a2d 206f  re features,.- o
++00001b50: 6e6c 7920 6c6f 6164 7320 7061 6972 7320  nly loads pairs 
++00001b60: 6f66 2069 6e74 6572 6163 7469 6e67 2070  of interacting p
++00001b70: 726f 7465 696e 7320 286c 6172 6765 7220  roteins (larger 
++00001b80: 6269 6f75 6e69 7473 2061 7265 2062 726f  biounits are bro
++00001b90: 6b65 6e20 7570 2069 6e74 6f20 7061 6972  ken up into pair
++00001ba0: 7329 2c0a 2d20 6861 7320 6261 7463 6820  s),.- has batch 
++00001bb0: 7369 7a65 2038 2e0a 0a60 6060 7079 7468  size 8...```pyth
++00001bc0: 6f6e 0a66 726f 6d20 7072 6f74 6569 6e66  on.from proteinf
++00001bd0: 6c6f 7720 696d 706f 7274 2050 726f 7465  low import Prote
++00001be0: 696e 4c6f 6164 6572 0a74 7261 696e 5f6c  inLoader.train_l
++00001bf0: 6f61 6465 7220 3d20 5072 6f74 6569 6e4c  oader = ProteinL
++00001c00: 6f61 6465 722e 6672 6f6d 5f61 7267 7328  oader.from_args(
++00001c10: 0a20 2020 2022 2e2f 6461 7461 2f70 726f  .    "./data/pro
++00001c20: 7465 696e 666c 6f77 5f6e 6577 2f74 7261  teinflow_new/tra
++00001c30: 696e 696e 6722 2c20 0a20 2020 2063 6c75  ining", .    clu
++00001c40: 7374 6572 696e 675f 6469 6374 5f70 6174  stering_dict_pat
++00001c50: 683d 222e 2f64 6174 612f 7072 6f74 6569  h="./data/protei
++00001c60: 6e66 6c6f 775f 6e65 772f 7370 6c69 7473  nflow_new/splits
++00001c70: 5f64 6963 742f 7472 6169 6e2e 7069 636b  _dict/train.pick
++00001c80: 6c65 222c 0a20 2020 206e 6f64 655f 6665  le",.    node_fe
++00001c90: 6174 7572 6573 5f74 7970 653d 2264 6968  atures_type="dih
++00001ca0: 6564 7261 6c2b 7369 6465 6368 6169 6e5f  edral+sidechain_
++00001cb0: 6f72 6965 6e74 6174 696f 6e2b 7365 636f  orientation+seco
++00001cc0: 6e64 6172 795f 7374 7275 6374 7572 6522  ndary_structure"
++00001cd0: 2c0a 2020 2020 656e 7472 795f 7479 7065  ,.    entry_type
++00001ce0: 3d22 7061 6972 222c 0a20 2020 2062 6174  ="pair",.    bat
++00001cf0: 6368 5f73 697a 653d 382c 0a29 0a66 6f72  ch_size=8,.).for
++00001d00: 2062 6174 6368 2069 6e20 7472 6169 6e5f   batch in train_
++00001d10: 6c6f 6164 6572 3a0a 2020 2020 6372 645f  loader:.    crd_
++00001d20: 6262 203d 2062 6174 6368 5b22 5822 5d20  bb = batch["X"] 
++00001d30: 2328 422c 204c 2c20 342c 2033 290a 2020  #(B, L, 4, 3).  
++00001d40: 2020 7365 7120 3d20 6261 7463 685b 2253    seq = batch["S
++00001d50: 225d 2023 2842 2c20 4c29 0a20 2020 2073  "] #(B, L).    s
++00001d60: 7365 203d 2062 6174 6368 5b22 7365 636f  se = batch["seco
++00001d70: 6e64 6172 795f 7374 7275 6374 7572 6522  ndary_structure"
++00001d80: 5d20 2328 422c 204c 2c20 3329 0a20 2020  ] #(B, L, 3).   
++00001d90: 2074 6f5f 7072 6564 6963 7420 3d20 6261   to_predict = ba
++00001da0: 7463 685b 226d 6173 6b65 645f 7265 7322  tch["masked_res"
++00001db0: 5d20 2328 422c 204c 292c 2031 2077 6865  ] #(B, L), 1 whe
++00001dc0: 7265 2074 6865 2072 6573 6964 7565 7320  re the residues 
++00001dd0: 7368 6f75 6c64 2062 6520 6d61 736b 6564  should be masked
++00001de0: 2c20 3020 6f74 6865 7277 6973 650a 2020  , 0 otherwise.  
++00001df0: 2020 2e2e 2e0a 6060 600a 5365 6520 6d6f    ....```.See mo
++00001e00: 7265 2064 6574 6169 6c73 206f 6e20 6176  re details on av
++00001e10: 6169 6c61 626c 6520 7061 7261 6d65 7465  ailable paramete
++00001e20: 7273 2061 6e64 2074 6865 2064 6174 6120  rs and the data 
++00001e30: 666f 726d 6174 2069 6e20 7468 6520 5b64  format in the [d
++00001e40: 6f63 735d 2868 7474 7073 3a2f 2f61 6461  ocs](https://ada
++00001e50: 7074 7976 6269 6f2e 6769 7468 7562 2e69  ptyvbio.github.i
++00001e60: 6f2f 5072 6f74 6569 6e46 6c6f 772f 2920  o/ProteinFlow/) 
++00001e70: 2b20 5b74 6869 7320 7265 706f 7369 746f  + [this reposito
++00001e80: 7279 5d28 6874 7470 733a 2f2f 6769 7468  ry](https://gith
++00001e90: 7562 2e63 6f6d 2f61 6461 7074 7976 6269  ub.com/adaptyvbi
++00001ea0: 6f2f 5072 6f74 6569 6e46 6c6f 772d 6d6f  o/ProteinFlow-mo
++00001eb0: 6465 6c73 2920 666f 7220 6120 7573 6520  dels) for a use 
++00001ec0: 6361 7365 2e0a 0a23 2320 5072 6f74 6569  case...## Protei
++00001ed0: 6e46 6c6f 7720 5374 6162 6c65 2052 656c  nFlow Stable Rel
++00001ee0: 6561 7365 730a 596f 7520 6361 6e20 646f  eases.You can do
++00001ef0: 776e 6c6f 6164 2074 6865 6d20 7769 7468  wnload them with
++00001f00: 2060 7072 6f74 6569 6e66 6c6f 7720 646f   `proteinflow do
++00001f10: 776e 6c6f 6164 202d 2d74 6167 207b 7461  wnload --tag {ta
++00001f20: 677d 6020 696e 2074 6865 2063 6f6d 6d61  g}` in the comma
++00001f30: 6e64 206c 696e 6520 6f72 2062 726f 7773  nd line or brows
++00001f40: 6520 696e 2074 6865 205b 696e 7465 7266  e in the [interf
++00001f50: 6163 655d 2868 7474 7073 3a2f 2f70 726f  ace](https://pro
++00001f60: 7465 696e 666c 6f77 2d64 6174 6173 6574  teinflow-dataset
++00001f70: 732e 7333 2e65 752d 7765 7374 2d31 2e61  s.s3.eu-west-1.a
++00001f80: 6d61 7a6f 6e61 7773 2e63 6f6d 2f69 6e64  mazonaws.com/ind
++00001f90: 6578 2e68 746d 6c29 2e0a 0a7c 5461 6720  ex.html)...|Tag 
++00001fa0: 2020 207c 4461 7465 2020 2020 7c53 6e61     |Date    |Sna
++00001fb0: 7073 686f 747c 5369 7a65 7c4d 696e 2072  pshot|Size|Min r
++00001fc0: 6573 7c4d 696e 206c 656e 7c4d 6178 206c  es|Min len|Max l
++00001fd0: 656e 7c4d 4d73 6571 7320 7468 727c 5370  en|MMseqs thr|Sp
++00001fe0: 6c69 7420 2874 7261 696e 2f76 616c 2f74  lit (train/val/t
++00001ff0: 6573 7429 7c4d 6973 7369 6e67 2074 6872  est)|Missing thr
++00002000: 2028 656e 6473 2f6d 6964 646c 6529 7c4e   (ends/middle)|N
++00002010: 6f74 657c 0a7c 2d2d 2d2d 2d2d 2d7c 2d2d  ote|.|-------|--
++00002020: 2d2d 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 2d7c  ------|--------|
++00002030: 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 7c2d 2d2d  ----|-------|---
++00002040: 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 7c2d 2d2d  ----|-------|---
++00002050: 2d2d 2d2d 2d2d 2d7c 2d2d 2d2d 2d2d 2d2d  -------|--------
++00002060: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 7c2d  --------------|-
++00002070: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
++00002080: 2d2d 2d2d 2d2d 2d2d 7c2d 2d2d 2d7c 0a7c  --------|----|.|
++00002090: 7061 7065 727c 3130 2e31 312e 3232 7c32  paper|10.11.22|2
++000020a0: 3032 3230 3130 337c 3234 477c 332e 357c  0220103|24G|3.5|
++000020b0: 3330 7c31 3027 3030 307c 302e 337c 3930  30|10'000|0.3|90
++000020c0: 2f35 2f35 7c30 2e33 2f30 2e31 7c66 6972  /5/5|0.3/0.1|fir
++000020d0: 7374 2072 656c 6561 7365 2c20 6e6f 206d  st release, no m
++000020e0: 6d43 4946 2066 696c 6573 7c0a 7c32 3032  mCIF files|.|202
++000020f0: 3330 3130 325f 7374 6162 6c65 7c32 372e  30102_stable|27.
++00002100: 3032 2e32 337c 3230 3233 3031 3032 7c32  02.23|20230102|2
++00002110: 3847 7c33 2e35 7c33 307c 3130 2730 3030  8G|3.5|30|10'000
++00002120: 7c30 2e33 7c39 302f 352f 357c 302e 332f  |0.3|90/5/5|0.3/
++00002130: 302e 317c 2076 312e 312e 317c 0a0a 2323  0.1| v1.1.1|..##
++00002140: 204c 6963 656e 7365 0a54 6865 2060 7072   License.The `pr
++00002150: 6f74 6569 6e66 6c6f 7760 2070 6163 6b61  oteinflow` packa
++00002160: 6765 2061 6e64 2064 6174 6120 6172 6520  ge and data are 
++00002170: 7265 6c65 6173 6564 2061 6e64 2064 6973  released and dis
++00002180: 7472 6962 7574 6564 2075 6e64 6572 2074  tributed under t
++00002190: 6865 2042 5344 2033 2d43 6c61 7573 6520  he BSD 3-Clause 
++000021a0: 4c69 6365 6e73 650a 0a0a 2323 2043 6f6e  License...## Con
++000021b0: 7472 6962 7574 696f 6e73 0a54 6869 7320  tributions.This 
++000021c0: 6973 2061 6e20 6f70 656e 2073 6f75 7263  is an open sourc
++000021d0: 6520 7072 6f6a 6563 7420 7375 7070 6f72  e project suppor
++000021e0: 7465 6420 6279 205b 4164 6170 7479 7620  ted by [Adaptyv 
++000021f0: 4269 6f5d 2868 7474 7073 3a2f 2f77 7777  Bio](https://www
++00002200: 2e61 6461 7074 7976 6269 6f2e 636f 6d2f  .adaptyvbio.com/
++00002210: 292e 2043 6f6e 7472 6962 7574 696f 6e73  ). Contributions
++00002220: 2c20 7375 6767 6573 7469 6f6e 7320 616e  , suggestions an
++00002230: 6420 6275 672d 6669 7865 7320 6172 6520  d bug-fixes are 
++00002240: 7765 6c63 6f6d 6564 2e0a 0a              welcomed...
+```
+
+### Comparing `proteinflow-1.2.9/README.md` & `proteinflow-1.3.0/README.md`
+
+ * *Files 17% similar despite different names*
+
+```diff
+@@ -1,476 +1,524 @@
+-00000000: 2320 5072 6f74 6569 6e46 6c6f 770a 0a5b  # ProteinFlow..[
+-00000010: 215b 4c69 6365 6e73 655d 2868 7474 7073  ![License](https
+-00000020: 3a2f 2f69 6d67 2e73 6869 656c 6473 2e69  ://img.shields.i
+-00000030: 6f2f 6261 6467 652f 4c69 6365 6e73 652d  o/badge/License-
+-00000040: 4253 445f 332d 2d43 6c61 7573 652d 626c  BSD_3--Clause-bl
+-00000050: 7565 2e73 7667 295d 2868 7474 7073 3a2f  ue.svg)](https:/
+-00000060: 2f6f 7065 6e73 6f75 7263 652e 6f72 672f  /opensource.org/
+-00000070: 6c69 6365 6e73 6573 2f42 5344 2d33 2d43  licenses/BSD-3-C
+-00000080: 6c61 7573 6529 0a5b 215b 436f 6465 2073  lause).[![Code s
+-00000090: 7479 6c65 3a20 626c 6163 6b5d 2868 7474  tyle: black](htt
+-000000a0: 7073 3a2f 2f69 6d67 2e73 6869 656c 6473  ps://img.shields
+-000000b0: 2e69 6f2f 6261 6467 652f 636f 6465 2532  .io/badge/code%2
+-000000c0: 3073 7479 6c65 2d62 6c61 636b 2d30 3030  0style-black-000
+-000000d0: 3030 302e 7376 6729 5d28 6874 7470 733a  000.svg)](https:
+-000000e0: 2f2f 6769 7468 7562 2e63 6f6d 2f70 7366  //github.com/psf
+-000000f0: 2f62 6c61 636b 290a 5b21 5b50 7950 495d  /black).[![PyPI]
+-00000100: 2868 7474 7073 3a2f 2f69 6d67 2e73 6869  (https://img.shi
+-00000110: 656c 6473 2e69 6f2f 7079 7069 2f76 2f70  elds.io/pypi/v/p
+-00000120: 726f 7465 696e 666c 6f77 295d 2868 7474  roteinflow)](htt
+-00000130: 7073 3a2f 2f70 7970 692e 6f72 672f 7072  ps://pypi.org/pr
+-00000140: 6f6a 6563 742f 7072 6f74 6569 6e66 6c6f  oject/proteinflo
+-00000150: 772f 290a 5b21 5b44 6f63 6b65 7220 496d  w/).[![Docker Im
+-00000160: 6167 6520 5665 7273 696f 6e20 286c 6174  age Version (lat
+-00000170: 6573 7420 7365 6d76 6572 295d 2868 7474  est semver)](htt
++00000000: 3c70 2061 6c69 676e 3d22 6365 6e74 6572  <p align="center
++00000010: 223e 0a20 2020 203c 623e 2050 726f 7465  ">.    <b> Prote
++00000020: 696e 466c 6f77 202d 2041 2064 6174 6120  inFlow - A data 
++00000030: 7072 6f63 6573 7369 6e67 2070 6970 656c  processing pipel
++00000040: 696e 6520 666f 7220 616c 6c20 796f 7572  ine for all your
++00000050: 2070 726f 7465 696e 2064 6573 6967 6e20   protein design 
++00000060: 6e65 6564 7320 3c2f 623e 203c 6272 202f  needs </b> <br /
++00000070: 3e0a 3c2f 703e 0a0a 3c70 2061 6c69 676e  >.</p>..<p align
++00000080: 3d22 6365 6e74 6572 223e 0a20 203c 6120  ="center">.  <a 
++00000090: 6872 6566 3d22 6874 7470 733a 2f2f 6164  href="https://ad
++000000a0: 6170 7479 7662 696f 2e67 6974 6875 622e  aptyvbio.github.
++000000b0: 696f 2f50 726f 7465 696e 466c 6f77 2f22  io/ProteinFlow/"
++000000c0: 2074 6172 6765 743d 225f 626c 616e 6b22   target="_blank"
++000000d0: 3e0a 2020 2020 2020 446f 6373 0a20 203c  >.      Docs.  <
++000000e0: 2f61 3e0a 3c2f 703e 0a0a 2d2d 2d0a 0a5b  /a>.</p>..---..[
++000000f0: 215b 4c69 6365 6e73 655d 2868 7474 7073  ![License](https
++00000100: 3a2f 2f69 6d67 2e73 6869 656c 6473 2e69  ://img.shields.i
++00000110: 6f2f 6261 6467 652f 4c69 6365 6e73 652d  o/badge/License-
++00000120: 4253 445f 332d 2d43 6c61 7573 652d 626c  BSD_3--Clause-bl
++00000130: 7565 2e73 7667 295d 2868 7474 7073 3a2f  ue.svg)](https:/
++00000140: 2f6f 7065 6e73 6f75 7263 652e 6f72 672f  /opensource.org/
++00000150: 6c69 6365 6e73 6573 2f42 5344 2d33 2d43  licenses/BSD-3-C
++00000160: 6c61 7573 6529 0a5b 215b 436f 6465 2073  lause).[![Code s
++00000170: 7479 6c65 3a20 626c 6163 6b5d 2868 7474  tyle: black](htt
+ 00000180: 7073 3a2f 2f69 6d67 2e73 6869 656c 6473  ps://img.shields
+-00000190: 2e69 6f2f 646f 636b 6572 2f76 2f61 6461  .io/docker/v/ada
+-000001a0: 7074 7976 6269 6f2f 7072 6f74 6569 6e66  ptyvbio/proteinf
+-000001b0: 6c6f 773f 6c61 6265 6c3d 646f 636b 6572  low?label=docker
+-000001c0: 295d 2868 7474 7073 3a2f 2f68 7562 2e64  )](https://hub.d
+-000001d0: 6f63 6b65 722e 636f 6d2f 722f 6164 6170  ocker.com/r/adap
+-000001e0: 7479 7662 696f 2f70 726f 7465 696e 666c  tyvbio/proteinfl
+-000001f0: 6f77 2f74 6167 7329 0a21 5b47 656e 6572  ow/tags).![Gener
+-00000200: 6963 2062 6164 6765 5d28 6874 7470 733a  ic badge](https:
+-00000210: 2f2f 696d 672e 7368 6965 6c64 732e 696f  //img.shields.io
+-00000220: 2f62 6164 6765 2f43 6f6e 7472 6962 7574  /badge/Contribut
+-00000230: 696f 6e73 2d57 656c 636f 6d65 2d62 7269  ions-Welcome-bri
+-00000240: 6768 7467 7265 656e 2e73 7667 290a 0a41  ghtgreen.svg)..A
+-00000250: 2064 6174 6120 7072 6f63 6573 7369 6e67   data processing
+-00000260: 2070 6970 656c 696e 6520 666f 7220 616c   pipeline for al
+-00000270: 6c20 796f 7572 2070 726f 7465 696e 2064  l your protein d
+-00000280: 6573 6967 6e20 6e65 6564 732e 0a0a 5b52  esign needs...[R
+-00000290: 6561 6420 7468 6520 646f 6375 6d65 6e74  ead the document
+-000002a0: 6174 696f 6e2e 5d28 6874 7470 733a 2f2f  ation.](https://
+-000002b0: 6164 6170 7479 7662 696f 2e67 6974 6875  adaptyvbio.githu
+-000002c0: 622e 696f 2f50 726f 7465 696e 466c 6f77  b.io/ProteinFlow
+-000002d0: 2f29 0a0a 215b 6f76 6572 7669 6577 5d28  /)..![overview](
+-000002e0: 6874 7470 733a 2f2f 7261 772e 6769 7468  https://raw.gith
+-000002f0: 7562 7573 6572 636f 6e74 656e 742e 636f  ubusercontent.co
+-00000300: 6d2f 6164 6170 7479 7662 696f 2f50 726f  m/adaptyvbio/Pro
+-00000310: 7465 696e 466c 6f77 2f6d 6169 6e2f 6d65  teinFlow/main/me
+-00000320: 6469 612f 6669 675f 7069 7065 6c69 6e65  dia/fig_pipeline
+-00000330: 2e70 6e67 290a 0a23 2320 496e 7374 616c  .png)..## Instal
+-00000340: 6c61 7469 6f6e 0a52 6563 6f6d 6d65 6e64  lation.Recommend
+-00000350: 6564 3a20 6372 6561 7465 2061 206e 6577  ed: create a new
+-00000360: 2060 636f 6e64 6160 2065 6e76 6972 6f6e   `conda` environ
+-00000370: 6d65 6e74 2061 6e64 2069 6e73 7461 6c6c  ment and install
+-00000380: 2060 7072 6f74 6569 6e66 6c6f 7760 2077   `proteinflow` w
+-00000390: 6974 6820 6070 6970 602e 200a 6060 6062  ith `pip`. .```b
+-000003a0: 6173 680a 636f 6e64 6120 6372 6561 7465  ash.conda create
+-000003b0: 202d 2d6e 616d 6520 7072 6f74 6569 6e66   --name proteinf
+-000003c0: 6c6f 7720 2d79 0a63 6f6e 6461 2061 6374  low -y.conda act
+-000003d0: 6976 6174 6520 7072 6f74 6569 6e66 6c6f  ivate proteinflo
+-000003e0: 770a 7079 7468 6f6e 202d 6d20 7069 7020  w.python -m pip 
+-000003f0: 696e 7374 616c 6c20 7072 6f74 6569 6e66  install proteinf
+-00000400: 6c6f 770a 6060 600a 0a49 6620 796f 7520  low.```..If you 
+-00000410: 6172 6520 7573 696e 6720 6070 7974 686f  are using `pytho
+-00000420: 6e20 332e 3130 6020 616e 6420 656e 636f  n 3.10` and enco
+-00000430: 756e 7465 7269 6e67 2069 6e73 7461 6c6c  untering install
+-00000440: 6174 696f 6e20 7072 6f62 6c65 6d73 2c20  ation problems, 
+-00000450: 7472 7920 7275 6e6e 696e 6720 6070 7974  try running `pyt
+-00000460: 686f 6e20 2d6d 2070 6970 2069 6e73 7461  hon -m pip insta
+-00000470: 6c6c 2070 726f 6479 3d3d 322e 342e 3060  ll prody==2.4.0`
+-00000480: 2062 6566 6f72 6520 696e 7374 616c 6c69   before installi
+-00000490: 6e67 2060 7072 6f74 6569 6e66 6c6f 7760  ng `proteinflow`
+-000004a0: 2e0a 0a23 2323 2041 6464 6974 696f 6e61  ...### Additiona
+-000004b0: 6c20 7265 7175 6972 656d 656e 7473 0a49  l requirements.I
+-000004c0: 6e20 6d6f 7374 2063 6173 6573 2c20 7275  n most cases, ru
+-000004d0: 6e6e 696e 6720 7468 6520 636f 6d6d 616e  nning the comman
+-000004e0: 6473 2069 7320 656e 6f75 6768 2e20 486f  ds is enough. Ho
+-000004f0: 7765 7665 722c 2069 6620 796f 7520 6172  wever, if you ar
+-00000500: 6520 706c 616e 6e69 6e67 2074 6f20 6765  e planning to ge
+-00000510: 6e65 7261 7465 2061 206e 6577 2064 6174  nerate a new dat
+-00000520: 6173 6574 2c20 7468 6572 6520 6973 2061  aset, there is a
+-00000530: 2063 6f75 706c 6520 6164 6469 7469 6f6e   couple addition
+-00000540: 616c 2072 6571 7569 7265 6d65 6e74 732e  al requirements.
+-00000550: 0a0a 4669 7273 742c 2079 6f75 2077 696c  ..First, you wil
+-00000560: 6c20 6e65 6564 2074 6f20 696e 7374 616c  l need to instal
+-00000570: 6c20 606d 6d73 6571 7360 2e20 5468 6520  l `mmseqs`. The 
+-00000580: 7265 636f 6d6d 656e 6465 6420 7761 7920  recommended way 
+-00000590: 6973 2074 6f20 7275 6e20 7468 6520 666f  is to run the fo
+-000005a0: 6c6c 6f77 696e 6720 636f 6d6d 616e 6420  llowing command 
+-000005b0: 696e 2079 6f75 7220 6063 6f6e 6461 6020  in your `conda` 
+-000005c0: 656e 7669 726f 6e6d 656e 7420 6275 7420  environment but 
+-000005d0: 7468 6572 6520 6172 6520 616c 7465 726e  there are altern
+-000005e0: 6174 6976 6520 6d65 7468 6f64 7320 796f  ative methods yo
+-000005f0: 7520 6361 6e20 7365 6520 5b68 6572 655d  u can see [here]
+-00000600: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
+-00000610: 636f 6d2f 736f 6564 696e 676c 6162 2f4d  com/soedinglab/M
+-00000620: 4d73 6571 7332 292e 0a60 6060 6261 7368  Mseqs2)..```bash
+-00000630: 0a63 6f6e 6461 2069 6e73 7461 6c6c 202d  .conda install -
+-00000640: 7920 2d63 2063 6f6e 6461 2d66 6f72 6765  y -c conda-forge
+-00000650: 202d 6320 6269 6f63 6f6e 6461 206d 6d73   -c bioconda mms
+-00000660: 6571 7332 0a60 6060 0a0a 496e 2061 6464  eqs2.```..In add
+-00000670: 6974 696f 6e2c 2060 7072 6f74 6569 6e66  ition, `proteinf
+-00000680: 6c6f 7760 2064 6570 656e 6473 206f 6e20  low` depends on 
+-00000690: 7468 6520 6072 6373 6273 6561 7263 6860  the `rcsbsearch`
+-000006a0: 2070 6163 6b61 6765 2061 6e64 2074 6865   package and the
+-000006b0: 206c 6174 6573 7420 7265 6c65 6173 6520   latest release 
+-000006c0: 5b76 302e 322e 335d 2868 7474 7073 3a2f  [v0.2.3](https:/
+-000006d0: 2f67 6974 6875 622e 636f 6d2f 7362 6c69  /github.com/sbli
+-000006e0: 7665 6e2f 7263 7362 7365 6172 6368 2f72  ven/rcsbsearch/r
+-000006f0: 656c 6561 7365 732f 7461 672f 7630 2e32  eleases/tag/v0.2
+-00000700: 2e33 2920 6973 2063 7572 7265 6e74 6c79  .3) is currently
+-00000710: 206e 6f74 2077 6f72 6b69 6e67 2063 6f72   not working cor
+-00000720: 7265 6374 6c79 2e20 466f 6c6c 6f77 2074  rectly. Follow t
+-00000730: 6865 2072 6563 6f6d 6d65 6e64 6564 2066  he recommended f
+-00000740: 6978 3a0a 6060 6062 6173 680a 7079 7468  ix:.```bash.pyth
+-00000750: 6f6e 202d 6d20 7069 7020 696e 7374 616c  on -m pip instal
+-00000760: 6c20 2272 6373 6273 6561 7263 6820 4020  l "rcsbsearch @ 
+-00000770: 6769 742b 6874 7470 733a 2f2f 6769 7468  git+https://gith
+-00000780: 7562 2e63 6f6d 2f73 626c 6976 656e 2f72  ub.com/sbliven/r
+-00000790: 6373 6273 6561 7263 6840 6462 6466 6533  csbsearch@dbdfe3
+-000007a0: 3838 3063 6338 3862 3063 6535 3731 3633  880cc88b0ce57163
+-000007b0: 3938 3764 6236 3133 6435 3739 3430 3063  987db613d579400c
+-000007c0: 3865 220a 6060 600a 0a46 696e 616c 6c79  8e".```..Finally
+-000007d0: 2c20 796f 7520 6361 6e20 7573 6520 6f75  , you can use ou
+-000007e0: 7220 5b64 6f63 6b65 7220 696d 6167 655d  r [docker image]
+-000007f0: 2868 7474 7073 3a2f 2f68 7562 2e64 6f63  (https://hub.doc
+-00000800: 6b65 722e 636f 6d2f 722f 6164 6170 7479  ker.com/r/adapty
+-00000810: 7662 696f 2f70 726f 7465 696e 666c 6f77  vbio/proteinflow
+-00000820: 2f74 6167 7329 2061 7320 616e 2061 6c74  /tags) as an alt
+-00000830: 6572 6e61 7469 7665 2e0a 6060 6062 6173  ernative..```bas
+-00000840: 680a 646f 636b 6572 2072 756e 202d 6974  h.docker run -it
+-00000850: 202d 7620 2f70 6174 682f 746f 2f64 6174   -v /path/to/dat
+-00000860: 613a 2f6d 6564 6961 2061 6461 7074 7976  a:/media adaptyv
+-00000870: 6269 6f2f 7072 6f74 6569 6e66 6c6f 7720  bio/proteinflow 
+-00000880: 6261 7368 0a60 6060 0a0a 2323 2055 7361  bash.```..## Usa
+-00000890: 6765 0a23 2323 2044 6f77 6e6c 6f61 6469  ge.### Downloadi
+-000008a0: 6e67 2070 7265 2d63 6f6d 7075 7465 6420  ng pre-computed 
+-000008b0: 6461 7461 7365 7473 2028 7374 6162 6c65  datasets (stable
+-000008c0: 290a 416c 7265 6164 7920 7072 6563 6f6d  ).Already precom
+-000008d0: 7075 7465 6420 6461 7461 7365 7473 2077  puted datasets w
+-000008e0: 6974 6820 636f 6e73 656e 7375 7320 7365  ith consensus se
+-000008f0: 7420 6f66 2070 6172 616d 6574 6572 7320  t of parameters 
+-00000900: 616e 6420 6361 6e20 6265 2061 6363 6573  and can be acces
+-00000910: 7365 6420 616e 6420 646f 776e 6c6f 6164  sed and download
+-00000920: 6564 2075 7369 6e67 2074 6865 2060 7072  ed using the `pr
+-00000930: 6f74 6569 6e66 6c6f 7760 2e20 7061 636b  oteinflow`. pack
+-00000940: 6167 652e 2043 6865 636b 2074 6865 206f  age. Check the o
+-00000950: 7574 7075 7420 6f66 2060 7072 6f74 6569  utput of `protei
+-00000960: 6e66 6c6f 7720 6368 6563 6b5f 7461 6773  nflow check_tags
+-00000970: 6020 666f 7220 6120 6c69 7374 206f 6620  ` for a list of 
+-00000980: 6176 6169 6c61 626c 6520 7461 6773 2e0a  available tags..
+-00000990: 6060 6062 6173 680a 7072 6f74 6569 6e66  ```bash.proteinf
+-000009a0: 6c6f 7720 646f 776e 6c6f 6164 202d 2d74  low download --t
+-000009b0: 6167 2032 3032 3231 3131 3020 0a60 6060  ag 20221110 .```
+-000009c0: 0a0a 2323 2320 5275 6e6e 696e 6720 7468  ..### Running th
+-000009d0: 6520 7069 7065 6c69 6e65 0a59 6f75 2063  e pipeline.You c
+-000009e0: 616e 2061 6c73 6f20 7275 6e20 6070 726f  an also run `pro
+-000009f0: 7465 696e 666c 6f77 6020 7769 7468 2079  teinflow` with y
+-00000a00: 6f75 7220 6f77 6e20 7061 7261 6d65 7465  our own paramete
+-00000a10: 7273 2e20 4368 6563 6b20 7468 6520 6f75  rs. Check the ou
+-00000a20: 7470 7574 206f 6620 6070 726f 7465 696e  tput of `protein
+-00000a30: 666c 6f77 2063 6865 636b 5f73 6e61 7073  flow check_snaps
+-00000a40: 686f 7473 6020 666f 7220 6120 6c69 7374  hots` for a list
+-00000a50: 206f 6620 6176 6169 6c61 626c 6520 5044   of available PD
+-00000a60: 4220 736e 6170 7368 6f74 7320 286e 616d  B snapshots (nam
+-00000a70: 696e 6720 7275 6c65 3a20 6079 7979 796d  ing rule: `yyyym
+-00000a80: 6d64 6460 292e 0a0a 466f 7220 696e 7374  mdd`)...For inst
+-00000a90: 616e 6365 2c20 6c65 7427 7320 6765 6e65  ance, let's gene
+-00000aa0: 7261 7465 2061 2064 6174 6173 6574 2077  rate a dataset w
+-00000ab0: 6974 6820 7468 6520 666f 6c6c 6f77 696e  ith the followin
+-00000ac0: 6720 6465 7363 7269 7074 696f 6e3a 0a2d  g description:.-
+-00000ad0: 2072 6573 6f6c 7574 696f 6e20 7468 7265   resolution thre
+-00000ae0: 7368 6f6c 643a 2035 2061 6e67 7374 726f  shold: 5 angstro
+-00000af0: 6d2c 0a2d 2050 4442 2073 6e61 7073 686f  m,.- PDB snapsho
+-00000b00: 743a 2032 3031 3930 3130 312c 0a2d 2073  t: 20190101,.- s
+-00000b10: 7472 7563 7475 7265 206d 6574 686f 6473  tructure methods
+-00000b20: 2061 6363 6570 7465 643a 2061 6c6c 2028   accepted: all (
+-00000b30: 782d 7261 7920 6368 7269 7374 6f6c 6f67  x-ray christolog
+-00000b40: 7261 7068 792c 204e 524d 2c20 4372 796f  raphy, NRM, Cryo
+-00000b50: 2d45 4d29 2c0a 2d20 7365 7175 656e 6365  -EM),.- sequence
+-00000b60: 2069 6465 6e74 6974 7920 7468 7265 7368   identity thresh
+-00000b70: 6f6c 6420 666f 7220 636c 7573 7465 7269  old for clusteri
+-00000b80: 6e67 3a20 3430 2520 7365 7175 656e 6365  ng: 40% sequence
+-00000b90: 2073 696d 696c 6172 6974 792c 0a2d 206d   similarity,.- m
+-00000ba0: 6178 696d 756d 206c 656e 6774 6820 7065  aximum length pe
+-00000bb0: 7220 7365 7175 656e 6365 3a20 3130 3030  r sequence: 1000
+-00000bc0: 2072 6573 6964 7565 732c 0a2d 206d 696e   residues,.- min
+-00000bd0: 696d 756d 206c 656e 6774 6820 7065 7220  imum length per 
+-00000be0: 7365 7175 656e 6365 3a20 3520 7265 7369  sequence: 5 resi
+-00000bf0: 6475 6573 2c0a 2d20 6d61 7869 6d75 6d20  dues,.- maximum 
+-00000c00: 6672 6163 7469 6f6e 206f 6620 6d69 7373  fraction of miss
+-00000c10: 696e 6720 7661 6c75 6573 2061 7420 7468  ing values at th
+-00000c20: 6520 656e 6473 3a20 3130 252c 0a2d 2073  e ends: 10%,.- s
+-00000c30: 697a 6520 6f66 2076 616c 6964 6174 696f  ize of validatio
+-00000c40: 6e20 7375 6273 6574 3a20 3130 252e 0a0a  n subset: 10%...
+-00000c50: 6060 6062 6173 680a 7072 6f74 6569 6e66  ```bash.proteinf
+-00000c60: 6c6f 7720 6765 6e65 7261 7465 202d 2d74  low generate --t
+-00000c70: 6167 206e 6577 202d 2d72 6573 6f6c 7574  ag new --resolut
+-00000c80: 696f 6e5f 7468 7220 3520 2d2d 7064 625f  ion_thr 5 --pdb_
+-00000c90: 736e 6170 7368 6f74 2032 3031 3930 3130  snapshot 2019010
+-00000ca0: 3120 2d2d 6e6f 745f 6669 6c74 6572 5f6d  1 --not_filter_m
+-00000cb0: 6574 686f 6473 202d 2d6d 696e 5f73 6571  ethods --min_seq
+-00000cc0: 5f69 6420 302e 3420 2d2d 6d61 785f 6c65  _id 0.4 --max_le
+-00000cd0: 6e67 7468 2031 3030 3020 2d2d 6d69 6e5f  ngth 1000 --min_
+-00000ce0: 6c65 6e67 7468 2035 202d 2d6d 6973 7369  length 5 --missi
+-00000cf0: 6e67 5f65 6e64 735f 7468 7220 302e 3120  ng_ends_thr 0.1 
+-00000d00: 2d2d 7661 6c69 645f 7370 6c69 7420 302e  --valid_split 0.
+-00000d10: 310a 6060 600a 5365 6520 7468 6520 5b64  1.```.See the [d
+-00000d20: 6f63 735d 2868 7474 7073 3a2f 2f61 6461  ocs](https://ada
+-00000d30: 7074 7976 6269 6f2e 6769 7468 7562 2e69  ptyvbio.github.i
+-00000d40: 6f2f 5072 6f74 6569 6e46 6c6f 772f 2920  o/ProteinFlow/) 
+-00000d50: 286f 7220 6070 726f 7465 696e 666c 6f77  (or `proteinflow
+-00000d60: 2067 656e 6572 6174 6520 2d2d 6865 6c70   generate --help
+-00000d70: 6029 2066 6f72 2074 6865 2066 756c 6c20  `) for the full 
+-00000d80: 6c69 7374 206f 6620 7061 7261 6d65 7465  list of paramete
+-00000d90: 7273 2061 6e64 206d 6f72 6520 696e 666f  rs and more info
+-00000da0: 726d 6174 696f 6e2e 0a0a 4120 7265 6769  rmation...A regi
+-00000db0: 7374 7279 206f 6620 616c 6c20 7468 6520  stry of all the 
+-00000dc0: 6669 6c65 7320 7468 6174 2061 7265 2072  files that are r
+-00000dd0: 656d 6f76 6564 2064 7572 696e 6720 7468  emoved during th
+-00000de0: 6520 6669 6c74 6572 696e 6720 6173 2077  e filtering as w
+-00000df0: 656c 6c20 6173 2064 6573 6372 6970 7469  ell as descripti
+-00000e00: 6f6e 2077 6974 6820 7468 6520 7265 6173  on with the reas
+-00000e10: 6f6e 2066 6f72 2074 6865 6972 2072 656d  on for their rem
+-00000e20: 6f76 616c 2069 7320 6372 6561 7465 6420  oval is created 
+-00000e30: 6175 746f 6d61 7469 6361 6c6c 7920 666f  automatically fo
+-00000e40: 7220 6561 6368 2060 6765 6e65 7261 7465  r each `generate
+-00000e50: 6020 636f 6d6d 616e 642e 2054 6865 206c  ` command. The l
+-00000e60: 6f67 2066 696c 6573 2061 7265 2073 6176  og files are sav
+-00000e70: 6520 2861 7420 6064 6174 612f 6c6f 6773  e (at `data/logs
+-00000e80: 6020 6279 2064 6566 6175 6c74 2920 616e  ` by default) an
+-00000e90: 6420 6120 7375 6d6d 6172 7920 6361 6e20  d a summary can 
+-00000ea0: 6265 2061 6363 6573 7365 6420 7275 6e6e  be accessed runn
+-00000eb0: 696e 6720 6070 726f 7465 696e 666c 6f77  ing `proteinflow
+-00000ec0: 2067 6574 5f73 756d 6d61 7279 207b 6c6f   get_summary {lo
+-00000ed0: 675f 7061 7468 7d60 2e0a 0a23 2323 2053  g_path}`...### S
+-00000ee0: 706c 6974 7469 6e67 0a42 7920 6465 6661  plitting.By defa
+-00000ef0: 756c 742c 2062 6f74 6820 6070 726f 7465  ult, both `prote
+-00000f00: 696e 666c 6f77 2067 656e 6572 6174 6560  inflow generate`
+-00000f10: 2061 6e64 2060 7072 6f74 6569 6e66 6c6f   and `proteinflo
+-00000f20: 7720 646f 776e 6c6f 6164 6020 7769 6c6c  w download` will
+-00000f30: 2061 6c73 6f20 7370 6c69 7420 796f 7572   also split your
+-00000f40: 2064 6174 6120 696e 746f 2074 7261 696e   data into train
+-00000f50: 696e 672c 2074 6573 7420 616e 6420 7661  ing, test and va
+-00000f60: 6c69 6461 7469 6f6e 2061 6363 6f72 6469  lidation accordi
+-00000f70: 6e67 2074 6f20 4d4d 7365 7173 3220 636c  ng to MMseqs2 cl
+-00000f80: 7573 7465 7269 6e67 2061 6e64 2068 6f6d  ustering and hom
+-00000f90: 6f6d 6572 2f68 6574 6572 6f6d 6572 2f73  omer/heteromer/s
+-00000fa0: 696e 676c 6520 6368 6169 6e20 7072 6f70  ingle chain prop
+-00000fb0: 6f72 7469 6f6e 732e 2048 6f77 6576 6572  ortions. However
+-00000fc0: 2c20 796f 7520 6361 6e20 736b 6970 2074  , you can skip t
+-00000fd0: 6869 7320 7374 6570 2077 6974 6820 6120  his step with a 
+-00000fe0: 602d 2d73 6b69 705f 7370 6c69 7474 696e  `--skip_splittin
+-00000ff0: 6760 2066 6c61 6720 616e 6420 7468 656e  g` flag and then
+-00001000: 2070 6572 666f 726d 2069 7420 7365 7061   perform it sepa
+-00001010: 7261 7465 6c79 2077 6974 6820 7468 6520  rately with the 
+-00001020: 6070 726f 7465 696e 666c 6f77 2073 706c  `proteinflow spl
+-00001030: 6974 6020 636f 6d6d 616e 642e 0a0a 5468  it` command...Th
+-00001040: 6520 666f 6c6c 6f77 696e 6720 636f 6d6d  e following comm
+-00001050: 616e 6420 7769 6c6c 2070 6572 666f 726d  and will perform
+-00001060: 2074 6865 2073 706c 6974 7469 6e67 2077   the splitting w
+-00001070: 6974 6820 6120 3130 2520 7661 6c69 6461  ith a 10% valida
+-00001080: 7469 6f6e 2073 6574 2c20 6120 3525 2074  tion set, a 5% t
+-00001090: 6573 7420 7365 7420 616e 6420 6120 3530  est set and a 50
+-000010a0: 2520 7468 7265 7368 6f6c 6420 666f 7220  % threshold for 
+-000010b0: 7365 7175 656e 6365 2069 6465 6e74 6974  sequence identit
+-000010c0: 7920 636c 7573 7465 7273 2e0a 6060 6062  y clusters..```b
+-000010d0: 6173 680a 7072 6f74 6569 6e66 6c6f 7720  ash.proteinflow 
+-000010e0: 7370 6c69 7420 2d2d 7461 6720 6e65 7720  split --tag new 
+-000010f0: 2d2d 7661 6c69 645f 7370 6c69 7420 302e  --valid_split 0.
+-00001100: 3120 2d2d 7465 7374 5f73 706c 6974 2030  1 --test_split 0
+-00001110: 2e35 202d 2d6d 696e 5f73 6571 5f69 6420  .5 --min_seq_id 
+-00001120: 302e 350a 6060 600a 0a23 2323 2055 7369  0.5.```..### Usi
+-00001130: 6e67 2074 6865 2064 6174 610a 5468 6520  ng the data.The 
+-00001140: 6f75 7470 7574 2066 696c 6573 2061 7265  output files are
+-00001150: 2070 6963 6b6c 6564 206e 6573 7465 6420   pickled nested 
+-00001160: 6469 6374 696f 6e61 7269 6573 2077 6865  dictionaries whe
+-00001170: 7265 2066 6972 7374 2d6c 6576 656c 206b  re first-level k
+-00001180: 6579 7320 6172 6520 6368 6169 6e20 4964  eys are chain Id
+-00001190: 7320 616e 6420 7365 636f 6e64 2d6c 6576  s and second-lev
+-000011a0: 656c 206b 6579 7320 6172 6520 7468 6520  el keys are the 
+-000011b0: 666f 6c6c 6f77 696e 673a 0a2d 2060 2763  following:.- `'c
+-000011c0: 7264 5f62 6227 603a 2061 2060 6e75 6d70  rd_bb'`: a `nump
+-000011d0: 7960 2061 7272 6179 206f 6620 7368 6170  y` array of shap
+-000011e0: 6520 6028 4c2c 2034 2c20 3329 6020 7769  e `(L, 4, 3)` wi
+-000011f0: 7468 2062 6163 6b62 6f6e 6520 6174 6f6d  th backbone atom
+-00001200: 2063 6f6f 7264 696e 6174 6573 2028 4e2c   coordinates (N,
+-00001210: 2043 2c20 4341 2c20 4f29 2c0a 2d20 6027   C, CA, O),.- `'
+-00001220: 6372 645f 7363 2760 3a20 6120 606e 756d  crd_sc'`: a `num
+-00001230: 7079 6020 6172 7261 7920 6f66 2073 6861  py` array of sha
+-00001240: 7065 2060 284c 2c20 3130 2c20 3329 6020  pe `(L, 10, 3)` 
+-00001250: 7769 7468 2073 6964 6563 6861 696e 2061  with sidechain a
+-00001260: 746f 6d20 636f 6f72 6469 6e61 7465 7320  tom coordinates 
+-00001270: 2863 6865 636b 2060 7072 6f74 6569 6e66  (check `proteinf
+-00001280: 6c6f 772e 7369 6465 6368 6169 6e5f 6f72  low.sidechain_or
+-00001290: 6465 7228 2960 2066 6f72 2074 6865 206f  der()` for the o
+-000012a0: 7264 6572 206f 6620 6174 6f6d 7329 2c0a  rder of atoms),.
+-000012b0: 2d20 6027 6d73 6b27 603a 2061 2060 6e75  - `'msk'`: a `nu
+-000012c0: 6d70 7960 2061 7272 6179 206f 6620 7368  mpy` array of sh
+-000012d0: 6170 6520 6028 4c2c 2960 2077 6865 7265  ape `(L,)` where
+-000012e0: 206f 6e65 7320 636f 7272 6573 706f 6e64   ones correspond
+-000012f0: 2074 6f20 7265 7369 6475 6573 2077 6974   to residues wit
+-00001300: 6820 6b6e 6f77 6e20 636f 6f72 6469 6e61  h known coordina
+-00001310: 7465 7320 616e 640a 2020 2020 7a65 726f  tes and.    zero
+-00001320: 7320 746f 206d 6973 7369 6e67 2076 616c  s to missing val
+-00001330: 7565 732c 0a2d 2060 2773 6571 2760 3a20  ues,.- `'seq'`: 
+-00001340: 6120 7374 7269 6e67 206f 6620 6c65 6e67  a string of leng
+-00001350: 7468 2060 4c60 2077 6974 6820 7265 7369  th `L` with resi
+-00001360: 6475 6520 7479 7065 732e 0a0a 4f6e 6365  due types...Once
+-00001370: 2079 6f75 7220 6461 7461 2069 7320 7265   your data is re
+-00001380: 6164 792c 2079 6f75 2063 616e 206f 7065  ady, you can ope
+-00001390: 6e20 7468 6520 6669 6c65 7320 6469 7265  n the files dire
+-000013a0: 6374 6c79 2077 6974 6820 6070 6963 6b6c  ctly with `pickl
+-000013b0: 6560 2074 6f20 6163 6365 7373 2074 6869  e` to access thi
+-000013c0: 7320 6461 7461 2e0a 0a60 6060 7079 7468  s data...```pyth
+-000013d0: 6f6e 0a69 6d70 6f72 7420 7069 636b 6c65  on.import pickle
+-000013e0: 0a69 6d70 6f72 7420 6f73 0a0a 7472 6169  .import os..trai
+-000013f0: 6e5f 666f 6c64 6572 203d 2022 2e2f 6461  n_folder = "./da
+-00001400: 7461 2f70 726f 7465 696e 666c 6f77 5f6e  ta/proteinflow_n
+-00001410: 6577 2f74 7261 696e 696e 6722 0a66 6f72  ew/training".for
+-00001420: 2066 696c 656e 616d 6520 696e 206f 732e   filename in os.
+-00001430: 6c69 7374 6469 7228 7472 6169 6e5f 666f  listdir(train_fo
+-00001440: 6c64 6572 293a 0a20 2020 2077 6974 6820  lder):.    with 
+-00001450: 6f70 656e 286f 732e 7061 7468 2e6a 6f69  open(os.path.joi
+-00001460: 6e28 7472 6169 6e5f 666f 6c64 6572 2c20  n(train_folder, 
+-00001470: 6669 6c65 6e61 6d65 292c 2022 7262 2229  filename), "rb")
+-00001480: 2061 7320 663a 0a20 2020 2020 2020 2064   as f:.        d
+-00001490: 6174 6120 3d20 7069 636b 6c65 2e6c 6f61  ata = pickle.loa
+-000014a0: 6428 6629 0a20 2020 2063 7264 5f62 6220  d(f).    crd_bb 
+-000014b0: 3d20 6461 7461 5b22 6372 645f 6262 225d  = data["crd_bb"]
+-000014c0: 0a20 2020 2073 6571 203d 2064 6174 615b  .    seq = data[
+-000014d0: 2273 6571 225d 0a20 2020 202e 2e2e 0a60  "seq"].    ....`
+-000014e0: 6060 0a0a 416c 7465 726e 6174 6976 656c  ``..Alternativel
+-000014f0: 792c 2079 6f75 2063 616e 2075 7365 206f  y, you can use o
+-00001500: 7572 2060 5072 6f74 6569 6e44 6174 6173  ur `ProteinDatas
+-00001510: 6574 6020 6f72 2060 5072 6f74 6569 6e4c  et` or `ProteinL
+-00001520: 6f61 6465 7260 2063 6c61 7373 6573 200a  oader` classes .
+-00001530: 666f 7220 636f 6e76 656e 6965 6e74 2070  for convenient p
+-00001540: 726f 6365 7373 696e 672e 2041 6d6f 6e67  rocessing. Among
+-00001550: 206f 7468 6572 2074 6869 6e67 732c 2074   other things, t
+-00001560: 6865 7920 616c 6c6f 7720 666f 7220 6665  hey allow for fe
+-00001570: 6174 7572 6520 6578 7472 6163 7469 6f6e  ature extraction
+-00001580: 2c20 7369 6e67 6c65 2063 6861 696e 202f  , single chain /
+-00001590: 2068 6f6d 6f6d 6572 202f 2068 6574 6572   homomer / heter
+-000015a0: 6f6d 6572 2066 696c 7465 7269 6e67 2061  omer filtering a
+-000015b0: 6e64 2072 616e 646f 6d69 7a65 6420 7361  nd randomized sa
+-000015c0: 6d70 6c69 6e67 2066 726f 6d20 7365 7175  mpling from sequ
+-000015d0: 656e 6365 2069 6465 6e74 6974 7920 636c  ence identity cl
+-000015e0: 7573 7465 7273 2e0a 0a46 6f72 2065 7861  usters...For exa
+-000015f0: 6d70 6c65 2c20 6865 7265 2069 7320 686f  mple, here is ho
+-00001600: 7720 7765 2063 616e 2063 7265 6174 6520  w we can create 
+-00001610: 6120 6461 7461 206c 6f61 6465 7220 7468  a data loader th
+-00001620: 6174 3a0a 2d20 7361 6d70 6c65 7320 6120  at:.- samples a 
+-00001630: 6469 6666 6572 656e 7420 636c 7573 7465  different cluste
+-00001640: 7220 7265 7072 6573 656e 7461 7469 7665  r representative
+-00001650: 2061 7420 6576 6572 7920 6570 6f63 682c   at every epoch,
+-00001660: 0a2d 2065 7874 7261 6374 7320 6469 6865  .- extracts dihe
+-00001670: 6472 616c 2061 6e67 6c65 732c 2073 6964  dral angles, sid
+-00001680: 6563 6861 696e 206f 7269 656e 7461 7469  echain orientati
+-00001690: 6f6e 2061 6e64 2073 6563 6f6e 6461 7279  on and secondary
+-000016a0: 2073 7472 7563 7475 7265 2066 6561 7475   structure featu
+-000016b0: 7265 732c 0a2d 206f 6e6c 7920 6c6f 6164  res,.- only load
+-000016c0: 7320 7061 6972 7320 6f66 2069 6e74 6572  s pairs of inter
+-000016d0: 6163 7469 6e67 2070 726f 7465 696e 7320  acting proteins 
+-000016e0: 286c 6172 6765 7220 6269 6f75 6e69 7473  (larger biounits
+-000016f0: 2061 7265 2062 726f 6b65 6e20 7570 2069   are broken up i
+-00001700: 6e74 6f20 7061 6972 7329 2c0a 2d20 6861  nto pairs),.- ha
+-00001710: 7320 6261 7463 6820 7369 7a65 2038 2e0a  s batch size 8..
+-00001720: 0a60 6060 7079 7468 6f6e 0a66 726f 6d20  .```python.from 
+-00001730: 7072 6f74 6569 6e66 6c6f 7720 696d 706f  proteinflow impo
+-00001740: 7274 2050 726f 7465 696e 4c6f 6164 6572  rt ProteinLoader
+-00001750: 0a74 7261 696e 5f6c 6f61 6465 7220 3d20  .train_loader = 
+-00001760: 5072 6f74 6569 6e4c 6f61 6465 722e 6672  ProteinLoader.fr
+-00001770: 6f6d 5f61 7267 7328 0a20 2020 2022 2e2f  om_args(.    "./
+-00001780: 6461 7461 2f70 726f 7465 696e 666c 6f77  data/proteinflow
+-00001790: 5f6e 6577 2f74 7261 696e 696e 6722 2c20  _new/training", 
+-000017a0: 0a20 2020 2063 6c75 7374 6572 696e 675f  .    clustering_
+-000017b0: 6469 6374 5f70 6174 683d 222e 2f64 6174  dict_path="./dat
+-000017c0: 612f 7072 6f74 6569 6e66 6c6f 775f 6e65  a/proteinflow_ne
+-000017d0: 772f 7370 6c69 7473 5f64 6963 742f 7472  w/splits_dict/tr
+-000017e0: 6169 6e2e 7069 636b 6c65 222c 0a20 2020  ain.pickle",.   
+-000017f0: 206e 6f64 655f 6665 6174 7572 6573 5f74   node_features_t
+-00001800: 7970 653d 2264 6968 6564 7261 6c2b 7369  ype="dihedral+si
+-00001810: 6465 6368 6169 6e5f 6f72 6965 6e74 6174  dechain_orientat
+-00001820: 696f 6e2b 7365 636f 6e64 6172 795f 7374  ion+secondary_st
+-00001830: 7275 6374 7572 6522 2c0a 2020 2020 656e  ructure",.    en
+-00001840: 7472 795f 7479 7065 3d22 7061 6972 222c  try_type="pair",
+-00001850: 0a20 2020 2062 6174 6368 5f73 697a 653d  .    batch_size=
+-00001860: 382c 0a29 0a66 6f72 2062 6174 6368 2069  8,.).for batch i
+-00001870: 6e20 7472 6169 6e5f 6c6f 6164 6572 3a0a  n train_loader:.
+-00001880: 2020 2020 6372 645f 6262 203d 2062 6174      crd_bb = bat
+-00001890: 6368 5b22 5822 5d20 2328 422c 204c 2c20  ch["X"] #(B, L, 
+-000018a0: 342c 2033 290a 2020 2020 7365 7120 3d20  4, 3).    seq = 
+-000018b0: 6261 7463 685b 2253 225d 2023 2842 2c20  batch["S"] #(B, 
+-000018c0: 4c29 0a20 2020 2073 7365 203d 2062 6174  L).    sse = bat
+-000018d0: 6368 5b22 7365 636f 6e64 6172 795f 7374  ch["secondary_st
+-000018e0: 7275 6374 7572 6522 5d20 2328 422c 204c  ructure"] #(B, L
+-000018f0: 2c20 3329 0a20 2020 2074 6f5f 7072 6564  , 3).    to_pred
+-00001900: 6963 7420 3d20 6261 7463 685b 226d 6173  ict = batch["mas
+-00001910: 6b65 645f 7265 7322 5d20 2328 422c 204c  ked_res"] #(B, L
+-00001920: 292c 2031 2077 6865 7265 2074 6865 2072  ), 1 where the r
+-00001930: 6573 6964 7565 7320 7368 6f75 6c64 2062  esidues should b
+-00001940: 6520 6d61 736b 6564 2c20 3020 6f74 6865  e masked, 0 othe
+-00001950: 7277 6973 650a 2020 2020 2e2e 2e0a 6060  rwise.    ....``
+-00001960: 600a 5365 6520 6d6f 7265 2064 6574 6169  `.See more detai
+-00001970: 6c73 206f 6e20 6176 6169 6c61 626c 6520  ls on available 
+-00001980: 7061 7261 6d65 7465 7273 2061 6e64 2074  parameters and t
+-00001990: 6865 2064 6174 6120 666f 726d 6174 2069  he data format i
+-000019a0: 6e20 7468 6520 5b64 6f63 735d 2868 7474  n the [docs](htt
+-000019b0: 7073 3a2f 2f61 6461 7074 7976 6269 6f2e  ps://adaptyvbio.
+-000019c0: 6769 7468 7562 2e69 6f2f 5072 6f74 6569  github.io/Protei
+-000019d0: 6e46 6c6f 772f 2920 2b20 5b74 6869 7320  nFlow/) + [this 
+-000019e0: 7265 706f 7369 746f 7279 5d28 6874 7470  repository](http
+-000019f0: 733a 2f2f 6769 7468 7562 2e63 6f6d 2f61  s://github.com/a
+-00001a00: 6461 7074 7976 6269 6f2f 5072 6f74 6569  daptyvbio/Protei
+-00001a10: 6e46 6c6f 772d 6d6f 6465 6c73 2920 666f  nFlow-models) fo
+-00001a20: 7220 6120 7573 6520 6361 7365 2e0a 0a23  r a use case...#
+-00001a30: 2320 5072 6f74 6569 6e46 6c6f 7720 5374  # ProteinFlow St
+-00001a40: 6162 6c65 2052 656c 6561 7365 730a 596f  able Releases.Yo
+-00001a50: 7520 6361 6e20 646f 776e 6c6f 6164 2074  u can download t
+-00001a60: 6865 6d20 7769 7468 2060 7072 6f74 6569  hem with `protei
+-00001a70: 6e66 6c6f 7720 646f 776e 6c6f 6164 202d  nflow download -
+-00001a80: 2d74 6167 207b 7461 677d 6020 696e 2074  -tag {tag}` in t
+-00001a90: 6865 2063 6f6d 6d61 6e64 206c 696e 6520  he command line 
+-00001aa0: 6f72 2062 726f 7773 6520 696e 2074 6865  or browse in the
+-00001ab0: 205b 696e 7465 7266 6163 655d 2868 7474   [interface](htt
+-00001ac0: 7073 3a2f 2f70 726f 7465 696e 666c 6f77  ps://proteinflow
+-00001ad0: 2d64 6174 6173 6574 732e 7333 2e65 752d  -datasets.s3.eu-
+-00001ae0: 7765 7374 2d31 2e61 6d61 7a6f 6e61 7773  west-1.amazonaws
+-00001af0: 2e63 6f6d 2f69 6e64 6578 2e68 746d 6c29  .com/index.html)
+-00001b00: 2e0a 0a7c 5461 6720 2020 207c 4461 7465  ...|Tag    |Date
+-00001b10: 2020 2020 7c53 6e61 7073 686f 747c 5369      |Snapshot|Si
+-00001b20: 7a65 7c4d 696e 2072 6573 7c4d 696e 206c  ze|Min res|Min l
+-00001b30: 656e 7c4d 6178 206c 656e 7c4d 4d73 6571  en|Max len|MMseq
+-00001b40: 7320 7468 727c 5370 6c69 7420 2874 7261  s thr|Split (tra
+-00001b50: 696e 2f76 616c 2f74 6573 7429 7c4d 6973  in/val/test)|Mis
+-00001b60: 7369 6e67 2074 6872 2028 656e 6473 2f6d  sing thr (ends/m
+-00001b70: 6964 646c 6529 7c4e 6f74 657c 0a7c 2d2d  iddle)|Note|.|--
+-00001b80: 2d2d 2d2d 2d7c 2d2d 2d2d 2d2d 2d2d 7c2d  -----|--------|-
+-00001b90: 2d2d 2d2d 2d2d 2d7c 2d2d 2d2d 7c2d 2d2d  -------|----|---
+-00001ba0: 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 7c2d 2d2d  ----|-------|---
+-00001bb0: 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 2d2d 2d7c  ----|----------|
+-00001bc0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001bd0: 2d2d 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 2d2d  ------|---------
+-00001be0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001bf0: 7c2d 2d2d 2d7c 0a7c 7061 7065 727c 3130  |----|.|paper|10
+-00001c00: 2e31 312e 3232 7c32 3032 3230 3130 337c  .11.22|20220103|
+-00001c10: 3234 477c 332e 357c 3330 7c31 3027 3030  24G|3.5|30|10'00
+-00001c20: 307c 302e 337c 3930 2f35 2f35 7c30 2e33  0|0.3|90/5/5|0.3
+-00001c30: 2f30 2e31 7c66 6972 7374 2072 656c 6561  /0.1|first relea
+-00001c40: 7365 2c20 6e6f 206d 6d43 4946 2066 696c  se, no mmCIF fil
+-00001c50: 6573 7c0a 7c32 3032 3330 3130 325f 7374  es|.|20230102_st
+-00001c60: 6162 6c65 7c32 372e 3032 2e32 337c 3230  able|27.02.23|20
+-00001c70: 3233 3031 3032 7c32 3847 7c33 2e35 7c33  230102|28G|3.5|3
+-00001c80: 307c 3130 2730 3030 7c30 2e33 7c39 302f  0|10'000|0.3|90/
+-00001c90: 352f 357c 302e 332f 302e 317c 2076 312e  5/5|0.3/0.1| v1.
+-00001ca0: 312e 317c 0a0a 2323 204c 6963 656e 7365  1.1|..## License
+-00001cb0: 0a54 6865 2060 7072 6f74 6569 6e66 6c6f  .The `proteinflo
+-00001cc0: 7760 2070 6163 6b61 6765 2061 6e64 2064  w` package and d
+-00001cd0: 6174 6120 6172 6520 7265 6c65 6173 6564  ata are released
+-00001ce0: 2061 6e64 2064 6973 7472 6962 7574 6564   and distributed
+-00001cf0: 2075 6e64 6572 2074 6865 2042 5344 2033   under the BSD 3
+-00001d00: 2d43 6c61 7573 6520 4c69 6365 6e73 650a  -Clause License.
+-00001d10: 0a0a 2323 2043 6f6e 7472 6962 7574 696f  ..## Contributio
+-00001d20: 6e73 0a54 6869 7320 6973 2061 6e20 6f70  ns.This is an op
+-00001d30: 656e 2073 6f75 7263 6520 7072 6f6a 6563  en source projec
+-00001d40: 7420 7375 7070 6f72 7465 6420 6279 205b  t supported by [
+-00001d50: 4164 6170 7479 7620 4269 6f5d 2868 7474  Adaptyv Bio](htt
+-00001d60: 7073 3a2f 2f77 7777 2e61 6461 7074 7976  ps://www.adaptyv
+-00001d70: 6269 6f2e 636f 6d2f 292e 2043 6f6e 7472  bio.com/). Contr
+-00001d80: 6962 7574 696f 6e73 2c20 7375 6767 6573  ibutions, sugges
+-00001d90: 7469 6f6e 7320 616e 6420 6275 672d 6669  tions and bug-fi
+-00001da0: 7865 7320 6172 6520 7765 6c63 6f6d 6564  xes are welcomed
+-00001db0: 2e0a 0a                                  ...
++00000190: 2e69 6f2f 6261 6467 652f 636f 6465 2532  .io/badge/code%2
++000001a0: 3073 7479 6c65 2d62 6c61 636b 2d30 3030  0style-black-000
++000001b0: 3030 302e 7376 6729 5d28 6874 7470 733a  000.svg)](https:
++000001c0: 2f2f 6769 7468 7562 2e63 6f6d 2f70 7366  //github.com/psf
++000001d0: 2f62 6c61 636b 290a 5b21 5b50 7950 495d  /black).[![PyPI]
++000001e0: 2868 7474 7073 3a2f 2f69 6d67 2e73 6869  (https://img.shi
++000001f0: 656c 6473 2e69 6f2f 7079 7069 2f76 2f70  elds.io/pypi/v/p
++00000200: 726f 7465 696e 666c 6f77 295d 2868 7474  roteinflow)](htt
++00000210: 7073 3a2f 2f70 7970 692e 6f72 672f 7072  ps://pypi.org/pr
++00000220: 6f6a 6563 742f 7072 6f74 6569 6e66 6c6f  oject/proteinflo
++00000230: 772f 290a 5b21 5b43 6f6e 6461 5d28 6874  w/).[![Conda](ht
++00000240: 7470 733a 2f2f 696d 672e 7368 6965 6c64  tps://img.shield
++00000250: 732e 696f 2f63 6f6e 6461 2f76 2f61 6461  s.io/conda/v/ada
++00000260: 7074 7976 6269 6f2f 7072 6f74 6569 6e66  ptyvbio/proteinf
++00000270: 6c6f 7729 5d28 6874 7470 733a 2f2f 616e  low)](https://an
++00000280: 6163 6f6e 6461 2e6f 7267 2f61 6461 7074  aconda.org/adapt
++00000290: 7976 6269 6f2f 7072 6f74 6569 6e66 6c6f  yvbio/proteinflo
++000002a0: 7729 0a5b 215b 446f 636b 6572 2049 6d61  w).[![Docker Ima
++000002b0: 6765 2056 6572 7369 6f6e 2028 6c61 7465  ge Version (late
++000002c0: 7374 2073 656d 7665 7229 5d28 6874 7470  st semver)](http
++000002d0: 733a 2f2f 696d 672e 7368 6965 6c64 732e  s://img.shields.
++000002e0: 696f 2f64 6f63 6b65 722f 762f 6164 6170  io/docker/v/adap
++000002f0: 7479 7662 696f 2f70 726f 7465 696e 666c  tyvbio/proteinfl
++00000300: 6f77 3f6c 6162 656c 3d64 6f63 6b65 7229  ow?label=docker)
++00000310: 5d28 6874 7470 733a 2f2f 6875 622e 646f  ](https://hub.do
++00000320: 636b 6572 2e63 6f6d 2f72 2f61 6461 7074  cker.com/r/adapt
++00000330: 7976 6269 6f2f 7072 6f74 6569 6e66 6c6f  yvbio/proteinflo
++00000340: 772f 7461 6773 290a 215b 4765 6e65 7269  w/tags).![Generi
++00000350: 6320 6261 6467 655d 2868 7474 7073 3a2f  c badge](https:/
++00000360: 2f69 6d67 2e73 6869 656c 6473 2e69 6f2f  /img.shields.io/
++00000370: 6261 6467 652f 436f 6e74 7269 6275 7469  badge/Contributi
++00000380: 6f6e 732d 5765 6c63 6f6d 652d 6272 6967  ons-Welcome-brig
++00000390: 6874 6772 6565 6e2e 7376 6729 0a0a 0a50  htgreen.svg)...P
++000003a0: 726f 7465 696e 466c 6f77 2069 7320 616e  roteinFlow is an
++000003b0: 206f 7065 6e2d 736f 7572 6365 2050 7974   open-source Pyt
++000003c0: 686f 6e20 6c69 6272 6172 7920 7468 6174  hon library that
++000003d0: 2073 7472 6561 6d6c 696e 6573 2074 6865   streamlines the
++000003e0: 2070 7265 2d70 726f 6365 7373 696e 6720   pre-processing 
++000003f0: 6f66 2070 726f 7465 696e 2073 7472 7563  of protein struc
++00000400: 7475 7265 2064 6174 6120 666f 7220 6465  ture data for de
++00000410: 6570 206c 6561 726e 696e 6720 6170 706c  ep learning appl
++00000420: 6963 6174 696f 6e73 2e20 5072 6f74 6569  ications. Protei
++00000430: 6e46 6c6f 7720 656e 6162 6c65 7320 7573  nFlow enables us
++00000440: 6572 7320 746f 2065 6666 6963 6965 6e74  ers to efficient
++00000450: 6c79 2066 696c 7465 722c 2063 6c75 7374  ly filter, clust
++00000460: 6572 2c20 616e 6420 6765 6e65 7261 7465  er, and generate
++00000470: 206e 6577 2064 6174 6173 6574 7320 6672   new datasets fr
++00000480: 6f6d 2072 6573 6f75 7263 6573 206c 696b  om resources lik
++00000490: 6520 7468 6520 5072 6f74 6569 6e20 4461  e the Protein Da
++000004a0: 7461 2042 616e 6b20 2850 4442 292e 0a0a  ta Bank (PDB)...
++000004b0: 4865 7265 2061 7265 2073 6f6d 6520 6f66  Here are some of
++000004c0: 2074 6865 206b 6579 2066 6561 7475 7265   the key feature
++000004d0: 7320 7765 2063 7572 7265 6e74 6c79 2073  s we currently s
++000004e0: 7570 706f 7274 3a0a 0a2d 20e2 9b93 efb8  upport:..- .....
++000004f0: 8f20 5072 6f63 6573 7369 6e67 206f 6620  . Processing of 
++00000500: 626f 7468 2073 696e 676c 652d 6368 6169  both single-chai
++00000510: 6e20 616e 6420 6d75 6c74 692d 6368 6169  n and multi-chai
++00000520: 6e20 7072 6f74 6569 6e20 7374 7275 6374  n protein struct
++00000530: 7572 6573 2028 4269 6f75 6e69 7420 5044  ures (Biounit PD
++00000540: 4220 6465 6669 6e69 7469 6f6e 290a 2d20  B definition).- 
++00000550: f09f 8fb7 efb8 8f20 5661 7269 6f75 7320  ....... Various 
++00000560: 6665 6174 7572 697a 6174 696f 6e20 6f70  featurization op
++00000570: 7469 6f6e 7320 6361 6e20 6265 2063 6f6d  tions can be com
++00000580: 7075 7465 642c 2069 6e63 6c75 6469 6e67  puted, including
++00000590: 2073 6563 6f6e 6461 7279 2073 7472 7563   secondary struc
++000005a0: 7475 7265 2066 6561 7475 7265 732c 2074  ture features, t
++000005b0: 6f72 7369 6f6e 2061 6e67 6c65 732c 2065  orsion angles, e
++000005c0: 7463 2e0a 2d20 f09f 92be 2041 2076 6172  tc..- .... A var
++000005d0: 6965 7479 206f 6620 6461 7461 206c 6f61  iety of data loa
++000005e0: 6469 6e67 206f 7074 696f 6e73 2061 6e64  ding options and
++000005f0: 2063 6f6e 7665 7273 696f 6e73 2074 6f20   conversions to 
++00000600: 6361 7465 7220 746f 2064 6966 6665 7265  cater to differe
++00000610: 6e74 2064 6f77 6e73 7472 6561 6d20 7472  nt downstream tr
++00000620: 6169 6e69 6e67 2066 7261 6d65 776f 726b  aining framework
++00000630: 730a 2d20 f09f a7ac 2041 6363 6573 7320  s.- .... Access 
++00000640: 746f 2075 702d 746f 2d64 6174 652c 2070  to up-to-date, p
++00000650: 7265 2d63 6f6d 7075 7465 6420 7072 6f74  re-computed prot
++00000660: 6569 6e20 7374 7275 6374 7572 6520 6461  ein structure da
++00000670: 7461 7365 7473 0a0a 215b 6f76 6572 7669  tasets..![overvi
++00000680: 6577 5d28 6874 7470 733a 2f2f 7261 772e  ew](https://raw.
++00000690: 6769 7468 7562 7573 6572 636f 6e74 656e  githubuserconten
++000006a0: 742e 636f 6d2f 6164 6170 7479 7662 696f  t.com/adaptyvbio
++000006b0: 2f50 726f 7465 696e 466c 6f77 2f6d 6169  /ProteinFlow/mai
++000006c0: 6e2f 6d65 6469 612f 7066 2d31 2e70 6e67  n/media/pf-1.png
++000006d0: 290a 0a2d 2d2d 0a0a 2323 2049 6e73 7461  )..---..## Insta
++000006e0: 6c6c 6174 696f 6e0a 636f 6e64 613a 0a60  llation.conda:.`
++000006f0: 6060 6261 7368 0a23 2054 6869 7320 7368  ``bash.# This sh
++00000700: 6f75 6c64 2074 616b 6520 6120 6665 7720  ould take a few 
++00000710: 6d69 6e75 7465 732c 2062 6520 7061 7469  minutes, be pati
++00000720: 656e 740a 636f 6e64 6120 696e 7374 616c  ent.conda instal
++00000730: 6c20 2d63 2063 6f6e 6461 2d66 6f72 6765  l -c conda-forge
++00000740: 202d 6320 6269 6f63 6f6e 6461 202d 6320   -c bioconda -c 
++00000750: 6164 6170 7479 7662 696f 2070 726f 7465  adaptyvbio prote
++00000760: 696e 666c 6f77 0a60 6060 0a0a 7069 703a  inflow.```..pip:
++00000770: 0a60 6060 6261 7368 0a70 6970 2069 6e73  .```bash.pip ins
++00000780: 7461 6c6c 2070 726f 7465 696e 666c 6f77  tall proteinflow
++00000790: 0a60 6060 0a0a 646f 636b 6572 3a0a 6060  .```..docker:.``
++000007a0: 6062 6173 680a 646f 636b 6572 2070 756c  `bash.docker pul
++000007b0: 6c20 6164 6170 7479 7662 696f 2f70 726f  l adaptyvbio/pro
++000007c0: 7465 696e 666c 6f77 0a60 6060 0a0a 2323  teinflow.```..##
++000007d0: 2320 5472 6f75 626c 6573 686f 6f74 696e  # Troubleshootin
++000007e0: 670a 2d20 4966 2079 6f75 2061 7265 2075  g.- If you are u
++000007f0: 7369 6e67 2070 7974 686f 6e20 332e 3130  sing python 3.10
++00000800: 2061 6e64 2065 6e63 6f75 6e74 6572 696e   and encounterin
++00000810: 6720 696e 7374 616c 6c61 7469 6f6e 2070  g installation p
++00000820: 726f 626c 656d 732c 2074 7279 2072 756e  roblems, try run
++00000830: 6e69 6e67 2060 7079 7468 6f6e 202d 6d20  ning `python -m 
++00000840: 7069 7020 696e 7374 616c 6c20 7072 6f64  pip install prod
++00000850: 793d 3d32 2e34 2e30 6020 6265 666f 7265  y==2.4.0` before
++00000860: 2069 6e73 7461 6c6c 696e 6720 6070 726f   installing `pro
++00000870: 7465 696e 666c 6f77 602e 0a2d 2049 6620  teinflow`..- If 
++00000880: 796f 7520 6172 6520 706c 616e 6e69 6e67  you are planning
++00000890: 2074 6f20 6765 6e65 7261 7465 206e 6577   to generate new
++000008a0: 2064 6174 6173 6574 7320 616e 6420 696e   datasets and in
++000008b0: 7374 616c 6c65 6420 6070 726f 7465 696e  stalled `protein
++000008c0: 666c 6f77 6020 7769 7468 2060 7069 7060  flow` with `pip`
++000008d0: 2c20 796f 7520 7769 6c6c 206e 6565 6420  , you will need 
++000008e0: 746f 2061 6464 6974 696f 6e61 6c6c 7920  to additionally 
++000008f0: 696e 7374 616c 6c20 5b60 6d6d 7365 7173  install [`mmseqs
++00000900: 605d 2868 7474 7073 3a2f 2f67 6974 6875  `](https://githu
++00000910: 622e 636f 6d2f 736f 6564 696e 676c 6162  b.com/soedinglab
++00000920: 2f4d 4d73 6571 7332 292e 0a2d 2047 656e  /MMseqs2)..- Gen
++00000930: 6572 6174 696e 6720 6e65 7720 6461 7461  erating new data
++00000940: 7365 7473 2061 6c73 6f20 6465 7065 6e64  sets also depend
++00000950: 7320 6f6e 2074 6865 2060 7263 7362 7365  s on the `rcsbse
++00000960: 6172 6368 6020 7061 636b 6167 6520 616e  arch` package an
++00000970: 6420 7468 6520 6c61 7465 7374 2072 656c  d the latest rel
++00000980: 6561 7365 205b 7630 2e32 2e33 5d28 6874  ease [v0.2.3](ht
++00000990: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++000009a0: 2f73 626c 6976 656e 2f72 6373 6273 6561  /sbliven/rcsbsea
++000009b0: 7263 682f 7265 6c65 6173 6573 2f74 6167  rch/releases/tag
++000009c0: 2f76 302e 322e 3329 2069 7320 6375 7272  /v0.2.3) is curr
++000009d0: 656e 746c 7920 6e6f 7420 776f 726b 696e  ently not workin
++000009e0: 6720 636f 7272 6563 746c 792e 2054 6865  g correctly. The
++000009f0: 2072 6563 6f6d 6d65 6e64 6564 2066 6978   recommended fix
++00000a00: 2069 7320 696e 7374 616c 6c69 6e67 2074   is installing t
++00000a10: 6865 2076 6572 7369 6f6e 2066 726f 6d20  he version from 
++00000a20: 5b74 6869 7320 7075 6c6c 2072 6571 7565  [this pull reque
++00000a30: 7374 5d28 6874 7470 733a 2f2f 6769 7468  st](https://gith
++00000a40: 7562 2e63 6f6d 2f73 626c 6976 656e 2f72  ub.com/sbliven/r
++00000a50: 6373 6273 6561 7263 682f 7075 6c6c 2f36  csbsearch/pull/6
++00000a60: 292e 0a60 6060 6261 7368 0a70 7974 686f  )..```bash.pytho
++00000a70: 6e20 2d6d 2070 6970 2069 6e73 7461 6c6c  n -m pip install
++00000a80: 2022 7263 7362 7365 6172 6368 2040 2067   "rcsbsearch @ g
++00000a90: 6974 2b68 7474 7073 3a2f 2f67 6974 6875  it+https://githu
++00000aa0: 622e 636f 6d2f 7362 6c69 7665 6e2f 7263  b.com/sbliven/rc
++00000ab0: 7362 7365 6172 6368 4064 6264 6665 3338  sbsearch@dbdfe38
++00000ac0: 3830 6363 3838 6230 6365 3537 3136 3339  80cc88b0ce571639
++00000ad0: 3837 6462 3631 3364 3537 3934 3030 6338  87db613d579400c8
++00000ae0: 6522 0a60 6060 0a2d 2054 6865 2064 6f63  e".```.- The doc
++00000af0: 6b65 7220 696d 6167 6520 6361 6e20 6265  ker image can be
++00000b00: 2061 6363 6573 7365 6420 696e 2069 6e74   accessed in int
++00000b10: 6572 6163 7469 7665 206d 6f64 6520 7769  eractive mode wi
++00000b20: 7468 2074 6869 7320 636f 6d6d 616e 642e  th this command.
++00000b30: 0a60 6060 6261 7368 0a64 6f63 6b65 7220  .```bash.docker 
++00000b40: 7275 6e20 2d69 7420 2d76 202f 7061 7468  run -it -v /path
++00000b50: 2f74 6f2f 6461 7461 3a2f 6d65 6469 6120  /to/data:/media 
++00000b60: 6164 6170 7479 7662 696f 2f70 726f 7465  adaptyvbio/prote
++00000b70: 696e 666c 6f77 2062 6173 680a 6060 600a  inflow bash.```.
++00000b80: 0a23 2320 5573 6167 650a 2323 2320 446f  .## Usage.### Do
++00000b90: 776e 6c6f 6164 696e 6720 7072 652d 636f  wnloading pre-co
++00000ba0: 6d70 7574 6564 2064 6174 6173 6574 7320  mputed datasets 
++00000bb0: 2873 7461 626c 6529 0a41 6c72 6561 6479  (stable).Already
++00000bc0: 2070 7265 636f 6d70 7574 6564 2064 6174   precomputed dat
++00000bd0: 6173 6574 7320 7769 7468 2063 6f6e 7365  asets with conse
++00000be0: 6e73 7573 2073 6574 206f 6620 7061 7261  nsus set of para
++00000bf0: 6d65 7465 7273 2061 6e64 2063 616e 2062  meters and can b
++00000c00: 6520 6163 6365 7373 6564 2061 6e64 2064  e accessed and d
++00000c10: 6f77 6e6c 6f61 6465 6420 7573 696e 6720  ownloaded using 
++00000c20: 7468 6520 6070 726f 7465 696e 666c 6f77  the `proteinflow
++00000c30: 602e 2070 6163 6b61 6765 2e20 4368 6563  `. package. Chec
++00000c40: 6b20 7468 6520 6f75 7470 7574 206f 6620  k the output of 
++00000c50: 6070 726f 7465 696e 666c 6f77 2063 6865  `proteinflow che
++00000c60: 636b 5f74 6167 7360 2066 6f72 2061 206c  ck_tags` for a l
++00000c70: 6973 7420 6f66 2061 7661 696c 6162 6c65  ist of available
++00000c80: 2074 6167 732e 0a60 6060 6261 7368 0a70   tags..```bash.p
++00000c90: 726f 7465 696e 666c 6f77 2064 6f77 6e6c  roteinflow downl
++00000ca0: 6f61 6420 2d2d 7461 6720 3230 3233 3031  oad --tag 202301
++00000cb0: 3032 5f73 7461 626c 6520 0a60 6060 0a0a  02_stable .```..
++00000cc0: 2323 2320 5275 6e6e 696e 6720 7468 6520  ### Running the 
++00000cd0: 7069 7065 6c69 6e65 0a59 6f75 2063 616e  pipeline.You can
++00000ce0: 2061 6c73 6f20 7275 6e20 6070 726f 7465   also run `prote
++00000cf0: 696e 666c 6f77 6020 7769 7468 2079 6f75  inflow` with you
++00000d00: 7220 6f77 6e20 7061 7261 6d65 7465 7273  r own parameters
++00000d10: 2e20 4368 6563 6b20 7468 6520 6f75 7470  . Check the outp
++00000d20: 7574 206f 6620 6070 726f 7465 696e 666c  ut of `proteinfl
++00000d30: 6f77 2063 6865 636b 5f73 6e61 7073 686f  ow check_snapsho
++00000d40: 7473 6020 666f 7220 6120 6c69 7374 206f  ts` for a list o
++00000d50: 6620 6176 6169 6c61 626c 6520 5044 4220  f available PDB 
++00000d60: 736e 6170 7368 6f74 7320 286e 616d 696e  snapshots (namin
++00000d70: 6720 7275 6c65 3a20 6079 7979 796d 6d64  g rule: `yyyymmd
++00000d80: 6460 292e 0a0a 466f 7220 696e 7374 616e  d`)...For instan
++00000d90: 6365 2c20 6c65 7427 7320 6765 6e65 7261  ce, let's genera
++00000da0: 7465 2061 2064 6174 6173 6574 2077 6974  te a dataset wit
++00000db0: 6820 7468 6520 666f 6c6c 6f77 696e 6720  h the following 
++00000dc0: 6465 7363 7269 7074 696f 6e3a 0a2d 2072  description:.- r
++00000dd0: 6573 6f6c 7574 696f 6e20 7468 7265 7368  esolution thresh
++00000de0: 6f6c 643a 2035 2061 6e67 7374 726f 6d2c  old: 5 angstrom,
++00000df0: 0a2d 2050 4442 2073 6e61 7073 686f 743a  .- PDB snapshot:
++00000e00: 2032 3031 3930 3130 312c 0a2d 2073 7472   20190101,.- str
++00000e10: 7563 7475 7265 206d 6574 686f 6473 2061  ucture methods a
++00000e20: 6363 6570 7465 643a 2061 6c6c 2028 782d  ccepted: all (x-
++00000e30: 7261 7920 6368 7269 7374 6f6c 6f67 7261  ray christologra
++00000e40: 7068 792c 204e 524d 2c20 4372 796f 2d45  phy, NRM, Cryo-E
++00000e50: 4d29 2c0a 2d20 7365 7175 656e 6365 2069  M),.- sequence i
++00000e60: 6465 6e74 6974 7920 7468 7265 7368 6f6c  dentity threshol
++00000e70: 6420 666f 7220 636c 7573 7465 7269 6e67  d for clustering
++00000e80: 3a20 3430 2520 7365 7175 656e 6365 2073  : 40% sequence s
++00000e90: 696d 696c 6172 6974 792c 0a2d 206d 6178  imilarity,.- max
++00000ea0: 696d 756d 206c 656e 6774 6820 7065 7220  imum length per 
++00000eb0: 7365 7175 656e 6365 3a20 3130 3030 2072  sequence: 1000 r
++00000ec0: 6573 6964 7565 732c 0a2d 206d 696e 696d  esidues,.- minim
++00000ed0: 756d 206c 656e 6774 6820 7065 7220 7365  um length per se
++00000ee0: 7175 656e 6365 3a20 3520 7265 7369 6475  quence: 5 residu
++00000ef0: 6573 2c0a 2d20 6d61 7869 6d75 6d20 6672  es,.- maximum fr
++00000f00: 6163 7469 6f6e 206f 6620 6d69 7373 696e  action of missin
++00000f10: 6720 7661 6c75 6573 2061 7420 7468 6520  g values at the 
++00000f20: 656e 6473 3a20 3130 252c 0a2d 2073 697a  ends: 10%,.- siz
++00000f30: 6520 6f66 2076 616c 6964 6174 696f 6e20  e of validation 
++00000f40: 7375 6273 6574 3a20 3130 252e 0a0a 6060  subset: 10%...``
++00000f50: 6062 6173 680a 7072 6f74 6569 6e66 6c6f  `bash.proteinflo
++00000f60: 7720 6765 6e65 7261 7465 202d 2d74 6167  w generate --tag
++00000f70: 206e 6577 202d 2d72 6573 6f6c 7574 696f   new --resolutio
++00000f80: 6e5f 7468 7220 3520 2d2d 7064 625f 736e  n_thr 5 --pdb_sn
++00000f90: 6170 7368 6f74 2032 3031 3930 3130 3120  apshot 20190101 
++00000fa0: 2d2d 6e6f 745f 6669 6c74 6572 5f6d 6574  --not_filter_met
++00000fb0: 686f 6473 202d 2d6d 696e 5f73 6571 5f69  hods --min_seq_i
++00000fc0: 6420 302e 3420 2d2d 6d61 785f 6c65 6e67  d 0.4 --max_leng
++00000fd0: 7468 2031 3030 3020 2d2d 6d69 6e5f 6c65  th 1000 --min_le
++00000fe0: 6e67 7468 2035 202d 2d6d 6973 7369 6e67  ngth 5 --missing
++00000ff0: 5f65 6e64 735f 7468 7220 302e 3120 2d2d  _ends_thr 0.1 --
++00001000: 7661 6c69 645f 7370 6c69 7420 302e 310a  valid_split 0.1.
++00001010: 6060 600a 5365 6520 7468 6520 5b64 6f63  ```.See the [doc
++00001020: 735d 2868 7474 7073 3a2f 2f61 6461 7074  s](https://adapt
++00001030: 7976 6269 6f2e 6769 7468 7562 2e69 6f2f  yvbio.github.io/
++00001040: 5072 6f74 6569 6e46 6c6f 772f 2920 286f  ProteinFlow/) (o
++00001050: 7220 6070 726f 7465 696e 666c 6f77 2067  r `proteinflow g
++00001060: 656e 6572 6174 6520 2d2d 6865 6c70 6029  enerate --help`)
++00001070: 2066 6f72 2074 6865 2066 756c 6c20 6c69   for the full li
++00001080: 7374 206f 6620 7061 7261 6d65 7465 7273  st of parameters
++00001090: 2061 6e64 206d 6f72 6520 696e 666f 726d   and more inform
++000010a0: 6174 696f 6e2e 0a0a 4120 7265 6769 7374  ation...A regist
++000010b0: 7279 206f 6620 616c 6c20 7468 6520 6669  ry of all the fi
++000010c0: 6c65 7320 7468 6174 2061 7265 2072 656d  les that are rem
++000010d0: 6f76 6564 2064 7572 696e 6720 7468 6520  oved during the 
++000010e0: 6669 6c74 6572 696e 6720 6173 2077 656c  filtering as wel
++000010f0: 6c20 6173 2064 6573 6372 6970 7469 6f6e  l as description
++00001100: 2077 6974 6820 7468 6520 7265 6173 6f6e   with the reason
++00001110: 2066 6f72 2074 6865 6972 2072 656d 6f76   for their remov
++00001120: 616c 2069 7320 6372 6561 7465 6420 6175  al is created au
++00001130: 746f 6d61 7469 6361 6c6c 7920 666f 7220  tomatically for 
++00001140: 6561 6368 2060 6765 6e65 7261 7465 6020  each `generate` 
++00001150: 636f 6d6d 616e 642e 2054 6865 206c 6f67  command. The log
++00001160: 2066 696c 6573 2061 7265 2073 6176 6520   files are save 
++00001170: 2861 7420 6064 6174 612f 6c6f 6773 6020  (at `data/logs` 
++00001180: 6279 2064 6566 6175 6c74 2920 616e 6420  by default) and 
++00001190: 6120 7375 6d6d 6172 7920 6361 6e20 6265  a summary can be
++000011a0: 2061 6363 6573 7365 6420 7275 6e6e 696e   accessed runnin
++000011b0: 6720 6070 726f 7465 696e 666c 6f77 2067  g `proteinflow g
++000011c0: 6574 5f73 756d 6d61 7279 207b 6c6f 675f  et_summary {log_
++000011d0: 7061 7468 7d60 2e0a 0a23 2323 2053 706c  path}`...### Spl
++000011e0: 6974 7469 6e67 0a42 7920 6465 6661 756c  itting.By defaul
++000011f0: 742c 2062 6f74 6820 6070 726f 7465 696e  t, both `protein
++00001200: 666c 6f77 2067 656e 6572 6174 6560 2061  flow generate` a
++00001210: 6e64 2060 7072 6f74 6569 6e66 6c6f 7720  nd `proteinflow 
++00001220: 646f 776e 6c6f 6164 6020 7769 6c6c 2061  download` will a
++00001230: 6c73 6f20 7370 6c69 7420 796f 7572 2064  lso split your d
++00001240: 6174 6120 696e 746f 2074 7261 696e 696e  ata into trainin
++00001250: 672c 2074 6573 7420 616e 6420 7661 6c69  g, test and vali
++00001260: 6461 7469 6f6e 2061 6363 6f72 6469 6e67  dation according
++00001270: 2074 6f20 4d4d 7365 7173 3220 636c 7573   to MMseqs2 clus
++00001280: 7465 7269 6e67 2061 6e64 2068 6f6d 6f6d  tering and homom
++00001290: 6572 2f68 6574 6572 6f6d 6572 2f73 696e  er/heteromer/sin
++000012a0: 676c 6520 6368 6169 6e20 7072 6f70 6f72  gle chain propor
++000012b0: 7469 6f6e 732e 2048 6f77 6576 6572 2c20  tions. However, 
++000012c0: 796f 7520 6361 6e20 736b 6970 2074 6869  you can skip thi
++000012d0: 7320 7374 6570 2077 6974 6820 6120 602d  s step with a `-
++000012e0: 2d73 6b69 705f 7370 6c69 7474 696e 6760  -skip_splitting`
++000012f0: 2066 6c61 6720 616e 6420 7468 656e 2070   flag and then p
++00001300: 6572 666f 726d 2069 7420 7365 7061 7261  erform it separa
++00001310: 7465 6c79 2077 6974 6820 7468 6520 6070  tely with the `p
++00001320: 726f 7465 696e 666c 6f77 2073 706c 6974  roteinflow split
++00001330: 6020 636f 6d6d 616e 642e 0a0a 5468 6520  ` command...The 
++00001340: 666f 6c6c 6f77 696e 6720 636f 6d6d 616e  following comman
++00001350: 6420 7769 6c6c 2070 6572 666f 726d 2074  d will perform t
++00001360: 6865 2073 706c 6974 7469 6e67 2077 6974  he splitting wit
++00001370: 6820 6120 3130 2520 7661 6c69 6461 7469  h a 10% validati
++00001380: 6f6e 2073 6574 2c20 6120 3525 2074 6573  on set, a 5% tes
++00001390: 7420 7365 7420 616e 6420 6120 3530 2520  t set and a 50% 
++000013a0: 7468 7265 7368 6f6c 6420 666f 7220 7365  threshold for se
++000013b0: 7175 656e 6365 2069 6465 6e74 6974 7920  quence identity 
++000013c0: 636c 7573 7465 7273 2e0a 6060 6062 6173  clusters..```bas
++000013d0: 680a 7072 6f74 6569 6e66 6c6f 7720 7370  h.proteinflow sp
++000013e0: 6c69 7420 2d2d 7461 6720 6e65 7720 2d2d  lit --tag new --
++000013f0: 7661 6c69 645f 7370 6c69 7420 302e 3120  valid_split 0.1 
++00001400: 2d2d 7465 7374 5f73 706c 6974 2030 2e35  --test_split 0.5
++00001410: 202d 2d6d 696e 5f73 6571 5f69 6420 302e   --min_seq_id 0.
++00001420: 350a 6060 600a 0a23 2323 2055 7369 6e67  5.```..### Using
++00001430: 2074 6865 2064 6174 610a 5468 6520 6f75   the data.The ou
++00001440: 7470 7574 2066 696c 6573 2061 7265 2070  tput files are p
++00001450: 6963 6b6c 6564 206e 6573 7465 6420 6469  ickled nested di
++00001460: 6374 696f 6e61 7269 6573 2077 6865 7265  ctionaries where
++00001470: 2066 6972 7374 2d6c 6576 656c 206b 6579   first-level key
++00001480: 7320 6172 6520 6368 6169 6e20 4964 7320  s are chain Ids 
++00001490: 616e 6420 7365 636f 6e64 2d6c 6576 656c  and second-level
++000014a0: 206b 6579 7320 6172 6520 7468 6520 666f   keys are the fo
++000014b0: 6c6c 6f77 696e 673a 0a2d 2060 2763 7264  llowing:.- `'crd
++000014c0: 5f62 6227 603a 2061 2060 6e75 6d70 7960  _bb'`: a `numpy`
++000014d0: 2061 7272 6179 206f 6620 7368 6170 6520   array of shape 
++000014e0: 6028 4c2c 2034 2c20 3329 6020 7769 7468  `(L, 4, 3)` with
++000014f0: 2062 6163 6b62 6f6e 6520 6174 6f6d 2063   backbone atom c
++00001500: 6f6f 7264 696e 6174 6573 2028 4e2c 2043  oordinates (N, C
++00001510: 2c20 4341 2c20 4f29 2c0a 2d20 6027 6372  , CA, O),.- `'cr
++00001520: 645f 7363 2760 3a20 6120 606e 756d 7079  d_sc'`: a `numpy
++00001530: 6020 6172 7261 7920 6f66 2073 6861 7065  ` array of shape
++00001540: 2060 284c 2c20 3130 2c20 3329 6020 7769   `(L, 10, 3)` wi
++00001550: 7468 2073 6964 6563 6861 696e 2061 746f  th sidechain ato
++00001560: 6d20 636f 6f72 6469 6e61 7465 7320 2863  m coordinates (c
++00001570: 6865 636b 2060 7072 6f74 6569 6e66 6c6f  heck `proteinflo
++00001580: 772e 7369 6465 6368 6169 6e5f 6f72 6465  w.sidechain_orde
++00001590: 7228 2960 2066 6f72 2074 6865 206f 7264  r()` for the ord
++000015a0: 6572 206f 6620 6174 6f6d 7329 2c0a 2d20  er of atoms),.- 
++000015b0: 6027 6d73 6b27 603a 2061 2060 6e75 6d70  `'msk'`: a `nump
++000015c0: 7960 2061 7272 6179 206f 6620 7368 6170  y` array of shap
++000015d0: 6520 6028 4c2c 2960 2077 6865 7265 206f  e `(L,)` where o
++000015e0: 6e65 7320 636f 7272 6573 706f 6e64 2074  nes correspond t
++000015f0: 6f20 7265 7369 6475 6573 2077 6974 6820  o residues with 
++00001600: 6b6e 6f77 6e20 636f 6f72 6469 6e61 7465  known coordinate
++00001610: 7320 616e 640a 2020 2020 7a65 726f 7320  s and.    zeros 
++00001620: 746f 206d 6973 7369 6e67 2076 616c 7565  to missing value
++00001630: 732c 0a2d 2060 2773 6571 2760 3a20 6120  s,.- `'seq'`: a 
++00001640: 7374 7269 6e67 206f 6620 6c65 6e67 7468  string of length
++00001650: 2060 4c60 2077 6974 6820 7265 7369 6475   `L` with residu
++00001660: 6520 7479 7065 732e 0a0a 4f6e 6365 2079  e types...Once y
++00001670: 6f75 7220 6461 7461 2069 7320 7265 6164  our data is read
++00001680: 792c 2079 6f75 2063 616e 206f 7065 6e20  y, you can open 
++00001690: 7468 6520 6669 6c65 7320 6469 7265 6374  the files direct
++000016a0: 6c79 2077 6974 6820 6070 6963 6b6c 6560  ly with `pickle`
++000016b0: 2074 6f20 6163 6365 7373 2074 6869 7320   to access this 
++000016c0: 6461 7461 2e0a 0a60 6060 7079 7468 6f6e  data...```python
++000016d0: 0a69 6d70 6f72 7420 7069 636b 6c65 0a69  .import pickle.i
++000016e0: 6d70 6f72 7420 6f73 0a0a 7472 6169 6e5f  mport os..train_
++000016f0: 666f 6c64 6572 203d 2022 2e2f 6461 7461  folder = "./data
++00001700: 2f70 726f 7465 696e 666c 6f77 5f6e 6577  /proteinflow_new
++00001710: 2f74 7261 696e 696e 6722 0a66 6f72 2066  /training".for f
++00001720: 696c 656e 616d 6520 696e 206f 732e 6c69  ilename in os.li
++00001730: 7374 6469 7228 7472 6169 6e5f 666f 6c64  stdir(train_fold
++00001740: 6572 293a 0a20 2020 2077 6974 6820 6f70  er):.    with op
++00001750: 656e 286f 732e 7061 7468 2e6a 6f69 6e28  en(os.path.join(
++00001760: 7472 6169 6e5f 666f 6c64 6572 2c20 6669  train_folder, fi
++00001770: 6c65 6e61 6d65 292c 2022 7262 2229 2061  lename), "rb") a
++00001780: 7320 663a 0a20 2020 2020 2020 2064 6174  s f:.        dat
++00001790: 6120 3d20 7069 636b 6c65 2e6c 6f61 6428  a = pickle.load(
++000017a0: 6629 0a20 2020 2063 7264 5f62 6220 3d20  f).    crd_bb = 
++000017b0: 6461 7461 5b22 6372 645f 6262 225d 0a20  data["crd_bb"]. 
++000017c0: 2020 2073 6571 203d 2064 6174 615b 2273     seq = data["s
++000017d0: 6571 225d 0a20 2020 202e 2e2e 0a60 6060  eq"].    ....```
++000017e0: 0a0a 416c 7465 726e 6174 6976 656c 792c  ..Alternatively,
++000017f0: 2079 6f75 2063 616e 2075 7365 206f 7572   you can use our
++00001800: 2060 5072 6f74 6569 6e44 6174 6173 6574   `ProteinDataset
++00001810: 6020 6f72 2060 5072 6f74 6569 6e4c 6f61  ` or `ProteinLoa
++00001820: 6465 7260 2063 6c61 7373 6573 200a 666f  der` classes .fo
++00001830: 7220 636f 6e76 656e 6965 6e74 2070 726f  r convenient pro
++00001840: 6365 7373 696e 672e 2041 6d6f 6e67 206f  cessing. Among o
++00001850: 7468 6572 2074 6869 6e67 732c 2074 6865  ther things, the
++00001860: 7920 616c 6c6f 7720 666f 7220 6665 6174  y allow for feat
++00001870: 7572 6520 6578 7472 6163 7469 6f6e 2c20  ure extraction, 
++00001880: 7369 6e67 6c65 2063 6861 696e 202f 2068  single chain / h
++00001890: 6f6d 6f6d 6572 202f 2068 6574 6572 6f6d  omomer / heterom
++000018a0: 6572 2066 696c 7465 7269 6e67 2061 6e64  er filtering and
++000018b0: 2072 616e 646f 6d69 7a65 6420 7361 6d70   randomized samp
++000018c0: 6c69 6e67 2066 726f 6d20 7365 7175 656e  ling from sequen
++000018d0: 6365 2069 6465 6e74 6974 7920 636c 7573  ce identity clus
++000018e0: 7465 7273 2e0a 0a46 6f72 2065 7861 6d70  ters...For examp
++000018f0: 6c65 2c20 6865 7265 2069 7320 686f 7720  le, here is how 
++00001900: 7765 2063 616e 2063 7265 6174 6520 6120  we can create a 
++00001910: 6461 7461 206c 6f61 6465 7220 7468 6174  data loader that
++00001920: 3a0a 2d20 7361 6d70 6c65 7320 6120 6469  :.- samples a di
++00001930: 6666 6572 656e 7420 636c 7573 7465 7220  fferent cluster 
++00001940: 7265 7072 6573 656e 7461 7469 7665 2061  representative a
++00001950: 7420 6576 6572 7920 6570 6f63 682c 0a2d  t every epoch,.-
++00001960: 2065 7874 7261 6374 7320 6469 6865 6472   extracts dihedr
++00001970: 616c 2061 6e67 6c65 732c 2073 6964 6563  al angles, sidec
++00001980: 6861 696e 206f 7269 656e 7461 7469 6f6e  hain orientation
++00001990: 2061 6e64 2073 6563 6f6e 6461 7279 2073   and secondary s
++000019a0: 7472 7563 7475 7265 2066 6561 7475 7265  tructure feature
++000019b0: 732c 0a2d 206f 6e6c 7920 6c6f 6164 7320  s,.- only loads 
++000019c0: 7061 6972 7320 6f66 2069 6e74 6572 6163  pairs of interac
++000019d0: 7469 6e67 2070 726f 7465 696e 7320 286c  ting proteins (l
++000019e0: 6172 6765 7220 6269 6f75 6e69 7473 2061  arger biounits a
++000019f0: 7265 2062 726f 6b65 6e20 7570 2069 6e74  re broken up int
++00001a00: 6f20 7061 6972 7329 2c0a 2d20 6861 7320  o pairs),.- has 
++00001a10: 6261 7463 6820 7369 7a65 2038 2e0a 0a60  batch size 8...`
++00001a20: 6060 7079 7468 6f6e 0a66 726f 6d20 7072  ``python.from pr
++00001a30: 6f74 6569 6e66 6c6f 7720 696d 706f 7274  oteinflow import
++00001a40: 2050 726f 7465 696e 4c6f 6164 6572 0a74   ProteinLoader.t
++00001a50: 7261 696e 5f6c 6f61 6465 7220 3d20 5072  rain_loader = Pr
++00001a60: 6f74 6569 6e4c 6f61 6465 722e 6672 6f6d  oteinLoader.from
++00001a70: 5f61 7267 7328 0a20 2020 2022 2e2f 6461  _args(.    "./da
++00001a80: 7461 2f70 726f 7465 696e 666c 6f77 5f6e  ta/proteinflow_n
++00001a90: 6577 2f74 7261 696e 696e 6722 2c20 0a20  ew/training", . 
++00001aa0: 2020 2063 6c75 7374 6572 696e 675f 6469     clustering_di
++00001ab0: 6374 5f70 6174 683d 222e 2f64 6174 612f  ct_path="./data/
++00001ac0: 7072 6f74 6569 6e66 6c6f 775f 6e65 772f  proteinflow_new/
++00001ad0: 7370 6c69 7473 5f64 6963 742f 7472 6169  splits_dict/trai
++00001ae0: 6e2e 7069 636b 6c65 222c 0a20 2020 206e  n.pickle",.    n
++00001af0: 6f64 655f 6665 6174 7572 6573 5f74 7970  ode_features_typ
++00001b00: 653d 2264 6968 6564 7261 6c2b 7369 6465  e="dihedral+side
++00001b10: 6368 6169 6e5f 6f72 6965 6e74 6174 696f  chain_orientatio
++00001b20: 6e2b 7365 636f 6e64 6172 795f 7374 7275  n+secondary_stru
++00001b30: 6374 7572 6522 2c0a 2020 2020 656e 7472  cture",.    entr
++00001b40: 795f 7479 7065 3d22 7061 6972 222c 0a20  y_type="pair",. 
++00001b50: 2020 2062 6174 6368 5f73 697a 653d 382c     batch_size=8,
++00001b60: 0a29 0a66 6f72 2062 6174 6368 2069 6e20  .).for batch in 
++00001b70: 7472 6169 6e5f 6c6f 6164 6572 3a0a 2020  train_loader:.  
++00001b80: 2020 6372 645f 6262 203d 2062 6174 6368    crd_bb = batch
++00001b90: 5b22 5822 5d20 2328 422c 204c 2c20 342c  ["X"] #(B, L, 4,
++00001ba0: 2033 290a 2020 2020 7365 7120 3d20 6261   3).    seq = ba
++00001bb0: 7463 685b 2253 225d 2023 2842 2c20 4c29  tch["S"] #(B, L)
++00001bc0: 0a20 2020 2073 7365 203d 2062 6174 6368  .    sse = batch
++00001bd0: 5b22 7365 636f 6e64 6172 795f 7374 7275  ["secondary_stru
++00001be0: 6374 7572 6522 5d20 2328 422c 204c 2c20  cture"] #(B, L, 
++00001bf0: 3329 0a20 2020 2074 6f5f 7072 6564 6963  3).    to_predic
++00001c00: 7420 3d20 6261 7463 685b 226d 6173 6b65  t = batch["maske
++00001c10: 645f 7265 7322 5d20 2328 422c 204c 292c  d_res"] #(B, L),
++00001c20: 2031 2077 6865 7265 2074 6865 2072 6573   1 where the res
++00001c30: 6964 7565 7320 7368 6f75 6c64 2062 6520  idues should be 
++00001c40: 6d61 736b 6564 2c20 3020 6f74 6865 7277  masked, 0 otherw
++00001c50: 6973 650a 2020 2020 2e2e 2e0a 6060 600a  ise.    ....```.
++00001c60: 5365 6520 6d6f 7265 2064 6574 6169 6c73  See more details
++00001c70: 206f 6e20 6176 6169 6c61 626c 6520 7061   on available pa
++00001c80: 7261 6d65 7465 7273 2061 6e64 2074 6865  rameters and the
++00001c90: 2064 6174 6120 666f 726d 6174 2069 6e20   data format in 
++00001ca0: 7468 6520 5b64 6f63 735d 2868 7474 7073  the [docs](https
++00001cb0: 3a2f 2f61 6461 7074 7976 6269 6f2e 6769  ://adaptyvbio.gi
++00001cc0: 7468 7562 2e69 6f2f 5072 6f74 6569 6e46  thub.io/ProteinF
++00001cd0: 6c6f 772f 2920 2b20 5b74 6869 7320 7265  low/) + [this re
++00001ce0: 706f 7369 746f 7279 5d28 6874 7470 733a  pository](https:
++00001cf0: 2f2f 6769 7468 7562 2e63 6f6d 2f61 6461  //github.com/ada
++00001d00: 7074 7976 6269 6f2f 5072 6f74 6569 6e46  ptyvbio/ProteinF
++00001d10: 6c6f 772d 6d6f 6465 6c73 2920 666f 7220  low-models) for 
++00001d20: 6120 7573 6520 6361 7365 2e0a 0a23 2320  a use case...## 
++00001d30: 5072 6f74 6569 6e46 6c6f 7720 5374 6162  ProteinFlow Stab
++00001d40: 6c65 2052 656c 6561 7365 730a 596f 7520  le Releases.You 
++00001d50: 6361 6e20 646f 776e 6c6f 6164 2074 6865  can download the
++00001d60: 6d20 7769 7468 2060 7072 6f74 6569 6e66  m with `proteinf
++00001d70: 6c6f 7720 646f 776e 6c6f 6164 202d 2d74  low download --t
++00001d80: 6167 207b 7461 677d 6020 696e 2074 6865  ag {tag}` in the
++00001d90: 2063 6f6d 6d61 6e64 206c 696e 6520 6f72   command line or
++00001da0: 2062 726f 7773 6520 696e 2074 6865 205b   browse in the [
++00001db0: 696e 7465 7266 6163 655d 2868 7474 7073  interface](https
++00001dc0: 3a2f 2f70 726f 7465 696e 666c 6f77 2d64  ://proteinflow-d
++00001dd0: 6174 6173 6574 732e 7333 2e65 752d 7765  atasets.s3.eu-we
++00001de0: 7374 2d31 2e61 6d61 7a6f 6e61 7773 2e63  st-1.amazonaws.c
++00001df0: 6f6d 2f69 6e64 6578 2e68 746d 6c29 2e0a  om/index.html)..
++00001e00: 0a7c 5461 6720 2020 207c 4461 7465 2020  .|Tag    |Date  
++00001e10: 2020 7c53 6e61 7073 686f 747c 5369 7a65    |Snapshot|Size
++00001e20: 7c4d 696e 2072 6573 7c4d 696e 206c 656e  |Min res|Min len
++00001e30: 7c4d 6178 206c 656e 7c4d 4d73 6571 7320  |Max len|MMseqs 
++00001e40: 7468 727c 5370 6c69 7420 2874 7261 696e  thr|Split (train
++00001e50: 2f76 616c 2f74 6573 7429 7c4d 6973 7369  /val/test)|Missi
++00001e60: 6e67 2074 6872 2028 656e 6473 2f6d 6964  ng thr (ends/mid
++00001e70: 646c 6529 7c4e 6f74 657c 0a7c 2d2d 2d2d  dle)|Note|.|----
++00001e80: 2d2d 2d7c 2d2d 2d2d 2d2d 2d2d 7c2d 2d2d  ---|--------|---
++00001e90: 2d2d 2d2d 2d7c 2d2d 2d2d 7c2d 2d2d 2d2d  -----|----|-----
++00001ea0: 2d2d 7c2d 2d2d 2d2d 2d2d 7c2d 2d2d 2d2d  --|-------|-----
++00001eb0: 2d2d 7c2d 2d2d 2d2d 2d2d 2d2d 2d7c 2d2d  --|----------|--
++00001ec0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
++00001ed0: 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----|-----------
++00001ee0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 7c2d  --------------|-
++00001ef0: 2d2d 2d7c 0a7c 7061 7065 727c 3130 2e31  ---|.|paper|10.1
++00001f00: 312e 3232 7c32 3032 3230 3130 337c 3234  1.22|20220103|24
++00001f10: 477c 332e 357c 3330 7c31 3027 3030 307c  G|3.5|30|10'000|
++00001f20: 302e 337c 3930 2f35 2f35 7c30 2e33 2f30  0.3|90/5/5|0.3/0
++00001f30: 2e31 7c66 6972 7374 2072 656c 6561 7365  .1|first release
++00001f40: 2c20 6e6f 206d 6d43 4946 2066 696c 6573  , no mmCIF files
++00001f50: 7c0a 7c32 3032 3330 3130 325f 7374 6162  |.|20230102_stab
++00001f60: 6c65 7c32 372e 3032 2e32 337c 3230 3233  le|27.02.23|2023
++00001f70: 3031 3032 7c32 3847 7c33 2e35 7c33 307c  0102|28G|3.5|30|
++00001f80: 3130 2730 3030 7c30 2e33 7c39 302f 352f  10'000|0.3|90/5/
++00001f90: 357c 302e 332f 302e 317c 2076 312e 312e  5|0.3/0.1| v1.1.
++00001fa0: 317c 0a0a 2323 204c 6963 656e 7365 0a54  1|..## License.T
++00001fb0: 6865 2060 7072 6f74 6569 6e66 6c6f 7760  he `proteinflow`
++00001fc0: 2070 6163 6b61 6765 2061 6e64 2064 6174   package and dat
++00001fd0: 6120 6172 6520 7265 6c65 6173 6564 2061  a are released a
++00001fe0: 6e64 2064 6973 7472 6962 7574 6564 2075  nd distributed u
++00001ff0: 6e64 6572 2074 6865 2042 5344 2033 2d43  nder the BSD 3-C
++00002000: 6c61 7573 6520 4c69 6365 6e73 650a 0a0a  lause License...
++00002010: 2323 2043 6f6e 7472 6962 7574 696f 6e73  ## Contributions
++00002020: 0a54 6869 7320 6973 2061 6e20 6f70 656e  .This is an open
++00002030: 2073 6f75 7263 6520 7072 6f6a 6563 7420   source project 
++00002040: 7375 7070 6f72 7465 6420 6279 205b 4164  supported by [Ad
++00002050: 6170 7479 7620 4269 6f5d 2868 7474 7073  aptyv Bio](https
++00002060: 3a2f 2f77 7777 2e61 6461 7074 7976 6269  ://www.adaptyvbi
++00002070: 6f2e 636f 6d2f 292e 2043 6f6e 7472 6962  o.com/). Contrib
++00002080: 7574 696f 6e73 2c20 7375 6767 6573 7469  utions, suggesti
++00002090: 6f6e 7320 616e 6420 6275 672d 6669 7865  ons and bug-fixe
++000020a0: 7320 6172 6520 7765 6c63 6f6d 6564 2e0a  s are welcomed..
++000020b0: 0a                                       .
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow/__init__.py` & `proteinflow-1.3.0/proteinflow/__init__.py`
+
+ * *Files 11% similar despite different names*
+
+```diff
+@@ -1,28 +1,48 @@
+ """
+-`proteinflow` is a pipeline that loads protein data from PDB, filters it, puts it in a machine readable format and extracts structure and sequence features. 
++Proteinflow is an open-source Python library that streamlines the pre-processing of protein structure data for deep learning applications. ProteinFlow enables users to efficiently filter, cluster, and generate new datasets from resources like the Protein Data Bank (PDB).
+ 
+-![pipeline](https://raw.githubusercontent.com/adaptyvbio/ProteinFlow/main/media/fig_pipeline.png)
++Here are some of the key features we currently support:
++
++- ⛓️ Processing of both single-chain and multi-chain protein structures (Biounit PDB definition)
++- 🏷️ Various featurization options can be computed, including secondary structure features, torsion angles, etc.
++- 💾 A variety of data loading options and conversions to cater to different downstream training frameworks
++- 🧬 Access to up-to-date, pre-computed protein structure datasets
++
++![overview](https://raw.githubusercontent.com/adaptyvbio/ProteinFlow/main/media/pf-1.png)
++
++---
+ 
+ ## Installation
+-Recommended: create a new `conda` environment and install `proteinflow` and `mmseqs`. Note that the python version has to be between 3.8 and 3.10. 
++Recommended: create a new `conda` environment and install `proteinflow` with `pip`. 
+ ```bash
+-conda create --name proteinflow -y python=3.9
++conda create --name proteinflow -y
+ conda activate proteinflow
+-conda install -y -c conda-forge -c bioconda mmseqs2
+ python -m pip install proteinflow
+ ```
+-In addition, `proteinflow` depends on the `rcsbsearch` package and the latest release is currently failing. Follow the recommended fix:
++
++If you are using `python 3.10` and encountering installation problems, try running `python -m pip install prody==2.4.0` before installing `proteinflow`.
++
++### Additional requirements
++In most cases, running the commands is enough. However, if you are planning to generate a new dataset, there is a couple additional requirements.
++
++First, you will need to install `mmseqs`. The recommended way is to run the following command in your `conda` environment but there are alternative methods you can see [here](https://github.com/soedinglab/MMseqs2).
+ ```bash
+-python -m pip install "rcsbsearch @ git+https://github.com/sbliven/rcsbsearch@dbdfe3880cc88b0ce57163987db613d579400c8e"
++conda install -y -c conda-forge -c bioconda mmseqs2
+ ```
+ 
+-Note that you do not need to install `mmseqs` or `rcsbsearch` if you are not planning to generate a new dataset.
++In addition, `proteinflow` depends on the `rcsbsearch` package and the latest release [v0.2.3](https://github.com/sbliven/rcsbsearch/releases/tag/v0.2.3) is currently not working correctly. Follow the recommended fix:
++```bash
++python -m pip install "rcsbsearch @ git+https://github.com/sbliven/rcsbsearch@dbdfe3880cc88b0ce57163987db613d579400c8e"
++```
+ 
+ Finally, you can use our [docker image](https://hub.docker.com/r/adaptyvbio/proteinflow/tags) as an alternative.
++```bash
++docker run -it -v /path/to/data:/media adaptyvbio/proteinflow bash
++```
+ 
+ ## Usage
+ ### Downloading pre-computed datasets
+ We have already run the pipeline with a consensus set of parameters and saved the results at a server. You can download the resulting dataset with `proteinflow`. Check the output of `proteinflow check_tags` for a list of available tags.
+ ```bash
+ proteinflow download --tag paper 
+ ```
+@@ -57,14 +77,15 @@
+ proteinflow split --tag new --valid_split 0.1 --test_split 0.5 --min_seq_id 0.5
+ ```
+ 
+ See `proteinflow.split_data` (or run `proteinflow split --help`) for more information.
+ 
+ ### Using the data
+ The output files are pickled nested dictionaries where first-level keys are chain Ids and second-level keys are the following:
++
+ - `'crd_bb'`: a `numpy` array of shape `(L, 4, 3)` with backbone atom coordinates (N, C, CA, O),
+ - `'crd_sc'`: a `numpy` array of shape `(L, 10, 3)` with sidechain atom coordinates (check `proteinflow.sidechain_order()` for the order of atoms),
+ - `'msk'`: a `numpy` array of shape `(L,)` where ones correspond to residues with known coordinates and
+     zeros to missing values,
+ - `'seq'`: a string of length `L` with residue types.
+ 
+ Once your data is ready, you can open the files directly with `pickle` to access this data.
+@@ -107,26 +128,28 @@
+     seq = batch["S"] #(B, L)
+     sse = batch["secondary_structure"] #(B, L, 3)
+     to_predict = batch["masked_res"] #(B, L), 1 where the residues should be masked, 0 otherwise
+     ...
+ ```
+ 
+ See `proteinflow.ProteinLoader` for more information.
++
+ """
+ 
+ __pdoc__ = {"utils": False, "scripts": False}
+ __docformat__ = "numpy"
+ 
+ from proteinflow.utils.filter_database import _remove_database_redundancies
+ from proteinflow.utils.process_pdb import (
+     _align_structure,
+     _open_structure,
+     PDBError,
+     _s3list,
+     SIDECHAIN_ORDER,
++    _retrieve_fasta_chains,
+ )
+ from proteinflow.utils.cluster_and_partition import (
+     _build_dataset_partition,
+     _check_mmseqs,
+ )
+ from proteinflow.utils.split_dataset import _download_dataset, _split_data
+ from proteinflow.utils.biotite_sse import _annotate_sse
+@@ -157,16 +180,21 @@
+ from numpy import linalg
+ import boto3
+ from botocore import UNSIGNED
+ from botocore.config import Config
+ from concurrent import futures
+ from concurrent.futures import ThreadPoolExecutor
+ from itertools import combinations
++from editdistance import eval as edit_distance
+ import requests
+-
++import zipfile
++from bs4 import BeautifulSoup
++import urllib.request
++import string
++from einops import rearrange
+ 
+ MAIN_ATOMS = {
+     "GLY": None,
+     "ALA": 0,
+     "VAL": 0,
+     "LEU": 1,
+     "ILE": 1,
+@@ -204,14 +232,18 @@
+     "TRP": "W",
+     "ALA": "A",
+     "VAL": "V",
+     "GLU": "E",
+     "TYR": "Y",
+     "MET": "M",
+ }
++
++REVERSE_D3TO1 = {v: k for k, v in D3TO1.items()}
++REVERSE_D3TO1["X"] = "GLY"
++
+ ALPHABET = "-ACDEFGHIKLMNPQRSTVWY"
+ 
+ FEATURES_DICT = defaultdict(lambda: defaultdict(lambda: 0))
+ FEATURES_DICT["hydropathy"].update(
+     {
+         "-": 0,
+         "I": 4.5,
+@@ -280,14 +312,15 @@
+     FEATURES_DICT["hydropathy"][x] / 5,
+     FEATURES_DICT["volume"][x] / 200,
+     FEATURES_DICT["charge"][x],
+     FEATURES_DICT["polarity"][x],
+     FEATURES_DICT["acceptor"][x],
+     FEATURES_DICT["donor"][x],
+ ]
++CDR = {"-": 0, "H1": 1, "H2": 2, "H3": 3, "L1": 4, "L2": 5, "L3": 6}
+ 
+ 
+ def _clean(pdb_id, tmp_folder):
+     """
+     Remove all temporary files associated with a PDB ID
+     """
+     for file in os.listdir(tmp_folder):
+@@ -295,20 +328,23 @@
+             subprocess.run(
+                 ["rm", os.path.join(tmp_folder, file)],
+                 stdout=subprocess.DEVNULL,
+                 stderr=subprocess.DEVNULL,
+             )
+ 
+ 
+-def _log_exception(exception, log_file, pdb_id, tmp_folder):
++def _log_exception(exception, log_file, pdb_id, tmp_folder, chain_id=None):
+     """
+     Record the error in the log file
+     """
+ 
+-    _clean(pdb_id, tmp_folder)
++    if chain_id is None:
++        _clean(pdb_id, tmp_folder)
++    else:
++        pdb_id = pdb_id + "-" + chain_id
+     if isinstance(exception, PDBError):
+         with open(log_file, "a") as f:
+             f.write(f"<<< {str(exception)}: {pdb_id} \n")
+     else:
+         with open(log_file, "a") as f:
+             f.write(f"<<< Unknown: {pdb_id} \n")
+             f.write(traceback.format_exc())
+@@ -351,14 +387,18 @@
+         The percentage of chains to put in the validation set (default 5%)
+     out_split_dict_folder : str, default "./data/dataset_splits_dict"
+         The folder where the dictionaries containing the train/validation/test splits information will be saved"
+     min_seq_id : float in [0, 1], default 0.3
+         minimum sequence identity for `mmseqs`
+     """
+ 
++    sample_file = os.listdir(output_folder)[0]
++    ind = sample_file.split(".")[0].split("-")[1]
++    sabdab = not ind.isnumeric()
++
+     os.makedirs(out_split_dict_folder, exist_ok=True)
+     (
+         train_clusters_dict,
+         train_classes_dict,
+         valid_clusters_dict,
+         valid_classes_dict,
+         test_clusters_dict,
+@@ -366,27 +406,32 @@
+     ) = _build_dataset_partition(
+         output_folder,
+         tmp_folder,
+         valid_split=valid_split,
+         test_split=test_split,
+         tolerance=split_tolerance,
+         min_seq_id=min_seq_id,
++        sabdab=sabdab,
+     )
+     with open(os.path.join(out_split_dict_folder, "train.pickle"), "wb") as f:
+         pickle.dump(train_clusters_dict, f)
+         pickle.dump(train_classes_dict, f)
+     with open(os.path.join(out_split_dict_folder, "valid.pickle"), "wb") as f:
+         pickle.dump(valid_clusters_dict, f)
+         pickle.dump(valid_classes_dict, f)
+     with open(os.path.join(out_split_dict_folder, "test.pickle"), "wb") as f:
+         pickle.dump(test_clusters_dict, f)
+         pickle.dump(test_classes_dict, f)
+ 
+ 
+ def _raise_rcsbsearch(e):
++    """
++    Raise a RuntimeError if the error is due to rcsbsearch
++    """
++
+     if "404 Client Error" in str(e):
+         raise RuntimeError(
+             'Quering rcsbsearch is failing. Please install a version of rcsbsearch where this error is solved:\npython -m pip install "rcsbsearch @ git+https://github.com/sbliven/rcsbsearch@dbdfe3880cc88b0ce57163987db613d579400c8e"'
+         )
+     else:
+         raise e
+ 
+@@ -404,14 +449,17 @@
+     remove_redundancies=False,
+     seq_identity_threshold=0.9,
+     n=None,
+     force=False,
+     tag=None,
+     pdb_snapshot=None,
+     load_live=False,
++    sabdab=False,
++    zip_path=None,
++    require_antigen=False,
+ ):
+     """
+     Download and parse PDB files that meet filtering criteria
+ 
+     The output files are pickled nested dictionaries where first-level keys are chain Ids and second-level keys are
+     the following:
+ 
+@@ -460,17 +508,23 @@
+     valid_split : float, default 0.05
+         The percentage of chains to put in the validation set (default 5%)
+     out_split_dict_folder : str, default "./data/dataset_splits_dict"
+         The folder where the dictionaries containing the train/validation/test splits information will be saved
+     tag : str, optional
+         A tag to add to the log file
+     pdb_snapshot : str, optional
+-        the PDB snapshot to use, by default the latest is used
++        the PDB snapshot to use, by default the latest is used (if `sabdab` is `True`, you can use any date in the format YYYYMMDD as a cutoff)
+     load_live : bool, default False
+         if `True`, load the files that are not in the latest PDB snapshot from the PDB FTP server (forced to `False` if `pdb_snapshot` is not `None`)
++    sabdab : bool, default False
++        if `True`, download the SAbDab database instead of PDB
++    zip_path : str, optional
++        path to a zip file containing SAbDab files (only used if `sabdab` is `True`)
++    require_antigen : bool, default False
++        if `True`, only keep files with antigen chains (only used if `sabdab` is `True`)
+ 
+     Returns
+     -------
+     log : dict
+         a dictionary where keys are recognized error names and values are lists of PDB ids that caused the errors
+     """
+ 
+@@ -479,206 +533,115 @@
+     MIN_LENGTH = min_length
+     MAX_LENGTH = max_length
+     RESOLUTION_THR = resolution_thr
+     MISSING_ENDS_THR = missing_ends_thr
+     MISSING_MIDDLE_THR = missing_middle_thr
+ 
+     if not os.path.exists(TMP_FOLDER):
+-        os.mkdir(TMP_FOLDER)
++        os.makedirs(TMP_FOLDER)
+     if not os.path.exists(OUTPUT_FOLDER):
+-        os.mkdir(OUTPUT_FOLDER)
++        os.makedirs(OUTPUT_FOLDER)
+     if not os.path.exists(log_folder):
+-        os.mkdir(log_folder)
+-
+-    if pdb_snapshot is not None:
+-        load_live = False
++        os.makedirs(log_folder)
+ 
+     i = 0
+     while os.path.exists(os.path.join(log_folder, f"log_{i}.txt")):
+         i += 1
+     LOG_FILE = os.path.join(log_folder, f"log_{i}.txt")
+     print(f"Log file: {LOG_FILE} \n")
+     now = datetime.now()  # current date and time
+     date_time = now.strftime("%m/%d/%Y, %H:%M:%S") + "\n\n"
+     with open(LOG_FILE, "a") as f:
+         f.write(date_time)
+         if tag is not None:
+             f.write(f"tag: {tag} \n\n")
+ 
+-    # get filtered PDB ids from PDB API
+-    pdb_ids = (
+-        Attr("rcsb_entry_info.selected_polymer_entity_types")
+-        .__eq__("Protein (only)")
+-        .or_("rcsb_entry_info.polymer_composition")
+-        .__eq__("protein/oligosaccharide")
+-    )
+-    # if include_na:
+-    #     pdb_ids = pdb_ids.or_('rcsb_entry_info.polymer_composition').in_(["protein/NA", "protein/NA/oligosaccharide"])
+-
+-    if RESOLUTION_THR is not None:
+-        pdb_ids = pdb_ids.and_("rcsb_entry_info.resolution_combined").__le__(
+-            RESOLUTION_THR
+-        )
+-    if filter_methods:
+-        pdb_ids = pdb_ids.and_("exptl.method").in_(
+-            ["X-RAY DIFFRACTION", "ELECTRON MICROSCOPY"]
+-        )
+-    pdb_ids = pdb_ids.exec("assembly")
+-
+-    ordered_folders = [
+-        x.key
+-        for x in _s3list(
+-            boto3.resource("s3", config=Config(signature_version=UNSIGNED)).Bucket(
+-                "pdbsnapshots"
+-            ),
+-            "",
+-            recursive=False,
+-            list_objs=False,
+-        )
+-    ]
+-    ordered_folders = sorted(
+-        ordered_folders, reverse=True
+-    )  # a list of PDB snapshots from newest to oldest
+-    if pdb_snapshot is not None:
+-        if pdb_snapshot not in ordered_folders:
+-            raise ValueError(
+-                f"The {pdb_snapshot} PDB snapshot not found, please choose from {ordered_folders}"
+-            )
+-        ind = ordered_folders.index(pdb_snapshot)
+-        ordered_folders = ordered_folders[ind:]
+-
+-    # session = boto3.session.Session()
+-    # s3_client = session.client("s3", config=Config(signature_version=UNSIGNED))
+-
+-    session = get_session()
+-
+-    def download_live(id):
+-        pdb_id, biounit = id.split("-")
+-        filenames = {
+-            "cif": f"{pdb_id}-assembly{biounit}.cif.gz",
+-            "pdb": f"{pdb_id}.pdb{biounit}.gz",
+-        }
+-        for t in filenames:
+-            local_path = os.path.join(tmp_folder, f"{pdb_id}-{biounit}") + f".{t}.gz"
+-            try:
+-                url = f"https://files.rcsb.org/download/{filenames[t]}"
+-                response = requests.get(url)
+-                open(local_path, "wb").write(response.content)
+-                return local_path
+-            except:
+-                pass
+-        return id
+-
+-    def download_fasta_f(pdb_id, datadir):
+-        downloadurl = "https://www.rcsb.org/fasta/entry/"
+-        pdbfn = pdb_id + "/download"
+-        outfnm = os.path.join(datadir, f"{pdb_id.lower()}.fasta")
+-
+-        url = downloadurl + pdbfn
+-        try:
+-            urllib.request.urlretrieve(url, outfnm)
+-            return outfnm
+-
+-        except Exception as err:
+-            # print(str(err), file=sys.stderr)
+-            return None
+-
+     def process_f(
+         local_path,
+         show_error=False,
+         force=True,
++        sabdab=False,
+     ):
++        chain_id = None
++        if sabdab:
++            local_path, chain_id = local_path
++        fn = os.path.basename(local_path)
++        pdb_id = fn.split(".")[0]
+         try:
+             # local_path = download_f(pdb_id, s3_client=s3_client, load_live=load_live)
+-            fn = os.path.basename(local_path)
+-            pdb_id = fn.split(".")[0]
+-            target_file = os.path.join(OUTPUT_FOLDER, pdb_id + ".pickle")
++            name = pdb_id if not sabdab else pdb_id + "-" + chain_id
++            target_file = os.path.join(OUTPUT_FOLDER, name + ".pickle")
+             if not force and os.path.exists(target_file):
+                 raise PDBError("File already exists")
+             pdb_dict = _open_structure(
+                 local_path,
+                 tmp_folder=TMP_FOLDER,
++                sabdab=sabdab,
++                chain_id=chain_id,
+             )
+             # filter and convert
+             pdb_dict = _align_structure(
+                 pdb_dict,
+                 min_length=MIN_LENGTH,
+                 max_length=MAX_LENGTH,
+                 max_missing_ends=MISSING_ENDS_THR,
+                 max_missing_middle=MISSING_MIDDLE_THR,
++                chain_id_string=chain_id,
+             )
+             # save
+             if pdb_dict is not None:
+                 with open(target_file, "wb") as f:
+                     pickle.dump(pdb_dict, f)
+         except Exception as e:
+             if show_error:
+                 raise e
+             else:
+-                _log_exception(e, LOG_FILE, pdb_id, TMP_FOLDER)
+-
+-    # for x in ["1a52-3", "1a52-4", "1a52-2", "1a52-1"]:
+-    #     process_f(x, show_error=True, force=force)
++                _log_exception(e, LOG_FILE, pdb_id, TMP_FOLDER, chain_id=chain_id)
+ 
+     try:
+-        with ThreadPoolExecutor(max_workers=8) as executor:
+-            print("Get a file list...")
+-            ids = []
+-            for i, x in enumerate(tqdm(pdb_ids)):
+-                ids.append(x)
+-                if n is not None and i == n:
+-                    break
+-            print("Download fasta files...")
+-            pdbs = set([x.split("-")[0] for x in ids])
+-            future_to_key = {
+-                executor.submit(
+-                    lambda x: download_fasta_f(x, datadir=tmp_folder), key
+-                ): key
+-                for key in pdbs
+-            }
+-            _ = [
+-                x.result()
+-                for x in tqdm(futures.as_completed(future_to_key), total=len(pdbs))
+-            ]
+-
+-        # _ = [process_f(x, force=force, load_live=load_live) for x in tqdm(ids)]
+-        print("Download structure files...")
+-        paths = _download_s3_parallel(
+-            pdb_ids=ids, tmp_folder=tmp_folder, snapshots=[ordered_folders[0]]
++        paths, error_ids = _load_files(
++            resolution_thr=RESOLUTION_THR,
++            filter_methods=filter_methods,
++            pdb_snapshot=pdb_snapshot,
++            log_folder=log_folder,
++            n=n,
++            tmp_folder=TMP_FOLDER,
++            load_live=load_live,
++            sabdab=sabdab,
++            zip_path=zip_path,
++            require_antigen=require_antigen,
+         )
+-        paths = [item for sublist in paths for item in sublist]
+-        error_ids = [x for x in paths if not x.endswith(".gz")]
+-        paths = [x for x in paths if x.endswith(".gz")]
+-        if load_live:
+-            print("Download newest structure files...")
+-            live_paths = p_map(download_live, error_ids)
+-            error_ids = []
+-            for x in live_paths:
+-                if x.endswith(".gz"):
+-                    paths.append(x)
+-                else:
+-                    error_ids.append(x)
+         for id in error_ids:
+             with open(LOG_FILE, "a") as f:
+                 f.write(f"<<< Could not download PDB/mmCIF file: {id} \n")
++        # for x in [("data/tmp/5ivn.pdb", "A_nan_B")]:
++        #     process_f(x, show_error=True, force=force, sabdab=True)
+         print("Filter and process...")
+-        _ = p_map(lambda x: process_f(x, force=force), paths)
++        _ = p_map(lambda x: process_f(x, force=force, sabdab=sabdab), paths)
++        # _ = [process_f(x, force=force, sabdab=sabdab, show_error=True) for x in tqdm(paths)]
+     except Exception as e:
+         _raise_rcsbsearch(e)
+ 
+     stats = get_error_summary(LOG_FILE, verbose=False)
+     not_found_error = "<<< PDB / mmCIF file downloaded but not found"
+     while not_found_error in stats:
+         with open(LOG_FILE, "r") as f:
+             lines = [x for x in f.readlines() if not x.startswith(not_found_error)]
+         os.remove(LOG_FILE)
+         with open(f"{LOG_FILE}_tmp", "a") as f:
+             for line in lines:
+                 f.write(line)
+-        _ = p_map(lambda x: process_f(x, force=force), stats[not_found_error])
++        if sabdab:
++            paths = [
++                (os.path.join(TMP_FOLDER, x.split("-")[0] + ".pdb"), x.split("-")[1])
++                for x in stats[not_found_error]
++            ]
++        else:
++            paths = stats[not_found_error]
++        _ = p_map(lambda x: process_f(x, force=force, sabdab=sabdab), paths)
+         stats = get_error_summary(LOG_FILE, verbose=False)
+     if os.path.exists(f"{LOG_FILE}_tmp"):
+         with open(LOG_FILE, "r") as f:
+             lines = [x for x in f.readlines() if not x.startswith(not_found_error)]
+         os.remove(LOG_FILE)
+         with open(f"{LOG_FILE}_tmp", "a") as f:
+             for line in lines:
+@@ -785,98 +748,447 @@
+         Returns
+         -------
+         chain_M : torch.Tensor
+             a `(B, L)` shaped binary tensor where 1 denotes the part that needs to be predicted and
+             0 is everything else
+         """
+ 
+-        chain_M = torch.zeros(batch["S"].shape)
+-        for i, coords in enumerate(batch["X"]):
+-            chain_index = batch["chain_id"][i]
+-            chain_bool = batch["chain_encoding_all"][i] == chain_index
+-            if self.mask_whole_chains:
+-                chain_M[i, chain_bool] = 1
+-            else:
+-                chains = torch.unique(batch["chain_encoding_all"][i])
+-                chain_start = torch.where(chain_bool)[0][0]
+-                chain = coords[chain_bool]
+-                res_i = None
+-                if len(chains) > 1 and self.force_binding_sites_frac > 0:
+-                    if random.uniform(0, 1) < self.force_binding_sites_frac:
+-                        intersection_indices = []
+-                        for chain_id in chains:
+-                            if chain_id == chain_index:
+-                                continue
+-                            chain_id_bool = batch["chain_encoding_all"][i] == chain_id
+-                            chain_min = (
+-                                coords[chain_id_bool][:, 2, :].min(0)[0].unsqueeze(0)
++        if "cdr" in batch and "cdr_id" in batch:
++            chain_M = torch.zeros_like(batch["cdr"])
++            for i, cdr_arr in enumerate(batch["cdr"]):
++                chain_M[i] = cdr_arr == batch["cdr_id"][i]
++        else:
++            chain_M = torch.zeros(batch["S"].shape)
++            for i, coords in enumerate(batch["X"]):
++                chain_index = batch["chain_id"][i]
++                chain_bool = batch["chain_encoding_all"][i] == chain_index
++
++                if self.mask_whole_chains:
++                    chain_M[i, chain_bool] = 1
++                else:
++                    chains = torch.unique(batch["chain_encoding_all"][i])
++                    chain_start = torch.where(chain_bool)[0][0]
++                    chain = coords[chain_bool]
++                    res_i = None
++                    interface = []
++                    non_masked_interface = []
++                    if len(chains) > 1 and self.force_binding_sites_frac > 0:
++                        if random.uniform(0, 1) <= self.force_binding_sites_frac:
++                            X_copy = coords
++
++                            i_indices = (chain_bool == 0).nonzero().flatten()
++                            j_indices = chain_bool.nonzero().flatten()
++
++                            distances = torch.norm(
++                                X_copy[i_indices, 2, :]
++                                - X_copy[j_indices, 2, :].unsqueeze(1),
++                                dim=-1,
++                            ).cpu()
++                            close_idx = (
++                                np.where(torch.min(distances, dim=1)[0] <= 10)[0]
++                                + chain_start.item()
+                             )
+-                            chain_max = (
+-                                coords[chain_id_bool][:, 2, :].max(0)[0].unsqueeze(0)
++
++                            no_mask_idx = np.where(batch["mask"][i][chain_bool])[0]
++                            interface = np.intersect1d(close_idx, j_indices)
++
++                            not_end_mask = np.where(
++                                ((X_copy[:, 2, :].cpu() == 0).sum(-1) != 3)
++                            )[0]
++                            interface = np.intersect1d(interface, not_end_mask)
++
++                            non_masked_interface = np.intersect1d(
++                                interface, no_mask_idx
+                             )
+-                            min_mask = (chain[:, 2, :] >= chain_min - 4).sum(-1) == 3
+-                            max_mask = (chain[:, 2, :] - 4 <= chain_max).sum(-1) == 3
+-                            intersection_indices += torch.where(min_mask * max_mask)[
+-                                0
+-                            ].tolist()
+-                        if len(intersection_indices) > 0:
+-                            res_i = intersection_indices[
+-                                random.randint(0, len(intersection_indices) - 1)
+-                            ]
+-                if res_i is None:
+-                    non_zero = torch.where(batch["mask"][i][chain_bool])[0]
+-                    res_i = non_zero[random.randint(0, len(non_zero) - 1)]
+-                res_coords = chain[res_i, 2, :]
+-                neighbor_indices = torch.where(batch["mask"][i][chain_bool])[0]
+-                if self.mask_frac is not None:
+-                    assert self.mask_frac > 0 and self.mask_frac < 1
+-                    k = int(len(neighbor_indices) * self.mask_frac)
+-                    k = max(k, 10)
+-                else:
+-                    up = min(
+-                        self.upper_limit, int(len(neighbor_indices) * 0.5)
+-                    )  # do not mask more than half of the sequence
+-                    low = min(up - 1, self.lower_limit)
+-                    k = random.choice(range(low, up))
+-                dist = torch.sum(
+-                    (chain[neighbor_indices, 1, :] - res_coords.unsqueeze(0)) ** 2, -1
+-                )
+-                closest_indices = neighbor_indices[
+-                    torch.topk(dist, k, largest=False)[1]
+-                ]
+-                chain_M[i, closest_indices + chain_start] = 1
++                            interpolate = True
++                            if len(non_masked_interface) > 0:
++                                res_i = non_masked_interface[
++                                    random.randint(0, len(non_masked_interface) - 1)
++                                ]
++                            elif len(interface) > 0 and interpolate:
++                                res_i = interface[random.randint(0, len(interface) - 1)]
++                            else:
++                                res_i = no_mask_idx[
++                                    random.randint(0, len(no_mask_idx) - 1)
++                                ]
++                    if res_i is None:
++                        non_zero = torch.where(batch["mask"][i][chain_bool])[0]
++                        res_i = non_zero[random.randint(0, len(non_zero) - 1)]
++                    res_coords = coords[res_i, 2, :]
++                    neighbor_indices = torch.where(batch["mask"][i][chain_bool])[0]
++                    if self.mask_frac is not None:
++                        assert self.mask_frac > 0 and self.mask_frac < 1
++                        k = int(len(neighbor_indices) * self.mask_frac)
++                        k = max(k, 10)
++                    else:
++                        up = min(
++                            self.upper_limit, int(len(neighbor_indices) * 0.5)
++                        )  # do not mask more than half of the sequence
++                        low = min(up - 1, self.lower_limit)
++                        k = random.choice(range(low, up))
++                    dist = torch.norm(
++                        chain[neighbor_indices, 2, :] - res_coords.unsqueeze(0), dim=-1
++                    )
++                    closest_indices = neighbor_indices[
++                        torch.topk(dist, k, largest=False)[1]
++                    ]
++                    chain_M[i, closest_indices + chain_start] = 1
+         return chain_M
+ 
+     def pad_collate(self, batch):
+         # find longest sequence
+         out = {}
+         max_len = max(map(lambda x: x["S"].shape[0], batch))
+ 
+         # pad according to max_len
+         to_pad = [max_len - b["S"].shape[0] for b in batch]
+         for key in batch[0].keys():
+-            if key in ["chain_id", "chain_dict", "pdb_id"]:
++            if key in ["chain_id", "chain_dict", "pdb_id", "cdr_id"]:
+                 continue
+             out[key] = torch.stack(
+                 [
+                     torch.cat([b[key], torch.zeros((pad, *b[key].shape[1:]))], 0)
+                     for b, pad in zip(batch, to_pad)
+                 ],
+                 0,
+             )
+         out["chain_id"] = torch.tensor([b["chain_id"] for b in batch])
+         out["masked_res"] = self._get_masked_sequence(out)
+         out["chain_dict"] = [b["chain_dict"] for b in batch]
+         out["pdb_id"] = [b["pdb_id"] for b in batch]
++        if "cdr_id" in batch[0]:
++            out["cdr_id"] = torch.tensor([b["cdr_id"] for b in batch])
+         return out
+ 
+     def __call__(self, batch):
+         return self.pad_collate(batch)
+ 
+ 
++def _get_pdb_ids(
++    resolution_thr=3.5,
++    pdb_snapshot=None,
++    filter_methods=True,
++    log_folder="data/tmp/logs",
++):
++    """
++    Get PDB ids from PDB API
++    """
++
++    # get filtered PDB ids from PDB API
++    pdb_ids = (
++        Attr("rcsb_entry_info.selected_polymer_entity_types")
++        .__eq__("Protein (only)")
++        .or_("rcsb_entry_info.polymer_composition")
++        .__eq__("protein/oligosaccharide")
++    )
++    # if include_na:
++    #     pdb_ids = pdb_ids.or_('rcsb_entry_info.polymer_composition').in_(["protein/NA", "protein/NA/oligosaccharide"])
++
++    if resolution_thr is not None:
++        pdb_ids = pdb_ids.and_("rcsb_entry_info.resolution_combined").__le__(
++            resolution_thr
++        )
++    if filter_methods:
++        pdb_ids = pdb_ids.and_("exptl.method").in_(
++            ["X-RAY DIFFRACTION", "ELECTRON MICROSCOPY"]
++        )
++    pdb_ids = pdb_ids.exec("assembly")
++
++    ordered_folders = [
++        x.key.strip("/")
++        for x in _s3list(
++            boto3.resource("s3", config=Config(signature_version=UNSIGNED)).Bucket(
++                "pdbsnapshots"
++            ),
++            "",
++            recursive=False,
++            list_objs=False,
++        )
++    ]
++    ordered_folders = sorted(
++        ordered_folders, reverse=True
++    )  # a list of PDB snapshots from newest to oldest
++    if pdb_snapshot is not None:
++        if pdb_snapshot not in ordered_folders:
++            raise ValueError(
++                f"The {pdb_snapshot} PDB snapshot not found, please choose from {ordered_folders}"
++            )
++        ind = ordered_folders.index(pdb_snapshot)
++        ordered_folders = ordered_folders[ind:]
++    return ordered_folders, pdb_ids
++
++
++def _download_live(id, tmp_folder):
++    """
++    Download a PDB file from the PDB website
++    """
++
++    pdb_id, biounit = id.split("-")
++    filenames = {
++        "cif": f"{pdb_id}-assembly{biounit}.cif.gz",
++        "pdb": f"{pdb_id}.pdb{biounit}.gz",
++    }
++    for t in filenames:
++        local_path = os.path.join(tmp_folder, f"{pdb_id}-{biounit}") + f".{t}.gz"
++        try:
++            url = f"https://files.rcsb.org/download/{filenames[t]}"
++            response = requests.get(url)
++            open(local_path, "wb").write(response.content)
++            return local_path
++        except:
++            pass
++    return id
++
++
++def _download_fasta_f(pdb_id, datadir):
++    """
++    Download a fasta file from the PDB website
++    """
++
++    downloadurl = "https://www.rcsb.org/fasta/entry/"
++    pdbfn = pdb_id + "/download"
++    outfnm = os.path.join(datadir, f"{pdb_id.lower()}.fasta")
++
++    url = downloadurl + pdbfn
++    try:
++        urllib.request.urlretrieve(url, outfnm)
++        return outfnm
++
++    except Exception as err:
++        # print(str(err), file=sys.stderr)
++        return None
++
++
++def _load_pdb(
++    resolution_thr=3.5,
++    pdb_snapshot=None,
++    filter_methods=True,
++    log_folder="data/tmp/logs",
++    n=None,
++    tmp_folder="data/tmp",
++    load_live=False,
++):
++    """
++    Download filtered PDB files and return a list of local file paths
++    """
++
++    ordered_folders, pdb_ids = _get_pdb_ids(
++        resolution_thr=resolution_thr,
++        pdb_snapshot=pdb_snapshot,
++        filter_methods=filter_methods,
++        log_folder=log_folder,
++    )
++    with ThreadPoolExecutor(max_workers=8) as executor:
++        print("Getting a file list...")
++        ids = []
++        for i, x in enumerate(tqdm(pdb_ids)):
++            ids.append(x)
++            if n is not None and i == n:
++                break
++        print("Downloading fasta files...")
++        pdbs = set([x.split("-")[0] for x in ids])
++        future_to_key = {
++            executor.submit(
++                lambda x: _download_fasta_f(x, datadir=tmp_folder), key
++            ): key
++            for key in pdbs
++        }
++        _ = [
++            x.result()
++            for x in tqdm(futures.as_completed(future_to_key), total=len(pdbs))
++        ]
++
++    # _ = [process_f(x, force=force, load_live=load_live) for x in tqdm(ids)]
++    print("Downloading structure files...")
++    paths = _download_s3_parallel(
++        pdb_ids=ids, tmp_folder=tmp_folder, snapshots=[ordered_folders[0]]
++    )
++    paths = [item for sublist in paths for item in sublist]
++    error_ids = [x for x in paths if not x.endswith(".gz")]
++    paths = [x for x in paths if x.endswith(".gz")]
++    if load_live:
++        print("Downloading newest structure files...")
++        live_paths = p_map(
++            lambda x: _download_live(x, tmp_folder=tmp_folder), error_ids
++        )
++        error_ids = []
++        for x in live_paths:
++            if x.endswith(".gz"):
++                paths.append(x)
++            else:
++                error_ids.append(x)
++    return paths, error_ids
++
++
++def _make_sabdab_html(method, resolution_thr):
++    """
++    Make a URL for SAbDab search
++    """
++
++    html = f"https://opig.stats.ox.ac.uk/webapps/newsabdab/sabdab/search/?ABtype=All&method={'+'.join(method)}&species=All&resolution={resolution_thr}&rfactor=&antigen=All&ltype=All&constantregion=All&affinity=All&isin_covabdab=All&isin_therasabdab=All&chothiapos=&restype=ALA&field_0=Antigens&keyword_0=#downloads"
++    return html
++
++
++def _load_sabdab(
++    resolution_thr=3.5,
++    filter_methods=True,
++    pdb_snapshot=None,
++    tmp_folder="data/tmp",
++    zip_path=None,
++    require_antigen=True,
++    n=None,
++):
++    """
++    Download filtered SAbDab files and return a list of local file paths
++    """
++
++    if not os.path.exists(tmp_folder):
++        os.makedirs(tmp_folder)
++    if pdb_snapshot is not None:
++        pdb_snapshot = datetime.strptime(pdb_snapshot, "%Y%m%d")
++    if filter_methods:
++        methods = ["X-RAY DIFFRACTION", "ELECTRON MICROSCOPY"]
++    else:
++        methods = ["All"]
++    methods = [x.split() for x in methods]
++    if zip_path is None:
++        for method in methods:
++            html = _make_sabdab_html(method, resolution_thr)
++            page = requests.get(html)
++            soup = BeautifulSoup(page.text, "html.parser")
++            try:
++                zip_ref = soup.find_all(
++                    lambda t: t.name == "a" and t.text.startswith("zip")
++                )[0]["href"]
++                zip_ref = "https://opig.stats.ox.ac.uk" + zip_ref
++            except:
++                error = soup.find_all(
++                    lambda t: t.name == "h1" and t.text.startswith("Internal")
++                )
++                if len(error) > 0:
++                    raise RuntimeError(
++                        "Internal SAbDab server error -> try again in some time"
++                    )
++                raise RuntimeError("No link found")
++            print(f'Downloading {" ".join(method)} structure files...')
++            subprocess.run(
++                [
++                    "wget",
++                    zip_ref,
++                    "-O",
++                    os.path.join(tmp_folder, f"pdb_{'_'.join(method)}.zip"),
++                ]
++            )
++        zip_paths = [
++            os.path.join(tmp_folder, f"pdb_{'_'.join(method)}.zip")
++            for method in methods
++        ]
++    else:
++        zip_paths = [zip_path]
++    ids = []
++    pdb_ids = []
++    print("Moving files...")
++    for path in zip_paths:
++        dir_path = path[:-4]
++        with zipfile.ZipFile(path, "r") as zip_ref:
++            zip_ref.extractall(dir_path)
++        if zip_path is None:
++            os.remove(path)
++        summary_path = None
++        for file in os.listdir(dir_path):
++            if file.endswith(".tsv"):
++                summary_path = os.path.join(dir_path, file)
++                break
++        if summary_path is None:
++            raise ValueError("Summary file not found")
++        summary = pd.read_csv(summary_path, sep="\t")
++        # filter out structures with repeating chains
++        summary = summary[summary["antigen_chain"] != summary["Hchain"]]
++        summary = summary[summary["antigen_chain"] != summary["Lchain"]]
++        summary = summary[summary["Lchain"] != summary["Hchain"]]
++        if require_antigen:
++            summary = summary[~summary["antigen_chain"].isna()]
++        if pdb_snapshot is not None:
++            date = pd.to_datetime(summary["date"], format="%m/%d/%Y")
++            summary = summary[date <= pdb_snapshot]
++        if zip_path is not None:
++            summary = summary[summary["resolution"] <= resolution_thr]
++            if filter_methods:
++                summary = summary[
++                    summary["method"].isin([" ".join(m) for m in methods])
++                ]
++        if n is not None:
++            summary = summary.iloc[:n]
++        ids_method = summary["pdb"].unique().tolist()
++        for id in ids_method:
++            pdb_path = os.path.join(dir_path, "chothia", f"{id}.pdb")
++            shutil.move(pdb_path, os.path.join(tmp_folder, f"{id}.pdb"))
++        shutil.rmtree(dir_path)
++        ids_full = summary.apply(
++            lambda x: (x["pdb"], f"{x['Hchain']}_{x['Lchain']}_{x['antigen_chain']}"),
++            axis=1,
++        ).tolist()
++        ids += ids_full
++        pdb_ids += ids_method
++    print("Downloading fasta files...")
++    with ThreadPoolExecutor(max_workers=8) as executor:
++        future_to_key = {
++            executor.submit(
++                lambda x: _download_fasta_f(x, datadir=tmp_folder), key
++            ): key
++            for key in pdb_ids
++        }
++        _ = [
++            x.result()
++            for x in tqdm(futures.as_completed(future_to_key), total=len(pdb_ids))
++        ]
++    paths = [(os.path.join(tmp_folder, f"{x[0]}.pdb"), x[1]) for x in ids]
++    error_ids = []
++    return paths, error_ids
++
++
++def _load_files(
++    resolution_thr=3.5,
++    pdb_snapshot=None,
++    filter_methods=True,
++    log_folder="data/tmp/logs",
++    n=None,
++    tmp_folder="data/tmp",
++    load_live=False,
++    sabdab=False,
++    zip_path=None,
++    require_antigen=False,
++):
++    """
++    Download filtered structure files and return a list of local file paths
++    """
++
++    if sabdab:
++        out = _load_sabdab(
++            resolution_thr=resolution_thr,
++            filter_methods=filter_methods,
++            pdb_snapshot=pdb_snapshot,
++            tmp_folder=tmp_folder,
++            zip_path=zip_path,
++            require_antigen=require_antigen,
++            n=n,
++        )
++    else:
++        out = _load_pdb(
++            resolution_thr=resolution_thr,
++            filter_methods=filter_methods,
++            pdb_snapshot=pdb_snapshot,
++            tmp_folder=tmp_folder,
++            load_live=load_live,
++            n=n,
++            log_folder=log_folder,
++        )
++    return out
++
++
+ def download_data(tag, local_datasets_folder="./data", skip_splitting=False):
+     """
+     Download a pre-computed dataset with train/test/validation splits
+ 
+     Parameters
+     ----------
+     tag : str
+@@ -908,14 +1220,17 @@
+     force=False,
+     split_tolerance=0.2,
+     test_split=0.05,
+     valid_split=0.05,
+     pdb_snapshot=None,
+     load_live=False,
+     min_seq_id=0.3,
++    sabdab=False,
++    zip_path=None,
++    require_antigen=False,
+ ):
+     """
+     Download and parse PDB files that meet filtering criteria
+ 
+     The output files are pickled nested dictionaries where first-level keys are chain Ids and second-level keys are
+     the following:
+ 
+@@ -963,29 +1278,42 @@
+         The percentage of chains to put in the validation set (default 5%)
+     pdb_snapshot : str, optional
+         the PDB snapshot to use, by default the latest is used
+     load_live : bool, default False
+         if `True`, load the files that are not in the latest PDB snapshot from the PDB FTP server (forced to `False` if `pdb_snapshot` is not `None`)
+     min_seq_id : float in [0, 1], default 0.3
+         minimum sequence identity for `mmseqs`
++    sabdab : bool, default False
++        if `True`, download the SAbDab database instead of PDB
++    zip_path : str, optional
++        path to a zip file containing SAbDab files (only used if `sabdab` is `True`)
++    require_antigen : bool, default False
++        if `True`, only use SAbDab files with an antigen
++
+ 
+     Returns
+     -------
+     log : dict
+         a dictionary where keys are recognized error names and values are lists of PDB ids that caused the errors
+ 
+     """
+     _check_mmseqs()
+     filter_methods = not not_filter_methods
+     remove_redundancies = not not_remove_redundancies
+-    tmp_folder = os.path.join(local_datasets_folder, "tmp")
++    tmp_id = "".join(
++        random.choice(string.ascii_uppercase + string.digits) for _ in range(5)
++    )
++    tmp_folder = os.path.join("", "tmp", tag + tmp_id)
+     output_folder = os.path.join(local_datasets_folder, f"proteinflow_{tag}")
+     log_folder = os.path.join(local_datasets_folder, "logs")
+     out_split_dict_folder = os.path.join(output_folder, "splits_dict")
+ 
++    if force and os.path.exists(output_folder):
++        shutil.rmtree(output_folder)
++
+     log_dict = _run_processing(
+         tmp_folder=tmp_folder,
+         output_folder=output_folder,
+         log_folder=log_folder,
+         min_length=min_length,
+         max_length=max_length,
+         resolution_thr=resolution_thr,
+@@ -995,38 +1323,112 @@
+         remove_redundancies=remove_redundancies,
+         seq_identity_threshold=seq_identity_threshold,
+         n=n,
+         force=force,
+         tag=tag,
+         pdb_snapshot=pdb_snapshot,
+         load_live=load_live,
++        sabdab=sabdab,
++        zip_path=zip_path,
++        require_antigen=require_antigen,
+     )
+     if not skip_splitting:
+         _get_split_dictionaries(
+             tmp_folder=tmp_folder,
+             output_folder=output_folder,
+             split_tolerance=split_tolerance,
+             test_split=test_split,
+             valid_split=valid_split,
+             out_split_dict_folder=out_split_dict_folder,
+             min_seq_id=min_seq_id,
+         )
+ 
+         _split_data(output_folder)
++    shutil.rmtree(tmp_folder)
+     return log_dict
+ 
+ 
++def _get_excluded_files(
++    tag, local_datasets_folder, tmp_folder, exclude_chains, exclude_threshold
++):
++    """
++    Get a list of files to exclude from the dataset.
++
++    Biounits are excluded if they contain chains that are too similar
++    (above `exclude_threshold`) to chains in the list of excluded chains.
++
++    Parameters
++    ----------
++    tag : str
++        the name of the dataset
++    local_datasets_folder : str
++        the path to the folder that stores proteinflow datasets
++    tmp_folder : str
++        the path to the folder that stores temporary files
++    exclude_chains : list of str, optional
++        a list of chains (`{pdb_id}-{chain_id}`) to exclude from the splitting (e.g. `["1A2B-A", "1A2B-B"]`); chain id is the author chain id
++    exclude_threshold : float in [0, 1], default 0.7
++        the sequence similarity threshold for excluding chains
++    """
++
++    # download fasta files for excluded chains
++    if not os.path.exists(tmp_folder):
++        os.makedirs(tmp_folder)
++    sequences = []
++    for chain in exclude_chains:
++        pdb_id, chain_id = chain.split("-")
++        downloadurl = "https://www.rcsb.org/fasta/entry/"
++        pdbfn = pdb_id + "/download"
++        outfnm = os.path.join(tmp_folder, f"{pdb_id.lower()}.fasta")
++        url = downloadurl + pdbfn
++        urllib.request.urlretrieve(url, outfnm)
++        chains = _retrieve_fasta_chains(outfnm)
++        sequences.append(chains[chain_id])
++        os.remove(outfnm)
++
++    # iterate over files in the dataset to check similarity
++    print("Checking excluded chains similarity...")
++    exclude_biounits = []
++    for fn in tqdm(
++        os.listdir(os.path.join(local_datasets_folder, f"proteinflow_{tag}"))
++    ):
++        if not fn.endswith(".pickle"):
++            continue
++        fp = os.path.join(local_datasets_folder, f"proteinflow_{tag}", fn)
++        with open(fp, "rb") as f:
++            entry = pickle.load(f)
++        break_flag = False
++        for chain, chain_data in entry.items():
++            for seq in sequences:
++                if (
++                    edit_distance(seq, chain_data["seq"]) / len(seq)
++                    < 1 - exclude_threshold
++                ):
++                    exclude_biounits.append(fn)
++                    break_flag = True
++                    break
++            if break_flag:
++                break
++
++    # return list of biounits to exclude
++    return exclude_biounits
++
++
+ def split_data(
+     tag,
+     local_datasets_folder="./data",
+     split_tolerance=0.2,
+     test_split=0.05,
+     valid_split=0.05,
+     ignore_existing=False,
+     min_seq_id=0.3,
++    exclude_chains=None,
++    exclude_threshold=0.7,
++    exclude_clusters=False,
++    exclude_based_on_cdr=None,
+ ):
+     """
+     Split `proteinflow` entry files into training, test and validation.
+ 
+     Our splitting algorithm has two objectives: achieving minimal data leakage and balancing the proportion of
+     single chain, homomer and heteromer entries.
+ 
+@@ -1034,14 +1436,17 @@
+ 
+     1. cluster chains by sequence identity,
+     2. generate a graph where nodes are the clusters and edges are protein-protein interactions between chains
+     from those clusters,
+     3. split connected components of the graph into training, test and validation subsets while keeping the proportion
+     of single chains, homomers and heteromers close to that in the full dataset (within `split_tolerance`).
+ 
++    Biounits that contain chains similar to those in the `exclude_chains` list (with `exclude_threshold` sequence identity)
++    are excluded from the splitting and placed into a separate folder.
++
+ 
+     Parameters
+     ----------
+     tag : str
+         the name of the dataset to load
+     local_datasets_folder : str, default "./data"
+         the path to the folder that will store proteinflow datasets, logs and temporary files
+@@ -1051,21 +1456,40 @@
+         The percentage of chains to put in the test set (default 5%)
+     valid_split : float, default 0.05
+         The percentage of chains to put in the validation set (default 5%)
+     ignore_existing : bool, default False
+         If `True`, overwrite existing dictionaries for this tag; otherwise, load the existing dictionary
+     min_seq_id : float in [0, 1], default 0.3
+         minimum sequence identity for `mmseqs`
++    exclude_chains : list of str, optional
++        a list of chains (`{pdb_id}-{chain_id}`) to exclude from the splitting (e.g. `["1A2B-A", "1A2B-B"]`); chain id is the author chain id
++    exclude_threshold : float in [0, 1], default 0.7
++        the sequence similarity threshold for excluding chains
++    exclude_clusters : bool, default False
++        if `True`, exclude clusters that contain chains similar to chains in the `exclude_chains` list
++    exclude_based_on_cdr : {"H1", "H2", "H3", "L1", "L2", "L3"}, optional
++        if given and `exclude_clusters` is `True` + the dataset is SAbDab, exclude files based on only the given CDR clusters
+ 
+     Returns
+     -------
+     log : dict
+         a dictionary where keys are recognized error names and values are lists of PDB ids that caused the errors
+     """
+ 
++    if exclude_chains is None or len(exclude_chains) == 0:
++        excluded_biounits = []
++    else:
++        excluded_biounits = _get_excluded_files(
++            tag,
++            local_datasets_folder,
++            os.path.join(local_datasets_folder, "tmp"),
++            exclude_chains,
++            exclude_threshold,
++        )
++
+     _check_mmseqs()
+     tmp_folder = os.path.join(local_datasets_folder, "tmp")
+     output_folder = os.path.join(local_datasets_folder, f"proteinflow_{tag}")
+     out_split_dict_folder = os.path.join(output_folder, "splits_dict")
+     exists = False
+ 
+     if os.path.exists(out_split_dict_folder):
+@@ -1081,23 +1505,25 @@
+             split_tolerance=split_tolerance,
+             test_split=test_split,
+             valid_split=valid_split,
+             out_split_dict_folder=out_split_dict_folder,
+             min_seq_id=min_seq_id,
+         )
+ 
+-    _split_data(output_folder)
++    _split_data(
++        output_folder, excluded_biounits, exclude_clusters, exclude_based_on_cdr
++    )
+ 
+ 
+ class ProteinDataset(Dataset):
+     """
+     Dataset to load proteinflow data
+ 
+     Saves the model input tensors as pickle files in `features_folder`. When `clustering_dict_path` is provided,
+-    at each iteration a random bionit from a cluster is sampled.
++    at each iteration a random biounit from a cluster is sampled.
+ 
+     If a complex contains multiple chains, they are concatenated. The sequence identity information is preserved in the
+     `'chain_encoding_all'` object and in the `'residue_idx'` arrays the chain change is denoted by a +100 jump.
+ 
+     Returns dictionaries with the following keys and values (all values are `torch` tensors):
+ 
+     - `'X'`: 3D coordinates of N, C, Ca, O, `(total_L, 4, 3)`,
+@@ -1111,15 +1537,19 @@
+ 
+     You can also choose to include additional features (set in the `node_features_type` parameter):
+ 
+     - `'sidechain_orientation'`: a unit vector in the direction of the sidechain, `(total_L, 3)`,
+     - `'dihedral'`: the dihedral angles, `(total_L, 2)`,
+     - `'chemical'`: hydropathy, volume, charge, polarity, acceptor/donor features, `(total_L, 6)`,
+     - `'secondary_structure'`: a one-hot encoding of secondary structure ([alpha-helix, beta-sheet, coil]), `(total_L, 3)`,
+-    - `'sidechain_coords'`: the coordinates of the sidechain atoms (see `proteinflow.sidechain_order()` for the order), `(total_L, 10, 3)`,
++    - `'sidechain_coords'`: the coordinates of the sidechain atoms (see `proteinflow.sidechain_order()` for the order), `(total_L, 10, 3)`.
++
++    If the dataset contains a `'cdr'` key, the output files will also additionally contain a `'cdr'` key with a CDR tensor of length `total_L`.
++    In the array, the CDR residues are marked with the corresponding CDR type (H1=1, H2=2, H3=3, L1=4, L2=5, L3=6) and the rest of
++    the residues are marked with 0s.
+ 
+     In order to compute additional features, use the `feature_functions` parameter. It should be a dictionary with keys
+     corresponding to the feature names and values corresponding to the functions that compute the features. The functions
+     should take a chain dictionary and an integer representation of the sequence as input (the dictionary is in `proteinflow` format,
+     see the docs for `generate_data` for details) and return a `numpy` array shaped as `(#residues, #features)`.
+ 
+     """
+@@ -1238,54 +1668,27 @@
+             keys = sorted(clusters.keys())[: int(len(clusters) * use_fraction)]
+             to_process = set()
+             for key in keys:
+                 to_process.update([x[0] for x in clusters[key]])
+             to_process = list(to_process)
+         if debug:
+             to_process = to_process[:1000]
+-        # output_tuples = [self._process(x, rewrite=rewrite) for x in tqdm(to_process)]
+         if self.entry_type == "pair":
+             print(
+                 "Please note that the pair entry type takes longer to process than the other two. The progress bar is not linear because of the varying number of chains per file."
+             )
+         output_tuples_list = p_map(
+             lambda x: self._process(x, rewrite=rewrite, max_length=max_length),
+             to_process,
+         )
+         # save the file names
+         for output_tuples in output_tuples_list:
+             for id, filename, chain_set in output_tuples:
+                 for chain in chain_set:
+                     self.files[id][chain].append(filename)
+-        # filter by length
+-        # seen = set()
+-        # if max_length is not None:
+-        #     to_remove = []
+-        #     for id, chain_dict in self.files.items():
+-        #         for chain, file_list in chain_dict.items():
+-        #             for file in file_list:
+-        #                 if file in seen:
+-        #                     continue
+-        #                 seen.add(file)
+-        #                 with open(file, "rb") as f:
+-        #                     data = pickle.load(f)
+-        #                     if len(data["S"]) > max_length:
+-        #                         to_remove.append(file)
+-        #     for id in list(self.files.keys()):
+-        #         chain_dict = self.files[id]
+-        #         for chain in list(chain_dict.keys()):
+-        #             file_list = chain_dict[chain]
+-        #             for file in file_list:
+-        #                 if file in to_remove:
+-        #                     self.files[id][chain].remove(file)
+-        #                     if len(self.files[id][chain]) == 0:
+-        #                         self.files[id].pop(chain)
+-        #                     if len(self.files[id]) == 0:
+-        #                         self.files.pop(id)
+-        # load the clusters
+         if classes_to_exclude is None:
+             classes_to_exclude = []
+         elif clustering_dict_path is None:
+             raise ValueError(
+                 "classes_to_exclude is not None, but clustering_dict_path is None"
+             )
+         if clustering_dict_path is not None:
+@@ -1318,29 +1721,31 @@
+                 self.clusters[key] = cluster_list
+                 if len(self.clusters[key]) == 0:
+                     self.clusters.pop(key)
+             self.data = list(self.clusters.keys())
+         else:
+             self.clusters = None
+             self.data = list(self.files.keys())
+-        # create a smaller dataset if necessary
++        # create a smaller dataset if necessary (if we have clustering it's applied earlier)
+         if clustering_dict_path is None and use_fraction < 1:
+             self.data = sorted(self.data)[: int(len(self.data) * use_fraction)]
+         if load_to_ram:
+             print("Loading to RAM...")
+             self.loaded = {}
+             seen = set()
+             for id in self.files:
+                 for chain, file_list in self.files[id].items():
+                     for file in file_list:
+                         if file in seen:
+                             continue
+                         seen.add(file)
+                         with open(file, "rb") as f:
+                             self.loaded[file] = pickle.load(f)
++        self.cdr = 0
++        self.set_cdr(None)
+ 
+     def _interpolate(self, crd_i, mask_i):
+         """
+         Fill in missing values in the middle with linear interpolation and (if fill_ends is true) build an initialization for the ends
+ 
+         For the ends, the first 10 residues are 3.6 A apart from each other on a straight line from the last known value away from the center.
+         Next they are 3.6 A apart in a random direction.
+@@ -1517,117 +1922,211 @@
+             else:
+                 X = []
+                 S = []
+                 mask = []
+                 mask_original = []
+                 chain_encoding_all = []
+                 residue_idx = []
++                cdr = []
+                 node_features = defaultdict(lambda: [])
+                 last_idx = 0
+                 chain_dict = {}
+ 
+                 if max_length is not None:
+                     if sum([len(data[x]["seq"]) for x in chain_set]) > max_length:
+                         pass_set = True
+                         add_name = False
+ 
+                 if self.entry_type == "pair":
+-                    intersect = []
++                    # intersect = []
+                     X1 = data[chain_set[0]]["crd_bb"][
+                         data[chain_set[0]]["msk"].astype(bool)
+                     ]
+                     X2 = data[chain_set[1]]["crd_bb"][
+                         data[chain_set[1]]["msk"].astype(bool)
+                     ]
++                    intersect_dim_X1 = []
++                    intersect_dim_X2 = []
++                    intersect_X1 = np.zeros(len(X1))
++                    intersect_X2 = np.zeros(len(X2))
++                    margin = 30
++                    cutoff = 10
+                     for dim in range(3):
+-                        min_dim_1 = X1[:, :, dim].min()
+-                        max_dim_1 = X1[:, :, dim].max()
+-                        min_dim_2 = X2[:, :, dim].min()
+-                        max_dim_2 = X2[:, :, dim].max()
+-                        if min_dim_1 - 4 <= max_dim_2 and max_dim_1 >= min_dim_2 - 4:
+-                            intersect.append(True)
+-                        else:
+-                            intersect.append(False)
+-                            break
+-                    if not all(intersect):
++                        min_dim_1 = X1[:, 2, dim].min()
++                        max_dim_1 = X1[:, 2, dim].max()
++                        min_dim_2 = X2[:, 2, dim].min()
++                        max_dim_2 = X2[:, 2, dim].max()
++                        intersect_dim_X1.append(
++                            np.where(
++                                np.logical_and(
++                                    X1[:, 2, dim] >= min_dim_2 - margin,
++                                    X1[:, 2, dim] <= max_dim_2 + margin,
++                                )
++                            )[0]
++                        )
++                        intersect_dim_X2.append(
++                            np.where(
++                                np.logical_and(
++                                    X2[:, 2, dim] >= min_dim_1 - margin,
++                                    X2[:, 2, dim] <= max_dim_1 + margin,
++                                )
++                            )[0]
++                        )
++
++                        # if min_dim_1 - 4 <= max_dim_2 and max_dim_1 >= min_dim_2 - 4:
++                        #     intersect.append(True)
++                        # else:
++                        #     intersect.append(False)
++                        #     break
++                    intersect_X1 = np.intersect1d(
++                        np.intersect1d(intersect_dim_X1[0], intersect_dim_X1[1]),
++                        intersect_dim_X1[2],
++                    )
++                    intersect_X2 = np.intersect1d(
++                        np.intersect1d(intersect_dim_X2[0], intersect_dim_X2[1]),
++                        intersect_dim_X2[2],
++                    )
++
++                    not_end_mask1 = np.where(((X1[:, 2, :] == 0).sum(-1) != 3))[0]
++                    not_end_mask2 = np.where(((X2[:, 2, :] == 0).sum(-1) != 3))[0]
++
++                    intersect_X1 = np.intersect1d(intersect_X1, not_end_mask1)
++                    intersect_X2 = np.intersect1d(intersect_X2, not_end_mask2)
++
++                    # distances = torch.norm(X1[intersect_X1, 2, :] - X2[intersect_X2, 2, :](1), dim=-1)
++                    diff = X1[intersect_X1, 2, np.newaxis, :] - X2[intersect_X2, 2, :]
++                    distances = np.sqrt(np.sum(diff**2, axis=2))
++
++                    intersect_X1 = torch.LongTensor(intersect_X1)
++                    intersect_X2 = torch.LongTensor(intersect_X2)
++                    if np.sum(distances < cutoff) < 3:
++                        # if not all(intersect):
+                         pass_set = True
+                         add_name = False
+-            if add_name:
+-                output_names.append(
+-                    (os.path.basename(no_extension_name), output_file, chain_set)
+-                )
+             if pass_set:
+                 continue
+ 
++            cdr_chain_set = set()
+             for chain_i, chain in enumerate(chain_set):
+                 seq = torch.tensor([self.alphabet_dict[x] for x in data[chain]["seq"]])
+                 S.append(seq)
+                 mask_original.append(deepcopy(data[chain]["msk"]))
+                 if self.interpolate != "none":
+                     data[chain]["crd_bb"], data[chain]["msk"] = self._interpolate(
+                         data[chain]["crd_bb"], data[chain]["msk"]
+                     )
+                 X.append(data[chain]["crd_bb"])
+                 mask.append(data[chain]["msk"])
+                 residue_idx.append(torch.arange(len(data[chain]["seq"])) + last_idx)
++                if "cdr" in data[chain]:
++                    u, inv = np.unique(data[chain]["cdr"], return_inverse=True)
++                    cdr_chain = np.array([CDR[x] for x in u])[inv].reshape(
++                        data[chain]["cdr"].shape
++                    )
++                    cdr.append(cdr_chain)
++                    cdr_chain_set.update([f"{chain}__{cdr}" for cdr in u])
+                 last_idx = residue_idx[-1][-1] + 100
+                 chain_encoding_all.append(torch.ones(len(data[chain]["seq"])) * chain_i)
+                 chain_dict[chain] = chain_i
+                 for name in self.feature_types:
+                     if name not in self.feature_functions:
+                         continue
+                     func = self.feature_functions[name]
+                     node_features[name].append(func(data[chain], seq))
+ 
++            if add_name:
++                output_names.append(
++                    (
++                        os.path.basename(no_extension_name),
++                        output_file,
++                        chain_set if len(cdr_chain_set) == 0 else cdr_chain_set,
++                    )
++                )
++
+             out = {}
+             out["X"] = torch.from_numpy(np.concatenate(X, 0))
+             out["S"] = torch.cat(S)
+             out["mask"] = torch.from_numpy(np.concatenate(mask))
+             out["mask_original"] = torch.from_numpy(np.concatenate(mask_original))
+             out["chain_encoding_all"] = torch.cat(chain_encoding_all)
+             out["residue_idx"] = torch.cat(residue_idx)
+             out["chain_dict"] = chain_dict
+             out["pdb_id"] = no_extension_name.split("-")[0]
++            if len(cdr) != 0:
++                out["cdr"] = torch.from_numpy(np.concatenate(cdr))
+             for key, value_list in node_features.items():
+                 out[key] = torch.from_numpy(np.concatenate(value_list))
+             with open(output_file, "wb") as f:
+                 pickle.dump(out, f)
+         return output_names
+ 
++    def set_cdr(self, cdr):
++        if cdr == self.cdr:
++            return
++        self.cdr = cdr
++        if cdr is None:
++            self.indices = list(range(len(self.data)))
++        else:
++            self.indices = []
++            print(f"Setting CDR to {cdr}...")
++            for i, data in tqdm(enumerate(self.data)):
++                if self.clusters is not None:
++                    if data.split("__")[1] == cdr:
++                        self.indices.append(i)
++                else:
++                    add = False
++                    for chain in self.files[data]:
++                        if chain.split("__")[1] == cdr:
++                            add = True
++                            break
++                    if add:
++                        self.indices.append(i)
++
+     def __len__(self):
+-        return len(self.data)
++        return len(self.indices)
+ 
+     def __getitem__(self, idx):
+         chain_id = None
++        cdr = None
++        idx = self.indices[idx]
+         if self.clusters is None:
+             id = self.data[idx]  # data is already filtered by length
+             chain_id = random.choice(list(self.files[id].keys()))
++            if self.cdr is not None:
++                while self.cdr != chain_id.split("__")[1]:
++                    chain_id = random.choice(list(self.files[id].keys()))
+         else:
+             cluster = self.data[idx]
+             id = None
+             chain_n = -1
+-            # print(f'{self.clusters[cluster]=}')
+             while (
+                 id is None or len(self.files[id][chain_id]) == 0
+             ):  # some IDs can be filtered out by length
+                 if self.shuffle_clusters:
+                     chain_n = random.randint(0, len(self.clusters[cluster]) - 1)
+                 else:
+                     chain_n += 1
+                 id, chain_id = self.clusters[cluster][
+                     chain_n
+                 ]  # get id and chain from cluster
+-                # print(f'{id=}, {len(self.files[id][chain_id])=}')
+         file = random.choice(self.files[id][chain_id])
++        if "__" in chain_id:
++            chain_id, cdr = chain_id.split("__")
+         if self.loaded is None:
+             with open(file, "rb") as f:
+-                data = pickle.load(f)
++                try:
++                    data = pickle.load(f)
++                except EOFError:
++                    print("EOFError", file)
++                    raise
+         else:
+             data = deepcopy(self.loaded[file])
+         data["chain_id"] = data["chain_dict"][chain_id]
++        if cdr is not None:
++            data["cdr_id"] = CDR[cdr]
+         return data
+ 
+ 
+ class ProteinLoader(DataLoader):
+     """
+     A subclass of `torch.data.utils.DataLoader` tuned for the `proteinflow` dataset
+ 
+@@ -1652,17 +2151,17 @@
+         self,
+         dataset,
+         lower_limit=15,
+         upper_limit=100,
+         mask_residues=True,
+         mask_whole_chains=False,
+         mask_frac=None,
++        collate_func=_PadCollate,
+         force_binding_sites_frac=0,
+         shuffle_batches=True,
+-        collate_fn=None,
+         *args,
+         **kwargs,
+     ):
+         """
+         Parameters
+         ----------
+         dataset : ProteinDataset
+@@ -1678,30 +2177,28 @@
+         force_binding_sites_frac : float, default 0
+             if > 0, in the fraction of cases where a chain from a polymer is sampled, the center of the masked region will be
+             forced to be in a binding site
+         shuffle_clusters : bool, default True
+             if `True`, a new representative is randomly selected for each cluster at each epoch (if `clustering_dict_path` is given)
+         shuffle_batches : bool, default True
+             if `True`, the batches are shuffled at each epoch
+-        collate_fn : callable, optional
+-            a function that takes a list of samples and returns a batch
++        collate_func : callable, optional
++            a function that takes a list of samples and returns a batch and inherits from _PadCollate
+         """
+ 
+         super().__init__(
+             dataset,
+-            collate_fn=_PadCollate(
++            collate_fn=collate_func(
+                 mask_residues=mask_residues,
+                 mask_whole_chains=mask_whole_chains,
+                 mask_frac=mask_frac,
+                 lower_limit=lower_limit,
+                 upper_limit=upper_limit,
+                 force_binding_sites_frac=force_binding_sites_frac,
+-            )
+-            if collate_fn is None
+-            else collate_fn,
++            ),
+             shuffle=shuffle_batches,
+             *args,
+             **kwargs,
+         )
+ 
+     @staticmethod
+     def from_args(
+```
+
+#### encoding
+
+```diff
+@@ -1 +1 @@
+-us-ascii
++utf-8
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow/scripts/proteinflow_cli.py` & `proteinflow-1.3.0/proteinflow/scripts/proteinflow_cli.py`
+
+ * *Files 15% similar despite different names*
+
+```diff
+@@ -134,14 +134,29 @@
+ )
+ @click.option(
+     "--min_seq_id",
+     default=0.3,
+     type=float,
+     help="Minimum sequence identity for mmseqs clustering",
+ )
++@click.option(
++    "--sabdab",
++    is_flag=True,
++    help="Use this flag to generate a dataset from SAbDab files instead of PDB",
++)
++@click.option(
++    "--zip_path",
++    type=str,
++    help="Path to a zip file containing SAbDab files (only used if `sabdab` is `True`)",
++)
++@click.option(
++    "--require_antigen",
++    is_flag=True,
++    help="Use this flag to require that the SAbDab files contain an antigen",
++)
+ @cli.command("generate", help="Generate a new ProteinFlow dataset")
+ def generate(**kwargs):
+     generate_data(**kwargs)
+ 
+ 
+ @click.option(
+     "--tag",
+@@ -177,14 +192,37 @@
+ )
+ @click.option(
+     "--min_seq_id",
+     default=0.3,
+     type=float,
+     help="Minimum sequence identity for mmseqs clustering",
+ )
++@click.option(
++    "--exclude_chains",
++    "-e",
++    multiple=True,
++    type=str,
++    help="Exclude specific chains from the dataset ({pdb_id}-{chain_id}, e.g. -e 1a2b-A)",
++)
++@click.option(
++    "--exclude_threshold",
++    default=0.7,
++    type=float,
++    help="Exclude chains with sequence identity to exclude_chains above this threshold",
++)
++@click.option(
++    "--exclude_clusters",
++    is_flag=True,
++    help="Exclude clusters that contain chains similar to chains to exclude",
++)
++@click.option(
++    "--exclude_based_on_cdr",
++    type=click.Choice(["L1", "L2", "L3", "H1", "H2", "H3"]),
++    help="if given and exclude_clusters is true + the dataset is SAbDab, exclude files based on only the given CDR clusters",
++)
+ @cli.command(
+     "split",
+     help="Split an existing ProteinFlow dataset into training, validation and test subset according to MMseqs clustering and homomer/heteromer/single chain proportions",
+ )
+ def split(**kwargs):
+     split_data(**kwargs)
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow/utils/async_download.py` & `proteinflow-1.3.0/proteinflow/utils/async_download.py`
+
+ * *Files 14% similar despite different names*
+
+```diff
+@@ -12,17 +12,17 @@
+     resp = await client.get_object(Bucket="pdbsnapshots", Key=key)
+     return await resp["Body"].read()
+ 
+ 
+ async def _download_file(client, snapshots, tmp_folder, id):
+     pdb_id, biounit = id.lower().split("-")
+     prefixes = [
+-        "pub/pdb/data/biounit/PDB/all/",
+-        "pub/pdb/data/biounit/mmCIF/all/",
+-        "pub/pdb/data/assemblies/mmCIF/all/",
++        "/pub/pdb/data/biounit/PDB/all/",
++        "/pub/pdb/data/biounit/mmCIF/all/",
++        "/pub/pdb/data/assemblies/mmCIF/all/",
+     ]
+     types = ["pdb", "cif", "cif"]
+     filenames = {
+         "cif": f"{pdb_id}-assembly{biounit}.cif.gz",
+         "pdb": f"{pdb_id}.pdb{biounit}.gz",
+     }
+     for folder in snapshots:
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow/utils/biotite_sse.py` & `proteinflow-1.3.0/proteinflow/utils/biotite_sse.py`
+
+ * *Files identical despite different names*
+
+### Comparing `proteinflow-1.2.9/proteinflow/utils/build_pdb.py` & `proteinflow-1.3.0/proteinflow/utils/build_pdb.py`
+
+ * *Files 5% similar despite different names*
+
+```diff
+@@ -1,30 +1,57 @@
+ """
+ Adapted from `sidechainnet`.
+ """
+ 
+ import itertools
+ import numpy as np
+-from sidechainnet.structure.build_info import NUM_COORDS_PER_RES, SC_BUILD_INFO
+-from sidechainnet.structure.HydrogenBuilder import (
+-    ATOM_MAP_24,
+-    NUM_COORDS_PER_RES_W_HYDROGENS,
+-)
+-from sidechainnet.structure.structure import coord_generator
+-from sidechainnet.utils.sequence import ONE_TO_THREE_LETTER_MAP
+ from proteinflow import ALPHABET
+ from einops import rearrange
+ 
+-
++GLOBAL_PAD_CHAR = 0
++ONE_TO_THREE_LETTER_MAP = {
++    "R": "ARG",
++    "H": "HIS",
++    "K": "LYS",
++    "D": "ASP",
++    "E": "GLU",
++    "S": "SER",
++    "T": "THR",
++    "N": "ASN",
++    "Q": "GLN",
++    "C": "CYS",
++    "G": "GLY",
++    "P": "PRO",
++    "A": "ALA",
++    "V": "VAL",
++    "I": "ILE",
++    "L": "LEU",
++    "M": "MET",
++    "F": "PHE",
++    "Y": "TYR",
++    "W": "TRP",
++}
+ ATOM_MAP_4 = {a: ["N", "C", "CA", "O"] for a in ONE_TO_THREE_LETTER_MAP.keys()}
+ ATOM_MAP_1 = {a: ["CA"] for a in ONE_TO_THREE_LETTER_MAP.keys()}
+ ATOM_MAP_3 = {a: ["N", "C", "CA"] for a in ONE_TO_THREE_LETTER_MAP.keys()}
+ ALPHABET = "XACDEFGHIKLMNPQRSTVWY"
+ 
+ 
++def coord_generator(coords, atoms_per_res=14, remove_padding=False):
++    """Return a generator to iteratively yield self.atoms_per_res atoms at a time."""
++    coord_idx = 0
++    while coord_idx < coords.shape[0]:
++        _slice = coords[coord_idx : coord_idx + atoms_per_res]
++        if remove_padding:
++            non_pad_locs = (_slice != GLOBAL_PAD_CHAR).any(axis=1)
++            _slice = _slice[non_pad_locs]
++        yield _slice
++        coord_idx += atoms_per_res
++
++
+ class PdbBuilder(object):
+     """Creates a PDB file given a protein's atomic coordinates and sequence.
+ 
+     The general idea is that if any model is capable of predicting a set of coordinates
+     and mapping between those coordinates and residue/atom names, then this object can
+     be use to transform that output into a PDB file.
+     """
+@@ -77,29 +104,24 @@
+                 + str(len(seq))
+             )
+         if coords.shape[0] % atoms_per_res != 0:
+             raise AssertionError(
+                 f"Coords is not divisible by {atoms_per_res}. " f"{coords.shape}"
+             )
+         if atoms_per_res not in (
+-            NUM_COORDS_PER_RES,
+-            NUM_COORDS_PER_RES_W_HYDROGENS,
+             4,
+             1,
+             3,
+         ):
+-            raise ValueError(
+-                f"Values for atoms_per_res other than {NUM_COORDS_PER_RES}"
+-                f"/{NUM_COORDS_PER_RES_W_HYDROGENS}/4/1 are currently not supported."
+-            )
++            raise ValueError("Invalid atoms_per_res. Must be 1, 3, or 4.")
+ 
+         self.only_ca = only_ca
+         self.skip_oxygens = skip_oxygens
+         self.atoms_per_res = atoms_per_res
+-        self.has_hydrogens = self.atoms_per_res == NUM_COORDS_PER_RES_W_HYDROGENS
++        self.has_hydrogens = False
+         self.only_backbone = self.atoms_per_res == 4
+         self.coords = coords
+         self.seq = seq
+         self.mapping = self._make_mapping_from_seq()
+         self.terminal_atoms = terminal_atoms
+ 
+         chain_dict_inv = {v: k for k, v in chain_dict.items()}
+@@ -246,15 +268,15 @@
+         if self.only_ca:
+             atom_names = ATOM_MAP_1
+         elif self.skip_oxygens:
+             atom_names = ATOM_MAP_3
+         elif self.only_backbone:
+             atom_names = ATOM_MAP_4
+         else:
+-            atom_names = ATOM_MAP_24
++            raise NotImplementedError
+         mapping = []
+         for residue in self.seq:
+             mapping.append((residue, atom_names[residue]))
+         return mapping
+ 
+     def get_pdb_string(self, title=None):
+         if not title:
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow/utils/cluster_and_partition.py` & `proteinflow-1.3.0/proteinflow/utils/cluster_and_partition.py`
+
+ * *Files 6% similar despite different names*
+
+```diff
+@@ -73,28 +73,42 @@
+ 
+     for pdb in pdbs_to_delete:
+         del seqs_dict[pdb]
+ 
+     return seqs_dict
+ 
+ 
+-def _load_pdbs(dir):
++def _load_pdbs(dir, cdr=None):
+     """
+     Load biounits and group their sequences by PDB and similarity (90%)
+     """
+ 
+     seqs_dict = defaultdict(lambda: [])
+ 
+     for file in tqdm(os.listdir(dir)):
+         load_path = os.path.join(dir, file)
+         if os.path.isdir(load_path):
+             continue
+         with open(load_path, "rb") as f:
+             pdb_dict = pkl.load(f)
+-        seqs = [(chain, pdb_dict[chain]["seq"]) for chain in pdb_dict.keys()]
++        if cdr is None:
++            seqs = [(chain, pdb_dict[chain]["seq"]) for chain in pdb_dict.keys()]
++        else:
++            seqs = [
++                (
++                    chain,
++                    "".join(
++                        np.array(list(pdb_dict[chain]["seq"]))[
++                            pdb_dict[chain]["cdr"] == cdr
++                        ].tolist()
++                    ),
++                )
++                for chain in pdb_dict.keys()
++            ]
++            seqs = [(chain, seq) for chain, seq in seqs if len(seq) > 0]
+         seqs_dict[file[:4]] += seqs
+ 
+     return seqs_dict
+ 
+ 
+ def _write_fasta(fasta_path, merged_seqs_dict):
+     """
+@@ -104,52 +118,76 @@
+     with open(fasta_path, "w") as f:
+         for k in merged_seqs_dict.keys():
+             for chain, seq in merged_seqs_dict[k]:
+                 f.write(">" + k + "_" + chain + "\n")
+                 f.write(seq + "\n")
+ 
+ 
+-def _run_mmseqs2(fasta_file, tmp_folder, min_seq_id):
++def _run_mmseqs2(fasta_file, tmp_folder, min_seq_id, cdr=None):
+     """
+     Run the MMSeqs2 command with the parameters we want
+ 
+     Results are stored in the tmp_folder/MMSeqs2 directory.
+     """
+ 
+-    os.makedirs(os.path.join(tmp_folder, "MMSeqs2_results"), exist_ok=True)
+-    subprocess.run(
+-        [
+-            "mmseqs",
+-            "easy-cluster",
+-            fasta_file,
+-            os.path.join(tmp_folder, "MMSeqs2_results/clusterRes"),
+-            os.path.join(tmp_folder, "MMSeqs2_results/tmp"),
+-            "--min-seq-id",
+-            str(min_seq_id),
++    folder = "MMSeqs2_results" if cdr is None else os.path.join("MMSeqs2_results", cdr)
++    os.makedirs(os.path.join(tmp_folder, folder), exist_ok=True)
++    method = "easy-linclust" if cdr is not None else "easy-cluster"
++    args = [
++        "mmseqs",
++        method,
++        fasta_file,
++        os.path.join(tmp_folder, folder, "clusterRes"),
++        os.path.join(tmp_folder, folder, "tmp"),
++        "--min-seq-id",
++        str(min_seq_id),
++        "-v",
++        "1",
++    ]
++    if cdr is not None:
++        args += [
++            "-k",
++            "5",
++            "--spaced-kmer-mode",
++            "0",
++            "--comp-bias-corr",
++            "0",
++            "--mask",
++            "0",
+         ]
+-    )
++    subprocess.run(args)
+ 
+ 
+-def _read_clusters(cluster_file_fasta):
++def _read_clusters(tmp_folder, cdr=None):
+     """
+     Read the output from MMSeqs2 and produces 2 dictionaries that store the clusters information
+ 
+-    In cluster_dict, keys are the full names (pdb + chains) whereas in cluster_pdb_dict, keys are just the PDB ids (so less clusters but bigger).
++    In cluster_dict, values are the full names (pdb + chains) whereas in cluster_pdb_dict, values are just the PDB ids (so less clusters but bigger).
+     """
+ 
++    if cdr is None:
++        cluster_file_fasta = os.path.join(
++            tmp_folder, "MMSeqs2_results", "clusterRes_all_seqs.fasta"
++        )
++    else:
++        cluster_file_fasta = os.path.join(
++            tmp_folder, "MMSeqs2_results", cdr, "clusterRes_all_seqs.fasta"
++        )
+     with open(cluster_file_fasta, "r") as f:
+         cluster_dict = defaultdict(lambda: [])
+         cluster_pdb_dict = defaultdict(lambda: [])
+         cluster_name, sequence_name = None, None
+         found_header = False
+ 
+         for line in f.readlines():
+             if line[0] == ">" and found_header:
+                 cluster_name = line[1:-1]
+                 sequence_name = line[1:-1]
++                if cdr is not None:
++                    cluster_name += "__" + cdr
+ 
+             elif line[0] == ">":
+                 sequence_name = line[1:-1]
+                 found_header = True
+ 
+             else:
+                 cluster_dict[cluster_name].append(sequence_name)
+@@ -770,14 +808,85 @@
+         remaining_indices,
+         single_chains_size,
+         homomers_size,
+         heteromers_size,
+     )
+ 
+ 
++def _get_subgraph_files(
++    subgraphs,
++    clusters_dict,
++    pdb_arr,
++    chain_arr,
++    files_arr,
++):
++    """
++    Given a list of subgraphs, return a dictionary of the form {cluster: [(filename, chain__cdr)]}
++    """
++
++    out = {}  # cluster: [(file, chain__cdr)]
++    for subgraph in subgraphs:
++        for cluster in subgraph.nodes:
++            chains = []
++            _, cdr = cluster.split("__")
++            for chain in clusters_dict[cluster]:
++                pdb, chain_ids = chain.split("_")
++                for chain_id in chain_ids.split("-"):
++                    mask = (pdb_arr == pdb) & (chain_arr == chain_id)
++                    chains += [(x, chain_id + "__" + cdr) for x in files_arr[mask]]
++            out[cluster] = chains
++    return out
++
++
++def _split_subgraphs(
++    lengths,
++    num_clusters_valid,
++    num_clusters_test,
++    tolerance,
++):
++    """
++    Split the list of subgraphs into three sets (train, valid, test) according to the number of biounits in each subgraph
++    """
++
++    for _ in range(50):
++        indices = np.random.permutation(np.arange(1, len(lengths)))
++        valid_indices = []
++        test_indices = []
++        train_indices = [0]
++        valid_sum = 0
++        test_sum = 0
++        for i in indices:
++            if valid_sum < num_clusters_valid:
++                if (
++                    valid_sum < num_clusters_valid * (1 - tolerance)
++                    or lengths[i] < tolerance * num_clusters_valid
++                ):
++                    valid_indices.append(i)
++                    valid_sum += lengths[i]
++                    continue
++            if test_sum < num_clusters_test:
++                if (
++                    test_sum < num_clusters_test * (1 - tolerance)
++                    or lengths[i] < tolerance * num_clusters_test
++                ):
++                    test_indices.append(i)
++                    test_sum += lengths[i]
++                    continue
++            train_indices.append(i)
++        valid_ok = valid_sum >= num_clusters_valid * (
++            1 - tolerance
++        ) and valid_sum <= num_clusters_valid * (1 + tolerance)
++        test_ok = test_sum >= num_clusters_test * (
++            1 - tolerance
++        ) and test_sum <= num_clusters_test * (1 + tolerance)
++        if valid_ok and test_ok:
++            break
++    return train_indices, valid_indices, test_indices
++
++
+ def _split_dataset(
+     graph,
+     clusters_dict,
+     merged_seqs_dict,
+     dataset_dir,
+     valid_split=0.05,
+     test_split=0.05,
+@@ -829,131 +938,184 @@
+         the list of all biounit chains (string names) that are in a single chain state (in their biounit)
+     homomers : list
+         the list of all biounit chains (string names) that are in a homomeric state (in their biounit)
+     heteromers : list
+         the list of all biounit chains (string names) that are in a heteromeric state (in their biounit)
+     """
+ 
++    sample_cluster = list(clusters_dict.keys())[0]
++    sabdab = "__" in sample_cluster
++
+     subgraphs = np.array(
+         [
+             graph.subgraph(c)
+             for c in sorted(nx.connected_components(graph), key=len, reverse=True)
+         ],
+         dtype=object,
+     )
+-    remaining_indices = list(np.arange(1, len(subgraphs)))
+-    seqs_names_list = _retrieve_seqs_names_list(merged_seqs_dict)
+-    pdb_seqs_dict = _create_pdb_seqs_dict(seqs_names_list)
+-    single_chains, homomers, heteromers = _divide_according_to_chains_interactions(
+-        pdb_seqs_dict, dataset_dir
+-    )
+-    biounit_chains_array = np.array(single_chains + homomers + heteromers)
+-    pdbs_array = np.array([c[0][:4] for c in biounit_chains_array])
+-    chains_array = np.array([c[1] for c in biounit_chains_array])
+ 
+-    (
+-        dict_list,
+-        size_array,
+-        n_single_chains,
+-        n_homomers,
+-        n_heteromers,
+-    ) = _find_subgraphs_infos(
+-        subgraphs,
+-        clusters_dict,
+-        biounit_chains_array,
+-        pdbs_array,
+-        chains_array,
+-        homomers,
+-        heteromers,
+-    )
++    if not sabdab:
++        remaining_indices = list(np.arange(1, len(subgraphs)))
++        seqs_names_list = _retrieve_seqs_names_list(merged_seqs_dict)
++        pdb_seqs_dict = _create_pdb_seqs_dict(seqs_names_list)
++        single_chains, homomers, heteromers = _divide_according_to_chains_interactions(
++            pdb_seqs_dict, dataset_dir
++        )
++        biounit_chains_array = np.array(single_chains + homomers + heteromers)
++        pdbs_array = np.array([c[0][:4] for c in biounit_chains_array])
++        chains_array = np.array([c[1] for c in biounit_chains_array])
+ 
+-    (
+-        n_single_chains_valid,
+-        n_homomers_valid,
+-        n_heteromers_valid,
+-    ) = valid_split * np.array([n_single_chains, n_homomers, n_heteromers])
+-    n_single_chains_test, n_homomers_test, n_heteromers_test = test_split * np.array(
+-        [n_single_chains, n_homomers, n_heteromers]
+-    )
+-    n_samples_valid, n_samples_test = int(valid_split * len(subgraphs)), int(
+-        test_split * len(subgraphs)
+-    )
++        (
++            dict_list,
++            size_array,
++            n_single_chains,
++            n_homomers,
++            n_heteromers,
++        ) = _find_subgraphs_infos(
++            subgraphs,
++            clusters_dict,
++            biounit_chains_array,
++            pdbs_array,
++            chains_array,
++            homomers,
++            heteromers,
++        )
+ 
+-    (
+-        valid_clusters_dict,
+-        valid_classes_dict,
+-        remaining_indices,
+-        n_single_chains_valid,
+-        n_homomers_valid,
+-        n_heteromers_valid,
+-    ) = _fill_dataset(
+-        dict_list,
+-        size_array,
+-        n_samples_valid,
+-        n_single_chains_valid,
+-        n_homomers_valid,
+-        n_heteromers_valid,
+-        remaining_indices,
+-        tolerance=tolerance,
+-    )
++        (
++            n_single_chains_valid,
++            n_homomers_valid,
++            n_heteromers_valid,
++        ) = valid_split * np.array([n_single_chains, n_homomers, n_heteromers])
++        (
++            n_single_chains_test,
++            n_homomers_test,
++            n_heteromers_test,
++        ) = test_split * np.array([n_single_chains, n_homomers, n_heteromers])
++        n_samples_valid, n_samples_test = int(valid_split * len(subgraphs)), int(
++            test_split * len(subgraphs)
++        )
+ 
+-    (
+-        test_clusters_dict,
+-        test_classes_dict,
+-        remaining_indices,
+-        n_single_chains_test,
+-        n_homomers_test,
+-        n_heteromers_test,
+-    ) = _fill_dataset(
+-        dict_list,
+-        size_array,
+-        n_samples_test,
+-        n_single_chains_test,
+-        n_homomers_test,
+-        n_heteromers_test,
+-        remaining_indices,
+-        tolerance=tolerance,
+-    )
++        (
++            valid_clusters_dict,
++            valid_classes_dict,
++            remaining_indices,
++            n_single_chains_valid,
++            n_homomers_valid,
++            n_heteromers_valid,
++        ) = _fill_dataset(
++            dict_list,
++            size_array,
++            n_samples_valid,
++            n_single_chains_valid,
++            n_homomers_valid,
++            n_heteromers_valid,
++            remaining_indices,
++            tolerance=tolerance,
++        )
+ 
+-    remaining_indices.append(
+-        0
+-    )  # add the big first cluster, that we always want in the training set
+-    (
+-        train_clusters_dict,
+-        train_classes_dict,
+-        n_single_chains_train,
+-        n_homomers_train,
+-        n_heteromers_train,
+-    ) = _construct_dataset(dict_list, size_array, remaining_indices)
+-
+-    print("Classes distribution (single chain / homomer / heteromer):")
+-    print(
+-        "Train set:",
+-        int(n_single_chains_train),
+-        "/",
+-        int(n_homomers_train),
+-        "/",
+-        int(n_heteromers_train),
+-    )
+-    print(
+-        "Validation set:",
+-        int(n_single_chains_valid),
+-        "/",
+-        int(n_homomers_valid),
+-        "/",
+-        int(n_heteromers_valid),
+-    )
+-    print(
+-        "Test set:",
+-        int(n_single_chains_test),
+-        "/",
+-        int(n_homomers_test),
+-        "/",
+-        int(n_heteromers_test),
+-    )
++        (
++            test_clusters_dict,
++            test_classes_dict,
++            remaining_indices,
++            n_single_chains_test,
++            n_homomers_test,
++            n_heteromers_test,
++        ) = _fill_dataset(
++            dict_list,
++            size_array,
++            n_samples_test,
++            n_single_chains_test,
++            n_homomers_test,
++            n_heteromers_test,
++            remaining_indices,
++            tolerance=tolerance,
++        )
++
++        remaining_indices.append(
++            0
++        )  # add the big first cluster, that we always want in the training set
++        (
++            train_clusters_dict,
++            train_classes_dict,
++            n_single_chains_train,
++            n_homomers_train,
++            n_heteromers_train,
++        ) = _construct_dataset(dict_list, size_array, remaining_indices)
++
++        print("Classes distribution (single chain / homomer / heteromer):")
++        print(
++            "Train set:",
++            int(n_single_chains_train),
++            "/",
++            int(n_homomers_train),
++            "/",
++            int(n_heteromers_train),
++        )
++        print(
++            "Validation set:",
++            int(n_single_chains_valid),
++            "/",
++            int(n_homomers_valid),
++            "/",
++            int(n_heteromers_valid),
++        )
++        print(
++            "Test set:",
++            int(n_single_chains_test),
++            "/",
++            int(n_homomers_test),
++            "/",
++            int(n_heteromers_test),
++        )
++
++    else:
++        n_samples_valid, n_samples_test = int(valid_split * len(clusters_dict)), int(
++            test_split * len(clusters_dict)
++        )
++        train_indices, val_indices, test_indices = _split_subgraphs(
++            [len(x) for x in subgraphs], n_samples_valid, n_samples_test, tolerance
++        )
++        files_arr = []
++        pdb_arr = []
++        chain_arr = []
++        for file in os.listdir(dataset_dir):
++            if not file.endswith(".pickle"):
++                continue
++            chains = [
++                x for x in file.split("-")[1].split(".")[0].split("_") if x != "nan"
++            ]
++            chain_arr += chains
++            pdb_arr += [file.split("-")[0]] * len(chains)
++            files_arr += [file] * len(chains)
++        files_arr = np.array(files_arr)
++        pdb_arr = np.array(pdb_arr)
++        chain_arr = np.array(chain_arr)
++        train_clusters_dict = _get_subgraph_files(
++            subgraphs=subgraphs[train_indices],
++            clusters_dict=clusters_dict,
++            files_arr=files_arr,
++            pdb_arr=pdb_arr,
++            chain_arr=chain_arr,
++        )
++        valid_clusters_dict = _get_subgraph_files(
++            subgraphs=subgraphs[val_indices],
++            clusters_dict=clusters_dict,
++            files_arr=files_arr,
++            pdb_arr=pdb_arr,
++            chain_arr=chain_arr,
++        )
++        test_clusters_dict = _get_subgraph_files(
++            subgraphs=subgraphs[test_indices],
++            clusters_dict=clusters_dict,
++            files_arr=files_arr,
++            pdb_arr=pdb_arr,
++            chain_arr=chain_arr,
++        )
++        train_classes_dict, valid_classes_dict, test_classes_dict = {}, {}, {}
++        single_chains, homomers, heteromers = [], [], []
+ 
+     return (
+         train_clusters_dict,
+         train_classes_dict,
+         valid_clusters_dict,
+         valid_classes_dict,
+         test_clusters_dict,
+@@ -967,28 +1129,31 @@
+ def _build_dataset_partition(
+     dataset_dir,
+     tmp_folder,
+     valid_split=0.05,
+     test_split=0.05,
+     tolerance=0.2,
+     min_seq_id=0.3,
++    sabdab=False,
+ ):
+     """
+     Build training, validation and test sets from a curated dataset of biounit, using MMSeqs2 for clustering
+ 
+     Parameters
+     ----------
+     dataset_dir : str
+         the path to the dataset
+     valid_split : float in [0, 1], default 0.05
+         the validation split ratio
+     test_split : float in [0, 1], default 0.05
+         the test split ratio
+     min_seq_id : float in [0, 1], default 0.3
+         minimum sequence identity for `mmseqs`
++    sabdab : bool, default False
++        whether the dataset is the SAbDab dataset or not
+ 
+     Output
+     ------
+     train_clusters_dict : dict
+         the dictionary containing all the clusters (keys) and the biounit chains they contain for the training dataset
+         structure : {cluster_id : [(biounit_file_name, chain), (..., ...), ...]}
+     train_classes_dict : dict
+@@ -1000,42 +1165,67 @@
+         see train_classes_dict but for validation set
+     test_clusters_dict : dict
+         see train_clusters_dict but for test set
+     test_classes_dict : dict
+         see train_classes_dict but for test set
+     """
+ 
+-    # retrieve all sequences and create a merged_seqs_dict
+-    merged_seqs_dict = _load_pdbs(dataset_dir)
+-    merged_seqs_dict = _merge_chains(merged_seqs_dict)
+-
+-    # write sequences to a fasta file for clustering with MMSeqs2, run MMSeqs2 and delete the fasta file
+-    fasta_file = os.path.join(tmp_folder, "all_seqs.fasta")
+-    _write_fasta(fasta_file, merged_seqs_dict)
+-    _run_mmseqs2(fasta_file, tmp_folder, min_seq_id)
+-    subprocess.run(["rm", fasta_file])
++    cdrs = ["L1", "L2", "L3", "H1", "H2", "H3"] if sabdab else [None]
++    for cdr in cdrs:
++        if cdr is not None:
++            print(f"Clustering with MMSeqs2 for CDR {cdr}...")
++        else:
++            print("Clustering with MMSeqs2...")
++        # retrieve all sequences and create a merged_seqs_dict
++        merged_seqs_dict = _load_pdbs(
++            dataset_dir, cdr=cdr
++        )  # keys: pdb_id, values: list of chains and sequences
++        lengths = []
++        for k, v in merged_seqs_dict.items():
++            lengths += [len(x[1]) for x in v]
++        merged_seqs_dict = _merge_chains(merged_seqs_dict)  # remove redundant chains
++
++        # write sequences to a fasta file for clustering with MMSeqs2, run MMSeqs2 and delete the fasta file
++        fasta_file = os.path.join(tmp_folder, "all_seqs.fasta")
++        _write_fasta(
++            fasta_file, merged_seqs_dict
++        )  # write all sequences from merged_seqs_dict to fasta file
++        _run_mmseqs2(
++            fasta_file, tmp_folder, min_seq_id, cdr=cdr
++        )  # run MMSeqs2 on fasta file
++        subprocess.run(["rm", fasta_file])
+ 
+     # retrieve MMSeqs2 clusters and build a graph with these clusters
+-    clusters_dict, clusters_pdb_dict = _read_clusters(
+-        os.path.join(tmp_folder, "MMSeqs2_results/clusterRes_all_seqs.fasta")
+-    )
++    clusters_dict = {}
++    clusters_pdb_dict = {}
++    for cdr in cdrs:
++        c_dict, c_pdb_dict = _read_clusters(
++            tmp_folder=tmp_folder,
++            cdr=cdr,
++        )
++        clusters_dict.update(c_dict)
++        clusters_pdb_dict.update(c_pdb_dict)
++
+     subprocess.run(["rm", "-r", os.path.join(tmp_folder, "MMSeqs2_results")])
+     graph = _make_graph(clusters_pdb_dict)
+ 
++    import pickle
++
++    with open("graph.pickle", "wb") as f:
++        pickle.dump(graph, f)
++
+     # perform the splitting into train, validation and tesst sets
+     (
+         train_clusters_dict,
+         train_classes_dict,
+         valid_clusters_dict,
+         valid_classes_dict,
+         test_clusters_dict,
+         test_classes_dict,
+-        _,
+-        _,
+-        _,
++        *_,
+     ) = _split_dataset(
+         graph,
+         clusters_dict,
+         merged_seqs_dict,
+         dataset_dir,
+         valid_split=valid_split,
+         test_split=test_split,
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow/utils/filter_database.py` & `proteinflow-1.3.0/proteinflow/utils/filter_database.py`
+
+ * *Ordering differences only*
+
+ * *Files 0% similar despite different names*
+
+```diff
+@@ -30,19 +30,19 @@
+ 
+ def _compare_seqs(seqs1, seqs2, threshold):
+     """
+     Assess whether 2 lists of sequences contain exactly the same set of sequences
+     """
+ 
+     for seq in seqs1:
+-        if not _compare_identity(seq, seqs1, threshold):
++        if not _compare_identity(seq, seqs2, threshold):
+             return False
+ 
+     for seq in seqs2:
+-        if not _compare_identity(seq, seqs2, threshold):
++        if not _compare_identity(seq, seqs1, threshold):
+             return False
+ 
+     return True
+ 
+ 
+ def _check_biounits(biounits_list, threshold):
+     """
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow/utils/mmcif_fix.py` & `proteinflow-1.3.0/proteinflow/utils/mmcif_fix.py`
+
+ * *Files identical despite different names*
+
+### Comparing `proteinflow-1.2.9/proteinflow/utils/process_pdb.py` & `proteinflow-1.3.0/proteinflow/utils/process_pdb.py`
+
+ * *Files 27% similar despite different names*
+
+```diff
+@@ -1,22 +1,19 @@
+ from Bio import pairwise2
+ import numpy as np
+ from typing import Dict
+-import subprocess
+-import urllib.request
+ import os
+ import numpy as np
+ from biopandas.pdb import PandasPdb
+ from proteinflow.utils.mmcif_fix import CustomMmcif
+ import os
+ from collections import namedtuple
+ from operator import attrgetter
+-import requests
+-import shutil
+ import warnings
++from collections import defaultdict
+ 
+ 
+ SIDECHAIN_ORDER = {
+     "CYS": ["CB", "SG"],
+     "ASP": ["CB", "CG", "OD1", "OD2"],
+     "SER": ["CB", "OG"],
+     "GLN": ["CB", "CG", "CD", "OE1", "NE2"],
+@@ -58,14 +55,23 @@
+     "ALA": "A",
+     "VAL": "V",
+     "GLU": "E",
+     "TYR": "Y",
+     "MET": "M",
+ }
+ S3Obj = namedtuple("S3Obj", ["key", "mtime", "size", "ETag"])
++CDR_ENDS = {
++    "L": {"L1": (26, 32), "L2": (50, 52), "L3": (91, 96)},
++    "H": {"H1": (26, 32), "H2": (52, 56), "H3": (96, 101)},
++}
++CDR_VALUES = {"L": defaultdict(lambda: "-"), "H": defaultdict(lambda: "-")}
++for chain_type in ["L", "H"]:
++    for key, (start, end) in CDR_ENDS[chain_type].items():
++        for x in range(start, end + 1):
++            CDR_VALUES[chain_type][x] = key
+ 
+ 
+ class PDBError(ValueError):
+     pass
+ 
+ 
+ def _s3list(
+@@ -212,15 +218,17 @@
+     for name, seq in zip(names, seqs):
+         for chain in _retrieve_chain_names(name):
+             out_dict[chain] = seq
+ 
+     return out_dict
+ 
+ 
+-def _open_structure(file_path: str, tmp_folder: str) -> Dict:
++def _open_structure(
++    file_path: str, tmp_folder: str, sabdab=False, chain_id=None
++) -> Dict:
+     """
+     Read a PDB file and parse it into a dictionary if it meets criteria
+ 
+     The criteria are:
+     - only contains proteins,
+     - resolution is known and is not larger than the threshold.
+ 
+@@ -230,25 +238,31 @@
+ 
+     Parameters
+     ----------
+     file_path : str
+         the path to the .pdb.gz file
+     tmp_folder : str
+         the path to the temporary data folder
+-    thr_resolution : float, default 3.5
+-        the resolution threshold
++    sabdab : bool, default False
++        whether the file is a SAbDab file
++    chain_id : str, optional
++        chain id string in the form of `"{pdb_id}_H_L_A1|...|An"` (for SAbDab)
++
+ 
+     Output
+     ------
+     pdb_dict : Dict
+         the parsed dictionary
+     """
+ 
+     cif = file_path.endswith("cif.gz")
+-    pdb, biounit = os.path.basename(file_path).split(".")[0].split("-")
++    if sabdab:
++        pdb = os.path.basename(file_path).split(".")[0]
++    else:
++        pdb, _ = os.path.basename(file_path).split(".")[0].split("-")
+     out_dict = {}
+ 
+     # download fasta and check if it contains only proteins
+     fasta_path = os.path.join(tmp_folder, f"{pdb}.fasta")
+     try:
+         seqs_dict = _retrieve_fasta_chains(fasta_path)
+     except FileNotFoundError:
+@@ -269,34 +283,49 @@
+ 
+     # # add metadata
+     # metadata = parse_pdb_header(file_path)
+     # for key in ["structure_method"]:
+     #     out_dict[key] = metadata.get(key)
+ 
+     # retrieve sequences that are relevant for this PDB from the fasta file
+-    chains = p.df["ATOM"]["chain_id"].unique()
+-
+-    if not set([x.split("-")[0] for x in chains]).issubset(set(list(seqs_dict.keys()))):
++    if chain_id is None:
++        chains = p.df["ATOM"]["chain_id"].unique()
++    else:
++        H, L, A = chain_id.split("_")
++        chains = [H, L] + A.split(" | ")
++        chains = [x for x in chains if x != "nan"]
++    seqs_dict = {k.upper(): v for k, v in seqs_dict.items()}
++
++    if not set([x.split("-")[0].upper() for x in chains]).issubset(
++        set(list(seqs_dict.keys()))
++    ):
+         raise PDBError("Some chains in the PDB do not appear in the fasta file")
+ 
+-    out_dict["fasta"] = {k: seqs_dict[k.split("-")[0]] for k in chains}
++    out_dict["fasta"] = {k: seqs_dict[k.split("-")[0].upper()] for k in chains}
+ 
+-    try:
+-        os.remove(file_path)
+-    except OSError:
+-        pass
++    if not sabdab:
++        try:
++            os.remove(file_path)
++        except OSError:
++            pass
+     return out_dict
+ 
+ 
++def _get_chothia_cdr(num_array, chain_type):
++    arr = [CDR_VALUES[chain_type][int(x.split("_")[0])] for x in num_array]
++    return np.array(arr)
++
++
+ def _align_structure(
+     pdb_dict: Dict,
+     min_length: int = 30,
+     max_length: int = None,
+     max_missing_middle: float = 0.1,
+     max_missing_ends: float = 0.3,
++    chain_id_string: str = None,
+ ) -> Dict:
+     """
+     Align and filter a PDB dictionary
+ 
+     The filtering criteria are:
+     - only contains natural amino acids,
+     - number of non-missing residues per chain is not smaller than `min_length`,
+@@ -306,22 +335,27 @@
+     The output is a nested dictionary where first-level keys are chain Ids and second-level keys are the following:
+     - `'crd_bb'`: a `numpy` array of shape `(L, 4, 3)` with backbone atom coordinates (N, Ca, C, O),
+     - `'crd_sc'`: a `numpy` array of shape `(L, 10, 3)` with sidechain atom coordinates (in a fixed order),
+     - `'msk'`: a `numpy` array of shape `(L,)` where ones correspond to residues with known coordinates and
+         zeros to missing values,
+     - `'seq'`: a string of length `L` with residue types.
+ 
++    If `chain_id_string` is provided, the output dictionary will also contain the following keys:
++    - `'cdr'`: a `numpy` array of shape `(L,)` with CDR types (according to Chothia definition).
++
+     Parameters
+     ----------
+     pdb_dict : Dict
+         the output of `open_pdb`
+     min_length : int, default 30
+         the minimum number of non-missing residues per chain
+     max_length : int, optional
+         the maximum number of residues per chain
++    chain_id_string: str, optional
++        chain id string in the form of `"{pdb_id}_H_L_A1|...|An"` (for SAbDab)
+ 
+     Returns
+     -------
+     pdb_dict : Dict | None
+         the parsed dictionary or `None`, if the criteria are not met
+     """
+ 
+@@ -333,15 +367,43 @@
+ 
+     if len(crd["chain_id"].unique()) == 0:
+         raise PDBError("No chains found")
+ 
+     if not crd["residue_name"].isin(d3to1.keys()).all():
+         raise PDBError("Unnatural amino acids found")
+ 
+-    for chain in crd["chain_id"].unique():
++    chains_unique = crd["chain_id"].unique()
++    chain_types = ["-" for _ in chains_unique]
++    if chain_id_string is not None:
++        H_chain, L_chain, A_chains = chain_id_string.split("_")
++        A_chains = A_chains.split(" | ")
++        if H_chain in ["NA", "nan"]:
++            H_chain = None
++        if L_chain in ["NA", "nan"]:
++            L_chain = None
++        if A_chains[0] in ["NA", "nan"]:
++            A_chains = []
++        if not set(A_chains).issubset(set(chains_unique)):
++            raise PDBError("Antigen chains not found")
++        if H_chain is not None and H_chain not in chains_unique:
++            raise PDBError("Heavy chain not found")
++        if L_chain is not None and L_chain not in chains_unique:
++            raise PDBError("Light chain not found")
++        chains_unique = []
++        chain_types = []
++        if H_chain is not None:
++            chains_unique.append(H_chain)
++            chain_types.append("H")
++        if L_chain is not None:
++            chains_unique.append(L_chain)
++            chain_types.append("L")
++        chains_unique.extend(A_chains)
++        chain_types.extend(["-"] * len(A_chains))
++
++    for chain, chain_type in zip(chains_unique, chain_types):
+         pdb_dict[chain] = {}
+         chain_crd = crd[crd["chain_id"] == chain].reset_index()
+ 
+         if len(chain_crd) / len(fasta[chain]) < 1 - (
+             max_missing_ends + max_missing_middle
+         ):
+             raise PDBError("Too many missing values in total")
+@@ -372,14 +434,21 @@
+         end = residue_numbers.max() + 1
+         if start + (len(aligned_seq) - end) > max_missing_ends * len(aligned_seq):
+             raise PDBError("Too many missing values in the ends")
+         if (aligned_seq_arr[start:end] == "-").sum() > max_missing_middle * (
+             end - start
+         ):
+             raise PDBError("Too many missing values in the middle")
++        if chain_id_string is not None:
++            cdr_arr = np.array(["-"] * len(aligned_seq), dtype=object)
++            if chain_type in ["H", "L"]:
++                cdr_arr[aligned_seq_arr != "-"] = _get_chothia_cdr(
++                    unique_numbers, chain_type
++                )
++            pdb_dict[chain]["cdr"] = cdr_arr
+         pdb_dict[chain]["seq"] = fasta[chain]
+         pdb_dict[chain]["msk"] = (aligned_seq_arr != "-").astype(int)
+         l = sum(pdb_dict[chain]["msk"])
+         if min_length is not None and l < min_length:
+             raise PDBError("Sequence is too short")
+         if max_length is not None and len(aligned_seq) > max_length:
+             raise PDBError("Sequence is too long")
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow/utils/split_dataset.py` & `proteinflow-1.3.0/proteinflow/utils/split_dataset.py`
+
+ * *Files 24% similar despite different names*
+
+```diff
+@@ -12,20 +12,28 @@
+     """
+ 
+     dict_path = f"s3://proteinflow-datasets/{tag}/proteinflow_{tag}_splits_dict/"
+     data_path = f"s3://proteinflow-datasets/{tag}/proteinflow_{tag}/"
+     return data_path, dict_path
+ 
+ 
+-def _biounits_in_clusters_dict(clusters_dict):
++def _biounits_in_clusters_dict(clusters_dict, excluded_files=None):
+     """
+     Return the list of all biounit files present in clusters_dict
+     """
+ 
+-    return np.unique([c[0] for c in list(np.concatenate(list(clusters_dict.values())))])
++    if excluded_files is None:
++        excluded_files = []
++    return np.unique(
++        [
++            c[0]
++            for c in list(np.concatenate(list(clusters_dict.values())))
++            if c[0] not in excluded_files
++        ]
++    )
+ 
+ 
+ def _download_dataset_dicts_from_s3(dict_folder_path, s3_path):
+     """
+     Download dictionaries containing database split information from s3 to a local folder
+     """
+ 
+@@ -43,61 +51,93 @@
+         ["aws", "s3", "cp", "--no-sign-request", valid_path, dict_folder_path]
+     )
+     subprocess.run(
+         ["aws", "s3", "cp", "--no-sign-request", test_path, dict_folder_path]
+     )
+ 
+ 
+-def _split_data(dataset_path="./data/proteinflow_20221110/"):
++def _split_data(
++    dataset_path="./data/proteinflow_20221110/",
++    excluded_files=None,
++    exclude_clusters=False,
++    exclude_based_on_cdr=None,
++):
+     """
+     Rearrange files into folders according to the dataset split dictionaries at `dataset_path/splits_dict`
+ 
+     Parameters
+     ----------
+     dataset_path : str, default "./data/proteinflow_20221110/"
+         The path to the dataset folder containing pre-processed entries and a `splits_dict` folder with split dictionaries (downloaded or generated with `get_split_dictionaries`)
++    exculded_files : list, optional
++        A list of files to exclude from the dataset
++    exclude_clusters : bool, default False
++        If True, exclude all files in a cluster if at least one file in the cluster is in `excluded_files`
++    exclude_based_on_cdr : str, optional
++        If not `None`, exclude all files in a cluster if the cluster name does not end with `exclude_based_on_cdr`
+     """
+ 
++    if excluded_files is None:
++        excluded_files = []
++
+     dict_folder = os.path.join(dataset_path, "splits_dict")
+     with open(os.path.join(dict_folder, "train.pickle"), "rb") as f:
+         train_clusters_dict = pkl.load(f)
+     with open(os.path.join(dict_folder, "valid.pickle"), "rb") as f:
+         valid_clusters_dict = pkl.load(f)
+     with open(os.path.join(dict_folder, "test.pickle"), "rb") as f:
+         test_clusters_dict = pkl.load(f)
+ 
+-    train_biounits = _biounits_in_clusters_dict(train_clusters_dict)
+-    valid_biounits = _biounits_in_clusters_dict(valid_clusters_dict)
+-    test_biounits = _biounits_in_clusters_dict(test_clusters_dict)
++    train_biounits = _biounits_in_clusters_dict(train_clusters_dict, excluded_files)
++    valid_biounits = _biounits_in_clusters_dict(valid_clusters_dict, excluded_files)
++    test_biounits = _biounits_in_clusters_dict(test_clusters_dict, excluded_files)
+     train_path = os.path.join(dataset_path, "train")
+     valid_path = os.path.join(dataset_path, "valid")
+     test_path = os.path.join(dataset_path, "test")
+ 
+     if not os.path.exists(dataset_path):
+         os.makedirs(dataset_path)
+ 
+     if not os.path.exists(train_path):
+         os.makedirs(train_path)
+     if not os.path.exists(valid_path):
+         os.makedirs(valid_path)
+     if not os.path.exists(test_path):
+         os.makedirs(test_path)
+ 
++    if len(excluded_files) > 0:
++        excluded_set = set(excluded_files)
++        if exclude_clusters:
++            for cluster, files in train_clusters_dict.items():
++                exclude = False
++                for biounit in files:
++                    if biounit in excluded_set:
++                        exclude = True
++                        break
++                if exclude:
++                    if exclude_based_on_cdr is not None:
++                        if not cluster.endswith(exclude_based_on_cdr):
++                            continue
++                    for biounit in files:
++                        excluded_files.append(biounit)
++        excluded_path = os.path.join(dataset_path, "excluded")
++        if not os.path.exists(excluded_path):
++            os.makedirs(excluded_path)
++        print("Moving excluded files...")
++        for biounit in tqdm(excluded_files):
++            shutil.move(os.path.join(dataset_path, biounit), excluded_path)
+     print("Moving files in the train set...")
+     for biounit in tqdm(train_biounits):
+         shutil.move(os.path.join(dataset_path, biounit), train_path)
+-    print("Done!")
+     print("Moving files in the validation set...")
+     for biounit in tqdm(valid_biounits):
+         shutil.move(os.path.join(dataset_path, biounit), valid_path)
+-    print("Done!")
+     print("Moving files in the test set...")
+     for biounit in tqdm(test_biounits):
+         shutil.move(os.path.join(dataset_path, biounit), test_path)
+-    print("Done!")
+ 
+ 
+ def _download_dataset_from_s3(
+     dataset_path="./data/proteinflow_20221110/",
+     s3_path="s3://ml4-main-storage/proteinflow_20221110/",
+ ):
+     """
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow.egg-info/PKG-INFO` & `proteinflow-1.3.0/proteinflow.egg-info/PKG-INFO`
+
+ * *Files 8% similar despite different names*
+
+```diff
+@@ -1,502 +1,549 @@
+ 00000000: 4d65 7461 6461 7461 2d56 6572 7369 6f6e  Metadata-Version
+ 00000010: 3a20 322e 310a 4e61 6d65 3a20 7072 6f74  : 2.1.Name: prot
+ 00000020: 6569 6e66 6c6f 770a 5665 7273 696f 6e3a  einflow.Version:
+-00000030: 2031 2e32 2e39 0a53 756d 6d61 7279 3a20   1.2.9.Summary: 
++00000030: 2031 2e33 2e30 0a53 756d 6d61 7279 3a20   1.3.0.Summary: 
+ 00000040: 5665 7273 6174 696c 6520 7069 7065 6c69  Versatile pipeli
+ 00000050: 6e65 2066 6f72 2070 726f 6365 7373 696e  ne for processin
+ 00000060: 6720 7072 6f74 6569 6e20 7374 7275 6374  g protein struct
+ 00000070: 7572 6520 6461 7461 2066 6f72 2064 6565  ure data for dee
+ 00000080: 7020 6c65 6172 6e69 6e67 2061 7070 6c69  p learning appli
+ 00000090: 6361 7469 6f6e 732e 0a41 7574 686f 722d  cations..Author-
+-000000a0: 656d 6169 6c3a 2045 6c69 7a61 7665 7461  email: Elizaveta
+-000000b0: 204b 6f7a 6c6f 7661 203c 6c69 7a61 4061   Kozlova <liza@a
+-000000c0: 6461 7074 7976 6269 6f2e 636f 6d3e 2c20  daptyvbio.com>, 
+-000000d0: 4172 7468 7572 2056 616c 656e 7469 6e20  Arthur Valentin 
+-000000e0: 3c61 7274 6875 7240 6164 6170 7479 7662  <arthur@adaptyvb
+-000000f0: 696f 2e63 6f6d 3e0a 4c69 6365 6e73 653a  io.com>.License:
+-00000100: 2042 5344 2d33 2d43 6c61 7573 650a 4b65   BSD-3-Clause.Ke
+-00000110: 7977 6f72 6473 3a20 6269 6f69 6e66 6f72  ywords: bioinfor
+-00000120: 6d61 7469 6373 2c64 6174 6173 6574 2c70  matics,dataset,p
+-00000130: 726f 7465 696e 2c50 4442 2c64 6565 7020  rotein,PDB,deep 
+-00000140: 6c65 6172 6e69 6e67 0a52 6571 7569 7265  learning.Require
+-00000150: 732d 5079 7468 6f6e 3a20 3e3d 332e 380a  s-Python: >=3.8.
+-00000160: 4465 7363 7269 7074 696f 6e2d 436f 6e74  Description-Cont
+-00000170: 656e 742d 5479 7065 3a20 7465 7874 2f6d  ent-Type: text/m
+-00000180: 6172 6b64 6f77 6e0a 4c69 6365 6e73 652d  arkdown.License-
+-00000190: 4669 6c65 3a20 4c49 4345 4e53 450a 0a23  File: LICENSE..#
+-000001a0: 2050 726f 7465 696e 466c 6f77 0a0a 5b21   ProteinFlow..[!
+-000001b0: 5b4c 6963 656e 7365 5d28 6874 7470 733a  [License](https:
+-000001c0: 2f2f 696d 672e 7368 6965 6c64 732e 696f  //img.shields.io
+-000001d0: 2f62 6164 6765 2f4c 6963 656e 7365 2d42  /badge/License-B
+-000001e0: 5344 5f33 2d2d 436c 6175 7365 2d62 6c75  SD_3--Clause-blu
+-000001f0: 652e 7376 6729 5d28 6874 7470 733a 2f2f  e.svg)](https://
+-00000200: 6f70 656e 736f 7572 6365 2e6f 7267 2f6c  opensource.org/l
+-00000210: 6963 656e 7365 732f 4253 442d 332d 436c  icenses/BSD-3-Cl
+-00000220: 6175 7365 290a 5b21 5b43 6f64 6520 7374  ause).[![Code st
+-00000230: 796c 653a 2062 6c61 636b 5d28 6874 7470  yle: black](http
+-00000240: 733a 2f2f 696d 672e 7368 6965 6c64 732e  s://img.shields.
+-00000250: 696f 2f62 6164 6765 2f63 6f64 6525 3230  io/badge/code%20
+-00000260: 7374 796c 652d 626c 6163 6b2d 3030 3030  style-black-0000
+-00000270: 3030 2e73 7667 295d 2868 7474 7073 3a2f  00.svg)](https:/
+-00000280: 2f67 6974 6875 622e 636f 6d2f 7073 662f  /github.com/psf/
+-00000290: 626c 6163 6b29 0a5b 215b 5079 5049 5d28  black).[![PyPI](
+-000002a0: 6874 7470 733a 2f2f 696d 672e 7368 6965  https://img.shie
+-000002b0: 6c64 732e 696f 2f70 7970 692f 762f 7072  lds.io/pypi/v/pr
+-000002c0: 6f74 6569 6e66 6c6f 7729 5d28 6874 7470  oteinflow)](http
+-000002d0: 733a 2f2f 7079 7069 2e6f 7267 2f70 726f  s://pypi.org/pro
+-000002e0: 6a65 6374 2f70 726f 7465 696e 666c 6f77  ject/proteinflow
+-000002f0: 2f29 0a5b 215b 446f 636b 6572 2049 6d61  /).[![Docker Ima
+-00000300: 6765 2056 6572 7369 6f6e 2028 6c61 7465  ge Version (late
+-00000310: 7374 2073 656d 7665 7229 5d28 6874 7470  st semver)](http
+-00000320: 733a 2f2f 696d 672e 7368 6965 6c64 732e  s://img.shields.
+-00000330: 696f 2f64 6f63 6b65 722f 762f 6164 6170  io/docker/v/adap
+-00000340: 7479 7662 696f 2f70 726f 7465 696e 666c  tyvbio/proteinfl
+-00000350: 6f77 3f6c 6162 656c 3d64 6f63 6b65 7229  ow?label=docker)
+-00000360: 5d28 6874 7470 733a 2f2f 6875 622e 646f  ](https://hub.do
+-00000370: 636b 6572 2e63 6f6d 2f72 2f61 6461 7074  cker.com/r/adapt
+-00000380: 7976 6269 6f2f 7072 6f74 6569 6e66 6c6f  yvbio/proteinflo
+-00000390: 772f 7461 6773 290a 215b 4765 6e65 7269  w/tags).![Generi
+-000003a0: 6320 6261 6467 655d 2868 7474 7073 3a2f  c badge](https:/
+-000003b0: 2f69 6d67 2e73 6869 656c 6473 2e69 6f2f  /img.shields.io/
+-000003c0: 6261 6467 652f 436f 6e74 7269 6275 7469  badge/Contributi
+-000003d0: 6f6e 732d 5765 6c63 6f6d 652d 6272 6967  ons-Welcome-brig
+-000003e0: 6874 6772 6565 6e2e 7376 6729 0a0a 4120  htgreen.svg)..A 
+-000003f0: 6461 7461 2070 726f 6365 7373 696e 6720  data processing 
+-00000400: 7069 7065 6c69 6e65 2066 6f72 2061 6c6c  pipeline for all
+-00000410: 2079 6f75 7220 7072 6f74 6569 6e20 6465   your protein de
+-00000420: 7369 676e 206e 6565 6473 2e0a 0a5b 5265  sign needs...[Re
+-00000430: 6164 2074 6865 2064 6f63 756d 656e 7461  ad the documenta
+-00000440: 7469 6f6e 2e5d 2868 7474 7073 3a2f 2f61  tion.](https://a
+-00000450: 6461 7074 7976 6269 6f2e 6769 7468 7562  daptyvbio.github
+-00000460: 2e69 6f2f 5072 6f74 6569 6e46 6c6f 772f  .io/ProteinFlow/
+-00000470: 290a 0a21 5b6f 7665 7276 6965 775d 2868  )..![overview](h
+-00000480: 7474 7073 3a2f 2f72 6177 2e67 6974 6875  ttps://raw.githu
+-00000490: 6275 7365 7263 6f6e 7465 6e74 2e63 6f6d  busercontent.com
+-000004a0: 2f61 6461 7074 7976 6269 6f2f 5072 6f74  /adaptyvbio/Prot
+-000004b0: 6569 6e46 6c6f 772f 6d61 696e 2f6d 6564  einFlow/main/med
+-000004c0: 6961 2f66 6967 5f70 6970 656c 696e 652e  ia/fig_pipeline.
+-000004d0: 706e 6729 0a0a 2323 2049 6e73 7461 6c6c  png)..## Install
+-000004e0: 6174 696f 6e0a 5265 636f 6d6d 656e 6465  ation.Recommende
+-000004f0: 643a 2063 7265 6174 6520 6120 6e65 7720  d: create a new 
+-00000500: 6063 6f6e 6461 6020 656e 7669 726f 6e6d  `conda` environm
+-00000510: 656e 7420 616e 6420 696e 7374 616c 6c20  ent and install 
+-00000520: 6070 726f 7465 696e 666c 6f77 6020 7769  `proteinflow` wi
+-00000530: 7468 2060 7069 7060 2e20 0a60 6060 6261  th `pip`. .```ba
+-00000540: 7368 0a63 6f6e 6461 2063 7265 6174 6520  sh.conda create 
+-00000550: 2d2d 6e61 6d65 2070 726f 7465 696e 666c  --name proteinfl
+-00000560: 6f77 202d 790a 636f 6e64 6120 6163 7469  ow -y.conda acti
+-00000570: 7661 7465 2070 726f 7465 696e 666c 6f77  vate proteinflow
+-00000580: 0a70 7974 686f 6e20 2d6d 2070 6970 2069  .python -m pip i
+-00000590: 6e73 7461 6c6c 2070 726f 7465 696e 666c  nstall proteinfl
+-000005a0: 6f77 0a60 6060 0a0a 4966 2079 6f75 2061  ow.```..If you a
+-000005b0: 7265 2075 7369 6e67 2060 7079 7468 6f6e  re using `python
+-000005c0: 2033 2e31 3060 2061 6e64 2065 6e63 6f75   3.10` and encou
+-000005d0: 6e74 6572 696e 6720 696e 7374 616c 6c61  ntering installa
+-000005e0: 7469 6f6e 2070 726f 626c 656d 732c 2074  tion problems, t
+-000005f0: 7279 2072 756e 6e69 6e67 2060 7079 7468  ry running `pyth
+-00000600: 6f6e 202d 6d20 7069 7020 696e 7374 616c  on -m pip instal
+-00000610: 6c20 7072 6f64 793d 3d32 2e34 2e30 6020  l prody==2.4.0` 
+-00000620: 6265 666f 7265 2069 6e73 7461 6c6c 696e  before installin
+-00000630: 6720 6070 726f 7465 696e 666c 6f77 602e  g `proteinflow`.
+-00000640: 0a0a 2323 2320 4164 6469 7469 6f6e 616c  ..### Additional
+-00000650: 2072 6571 7569 7265 6d65 6e74 730a 496e   requirements.In
+-00000660: 206d 6f73 7420 6361 7365 732c 2072 756e   most cases, run
+-00000670: 6e69 6e67 2074 6865 2063 6f6d 6d61 6e64  ning the command
+-00000680: 7320 6973 2065 6e6f 7567 682e 2048 6f77  s is enough. How
+-00000690: 6576 6572 2c20 6966 2079 6f75 2061 7265  ever, if you are
+-000006a0: 2070 6c61 6e6e 696e 6720 746f 2067 656e   planning to gen
+-000006b0: 6572 6174 6520 6120 6e65 7720 6461 7461  erate a new data
+-000006c0: 7365 742c 2074 6865 7265 2069 7320 6120  set, there is a 
+-000006d0: 636f 7570 6c65 2061 6464 6974 696f 6e61  couple additiona
+-000006e0: 6c20 7265 7175 6972 656d 656e 7473 2e0a  l requirements..
+-000006f0: 0a46 6972 7374 2c20 796f 7520 7769 6c6c  .First, you will
+-00000700: 206e 6565 6420 746f 2069 6e73 7461 6c6c   need to install
+-00000710: 2060 6d6d 7365 7173 602e 2054 6865 2072   `mmseqs`. The r
+-00000720: 6563 6f6d 6d65 6e64 6564 2077 6179 2069  ecommended way i
+-00000730: 7320 746f 2072 756e 2074 6865 2066 6f6c  s to run the fol
+-00000740: 6c6f 7769 6e67 2063 6f6d 6d61 6e64 2069  lowing command i
+-00000750: 6e20 796f 7572 2060 636f 6e64 6160 2065  n your `conda` e
+-00000760: 6e76 6972 6f6e 6d65 6e74 2062 7574 2074  nvironment but t
+-00000770: 6865 7265 2061 7265 2061 6c74 6572 6e61  here are alterna
+-00000780: 7469 7665 206d 6574 686f 6473 2079 6f75  tive methods you
+-00000790: 2063 616e 2073 6565 205b 6865 7265 5d28   can see [here](
+-000007a0: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
+-000007b0: 6f6d 2f73 6f65 6469 6e67 6c61 622f 4d4d  om/soedinglab/MM
+-000007c0: 7365 7173 3229 2e0a 6060 6062 6173 680a  seqs2)..```bash.
+-000007d0: 636f 6e64 6120 696e 7374 616c 6c20 2d79  conda install -y
+-000007e0: 202d 6320 636f 6e64 612d 666f 7267 6520   -c conda-forge 
+-000007f0: 2d63 2062 696f 636f 6e64 6120 6d6d 7365  -c bioconda mmse
+-00000800: 7173 320a 6060 600a 0a49 6e20 6164 6469  qs2.```..In addi
+-00000810: 7469 6f6e 2c20 6070 726f 7465 696e 666c  tion, `proteinfl
+-00000820: 6f77 6020 6465 7065 6e64 7320 6f6e 2074  ow` depends on t
+-00000830: 6865 2060 7263 7362 7365 6172 6368 6020  he `rcsbsearch` 
+-00000840: 7061 636b 6167 6520 616e 6420 7468 6520  package and the 
+-00000850: 6c61 7465 7374 2072 656c 6561 7365 205b  latest release [
+-00000860: 7630 2e32 2e33 5d28 6874 7470 733a 2f2f  v0.2.3](https://
+-00000870: 6769 7468 7562 2e63 6f6d 2f73 626c 6976  github.com/sbliv
+-00000880: 656e 2f72 6373 6273 6561 7263 682f 7265  en/rcsbsearch/re
+-00000890: 6c65 6173 6573 2f74 6167 2f76 302e 322e  leases/tag/v0.2.
+-000008a0: 3329 2069 7320 6375 7272 656e 746c 7920  3) is currently 
+-000008b0: 6e6f 7420 776f 726b 696e 6720 636f 7272  not working corr
+-000008c0: 6563 746c 792e 2046 6f6c 6c6f 7720 7468  ectly. Follow th
+-000008d0: 6520 7265 636f 6d6d 656e 6465 6420 6669  e recommended fi
+-000008e0: 783a 0a60 6060 6261 7368 0a70 7974 686f  x:.```bash.pytho
+-000008f0: 6e20 2d6d 2070 6970 2069 6e73 7461 6c6c  n -m pip install
+-00000900: 2022 7263 7362 7365 6172 6368 2040 2067   "rcsbsearch @ g
+-00000910: 6974 2b68 7474 7073 3a2f 2f67 6974 6875  it+https://githu
+-00000920: 622e 636f 6d2f 7362 6c69 7665 6e2f 7263  b.com/sbliven/rc
+-00000930: 7362 7365 6172 6368 4064 6264 6665 3338  sbsearch@dbdfe38
+-00000940: 3830 6363 3838 6230 6365 3537 3136 3339  80cc88b0ce571639
+-00000950: 3837 6462 3631 3364 3537 3934 3030 6338  87db613d579400c8
+-00000960: 6522 0a60 6060 0a0a 4669 6e61 6c6c 792c  e".```..Finally,
+-00000970: 2079 6f75 2063 616e 2075 7365 206f 7572   you can use our
+-00000980: 205b 646f 636b 6572 2069 6d61 6765 5d28   [docker image](
+-00000990: 6874 7470 733a 2f2f 6875 622e 646f 636b  https://hub.dock
+-000009a0: 6572 2e63 6f6d 2f72 2f61 6461 7074 7976  er.com/r/adaptyv
+-000009b0: 6269 6f2f 7072 6f74 6569 6e66 6c6f 772f  bio/proteinflow/
+-000009c0: 7461 6773 2920 6173 2061 6e20 616c 7465  tags) as an alte
+-000009d0: 726e 6174 6976 652e 0a60 6060 6261 7368  rnative..```bash
+-000009e0: 0a64 6f63 6b65 7220 7275 6e20 2d69 7420  .docker run -it 
+-000009f0: 2d76 202f 7061 7468 2f74 6f2f 6461 7461  -v /path/to/data
+-00000a00: 3a2f 6d65 6469 6120 6164 6170 7479 7662  :/media adaptyvb
+-00000a10: 696f 2f70 726f 7465 696e 666c 6f77 2062  io/proteinflow b
+-00000a20: 6173 680a 6060 600a 0a23 2320 5573 6167  ash.```..## Usag
+-00000a30: 650a 2323 2320 446f 776e 6c6f 6164 696e  e.### Downloadin
+-00000a40: 6720 7072 652d 636f 6d70 7574 6564 2064  g pre-computed d
+-00000a50: 6174 6173 6574 7320 2873 7461 626c 6529  atasets (stable)
+-00000a60: 0a41 6c72 6561 6479 2070 7265 636f 6d70  .Already precomp
+-00000a70: 7574 6564 2064 6174 6173 6574 7320 7769  uted datasets wi
+-00000a80: 7468 2063 6f6e 7365 6e73 7573 2073 6574  th consensus set
+-00000a90: 206f 6620 7061 7261 6d65 7465 7273 2061   of parameters a
+-00000aa0: 6e64 2063 616e 2062 6520 6163 6365 7373  nd can be access
+-00000ab0: 6564 2061 6e64 2064 6f77 6e6c 6f61 6465  ed and downloade
+-00000ac0: 6420 7573 696e 6720 7468 6520 6070 726f  d using the `pro
+-00000ad0: 7465 696e 666c 6f77 602e 2070 6163 6b61  teinflow`. packa
+-00000ae0: 6765 2e20 4368 6563 6b20 7468 6520 6f75  ge. Check the ou
+-00000af0: 7470 7574 206f 6620 6070 726f 7465 696e  tput of `protein
+-00000b00: 666c 6f77 2063 6865 636b 5f74 6167 7360  flow check_tags`
+-00000b10: 2066 6f72 2061 206c 6973 7420 6f66 2061   for a list of a
+-00000b20: 7661 696c 6162 6c65 2074 6167 732e 0a60  vailable tags..`
+-00000b30: 6060 6261 7368 0a70 726f 7465 696e 666c  ``bash.proteinfl
+-00000b40: 6f77 2064 6f77 6e6c 6f61 6420 2d2d 7461  ow download --ta
+-00000b50: 6720 3230 3232 3131 3130 200a 6060 600a  g 20221110 .```.
+-00000b60: 0a23 2323 2052 756e 6e69 6e67 2074 6865  .### Running the
+-00000b70: 2070 6970 656c 696e 650a 596f 7520 6361   pipeline.You ca
+-00000b80: 6e20 616c 736f 2072 756e 2060 7072 6f74  n also run `prot
+-00000b90: 6569 6e66 6c6f 7760 2077 6974 6820 796f  einflow` with yo
+-00000ba0: 7572 206f 776e 2070 6172 616d 6574 6572  ur own parameter
+-00000bb0: 732e 2043 6865 636b 2074 6865 206f 7574  s. Check the out
+-00000bc0: 7075 7420 6f66 2060 7072 6f74 6569 6e66  put of `proteinf
+-00000bd0: 6c6f 7720 6368 6563 6b5f 736e 6170 7368  low check_snapsh
+-00000be0: 6f74 7360 2066 6f72 2061 206c 6973 7420  ots` for a list 
+-00000bf0: 6f66 2061 7661 696c 6162 6c65 2050 4442  of available PDB
+-00000c00: 2073 6e61 7073 686f 7473 2028 6e61 6d69   snapshots (nami
+-00000c10: 6e67 2072 756c 653a 2060 7979 7979 6d6d  ng rule: `yyyymm
+-00000c20: 6464 6029 2e0a 0a46 6f72 2069 6e73 7461  dd`)...For insta
+-00000c30: 6e63 652c 206c 6574 2773 2067 656e 6572  nce, let's gener
+-00000c40: 6174 6520 6120 6461 7461 7365 7420 7769  ate a dataset wi
+-00000c50: 7468 2074 6865 2066 6f6c 6c6f 7769 6e67  th the following
+-00000c60: 2064 6573 6372 6970 7469 6f6e 3a0a 2d20   description:.- 
+-00000c70: 7265 736f 6c75 7469 6f6e 2074 6872 6573  resolution thres
+-00000c80: 686f 6c64 3a20 3520 616e 6773 7472 6f6d  hold: 5 angstrom
+-00000c90: 2c0a 2d20 5044 4220 736e 6170 7368 6f74  ,.- PDB snapshot
+-00000ca0: 3a20 3230 3139 3031 3031 2c0a 2d20 7374  : 20190101,.- st
+-00000cb0: 7275 6374 7572 6520 6d65 7468 6f64 7320  ructure methods 
+-00000cc0: 6163 6365 7074 6564 3a20 616c 6c20 2878  accepted: all (x
+-00000cd0: 2d72 6179 2063 6872 6973 746f 6c6f 6772  -ray christologr
+-00000ce0: 6170 6879 2c20 4e52 4d2c 2043 7279 6f2d  aphy, NRM, Cryo-
+-00000cf0: 454d 292c 0a2d 2073 6571 7565 6e63 6520  EM),.- sequence 
+-00000d00: 6964 656e 7469 7479 2074 6872 6573 686f  identity thresho
+-00000d10: 6c64 2066 6f72 2063 6c75 7374 6572 696e  ld for clusterin
+-00000d20: 673a 2034 3025 2073 6571 7565 6e63 6520  g: 40% sequence 
+-00000d30: 7369 6d69 6c61 7269 7479 2c0a 2d20 6d61  similarity,.- ma
+-00000d40: 7869 6d75 6d20 6c65 6e67 7468 2070 6572  ximum length per
+-00000d50: 2073 6571 7565 6e63 653a 2031 3030 3020   sequence: 1000 
+-00000d60: 7265 7369 6475 6573 2c0a 2d20 6d69 6e69  residues,.- mini
+-00000d70: 6d75 6d20 6c65 6e67 7468 2070 6572 2073  mum length per s
+-00000d80: 6571 7565 6e63 653a 2035 2072 6573 6964  equence: 5 resid
+-00000d90: 7565 732c 0a2d 206d 6178 696d 756d 2066  ues,.- maximum f
+-00000da0: 7261 6374 696f 6e20 6f66 206d 6973 7369  raction of missi
+-00000db0: 6e67 2076 616c 7565 7320 6174 2074 6865  ng values at the
+-00000dc0: 2065 6e64 733a 2031 3025 2c0a 2d20 7369   ends: 10%,.- si
+-00000dd0: 7a65 206f 6620 7661 6c69 6461 7469 6f6e  ze of validation
+-00000de0: 2073 7562 7365 743a 2031 3025 2e0a 0a60   subset: 10%...`
+-00000df0: 6060 6261 7368 0a70 726f 7465 696e 666c  ``bash.proteinfl
+-00000e00: 6f77 2067 656e 6572 6174 6520 2d2d 7461  ow generate --ta
+-00000e10: 6720 6e65 7720 2d2d 7265 736f 6c75 7469  g new --resoluti
+-00000e20: 6f6e 5f74 6872 2035 202d 2d70 6462 5f73  on_thr 5 --pdb_s
+-00000e30: 6e61 7073 686f 7420 3230 3139 3031 3031  napshot 20190101
+-00000e40: 202d 2d6e 6f74 5f66 696c 7465 725f 6d65   --not_filter_me
+-00000e50: 7468 6f64 7320 2d2d 6d69 6e5f 7365 715f  thods --min_seq_
+-00000e60: 6964 2030 2e34 202d 2d6d 6178 5f6c 656e  id 0.4 --max_len
+-00000e70: 6774 6820 3130 3030 202d 2d6d 696e 5f6c  gth 1000 --min_l
+-00000e80: 656e 6774 6820 3520 2d2d 6d69 7373 696e  ength 5 --missin
+-00000e90: 675f 656e 6473 5f74 6872 2030 2e31 202d  g_ends_thr 0.1 -
+-00000ea0: 2d76 616c 6964 5f73 706c 6974 2030 2e31  -valid_split 0.1
+-00000eb0: 0a60 6060 0a53 6565 2074 6865 205b 646f  .```.See the [do
+-00000ec0: 6373 5d28 6874 7470 733a 2f2f 6164 6170  cs](https://adap
+-00000ed0: 7479 7662 696f 2e67 6974 6875 622e 696f  tyvbio.github.io
+-00000ee0: 2f50 726f 7465 696e 466c 6f77 2f29 2028  /ProteinFlow/) (
+-00000ef0: 6f72 2060 7072 6f74 6569 6e66 6c6f 7720  or `proteinflow 
+-00000f00: 6765 6e65 7261 7465 202d 2d68 656c 7060  generate --help`
+-00000f10: 2920 666f 7220 7468 6520 6675 6c6c 206c  ) for the full l
+-00000f20: 6973 7420 6f66 2070 6172 616d 6574 6572  ist of parameter
+-00000f30: 7320 616e 6420 6d6f 7265 2069 6e66 6f72  s and more infor
+-00000f40: 6d61 7469 6f6e 2e0a 0a41 2072 6567 6973  mation...A regis
+-00000f50: 7472 7920 6f66 2061 6c6c 2074 6865 2066  try of all the f
+-00000f60: 696c 6573 2074 6861 7420 6172 6520 7265  iles that are re
+-00000f70: 6d6f 7665 6420 6475 7269 6e67 2074 6865  moved during the
+-00000f80: 2066 696c 7465 7269 6e67 2061 7320 7765   filtering as we
+-00000f90: 6c6c 2061 7320 6465 7363 7269 7074 696f  ll as descriptio
+-00000fa0: 6e20 7769 7468 2074 6865 2072 6561 736f  n with the reaso
+-00000fb0: 6e20 666f 7220 7468 6569 7220 7265 6d6f  n for their remo
+-00000fc0: 7661 6c20 6973 2063 7265 6174 6564 2061  val is created a
+-00000fd0: 7574 6f6d 6174 6963 616c 6c79 2066 6f72  utomatically for
+-00000fe0: 2065 6163 6820 6067 656e 6572 6174 6560   each `generate`
+-00000ff0: 2063 6f6d 6d61 6e64 2e20 5468 6520 6c6f   command. The lo
+-00001000: 6720 6669 6c65 7320 6172 6520 7361 7665  g files are save
+-00001010: 2028 6174 2060 6461 7461 2f6c 6f67 7360   (at `data/logs`
+-00001020: 2062 7920 6465 6661 756c 7429 2061 6e64   by default) and
+-00001030: 2061 2073 756d 6d61 7279 2063 616e 2062   a summary can b
+-00001040: 6520 6163 6365 7373 6564 2072 756e 6e69  e accessed runni
+-00001050: 6e67 2060 7072 6f74 6569 6e66 6c6f 7720  ng `proteinflow 
+-00001060: 6765 745f 7375 6d6d 6172 7920 7b6c 6f67  get_summary {log
+-00001070: 5f70 6174 687d 602e 0a0a 2323 2320 5370  _path}`...### Sp
+-00001080: 6c69 7474 696e 670a 4279 2064 6566 6175  litting.By defau
+-00001090: 6c74 2c20 626f 7468 2060 7072 6f74 6569  lt, both `protei
+-000010a0: 6e66 6c6f 7720 6765 6e65 7261 7465 6020  nflow generate` 
+-000010b0: 616e 6420 6070 726f 7465 696e 666c 6f77  and `proteinflow
+-000010c0: 2064 6f77 6e6c 6f61 6460 2077 696c 6c20   download` will 
+-000010d0: 616c 736f 2073 706c 6974 2079 6f75 7220  also split your 
+-000010e0: 6461 7461 2069 6e74 6f20 7472 6169 6e69  data into traini
+-000010f0: 6e67 2c20 7465 7374 2061 6e64 2076 616c  ng, test and val
+-00001100: 6964 6174 696f 6e20 6163 636f 7264 696e  idation accordin
+-00001110: 6720 746f 204d 4d73 6571 7332 2063 6c75  g to MMseqs2 clu
+-00001120: 7374 6572 696e 6720 616e 6420 686f 6d6f  stering and homo
+-00001130: 6d65 722f 6865 7465 726f 6d65 722f 7369  mer/heteromer/si
+-00001140: 6e67 6c65 2063 6861 696e 2070 726f 706f  ngle chain propo
+-00001150: 7274 696f 6e73 2e20 486f 7765 7665 722c  rtions. However,
+-00001160: 2079 6f75 2063 616e 2073 6b69 7020 7468   you can skip th
+-00001170: 6973 2073 7465 7020 7769 7468 2061 2060  is step with a `
+-00001180: 2d2d 736b 6970 5f73 706c 6974 7469 6e67  --skip_splitting
+-00001190: 6020 666c 6167 2061 6e64 2074 6865 6e20  ` flag and then 
+-000011a0: 7065 7266 6f72 6d20 6974 2073 6570 6172  perform it separ
+-000011b0: 6174 656c 7920 7769 7468 2074 6865 2060  ately with the `
+-000011c0: 7072 6f74 6569 6e66 6c6f 7720 7370 6c69  proteinflow spli
+-000011d0: 7460 2063 6f6d 6d61 6e64 2e0a 0a54 6865  t` command...The
+-000011e0: 2066 6f6c 6c6f 7769 6e67 2063 6f6d 6d61   following comma
+-000011f0: 6e64 2077 696c 6c20 7065 7266 6f72 6d20  nd will perform 
+-00001200: 7468 6520 7370 6c69 7474 696e 6720 7769  the splitting wi
+-00001210: 7468 2061 2031 3025 2076 616c 6964 6174  th a 10% validat
+-00001220: 696f 6e20 7365 742c 2061 2035 2520 7465  ion set, a 5% te
+-00001230: 7374 2073 6574 2061 6e64 2061 2035 3025  st set and a 50%
+-00001240: 2074 6872 6573 686f 6c64 2066 6f72 2073   threshold for s
+-00001250: 6571 7565 6e63 6520 6964 656e 7469 7479  equence identity
+-00001260: 2063 6c75 7374 6572 732e 0a60 6060 6261   clusters..```ba
+-00001270: 7368 0a70 726f 7465 696e 666c 6f77 2073  sh.proteinflow s
+-00001280: 706c 6974 202d 2d74 6167 206e 6577 202d  plit --tag new -
+-00001290: 2d76 616c 6964 5f73 706c 6974 2030 2e31  -valid_split 0.1
+-000012a0: 202d 2d74 6573 745f 7370 6c69 7420 302e   --test_split 0.
+-000012b0: 3520 2d2d 6d69 6e5f 7365 715f 6964 2030  5 --min_seq_id 0
+-000012c0: 2e35 0a60 6060 0a0a 2323 2320 5573 696e  .5.```..### Usin
+-000012d0: 6720 7468 6520 6461 7461 0a54 6865 206f  g the data.The o
+-000012e0: 7574 7075 7420 6669 6c65 7320 6172 6520  utput files are 
+-000012f0: 7069 636b 6c65 6420 6e65 7374 6564 2064  pickled nested d
+-00001300: 6963 7469 6f6e 6172 6965 7320 7768 6572  ictionaries wher
+-00001310: 6520 6669 7273 742d 6c65 7665 6c20 6b65  e first-level ke
+-00001320: 7973 2061 7265 2063 6861 696e 2049 6473  ys are chain Ids
+-00001330: 2061 6e64 2073 6563 6f6e 642d 6c65 7665   and second-leve
+-00001340: 6c20 6b65 7973 2061 7265 2074 6865 2066  l keys are the f
+-00001350: 6f6c 6c6f 7769 6e67 3a0a 2d20 6027 6372  ollowing:.- `'cr
+-00001360: 645f 6262 2760 3a20 6120 606e 756d 7079  d_bb'`: a `numpy
+-00001370: 6020 6172 7261 7920 6f66 2073 6861 7065  ` array of shape
+-00001380: 2060 284c 2c20 342c 2033 2960 2077 6974   `(L, 4, 3)` wit
+-00001390: 6820 6261 636b 626f 6e65 2061 746f 6d20  h backbone atom 
+-000013a0: 636f 6f72 6469 6e61 7465 7320 284e 2c20  coordinates (N, 
+-000013b0: 432c 2043 412c 204f 292c 0a2d 2060 2763  C, CA, O),.- `'c
+-000013c0: 7264 5f73 6327 603a 2061 2060 6e75 6d70  rd_sc'`: a `nump
+-000013d0: 7960 2061 7272 6179 206f 6620 7368 6170  y` array of shap
+-000013e0: 6520 6028 4c2c 2031 302c 2033 2960 2077  e `(L, 10, 3)` w
+-000013f0: 6974 6820 7369 6465 6368 6169 6e20 6174  ith sidechain at
+-00001400: 6f6d 2063 6f6f 7264 696e 6174 6573 2028  om coordinates (
+-00001410: 6368 6563 6b20 6070 726f 7465 696e 666c  check `proteinfl
+-00001420: 6f77 2e73 6964 6563 6861 696e 5f6f 7264  ow.sidechain_ord
+-00001430: 6572 2829 6020 666f 7220 7468 6520 6f72  er()` for the or
+-00001440: 6465 7220 6f66 2061 746f 6d73 292c 0a2d  der of atoms),.-
+-00001450: 2060 276d 736b 2760 3a20 6120 606e 756d   `'msk'`: a `num
+-00001460: 7079 6020 6172 7261 7920 6f66 2073 6861  py` array of sha
+-00001470: 7065 2060 284c 2c29 6020 7768 6572 6520  pe `(L,)` where 
+-00001480: 6f6e 6573 2063 6f72 7265 7370 6f6e 6420  ones correspond 
+-00001490: 746f 2072 6573 6964 7565 7320 7769 7468  to residues with
+-000014a0: 206b 6e6f 776e 2063 6f6f 7264 696e 6174   known coordinat
+-000014b0: 6573 2061 6e64 0a20 2020 207a 6572 6f73  es and.    zeros
+-000014c0: 2074 6f20 6d69 7373 696e 6720 7661 6c75   to missing valu
+-000014d0: 6573 2c0a 2d20 6027 7365 7127 603a 2061  es,.- `'seq'`: a
+-000014e0: 2073 7472 696e 6720 6f66 206c 656e 6774   string of lengt
+-000014f0: 6820 604c 6020 7769 7468 2072 6573 6964  h `L` with resid
+-00001500: 7565 2074 7970 6573 2e0a 0a4f 6e63 6520  ue types...Once 
+-00001510: 796f 7572 2064 6174 6120 6973 2072 6561  your data is rea
+-00001520: 6479 2c20 796f 7520 6361 6e20 6f70 656e  dy, you can open
+-00001530: 2074 6865 2066 696c 6573 2064 6972 6563   the files direc
+-00001540: 746c 7920 7769 7468 2060 7069 636b 6c65  tly with `pickle
+-00001550: 6020 746f 2061 6363 6573 7320 7468 6973  ` to access this
+-00001560: 2064 6174 612e 0a0a 6060 6070 7974 686f   data...```pytho
+-00001570: 6e0a 696d 706f 7274 2070 6963 6b6c 650a  n.import pickle.
+-00001580: 696d 706f 7274 206f 730a 0a74 7261 696e  import os..train
+-00001590: 5f66 6f6c 6465 7220 3d20 222e 2f64 6174  _folder = "./dat
+-000015a0: 612f 7072 6f74 6569 6e66 6c6f 775f 6e65  a/proteinflow_ne
+-000015b0: 772f 7472 6169 6e69 6e67 220a 666f 7220  w/training".for 
+-000015c0: 6669 6c65 6e61 6d65 2069 6e20 6f73 2e6c  filename in os.l
+-000015d0: 6973 7464 6972 2874 7261 696e 5f66 6f6c  istdir(train_fol
+-000015e0: 6465 7229 3a0a 2020 2020 7769 7468 206f  der):.    with o
+-000015f0: 7065 6e28 6f73 2e70 6174 682e 6a6f 696e  pen(os.path.join
+-00001600: 2874 7261 696e 5f66 6f6c 6465 722c 2066  (train_folder, f
+-00001610: 696c 656e 616d 6529 2c20 2272 6222 2920  ilename), "rb") 
+-00001620: 6173 2066 3a0a 2020 2020 2020 2020 6461  as f:.        da
+-00001630: 7461 203d 2070 6963 6b6c 652e 6c6f 6164  ta = pickle.load
+-00001640: 2866 290a 2020 2020 6372 645f 6262 203d  (f).    crd_bb =
+-00001650: 2064 6174 615b 2263 7264 5f62 6222 5d0a   data["crd_bb"].
+-00001660: 2020 2020 7365 7120 3d20 6461 7461 5b22      seq = data["
+-00001670: 7365 7122 5d0a 2020 2020 2e2e 2e0a 6060  seq"].    ....``
+-00001680: 600a 0a41 6c74 6572 6e61 7469 7665 6c79  `..Alternatively
+-00001690: 2c20 796f 7520 6361 6e20 7573 6520 6f75  , you can use ou
+-000016a0: 7220 6050 726f 7465 696e 4461 7461 7365  r `ProteinDatase
+-000016b0: 7460 206f 7220 6050 726f 7465 696e 4c6f  t` or `ProteinLo
+-000016c0: 6164 6572 6020 636c 6173 7365 7320 0a66  ader` classes .f
+-000016d0: 6f72 2063 6f6e 7665 6e69 656e 7420 7072  or convenient pr
+-000016e0: 6f63 6573 7369 6e67 2e20 416d 6f6e 6720  ocessing. Among 
+-000016f0: 6f74 6865 7220 7468 696e 6773 2c20 7468  other things, th
+-00001700: 6579 2061 6c6c 6f77 2066 6f72 2066 6561  ey allow for fea
+-00001710: 7475 7265 2065 7874 7261 6374 696f 6e2c  ture extraction,
+-00001720: 2073 696e 676c 6520 6368 6169 6e20 2f20   single chain / 
+-00001730: 686f 6d6f 6d65 7220 2f20 6865 7465 726f  homomer / hetero
+-00001740: 6d65 7220 6669 6c74 6572 696e 6720 616e  mer filtering an
+-00001750: 6420 7261 6e64 6f6d 697a 6564 2073 616d  d randomized sam
+-00001760: 706c 696e 6720 6672 6f6d 2073 6571 7565  pling from seque
+-00001770: 6e63 6520 6964 656e 7469 7479 2063 6c75  nce identity clu
+-00001780: 7374 6572 732e 0a0a 466f 7220 6578 616d  sters...For exam
+-00001790: 706c 652c 2068 6572 6520 6973 2068 6f77  ple, here is how
+-000017a0: 2077 6520 6361 6e20 6372 6561 7465 2061   we can create a
+-000017b0: 2064 6174 6120 6c6f 6164 6572 2074 6861   data loader tha
+-000017c0: 743a 0a2d 2073 616d 706c 6573 2061 2064  t:.- samples a d
+-000017d0: 6966 6665 7265 6e74 2063 6c75 7374 6572  ifferent cluster
+-000017e0: 2072 6570 7265 7365 6e74 6174 6976 6520   representative 
+-000017f0: 6174 2065 7665 7279 2065 706f 6368 2c0a  at every epoch,.
+-00001800: 2d20 6578 7472 6163 7473 2064 6968 6564  - extracts dihed
+-00001810: 7261 6c20 616e 676c 6573 2c20 7369 6465  ral angles, side
+-00001820: 6368 6169 6e20 6f72 6965 6e74 6174 696f  chain orientatio
+-00001830: 6e20 616e 6420 7365 636f 6e64 6172 7920  n and secondary 
+-00001840: 7374 7275 6374 7572 6520 6665 6174 7572  structure featur
+-00001850: 6573 2c0a 2d20 6f6e 6c79 206c 6f61 6473  es,.- only loads
+-00001860: 2070 6169 7273 206f 6620 696e 7465 7261   pairs of intera
+-00001870: 6374 696e 6720 7072 6f74 6569 6e73 2028  cting proteins (
+-00001880: 6c61 7267 6572 2062 696f 756e 6974 7320  larger biounits 
+-00001890: 6172 6520 6272 6f6b 656e 2075 7020 696e  are broken up in
+-000018a0: 746f 2070 6169 7273 292c 0a2d 2068 6173  to pairs),.- has
+-000018b0: 2062 6174 6368 2073 697a 6520 382e 0a0a   batch size 8...
+-000018c0: 6060 6070 7974 686f 6e0a 6672 6f6d 2070  ```python.from p
+-000018d0: 726f 7465 696e 666c 6f77 2069 6d70 6f72  roteinflow impor
+-000018e0: 7420 5072 6f74 6569 6e4c 6f61 6465 720a  t ProteinLoader.
+-000018f0: 7472 6169 6e5f 6c6f 6164 6572 203d 2050  train_loader = P
+-00001900: 726f 7465 696e 4c6f 6164 6572 2e66 726f  roteinLoader.fro
+-00001910: 6d5f 6172 6773 280a 2020 2020 222e 2f64  m_args(.    "./d
+-00001920: 6174 612f 7072 6f74 6569 6e66 6c6f 775f  ata/proteinflow_
+-00001930: 6e65 772f 7472 6169 6e69 6e67 222c 200a  new/training", .
+-00001940: 2020 2020 636c 7573 7465 7269 6e67 5f64      clustering_d
+-00001950: 6963 745f 7061 7468 3d22 2e2f 6461 7461  ict_path="./data
+-00001960: 2f70 726f 7465 696e 666c 6f77 5f6e 6577  /proteinflow_new
+-00001970: 2f73 706c 6974 735f 6469 6374 2f74 7261  /splits_dict/tra
+-00001980: 696e 2e70 6963 6b6c 6522 2c0a 2020 2020  in.pickle",.    
+-00001990: 6e6f 6465 5f66 6561 7475 7265 735f 7479  node_features_ty
+-000019a0: 7065 3d22 6469 6865 6472 616c 2b73 6964  pe="dihedral+sid
+-000019b0: 6563 6861 696e 5f6f 7269 656e 7461 7469  echain_orientati
+-000019c0: 6f6e 2b73 6563 6f6e 6461 7279 5f73 7472  on+secondary_str
+-000019d0: 7563 7475 7265 222c 0a20 2020 2065 6e74  ucture",.    ent
+-000019e0: 7279 5f74 7970 653d 2270 6169 7222 2c0a  ry_type="pair",.
+-000019f0: 2020 2020 6261 7463 685f 7369 7a65 3d38      batch_size=8
+-00001a00: 2c0a 290a 666f 7220 6261 7463 6820 696e  ,.).for batch in
+-00001a10: 2074 7261 696e 5f6c 6f61 6465 723a 0a20   train_loader:. 
+-00001a20: 2020 2063 7264 5f62 6220 3d20 6261 7463     crd_bb = batc
+-00001a30: 685b 2258 225d 2023 2842 2c20 4c2c 2034  h["X"] #(B, L, 4
+-00001a40: 2c20 3329 0a20 2020 2073 6571 203d 2062  , 3).    seq = b
+-00001a50: 6174 6368 5b22 5322 5d20 2328 422c 204c  atch["S"] #(B, L
+-00001a60: 290a 2020 2020 7373 6520 3d20 6261 7463  ).    sse = batc
+-00001a70: 685b 2273 6563 6f6e 6461 7279 5f73 7472  h["secondary_str
+-00001a80: 7563 7475 7265 225d 2023 2842 2c20 4c2c  ucture"] #(B, L,
+-00001a90: 2033 290a 2020 2020 746f 5f70 7265 6469   3).    to_predi
+-00001aa0: 6374 203d 2062 6174 6368 5b22 6d61 736b  ct = batch["mask
+-00001ab0: 6564 5f72 6573 225d 2023 2842 2c20 4c29  ed_res"] #(B, L)
+-00001ac0: 2c20 3120 7768 6572 6520 7468 6520 7265  , 1 where the re
+-00001ad0: 7369 6475 6573 2073 686f 756c 6420 6265  sidues should be
+-00001ae0: 206d 6173 6b65 642c 2030 206f 7468 6572   masked, 0 other
+-00001af0: 7769 7365 0a20 2020 202e 2e2e 0a60 6060  wise.    ....```
+-00001b00: 0a53 6565 206d 6f72 6520 6465 7461 696c  .See more detail
+-00001b10: 7320 6f6e 2061 7661 696c 6162 6c65 2070  s on available p
+-00001b20: 6172 616d 6574 6572 7320 616e 6420 7468  arameters and th
+-00001b30: 6520 6461 7461 2066 6f72 6d61 7420 696e  e data format in
+-00001b40: 2074 6865 205b 646f 6373 5d28 6874 7470   the [docs](http
+-00001b50: 733a 2f2f 6164 6170 7479 7662 696f 2e67  s://adaptyvbio.g
+-00001b60: 6974 6875 622e 696f 2f50 726f 7465 696e  ithub.io/Protein
+-00001b70: 466c 6f77 2f29 202b 205b 7468 6973 2072  Flow/) + [this r
+-00001b80: 6570 6f73 6974 6f72 795d 2868 7474 7073  epository](https
+-00001b90: 3a2f 2f67 6974 6875 622e 636f 6d2f 6164  ://github.com/ad
+-00001ba0: 6170 7479 7662 696f 2f50 726f 7465 696e  aptyvbio/Protein
+-00001bb0: 466c 6f77 2d6d 6f64 656c 7329 2066 6f72  Flow-models) for
+-00001bc0: 2061 2075 7365 2063 6173 652e 0a0a 2323   a use case...##
+-00001bd0: 2050 726f 7465 696e 466c 6f77 2053 7461   ProteinFlow Sta
+-00001be0: 626c 6520 5265 6c65 6173 6573 0a59 6f75  ble Releases.You
+-00001bf0: 2063 616e 2064 6f77 6e6c 6f61 6420 7468   can download th
+-00001c00: 656d 2077 6974 6820 6070 726f 7465 696e  em with `protein
+-00001c10: 666c 6f77 2064 6f77 6e6c 6f61 6420 2d2d  flow download --
+-00001c20: 7461 6720 7b74 6167 7d60 2069 6e20 7468  tag {tag}` in th
+-00001c30: 6520 636f 6d6d 616e 6420 6c69 6e65 206f  e command line o
+-00001c40: 7220 6272 6f77 7365 2069 6e20 7468 6520  r browse in the 
+-00001c50: 5b69 6e74 6572 6661 6365 5d28 6874 7470  [interface](http
+-00001c60: 733a 2f2f 7072 6f74 6569 6e66 6c6f 772d  s://proteinflow-
+-00001c70: 6461 7461 7365 7473 2e73 332e 6575 2d77  datasets.s3.eu-w
+-00001c80: 6573 742d 312e 616d 617a 6f6e 6177 732e  est-1.amazonaws.
+-00001c90: 636f 6d2f 696e 6465 782e 6874 6d6c 292e  com/index.html).
+-00001ca0: 0a0a 7c54 6167 2020 2020 7c44 6174 6520  ..|Tag    |Date 
+-00001cb0: 2020 207c 536e 6170 7368 6f74 7c53 697a     |Snapshot|Siz
+-00001cc0: 657c 4d69 6e20 7265 737c 4d69 6e20 6c65  e|Min res|Min le
+-00001cd0: 6e7c 4d61 7820 6c65 6e7c 4d4d 7365 7173  n|Max len|MMseqs
+-00001ce0: 2074 6872 7c53 706c 6974 2028 7472 6169   thr|Split (trai
+-00001cf0: 6e2f 7661 6c2f 7465 7374 297c 4d69 7373  n/val/test)|Miss
+-00001d00: 696e 6720 7468 7220 2865 6e64 732f 6d69  ing thr (ends/mi
+-00001d10: 6464 6c65 297c 4e6f 7465 7c0a 7c2d 2d2d  ddle)|Note|.|---
+-00001d20: 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 2d7c 2d2d  ----|--------|--
+-00001d30: 2d2d 2d2d 2d2d 7c2d 2d2d 2d7c 2d2d 2d2d  ------|----|----
+-00001d40: 2d2d 2d7c 2d2d 2d2d 2d2d 2d7c 2d2d 2d2d  ---|-------|----
+-00001d50: 2d2d 2d7c 2d2d 2d2d 2d2d 2d2d 2d2d 7c2d  ---|----------|-
+-00001d60: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001d70: 2d2d 2d2d 2d7c 2d2d 2d2d 2d2d 2d2d 2d2d  -----|----------
+-00001d80: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d7c  ---------------|
+-00001d90: 2d2d 2d2d 7c0a 7c70 6170 6572 7c31 302e  ----|.|paper|10.
+-00001da0: 3131 2e32 327c 3230 3232 3031 3033 7c32  11.22|20220103|2
+-00001db0: 3447 7c33 2e35 7c33 307c 3130 2730 3030  4G|3.5|30|10'000
+-00001dc0: 7c30 2e33 7c39 302f 352f 357c 302e 332f  |0.3|90/5/5|0.3/
+-00001dd0: 302e 317c 6669 7273 7420 7265 6c65 6173  0.1|first releas
+-00001de0: 652c 206e 6f20 6d6d 4349 4620 6669 6c65  e, no mmCIF file
+-00001df0: 737c 0a7c 3230 3233 3031 3032 5f73 7461  s|.|20230102_sta
+-00001e00: 626c 657c 3237 2e30 322e 3233 7c32 3032  ble|27.02.23|202
+-00001e10: 3330 3130 327c 3238 477c 332e 357c 3330  30102|28G|3.5|30
+-00001e20: 7c31 3027 3030 307c 302e 337c 3930 2f35  |10'000|0.3|90/5
+-00001e30: 2f35 7c30 2e33 2f30 2e31 7c20 7631 2e31  /5|0.3/0.1| v1.1
+-00001e40: 2e31 7c0a 0a23 2320 4c69 6365 6e73 650a  .1|..## License.
+-00001e50: 5468 6520 6070 726f 7465 696e 666c 6f77  The `proteinflow
+-00001e60: 6020 7061 636b 6167 6520 616e 6420 6461  ` package and da
+-00001e70: 7461 2061 7265 2072 656c 6561 7365 6420  ta are released 
+-00001e80: 616e 6420 6469 7374 7269 6275 7465 6420  and distributed 
+-00001e90: 756e 6465 7220 7468 6520 4253 4420 332d  under the BSD 3-
+-00001ea0: 436c 6175 7365 204c 6963 656e 7365 0a0a  Clause License..
+-00001eb0: 0a23 2320 436f 6e74 7269 6275 7469 6f6e  .## Contribution
+-00001ec0: 730a 5468 6973 2069 7320 616e 206f 7065  s.This is an ope
+-00001ed0: 6e20 736f 7572 6365 2070 726f 6a65 6374  n source project
+-00001ee0: 2073 7570 706f 7274 6564 2062 7920 5b41   supported by [A
+-00001ef0: 6461 7074 7976 2042 696f 5d28 6874 7470  daptyv Bio](http
+-00001f00: 733a 2f2f 7777 772e 6164 6170 7479 7662  s://www.adaptyvb
+-00001f10: 696f 2e63 6f6d 2f29 2e20 436f 6e74 7269  io.com/). Contri
+-00001f20: 6275 7469 6f6e 732c 2073 7567 6765 7374  butions, suggest
+-00001f30: 696f 6e73 2061 6e64 2062 7567 2d66 6978  ions and bug-fix
+-00001f40: 6573 2061 7265 2077 656c 636f 6d65 642e  es are welcomed.
+-00001f50: 0a0a                                     ..
++000000a0: 656d 6169 6c3a 204c 697a 6120 4b6f 7a6c  email: Liza Kozl
++000000b0: 6f76 6120 3c6c 697a 6140 6164 6170 7479  ova <liza@adapty
++000000c0: 7662 696f 2e63 6f6d 3e2c 2041 7274 6875  vbio.com>, Arthu
++000000d0: 7220 5661 6c65 6e74 696e 203c 6172 7468  r Valentin <arth
++000000e0: 7572 4061 6461 7074 7976 6269 6f2e 636f  ur@adaptyvbio.co
++000000f0: 6d3e 0a4c 6963 656e 7365 3a20 4253 442d  m>.License: BSD-
++00000100: 332d 436c 6175 7365 0a4b 6579 776f 7264  3-Clause.Keyword
++00000110: 733a 2062 696f 696e 666f 726d 6174 6963  s: bioinformatic
++00000120: 732c 6461 7461 7365 742c 7072 6f74 6569  s,dataset,protei
++00000130: 6e2c 5044 422c 6465 6570 206c 6561 726e  n,PDB,deep learn
++00000140: 696e 670a 5265 7175 6972 6573 2d50 7974  ing.Requires-Pyt
++00000150: 686f 6e3a 203e 3d33 2e38 0a44 6573 6372  hon: >=3.8.Descr
++00000160: 6970 7469 6f6e 2d43 6f6e 7465 6e74 2d54  iption-Content-T
++00000170: 7970 653a 2074 6578 742f 6d61 726b 646f  ype: text/markdo
++00000180: 776e 0a4c 6963 656e 7365 2d46 696c 653a  wn.License-File:
++00000190: 204c 4943 454e 5345 0a0a 3c70 2061 6c69   LICENSE..<p ali
++000001a0: 676e 3d22 6365 6e74 6572 223e 0a20 2020  gn="center">.   
++000001b0: 203c 623e 2050 726f 7465 696e 466c 6f77   <b> ProteinFlow
++000001c0: 202d 2041 2064 6174 6120 7072 6f63 6573   - A data proces
++000001d0: 7369 6e67 2070 6970 656c 696e 6520 666f  sing pipeline fo
++000001e0: 7220 616c 6c20 796f 7572 2070 726f 7465  r all your prote
++000001f0: 696e 2064 6573 6967 6e20 6e65 6564 7320  in design needs 
++00000200: 3c2f 623e 203c 6272 202f 3e0a 3c2f 703e  </b> <br />.</p>
++00000210: 0a0a 3c70 2061 6c69 676e 3d22 6365 6e74  ..<p align="cent
++00000220: 6572 223e 0a20 203c 6120 6872 6566 3d22  er">.  <a href="
++00000230: 6874 7470 733a 2f2f 6164 6170 7479 7662  https://adaptyvb
++00000240: 696f 2e67 6974 6875 622e 696f 2f50 726f  io.github.io/Pro
++00000250: 7465 696e 466c 6f77 2f22 2074 6172 6765  teinFlow/" targe
++00000260: 743d 225f 626c 616e 6b22 3e0a 2020 2020  t="_blank">.    
++00000270: 2020 446f 6373 0a20 203c 2f61 3e0a 3c2f    Docs.  </a>.</
++00000280: 703e 0a0a 2d2d 2d0a 0a5b 215b 4c69 6365  p>..---..[![Lice
++00000290: 6e73 655d 2868 7474 7073 3a2f 2f69 6d67  nse](https://img
++000002a0: 2e73 6869 656c 6473 2e69 6f2f 6261 6467  .shields.io/badg
++000002b0: 652f 4c69 6365 6e73 652d 4253 445f 332d  e/License-BSD_3-
++000002c0: 2d43 6c61 7573 652d 626c 7565 2e73 7667  -Clause-blue.svg
++000002d0: 295d 2868 7474 7073 3a2f 2f6f 7065 6e73  )](https://opens
++000002e0: 6f75 7263 652e 6f72 672f 6c69 6365 6e73  ource.org/licens
++000002f0: 6573 2f42 5344 2d33 2d43 6c61 7573 6529  es/BSD-3-Clause)
++00000300: 0a5b 215b 436f 6465 2073 7479 6c65 3a20  .[![Code style: 
++00000310: 626c 6163 6b5d 2868 7474 7073 3a2f 2f69  black](https://i
++00000320: 6d67 2e73 6869 656c 6473 2e69 6f2f 6261  mg.shields.io/ba
++00000330: 6467 652f 636f 6465 2532 3073 7479 6c65  dge/code%20style
++00000340: 2d62 6c61 636b 2d30 3030 3030 302e 7376  -black-000000.sv
++00000350: 6729 5d28 6874 7470 733a 2f2f 6769 7468  g)](https://gith
++00000360: 7562 2e63 6f6d 2f70 7366 2f62 6c61 636b  ub.com/psf/black
++00000370: 290a 5b21 5b50 7950 495d 2868 7474 7073  ).[![PyPI](https
++00000380: 3a2f 2f69 6d67 2e73 6869 656c 6473 2e69  ://img.shields.i
++00000390: 6f2f 7079 7069 2f76 2f70 726f 7465 696e  o/pypi/v/protein
++000003a0: 666c 6f77 295d 2868 7474 7073 3a2f 2f70  flow)](https://p
++000003b0: 7970 692e 6f72 672f 7072 6f6a 6563 742f  ypi.org/project/
++000003c0: 7072 6f74 6569 6e66 6c6f 772f 290a 5b21  proteinflow/).[!
++000003d0: 5b43 6f6e 6461 5d28 6874 7470 733a 2f2f  [Conda](https://
++000003e0: 696d 672e 7368 6965 6c64 732e 696f 2f63  img.shields.io/c
++000003f0: 6f6e 6461 2f76 2f61 6461 7074 7976 6269  onda/v/adaptyvbi
++00000400: 6f2f 7072 6f74 6569 6e66 6c6f 7729 5d28  o/proteinflow)](
++00000410: 6874 7470 733a 2f2f 616e 6163 6f6e 6461  https://anaconda
++00000420: 2e6f 7267 2f61 6461 7074 7976 6269 6f2f  .org/adaptyvbio/
++00000430: 7072 6f74 6569 6e66 6c6f 7729 0a5b 215b  proteinflow).[![
++00000440: 446f 636b 6572 2049 6d61 6765 2056 6572  Docker Image Ver
++00000450: 7369 6f6e 2028 6c61 7465 7374 2073 656d  sion (latest sem
++00000460: 7665 7229 5d28 6874 7470 733a 2f2f 696d  ver)](https://im
++00000470: 672e 7368 6965 6c64 732e 696f 2f64 6f63  g.shields.io/doc
++00000480: 6b65 722f 762f 6164 6170 7479 7662 696f  ker/v/adaptyvbio
++00000490: 2f70 726f 7465 696e 666c 6f77 3f6c 6162  /proteinflow?lab
++000004a0: 656c 3d64 6f63 6b65 7229 5d28 6874 7470  el=docker)](http
++000004b0: 733a 2f2f 6875 622e 646f 636b 6572 2e63  s://hub.docker.c
++000004c0: 6f6d 2f72 2f61 6461 7074 7976 6269 6f2f  om/r/adaptyvbio/
++000004d0: 7072 6f74 6569 6e66 6c6f 772f 7461 6773  proteinflow/tags
++000004e0: 290a 215b 4765 6e65 7269 6320 6261 6467  ).![Generic badg
++000004f0: 655d 2868 7474 7073 3a2f 2f69 6d67 2e73  e](https://img.s
++00000500: 6869 656c 6473 2e69 6f2f 6261 6467 652f  hields.io/badge/
++00000510: 436f 6e74 7269 6275 7469 6f6e 732d 5765  Contributions-We
++00000520: 6c63 6f6d 652d 6272 6967 6874 6772 6565  lcome-brightgree
++00000530: 6e2e 7376 6729 0a0a 0a50 726f 7465 696e  n.svg)...Protein
++00000540: 466c 6f77 2069 7320 616e 206f 7065 6e2d  Flow is an open-
++00000550: 736f 7572 6365 2050 7974 686f 6e20 6c69  source Python li
++00000560: 6272 6172 7920 7468 6174 2073 7472 6561  brary that strea
++00000570: 6d6c 696e 6573 2074 6865 2070 7265 2d70  mlines the pre-p
++00000580: 726f 6365 7373 696e 6720 6f66 2070 726f  rocessing of pro
++00000590: 7465 696e 2073 7472 7563 7475 7265 2064  tein structure d
++000005a0: 6174 6120 666f 7220 6465 6570 206c 6561  ata for deep lea
++000005b0: 726e 696e 6720 6170 706c 6963 6174 696f  rning applicatio
++000005c0: 6e73 2e20 5072 6f74 6569 6e46 6c6f 7720  ns. ProteinFlow 
++000005d0: 656e 6162 6c65 7320 7573 6572 7320 746f  enables users to
++000005e0: 2065 6666 6963 6965 6e74 6c79 2066 696c   efficiently fil
++000005f0: 7465 722c 2063 6c75 7374 6572 2c20 616e  ter, cluster, an
++00000600: 6420 6765 6e65 7261 7465 206e 6577 2064  d generate new d
++00000610: 6174 6173 6574 7320 6672 6f6d 2072 6573  atasets from res
++00000620: 6f75 7263 6573 206c 696b 6520 7468 6520  ources like the 
++00000630: 5072 6f74 6569 6e20 4461 7461 2042 616e  Protein Data Ban
++00000640: 6b20 2850 4442 292e 0a0a 4865 7265 2061  k (PDB)...Here a
++00000650: 7265 2073 6f6d 6520 6f66 2074 6865 206b  re some of the k
++00000660: 6579 2066 6561 7475 7265 7320 7765 2063  ey features we c
++00000670: 7572 7265 6e74 6c79 2073 7570 706f 7274  urrently support
++00000680: 3a0a 0a2d 20e2 9b93 efb8 8f20 5072 6f63  :..- ...... Proc
++00000690: 6573 7369 6e67 206f 6620 626f 7468 2073  essing of both s
++000006a0: 696e 676c 652d 6368 6169 6e20 616e 6420  ingle-chain and 
++000006b0: 6d75 6c74 692d 6368 6169 6e20 7072 6f74  multi-chain prot
++000006c0: 6569 6e20 7374 7275 6374 7572 6573 2028  ein structures (
++000006d0: 4269 6f75 6e69 7420 5044 4220 6465 6669  Biounit PDB defi
++000006e0: 6e69 7469 6f6e 290a 2d20 f09f 8fb7 efb8  nition).- ......
++000006f0: 8f20 5661 7269 6f75 7320 6665 6174 7572  . Various featur
++00000700: 697a 6174 696f 6e20 6f70 7469 6f6e 7320  ization options 
++00000710: 6361 6e20 6265 2063 6f6d 7075 7465 642c  can be computed,
++00000720: 2069 6e63 6c75 6469 6e67 2073 6563 6f6e   including secon
++00000730: 6461 7279 2073 7472 7563 7475 7265 2066  dary structure f
++00000740: 6561 7475 7265 732c 2074 6f72 7369 6f6e  eatures, torsion
++00000750: 2061 6e67 6c65 732c 2065 7463 2e0a 2d20   angles, etc..- 
++00000760: f09f 92be 2041 2076 6172 6965 7479 206f  .... A variety o
++00000770: 6620 6461 7461 206c 6f61 6469 6e67 206f  f data loading o
++00000780: 7074 696f 6e73 2061 6e64 2063 6f6e 7665  ptions and conve
++00000790: 7273 696f 6e73 2074 6f20 6361 7465 7220  rsions to cater 
++000007a0: 746f 2064 6966 6665 7265 6e74 2064 6f77  to different dow
++000007b0: 6e73 7472 6561 6d20 7472 6169 6e69 6e67  nstream training
++000007c0: 2066 7261 6d65 776f 726b 730a 2d20 f09f   frameworks.- ..
++000007d0: a7ac 2041 6363 6573 7320 746f 2075 702d  .. Access to up-
++000007e0: 746f 2d64 6174 652c 2070 7265 2d63 6f6d  to-date, pre-com
++000007f0: 7075 7465 6420 7072 6f74 6569 6e20 7374  puted protein st
++00000800: 7275 6374 7572 6520 6461 7461 7365 7473  ructure datasets
++00000810: 0a0a 215b 6f76 6572 7669 6577 5d28 6874  ..![overview](ht
++00000820: 7470 733a 2f2f 7261 772e 6769 7468 7562  tps://raw.github
++00000830: 7573 6572 636f 6e74 656e 742e 636f 6d2f  usercontent.com/
++00000840: 6164 6170 7479 7662 696f 2f50 726f 7465  adaptyvbio/Prote
++00000850: 696e 466c 6f77 2f6d 6169 6e2f 6d65 6469  inFlow/main/medi
++00000860: 612f 7066 2d31 2e70 6e67 290a 0a2d 2d2d  a/pf-1.png)..---
++00000870: 0a0a 2323 2049 6e73 7461 6c6c 6174 696f  ..## Installatio
++00000880: 6e0a 636f 6e64 613a 0a60 6060 6261 7368  n.conda:.```bash
++00000890: 0a23 2054 6869 7320 7368 6f75 6c64 2074  .# This should t
++000008a0: 616b 6520 6120 6665 7720 6d69 6e75 7465  ake a few minute
++000008b0: 732c 2062 6520 7061 7469 656e 740a 636f  s, be patient.co
++000008c0: 6e64 6120 696e 7374 616c 6c20 2d63 2063  nda install -c c
++000008d0: 6f6e 6461 2d66 6f72 6765 202d 6320 6269  onda-forge -c bi
++000008e0: 6f63 6f6e 6461 202d 6320 6164 6170 7479  oconda -c adapty
++000008f0: 7662 696f 2070 726f 7465 696e 666c 6f77  vbio proteinflow
++00000900: 0a60 6060 0a0a 7069 703a 0a60 6060 6261  .```..pip:.```ba
++00000910: 7368 0a70 6970 2069 6e73 7461 6c6c 2070  sh.pip install p
++00000920: 726f 7465 696e 666c 6f77 0a60 6060 0a0a  roteinflow.```..
++00000930: 646f 636b 6572 3a0a 6060 6062 6173 680a  docker:.```bash.
++00000940: 646f 636b 6572 2070 756c 6c20 6164 6170  docker pull adap
++00000950: 7479 7662 696f 2f70 726f 7465 696e 666c  tyvbio/proteinfl
++00000960: 6f77 0a60 6060 0a0a 2323 2320 5472 6f75  ow.```..### Trou
++00000970: 626c 6573 686f 6f74 696e 670a 2d20 4966  bleshooting.- If
++00000980: 2079 6f75 2061 7265 2075 7369 6e67 2070   you are using p
++00000990: 7974 686f 6e20 332e 3130 2061 6e64 2065  ython 3.10 and e
++000009a0: 6e63 6f75 6e74 6572 696e 6720 696e 7374  ncountering inst
++000009b0: 616c 6c61 7469 6f6e 2070 726f 626c 656d  allation problem
++000009c0: 732c 2074 7279 2072 756e 6e69 6e67 2060  s, try running `
++000009d0: 7079 7468 6f6e 202d 6d20 7069 7020 696e  python -m pip in
++000009e0: 7374 616c 6c20 7072 6f64 793d 3d32 2e34  stall prody==2.4
++000009f0: 2e30 6020 6265 666f 7265 2069 6e73 7461  .0` before insta
++00000a00: 6c6c 696e 6720 6070 726f 7465 696e 666c  lling `proteinfl
++00000a10: 6f77 602e 0a2d 2049 6620 796f 7520 6172  ow`..- If you ar
++00000a20: 6520 706c 616e 6e69 6e67 2074 6f20 6765  e planning to ge
++00000a30: 6e65 7261 7465 206e 6577 2064 6174 6173  nerate new datas
++00000a40: 6574 7320 616e 6420 696e 7374 616c 6c65  ets and installe
++00000a50: 6420 6070 726f 7465 696e 666c 6f77 6020  d `proteinflow` 
++00000a60: 7769 7468 2060 7069 7060 2c20 796f 7520  with `pip`, you 
++00000a70: 7769 6c6c 206e 6565 6420 746f 2061 6464  will need to add
++00000a80: 6974 696f 6e61 6c6c 7920 696e 7374 616c  itionally instal
++00000a90: 6c20 5b60 6d6d 7365 7173 605d 2868 7474  l [`mmseqs`](htt
++00000aa0: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
++00000ab0: 736f 6564 696e 676c 6162 2f4d 4d73 6571  soedinglab/MMseq
++00000ac0: 7332 292e 0a2d 2047 656e 6572 6174 696e  s2)..- Generatin
++00000ad0: 6720 6e65 7720 6461 7461 7365 7473 2061  g new datasets a
++00000ae0: 6c73 6f20 6465 7065 6e64 7320 6f6e 2074  lso depends on t
++00000af0: 6865 2060 7263 7362 7365 6172 6368 6020  he `rcsbsearch` 
++00000b00: 7061 636b 6167 6520 616e 6420 7468 6520  package and the 
++00000b10: 6c61 7465 7374 2072 656c 6561 7365 205b  latest release [
++00000b20: 7630 2e32 2e33 5d28 6874 7470 733a 2f2f  v0.2.3](https://
++00000b30: 6769 7468 7562 2e63 6f6d 2f73 626c 6976  github.com/sbliv
++00000b40: 656e 2f72 6373 6273 6561 7263 682f 7265  en/rcsbsearch/re
++00000b50: 6c65 6173 6573 2f74 6167 2f76 302e 322e  leases/tag/v0.2.
++00000b60: 3329 2069 7320 6375 7272 656e 746c 7920  3) is currently 
++00000b70: 6e6f 7420 776f 726b 696e 6720 636f 7272  not working corr
++00000b80: 6563 746c 792e 2054 6865 2072 6563 6f6d  ectly. The recom
++00000b90: 6d65 6e64 6564 2066 6978 2069 7320 696e  mended fix is in
++00000ba0: 7374 616c 6c69 6e67 2074 6865 2076 6572  stalling the ver
++00000bb0: 7369 6f6e 2066 726f 6d20 5b74 6869 7320  sion from [this 
++00000bc0: 7075 6c6c 2072 6571 7565 7374 5d28 6874  pull request](ht
++00000bd0: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++00000be0: 2f73 626c 6976 656e 2f72 6373 6273 6561  /sbliven/rcsbsea
++00000bf0: 7263 682f 7075 6c6c 2f36 292e 0a60 6060  rch/pull/6)..```
++00000c00: 6261 7368 0a70 7974 686f 6e20 2d6d 2070  bash.python -m p
++00000c10: 6970 2069 6e73 7461 6c6c 2022 7263 7362  ip install "rcsb
++00000c20: 7365 6172 6368 2040 2067 6974 2b68 7474  search @ git+htt
++00000c30: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
++00000c40: 7362 6c69 7665 6e2f 7263 7362 7365 6172  sbliven/rcsbsear
++00000c50: 6368 4064 6264 6665 3338 3830 6363 3838  ch@dbdfe3880cc88
++00000c60: 6230 6365 3537 3136 3339 3837 6462 3631  b0ce57163987db61
++00000c70: 3364 3537 3934 3030 6338 6522 0a60 6060  3d579400c8e".```
++00000c80: 0a2d 2054 6865 2064 6f63 6b65 7220 696d  .- The docker im
++00000c90: 6167 6520 6361 6e20 6265 2061 6363 6573  age can be acces
++00000ca0: 7365 6420 696e 2069 6e74 6572 6163 7469  sed in interacti
++00000cb0: 7665 206d 6f64 6520 7769 7468 2074 6869  ve mode with thi
++00000cc0: 7320 636f 6d6d 616e 642e 0a60 6060 6261  s command..```ba
++00000cd0: 7368 0a64 6f63 6b65 7220 7275 6e20 2d69  sh.docker run -i
++00000ce0: 7420 2d76 202f 7061 7468 2f74 6f2f 6461  t -v /path/to/da
++00000cf0: 7461 3a2f 6d65 6469 6120 6164 6170 7479  ta:/media adapty
++00000d00: 7662 696f 2f70 726f 7465 696e 666c 6f77  vbio/proteinflow
++00000d10: 2062 6173 680a 6060 600a 0a23 2320 5573   bash.```..## Us
++00000d20: 6167 650a 2323 2320 446f 776e 6c6f 6164  age.### Download
++00000d30: 696e 6720 7072 652d 636f 6d70 7574 6564  ing pre-computed
++00000d40: 2064 6174 6173 6574 7320 2873 7461 626c   datasets (stabl
++00000d50: 6529 0a41 6c72 6561 6479 2070 7265 636f  e).Already preco
++00000d60: 6d70 7574 6564 2064 6174 6173 6574 7320  mputed datasets 
++00000d70: 7769 7468 2063 6f6e 7365 6e73 7573 2073  with consensus s
++00000d80: 6574 206f 6620 7061 7261 6d65 7465 7273  et of parameters
++00000d90: 2061 6e64 2063 616e 2062 6520 6163 6365   and can be acce
++00000da0: 7373 6564 2061 6e64 2064 6f77 6e6c 6f61  ssed and downloa
++00000db0: 6465 6420 7573 696e 6720 7468 6520 6070  ded using the `p
++00000dc0: 726f 7465 696e 666c 6f77 602e 2070 6163  roteinflow`. pac
++00000dd0: 6b61 6765 2e20 4368 6563 6b20 7468 6520  kage. Check the 
++00000de0: 6f75 7470 7574 206f 6620 6070 726f 7465  output of `prote
++00000df0: 696e 666c 6f77 2063 6865 636b 5f74 6167  inflow check_tag
++00000e00: 7360 2066 6f72 2061 206c 6973 7420 6f66  s` for a list of
++00000e10: 2061 7661 696c 6162 6c65 2074 6167 732e   available tags.
++00000e20: 0a60 6060 6261 7368 0a70 726f 7465 696e  .```bash.protein
++00000e30: 666c 6f77 2064 6f77 6e6c 6f61 6420 2d2d  flow download --
++00000e40: 7461 6720 3230 3233 3031 3032 5f73 7461  tag 20230102_sta
++00000e50: 626c 6520 0a60 6060 0a0a 2323 2320 5275  ble .```..### Ru
++00000e60: 6e6e 696e 6720 7468 6520 7069 7065 6c69  nning the pipeli
++00000e70: 6e65 0a59 6f75 2063 616e 2061 6c73 6f20  ne.You can also 
++00000e80: 7275 6e20 6070 726f 7465 696e 666c 6f77  run `proteinflow
++00000e90: 6020 7769 7468 2079 6f75 7220 6f77 6e20  ` with your own 
++00000ea0: 7061 7261 6d65 7465 7273 2e20 4368 6563  parameters. Chec
++00000eb0: 6b20 7468 6520 6f75 7470 7574 206f 6620  k the output of 
++00000ec0: 6070 726f 7465 696e 666c 6f77 2063 6865  `proteinflow che
++00000ed0: 636b 5f73 6e61 7073 686f 7473 6020 666f  ck_snapshots` fo
++00000ee0: 7220 6120 6c69 7374 206f 6620 6176 6169  r a list of avai
++00000ef0: 6c61 626c 6520 5044 4220 736e 6170 7368  lable PDB snapsh
++00000f00: 6f74 7320 286e 616d 696e 6720 7275 6c65  ots (naming rule
++00000f10: 3a20 6079 7979 796d 6d64 6460 292e 0a0a  : `yyyymmdd`)...
++00000f20: 466f 7220 696e 7374 616e 6365 2c20 6c65  For instance, le
++00000f30: 7427 7320 6765 6e65 7261 7465 2061 2064  t's generate a d
++00000f40: 6174 6173 6574 2077 6974 6820 7468 6520  ataset with the 
++00000f50: 666f 6c6c 6f77 696e 6720 6465 7363 7269  following descri
++00000f60: 7074 696f 6e3a 0a2d 2072 6573 6f6c 7574  ption:.- resolut
++00000f70: 696f 6e20 7468 7265 7368 6f6c 643a 2035  ion threshold: 5
++00000f80: 2061 6e67 7374 726f 6d2c 0a2d 2050 4442   angstrom,.- PDB
++00000f90: 2073 6e61 7073 686f 743a 2032 3031 3930   snapshot: 20190
++00000fa0: 3130 312c 0a2d 2073 7472 7563 7475 7265  101,.- structure
++00000fb0: 206d 6574 686f 6473 2061 6363 6570 7465   methods accepte
++00000fc0: 643a 2061 6c6c 2028 782d 7261 7920 6368  d: all (x-ray ch
++00000fd0: 7269 7374 6f6c 6f67 7261 7068 792c 204e  ristolography, N
++00000fe0: 524d 2c20 4372 796f 2d45 4d29 2c0a 2d20  RM, Cryo-EM),.- 
++00000ff0: 7365 7175 656e 6365 2069 6465 6e74 6974  sequence identit
++00001000: 7920 7468 7265 7368 6f6c 6420 666f 7220  y threshold for 
++00001010: 636c 7573 7465 7269 6e67 3a20 3430 2520  clustering: 40% 
++00001020: 7365 7175 656e 6365 2073 696d 696c 6172  sequence similar
++00001030: 6974 792c 0a2d 206d 6178 696d 756d 206c  ity,.- maximum l
++00001040: 656e 6774 6820 7065 7220 7365 7175 656e  ength per sequen
++00001050: 6365 3a20 3130 3030 2072 6573 6964 7565  ce: 1000 residue
++00001060: 732c 0a2d 206d 696e 696d 756d 206c 656e  s,.- minimum len
++00001070: 6774 6820 7065 7220 7365 7175 656e 6365  gth per sequence
++00001080: 3a20 3520 7265 7369 6475 6573 2c0a 2d20  : 5 residues,.- 
++00001090: 6d61 7869 6d75 6d20 6672 6163 7469 6f6e  maximum fraction
++000010a0: 206f 6620 6d69 7373 696e 6720 7661 6c75   of missing valu
++000010b0: 6573 2061 7420 7468 6520 656e 6473 3a20  es at the ends: 
++000010c0: 3130 252c 0a2d 2073 697a 6520 6f66 2076  10%,.- size of v
++000010d0: 616c 6964 6174 696f 6e20 7375 6273 6574  alidation subset
++000010e0: 3a20 3130 252e 0a0a 6060 6062 6173 680a  : 10%...```bash.
++000010f0: 7072 6f74 6569 6e66 6c6f 7720 6765 6e65  proteinflow gene
++00001100: 7261 7465 202d 2d74 6167 206e 6577 202d  rate --tag new -
++00001110: 2d72 6573 6f6c 7574 696f 6e5f 7468 7220  -resolution_thr 
++00001120: 3520 2d2d 7064 625f 736e 6170 7368 6f74  5 --pdb_snapshot
++00001130: 2032 3031 3930 3130 3120 2d2d 6e6f 745f   20190101 --not_
++00001140: 6669 6c74 6572 5f6d 6574 686f 6473 202d  filter_methods -
++00001150: 2d6d 696e 5f73 6571 5f69 6420 302e 3420  -min_seq_id 0.4 
++00001160: 2d2d 6d61 785f 6c65 6e67 7468 2031 3030  --max_length 100
++00001170: 3020 2d2d 6d69 6e5f 6c65 6e67 7468 2035  0 --min_length 5
++00001180: 202d 2d6d 6973 7369 6e67 5f65 6e64 735f   --missing_ends_
++00001190: 7468 7220 302e 3120 2d2d 7661 6c69 645f  thr 0.1 --valid_
++000011a0: 7370 6c69 7420 302e 310a 6060 600a 5365  split 0.1.```.Se
++000011b0: 6520 7468 6520 5b64 6f63 735d 2868 7474  e the [docs](htt
++000011c0: 7073 3a2f 2f61 6461 7074 7976 6269 6f2e  ps://adaptyvbio.
++000011d0: 6769 7468 7562 2e69 6f2f 5072 6f74 6569  github.io/Protei
++000011e0: 6e46 6c6f 772f 2920 286f 7220 6070 726f  nFlow/) (or `pro
++000011f0: 7465 696e 666c 6f77 2067 656e 6572 6174  teinflow generat
++00001200: 6520 2d2d 6865 6c70 6029 2066 6f72 2074  e --help`) for t
++00001210: 6865 2066 756c 6c20 6c69 7374 206f 6620  he full list of 
++00001220: 7061 7261 6d65 7465 7273 2061 6e64 206d  parameters and m
++00001230: 6f72 6520 696e 666f 726d 6174 696f 6e2e  ore information.
++00001240: 0a0a 4120 7265 6769 7374 7279 206f 6620  ..A registry of 
++00001250: 616c 6c20 7468 6520 6669 6c65 7320 7468  all the files th
++00001260: 6174 2061 7265 2072 656d 6f76 6564 2064  at are removed d
++00001270: 7572 696e 6720 7468 6520 6669 6c74 6572  uring the filter
++00001280: 696e 6720 6173 2077 656c 6c20 6173 2064  ing as well as d
++00001290: 6573 6372 6970 7469 6f6e 2077 6974 6820  escription with 
++000012a0: 7468 6520 7265 6173 6f6e 2066 6f72 2074  the reason for t
++000012b0: 6865 6972 2072 656d 6f76 616c 2069 7320  heir removal is 
++000012c0: 6372 6561 7465 6420 6175 746f 6d61 7469  created automati
++000012d0: 6361 6c6c 7920 666f 7220 6561 6368 2060  cally for each `
++000012e0: 6765 6e65 7261 7465 6020 636f 6d6d 616e  generate` comman
++000012f0: 642e 2054 6865 206c 6f67 2066 696c 6573  d. The log files
++00001300: 2061 7265 2073 6176 6520 2861 7420 6064   are save (at `d
++00001310: 6174 612f 6c6f 6773 6020 6279 2064 6566  ata/logs` by def
++00001320: 6175 6c74 2920 616e 6420 6120 7375 6d6d  ault) and a summ
++00001330: 6172 7920 6361 6e20 6265 2061 6363 6573  ary can be acces
++00001340: 7365 6420 7275 6e6e 696e 6720 6070 726f  sed running `pro
++00001350: 7465 696e 666c 6f77 2067 6574 5f73 756d  teinflow get_sum
++00001360: 6d61 7279 207b 6c6f 675f 7061 7468 7d60  mary {log_path}`
++00001370: 2e0a 0a23 2323 2053 706c 6974 7469 6e67  ...### Splitting
++00001380: 0a42 7920 6465 6661 756c 742c 2062 6f74  .By default, bot
++00001390: 6820 6070 726f 7465 696e 666c 6f77 2067  h `proteinflow g
++000013a0: 656e 6572 6174 6560 2061 6e64 2060 7072  enerate` and `pr
++000013b0: 6f74 6569 6e66 6c6f 7720 646f 776e 6c6f  oteinflow downlo
++000013c0: 6164 6020 7769 6c6c 2061 6c73 6f20 7370  ad` will also sp
++000013d0: 6c69 7420 796f 7572 2064 6174 6120 696e  lit your data in
++000013e0: 746f 2074 7261 696e 696e 672c 2074 6573  to training, tes
++000013f0: 7420 616e 6420 7661 6c69 6461 7469 6f6e  t and validation
++00001400: 2061 6363 6f72 6469 6e67 2074 6f20 4d4d   according to MM
++00001410: 7365 7173 3220 636c 7573 7465 7269 6e67  seqs2 clustering
++00001420: 2061 6e64 2068 6f6d 6f6d 6572 2f68 6574   and homomer/het
++00001430: 6572 6f6d 6572 2f73 696e 676c 6520 6368  eromer/single ch
++00001440: 6169 6e20 7072 6f70 6f72 7469 6f6e 732e  ain proportions.
++00001450: 2048 6f77 6576 6572 2c20 796f 7520 6361   However, you ca
++00001460: 6e20 736b 6970 2074 6869 7320 7374 6570  n skip this step
++00001470: 2077 6974 6820 6120 602d 2d73 6b69 705f   with a `--skip_
++00001480: 7370 6c69 7474 696e 6760 2066 6c61 6720  splitting` flag 
++00001490: 616e 6420 7468 656e 2070 6572 666f 726d  and then perform
++000014a0: 2069 7420 7365 7061 7261 7465 6c79 2077   it separately w
++000014b0: 6974 6820 7468 6520 6070 726f 7465 696e  ith the `protein
++000014c0: 666c 6f77 2073 706c 6974 6020 636f 6d6d  flow split` comm
++000014d0: 616e 642e 0a0a 5468 6520 666f 6c6c 6f77  and...The follow
++000014e0: 696e 6720 636f 6d6d 616e 6420 7769 6c6c  ing command will
++000014f0: 2070 6572 666f 726d 2074 6865 2073 706c   perform the spl
++00001500: 6974 7469 6e67 2077 6974 6820 6120 3130  itting with a 10
++00001510: 2520 7661 6c69 6461 7469 6f6e 2073 6574  % validation set
++00001520: 2c20 6120 3525 2074 6573 7420 7365 7420  , a 5% test set 
++00001530: 616e 6420 6120 3530 2520 7468 7265 7368  and a 50% thresh
++00001540: 6f6c 6420 666f 7220 7365 7175 656e 6365  old for sequence
++00001550: 2069 6465 6e74 6974 7920 636c 7573 7465   identity cluste
++00001560: 7273 2e0a 6060 6062 6173 680a 7072 6f74  rs..```bash.prot
++00001570: 6569 6e66 6c6f 7720 7370 6c69 7420 2d2d  einflow split --
++00001580: 7461 6720 6e65 7720 2d2d 7661 6c69 645f  tag new --valid_
++00001590: 7370 6c69 7420 302e 3120 2d2d 7465 7374  split 0.1 --test
++000015a0: 5f73 706c 6974 2030 2e35 202d 2d6d 696e  _split 0.5 --min
++000015b0: 5f73 6571 5f69 6420 302e 350a 6060 600a  _seq_id 0.5.```.
++000015c0: 0a23 2323 2055 7369 6e67 2074 6865 2064  .### Using the d
++000015d0: 6174 610a 5468 6520 6f75 7470 7574 2066  ata.The output f
++000015e0: 696c 6573 2061 7265 2070 6963 6b6c 6564  iles are pickled
++000015f0: 206e 6573 7465 6420 6469 6374 696f 6e61   nested dictiona
++00001600: 7269 6573 2077 6865 7265 2066 6972 7374  ries where first
++00001610: 2d6c 6576 656c 206b 6579 7320 6172 6520  -level keys are 
++00001620: 6368 6169 6e20 4964 7320 616e 6420 7365  chain Ids and se
++00001630: 636f 6e64 2d6c 6576 656c 206b 6579 7320  cond-level keys 
++00001640: 6172 6520 7468 6520 666f 6c6c 6f77 696e  are the followin
++00001650: 673a 0a2d 2060 2763 7264 5f62 6227 603a  g:.- `'crd_bb'`:
++00001660: 2061 2060 6e75 6d70 7960 2061 7272 6179   a `numpy` array
++00001670: 206f 6620 7368 6170 6520 6028 4c2c 2034   of shape `(L, 4
++00001680: 2c20 3329 6020 7769 7468 2062 6163 6b62  , 3)` with backb
++00001690: 6f6e 6520 6174 6f6d 2063 6f6f 7264 696e  one atom coordin
++000016a0: 6174 6573 2028 4e2c 2043 2c20 4341 2c20  ates (N, C, CA, 
++000016b0: 4f29 2c0a 2d20 6027 6372 645f 7363 2760  O),.- `'crd_sc'`
++000016c0: 3a20 6120 606e 756d 7079 6020 6172 7261  : a `numpy` arra
++000016d0: 7920 6f66 2073 6861 7065 2060 284c 2c20  y of shape `(L, 
++000016e0: 3130 2c20 3329 6020 7769 7468 2073 6964  10, 3)` with sid
++000016f0: 6563 6861 696e 2061 746f 6d20 636f 6f72  echain atom coor
++00001700: 6469 6e61 7465 7320 2863 6865 636b 2060  dinates (check `
++00001710: 7072 6f74 6569 6e66 6c6f 772e 7369 6465  proteinflow.side
++00001720: 6368 6169 6e5f 6f72 6465 7228 2960 2066  chain_order()` f
++00001730: 6f72 2074 6865 206f 7264 6572 206f 6620  or the order of 
++00001740: 6174 6f6d 7329 2c0a 2d20 6027 6d73 6b27  atoms),.- `'msk'
++00001750: 603a 2061 2060 6e75 6d70 7960 2061 7272  `: a `numpy` arr
++00001760: 6179 206f 6620 7368 6170 6520 6028 4c2c  ay of shape `(L,
++00001770: 2960 2077 6865 7265 206f 6e65 7320 636f  )` where ones co
++00001780: 7272 6573 706f 6e64 2074 6f20 7265 7369  rrespond to resi
++00001790: 6475 6573 2077 6974 6820 6b6e 6f77 6e20  dues with known 
++000017a0: 636f 6f72 6469 6e61 7465 7320 616e 640a  coordinates and.
++000017b0: 2020 2020 7a65 726f 7320 746f 206d 6973      zeros to mis
++000017c0: 7369 6e67 2076 616c 7565 732c 0a2d 2060  sing values,.- `
++000017d0: 2773 6571 2760 3a20 6120 7374 7269 6e67  'seq'`: a string
++000017e0: 206f 6620 6c65 6e67 7468 2060 4c60 2077   of length `L` w
++000017f0: 6974 6820 7265 7369 6475 6520 7479 7065  ith residue type
++00001800: 732e 0a0a 4f6e 6365 2079 6f75 7220 6461  s...Once your da
++00001810: 7461 2069 7320 7265 6164 792c 2079 6f75  ta is ready, you
++00001820: 2063 616e 206f 7065 6e20 7468 6520 6669   can open the fi
++00001830: 6c65 7320 6469 7265 6374 6c79 2077 6974  les directly wit
++00001840: 6820 6070 6963 6b6c 6560 2074 6f20 6163  h `pickle` to ac
++00001850: 6365 7373 2074 6869 7320 6461 7461 2e0a  cess this data..
++00001860: 0a60 6060 7079 7468 6f6e 0a69 6d70 6f72  .```python.impor
++00001870: 7420 7069 636b 6c65 0a69 6d70 6f72 7420  t pickle.import 
++00001880: 6f73 0a0a 7472 6169 6e5f 666f 6c64 6572  os..train_folder
++00001890: 203d 2022 2e2f 6461 7461 2f70 726f 7465   = "./data/prote
++000018a0: 696e 666c 6f77 5f6e 6577 2f74 7261 696e  inflow_new/train
++000018b0: 696e 6722 0a66 6f72 2066 696c 656e 616d  ing".for filenam
++000018c0: 6520 696e 206f 732e 6c69 7374 6469 7228  e in os.listdir(
++000018d0: 7472 6169 6e5f 666f 6c64 6572 293a 0a20  train_folder):. 
++000018e0: 2020 2077 6974 6820 6f70 656e 286f 732e     with open(os.
++000018f0: 7061 7468 2e6a 6f69 6e28 7472 6169 6e5f  path.join(train_
++00001900: 666f 6c64 6572 2c20 6669 6c65 6e61 6d65  folder, filename
++00001910: 292c 2022 7262 2229 2061 7320 663a 0a20  ), "rb") as f:. 
++00001920: 2020 2020 2020 2064 6174 6120 3d20 7069         data = pi
++00001930: 636b 6c65 2e6c 6f61 6428 6629 0a20 2020  ckle.load(f).   
++00001940: 2063 7264 5f62 6220 3d20 6461 7461 5b22   crd_bb = data["
++00001950: 6372 645f 6262 225d 0a20 2020 2073 6571  crd_bb"].    seq
++00001960: 203d 2064 6174 615b 2273 6571 225d 0a20   = data["seq"]. 
++00001970: 2020 202e 2e2e 0a60 6060 0a0a 416c 7465     ....```..Alte
++00001980: 726e 6174 6976 656c 792c 2079 6f75 2063  rnatively, you c
++00001990: 616e 2075 7365 206f 7572 2060 5072 6f74  an use our `Prot
++000019a0: 6569 6e44 6174 6173 6574 6020 6f72 2060  einDataset` or `
++000019b0: 5072 6f74 6569 6e4c 6f61 6465 7260 2063  ProteinLoader` c
++000019c0: 6c61 7373 6573 200a 666f 7220 636f 6e76  lasses .for conv
++000019d0: 656e 6965 6e74 2070 726f 6365 7373 696e  enient processin
++000019e0: 672e 2041 6d6f 6e67 206f 7468 6572 2074  g. Among other t
++000019f0: 6869 6e67 732c 2074 6865 7920 616c 6c6f  hings, they allo
++00001a00: 7720 666f 7220 6665 6174 7572 6520 6578  w for feature ex
++00001a10: 7472 6163 7469 6f6e 2c20 7369 6e67 6c65  traction, single
++00001a20: 2063 6861 696e 202f 2068 6f6d 6f6d 6572   chain / homomer
++00001a30: 202f 2068 6574 6572 6f6d 6572 2066 696c   / heteromer fil
++00001a40: 7465 7269 6e67 2061 6e64 2072 616e 646f  tering and rando
++00001a50: 6d69 7a65 6420 7361 6d70 6c69 6e67 2066  mized sampling f
++00001a60: 726f 6d20 7365 7175 656e 6365 2069 6465  rom sequence ide
++00001a70: 6e74 6974 7920 636c 7573 7465 7273 2e0a  ntity clusters..
++00001a80: 0a46 6f72 2065 7861 6d70 6c65 2c20 6865  .For example, he
++00001a90: 7265 2069 7320 686f 7720 7765 2063 616e  re is how we can
++00001aa0: 2063 7265 6174 6520 6120 6461 7461 206c   create a data l
++00001ab0: 6f61 6465 7220 7468 6174 3a0a 2d20 7361  oader that:.- sa
++00001ac0: 6d70 6c65 7320 6120 6469 6666 6572 656e  mples a differen
++00001ad0: 7420 636c 7573 7465 7220 7265 7072 6573  t cluster repres
++00001ae0: 656e 7461 7469 7665 2061 7420 6576 6572  entative at ever
++00001af0: 7920 6570 6f63 682c 0a2d 2065 7874 7261  y epoch,.- extra
++00001b00: 6374 7320 6469 6865 6472 616c 2061 6e67  cts dihedral ang
++00001b10: 6c65 732c 2073 6964 6563 6861 696e 206f  les, sidechain o
++00001b20: 7269 656e 7461 7469 6f6e 2061 6e64 2073  rientation and s
++00001b30: 6563 6f6e 6461 7279 2073 7472 7563 7475  econdary structu
++00001b40: 7265 2066 6561 7475 7265 732c 0a2d 206f  re features,.- o
++00001b50: 6e6c 7920 6c6f 6164 7320 7061 6972 7320  nly loads pairs 
++00001b60: 6f66 2069 6e74 6572 6163 7469 6e67 2070  of interacting p
++00001b70: 726f 7465 696e 7320 286c 6172 6765 7220  roteins (larger 
++00001b80: 6269 6f75 6e69 7473 2061 7265 2062 726f  biounits are bro
++00001b90: 6b65 6e20 7570 2069 6e74 6f20 7061 6972  ken up into pair
++00001ba0: 7329 2c0a 2d20 6861 7320 6261 7463 6820  s),.- has batch 
++00001bb0: 7369 7a65 2038 2e0a 0a60 6060 7079 7468  size 8...```pyth
++00001bc0: 6f6e 0a66 726f 6d20 7072 6f74 6569 6e66  on.from proteinf
++00001bd0: 6c6f 7720 696d 706f 7274 2050 726f 7465  low import Prote
++00001be0: 696e 4c6f 6164 6572 0a74 7261 696e 5f6c  inLoader.train_l
++00001bf0: 6f61 6465 7220 3d20 5072 6f74 6569 6e4c  oader = ProteinL
++00001c00: 6f61 6465 722e 6672 6f6d 5f61 7267 7328  oader.from_args(
++00001c10: 0a20 2020 2022 2e2f 6461 7461 2f70 726f  .    "./data/pro
++00001c20: 7465 696e 666c 6f77 5f6e 6577 2f74 7261  teinflow_new/tra
++00001c30: 696e 696e 6722 2c20 0a20 2020 2063 6c75  ining", .    clu
++00001c40: 7374 6572 696e 675f 6469 6374 5f70 6174  stering_dict_pat
++00001c50: 683d 222e 2f64 6174 612f 7072 6f74 6569  h="./data/protei
++00001c60: 6e66 6c6f 775f 6e65 772f 7370 6c69 7473  nflow_new/splits
++00001c70: 5f64 6963 742f 7472 6169 6e2e 7069 636b  _dict/train.pick
++00001c80: 6c65 222c 0a20 2020 206e 6f64 655f 6665  le",.    node_fe
++00001c90: 6174 7572 6573 5f74 7970 653d 2264 6968  atures_type="dih
++00001ca0: 6564 7261 6c2b 7369 6465 6368 6169 6e5f  edral+sidechain_
++00001cb0: 6f72 6965 6e74 6174 696f 6e2b 7365 636f  orientation+seco
++00001cc0: 6e64 6172 795f 7374 7275 6374 7572 6522  ndary_structure"
++00001cd0: 2c0a 2020 2020 656e 7472 795f 7479 7065  ,.    entry_type
++00001ce0: 3d22 7061 6972 222c 0a20 2020 2062 6174  ="pair",.    bat
++00001cf0: 6368 5f73 697a 653d 382c 0a29 0a66 6f72  ch_size=8,.).for
++00001d00: 2062 6174 6368 2069 6e20 7472 6169 6e5f   batch in train_
++00001d10: 6c6f 6164 6572 3a0a 2020 2020 6372 645f  loader:.    crd_
++00001d20: 6262 203d 2062 6174 6368 5b22 5822 5d20  bb = batch["X"] 
++00001d30: 2328 422c 204c 2c20 342c 2033 290a 2020  #(B, L, 4, 3).  
++00001d40: 2020 7365 7120 3d20 6261 7463 685b 2253    seq = batch["S
++00001d50: 225d 2023 2842 2c20 4c29 0a20 2020 2073  "] #(B, L).    s
++00001d60: 7365 203d 2062 6174 6368 5b22 7365 636f  se = batch["seco
++00001d70: 6e64 6172 795f 7374 7275 6374 7572 6522  ndary_structure"
++00001d80: 5d20 2328 422c 204c 2c20 3329 0a20 2020  ] #(B, L, 3).   
++00001d90: 2074 6f5f 7072 6564 6963 7420 3d20 6261   to_predict = ba
++00001da0: 7463 685b 226d 6173 6b65 645f 7265 7322  tch["masked_res"
++00001db0: 5d20 2328 422c 204c 292c 2031 2077 6865  ] #(B, L), 1 whe
++00001dc0: 7265 2074 6865 2072 6573 6964 7565 7320  re the residues 
++00001dd0: 7368 6f75 6c64 2062 6520 6d61 736b 6564  should be masked
++00001de0: 2c20 3020 6f74 6865 7277 6973 650a 2020  , 0 otherwise.  
++00001df0: 2020 2e2e 2e0a 6060 600a 5365 6520 6d6f    ....```.See mo
++00001e00: 7265 2064 6574 6169 6c73 206f 6e20 6176  re details on av
++00001e10: 6169 6c61 626c 6520 7061 7261 6d65 7465  ailable paramete
++00001e20: 7273 2061 6e64 2074 6865 2064 6174 6120  rs and the data 
++00001e30: 666f 726d 6174 2069 6e20 7468 6520 5b64  format in the [d
++00001e40: 6f63 735d 2868 7474 7073 3a2f 2f61 6461  ocs](https://ada
++00001e50: 7074 7976 6269 6f2e 6769 7468 7562 2e69  ptyvbio.github.i
++00001e60: 6f2f 5072 6f74 6569 6e46 6c6f 772f 2920  o/ProteinFlow/) 
++00001e70: 2b20 5b74 6869 7320 7265 706f 7369 746f  + [this reposito
++00001e80: 7279 5d28 6874 7470 733a 2f2f 6769 7468  ry](https://gith
++00001e90: 7562 2e63 6f6d 2f61 6461 7074 7976 6269  ub.com/adaptyvbi
++00001ea0: 6f2f 5072 6f74 6569 6e46 6c6f 772d 6d6f  o/ProteinFlow-mo
++00001eb0: 6465 6c73 2920 666f 7220 6120 7573 6520  dels) for a use 
++00001ec0: 6361 7365 2e0a 0a23 2320 5072 6f74 6569  case...## Protei
++00001ed0: 6e46 6c6f 7720 5374 6162 6c65 2052 656c  nFlow Stable Rel
++00001ee0: 6561 7365 730a 596f 7520 6361 6e20 646f  eases.You can do
++00001ef0: 776e 6c6f 6164 2074 6865 6d20 7769 7468  wnload them with
++00001f00: 2060 7072 6f74 6569 6e66 6c6f 7720 646f   `proteinflow do
++00001f10: 776e 6c6f 6164 202d 2d74 6167 207b 7461  wnload --tag {ta
++00001f20: 677d 6020 696e 2074 6865 2063 6f6d 6d61  g}` in the comma
++00001f30: 6e64 206c 696e 6520 6f72 2062 726f 7773  nd line or brows
++00001f40: 6520 696e 2074 6865 205b 696e 7465 7266  e in the [interf
++00001f50: 6163 655d 2868 7474 7073 3a2f 2f70 726f  ace](https://pro
++00001f60: 7465 696e 666c 6f77 2d64 6174 6173 6574  teinflow-dataset
++00001f70: 732e 7333 2e65 752d 7765 7374 2d31 2e61  s.s3.eu-west-1.a
++00001f80: 6d61 7a6f 6e61 7773 2e63 6f6d 2f69 6e64  mazonaws.com/ind
++00001f90: 6578 2e68 746d 6c29 2e0a 0a7c 5461 6720  ex.html)...|Tag 
++00001fa0: 2020 207c 4461 7465 2020 2020 7c53 6e61     |Date    |Sna
++00001fb0: 7073 686f 747c 5369 7a65 7c4d 696e 2072  pshot|Size|Min r
++00001fc0: 6573 7c4d 696e 206c 656e 7c4d 6178 206c  es|Min len|Max l
++00001fd0: 656e 7c4d 4d73 6571 7320 7468 727c 5370  en|MMseqs thr|Sp
++00001fe0: 6c69 7420 2874 7261 696e 2f76 616c 2f74  lit (train/val/t
++00001ff0: 6573 7429 7c4d 6973 7369 6e67 2074 6872  est)|Missing thr
++00002000: 2028 656e 6473 2f6d 6964 646c 6529 7c4e   (ends/middle)|N
++00002010: 6f74 657c 0a7c 2d2d 2d2d 2d2d 2d7c 2d2d  ote|.|-------|--
++00002020: 2d2d 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 2d7c  ------|--------|
++00002030: 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 7c2d 2d2d  ----|-------|---
++00002040: 2d2d 2d2d 7c2d 2d2d 2d2d 2d2d 7c2d 2d2d  ----|-------|---
++00002050: 2d2d 2d2d 2d2d 2d7c 2d2d 2d2d 2d2d 2d2d  -------|--------
++00002060: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 7c2d  --------------|-
++00002070: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
++00002080: 2d2d 2d2d 2d2d 2d2d 7c2d 2d2d 2d7c 0a7c  --------|----|.|
++00002090: 7061 7065 727c 3130 2e31 312e 3232 7c32  paper|10.11.22|2
++000020a0: 3032 3230 3130 337c 3234 477c 332e 357c  0220103|24G|3.5|
++000020b0: 3330 7c31 3027 3030 307c 302e 337c 3930  30|10'000|0.3|90
++000020c0: 2f35 2f35 7c30 2e33 2f30 2e31 7c66 6972  /5/5|0.3/0.1|fir
++000020d0: 7374 2072 656c 6561 7365 2c20 6e6f 206d  st release, no m
++000020e0: 6d43 4946 2066 696c 6573 7c0a 7c32 3032  mCIF files|.|202
++000020f0: 3330 3130 325f 7374 6162 6c65 7c32 372e  30102_stable|27.
++00002100: 3032 2e32 337c 3230 3233 3031 3032 7c32  02.23|20230102|2
++00002110: 3847 7c33 2e35 7c33 307c 3130 2730 3030  8G|3.5|30|10'000
++00002120: 7c30 2e33 7c39 302f 352f 357c 302e 332f  |0.3|90/5/5|0.3/
++00002130: 302e 317c 2076 312e 312e 317c 0a0a 2323  0.1| v1.1.1|..##
++00002140: 204c 6963 656e 7365 0a54 6865 2060 7072   License.The `pr
++00002150: 6f74 6569 6e66 6c6f 7760 2070 6163 6b61  oteinflow` packa
++00002160: 6765 2061 6e64 2064 6174 6120 6172 6520  ge and data are 
++00002170: 7265 6c65 6173 6564 2061 6e64 2064 6973  released and dis
++00002180: 7472 6962 7574 6564 2075 6e64 6572 2074  tributed under t
++00002190: 6865 2042 5344 2033 2d43 6c61 7573 6520  he BSD 3-Clause 
++000021a0: 4c69 6365 6e73 650a 0a0a 2323 2043 6f6e  License...## Con
++000021b0: 7472 6962 7574 696f 6e73 0a54 6869 7320  tributions.This 
++000021c0: 6973 2061 6e20 6f70 656e 2073 6f75 7263  is an open sourc
++000021d0: 6520 7072 6f6a 6563 7420 7375 7070 6f72  e project suppor
++000021e0: 7465 6420 6279 205b 4164 6170 7479 7620  ted by [Adaptyv 
++000021f0: 4269 6f5d 2868 7474 7073 3a2f 2f77 7777  Bio](https://www
++00002200: 2e61 6461 7074 7976 6269 6f2e 636f 6d2f  .adaptyvbio.com/
++00002210: 292e 2043 6f6e 7472 6962 7574 696f 6e73  ). Contributions
++00002220: 2c20 7375 6767 6573 7469 6f6e 7320 616e  , suggestions an
++00002230: 6420 6275 672d 6669 7865 7320 6172 6520  d bug-fixes are 
++00002240: 7765 6c63 6f6d 6564 2e0a 0a              welcomed...
+```
+
+### Comparing `proteinflow-1.2.9/proteinflow.egg-info/SOURCES.txt` & `proteinflow-1.3.0/proteinflow.egg-info/SOURCES.txt`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -16,8 +16,9 @@
+ proteinflow/utils/build_pdb.py
+ proteinflow/utils/cluster_and_partition.py
+ proteinflow/utils/filter_database.py
+ proteinflow/utils/mmcif_fix.py
+ proteinflow/utils/process_pdb.py
+ proteinflow/utils/split_dataset.py
+ tests/test_download.py
+-tests/test_generate.py
++tests/test_generate.py
++tests/test_sabdab.py
+```
+
+### Comparing `proteinflow-1.2.9/pyproject.toml` & `proteinflow-1.3.0/pyproject.toml`
+
+ * *Files 14% similar despite different names*
+
+```diff
+@@ -1,40 +1,40 @@
+ [build-system]
+ requires = ["setuptools"]
+ build-backend = "setuptools.build_meta"
+ 
+ [project]
+ name = "proteinflow"
+-version = "1.2.9"
++version = "1.3.0"
+ authors = [
+-    {name = "Elizaveta Kozlova", email = "liza@adaptyvbio.com"},
++    {name = "Liza Kozlova", email = "liza@adaptyvbio.com"},
+     {name = "Arthur Valentin", email = "arthur@adaptyvbio.com"}
+ ]
+ description = "Versatile pipeline for processing protein structure data for deep learning applications."
+ readme = "README.md"
+ requires-python = ">=3.8"
+ license = {text = "BSD-3-Clause"}
+ dependencies = [
+-    "numpy",
++    "numpy>=1.17",
+     "editdistance>=0.6.0",
+     "Biopython==1.79",
+     "click>=8.1.3",
+     "biopandas>=0.4.1",
+     "boto3==1.24.59",
+     "p_tqdm>=1.4.0",
+-    "networkx==2.8.8",
++    "networkx==2.8.8", # for partitioning
+     "einops>=0.6.0",
+     "pandas>=1.5.2",
+     "torch>=1.10.0",
+     "biotite==0.35.0",
+     "aiobotocore==2.4.2",
+     "awscli==1.25.60",
++    "bs4>=0.0.1",
+     "rcsbsearch",
+-    "sidechainnet",
+ ]
+ keywords = ["bioinformatics", "dataset", "protein", "PDB", "deep learning"]
+ 
+ [project.scripts]
+ proteinflow = "proteinflow.scripts.proteinflow_cli:cli"
+ 
+ [tool.setuptools.packages]
+-find = {}
++find = {}
+```
+
+### Comparing `proteinflow-1.2.9/tests/test_download.py` & `proteinflow-1.3.0/tests/test_download.py`
+
+ * *Files identical despite different names*
+
+### Comparing `proteinflow-1.2.9/tests/test_generate.py` & `proteinflow-1.3.0/tests/test_generate.py`
+
+ * *Files identical despite different names*
+
