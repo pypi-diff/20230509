@@ -13140,3 +13140,109 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 11:19:59] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
 [2023-05-09 11:20:03] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2023-05-09 11:20:03] INFO root fetch - main [MainThread]: Store serial: [18029981]
+[2023-05-09 11:25:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029981]
+[2023-05-09 11:25:12] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chromedriverhandlar
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reticula
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bridgecrew
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ykenan-fragments
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyclarify
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: certora-cli-alpha-uri-generate-link-json
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-kit-annotation
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: deep-clone
+[2023-05-09 11:25:12] INFO root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: New version: [20230508.23.30.372133] Old Version: [20230508.21.19.138410]
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ykenan-fragments]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-09 11:25:12] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: New version: [20230508.23.35.776087] Old Version: [20230508.21.18.137806]
+[2023-05-09 11:25:12] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-09 11:25:12] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-09 11:25:12] WARNING root fetch - processPackages [chromedriverhandlar]: Skipping, unable to determine old version
+[2023-05-09 11:25:12] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-09 11:25:12] INFO root fetch - processPackages [chromedriverhandlar]: Start processing: odoo14-addon-connector-importer
+[2023-05-09 11:25:12] INFO root fetch - processPackages [deep-clone]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-09 11:25:12] INFO root fetch - main [MainThread]: End processing [chromedriverhandlar] error
+[2023-05-09 11:25:12] INFO root fetch - processPackages [pyclarify]: New version: [0.4.3b2] Old Version: [0.4.3b1]
+[2023-05-09 11:25:12] INFO root fetch - processPackages [reticula]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-09 11:25:12] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: Downloading https://files.pythonhosted.org/packages/43/39/1dd5759321a684914d4cfc584e2f873db1cd3cd9e32c42688e0b1cbc4789/certora-cli-alpha-kit-annotation-20230508.21.18.137806.tar.gz
+[2023-05-09 11:25:12] INFO root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: Downloading https://files.pythonhosted.org/packages/d9/c5/ef415bfba8bea5ea4b0bcf590693645d13dd95a4e70009d4f95fe14100f8/certora-cli-alpha-uri-generate_link_json-20230508.21.19.138410.tar.gz
+[2023-05-09 11:25:12] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-09 11:25:12] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230509/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ykenan-fragments]: executing diffoscope
+[2023-05-09 11:25:12] INFO root fetch - processPackages [ykenan-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_fragments-1.1.8.tar.gz tmp/ykenan_fragments-1.1.9.tar.gz --markdown 20230509/y/ykenan-fragments/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-09 11:25:12] WARNING root fetch - processPackages [certora-cli-alpha-kit-annotation]: Skipping package: exceeds size limit 38483479>=10485760
+[2023-05-09 11:25:12] WARNING root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: Skipping package: exceeds size limit 38477193>=10485760
+[2023-05-09 11:25:12] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: Start processing: cliff
+[2023-05-09 11:25:12] INFO root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: Start processing: licensekeygentest
+[2023-05-09 11:25:12] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-kit-annotation] error
+[2023-05-09 11:25:12] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-uri-generate-link-json] error
+[2023-05-09 11:25:13] INFO root fetch - processPackages [odoo14-addon-connector-importer]: New version: [14.0.2.0.0] Old Version: [14.0.1.2.0]
+[2023-05-09 11:25:13] INFO root fetch - processPackages [licensekeygentest]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 11:25:13] INFO root fetch - processPackages [cliff]: New version: [4.2.0] Old Version: [4.1.0]
+[2023-05-09 11:25:13] INFO root fetch - processPackages [reticula]: Downloading https://files.pythonhosted.org/packages/0e/a5/ee966906087caea860d0d8b4de6e7b376ed705596d1dac1f543d2dd7610b/reticula-0.8.1-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-09 11:25:13] INFO root fetch - processPackages [deep-clone]: Downloading https://files.pythonhosted.org/packages/72/04/fffa47f95c238b615bd846205ce137aa118b14ab51f0794e352cd8608c7a/deep-clone-0.0.5.tar.gz
+[2023-05-09 11:25:13] WARNING root fetch - processPackages [reticula]: Skipping package: exceeds size limit 27660188>=10485760
+[2023-05-09 11:25:13] INFO root fetch - processPackages [reticula]: Start processing: buteo
+[2023-05-09 11:25:13] INFO root fetch - main [MainThread]: End processing [reticula] error
+[2023-05-09 11:25:13] INFO root fetch - processPackages [pyclarify]: Downloading https://files.pythonhosted.org/packages/0c/4e/22303453be9c5c89c893d3c013e86e6989cbe121a7885024c33b2f938439/pyclarify-0.4.3b1.tar.gz
+[2023-05-09 11:25:13] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-09 11:25:13] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-09 11:25:13] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230509/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-09 11:25:13] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230509/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-09 11:25:13] INFO root fetch - processPackages [cliff]: Downloading https://files.pythonhosted.org/packages/b2/4c/3cfdb24a1db87b00ed3d1818ae0e32d51733f21aae3da6508091a392f5aa/cliff-4.1.0.tar.gz
+[2023-05-09 11:25:13] INFO root fetch - processPackages [odoo14-addon-connector-importer]: Downloading https://files.pythonhosted.org/packages/8e/62/8f1c3786d6f65d88f6bf994563e3f56f14022eb85796b0b7b889d7add16b/odoo14_addon_connector_importer-14.0.1.2.0-py3-none-any.whl
+[2023-05-09 11:25:13] INFO root fetch - processPackages [buteo]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-05-09 11:25:13] INFO root fetch - processPackages [licensekeygentest]: Downloading https://files.pythonhosted.org/packages/44/fe/3e3c714a3485a2ece0d620823553c8f24ee21549b62447f76f878112c1b1/licensekeygentest-0.0.3.tar.gz
+[2023-05-09 11:25:13] INFO root fetch - processPackages [licensekeygentest]: executing diffoscope
+[2023-05-09 11:25:13] INFO root fetch - processPackages [licensekeygentest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/licensekeygentest-0.0.2.tar.gz tmp/licensekeygentest-0.0.3.tar.gz --markdown 20230509/l/licensekeygentest/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 11:25:13] INFO root fetch - processPackages [deep-clone]: Downloading https://files.pythonhosted.org/packages/37/d0/8967d4d5c1226c82fe77f726a79c2f88a7dc8ae5bd43791449985cea6bd3/deep-clone-0.0.6.tar.gz
+[2023-05-09 11:25:13] INFO root fetch - processPackages [pyclarify]: Downloading https://files.pythonhosted.org/packages/8a/92/4e34e283053a2bd22c7a47de8d0567bcb9371fcf12d3da06f2a245245c20/pyclarify-0.4.3b2.tar.gz
+[2023-05-09 11:25:13] INFO root fetch - processPackages [buteo]: Downloading https://files.pythonhosted.org/packages/b3/2c/6b6616890ec0f00aaa57530f262dd636e185eeb4b4e622dcbeee26b95f14/buteo-0.8.9.tar.gz
+[2023-05-09 11:25:13] INFO root fetch - processPackages [cliff]: Downloading https://files.pythonhosted.org/packages/fe/6b/f9b689bef6ec161cb96a9f863fde77079c7edeb4cf5fa33561ee3ec22a61/cliff-4.2.0.tar.gz
+[2023-05-09 11:25:13] INFO root fetch - processPackages [deep-clone]: executing diffoscope
+[2023-05-09 11:25:13] INFO root fetch - processPackages [deep-clone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep-clone-0.0.5.tar.gz tmp/deep-clone-0.0.6.tar.gz --markdown 20230509/d/deep-clone/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 11:25:13] INFO root fetch - processPackages [cliff]: executing diffoscope
+[2023-05-09 11:25:13] INFO root fetch - processPackages [cliff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliff-4.1.0.tar.gz tmp/cliff-4.2.0.tar.gz --markdown 20230509/c/cliff/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2023-05-09 11:25:13] INFO root fetch - processPackages [pyclarify]: executing diffoscope
+[2023-05-09 11:25:13] INFO root fetch - processPackages [pyclarify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclarify-0.4.3b1.tar.gz tmp/pyclarify-0.4.3b2.tar.gz --markdown 20230509/p/pyclarify/0.4.3b1-0.4.3b2/diff.md --exclude *.pyd
+[2023-05-09 11:25:13] INFO root fetch - processPackages [buteo]: Downloading https://files.pythonhosted.org/packages/a6/49/53d460b5453f2f7f244dbc2e3d08befaa99a769799fe6d79d581eccaa3da/buteo-0.9.0.tar.gz
+[2023-05-09 11:25:13] INFO root fetch - processPackages [odoo14-addon-connector-importer]: Downloading https://files.pythonhosted.org/packages/5b/b0/59792b6565999daf0540efc17b0634ca6b783b2d9b309cda621035b31744/odoo14_addon_connector_importer-14.0.2.0.0-py3-none-any.whl
+[2023-05-09 11:25:13] INFO root fetch - processPackages [buteo]: executing diffoscope
+[2023-05-09 11:25:13] INFO root fetch - processPackages [buteo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buteo-0.8.9.tar.gz tmp/buteo-0.9.0.tar.gz --markdown 20230509/b/buteo/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 11:25:13] INFO root fetch - processPackages [odoo14-addon-connector-importer]: executing diffoscope
+[2023-05-09 11:25:13] INFO root fetch - processPackages [odoo14-addon-connector-importer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_connector_importer-14.0.1.2.0-py3-none-any.whl.zip tmp/odoo14_addon_connector_importer-14.0.2.0.0-py3-none-any.whl.zip --markdown 20230509/o/odoo14-addon-connector-importer/14.0.1.2.0-14.0.2.0.0/diff.md --exclude *.pyd
+[2023-05-09 11:25:14] INFO root fetch - processPackages [bridgecrew]: Start processing: sgclimaapiclient
+[2023-05-09 11:25:14] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-09 11:25:14] INFO root fetch - processPackages [sgclimaapiclient]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-09 11:25:14] INFO root fetch - processPackages [sgclimaapiclient]: Downloading https://files.pythonhosted.org/packages/88/50/7a4d65f2a5ebb8c304716e6c9c6a904ab89aa6e106ba951a82fe959d10b6/sgclimaapiclient-1.1.8.tar.gz
+[2023-05-09 11:25:14] INFO root fetch - processPackages [ykenan-fragments]: Start processing: armonik
+[2023-05-09 11:25:14] INFO root fetch - main [MainThread]: End processing [ykenan-fragments]: success
+[2023-05-09 11:25:15] INFO root fetch - processPackages [armonik]: New version: [3.8.2.dev316] Old Version: [3.8.2.dev313]
+[2023-05-09 11:25:15] INFO root fetch - processPackages [licensekeygentest]: Start processing: ht-pricing-module
+[2023-05-09 11:25:15] INFO root fetch - main [MainThread]: End processing [licensekeygentest]: success
+[2023-05-09 11:25:15] INFO root fetch - processPackages [ht-pricing-module]: New version: [0.2.0] Old Version: [0.1.37]
+[2023-05-09 11:25:15] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/bc/37/436ebd65583bdbc1124830ea7f099d88cd86d97d7354cf091d140c89e53c/armonik-3.8.2.dev313.tar.gz
+[2023-05-09 11:25:15] INFO root fetch - processPackages [sgclimaapiclient]: Downloading https://files.pythonhosted.org/packages/6f/10/7c81648b2176694508c5aa7d054fc4f41d8e89f877d149f20290c26b1f16/sgclimaapiclient-1.1.9.tar.gz
+[2023-05-09 11:25:15] INFO root fetch - processPackages [deep-clone]: Start processing: KeyboardPaster
+[2023-05-09 11:25:15] INFO root fetch - main [MainThread]: End processing [deep-clone]: success
+[2023-05-09 11:25:15] INFO root fetch - processPackages [ht-pricing-module]: Downloading https://files.pythonhosted.org/packages/9e/ca/1faf31cb631206bdad810594c5e3c54d295ffe57a56f83b7bfa6aaadfb9f/ht_pricing_module-0.1.37.tar.gz
+[2023-05-09 11:25:15] WARNING root fetch - processPackages [KeyboardPaster]: Skipping, unable to determine old version
+[2023-05-09 11:25:15] INFO root fetch - main [MainThread]: End processing [KeyboardPaster] error
+[2023-05-09 11:25:15] INFO root fetch - processPackages [sgclimaapiclient]: executing diffoscope
+[2023-05-09 11:25:15] INFO root fetch - processPackages [sgclimaapiclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sgclimaapiclient-1.1.8.tar.gz tmp/sgclimaapiclient-1.1.9.tar.gz --markdown 20230509/s/sgclimaapiclient/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-09 11:25:15] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/79/a3/ed5d1880be1cb3031f2fa4febb02f39d5f901e1362572a05080205340bf8/armonik-3.8.2.dev316.tar.gz
+[2023-05-09 11:25:15] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-09 11:25:15] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-09 11:25:15] INFO root fetch - processPackages [armonik]: executing diffoscope
+[2023-05-09 11:25:15] INFO root fetch - processPackages [armonik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armonik-3.8.2.dev313.tar.gz tmp/armonik-3.8.2.dev316.tar.gz --markdown 20230509/a/armonik/3.8.2.dev313-3.8.2.dev316/diff.md --exclude *.pyd
+[2023-05-09 11:25:15] INFO root fetch - processPackages [ht-pricing-module]: Downloading https://files.pythonhosted.org/packages/0a/93/8c35ceae8021052f2b08ac51ae5570661b518e7bd0c90947b24f48db8a97/ht_pricing_module-0.2.0.tar.gz
+[2023-05-09 11:25:15] INFO root fetch - processPackages [ht-pricing-module]: executing diffoscope
+[2023-05-09 11:25:15] INFO root fetch - processPackages [ht-pricing-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ht_pricing_module-0.1.37.tar.gz tmp/ht_pricing_module-0.2.0.tar.gz --markdown 20230509/h/ht-pricing-module/0.1.37-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 11:25:16] INFO root fetch - main [MainThread]: End processing [odoo14-addon-connector-importer]: success
+[2023-05-09 11:25:16] INFO root fetch - main [MainThread]: End processing [pyclarify]: success
+[2023-05-09 11:25:16] INFO root fetch - main [MainThread]: End processing [sgclimaapiclient]: success
+[2023-05-09 11:25:17] INFO root fetch - main [MainThread]: End processing [buteo]: success
+[2023-05-09 11:25:18] INFO root fetch - main [MainThread]: End processing [armonik]: success
+[2023-05-09 11:25:18] INFO root fetch - main [MainThread]: End processing [ht-pricing-module]: success
+[2023-05-09 11:25:18] INFO root fetch - main [MainThread]: End processing [cliff]: success
+[2023-05-09 11:25:18] INFO root fetch - main [MainThread]: Store serial: [18030062]
