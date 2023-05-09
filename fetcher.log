@@ -21299,3 +21299,128 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 18:59:23] INFO root fetch - main [MainThread]: End processing [django-ditto]: success
 [2023-05-09 18:59:26] INFO root fetch - main [MainThread]: End processing [edgeimpulse-api]: success
 [2023-05-09 18:59:26] INFO root fetch - main [MainThread]: Store serial: [18035119]
+[2023-05-09 19:04:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18035119]
+[2023-05-09 19:04:37] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: garatool
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyboil
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notebook
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: garatool
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastcoref
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: csaf
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: opentok
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: unpast
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyboil
+[2023-05-09 19:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: certora-cli-alpha-kit-annotation
+[2023-05-09 19:04:37] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 19:04:37] INFO root fetch - processPackages [garatool]: New version: [0.1683651712.0] Old Version: [0.1683651594.0]
+[2023-05-09 19:04:37] INFO root fetch - processPackages [unpast]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 19:04:37] INFO root fetch - processPackages [opentok]: New version: [3.5.0] Old Version: [3.4.0]
+[2023-05-09 19:04:37] INFO root fetch - processPackages [csaf]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-09 19:04:37] INFO root fetch - processPackages [fastcoref]: New version: [2.1.5] Old Version: [2.1.4]
+[2023-05-09 19:04:37] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 19:04:37] INFO root fetch - processPackages [garatool]: New version: [0.1683651712.0] Old Version: [0.1683651594.0]
+[2023-05-09 19:04:37] INFO root fetch - processPackages [notebook]: New version: [7.0.0b2] Old Version: [7.0.0b1]
+[2023-05-09 19:04:37] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: New version: [20230509.9.22.669299] Old Version: [20230509.17.1.963945]
+[2023-05-09 19:04:38] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/41/ce/96277439911696534bc9e0210f8f27f9649bdbaeea12d2c6171c0525e417/garatool-0.1683651594.0.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/41/ce/96277439911696534bc9e0210f8f27f9649bdbaeea12d2c6171c0525e417/garatool-0.1683651594.0.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [unpast]: Downloading https://files.pythonhosted.org/packages/9e/fe/ee624c04892b26dca63bfad2f4869d41640f810fd2beca1915a4be1ca895/unpast-0.1.4.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pyboil]: Downloading https://files.pythonhosted.org/packages/f6/fd/b094e6f2720a3a43f48d6692858fb5f9148cccce00d912929ca4c0d612f3/pyboil-0.5.8.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pyboil]: Downloading https://files.pythonhosted.org/packages/f6/fd/b094e6f2720a3a43f48d6692858fb5f9148cccce00d912929ca4c0d612f3/pyboil-0.5.8.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: Downloading https://files.pythonhosted.org/packages/9d/2e/069129a3f6fd9dfc0ee5fc6508f5371cb77531881e196a4cb9aac0f0f1e8/certora-cli-alpha-kit-annotation-20230509.17.1.963945.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [fastcoref]: Downloading https://files.pythonhosted.org/packages/fd/3b/06a73e53c9b558a6c687a293787279cb2bb10d4e9cba79cf74d05ed8dd58/fastcoref-2.1.4.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [notebook]: Downloading https://files.pythonhosted.org/packages/ea/cd/f854735b0ebbd1d92e1b9aef677a3082686b31dbb9f649f272fc1034d471/notebook-7.0.0b1.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [csaf]: Downloading https://files.pythonhosted.org/packages/7f/37/adc520c788c345a222c7ae7fa8ed9498585783ec6bf0426f04975754eb21/csaf-2023.5.9.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [opentok]: Downloading https://files.pythonhosted.org/packages/c1/ac/e78f24e3214bc13e4d06eb7027c8628958973b818ea40ccf386e302ef99a/opentok-3.4.0.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [csaf]: executing diffoscope
+[2023-05-09 19:04:38] INFO root fetch - processPackages [csaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csaf-2023.5.8.tar.gz tmp/csaf-2023.5.9.tar.gz --markdown 20230509/c/csaf/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 19:04:38] WARNING root fetch - processPackages [certora-cli-alpha-kit-annotation]: Skipping package: exceeds size limit 39223505>=10485760
+[2023-05-09 19:04:38] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: Start processing: pysfa
+[2023-05-09 19:04:38] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-kit-annotation] error
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pysfa]: New version: [0.3] Old Version: [0.2]
+[2023-05-09 19:04:38] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/a4/78/f743edccc59260180bf6cb2399bb3a990ed0cd15e2ec8622be42c8b6cfe6/garatool-0.1683651712.0.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [unpast]: Downloading https://files.pythonhosted.org/packages/0c/7a/8dae5d8840280e27bd5b76cb5c3bac74d497024fbced1c713062b2c2e989/unpast-0.1.5.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/a4/78/f743edccc59260180bf6cb2399bb3a990ed0cd15e2ec8622be42c8b6cfe6/garatool-0.1683651712.0.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [fastcoref]: Downloading https://files.pythonhosted.org/packages/5a/14/122bb28258f19a569fba06d4ec93e3f3046d7344699093aab665977df807/fastcoref-2.1.5.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pyboil]: Downloading https://files.pythonhosted.org/packages/7e/50/35d795a07ea1cee1b1d8b3980f6c05bcaf084873d3d24360ea4792ef93a5/pyboil-0.5.9.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pyboil]: Downloading https://files.pythonhosted.org/packages/7e/50/35d795a07ea1cee1b1d8b3980f6c05bcaf084873d3d24360ea4792ef93a5/pyboil-0.5.9.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [opentok]: Downloading https://files.pythonhosted.org/packages/bc/51/4492f137a38eb71d96768b2d0044029b16da13f8419bbef9fc44fbcb8cab/opentok-3.5.0.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [unpast]: executing diffoscope
+[2023-05-09 19:04:38] INFO root fetch - processPackages [unpast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unpast-0.1.4.tar.gz tmp/unpast-0.1.5.tar.gz --markdown 20230509/u/unpast/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 19:04:38] INFO root fetch - processPackages [fastcoref]: executing diffoscope
+[2023-05-09 19:04:38] INFO root fetch - processPackages [fastcoref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastcoref-2.1.4.tar.gz tmp/fastcoref-2.1.5.tar.gz --markdown 20230509/f/fastcoref/2.1.4-2.1.5/diff.md --exclude *.pyd
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pysfa]: Downloading https://files.pythonhosted.org/packages/bc/cf/d11a4da1715a4e7bb9fb6370b33601e30aa83e12f7127341966df1e12fb0/pysfa-0.2.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 19:04:38] INFO root fetch - processPackages [opentok]: executing diffoscope
+[2023-05-09 19:04:38] INFO root fetch - processPackages [opentok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentok-3.4.0.tar.gz tmp/opentok-3.5.0.tar.gz --markdown 20230509/o/opentok/3.4.0-3.5.0/diff.md --exclude *.pyd
+[2023-05-09 19:04:38] INFO root fetch - processPackages [notebook]: Downloading https://files.pythonhosted.org/packages/d7/63/07ed24960e6a9b1a857fd8a8f3e538c5960bf32eee07c5cbd55b146686ac/notebook-7.0.0b2.tar.gz
+[2023-05-09 19:04:38] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 19:04:38] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683651594.0.tar.gz tmp/garatool-0.1683651712.0.tar.gz --markdown 20230509/g/garatool/0.1683651594.0-0.1683651712.0/diff.md --exclude *.pyd
+[2023-05-09 19:04:38] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 19:04:38] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683651594.0.tar.gz tmp/garatool-0.1683651712.0.tar.gz --markdown 20230509/g/garatool/0.1683651594.0-0.1683651712.0/diff.md --exclude *.pyd
+[2023-05-09 19:04:38] INFO root fetch - processPackages [notebook]: executing diffoscope
+[2023-05-09 19:04:38] INFO root fetch - processPackages [notebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notebook-7.0.0b1.tar.gz tmp/notebook-7.0.0b2.tar.gz --markdown 20230509/n/notebook/7.0.0b1-7.0.0b2/diff.md --exclude *.pyd
+[2023-05-09 19:04:38] INFO root fetch - processPackages [pysfa]: Downloading https://files.pythonhosted.org/packages/3c/7c/b70af276901791938ac1f019c8f6c89481e05f9abdc9a8b6c159751148fa/pysfa-0.3.tar.gz
+[2023-05-09 19:04:39] INFO root fetch - processPackages [pysfa]: executing diffoscope
+[2023-05-09 19:04:39] INFO root fetch - processPackages [pysfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysfa-0.2.tar.gz tmp/pysfa-0.3.tar.gz --markdown 20230509/p/pysfa/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-09 19:04:40] INFO root fetch - processPackages [unpast]: Start processing: garatool
+[2023-05-09 19:04:40] INFO root fetch - main [MainThread]: End processing [unpast]: success
+[2023-05-09 19:04:40] INFO root fetch - processPackages [garatool]: New version: [0.1683651712.0] Old Version: [0.1683651594.0]
+[2023-05-09 19:04:40] INFO root fetch - processPackages [pyboil]: Start processing: djlint
+[2023-05-09 19:04:40] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 19:04:40] INFO root fetch - processPackages [djlint]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-09 19:04:40] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 19:04:40] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683651594.0.tar.gz tmp/garatool-0.1683651712.0.tar.gz --markdown 20230509/g/garatool/0.1683651594.0-0.1683651712.0/diff.md --exclude *.pyd
+[2023-05-09 19:04:40] INFO root fetch - processPackages [djlint]: executing diffoscope
+[2023-05-09 19:04:40] INFO root fetch - processPackages [djlint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djlint-1.9.4.tar.gz tmp/djlint-1.9.5.tar.gz --markdown 20230509/d/djlint/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-09 19:04:40] INFO root fetch - processPackages [garatool]: Start processing: PyGObject-stubs
+[2023-05-09 19:04:40] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 19:04:40] INFO root fetch - processPackages [pyboil]: Start processing: osmsg
+[2023-05-09 19:04:40] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 19:04:40] INFO root fetch - processPackages [PyGObject-stubs]: New version: [2.7.0] Old Version: [2.6.0]
+[2023-05-09 19:04:40] INFO root fetch - processPackages [osmsg]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 19:04:40] INFO root fetch - processPackages [csaf]: Start processing: nexus-utilities
+[2023-05-09 19:04:40] INFO root fetch - main [MainThread]: End processing [csaf]: success
+[2023-05-09 19:04:40] INFO root fetch - processPackages [garatool]: Start processing: pine-client
+[2023-05-09 19:04:40] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 19:04:40] INFO root fetch - processPackages [nexus-utilities]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-09 19:04:40] INFO root fetch - processPackages [pine-client]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 19:04:40] INFO root fetch - processPackages [fastcoref]: Start processing: pyboil
+[2023-05-09 19:04:40] INFO root fetch - main [MainThread]: End processing [fastcoref]: success
+[2023-05-09 19:04:40] INFO root fetch - processPackages [PyGObject-stubs]: Downloading https://files.pythonhosted.org/packages/6a/fd/4196588d8f88108a6b072c3e91421cfa017f7a4498e165b15ec1f0472c43/PyGObject-stubs-2.6.0.tar.gz
+[2023-05-09 19:04:40] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 19:04:40] INFO root fetch - processPackages [osmsg]: Downloading https://files.pythonhosted.org/packages/7f/ee/203fe4b605d2c1613b13cfd363f229d5f1ed63db1709241e4e5002600adb/osmsg-0.1.8.tar.gz
+[2023-05-09 19:04:40] INFO root fetch - processPackages [pysfa]: Start processing: zou
+[2023-05-09 19:04:40] INFO root fetch - main [MainThread]: End processing [pysfa]: success
+[2023-05-09 19:04:40] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 19:04:40] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 19:04:40] INFO root fetch - processPackages [pine-client]: Downloading https://files.pythonhosted.org/packages/47/20/738c1d94431f5ac4e8ef0ecbf087c304496826264b1bcbaf0b71a70fef6f/pine_client-0.1.3.tar.gz
+[2023-05-09 19:04:40] INFO root fetch - processPackages [nexus-utilities]: Downloading https://files.pythonhosted.org/packages/45/c1/f3a9c875f95213def2179c17bab4523aaf8b99abc738c1c5f8aea6cb2f94/nexus-utilities-0.2.6.tar.gz
+[2023-05-09 19:04:40] INFO root fetch - processPackages [zou]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 19:04:40] INFO root fetch - processPackages [PyGObject-stubs]: Downloading https://files.pythonhosted.org/packages/7c/c6/ccd17e1d8830c0c5ef4f23323214713291d3c68c5a1ff09f0ff1200cb6d1/PyGObject-stubs-2.7.0.tar.gz
+[2023-05-09 19:04:41] INFO root fetch - processPackages [pine-client]: executing diffoscope
+[2023-05-09 19:04:41] INFO root fetch - processPackages [pine-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pine_client-0.1.2.tar.gz tmp/pine_client-0.1.3.tar.gz --markdown 20230509/p/pine-client/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 19:04:41] INFO root fetch - processPackages [nexus-utilities]: executing diffoscope
+[2023-05-09 19:04:41] INFO root fetch - processPackages [nexus-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-utilities-0.2.5.tar.gz tmp/nexus-utilities-0.2.6.tar.gz --markdown 20230509/n/nexus-utilities/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-09 19:04:41] INFO root fetch - processPackages [zou]: Downloading https://files.pythonhosted.org/packages/3d/26/8a5c822e737ac50a4f66516c5b80f6cb5a2ce0b5258e3c904aa5abae876c/zou-0.9.8-py2.py3-none-any.whl
+[2023-05-09 19:04:41] INFO root fetch - processPackages [PyGObject-stubs]: executing diffoscope
+[2023-05-09 19:04:41] INFO root fetch - processPackages [PyGObject-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGObject-stubs-2.6.0.tar.gz tmp/PyGObject-stubs-2.7.0.tar.gz --markdown 20230509/P/PyGObject-stubs/2.6.0-2.7.0/diff.md --exclude *.pyd
+[2023-05-09 19:04:41] INFO root fetch - processPackages [osmsg]: Downloading https://files.pythonhosted.org/packages/fd/ec/2cc46c93a1eba20d64e795f3a62d11e4c46bdb031578f8079798844f660e/osmsg-0.1.9.tar.gz
+[2023-05-09 19:04:41] INFO root fetch - processPackages [zou]: Downloading https://files.pythonhosted.org/packages/b4/cb/e536d9ca1d2e8c1820b5431cb69768c10b0f438a73bf846d3e2d008f896a/zou-0.9.9-py2.py3-none-any.whl
+[2023-05-09 19:04:41] INFO root fetch - main [MainThread]: End processing [opentok]: success
+[2023-05-09 19:04:41] INFO root fetch - processPackages [zou]: executing diffoscope
+[2023-05-09 19:04:41] INFO root fetch - processPackages [zou]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zou-0.9.8-py2.py3-none-any.whl.zip tmp/zou-0.9.9-py2.py3-none-any.whl.zip --markdown 20230509/z/zou/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 19:04:41] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 19:04:41] INFO root fetch - processPackages [osmsg]: executing diffoscope
+[2023-05-09 19:04:41] INFO root fetch - processPackages [osmsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osmsg-0.1.8.tar.gz tmp/osmsg-0.1.9.tar.gz --markdown 20230509/o/osmsg/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 19:04:41] INFO root fetch - main [MainThread]: End processing [djlint]: success
+[2023-05-09 19:04:42] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 19:04:42] INFO root fetch - main [MainThread]: End processing [pine-client]: success
+[2023-05-09 19:04:42] INFO root fetch - main [MainThread]: End processing [nexus-utilities]: success
+[2023-05-09 19:04:43] INFO root fetch - main [MainThread]: End processing [osmsg]: success
+[2023-05-09 19:04:43] INFO root fetch - main [MainThread]: End processing [zou]: success
+[2023-05-09 19:04:44] INFO root fetch - main [MainThread]: End processing [PyGObject-stubs]: success
+[2023-05-09 19:06:23] INFO root fetch - main [MainThread]: End processing [notebook]: success
+[2023-05-09 19:06:23] INFO root fetch - main [MainThread]: Store serial: [18035179]
