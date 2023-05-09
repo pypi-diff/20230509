@@ -15653,3 +15653,13 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 14:04:08] INFO root fetch - main [MainThread]: End processing [rmpy]: success
 [2023-05-09 14:04:09] INFO root fetch - main [MainThread]: End processing [emlib]: success
 [2023-05-09 14:04:09] INFO root fetch - main [MainThread]: Store serial: [18031490]
+[2023-05-09 14:09:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031490]
+[2023-05-09 14:09:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-09 14:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bingImageSpiderCreatedByHanXu
+[2023-05-09 14:09:21] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 14:09:22] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: Downloading https://files.pythonhosted.org/packages/a5/fc/115c1b8807449ab9a785b131c3fd40abc4f988864f0282ff0d7c00793311/bingImageSpiderCreatedByHanXu-0.0.2.tar.gz
+[2023-05-09 14:09:22] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: Downloading https://files.pythonhosted.org/packages/53/e4/9b9bb01513e96b0d9c64891cdb45cba0ece14095d7792a323ef31ac22f5e/bingImageSpiderCreatedByHanXu-0.0.3.tar.gz
+[2023-05-09 14:09:22] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: executing diffoscope
+[2023-05-09 14:09:22] INFO root fetch - processPackages [bingImageSpiderCreatedByHanXu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingImageSpiderCreatedByHanXu-0.0.2.tar.gz tmp/bingImageSpiderCreatedByHanXu-0.0.3.tar.gz --markdown 20230509/b/bingImageSpiderCreatedByHanXu/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 14:09:23] INFO root fetch - main [MainThread]: End processing [bingImageSpiderCreatedByHanXu]: success
+[2023-05-09 14:09:23] INFO root fetch - main [MainThread]: Store serial: [18031494]
