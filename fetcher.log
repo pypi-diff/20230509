@@ -16204,3 +16204,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 14:51:37] INFO root fetch - main [MainThread]: End processing [geomulticorr]: success
 [2023-05-09 14:51:50] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
 [2023-05-09 14:51:50] INFO root fetch - main [MainThread]: Store serial: [18031856]
+[2023-05-09 14:57:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031856]
+[2023-05-09 14:57:05] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enhanceezqq
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: s3autocp
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: madai
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: regex-learner
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-csgo-case-simulator
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: q2rad
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: inspire-utils
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sintef-pyshop
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pepperize.cdk-route53-health-check
+[2023-05-09 14:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: plotgen
+[2023-05-09 14:57:05] INFO root fetch - processPackages [enhanceezqq]: New version: [1.0.0.1] Old Version: [1.0.0]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [s3autocp]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [madai]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [regex-learner]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [enhanceezqq]: executing diffoscope
+[2023-05-09 14:57:05] INFO root fetch - processPackages [enhanceezqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhanceezqq-1.0.0.tar.gz tmp/enhanceezqq-1.0.0.1.tar.gz --markdown 20230509/e/enhanceezqq/1.0.0-1.0.0.1/diff.md --exclude *.pyd
+[2023-05-09 14:57:05] INFO root fetch - processPackages [inspire-utils]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [q2rad]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [s3autocp]: executing diffoscope
+[2023-05-09 14:57:05] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: executing diffoscope
+[2023-05-09 14:57:05] INFO root fetch - processPackages [plotgen]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [s3autocp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s3autocp-0.0.1-py3-none-any.whl.zip tmp/s3autocp-0.0.2.tar.gz --markdown 20230509/s/s3autocp/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 14:57:05] INFO root fetch - processPackages [sintef-pyshop]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-05-09 14:57:05] INFO root fetch - processPackages [nonebot-plugin-csgo-case-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-csgo-case-simulator-0.1.8.tar.gz tmp/nonebot-plugin-csgo-case-simulator-0.1.9.tar.gz --markdown 20230509/n/nonebot-plugin-csgo-case-simulator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 14:57:05] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: executing diffoscope
+[2023-05-09 14:57:05] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-route53-health-check-0.0.98.tar.gz tmp/pepperize.cdk-route53-health-check-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-route53-health-check/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 14:57:05] INFO root fetch - processPackages [madai]: executing diffoscope
+[2023-05-09 14:57:05] INFO root fetch - processPackages [madai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madai-0.1.5.tar.gz tmp/madai-0.2.0.tar.gz --markdown 20230509/m/madai/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 14:57:05] INFO root fetch - processPackages [regex-learner]: Downloading https://files.pythonhosted.org/packages/a9/05/b59224b40e89e84bb5d5103cefeed19b096f7b2545428d6d1e7fb4c633d3/regex-learner-0.0.1.tar.gz
+[2023-05-09 14:57:05] INFO root fetch - processPackages [inspire-utils]: Downloading https://files.pythonhosted.org/packages/09/79/361af085ded77823b01d6d48864e0784f187102e4d2baf0eb1cfb9266809/inspire-utils-3.0.8.tar.gz
+[2023-05-09 14:57:05] INFO root fetch - processPackages [plotgen]: Downloading https://files.pythonhosted.org/packages/4c/c4/fb5bdc04b969003fedaefe52d15e208e5d2407bae330e82a9032c634f153/plotgen-0.7.8-py3-none-any.whl
+[2023-05-09 14:57:05] INFO root fetch - processPackages [q2rad]: Downloading https://files.pythonhosted.org/packages/80/49/6ec4d4467c701099cbfa21472d6b7c426277eeae8e82db973157f4077dd1/q2rad-0.1.98.tar.gz
+[2023-05-09 14:57:05] INFO root fetch - processPackages [sintef-pyshop]: Downloading https://files.pythonhosted.org/packages/ff/8b/3fad05c0bfd5dd5447421a43345e56031aaf0856e7363d1b2e4a1ce7c78a/sintef-pyshop-1.3.1.tar.gz
+[2023-05-09 14:57:05] INFO root fetch - processPackages [regex-learner]: Downloading https://files.pythonhosted.org/packages/c8/b5/67fd0f9de888880b3efff62206537157b21cc4bb400e0cfdb8cad9bb135a/regex-learner-0.0.2.tar.gz
+[2023-05-09 14:57:05] INFO root fetch - processPackages [regex-learner]: executing diffoscope
+[2023-05-09 14:57:05] INFO root fetch - processPackages [regex-learner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regex-learner-0.0.1.tar.gz tmp/regex-learner-0.0.2.tar.gz --markdown 20230509/r/regex-learner/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 14:57:05] INFO root fetch - processPackages [sintef-pyshop]: Downloading https://files.pythonhosted.org/packages/cf/e7/575449366af6a2e15ac32a11df8f5f50a740bbd4cc4ee5dd0cdb5162ec21/sintef-pyshop-1.4.0.tar.gz
+[2023-05-09 14:57:05] INFO root fetch - processPackages [plotgen]: Downloading https://files.pythonhosted.org/packages/42/d3/78eb95701ab8df9403a40f8a5ae33247ac4e872ca786b0ddb86e840b69b4/plotgen-0.7.9-py3-none-any.whl
+[2023-05-09 14:57:05] INFO root fetch - processPackages [inspire-utils]: Downloading https://files.pythonhosted.org/packages/d4/1a/df2be88b02d583433f788ad09f7f80e466f178124c709f8bdb8ba04c5674/inspire-utils-3.0.9.tar.gz
+[2023-05-09 14:57:05] INFO root fetch - processPackages [q2rad]: Downloading https://files.pythonhosted.org/packages/47/0e/9309c87c362671a5eef5895adc1cb5d29e984c27a0e09a60a83cada10f73/q2rad-0.1.99.tar.gz
+[2023-05-09 14:57:06] INFO root fetch - processPackages [sintef-pyshop]: executing diffoscope
+[2023-05-09 14:57:06] INFO root fetch - processPackages [sintef-pyshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sintef-pyshop-1.3.1.tar.gz tmp/sintef-pyshop-1.4.0.tar.gz --markdown 20230509/s/sintef-pyshop/1.3.1-1.4.0/diff.md --exclude *.pyd
+[2023-05-09 14:57:06] INFO root fetch - processPackages [inspire-utils]: executing diffoscope
+[2023-05-09 14:57:06] INFO root fetch - processPackages [inspire-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspire-utils-3.0.8.tar.gz tmp/inspire-utils-3.0.9.tar.gz --markdown 20230509/i/inspire-utils/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-09 14:57:06] INFO root fetch - processPackages [plotgen]: executing diffoscope
+[2023-05-09 14:57:06] INFO root fetch - processPackages [plotgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotgen-0.7.8-py3-none-any.whl.zip tmp/plotgen-0.7.9-py3-none-any.whl.zip --markdown 20230509/p/plotgen/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-09 14:57:06] INFO root fetch - processPackages [q2rad]: executing diffoscope
+[2023-05-09 14:57:06] INFO root fetch - processPackages [q2rad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2rad-0.1.98.tar.gz tmp/q2rad-0.1.99.tar.gz --markdown 20230509/q/q2rad/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-09 14:57:06] INFO root fetch - processPackages [s3autocp]: Start processing: fmldk
+[2023-05-09 14:57:06] INFO root fetch - main [MainThread]: End processing [s3autocp]: success
+[2023-05-09 14:57:06] INFO root fetch - processPackages [enhanceezqq]: Start processing: text-fabric
+[2023-05-09 14:57:06] INFO root fetch - main [MainThread]: End processing [enhanceezqq]: success
+[2023-05-09 14:57:06] INFO root fetch - processPackages [text-fabric]: New version: [9.5.2] Old Version: [9.4.4]
+[2023-05-09 14:57:06] INFO root fetch - processPackages [fmldk]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-09 14:57:06] INFO root fetch - main [MainThread]: End processing [madai]: success
+[2023-05-09 14:57:06] INFO root fetch - processPackages [text-fabric]: executing diffoscope
+[2023-05-09 14:57:06] INFO root fetch - processPackages [text-fabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text_fabric-9.4.4-py3-none-any.whl.zip tmp/text_fabric-9.5.2-py3-none-any.whl.zip --markdown 20230509/t/text-fabric/9.4.4-9.5.2/diff.md --exclude *.pyd
+[2023-05-09 14:57:07] INFO root fetch - processPackages [fmldk]: Downloading https://files.pythonhosted.org/packages/b5/9f/40758dcc845140e06ad2777c2daade08f062ec218975991941d1ba6d086b/fmldk-1.2.2.tar.gz
+[2023-05-09 14:57:07] INFO root fetch - main [MainThread]: End processing [regex-learner]: success
+[2023-05-09 14:57:07] INFO root fetch - processPackages [fmldk]: Downloading https://files.pythonhosted.org/packages/fa/fc/6f0334367d11dd55cf7afd53e748154c770b701b8a836436a8e4818f5019/fmldk-1.2.3.tar.gz
+[2023-05-09 14:57:07] INFO root fetch - processPackages [fmldk]: executing diffoscope
+[2023-05-09 14:57:07] INFO root fetch - processPackages [fmldk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmldk-1.2.2.tar.gz tmp/fmldk-1.2.3.tar.gz --markdown 20230509/f/fmldk/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-09 14:57:07] INFO root fetch - main [MainThread]: End processing [sintef-pyshop]: success
+[2023-05-09 14:57:07] INFO root fetch - main [MainThread]: End processing [inspire-utils]: success
+[2023-05-09 14:57:07] INFO root fetch - main [MainThread]: End processing [plotgen]: success
+[2023-05-09 14:57:08] INFO root fetch - main [MainThread]: End processing [q2rad]: success
+[2023-05-09 14:57:08] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
+[2023-05-09 14:57:09] INFO root fetch - main [MainThread]: End processing [fmldk]: success
+[2023-05-09 14:57:09] INFO root fetch - main [MainThread]: End processing [text-fabric]: success
+[2023-05-09 14:57:21] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
+[2023-05-09 14:57:21] INFO root fetch - main [MainThread]: Store serial: [18031892]
