@@ -16906,3 +16906,124 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 15:31:06] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
 [2023-05-09 15:31:17] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
 [2023-05-09 15:31:17] INFO root fetch - main [MainThread]: Store serial: [18032287]
+[2023-05-09 15:36:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032287]
+[2023-05-09 15:36:26] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mariqt
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dibrowse
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dnevnikmos
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inputty
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: squirrels
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-django
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ccf
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sleepeeg
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ccf
+[2023-05-09 15:36:26] INFO root fetch - processPackages [dnevnikmos]: New version: [1.1] Old Version: [1.0]
+[2023-05-09 15:36:26] WARNING root fetch - processPackages [inputty]: Skipping, unable to determine old version
+[2023-05-09 15:36:26] INFO root fetch - processPackages [mariqt]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-09 15:36:26] INFO root fetch - processPackages [inputty]: Start processing: kcli
+[2023-05-09 15:36:26] WARNING root fetch - processPackages [dibrowse]: Skipping, unable to determine old version
+[2023-05-09 15:36:26] INFO root fetch - main [MainThread]: End processing [inputty] error
+[2023-05-09 15:36:26] INFO root fetch - processPackages [dibrowse]: Start processing: nbdev-apl
+[2023-05-09 15:36:26] INFO root fetch - main [MainThread]: End processing [dibrowse] error
+[2023-05-09 15:36:26] INFO root fetch - processPackages [sleepeeg]: New version: [0.1.1] Old Version: [0.0.1]
+[2023-05-09 15:36:26] INFO root fetch - processPackages [squirrels]: New version: [0.1.0rc3] Old Version: [0.1.0rc2]
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ccf]: New version: [4.0.1] Old Version: [4.0.0rc2]
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ccf]: New version: [4.0.1] Old Version: [4.0.0rc2]
+[2023-05-09 15:36:26] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 15:36:26] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.763] Old Version: [0.0.762]
+[2023-05-09 15:36:26] INFO root fetch - processPackages [kcli]: New version: [99.0.202305091333] Old Version: [99.0.202305090950]
+[2023-05-09 15:36:26] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-09 15:36:26] INFO root fetch - processPackages [squirrels]: Downloading https://files.pythonhosted.org/packages/48/c5/3c19b2ef0cd3dab18778b15eaa5e5a9337d2277f06ce5aaf0a4c423560a4/squirrels-0.1.0rc2.tar.gz
+[2023-05-09 15:36:26] INFO root fetch - processPackages [dnevnikmos]: Downloading https://files.pythonhosted.org/packages/3e/f0/17f06fe0f11c7d2044e975a942f55fe90ee9e4b1eb92a763991703771d0e/dnevnikmos-1.0.tar.gz
+[2023-05-09 15:36:26] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-09 15:36:26] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230509/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 15:36:26] INFO root fetch - processPackages [mariqt]: Downloading https://files.pythonhosted.org/packages/55/f3/fbffb152a075bf6703399d449cb014ba4822e066ffb61211eeeb0aa3a20b/mariqt-0.3.8-py3-none-any.whl
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ccf]: Downloading https://files.pythonhosted.org/packages/42/3e/2de1190cbfcf051f4c41dc3c0a14cf51523844b9da29b818b93fcf8f0a43/ccf-4.0.0rc2-py3-none-any.whl
+[2023-05-09 15:36:26] INFO root fetch - processPackages [ccf]: Downloading https://files.pythonhosted.org/packages/42/3e/2de1190cbfcf051f4c41dc3c0a14cf51523844b9da29b818b93fcf8f0a43/ccf-4.0.0rc2-py3-none-any.whl
+[2023-05-09 15:36:26] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/38/a9/89b92bc2717b7dd8e07f00dd6cfe88205fd4a39d33c8e8cf47253b95da6b/nbdev-apl-0.0.762.tar.gz
+[2023-05-09 15:36:26] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/6c/41/37452d69c2d19bba866eabb47641f4a16374ea8495655ee09ae5fe203842/kcli-99.0.202305091333-py3-none-any.whl
+[2023-05-09 15:36:26] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/79/f1/8bce862deabf3c23af7edffe4e8e2999da9f8536805b15df8c6be4fe5a3b/fbgemm_gpu_nightly_cpu-2023.5.8-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-09 15:36:27] INFO root fetch - processPackages [sleepeeg]: Downloading https://files.pythonhosted.org/packages/a5/fe/bee9c7ba1bd4f1642f56fb4bc5c4e73c687403d4e548ce7054645040561f/sleepeeg-0.1.1.tar.gz
+[2023-05-09 15:36:27] INFO root fetch - processPackages [dnevnikmos]: Downloading https://files.pythonhosted.org/packages/3a/40/5219f45f98f73f08085a264b6687131e58dbea15cd007c2bb70d904ea38c/dnevnikmos-1.1.tar.gz
+[2023-05-09 15:36:27] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-09 15:36:27] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305090950-py3-none-any.whl.zip tmp/kcli-99.0.202305091333-py3-none-any.whl.zip --markdown 20230509/k/kcli/99.0.202305090950-99.0.202305091333/diff.md --exclude *.pyd
+[2023-05-09 15:36:27] INFO root fetch - processPackages [sleepeeg]: executing diffoscope
+[2023-05-09 15:36:27] INFO root fetch - processPackages [sleepeeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleepeeg-0.0.1.tar.gz tmp/sleepeeg-0.1.1.tar.gz --markdown 20230509/s/sleepeeg/0.0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 15:36:27] INFO root fetch - processPackages [ccf]: Downloading https://files.pythonhosted.org/packages/72/03/34fbcae26887c256a420f7c1b5e7f14c45819d5d9fe2aee90e5da59fab87/ccf-4.0.1-py3-none-any.whl
+[2023-05-09 15:36:27] INFO root fetch - processPackages [ccf]: Downloading https://files.pythonhosted.org/packages/72/03/34fbcae26887c256a420f7c1b5e7f14c45819d5d9fe2aee90e5da59fab87/ccf-4.0.1-py3-none-any.whl
+[2023-05-09 15:36:27] INFO root fetch - processPackages [squirrels]: Downloading https://files.pythonhosted.org/packages/e5/4b/26aa10b015a7a4f62760181cb6c58342402cfdaa7c0b3095373a7b361908/squirrels-0.1.0rc3.tar.gz
+[2023-05-09 15:36:27] INFO root fetch - processPackages [ccf]: executing diffoscope
+[2023-05-09 15:36:27] INFO root fetch - processPackages [ccf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccf-4.0.0rc2-py3-none-any.whl.zip tmp/ccf-4.0.1-py3-none-any.whl.zip --markdown 20230509/c/ccf/4.0.0rc2-4.0.1/diff.md --exclude *.pyd
+[2023-05-09 15:36:27] INFO root fetch - processPackages [ccf]: executing diffoscope
+[2023-05-09 15:36:27] INFO root fetch - processPackages [ccf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccf-4.0.0rc2-py3-none-any.whl.zip tmp/ccf-4.0.1-py3-none-any.whl.zip --markdown 20230509/c/ccf/4.0.0rc2-4.0.1/diff.md --exclude *.pyd
+[2023-05-09 15:36:27] INFO root fetch - processPackages [dnevnikmos]: executing diffoscope
+[2023-05-09 15:36:27] INFO root fetch - processPackages [dnevnikmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnevnikmos-1.0.tar.gz tmp/dnevnikmos-1.1.tar.gz --markdown 20230509/d/dnevnikmos/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-09 15:36:27] INFO root fetch - processPackages [mariqt]: Downloading https://files.pythonhosted.org/packages/7d/80/7782d72232b35eb4400c9fc9626c940fe3675a440c56291e9b34a8531a20/mariqt-0.3.9-py3-none-any.whl
+[2023-05-09 15:36:27] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/80/b7/ed62610bc1e0f79816016ed747058982b3da946c918763a57351b31d51ab/nbdev-apl-0.0.763.tar.gz
+[2023-05-09 15:36:27] INFO root fetch - processPackages [squirrels]: executing diffoscope
+[2023-05-09 15:36:27] INFO root fetch - processPackages [squirrels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squirrels-0.1.0rc2.tar.gz tmp/squirrels-0.1.0rc3.tar.gz --markdown 20230509/s/squirrels/0.1.0rc2-0.1.0rc3/diff.md --exclude *.pyd
+[2023-05-09 15:36:27] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-09 15:36:27] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.762.tar.gz tmp/nbdev-apl-0.0.763.tar.gz --markdown 20230509/n/nbdev-apl/0.0.762-0.0.763/diff.md --exclude *.pyd
+[2023-05-09 15:36:27] INFO root fetch - processPackages [mariqt]: executing diffoscope
+[2023-05-09 15:36:27] INFO root fetch - processPackages [mariqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mariqt-0.3.8-py3-none-any.whl.zip tmp/mariqt-0.3.9-py3-none-any.whl.zip --markdown 20230509/m/mariqt/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-09 15:36:27] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/08/9f/f89f14d234d4b2937ece79dfd408c324dcb1d26e82f7547c8f075f72e828/fbgemm_gpu_nightly_cpu-2023.5.9-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-09 15:36:28] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-05-09 15:36:28] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.5.8-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.5.9-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230509/f/fbgemm-gpu-nightly-cpu/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 15:36:28] INFO root fetch - processPackages [dnevnikmos]: Start processing: ripandtear
+[2023-05-09 15:36:28] INFO root fetch - main [MainThread]: End processing [dnevnikmos]: success
+[2023-05-09 15:36:28] INFO root fetch - processPackages [ripandtear]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-09 15:36:29] INFO root fetch - processPackages [ccf]: Start processing: nanolab
+[2023-05-09 15:36:29] INFO root fetch - main [MainThread]: End processing [ccf]: success
+[2023-05-09 15:36:29] WARNING root fetch - processPackages [nanolab]: Skipping, unable to determine old version
+[2023-05-09 15:36:29] INFO root fetch - processPackages [nanolab]: Start processing: rmpy
+[2023-05-09 15:36:29] INFO root fetch - main [MainThread]: End processing [nanolab] error
+[2023-05-09 15:36:29] INFO root fetch - processPackages [rmpy]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-09 15:36:29] INFO root fetch - processPackages [ripandtear]: Downloading https://files.pythonhosted.org/packages/2c/f3/43638a223c6f10c616bb47ef002fae28efb23437b272b531a8027e24e54f/ripandtear-0.9.7.tar.gz
+[2023-05-09 15:36:29] INFO root fetch - processPackages [nbdev-apl]: Start processing: zenoml
+[2023-05-09 15:36:29] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-09 15:36:29] INFO root fetch - processPackages [zenoml]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-05-09 15:36:29] INFO root fetch - processPackages [sleepeeg]: Start processing: sbmlcore
+[2023-05-09 15:36:29] INFO root fetch - main [MainThread]: End processing [sleepeeg]: success
+[2023-05-09 15:36:29] INFO root fetch - processPackages [ccf]: Start processing: rele
+[2023-05-09 15:36:29] INFO root fetch - main [MainThread]: End processing [ccf]: success
+[2023-05-09 15:36:29] INFO root fetch - processPackages [sbmlcore]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-05-09 15:36:29] INFO root fetch - processPackages [rele]: New version: [1.9.0] Old Version: [1.8.1b0]
+[2023-05-09 15:36:29] INFO root fetch - processPackages [mariqt]: Start processing: sat-utils
+[2023-05-09 15:36:29] INFO root fetch - main [MainThread]: End processing [mariqt]: success
+[2023-05-09 15:36:29] WARNING root fetch - processPackages [sat-utils]: Skipping, unable to determine old version
+[2023-05-09 15:36:29] INFO root fetch - processPackages [sat-utils]: Start processing: random-string-detector
+[2023-05-09 15:36:29] INFO root fetch - main [MainThread]: End processing [sat-utils] error
+[2023-05-09 15:36:29] WARNING root fetch - processPackages [random-string-detector]: Skipping, unable to determine old version
+[2023-05-09 15:36:29] INFO root fetch - processPackages [random-string-detector]: Start processing: epitools
+[2023-05-09 15:36:29] INFO root fetch - main [MainThread]: End processing [random-string-detector] error
+[2023-05-09 15:36:29] INFO root fetch - processPackages [ripandtear]: Downloading https://files.pythonhosted.org/packages/bb/33/c3d19a2184a3997ddbec798a026fd98fd336119a50b23ebe1c0233e31aea/ripandtear-0.9.9.tar.gz
+[2023-05-09 15:36:29] INFO root fetch - processPackages [rmpy]: Downloading https://files.pythonhosted.org/packages/64/22/1544efe77c8ddaed63a83c044cb1ef71d7e73464fc920172a59aefa819a4/rmpy-1.1.5.tar.gz
+[2023-05-09 15:36:29] INFO root fetch - processPackages [epitools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 15:36:29] INFO root fetch - processPackages [ripandtear]: executing diffoscope
+[2023-05-09 15:36:29] INFO root fetch - processPackages [ripandtear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ripandtear-0.9.7.tar.gz tmp/ripandtear-0.9.9.tar.gz --markdown 20230509/r/ripandtear/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 15:36:29] INFO root fetch - processPackages [rmpy]: executing diffoscope
+[2023-05-09 15:36:29] INFO root fetch - processPackages [rmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmpy-1.1.4.tar.gz tmp/rmpy-1.1.5.tar.gz --markdown 20230509/r/rmpy/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-09 15:36:29] INFO root fetch - processPackages [zenoml]: Downloading https://files.pythonhosted.org/packages/a5/b6/baf74bfcf98f1daea8007e68f38f8f53a2fc3cdccf4607a0e26752ffe9c3/zenoml-0.4.9.tar.gz
+[2023-05-09 15:36:29] INFO root fetch - processPackages [sbmlcore]: Downloading https://files.pythonhosted.org/packages/35/68/287ce99501325f1b414cddbd80b10a16fad59ea9bbab3c9dcc7b933398db/sbmlcore-0.1.4.tar.gz
+[2023-05-09 15:36:29] INFO root fetch - processPackages [epitools]: executing diffoscope
+[2023-05-09 15:36:29] INFO root fetch - processPackages [epitools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epitools-0.0.2.tar.gz tmp/epitools-0.0.3-py3-none-any.whl.zip --markdown 20230509/e/epitools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 15:36:29] INFO root fetch - processPackages [rele]: executing diffoscope
+[2023-05-09 15:36:29] INFO root fetch - processPackages [rele]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rele-1.8.1b0.tar.gz tmp/rele-1.9.0.tar.gz --markdown 20230509/r/rele/1.8.1b0-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 15:36:29] INFO root fetch - processPackages [sbmlcore]: Downloading https://files.pythonhosted.org/packages/0f/3d/5dbea69fe333ed1c7a760d6a462a988d6bd9ec923ba50b50add3d71a83e4/sbmlcore-0.2.0.tar.gz
+[2023-05-09 15:36:29] INFO root fetch - processPackages [zenoml]: Downloading https://files.pythonhosted.org/packages/20/a0/c8700ad94cce2813e3607264681ab8c6078dfbcb1adbad7fa22d5289eb48/zenoml-0.5.0.tar.gz
+[2023-05-09 15:36:29] INFO root fetch - processPackages [sbmlcore]: executing diffoscope
+[2023-05-09 15:36:29] INFO root fetch - processPackages [sbmlcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbmlcore-0.1.4.tar.gz tmp/sbmlcore-0.2.0.tar.gz --markdown 20230509/s/sbmlcore/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 15:36:29] INFO root fetch - processPackages [zenoml]: executing diffoscope
+[2023-05-09 15:36:29] INFO root fetch - processPackages [zenoml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenoml-0.4.9.tar.gz tmp/zenoml-0.5.0.tar.gz --markdown 20230509/z/zenoml/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 15:36:30] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-09 15:36:31] INFO root fetch - main [MainThread]: End processing [rmpy]: success
+[2023-05-09 15:36:31] INFO root fetch - main [MainThread]: End processing [ripandtear]: success
+[2023-05-09 15:36:31] INFO root fetch - main [MainThread]: End processing [epitools]: success
+[2023-05-09 15:36:31] INFO root fetch - main [MainThread]: End processing [squirrels]: success
+[2023-05-09 15:36:31] INFO root fetch - main [MainThread]: End processing [rele]: success
+[2023-05-09 15:36:32] INFO root fetch - main [MainThread]: End processing [sbmlcore]: success
+[2023-05-09 15:36:35] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-09 15:36:49] INFO root fetch - main [MainThread]: End processing [zenoml]: success
+[2023-05-09 15:37:26] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-05-09 15:37:26] INFO root fetch - main [MainThread]: Store serial: [18032370]
