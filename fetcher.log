@@ -5658,3 +5658,152 @@
 [2023-05-09 04:04:07] INFO root fetch - processPackages [pyglet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglet-2.0b2.zip tmp/pyglet-2.0b3.zip --markdown 20230509/p/pyglet/2.0b2-2.0b3/diff.md --exclude *.pyd
 [2023-05-09 04:04:18] INFO root fetch - main [MainThread]: End processing [pyglet]: success
 [2023-05-09 04:04:18] INFO root fetch - main [MainThread]: Store serial: [18025905]
+[2023-05-09 04:09:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18025905]
+[2023-05-09 04:09:26] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-09 04:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DXR
+[2023-05-09 04:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TCLR
+[2023-05-09 04:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfirebird
+[2023-05-09 04:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: battery-analyser
+[2023-05-09 04:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-webuild-ds
+[2023-05-09 04:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anyon
+[2023-05-09 04:09:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: forust
+[2023-05-09 04:09:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mlflow-token
+[2023-05-09 04:09:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: axion
+[2023-05-09 04:09:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dongwha-datalab
+[2023-05-09 04:09:27] WARNING root fetch - processPackages [battery-analyser]: Skipping, unable to determine old version
+[2023-05-09 04:09:27] INFO root fetch - main [MainThread]: End processing [battery-analyser] error
+[2023-05-09 04:09:27] INFO root fetch - processPackages [TCLR]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-05-09 04:09:27] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 04:09:27] INFO root fetch - processPackages [DXR]: New version: [1.8.6] Old Version: [1.8.5]
+[2023-05-09 04:09:27] INFO root fetch - processPackages [mlflow-token]: New version: [1.1.0] Old Version: [1.0.0a1]
+[2023-05-09 04:09:27] INFO root fetch - processPackages [anyon]: New version: [3.2.1] Old Version: [3.2.0]
+[2023-05-09 04:09:27] INFO root fetch - processPackages [django-webuild-ds]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 04:09:27] INFO root fetch - processPackages [axion]: New version: [3.3.0] Old Version: [3.2.29]
+[2023-05-09 04:09:27] INFO root fetch - processPackages [forust]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-09 04:09:27] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-09 04:09:27] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.8.tar.gz tmp/pyfirebird-0.0.9.tar.gz --markdown 20230509/p/pyfirebird/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 04:09:27] INFO root fetch - processPackages [dongwha-datalab]: New version: [0.0.0.14] Old Version: [0.0.0.13]
+[2023-05-09 04:09:27] INFO root fetch - processPackages [django-webuild-ds]: Downloading https://files.pythonhosted.org/packages/f9/ef/170e40557654817219f312172633ac1a54ebd3604c5ede6558a52a87655d/django-webuild_ds-0.0.1.tar.gz
+[2023-05-09 04:09:27] INFO root fetch - processPackages [axion]: Downloading https://files.pythonhosted.org/packages/c4/ef/f0cae6219ec47988fdbef91c4523c9f85715e5c171234d2d7979b3d3af73/axion-3.2.29-cp311-cp311-win_amd64.whl
+[2023-05-09 04:09:27] INFO root fetch - processPackages [mlflow-token]: Downloading https://files.pythonhosted.org/packages/98/e1/8a9d3cd796ef89d27c71c1b89e1b3651fa6d37d97896c88e6fc40617cb89/mlflow_token-1.0.0a1.tar.gz
+[2023-05-09 04:09:27] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/ed/5f/cc3b74487e1e730c681fe8a8c24162b7e3f600979b3d25bcd5b63a28bd79/anyon-3.2.1-cp311-cp311-macosx_10_9_universal2.whl
+[2023-05-09 04:09:27] INFO root fetch - processPackages [dongwha-datalab]: Downloading https://files.pythonhosted.org/packages/43/02/29961e27b90fce2b780d665ca828e7e1fd7a5f58fbccc0e338c1f8f8c16a/dongwha_datalab-0.0.0.13-py3-none-any.whl
+[2023-05-09 04:09:27] INFO root fetch - processPackages [TCLR]: Downloading https://files.pythonhosted.org/packages/80/1f/30f2cd568da06fda82145ec246d0335fd62ad92c98d396e0c90fc9eac441/TCLR-1.7.1.tar.gz
+[2023-05-09 04:09:27] INFO root fetch - processPackages [DXR]: Downloading https://files.pythonhosted.org/packages/db/f5/2d74c9ba03fd06460ebfa0cdf352696374c7b46fe862d7dbf7fbd70070eb/DXR-1.8.6.tar.gz
+[2023-05-09 04:09:27] INFO root fetch - processPackages [forust]: Downloading https://files.pythonhosted.org/packages/3c/b8/f1e435c9ca04a770f46937197ea61ec7b1f0c2ff6a8aee525cba9ef56fd4/forust-0.2.6.tar.gz
+[2023-05-09 04:09:27] INFO root fetch - processPackages [TCLR]: executing diffoscope
+[2023-05-09 04:09:27] INFO root fetch - processPackages [TCLR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TCLR-1.7.0.tar.gz tmp/TCLR-1.7.1.tar.gz --markdown 20230509/T/TCLR/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-05-09 04:09:27] INFO root fetch - processPackages [django-webuild-ds]: Downloading https://files.pythonhosted.org/packages/62/14/eb36cb18641ebb99b46d3442fd2e09b2967dc9b32fd9f0692c3a003fc396/django-webuild_ds-0.0.2.tar.gz
+[2023-05-09 04:09:27] INFO root fetch - processPackages [DXR]: executing diffoscope
+[2023-05-09 04:09:27] INFO root fetch - processPackages [axion]: Downloading https://files.pythonhosted.org/packages/b2/87/3795e2cb08560b5b32b8f14c8763a4eb176ed8501d68da3ab21c256d5ab2/axion-3.3.0-cp311-cp311-macosx_10_9_universal2.whl
+[2023-05-09 04:09:27] INFO root fetch - processPackages [DXR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DXR-1.8.5.tar.gz tmp/DXR-1.8.6.tar.gz --markdown 20230509/D/DXR/1.8.5-1.8.6/diff.md --exclude *.pyd
+[2023-05-09 04:09:27] INFO root fetch - processPackages [anyon]: executing diffoscope
+[2023-05-09 04:09:27] INFO root fetch - processPackages [anyon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyon-3.2.0-cp311-cp311-win_amd64.whl.zip tmp/anyon-3.2.1-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20230509/a/anyon/3.2.0-3.2.1/diff.md --exclude *.pyd
+[2023-05-09 04:09:27] INFO root fetch - processPackages [mlflow-token]: Downloading https://files.pythonhosted.org/packages/b5/5f/909958e3485586768a395c92906d9e70ba4c9db82393a949a859eba03343/mlflow_token-1.1.0.tar.gz
+[2023-05-09 04:09:27] INFO root fetch - processPackages [forust]: executing diffoscope
+[2023-05-09 04:09:27] INFO root fetch - processPackages [forust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forust-0.2.5.tar.gz tmp/forust-0.2.6.tar.gz --markdown 20230509/f/forust/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-09 04:09:27] INFO root fetch - processPackages [dongwha-datalab]: Downloading https://files.pythonhosted.org/packages/ee/61/7cc7a0050b14bba230182e047ef3e5f4f7336f32461606a51f8f5fda071d/dongwha_datalab-0.0.0.14-py3-none-any.whl
+[2023-05-09 04:09:27] INFO root fetch - processPackages [django-webuild-ds]: executing diffoscope
+[2023-05-09 04:09:27] INFO root fetch - processPackages [django-webuild-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-webuild_ds-0.0.1.tar.gz tmp/django-webuild_ds-0.0.2.tar.gz --markdown 20230509/d/django-webuild-ds/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 04:09:27] INFO root fetch - processPackages [axion]: executing diffoscope
+[2023-05-09 04:09:27] INFO root fetch - processPackages [axion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axion-3.2.29-cp311-cp311-win_amd64.whl.zip tmp/axion-3.3.0-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20230509/a/axion/3.2.29-3.3.0/diff.md --exclude *.pyd
+[2023-05-09 04:09:27] INFO root fetch - processPackages [mlflow-token]: executing diffoscope
+[2023-05-09 04:09:27] INFO root fetch - processPackages [mlflow-token]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_token-1.0.0a1.tar.gz tmp/mlflow_token-1.1.0.tar.gz --markdown 20230509/m/mlflow-token/1.0.0a1-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 04:09:27] INFO root fetch - processPackages [dongwha-datalab]: executing diffoscope
+[2023-05-09 04:09:27] INFO root fetch - processPackages [dongwha-datalab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dongwha_datalab-0.0.0.13-py3-none-any.whl.zip tmp/dongwha_datalab-0.0.0.14-py3-none-any.whl.zip --markdown 20230509/d/dongwha-datalab/0.0.0.13-0.0.0.14/diff.md --exclude *.pyd
+[2023-05-09 04:09:28] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-09 04:09:28] INFO root fetch - main [MainThread]: End processing [TCLR]: success
+[2023-05-09 04:09:29] INFO root fetch - main [MainThread]: End processing [anyon]: success
+[2023-05-09 04:09:29] INFO root fetch - main [MainThread]: End processing [mlflow-token]: success
+[2023-05-09 04:09:29] ERROR root fetch - processPackages [dongwha-datalab]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 72: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 72: invalid start byte
+
+[2023-05-09 04:09:29] INFO root fetch - main [MainThread]: End processing [dongwha-datalab] error
+[2023-05-09 04:09:29] INFO root fetch - main [MainThread]: End processing [axion]: success
+[2023-05-09 04:09:29] INFO root fetch - main [MainThread]: End processing [django-webuild-ds]: success
+[2023-05-09 04:09:30] INFO root fetch - main [MainThread]: End processing [DXR]: success
+[2023-05-09 04:09:59] INFO root fetch - main [MainThread]: End processing [forust]: success
+[2023-05-09 04:09:59] INFO root fetch - main [MainThread]: Store serial: [18025941]
