@@ -11234,3 +11234,109 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 09:20:05] INFO root fetch - main [MainThread]: End processing [alfred-pyflow]: success
 [2023-05-09 09:20:26] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
 [2023-05-09 09:20:26] INFO root fetch - main [MainThread]: Store serial: [18028810]
+[2023-05-09 09:25:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028810]
+[2023-05-09 09:25:35] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyobis
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: design-django-theme
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: garaprod
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: reytool
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addons-oca-sale-workflow
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: garaprod
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pepperize.cdk-terraform-state-backend
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: genshitjokes
+[2023-05-09 09:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: titan-iris
+[2023-05-09 09:25:35] INFO root fetch - processPackages [pyobis]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [garaprod]: New version: [0.1683616896.0] Old Version: [0.1683616845.0]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [genshitjokes]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [design-django-theme]: New version: [2.4.2] Old Version: [2.3.6.post3]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: New version: [16.0.20230507.0] Old Version: [16.0.20230506.0]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [garaprod]: New version: [0.1683616896.0] Old Version: [0.1683616845.0]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-05-09 09:25:35] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230509/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-05-09 09:25:35] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-05-09 09:25:35] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230509/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-09 09:25:35] INFO root fetch - processPackages [design-django-theme]: Downloading https://files.pythonhosted.org/packages/dd/92/c601beb0b3829eaad586c680b6b346621d91f3895d93a56100a8457de455/design-django-theme-2.3.6.post3.tar.gz
+[2023-05-09 09:25:35] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/96/12/9d9cfb1e1d48204a940b70f8e153c92ca1ae02bf089436c766fcee77f6e0/garaprod-0.1683616845.0.tar.gz
+[2023-05-09 09:25:35] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/96/12/9d9cfb1e1d48204a940b70f8e153c92ca1ae02bf089436c766fcee77f6e0/garaprod-0.1683616845.0.tar.gz
+[2023-05-09 09:25:35] INFO root fetch - processPackages [pyobis]: Downloading https://files.pythonhosted.org/packages/2b/1c/f80d411b7de2893f57c6d03f72f42ae51b62e6d7b96188a63d392b210933/pyobis-1.3.1.tar.gz
+[2023-05-09 09:25:35] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-05-09 09:25:35] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230509/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-05-09 09:25:35] INFO root fetch - processPackages [genshitjokes]: Downloading https://files.pythonhosted.org/packages/b7/33/a74f65b48aa34fa8d7496f336504c5b73bd22be3f644d340018baf6723a0/genshitjokes-2023.5.8.tar.gz
+[2023-05-09 09:25:35] WARNING root fetch - processPackages [genshitjokes]: Skipping package: exceeds size limit 68859298>=10485760
+[2023-05-09 09:25:35] INFO root fetch - processPackages [genshitjokes]: Start processing: alfred-pyflow
+[2023-05-09 09:25:35] INFO root fetch - main [MainThread]: End processing [genshitjokes] error
+[2023-05-09 09:25:35] INFO root fetch - processPackages [alfred-pyflow]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-09 09:25:35] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/8f/5d/bffc245db278d30c6b00fd1702de0be1b12eeab6456fe5ae7e77083df982/garaprod-0.1683616896.0.tar.gz
+[2023-05-09 09:25:35] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/8f/5d/bffc245db278d30c6b00fd1702de0be1b12eeab6456fe5ae7e77083df982/garaprod-0.1683616896.0.tar.gz
+[2023-05-09 09:25:35] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/b6/90/c64dcdc4d90d7ddfd3a296b76adf952b62d6f92a066c4fe736443c35f894/odoo_addons_oca_sale_workflow-16.0.20230507.0-py3-none-any.whl
+[2023-05-09 09:25:35] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-05-09 09:25:35] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 09:25:36] INFO root fetch - processPackages [design-django-theme]: Downloading https://files.pythonhosted.org/packages/04/1e/6f0203ecfb838f1527730bccfc371b23a30a4bd530f675e757921fa3f9bd/design-django-theme-2.4.2.tar.gz
+[2023-05-09 09:25:36] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: executing diffoscope
+[2023-05-09 09:25:36] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_sale_workflow-16.0.20230506.0-py3-none-any.whl.zip tmp/odoo_addons_oca_sale_workflow-16.0.20230507.0-py3-none-any.whl.zip --markdown 20230509/o/odoo-addons-oca-sale-workflow/16.0.20230506.0-16.0.20230507.0/diff.md --exclude *.pyd
+[2023-05-09 09:25:36] INFO root fetch - processPackages [alfred-pyflow]: Downloading https://files.pythonhosted.org/packages/dd/80/149eb972a3c06b03f23cb7c6ae49e8cab00213994c15c59809a294e40abf/alfred_pyflow-0.4.1.tar.gz
+[2023-05-09 09:25:36] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 09:25:36] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683616845.0.tar.gz tmp/garaprod-0.1683616896.0.tar.gz --markdown 20230509/g/garaprod/0.1683616845.0-0.1683616896.0/diff.md --exclude *.pyd
+[2023-05-09 09:25:36] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 09:25:36] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683616845.0.tar.gz tmp/garaprod-0.1683616896.0.tar.gz --markdown 20230509/g/garaprod/0.1683616845.0-0.1683616896.0/diff.md --exclude *.pyd
+[2023-05-09 09:25:36] INFO root fetch - processPackages [design-django-theme]: executing diffoscope
+[2023-05-09 09:25:36] INFO root fetch - processPackages [design-django-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/design-django-theme-2.3.6.post3.tar.gz tmp/design-django-theme-2.4.2.tar.gz --markdown 20230509/d/design-django-theme/2.3.6.post3-2.4.2/diff.md --exclude *.pyd
+[2023-05-09 09:25:36] INFO root fetch - processPackages [alfred-pyflow]: executing diffoscope
+[2023-05-09 09:25:36] INFO root fetch - processPackages [alfred-pyflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfred_pyflow-0.4.0.tar.gz tmp/alfred_pyflow-0.4.1.tar.gz --markdown 20230509/a/alfred-pyflow/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-09 09:25:36] INFO root fetch - processPackages [pyobis]: Downloading https://files.pythonhosted.org/packages/29/89/c44daeb602c464eb3f8cde118c9297634682367f9157dbdfd61582434029/pyobis-1.4.0.tar.gz
+[2023-05-09 09:25:36] INFO root fetch - processPackages [pyobis]: executing diffoscope
+[2023-05-09 09:25:36] INFO root fetch - processPackages [pyobis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobis-1.3.1.tar.gz tmp/pyobis-1.4.0.tar.gz --markdown 20230509/p/pyobis/1.3.1-1.4.0/diff.md --exclude *.pyd
+[2023-05-09 09:25:37] INFO root fetch - processPackages [reytool]: Start processing: libcnmc
+[2023-05-09 09:25:37] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-05-09 09:25:37] INFO root fetch - processPackages [libcnmc]: New version: [23.9.1] Old Version: [23.9.0]
+[2023-05-09 09:25:37] INFO root fetch - processPackages [libcnmc]: executing diffoscope
+[2023-05-09 09:25:37] INFO root fetch - processPackages [libcnmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libcnmc-23.9.0.tar.gz tmp/libcnmc-23.9.1.tar.gz --markdown 20230509/l/libcnmc/23.9.0-23.9.1/diff.md --exclude *.pyd
+[2023-05-09 09:25:37] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Start processing: impose-cli
+[2023-05-09 09:25:37] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-sale-workflow]: success
+[2023-05-09 09:25:37] WARNING root fetch - processPackages [impose-cli]: Skipping, unable to determine old version
+[2023-05-09 09:25:37] INFO root fetch - processPackages [impose-cli]: Start processing: cashfree-lrs-client
+[2023-05-09 09:25:37] INFO root fetch - main [MainThread]: End processing [impose-cli] error
+[2023-05-09 09:25:37] INFO root fetch - processPackages [cashfree-lrs-client]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-09 09:25:37] INFO root fetch - processPackages [cashfree-lrs-client]: executing diffoscope
+[2023-05-09 09:25:37] INFO root fetch - processPackages [cashfree-lrs-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cashfree_lrs_client-1.0.5.tar.gz tmp/cashfree_lrs_client-1.0.6.tar.gz --markdown 20230509/c/cashfree-lrs-client/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-09 09:25:37] INFO root fetch - processPackages [titan-iris]: Start processing: py-book-util
+[2023-05-09 09:25:37] INFO root fetch - main [MainThread]: End processing [titan-iris]: success
+[2023-05-09 09:25:37] INFO root fetch - processPackages [garaprod]: Start processing: garaprod
+[2023-05-09 09:25:37] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 09:25:37] INFO root fetch - processPackages [garaprod]: New version: [0.1683617055.0] Old Version: [0.1683616896.0]
+[2023-05-09 09:25:37] INFO root fetch - processPackages [alfred-pyflow]: Start processing: reytool
+[2023-05-09 09:25:37] INFO root fetch - main [MainThread]: End processing [alfred-pyflow]: success
+[2023-05-09 09:25:37] INFO root fetch - processPackages [py-book-util]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 09:25:37] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-05-09 09:25:37] INFO root fetch - processPackages [garaprod]: Start processing: bigflow
+[2023-05-09 09:25:37] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 09:25:37] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-05-09 09:25:37] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230509/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-05-09 09:25:37] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/03/8e/c92c655a2001080e9d0e384229d03d42b366524da1532dfd5cd71cb9095e/garaprod-0.1683617055.0.tar.gz
+[2023-05-09 09:25:37] INFO root fetch - processPackages [bigflow]: New version: [1.7.1] Old Version: [1.7.0.dev1]
+[2023-05-09 09:25:37] INFO root fetch - processPackages [py-book-util]: Downloading https://files.pythonhosted.org/packages/8e/b0/9504155f9895b66bac6ce6ec5f9f521cfcc070673417ec7d583fb50bef75/py_book_util-0.1.8.tar.gz
+[2023-05-09 09:25:38] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 09:25:38] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683616896.0.tar.gz tmp/garaprod-0.1683617055.0.tar.gz --markdown 20230509/g/garaprod/0.1683616896.0-0.1683617055.0/diff.md --exclude *.pyd
+[2023-05-09 09:25:38] INFO root fetch - processPackages [bigflow]: Downloading https://files.pythonhosted.org/packages/a9/4c/49abb990f45a5b1d775379f278b7facbcb2cb8fe07d2545e68c0218d6ca0/bigflow-1.7.0.dev1.tar.gz
+[2023-05-09 09:25:38] INFO root fetch - processPackages [py-book-util]: Downloading https://files.pythonhosted.org/packages/7a/24/f9aa1a02020217de693a235eede5ff9b666a960b8f5f4d7f052c6527bcaf/py_book_util-0.1.9.tar.gz
+[2023-05-09 09:25:38] INFO root fetch - processPackages [bigflow]: Downloading https://files.pythonhosted.org/packages/e3/24/68cebc793807ed7c502aa87438a9b5de5ca458a1835aecbda180868c912f/bigflow-1.7.1.tar.gz
+[2023-05-09 09:25:38] INFO root fetch - processPackages [py-book-util]: executing diffoscope
+[2023-05-09 09:25:38] INFO root fetch - processPackages [py-book-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_book_util-0.1.8.tar.gz tmp/py_book_util-0.1.9.tar.gz --markdown 20230509/p/py-book-util/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 09:25:38] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-terraform-state-backend]: success
+[2023-05-09 09:25:38] INFO root fetch - processPackages [bigflow]: executing diffoscope
+[2023-05-09 09:25:38] INFO root fetch - processPackages [bigflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigflow-1.7.0.dev1.tar.gz tmp/bigflow-1.7.1.tar.gz --markdown 20230509/b/bigflow/1.7.0.dev1-1.7.1/diff.md --exclude *.pyd
+[2023-05-09 09:25:39] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-05-09 09:25:39] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 09:25:39] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-05-09 09:25:39] INFO root fetch - main [MainThread]: End processing [cashfree-lrs-client]: success
+[2023-05-09 09:25:39] INFO root fetch - main [MainThread]: End processing [py-book-util]: success
+[2023-05-09 09:25:39] INFO root fetch - main [MainThread]: End processing [libcnmc]: success
+[2023-05-09 09:25:40] INFO root fetch - main [MainThread]: End processing [pyobis]: success
+[2023-05-09 09:25:40] INFO root fetch - main [MainThread]: End processing [bigflow]: success
+[2023-05-09 09:25:42] INFO root fetch - main [MainThread]: End processing [design-django-theme]: success
+[2023-05-09 09:25:42] INFO root fetch - main [MainThread]: Store serial: [18028859]
