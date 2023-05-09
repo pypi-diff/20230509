@@ -10221,3 +10221,138 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 08:23:15] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-05-09 08:23:18] INFO root fetch - main [MainThread]: End processing [pulumi-okta]: success
 [2023-05-09 08:23:18] INFO root fetch - main [MainThread]: Store serial: [18028194]
+[2023-05-09 08:28:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028194]
+[2023-05-09 08:28:27] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: formkit-ninja
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aliyun-python-sdk-ccc
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vizad
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fake-bpy-module-latest
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ai-data-preprocessing-queue
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pamai
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chemotools
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-onelogin
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: redcat
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: assignment-manager
+[2023-05-09 08:28:27] INFO root fetch - processPackages [formkit-ninja]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-09 08:28:27] WARNING root fetch - processPackages [vizad]: Skipping, unable to determine old version
+[2023-05-09 08:28:27] INFO root fetch - processPackages [vizad]: Start processing: mkdocs-annexes-integration
+[2023-05-09 08:28:27] INFO root fetch - processPackages [aliyun-python-sdk-ccc]: New version: [2.4.3] Old Version: [2.3.0]
+[2023-05-09 08:28:27] INFO root fetch - main [MainThread]: End processing [vizad] error
+[2023-05-09 08:28:27] INFO root fetch - processPackages [pamai]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-09 08:28:27] WARNING root fetch - processPackages [redcat]: Skipping, unable to determine old version
+[2023-05-09 08:28:27] INFO root fetch - processPackages [redcat]: Start processing: cvxsimulator
+[2023-05-09 08:28:27] INFO root fetch - main [MainThread]: End processing [redcat] error
+[2023-05-09 08:28:27] INFO root fetch - processPackages [assignment-manager]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ai-data-preprocessing-queue]: New version: [1.4.0] Old Version: [0.1.0]
+[2023-05-09 08:28:27] INFO root fetch - processPackages [chemotools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 08:28:27] INFO root fetch - processPackages [pulumi-onelogin]: New version: [0.6.1a1683611827] Old Version: [0.6.1a1683352549]
+[2023-05-09 08:28:27] WARNING root fetch - processPackages [mkdocs-annexes-integration]: Skipping, unable to determine old version
+[2023-05-09 08:28:27] INFO root fetch - processPackages [mkdocs-annexes-integration]: Start processing: alibabacloud-ccc20200701-py2
+[2023-05-09 08:28:27] INFO root fetch - main [MainThread]: End processing [mkdocs-annexes-integration] error
+[2023-05-09 08:28:27] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230509] Old Version: [20230508]
+[2023-05-09 08:28:27] INFO root fetch - processPackages [alibabacloud-ccc20200701-py2]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-05-09 08:28:27] INFO root fetch - processPackages [cvxsimulator]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-09 08:28:27] INFO root fetch - processPackages [aliyun-python-sdk-ccc]: executing diffoscope
+[2023-05-09 08:28:27] INFO root fetch - processPackages [aliyun-python-sdk-ccc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-ccc-2.3.0.tar.gz tmp/aliyun-python-sdk-ccc-2.4.3.tar.gz --markdown 20230509/a/aliyun-python-sdk-ccc/2.3.0-2.4.3/diff.md --exclude *.pyd
+[2023-05-09 08:28:27] INFO root fetch - processPackages [alibabacloud-ccc20200701-py2]: executing diffoscope
+[2023-05-09 08:28:27] INFO root fetch - processPackages [alibabacloud-ccc20200701-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_ccc20200701_py2-2.4.0.tar.gz tmp/alibabacloud_ccc20200701_py2-2.4.1.tar.gz --markdown 20230509/a/alibabacloud-ccc20200701-py2/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ai-data-preprocessing-queue]: Downloading https://files.pythonhosted.org/packages/aa/d6/39bced20e2fdd9d110d7e978650390f657c3c2be2a516b237622ea1ca50e/ai-data-preprocessing-queue-0.1.0.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [assignment-manager]: Downloading https://files.pythonhosted.org/packages/3f/3e/aefd5e28b5ae6ea8cd56abd7f099fb2f2e8424de212b21cfd837fd029149/assignment-manager-0.1.5.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [pamai]: Downloading https://files.pythonhosted.org/packages/c4/f8/d18767c9670cb3ae94f373cc856a020117b67dcc511e6bd797c6c90e9cd7/pamai-1.0.4.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [chemotools]: Downloading https://files.pythonhosted.org/packages/a4/fa/4b535fc354bf39a56cdfcc0c096bdf6d2b738fbb6cd75b60b8ffae5d3bc6/chemotools-0.0.8.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/4d/90/4f015ccbd5d6b98766484e74115c69a8ae86124022cc0b216ef3869b41b4/pulumi_onelogin-0.6.1a1683352549.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [cvxsimulator]: Downloading https://files.pythonhosted.org/packages/6d/18/f3a130c348cdbec923e7deb673058e447fe427999cceafe539a0277d8ce5/cvxsimulator-0.2.2.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/4a/d4/c9038f1c9196383a93f08c7d47b468ef02fb8720f73fa6c57a1a75cb4d44/fake-bpy-module-latest-20230508.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [formkit-ninja]: Downloading https://files.pythonhosted.org/packages/b0/cd/63651f2f3c8ea59d8c9d65c9622f265b3b1e2d5b70fefe48ddeff35a3bdd/formkit_ninja-0.3.2.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [pamai]: executing diffoscope
+[2023-05-09 08:28:27] INFO root fetch - processPackages [pamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pamai-1.0.3.tar.gz tmp/pamai-1.0.4.tar.gz --markdown 20230509/p/pamai/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-09 08:28:27] INFO root fetch - processPackages [formkit-ninja]: executing diffoscope
+[2023-05-09 08:28:27] INFO root fetch - processPackages [formkit-ninja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formkit_ninja-0.3.1.tar.gz tmp/formkit_ninja-0.3.2.tar.gz --markdown 20230509/f/formkit-ninja/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ai-data-preprocessing-queue]: Downloading https://files.pythonhosted.org/packages/60/7f/aec410496f6bbe85fcb0f7469e70e21ddc774c1695ea3a1c4e34e034878a/ai-data-preprocessing-queue-1.4.0.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [assignment-manager]: Downloading https://files.pythonhosted.org/packages/6f/11/6f1a6b7c6858f4c75dd3bcfe31a0482416d0ea9ae11a4630b34ea9a37845/assignment-manager-0.1.6.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [cvxsimulator]: executing diffoscope
+[2023-05-09 08:28:27] INFO root fetch - processPackages [cvxsimulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxsimulator-0.2.1.tar.gz tmp/cvxsimulator-0.2.2.tar.gz --markdown 20230509/c/cvxsimulator/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-09 08:28:27] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/c6/33/b242308d708b7971a613d460e5e89f54b110aafa4cc54df74eb014fe6f01/pulumi_onelogin-0.6.1a1683611827.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [chemotools]: Downloading https://files.pythonhosted.org/packages/5b/ca/82965eff739116141e64dd814023d634fbc085ef8721f45f9155363a3926/chemotools-0.0.9.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/2e/b4/0c1ff9e06ede3494d5b0575337d9c3bb1c7c2db671e6940fbd7ffe5c44b9/fake-bpy-module-latest-20230509.tar.gz
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ai-data-preprocessing-queue]: executing diffoscope
+[2023-05-09 08:28:27] INFO root fetch - processPackages [ai-data-preprocessing-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai-data-preprocessing-queue-0.1.0.tar.gz tmp/ai-data-preprocessing-queue-1.4.0.tar.gz --markdown 20230509/a/ai-data-preprocessing-queue/0.1.0-1.4.0/diff.md --exclude *.pyd
+[2023-05-09 08:28:27] INFO root fetch - processPackages [assignment-manager]: executing diffoscope
+[2023-05-09 08:28:27] INFO root fetch - processPackages [assignment-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assignment-manager-0.1.5.tar.gz tmp/assignment-manager-0.1.6.tar.gz --markdown 20230509/a/assignment-manager/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-09 08:28:28] INFO root fetch - processPackages [pulumi-onelogin]: executing diffoscope
+[2023-05-09 08:28:28] INFO root fetch - processPackages [pulumi-onelogin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_onelogin-0.6.1a1683352549.tar.gz tmp/pulumi_onelogin-0.6.1a1683611827.tar.gz --markdown 20230509/p/pulumi-onelogin/0.6.1a1683352549-0.6.1a1683611827/diff.md --exclude *.pyd
+[2023-05-09 08:28:28] INFO root fetch - processPackages [chemotools]: executing diffoscope
+[2023-05-09 08:28:28] INFO root fetch - processPackages [chemotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemotools-0.0.8.tar.gz tmp/chemotools-0.0.9.tar.gz --markdown 20230509/c/chemotools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 08:28:28] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-05-09 08:28:28] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230508.tar.gz tmp/fake-bpy-module-latest-20230509.tar.gz --markdown 20230509/f/fake-bpy-module-latest/20230508-20230509/diff.md --exclude *.pyd
+[2023-05-09 08:28:29] INFO root fetch - processPackages [pamai]: Start processing: alibabacloud-ccc20200701
+[2023-05-09 08:28:29] INFO root fetch - main [MainThread]: End processing [pamai]: success
+[2023-05-09 08:28:29] INFO root fetch - processPackages [alibabacloud-ccc20200701]: New version: [2.7.0] Old Version: [2.4.1]
+[2023-05-09 08:28:29] INFO root fetch - processPackages [alibabacloud-ccc20200701]: executing diffoscope
+[2023-05-09 08:28:29] INFO root fetch - processPackages [alibabacloud-ccc20200701]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_ccc20200701-2.4.1.tar.gz tmp/alibabacloud_ccc20200701-2.7.0.tar.gz --markdown 20230509/a/alibabacloud-ccc20200701/2.4.1-2.7.0/diff.md --exclude *.pyd
+[2023-05-09 08:28:29] INFO root fetch - processPackages [ai-data-preprocessing-queue]: Start processing: mootdx
+[2023-05-09 08:28:29] INFO root fetch - main [MainThread]: End processing [ai-data-preprocessing-queue]: success
+[2023-05-09 08:28:29] INFO root fetch - processPackages [mootdx]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 08:28:29] INFO root fetch - processPackages [cvxsimulator]: Start processing: jdcloud-sdk
+[2023-05-09 08:28:29] INFO root fetch - main [MainThread]: End processing [cvxsimulator]: success
+[2023-05-09 08:28:29] INFO root fetch - processPackages [jdcloud-sdk]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-05-09 08:28:29] INFO root fetch - processPackages [assignment-manager]: Start processing: sparrowcloud
+[2023-05-09 08:28:29] INFO root fetch - main [MainThread]: End processing [assignment-manager]: success
+[2023-05-09 08:28:29] INFO root fetch - processPackages [mootdx]: Downloading https://files.pythonhosted.org/packages/72/07/da98b3355ddcc663ca86afb6fc85557412fdf562280b02ffe9a7c7b14f05/mootdx-0.9.8.tar.gz
+[2023-05-09 08:28:29] INFO root fetch - processPackages [sparrowcloud]: New version: [4.1.0] Old Version: [4.0.1]
+[2023-05-09 08:28:29] INFO root fetch - processPackages [formkit-ninja]: Start processing: yaml-config-builder
+[2023-05-09 08:28:29] INFO root fetch - main [MainThread]: End processing [formkit-ninja]: success
+[2023-05-09 08:28:29] INFO root fetch - processPackages [jdcloud-sdk]: Downloading https://files.pythonhosted.org/packages/95/4f/825f3e2814e962db5d30b644c7fdfc01996a9bbe76c789866aeaf20d1d82/jdcloud_sdk-1.6.98.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [chemotools]: Start processing: IoddComBase
+[2023-05-09 08:28:30] INFO root fetch - main [MainThread]: End processing [chemotools]: success
+[2023-05-09 08:28:30] INFO root fetch - processPackages [yaml-config-builder]: New version: [8.0.1] Old Version: [8.0.0]
+[2023-05-09 08:28:30] INFO root fetch - processPackages [sparrowcloud]: Downloading https://files.pythonhosted.org/packages/f3/00/1f064b0729066eb416568e20a34b1b0f4ece7c2a26066b18bfe9a2a6f310/sparrowcloud-4.0.1.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [IoddComBase]: New version: [1.6.7] Old Version: [1.6.6]
+[2023-05-09 08:28:30] INFO root fetch - processPackages [pulumi-onelogin]: Start processing: pulumi-cloudinit
+[2023-05-09 08:28:30] INFO root fetch - main [MainThread]: End processing [pulumi-onelogin]: success
+[2023-05-09 08:28:30] INFO root fetch - processPackages [yaml-config-builder]: Downloading https://files.pythonhosted.org/packages/46/43/c57c84d2db03c83de4efeef019008908e121f815f558e29a251d34960763/yaml_config_builder-8.0.0.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [mootdx]: Downloading https://files.pythonhosted.org/packages/f7/94/bebf14fdb2cde078167d69a93a491cd27d77902c24eaa462b2faaa154f28/mootdx-0.9.9.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [alibabacloud-ccc20200701-py2]: Start processing: pulumi-docker
+[2023-05-09 08:28:30] INFO root fetch - main [MainThread]: End processing [alibabacloud-ccc20200701-py2]: success
+[2023-05-09 08:28:30] INFO root fetch - processPackages [IoddComBase]: Downloading https://files.pythonhosted.org/packages/91/62/c01e4428b6c0c5451f057dc0677f0523841f86d2afaf7f3e60a71620d897/ioddcombase-1.6.6-cp39-cp39-win_amd64.whl
+[2023-05-09 08:28:30] INFO root fetch - processPackages [pulumi-cloudinit]: New version: [1.4.0a1683609593] Old Version: [1.4.0a1683350411]
+[2023-05-09 08:28:30] INFO root fetch - processPackages [sparrowcloud]: Downloading https://files.pythonhosted.org/packages/d6/87/9f212f0860eadaa5bceabf8330fb8511e59912d0d79267c5647525cfb506/sparrowcloud-4.1.0.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [mootdx]: executing diffoscope
+[2023-05-09 08:28:30] INFO root fetch - processPackages [mootdx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mootdx-0.9.8.tar.gz tmp/mootdx-0.9.9.tar.gz --markdown 20230509/m/mootdx/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 08:28:30] INFO root fetch - processPackages [pulumi-docker]: New version: [4.3.0a1683610879] Old Version: [4.3.0a1683351217]
+[2023-05-09 08:28:30] INFO root fetch - processPackages [jdcloud-sdk]: Downloading https://files.pythonhosted.org/packages/14/1e/7f5fff16d7e0e2793fdd72a4eb17de3ad540cf935be128a7c69d1ee161c0/jdcloud_sdk-1.6.99.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [yaml-config-builder]: Downloading https://files.pythonhosted.org/packages/75/6b/22b2120417dbbfc08e5b857fa3d5cb689258db0598070fa6a36e44bb9ce1/yaml_config_builder-8.0.1.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [sparrowcloud]: executing diffoscope
+[2023-05-09 08:28:30] INFO root fetch - processPackages [sparrowcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrowcloud-4.0.1.tar.gz tmp/sparrowcloud-4.1.0.tar.gz --markdown 20230509/s/sparrowcloud/4.0.1-4.1.0/diff.md --exclude *.pyd
+[2023-05-09 08:28:30] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/2e/cf/87d4acc4e30132a2700be8fbd1bcfd138236fdb83dc9ed3ff2f341307063/pulumi_cloudinit-1.4.0a1683350411.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/db/1d/5bf6884ac8c2ad6105009fd933b43f50affc4f104f41c7b3d3595b281d3b/pulumi_docker-4.3.0a1683351217.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [yaml-config-builder]: executing diffoscope
+[2023-05-09 08:28:30] INFO root fetch - processPackages [yaml-config-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yaml_config_builder-8.0.0.tar.gz tmp/yaml_config_builder-8.0.1.tar.gz --markdown 20230509/y/yaml-config-builder/8.0.0-8.0.1/diff.md --exclude *.pyd
+[2023-05-09 08:28:30] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/df/4e/d96b82f22c88b0e6f25c340256eb21d5223e8cd4fab993e4f2e980200c14/pulumi_cloudinit-1.4.0a1683609593.tar.gz
+[2023-05-09 08:28:30] INFO root fetch - processPackages [jdcloud-sdk]: executing diffoscope
+[2023-05-09 08:28:30] INFO root fetch - processPackages [jdcloud-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jdcloud_sdk-1.6.98.tar.gz tmp/jdcloud_sdk-1.6.99.tar.gz --markdown 20230509/j/jdcloud-sdk/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-05-09 08:28:30] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/c7/35/b16dcbcfc501421c3f5e0de57a22fd7022a1316d0ac97e6702b450ecf492/pulumi_docker-4.3.0a1683610879.tar.gz
+[2023-05-09 08:28:31] INFO root fetch - processPackages [pulumi-cloudinit]: executing diffoscope
+[2023-05-09 08:28:31] INFO root fetch - processPackages [pulumi-cloudinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudinit-1.4.0a1683350411.tar.gz tmp/pulumi_cloudinit-1.4.0a1683609593.tar.gz --markdown 20230509/p/pulumi-cloudinit/1.4.0a1683350411-1.4.0a1683609593/diff.md --exclude *.pyd
+[2023-05-09 08:28:31] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2023-05-09 08:28:31] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.3.0a1683351217.tar.gz tmp/pulumi_docker-4.3.0a1683610879.tar.gz --markdown 20230509/p/pulumi-docker/4.3.0a1683351217-4.3.0a1683610879/diff.md --exclude *.pyd
+[2023-05-09 08:28:31] INFO root fetch - processPackages [IoddComBase]: Downloading https://files.pythonhosted.org/packages/75/77/42da63aa0793a10853d928cfc76ac715d000f4e37fb26dec875f05a3766c/ioddcombase-1.6.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-09 08:28:31] INFO root fetch - processPackages [aliyun-python-sdk-ccc]: Start processing: bp-data-fabric
+[2023-05-09 08:28:31] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-ccc]: success
+[2023-05-09 08:28:31] INFO root fetch - processPackages [bp-data-fabric]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-09 08:28:31] INFO root fetch - processPackages [bp-data-fabric]: executing diffoscope
+[2023-05-09 08:28:31] INFO root fetch - processPackages [bp-data-fabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bp_data_fabric-1.0.6.tar.gz tmp/bp_data_fabric-1.0.7.tar.gz --markdown 20230509/b/bp-data-fabric/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-09 08:28:31] INFO root fetch - processPackages [IoddComBase]: executing diffoscope
+[2023-05-09 08:28:31] INFO root fetch - processPackages [IoddComBase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioddcombase-1.6.6-cp39-cp39-win_amd64.whl.zip tmp/ioddcombase-1.6.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230509/I/IoddComBase/1.6.6-1.6.7/diff.md --exclude *.pyd
+[2023-05-09 08:28:32] INFO root fetch - main [MainThread]: End processing [yaml-config-builder]: success
+[2023-05-09 08:28:32] INFO root fetch - main [MainThread]: End processing [mootdx]: success
+[2023-05-09 08:28:32] INFO root fetch - main [MainThread]: End processing [pulumi-cloudinit]: success
+[2023-05-09 08:28:32] INFO root fetch - main [MainThread]: End processing [bp-data-fabric]: success
+[2023-05-09 08:28:33] INFO root fetch - main [MainThread]: End processing [IoddComBase]: success
+[2023-05-09 08:28:34] INFO root fetch - main [MainThread]: End processing [sparrowcloud]: success
+[2023-05-09 08:28:34] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2023-05-09 08:28:35] INFO root fetch - main [MainThread]: End processing [alibabacloud-ccc20200701]: success
+[2023-05-09 08:28:38] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-05-09 08:31:30] ERROR root fetch - processPackages [jdcloud-sdk]: Timeout during execution of pkgdiff
+[2023-05-09 08:31:30] INFO root fetch - main [MainThread]: End processing [jdcloud-sdk] error
+[2023-05-09 08:31:30] INFO root fetch - main [MainThread]: Store serial: [18028270]
