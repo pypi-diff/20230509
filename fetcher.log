@@ -11144,3 +11144,93 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 09:14:22] INFO root fetch - main [MainThread]: End processing [napari-nD-annotator]: success
 [2023-05-09 09:14:28] INFO root fetch - main [MainThread]: End processing [holoviews]: success
 [2023-05-09 09:14:28] INFO root fetch - main [MainThread]: Store serial: [18028766]
+[2023-05-09 09:19:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028766]
+[2023-05-09 09:19:37] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-nightly
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-oci
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cognite-power-ops
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alfred-pyflow
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sj-tool
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: titan-iris
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tf-hub-nightly
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: htutil
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: impose-cli
+[2023-05-09 09:19:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fractal-server
+[2023-05-09 09:19:37] INFO root fetch - processPackages [alfred-pyflow]: New version: [0.4.0] Old Version: [0.3.3]
+[2023-05-09 09:19:37] INFO root fetch - processPackages [sj-tool]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 09:19:37] INFO root fetch - processPackages [pulumi-oci]: New version: [0.9.1a1677791364] Old Version: [0.9.0]
+[2023-05-09 09:19:37] INFO root fetch - processPackages [cognite-power-ops]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-09 09:19:37] INFO root fetch - processPackages [htutil]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-05-09 09:19:37] WARNING root fetch - processPackages [impose-cli]: Skipping, unable to determine old version
+[2023-05-09 09:19:37] INFO root fetch - processPackages [impose-cli]: Start processing: tfq-nightly
+[2023-05-09 09:19:37] INFO root fetch - main [MainThread]: End processing [impose-cli] error
+[2023-05-09 09:19:37] INFO root fetch - processPackages [fractal-server]: New version: [1.2.5a0] Old Version: [1.2.4a0]
+[2023-05-09 09:19:37] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-05-09 09:19:38] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230508] Old Version: [0.7.3.dev20230507]
+[2023-05-09 09:19:38] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-05-09 09:19:38] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-05-09 09:19:38] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230509/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-05-09 09:19:38] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-05-09 09:19:38] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-05-09 09:19:38] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230509/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-05-09 09:19:38] INFO root fetch - processPackages [htutil]: Downloading https://files.pythonhosted.org/packages/e5/d9/88bd49ad63595273194f5c038dd212ca2f79291abc481f2ad6877a06b424/htutil-3.0.0.tar.gz
+[2023-05-09 09:19:38] INFO root fetch - processPackages [alfred-pyflow]: Downloading https://files.pythonhosted.org/packages/36/ab/a72a0e0bcd402310e9e8b139b19c07c6f494b626ed9bcce485d81122383f/alfred-pyflow-0.3.3.tar.gz
+[2023-05-09 09:19:38] INFO root fetch - processPackages [pulumi-oci]: Downloading https://files.pythonhosted.org/packages/c2/de/1f1e18389f923dc91b70a4e3499aff21a0e25cdf6f8e38d41b52d513d7ba/pulumi_oci-0.9.0.tar.gz
+[2023-05-09 09:19:38] INFO root fetch - processPackages [fractal-server]: Downloading https://files.pythonhosted.org/packages/25/61/d540e694a14ecce20fd0183bf8692c02c0f9a73ba58e0a772d87cbbab77d/fractal_server-1.2.4a0.tar.gz
+[2023-05-09 09:19:38] INFO root fetch - processPackages [cognite-power-ops]: Downloading https://files.pythonhosted.org/packages/6b/f9/576a55cfc647302ad89f13393cf43372018abb659d6e5383dd7213ae74ec/cognite_power_ops-0.1.0.tar.gz
+[2023-05-09 09:19:38] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/36/f5/d164974b4208c980f1128e66fb47dc9b44cc1a30564d104b47da1a71a75e/tfq_nightly-0.7.3.dev20230507-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-09 09:19:38] INFO root fetch - processPackages [sj-tool]: executing diffoscope
+[2023-05-09 09:19:38] INFO root fetch - processPackages [sj-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sj_tool-1.0.8-py3-none-any.whl.zip tmp/sj_tool-1.0.9-py3-none-any.whl.zip --markdown 20230509/s/sj-tool/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 09:19:38] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819849>=10485760
+[2023-05-09 09:19:38] INFO root fetch - processPackages [tfq-nightly]: Start processing: pepperize.cdk-terraform-state-backend
+[2023-05-09 09:19:38] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-05-09 09:19:38] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-09 09:19:38] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-05-09 09:19:38] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230509/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-09 09:19:38] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-05-09 09:19:38] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230509/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-05-09 09:19:38] INFO root fetch - processPackages [cognite-power-ops]: Downloading https://files.pythonhosted.org/packages/67/72/8277bdc1a638f963eae3920e425aa23ed42de7837819bf9ac8d7d29c629f/cognite_power_ops-0.2.0.tar.gz
+[2023-05-09 09:19:38] INFO root fetch - processPackages [fractal-server]: Downloading https://files.pythonhosted.org/packages/3c/29/28d24b9e6712984d84c8d9203b56b40e0b603c27a31c8999e31bde8dd256/fractal_server-1.2.5a0.tar.gz
+[2023-05-09 09:19:38] INFO root fetch - processPackages [alfred-pyflow]: Downloading https://files.pythonhosted.org/packages/d9/7f/04ac6f185b317a4ab6459323dcba0513e02f48cef90653f5493f4f48014b/alfred_pyflow-0.4.0.tar.gz
+[2023-05-09 09:19:38] INFO root fetch - processPackages [fractal-server]: executing diffoscope
+[2023-05-09 09:19:38] INFO root fetch - processPackages [fractal-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fractal_server-1.2.4a0.tar.gz tmp/fractal_server-1.2.5a0.tar.gz --markdown 20230509/f/fractal-server/1.2.4a0-1.2.5a0/diff.md --exclude *.pyd
+[2023-05-09 09:19:38] INFO root fetch - processPackages [cognite-power-ops]: executing diffoscope
+[2023-05-09 09:19:38] INFO root fetch - processPackages [cognite-power-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_power_ops-0.1.0.tar.gz tmp/cognite_power_ops-0.2.0.tar.gz --markdown 20230509/c/cognite-power-ops/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 09:19:38] INFO root fetch - processPackages [alfred-pyflow]: executing diffoscope
+[2023-05-09 09:19:38] INFO root fetch - processPackages [alfred-pyflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfred-pyflow-0.3.3.tar.gz tmp/alfred_pyflow-0.4.0.tar.gz --markdown 20230509/a/alfred-pyflow/0.3.3-0.4.0/diff.md --exclude *.pyd
+[2023-05-09 09:19:38] INFO root fetch - processPackages [htutil]: Downloading https://files.pythonhosted.org/packages/9b/6f/81c6779b74c24e2bc9a7e2092c00e3fba2498f7c20b48e6d1c523363140f/htutil-3.0.1.tar.gz
+[2023-05-09 09:19:38] INFO root fetch - processPackages [htutil]: executing diffoscope
+[2023-05-09 09:19:38] INFO root fetch - processPackages [htutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htutil-3.0.0.tar.gz tmp/htutil-3.0.1.tar.gz --markdown 20230509/h/htutil/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-05-09 09:19:39] INFO root fetch - processPackages [titan-iris]: Start processing: pulumi-rancher2
+[2023-05-09 09:19:39] INFO root fetch - main [MainThread]: End processing [titan-iris]: success
+[2023-05-09 09:19:39] INFO root fetch - processPackages [pulumi-rancher2]: New version: [4.1.0a1683615026] Old Version: [4.1.0a1683353358]
+[2023-05-09 09:19:39] INFO root fetch - processPackages [tf-hub-nightly]: Start processing: musegan
+[2023-05-09 09:19:39] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-05-09 09:19:39] INFO root fetch - processPackages [sj-tool]: Start processing: pyxk
+[2023-05-09 09:19:39] INFO root fetch - main [MainThread]: End processing [sj-tool]: success
+[2023-05-09 09:19:39] INFO root fetch - processPackages [musegan]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-09 09:19:39] INFO root fetch - processPackages [pulumi-rancher2]: Downloading https://files.pythonhosted.org/packages/79/c3/3b1406a1ca3f9dd6b1791ca0d4e23ac12faedbe17e9c3ef9785f4982ce74/pulumi_rancher2-4.1.0a1683353358.tar.gz
+[2023-05-09 09:19:39] INFO root fetch - processPackages [pyxk]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-09 09:19:39] INFO root fetch - processPackages [musegan]: executing diffoscope
+[2023-05-09 09:19:39] INFO root fetch - processPackages [musegan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musegan-0.0.7.tar.gz tmp/musegan-0.0.8.tar.gz --markdown 20230509/m/musegan/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-09 09:19:39] INFO root fetch - main [MainThread]: End processing [cognite-power-ops]: success
+[2023-05-09 09:19:39] INFO root fetch - processPackages [pyxk]: Downloading https://files.pythonhosted.org/packages/e4/bc/20a673d71abcf01b93b85b9a004ca5b7ea39485fa38f3aade1b70214eb6e/pyxk-0.5.2.tar.gz
+[2023-05-09 09:19:39] INFO root fetch - processPackages [pulumi-rancher2]: Downloading https://files.pythonhosted.org/packages/2c/76/1217384623ac3772f0036132a526e4bfa7b1f3e19b014dec34fff69dea9e/pulumi_rancher2-4.1.0a1683615026.tar.gz
+[2023-05-09 09:19:40] INFO root fetch - processPackages [pulumi-rancher2]: executing diffoscope
+[2023-05-09 09:19:40] INFO root fetch - processPackages [pulumi-rancher2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rancher2-4.1.0a1683353358.tar.gz tmp/pulumi_rancher2-4.1.0a1683615026.tar.gz --markdown 20230509/p/pulumi-rancher2/4.1.0a1683353358-4.1.0a1683615026/diff.md --exclude *.pyd
+[2023-05-09 09:19:40] INFO root fetch - processPackages [pulumi-oci]: Downloading https://files.pythonhosted.org/packages/86/ea/282f83d0758757c8cabe17bc90aa9af50c1f1b9aa736f9ad87ee2c19659e/pulumi_oci-0.9.1a1677791364.tar.gz
+[2023-05-09 09:19:40] INFO root fetch - main [MainThread]: End processing [htutil]: success
+[2023-05-09 09:19:40] INFO root fetch - processPackages [pyxk]: Downloading https://files.pythonhosted.org/packages/17/c4/bce3b6a0330ba325fb8ab6a8b960a3edb4c8c7eb040a84bfb78c9729b5a9/pyxk-0.5.3.tar.gz
+[2023-05-09 09:19:40] INFO root fetch - processPackages [pyxk]: executing diffoscope
+[2023-05-09 09:19:40] INFO root fetch - processPackages [pyxk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxk-0.5.2.tar.gz tmp/pyxk-0.5.3.tar.gz --markdown 20230509/p/pyxk/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-09 09:19:40] INFO root fetch - main [MainThread]: End processing [fractal-server]: success
+[2023-05-09 09:19:40] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-terraform-state-backend]: success
+[2023-05-09 09:19:41] INFO root fetch - main [MainThread]: End processing [musegan]: success
+[2023-05-09 09:19:41] INFO root fetch - processPackages [pulumi-oci]: executing diffoscope
+[2023-05-09 09:19:41] INFO root fetch - processPackages [pulumi-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_oci-0.9.0.tar.gz tmp/pulumi_oci-0.9.1a1677791364.tar.gz --markdown 20230509/p/pulumi-oci/0.9.0-0.9.1a1677791364/diff.md --exclude *.pyd
+[2023-05-09 09:19:41] INFO root fetch - main [MainThread]: End processing [pyxk]: success
+[2023-05-09 09:19:42] INFO root fetch - main [MainThread]: End processing [pulumi-rancher2]: success
+[2023-05-09 09:19:57] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-05-09 09:20:05] INFO root fetch - main [MainThread]: End processing [alfred-pyflow]: success
+[2023-05-09 09:20:26] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
+[2023-05-09 09:20:26] INFO root fetch - main [MainThread]: Store serial: [18028810]
