@@ -21424,3 +21424,113 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 19:04:44] INFO root fetch - main [MainThread]: End processing [PyGObject-stubs]: success
 [2023-05-09 19:06:23] INFO root fetch - main [MainThread]: End processing [notebook]: success
 [2023-05-09 19:06:23] INFO root fetch - main [MainThread]: Store serial: [18035179]
+[2023-05-09 19:11:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18035179]
+[2023-05-09 19:11:33] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aws-codeseeder
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adsystemaiogram
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alphabetize
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: struct-gpt
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: garatool
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-eric-serialModule
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SplatStats
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: elkai
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PolicyEngine-UK
+[2023-05-09 19:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mkdocs-exporter
+[2023-05-09 19:11:33] INFO root fetch - processPackages [alphabetize]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [garatool]: New version: [0.1683652121.0] Old Version: [0.1683651958.0]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [adsystemaiogram]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [certora-cli-alpha-eric-serialModule]: New version: [20230509.17.6.498344] Old Version: [20230508.14.50.747022]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [aws-codeseeder]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [PolicyEngine-UK]: New version: [0.49.0] Old Version: [0.48.0]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [mkdocs-exporter]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [struct-gpt]: New version: [2.2.7] Old Version: [2.2.6]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [SplatStats]: New version: [1.5.3] Old Version: [1.5.0]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [elkai]: New version: [2.0.0] Old Version: [0.1.2]
+[2023-05-09 19:11:33] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/5c/8a/4590ab6a223fa4878f06b6a4122fecae1cbbe5381cd96678e3826647ea88/garatool-0.1683651958.0.tar.gz
+[2023-05-09 19:11:33] INFO root fetch - processPackages [certora-cli-alpha-eric-serialModule]: Downloading https://files.pythonhosted.org/packages/fc/88/1fedac88fa29cb94dceeb6a9d15bd71cff07b3d6b767bd8bd5ad987d53e5/certora-cli-alpha-eric-serialModule-20230508.14.50.747022.tar.gz
+[2023-05-09 19:11:33] WARNING root fetch - processPackages [certora-cli-alpha-eric-serialModule]: Skipping package: exceeds size limit 38545533>=10485760
+[2023-05-09 19:11:33] INFO root fetch - processPackages [certora-cli-alpha-eric-serialModule]: Start processing: pyboil
+[2023-05-09 19:11:33] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-serialModule] error
+[2023-05-09 19:11:33] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 19:11:34] INFO root fetch - processPackages [PolicyEngine-UK]: Downloading https://files.pythonhosted.org/packages/36/84/1ea420530b5fdcccd508ad23712391868493bae07abf0f91ddc7a955b270/PolicyEngine-UK-0.48.0.tar.gz
+[2023-05-09 19:11:34] INFO root fetch - processPackages [elkai]: Downloading https://files.pythonhosted.org/packages/b7/03/64a5f05d71ac6216d4f29306b11a8659333bf96700f380e64e565cdb34d2/elkai-0.1.2-cp39-cp39-win_amd64.whl
+[2023-05-09 19:11:34] INFO root fetch - processPackages [adsystemaiogram]: Downloading https://files.pythonhosted.org/packages/f4/04/59e050762a92cf5af30abf5b0b136e0ade8d33b4b082c1eddb9c45bb3011/adsystemaiogram-0.1.0.tar.gz
+[2023-05-09 19:11:34] INFO root fetch - processPackages [mkdocs-exporter]: Downloading https://files.pythonhosted.org/packages/9b/87/745d0ec00bf8c1b86fee315f48288073d12c0b5a0300df8b318f920b1807/mkdocs_exporter-1.1.0.tar.gz
+[2023-05-09 19:11:34] INFO root fetch - processPackages [mkdocs-exporter]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [mkdocs-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_exporter-1.0.2.tar.gz tmp/mkdocs_exporter-1.1.0.tar.gz --markdown 20230509/m/mkdocs-exporter/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 19:11:34] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 19:11:34] INFO root fetch - processPackages [alphabetize]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [alphabetize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphabetize-0.0.8.tar.gz tmp/alphabetize-0.0.9.tar.gz --markdown 20230509/a/alphabetize/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 19:11:34] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/90/24/9d74cbfdea85139f84e311e9a38a9e4c10c07a9a708aadf210d39fe840ad/garatool-0.1683652121.0.tar.gz
+[2023-05-09 19:11:34] INFO root fetch - processPackages [SplatStats]: Downloading https://files.pythonhosted.org/packages/c7/6a/0a86a3a575846a5081f53ec4082814d0ea6f0d38d355eeb5adc73ebe79d4/SplatStats-1.5.3.tar.gz
+[2023-05-09 19:11:34] INFO root fetch - processPackages [struct-gpt]: Downloading https://files.pythonhosted.org/packages/0b/64/93c08229160fe7f8aa7d189d98ec4dbf0f83a240903a59071f5f31314c81/struct_gpt-2.2.7.tar.gz
+[2023-05-09 19:11:34] INFO root fetch - processPackages [aws-codeseeder]: Downloading https://files.pythonhosted.org/packages/32/6f/ca38a4d8e8b76417e7c0095ea5f4f1140fa7fd909917c1a557b0bb7ed473/aws_codeseeder-0.9.2-py3-none-any.whl
+[2023-05-09 19:11:34] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683651958.0.tar.gz tmp/garatool-0.1683652121.0.tar.gz --markdown 20230509/g/garatool/0.1683651958.0-0.1683652121.0/diff.md --exclude *.pyd
+[2023-05-09 19:11:34] INFO root fetch - processPackages [struct-gpt]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [struct-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/struct_gpt-2.2.6.tar.gz tmp/struct_gpt-2.2.7.tar.gz --markdown 20230509/s/struct-gpt/2.2.6-2.2.7/diff.md --exclude *.pyd
+[2023-05-09 19:11:34] INFO root fetch - processPackages [aws-codeseeder]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [aws-codeseeder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_codeseeder-0.9.1-py3-none-any.whl.zip tmp/aws_codeseeder-0.9.2-py3-none-any.whl.zip --markdown 20230509/a/aws-codeseeder/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-09 19:11:34] INFO root fetch - processPackages [adsystemaiogram]: Downloading https://files.pythonhosted.org/packages/ae/c3/6af3e8fe456a2046a7f0956c894903c6119f5aa2e563133cd62497db5acb/adsystemaiogram-0.1.1.tar.gz
+[2023-05-09 19:11:34] INFO root fetch - processPackages [SplatStats]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [SplatStats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SplatStats-1.5.0.tar.gz tmp/SplatStats-1.5.3.tar.gz --markdown 20230509/S/SplatStats/1.5.0-1.5.3/diff.md --exclude *.pyd
+[2023-05-09 19:11:34] INFO root fetch - processPackages [elkai]: Downloading https://files.pythonhosted.org/packages/b1/6e/c03025a7fe04042a46ac4a0a5cb858953946e783e4b30a8974590682049b/elkai-2.0.0.tar.gz
+[2023-05-09 19:11:34] INFO root fetch - processPackages [adsystemaiogram]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [adsystemaiogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adsystemaiogram-0.1.0.tar.gz tmp/adsystemaiogram-0.1.1.tar.gz --markdown 20230509/a/adsystemaiogram/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 19:11:34] INFO root fetch - processPackages [PolicyEngine-UK]: Downloading https://files.pythonhosted.org/packages/50/1d/4d1045c170e6b063e528ee7ca55ffe49d36ca84ff4ebb7f7f70a3a9877f5/PolicyEngine-UK-0.49.0.tar.gz
+[2023-05-09 19:11:34] INFO root fetch - processPackages [elkai]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [elkai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elkai-0.1.2-cp39-cp39-win_amd64.whl.zip tmp/elkai-2.0.0.tar.gz --markdown 20230509/e/elkai/0.1.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-09 19:11:34] INFO root fetch - processPackages [PolicyEngine-UK]: executing diffoscope
+[2023-05-09 19:11:34] INFO root fetch - processPackages [PolicyEngine-UK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PolicyEngine-UK-0.48.0.tar.gz tmp/PolicyEngine-UK-0.49.0.tar.gz --markdown 20230509/P/PolicyEngine-UK/0.48.0-0.49.0/diff.md --exclude *.pyd
+[2023-05-09 19:11:35] INFO root fetch - processPackages [pyboil]: Start processing: garatool
+[2023-05-09 19:11:35] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 19:11:35] INFO root fetch - processPackages [garatool]: New version: [0.1683652121.0] Old Version: [0.1683651958.0]
+[2023-05-09 19:11:35] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 19:11:35] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683651958.0.tar.gz tmp/garatool-0.1683652121.0.tar.gz --markdown 20230509/g/garatool/0.1683651958.0-0.1683652121.0/diff.md --exclude *.pyd
+[2023-05-09 19:11:35] INFO root fetch - processPackages [garatool]: Start processing: paasta-tools
+[2023-05-09 19:11:35] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 19:11:35] INFO root fetch - processPackages [paasta-tools]: New version: [0.92.1] Old Version: [0.92.0]
+[2023-05-09 19:11:35] INFO root fetch - processPackages [alphabetize]: Start processing: antspymm
+[2023-05-09 19:11:35] INFO root fetch - main [MainThread]: End processing [alphabetize]: success
+[2023-05-09 19:11:35] INFO root fetch - processPackages [antspymm]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-09 19:11:35] INFO root fetch - processPackages [struct-gpt]: Start processing: genochain
+[2023-05-09 19:11:35] INFO root fetch - main [MainThread]: End processing [struct-gpt]: success
+[2023-05-09 19:11:35] ERROR root fetch - processPackages [genochain]: Unable to get metadata: No such project 'genochain'
+[2023-05-09 19:11:35] INFO root fetch - processPackages [genochain]: Start processing: pear-ebi
+[2023-05-09 19:11:35] INFO root fetch - main [MainThread]: End processing [genochain] error
+[2023-05-09 19:11:35] INFO root fetch - processPackages [pear-ebi]: New version: [0.1.62] Old Version: [0.1.61]
+[2023-05-09 19:11:36] INFO root fetch - processPackages [antspymm]: Downloading https://files.pythonhosted.org/packages/ab/21/b07ef7622460e5d10306b600fb92863e70416139a85eeafb1d08daabbab0/antspymm-0.9.6.tar.gz
+[2023-05-09 19:11:36] INFO root fetch - processPackages [paasta-tools]: Downloading https://files.pythonhosted.org/packages/4a/0d/4404f538f73fd9262e827faffa3ec48b8413a24ff7a44cb416e30e89634c/paasta-tools-0.92.0.tar.gz
+[2023-05-09 19:11:36] INFO root fetch - processPackages [antspymm]: executing diffoscope
+[2023-05-09 19:11:36] INFO root fetch - processPackages [antspymm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antspymm-0.9.5.tar.gz tmp/antspymm-0.9.6.tar.gz --markdown 20230509/a/antspymm/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pear-ebi]: Downloading https://files.pythonhosted.org/packages/ea/bd/959fd915bfd1d156bf168931614f1a383833e1b76a0e62b50eaac9b6efe6/pear_ebi-0.1.61.tar.gz
+[2023-05-09 19:11:36] INFO root fetch - processPackages [SplatStats]: Start processing: pyscemu
+[2023-05-09 19:11:36] INFO root fetch - main [MainThread]: End processing [SplatStats]: success
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pyscemu]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-09 19:11:36] INFO root fetch - processPackages [adsystemaiogram]: Start processing: pepperize.cdk-lambda-deno
+[2023-05-09 19:11:36] INFO root fetch - main [MainThread]: End processing [adsystemaiogram]: success
+[2023-05-09 19:11:36] INFO root fetch - main [MainThread]: End processing [aws-codeseeder]: success
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pepperize.cdk-lambda-deno]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 19:11:36] INFO root fetch - processPackages [paasta-tools]: Downloading https://files.pythonhosted.org/packages/d8/f5/9a4c0134f4d0862da0cbcc57381d5c9f52e37ea937fa628e123433ccb7a4/paasta-tools-0.92.1.tar.gz
+[2023-05-09 19:11:36] INFO root fetch - processPackages [paasta-tools]: executing diffoscope
+[2023-05-09 19:11:36] INFO root fetch - processPackages [paasta-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paasta-tools-0.92.0.tar.gz tmp/paasta-tools-0.92.1.tar.gz --markdown 20230509/p/paasta-tools/0.92.0-0.92.1/diff.md --exclude *.pyd
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pyscemu]: Downloading https://files.pythonhosted.org/packages/45/ae/06e06274e4085320924785cb4da55cd63303ab59853e96f51baea9859837/pyscemu-0.2.1.tar.gz
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pyscemu]: Downloading https://files.pythonhosted.org/packages/13/9e/b8e7f8a6899dee702688d236bb049d0ccfa366505a4ddacf33244f94993e/pyscemu-0.2.2.tar.gz
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pepperize.cdk-lambda-deno]: executing diffoscope
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pepperize.cdk-lambda-deno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-lambda-deno-0.0.98.tar.gz tmp/pepperize.cdk-lambda-deno-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-lambda-deno/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pear-ebi]: Downloading https://files.pythonhosted.org/packages/d2/cc/281b6763e0da40f71b032af1a43908ef2293dfebb9f66cbdd12ee53cb88b/pear_ebi-0.1.62.tar.gz
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pyscemu]: executing diffoscope
+[2023-05-09 19:11:36] INFO root fetch - processPackages [pyscemu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscemu-0.2.1.tar.gz tmp/pyscemu-0.2.2.tar.gz --markdown 20230509/p/pyscemu/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-09 19:11:36] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 19:11:37] INFO root fetch - processPackages [pear-ebi]: executing diffoscope
+[2023-05-09 19:11:37] INFO root fetch - processPackages [pear-ebi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pear_ebi-0.1.61.tar.gz tmp/pear_ebi-0.1.62.tar.gz --markdown 20230509/p/pear-ebi/0.1.61-0.1.62/diff.md --exclude *.pyd
+[2023-05-09 19:11:37] INFO root fetch - main [MainThread]: End processing [mkdocs-exporter]: success
+[2023-05-09 19:11:37] INFO root fetch - main [MainThread]: End processing [elkai]: success
+[2023-05-09 19:11:37] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-lambda-deno]: success
+[2023-05-09 19:11:37] INFO root fetch - main [MainThread]: End processing [pyscemu]: success
+[2023-05-09 19:11:38] INFO root fetch - main [MainThread]: End processing [antspymm]: success
+[2023-05-09 19:11:38] INFO root fetch - main [MainThread]: End processing [paasta-tools]: success
+[2023-05-09 19:11:39] INFO root fetch - main [MainThread]: End processing [pear-ebi]: success
+[2023-05-09 19:11:44] INFO root fetch - main [MainThread]: End processing [PolicyEngine-UK]: success
+[2023-05-09 19:11:44] INFO root fetch - main [MainThread]: Store serial: [18035234]
