@@ -18497,3 +18497,144 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 16:45:58] INFO root fetch - main [MainThread]: End processing [deep-pipe]: success
 [2023-05-09 16:46:00] INFO root fetch - main [MainThread]: End processing [altair]: success
 [2023-05-09 16:46:00] INFO root fetch - main [MainThread]: Store serial: [18033319]
+[2023-05-09 16:51:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18033319]
+[2023-05-09 16:51:14] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schatsi
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docassemble.MassAppealsCourt
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llamabot
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ambient-toolbox
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bilby-tgr
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mitoinstaller
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alipcs-py
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: OpenAccess
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: geomulticorr
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nexora
+[2023-05-09 16:51:14] INFO root fetch - processPackages [docassemble.MassAppealsCourt]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-05-09 16:51:14] INFO root fetch - processPackages [llamabot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 16:51:14] INFO root fetch - processPackages [geomulticorr]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 16:51:14] WARNING root fetch - processPackages [bilby-tgr]: Skipping, unable to determine old version
+[2023-05-09 16:51:14] INFO root fetch - processPackages [bilby-tgr]: Start processing: usearch
+[2023-05-09 16:51:14] INFO root fetch - main [MainThread]: End processing [bilby-tgr] error
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ambient-toolbox]: New version: [8.2.0] Old Version: [8.1.1]
+[2023-05-09 16:51:14] INFO root fetch - processPackages [alipcs-py]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-09 16:51:14] INFO root fetch - processPackages [nexora]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 16:51:14] INFO root fetch - processPackages [mitoinstaller]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 16:51:14] INFO root fetch - processPackages [OpenAccess]: New version: [0.2] Old Version: [0.1.2]
+[2023-05-09 16:51:14] INFO root fetch - processPackages [schatsi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 16:51:14] INFO root fetch - processPackages [usearch]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-09 16:51:14] INFO root fetch - processPackages [llamabot]: executing diffoscope
+[2023-05-09 16:51:14] INFO root fetch - processPackages [llamabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamabot-0.0.8.tar.gz tmp/llamabot-0.0.9.tar.gz --markdown 20230509/l/llamabot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 16:51:14] INFO root fetch - processPackages [docassemble.MassAppealsCourt]: Downloading https://files.pythonhosted.org/packages/33/cb/7954ee01c439c35652352ebf9d7e9c03d777d3f9d117e4da2098a21de535/docassemble.MassAppealsCourt-0.1.0.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [alipcs-py]: Downloading https://files.pythonhosted.org/packages/58/ad/8fdcc8de22ba61af2f96d5f44089ba665b5467defbbb2c42109891cbf974/alipcs_py-0.6.0.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ambient-toolbox]: Downloading https://files.pythonhosted.org/packages/b7/41/fda2e12464e75487992ab0c0ccf4e99f02489ecf0d930c6ef27f110fac15/ambient-toolbox-8.1.1.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [geomulticorr]: Downloading https://files.pythonhosted.org/packages/21/5e/e5eee437c3ec02dd71a955ebe3917a38601212e7d0e227ab7e35c7e20352/geomulticorr-0.1.1.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [mitoinstaller]: Downloading https://files.pythonhosted.org/packages/a9/cc/efea247a930bcdd3371e2847677b40c385cbf35a56d638639d1e8b121847/mitoinstaller-0.0.98.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [nexora]: Downloading https://files.pythonhosted.org/packages/23/03/2cf61eae4adf81770cd7e09575d12c8d9b2c8c2ff8023f07cda0aa66208e/nexora-0.0.3.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [OpenAccess]: Downloading https://files.pythonhosted.org/packages/7d/91/deef7fa207305af905cf2e25a919f94421cb7b0b78d2b17a253b9c7793c2/OpenAccess-0.2.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [nexora]: executing diffoscope
+[2023-05-09 16:51:14] INFO root fetch - processPackages [nexora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexora-0.0.2.tar.gz tmp/nexora-0.0.3.tar.gz --markdown 20230509/n/nexora/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 16:51:14] INFO root fetch - processPackages [usearch]: Downloading https://files.pythonhosted.org/packages/17/a1/1c6f174097655bb40bb5ab8b1d530db368371f41002c1fb828c4c527bfb0/usearch-0.2.0-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+[2023-05-09 16:51:14] INFO root fetch - processPackages [OpenAccess]: executing diffoscope
+[2023-05-09 16:51:14] INFO root fetch - processPackages [OpenAccess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenAccess-0.1.2.tar.gz tmp/OpenAccess-0.2.tar.gz --markdown 20230509/O/OpenAccess/0.1.2-0.2/diff.md --exclude *.pyd
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ambient-toolbox]: Downloading https://files.pythonhosted.org/packages/5d/8b/49b96b1ef5dc0a89f9a7a647ded7146b24b5e706b49e05341481f4efd813/ambient-toolbox-8.2.0.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [docassemble.MassAppealsCourt]: Downloading https://files.pythonhosted.org/packages/30/c0/168a11bad5522c741acb0e397e89b5608faa35c34dc20ba71c7383429d7e/docassemble.MassAppealsCourt-0.2.1.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [schatsi]: executing diffoscope
+[2023-05-09 16:51:14] INFO root fetch - processPackages [schatsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schatsi-0.1.8.tar.gz tmp/schatsi-0.1.9.tar.gz --markdown 20230509/s/schatsi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 16:51:14] INFO root fetch - processPackages [alipcs-py]: Downloading https://files.pythonhosted.org/packages/b6/81/e504e69510ea7a3f58c36d037b5814250399f4c1d9dd1a85e1af4b325000/alipcs_py-0.6.1.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [usearch]: executing diffoscope
+[2023-05-09 16:51:14] INFO root fetch - processPackages [usearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usearch-0.1.9-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.zip tmp/usearch-0.2.0-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.zip --markdown 20230509/u/usearch/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ambient-toolbox]: executing diffoscope
+[2023-05-09 16:51:14] INFO root fetch - processPackages [ambient-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient-toolbox-8.1.1.tar.gz tmp/ambient-toolbox-8.2.0.tar.gz --markdown 20230509/a/ambient-toolbox/8.1.1-8.2.0/diff.md --exclude *.pyd
+[2023-05-09 16:51:14] INFO root fetch - processPackages [docassemble.MassAppealsCourt]: executing diffoscope
+[2023-05-09 16:51:14] INFO root fetch - processPackages [docassemble.MassAppealsCourt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble.MassAppealsCourt-0.1.0.tar.gz tmp/docassemble.MassAppealsCourt-0.2.1.tar.gz --markdown 20230509/d/docassemble.MassAppealsCourt/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-09 16:51:14] INFO root fetch - processPackages [mitoinstaller]: Downloading https://files.pythonhosted.org/packages/90/7c/46b1dcf5bb93cdb5baf1650e82750b20b76439dbb6550a8596d1d373443a/mitoinstaller-0.0.99.tar.gz
+[2023-05-09 16:51:14] INFO root fetch - processPackages [alipcs-py]: executing diffoscope
+[2023-05-09 16:51:14] INFO root fetch - processPackages [alipcs-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alipcs_py-0.6.0.tar.gz tmp/alipcs_py-0.6.1.tar.gz --markdown 20230509/a/alipcs-py/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-09 16:51:14] INFO root fetch - processPackages [mitoinstaller]: executing diffoscope
+[2023-05-09 16:51:14] INFO root fetch - processPackages [mitoinstaller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitoinstaller-0.0.98.tar.gz tmp/mitoinstaller-0.0.99.tar.gz --markdown 20230509/m/mitoinstaller/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 16:51:15] INFO root fetch - processPackages [geomulticorr]: executing diffoscope
+[2023-05-09 16:51:15] INFO root fetch - processPackages [geomulticorr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geomulticorr-0.1.0.tar.gz tmp/geomulticorr-0.1.1.tar.gz --markdown 20230509/g/geomulticorr/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 16:51:15] INFO root fetch - processPackages [llamabot]: Start processing: resqpy
+[2023-05-09 16:51:15] INFO root fetch - main [MainThread]: End processing [llamabot]: success
+[2023-05-09 16:51:15] INFO root fetch - processPackages [resqpy]: New version: [4.8.4] Old Version: [4.8.3]
+[2023-05-09 16:51:15] INFO root fetch - processPackages [resqpy]: Downloading https://files.pythonhosted.org/packages/ba/3f/2d384886ed01cd124a1779f3b846e8fcc143d6314bb2e19a2d5b76b82a54/resqpy-4.8.3.tar.gz
+[2023-05-09 16:51:16] INFO root fetch - processPackages [OpenAccess]: Start processing: issue-db-api
+[2023-05-09 16:51:16] INFO root fetch - main [MainThread]: End processing [OpenAccess]: success
+[2023-05-09 16:51:16] INFO root fetch - processPackages [issue-db-api]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-05-09 16:51:16] INFO root fetch - processPackages [schatsi]: Start processing: rmpy
+[2023-05-09 16:51:16] INFO root fetch - main [MainThread]: End processing [schatsi]: success
+[2023-05-09 16:51:16] INFO root fetch - processPackages [rmpy]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-09 16:51:16] INFO root fetch - processPackages [resqpy]: Downloading https://files.pythonhosted.org/packages/5f/9a/70310eff4e603a68908176920df3e1fce4c1f32e95ca7c69fdd6d2f15895/resqpy-4.8.4.tar.gz
+[2023-05-09 16:51:16] INFO root fetch - processPackages [nexora]: Start processing: graphql-api
+[2023-05-09 16:51:16] INFO root fetch - main [MainThread]: End processing [nexora]: success
+[2023-05-09 16:51:16] INFO root fetch - processPackages [graphql-api]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-05-09 16:51:16] INFO root fetch - processPackages [docassemble.MassAppealsCourt]: Start processing: integra
+[2023-05-09 16:51:16] INFO root fetch - main [MainThread]: End processing [docassemble.MassAppealsCourt]: success
+[2023-05-09 16:51:16] INFO root fetch - processPackages [integra]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 16:51:16] INFO root fetch - processPackages [rmpy]: Downloading https://files.pythonhosted.org/packages/c1/63/8756ab21d3af7a1b953496ff41811726a011d86e394fbdebc8dbf350b4d9/rmpy-1.1.7.tar.gz
+[2023-05-09 16:51:16] INFO root fetch - processPackages [mitoinstaller]: Start processing: google-pandas-load
+[2023-05-09 16:51:16] INFO root fetch - main [MainThread]: End processing [mitoinstaller]: success
+[2023-05-09 16:51:16] INFO root fetch - processPackages [resqpy]: executing diffoscope
+[2023-05-09 16:51:16] INFO root fetch - processPackages [issue-db-api]: Downloading https://files.pythonhosted.org/packages/83/73/5003d7e898a3f0486d3299825eaa9be7e8bc030b5736d1d6574e916033d3/issue_db_api-0.7.3.tar.gz
+[2023-05-09 16:51:16] INFO root fetch - processPackages [resqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resqpy-4.8.3.tar.gz tmp/resqpy-4.8.4.tar.gz --markdown 20230509/r/resqpy/4.8.3-4.8.4/diff.md --exclude *.pyd
+[2023-05-09 16:51:16] INFO root fetch - processPackages [google-pandas-load]: New version: [6.0.0] Old Version: [5.0.1]
+[2023-05-09 16:51:16] INFO root fetch - processPackages [graphql-api]: Downloading https://files.pythonhosted.org/packages/52/de/f154e9df80d5e92c1ac8b1d139514334d72360a53f0d7da43b087c23e13a/graphql-api-1.3.5.tar.gz
+[2023-05-09 16:51:16] INFO root fetch - processPackages [integra]: Downloading https://files.pythonhosted.org/packages/42/39/26046e65fa635deccdb476e29afdfb839b75a08ccd332b9b1663dca7f5e6/integra-0.0.1.tar.gz
+[2023-05-09 16:51:16] INFO root fetch - processPackages [issue-db-api]: executing diffoscope
+[2023-05-09 16:51:16] INFO root fetch - processPackages [issue-db-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/issue_db_api-0.7.2.tar.gz tmp/issue_db_api-0.7.3.tar.gz --markdown 20230509/i/issue-db-api/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-05-09 16:51:16] INFO root fetch - processPackages [google-pandas-load]: Downloading https://files.pythonhosted.org/packages/01/08/82378ca4084f36495f99c060991c23139b4ca559156e827ea559a8db62da/google_pandas_load-5.0.1-py3-none-any.whl
+[2023-05-09 16:51:16] INFO root fetch - processPackages [graphql-api]: Downloading https://files.pythonhosted.org/packages/ff/0d/6441112895986a72bffbe4dd17bc60a82e2721cea131ffa28a069cf4f130/graphql-api-1.3.6.tar.gz
+[2023-05-09 16:51:16] INFO root fetch - processPackages [rmpy]: Downloading https://files.pythonhosted.org/packages/2f/ea/ea00bf8f2ecb3ce524da24a6f11fec853224c3beb862ab1e6fe3a4e997a1/rmpy-1.1.8.tar.gz
+[2023-05-09 16:51:16] INFO root fetch - processPackages [integra]: Downloading https://files.pythonhosted.org/packages/36/2f/71e1fa138b59c620b533b011f0eca0aee49e0f36b8369089e7dddd7b19c5/integra-0.0.2.tar.gz
+[2023-05-09 16:51:16] INFO root fetch - processPackages [graphql-api]: executing diffoscope
+[2023-05-09 16:51:16] INFO root fetch - processPackages [graphql-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql-api-1.3.5.tar.gz tmp/graphql-api-1.3.6.tar.gz --markdown 20230509/g/graphql-api/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-05-09 16:51:16] INFO root fetch - processPackages [rmpy]: executing diffoscope
+[2023-05-09 16:51:16] INFO root fetch - processPackages [rmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmpy-1.1.7.tar.gz tmp/rmpy-1.1.8.tar.gz --markdown 20230509/r/rmpy/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-09 16:51:16] INFO root fetch - processPackages [google-pandas-load]: Downloading https://files.pythonhosted.org/packages/3c/6c/6e4725e0845e571242171575c316a4db4ebcc7573fb3a34980e871dc7c34/google_pandas_load-6.0.0-py3-none-any.whl
+[2023-05-09 16:51:16] INFO root fetch - processPackages [integra]: executing diffoscope
+[2023-05-09 16:51:16] INFO root fetch - processPackages [integra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/integra-0.0.1.tar.gz tmp/integra-0.0.2.tar.gz --markdown 20230509/i/integra/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 16:51:16] INFO root fetch - processPackages [google-pandas-load]: executing diffoscope
+[2023-05-09 16:51:16] INFO root fetch - processPackages [google-pandas-load]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google_pandas_load-5.0.1-py3-none-any.whl.zip tmp/google_pandas_load-6.0.0-py3-none-any.whl.zip --markdown 20230509/g/google-pandas-load/5.0.1-6.0.0/diff.md --exclude *.pyd
+[2023-05-09 16:51:17] INFO root fetch - processPackages [geomulticorr]: Start processing: mitosheet
+[2023-05-09 16:51:17] INFO root fetch - main [MainThread]: End processing [geomulticorr]: success
+[2023-05-09 16:51:17] INFO root fetch - processPackages [mitosheet]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-09 16:51:17] INFO root fetch - processPackages [mitosheet]: Downloading https://files.pythonhosted.org/packages/8f/ca/cfa5a04a8bad41705bac5f84cf0c0a38c2e86f34a87c85d097c82dd321da/mitosheet-0.1.98.tar.gz
+[2023-05-09 16:51:18] INFO root fetch - processPackages [alipcs-py]: Start processing: pybrook
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [alipcs-py]: success
+[2023-05-09 16:51:18] INFO root fetch - processPackages [integra]: Start processing: pdpykit
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [integra]: success
+[2023-05-09 16:51:18] INFO root fetch - processPackages [pybrook]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 16:51:18] WARNING root fetch - processPackages [pdpykit]: Skipping, unable to determine old version
+[2023-05-09 16:51:18] INFO root fetch - processPackages [pdpykit]: Start processing: xpag
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [pdpykit] error
+[2023-05-09 16:51:18] INFO root fetch - processPackages [xpag]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 16:51:18] INFO root fetch - processPackages [rmpy]: Start processing: commonocean-io
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [rmpy]: success
+[2023-05-09 16:51:18] WARNING root fetch - processPackages [commonocean-io]: Skipping, unable to determine old version
+[2023-05-09 16:51:18] INFO root fetch - processPackages [google-pandas-load]: Start processing: release-verchk-vijkan
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [google-pandas-load]: success
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [commonocean-io] error
+[2023-05-09 16:51:18] INFO root fetch - processPackages [pybrook]: Downloading https://files.pythonhosted.org/packages/6f/14/3bd8a3378edbfe25862019fa7730a38f684a26e5a1299b0ed0bcb8baf232/pybrook-0.1.2.tar.gz
+[2023-05-09 16:51:18] INFO root fetch - processPackages [release-verchk-vijkan]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 16:51:18] INFO root fetch - processPackages [xpag]: Downloading https://files.pythonhosted.org/packages/a6/c1/f8ab0a48a6aca989c9b19750ba0a54c8426e4160cb926eedc20e5c4662e9/xpag-0.1.7-py3-none-any.whl
+[2023-05-09 16:51:18] WARNING root fetch - processPackages [mitosheet]: Skipping package: exceeds size limit 14622615>=10485760
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [mitosheet] error
+[2023-05-09 16:51:18] INFO root fetch - processPackages [release-verchk-vijkan]: Downloading https://files.pythonhosted.org/packages/c6/a3/611de1fd4e13b1e073882a346e3ea775f6a55eee65fba431d8813ef038a4/release_verchk_vijkan-0.0.1.tar.gz
+[2023-05-09 16:51:18] INFO root fetch - processPackages [pybrook]: Downloading https://files.pythonhosted.org/packages/ce/38/5333d3d623e50f2755817d1ce0034340e8f49b50a8a641eae55e45c17c9c/pybrook-0.1.3.tar.gz
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [graphql-api]: success
+[2023-05-09 16:51:18] INFO root fetch - processPackages [xpag]: Downloading https://files.pythonhosted.org/packages/c0/e1/a05ffc4b09fb3514fa4fd19b9db864be889b9147bfad4c545decc54e7c11/xpag-0.1.8-py3-none-any.whl
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [usearch]: success
+[2023-05-09 16:51:18] INFO root fetch - processPackages [pybrook]: executing diffoscope
+[2023-05-09 16:51:18] INFO root fetch - processPackages [pybrook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrook-0.1.2.tar.gz tmp/pybrook-0.1.3.tar.gz --markdown 20230509/p/pybrook/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 16:51:18] INFO root fetch - processPackages [xpag]: executing diffoscope
+[2023-05-09 16:51:18] INFO root fetch - processPackages [xpag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpag-0.1.7-py3-none-any.whl.zip tmp/xpag-0.1.8-py3-none-any.whl.zip --markdown 20230509/x/xpag/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 16:51:18] INFO root fetch - processPackages [release-verchk-vijkan]: Downloading https://files.pythonhosted.org/packages/d6/f3/506dbace18bd5129747f55ac081916d81885cf53f205dfb0e59b575fa029/release_verchk_vijkan-0.0.2.tar.gz
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [ambient-toolbox]: success
+[2023-05-09 16:51:18] INFO root fetch - processPackages [release-verchk-vijkan]: executing diffoscope
+[2023-05-09 16:51:18] INFO root fetch - processPackages [release-verchk-vijkan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/release_verchk_vijkan-0.0.1.tar.gz tmp/release_verchk_vijkan-0.0.2.tar.gz --markdown 20230509/r/release-verchk-vijkan/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 16:51:18] INFO root fetch - main [MainThread]: End processing [issue-db-api]: success
+[2023-05-09 16:51:19] INFO root fetch - main [MainThread]: End processing [resqpy]: success
+[2023-05-09 16:51:19] INFO root fetch - main [MainThread]: End processing [release-verchk-vijkan]: success
+[2023-05-09 16:51:20] INFO root fetch - main [MainThread]: End processing [pybrook]: success
+[2023-05-09 16:51:20] INFO root fetch - main [MainThread]: End processing [xpag]: success
+[2023-05-09 16:51:20] INFO root fetch - main [MainThread]: Store serial: [18033443]
