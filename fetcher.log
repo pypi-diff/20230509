@@ -8985,3 +8985,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 06:36:24] INFO root fetch - main [MainThread]: End processing [llmpool]: success
 [2023-05-09 06:36:24] INFO root fetch - main [MainThread]: End processing [rssbot]: success
 [2023-05-09 06:36:24] INFO root fetch - main [MainThread]: Store serial: [18027567]
+[2023-05-09 06:41:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027567]
+[2023-05-09 06:41:33] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-09 06:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lamineml
+[2023-05-09 06:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arclet-alconna-ariadne
+[2023-05-09 06:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arclet-alconna-avilla
+[2023-05-09 06:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arclet-alconna-graia
+[2023-05-09 06:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arclet-alconna-ichika
+[2023-05-09 06:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hotkeynet
+[2023-05-09 06:41:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: AkvoResponseGrouper
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-ariadne]: New version: [0.13.0rc2] Old Version: [0.13.0rc1]
+[2023-05-09 06:41:33] INFO root fetch - processPackages [lamineml]: New version: [0.8] Old Version: [0.7]
+[2023-05-09 06:41:33] INFO root fetch - processPackages [hotkeynet]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-ichika]: New version: [0.13.0rc2] Old Version: [0.13.0rc1]
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-avilla]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-graia]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 06:41:33] INFO root fetch - processPackages [AkvoResponseGrouper]: New version: [1.3.0a0] Old Version: [1.2.9a0]
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-avilla]: executing diffoscope
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-avilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-avilla-0.2.0.tar.gz tmp/arclet-alconna-avilla-0.3.0.tar.gz --markdown 20230509/a/arclet-alconna-avilla/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 06:41:33] INFO root fetch - processPackages [lamineml]: executing diffoscope
+[2023-05-09 06:41:33] INFO root fetch - processPackages [lamineml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamineml-0.7.tar.gz tmp/lamineml-0.8.tar.gz --markdown 20230509/l/lamineml/0.7-0.8/diff.md --exclude *.pyd
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-ichika]: Downloading https://files.pythonhosted.org/packages/e0/9b/7a76dc2d03ee4518c101581da58e98bbe0a656eba38f73ccb3ccdb0bac96/arclet-alconna-ichika-0.13.0rc1.tar.gz
+[2023-05-09 06:41:33] INFO root fetch - processPackages [AkvoResponseGrouper]: Downloading https://files.pythonhosted.org/packages/39/cf/2216999f7302264b64100530fa4d24c1e54e6e320ee584d13afc7fcda125/AkvoResponseGrouper-1.2.9a0.tar.gz
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-graia]: executing diffoscope
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-graia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-graia-0.9.0.tar.gz tmp/arclet-alconna-graia-0.9.1.tar.gz --markdown 20230509/a/arclet-alconna-graia/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 06:41:33] INFO root fetch - processPackages [hotkeynet]: Downloading https://files.pythonhosted.org/packages/8a/0b/5fa8d2357634ecebf1df8c7deecba14a951e6fad82b252f665bb69b258b3/hotkeynet-0.1.2.tar.gz
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-ariadne]: Downloading https://files.pythonhosted.org/packages/d3/cf/18677680714fb69e990148ede2ecaf7bdebcaa80b1fabb9d4ca97eae2d9c/arclet-alconna-ariadne-0.13.0rc2.tar.gz
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-ariadne]: executing diffoscope
+[2023-05-09 06:41:33] INFO root fetch - processPackages [arclet-alconna-ariadne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-ariadne-0.13.0rc1.tar.gz tmp/arclet-alconna-ariadne-0.13.0rc2.tar.gz --markdown 20230509/a/arclet-alconna-ariadne/0.13.0rc1-0.13.0rc2/diff.md --exclude *.pyd
+[2023-05-09 06:41:34] INFO root fetch - processPackages [arclet-alconna-ichika]: Downloading https://files.pythonhosted.org/packages/1a/05/b00ffaa2c1c5bafeec290b0427fe420fbc3d25892182f4677ba496c72045/arclet-alconna-ichika-0.13.0rc2.tar.gz
+[2023-05-09 06:41:34] INFO root fetch - processPackages [hotkeynet]: Downloading https://files.pythonhosted.org/packages/6a/f9/c00537979db960425ccc30ecc4004354dc4c506189926c002e5abeb7a436/hotkeynet-0.1.3.tar.gz
+[2023-05-09 06:41:34] INFO root fetch - processPackages [arclet-alconna-ichika]: executing diffoscope
+[2023-05-09 06:41:34] INFO root fetch - processPackages [arclet-alconna-ichika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-ichika-0.13.0rc1.tar.gz tmp/arclet-alconna-ichika-0.13.0rc2.tar.gz --markdown 20230509/a/arclet-alconna-ichika/0.13.0rc1-0.13.0rc2/diff.md --exclude *.pyd
+[2023-05-09 06:41:34] INFO root fetch - processPackages [AkvoResponseGrouper]: Downloading https://files.pythonhosted.org/packages/a6/23/26bb6559b734c6b62081509ce733fb83b9d674756d2e350a6034953c3553/AkvoResponseGrouper-1.3.0a0.tar.gz
+[2023-05-09 06:41:34] INFO root fetch - processPackages [hotkeynet]: executing diffoscope
+[2023-05-09 06:41:34] INFO root fetch - processPackages [hotkeynet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotkeynet-0.1.2.tar.gz tmp/hotkeynet-0.1.3.tar.gz --markdown 20230509/h/hotkeynet/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 06:41:34] INFO root fetch - processPackages [AkvoResponseGrouper]: executing diffoscope
+[2023-05-09 06:41:34] INFO root fetch - processPackages [AkvoResponseGrouper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AkvoResponseGrouper-1.2.9a0.tar.gz tmp/AkvoResponseGrouper-1.3.0a0.tar.gz --markdown 20230509/A/AkvoResponseGrouper/1.2.9a0-1.3.0a0/diff.md --exclude *.pyd
+[2023-05-09 06:41:34] INFO root fetch - main [MainThread]: End processing [arclet-alconna-avilla]: success
+[2023-05-09 06:41:35] INFO root fetch - main [MainThread]: End processing [lamineml]: success
+[2023-05-09 06:41:35] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ariadne]: success
+[2023-05-09 06:41:35] INFO root fetch - main [MainThread]: End processing [arclet-alconna-graia]: success
+[2023-05-09 06:41:35] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ichika]: success
+[2023-05-09 06:41:35] INFO root fetch - main [MainThread]: End processing [hotkeynet]: success
+[2023-05-09 06:41:35] INFO root fetch - main [MainThread]: End processing [AkvoResponseGrouper]: success
+[2023-05-09 06:41:35] INFO root fetch - main [MainThread]: Store serial: [18027588]
