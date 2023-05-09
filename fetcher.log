@@ -8930,3 +8930,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 06:25:30] INFO root fetch - main [MainThread]: End processing [hubitatcontrol]: success
 [2023-05-09 06:26:01] INFO root fetch - main [MainThread]: End processing [playgroundrl]: success
 [2023-05-09 06:26:01] INFO root fetch - main [MainThread]: Store serial: [18027537]
+[2023-05-09 06:31:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027537]
+[2023-05-09 06:31:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-09 06:31:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: get-all-files
+[2023-05-09 06:31:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pmdsky-debug-py
+[2023-05-09 06:31:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tooltime
+[2023-05-09 06:31:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: greenlab
+[2023-05-09 06:31:10] INFO root fetch - processPackages [get-all-files]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-09 06:31:10] INFO root fetch - processPackages [greenlab]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 06:31:10] INFO root fetch - processPackages [tooltime]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 06:31:10] INFO root fetch - processPackages [pmdsky-debug-py]: New version: [5.1.9] Old Version: [5.1.8]
+[2023-05-09 06:31:10] INFO root fetch - processPackages [pmdsky-debug-py]: executing diffoscope
+[2023-05-09 06:31:10] INFO root fetch - processPackages [pmdsky-debug-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmdsky_debug_py-5.1.8-py3-none-any.whl.zip tmp/pmdsky_debug_py-5.1.9-py3-none-any.whl.zip --markdown 20230509/p/pmdsky-debug-py/5.1.8-5.1.9/diff.md --exclude *.pyd
+[2023-05-09 06:31:11] INFO root fetch - processPackages [greenlab]: Downloading https://files.pythonhosted.org/packages/a4/63/6267c46014b4122596429a1508505c40c7f07aa052d0ff9854c365f97735/greenlab-0.0.1.tar.gz
+[2023-05-09 06:31:11] INFO root fetch - processPackages [tooltime]: Downloading https://files.pythonhosted.org/packages/2e/3d/5d6aa93242d10e5b804a8c6547e4340ae9c99c33f73b4ee60f46f7135d0f/tooltime-0.2.8.tar.gz
+[2023-05-09 06:31:11] INFO root fetch - processPackages [get-all-files]: Downloading https://files.pythonhosted.org/packages/fb/9c/b84751b7306e292c798b93edad2c7a09fc7876b79bdcc51457773f1c2c89/get_all_files-0.3.0.tar.gz
+[2023-05-09 06:31:11] INFO root fetch - processPackages [get-all-files]: executing diffoscope
+[2023-05-09 06:31:11] INFO root fetch - processPackages [get-all-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_all_files-0.2.0.tar.gz tmp/get_all_files-0.3.0.tar.gz --markdown 20230509/g/get-all-files/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 06:31:11] INFO root fetch - processPackages [greenlab]: Downloading https://files.pythonhosted.org/packages/de/fe/96ea5f8f77eb93aef343da2fefff4078ac4e9a8b42f3abfc41a2877413c3/greenlab-0.0.2.tar.gz
+[2023-05-09 06:31:11] INFO root fetch - processPackages [greenlab]: executing diffoscope
+[2023-05-09 06:31:11] INFO root fetch - processPackages [greenlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greenlab-0.0.1.tar.gz tmp/greenlab-0.0.2.tar.gz --markdown 20230509/g/greenlab/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 06:31:11] INFO root fetch - processPackages [tooltime]: Downloading https://files.pythonhosted.org/packages/a9/66/9165723b7590eedbbfc83be658c56c84c5fb4e590a1eec86a519b796ff0c/tooltime-0.2.9.tar.gz
+[2023-05-09 06:31:11] INFO root fetch - processPackages [tooltime]: executing diffoscope
+[2023-05-09 06:31:11] INFO root fetch - processPackages [tooltime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooltime-0.2.8.tar.gz tmp/tooltime-0.2.9.tar.gz --markdown 20230509/t/tooltime/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 06:31:12] INFO root fetch - main [MainThread]: End processing [get-all-files]: success
+[2023-05-09 06:31:12] INFO root fetch - main [MainThread]: End processing [greenlab]: success
+[2023-05-09 06:31:12] INFO root fetch - main [MainThread]: End processing [tooltime]: success
+[2023-05-09 06:31:14] INFO root fetch - main [MainThread]: End processing [pmdsky-debug-py]: success
+[2023-05-09 06:31:14] INFO root fetch - main [MainThread]: Store serial: [18027549]
