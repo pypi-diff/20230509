@@ -15340,3 +15340,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 13:42:49] INFO root fetch - main [MainThread]: End processing [openstack-heat]: success
 [2023-05-09 13:42:50] INFO root fetch - main [MainThread]: End processing [openstack-heat]: success
 [2023-05-09 13:42:50] INFO root fetch - main [MainThread]: Store serial: [18031339]
+[2023-05-09 13:47:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031339]
+[2023-05-09 13:48:01] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auto-screener
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rape-identification
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xmos-ai-tools
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: p-ttauto-crawler
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: labnas
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bionty
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rape-identification
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bose
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: yang-vlp
+[2023-05-09 13:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: iqrfpy
+[2023-05-09 13:48:01] INFO root fetch - processPackages [auto-screener]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 13:48:01] INFO root fetch - processPackages [labnas]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 13:48:01] INFO root fetch - processPackages [rape-identification]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 13:48:01] INFO root fetch - processPackages [rape-identification]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 13:48:01] INFO root fetch - processPackages [yang-vlp]: New version: [0.2.17] Old Version: [0.2.16]
+[2023-05-09 13:48:01] INFO root fetch - processPackages [rape-identification]: executing diffoscope
+[2023-05-09 13:48:01] INFO root fetch - processPackages [rape-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rape_identification-0.1.7.tar.gz tmp/rape_identification-0.1.8.tar.gz --markdown 20230509/r/rape-identification/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 13:48:01] WARNING root fetch - processPackages [bose]: Skipping, unable to determine old version
+[2023-05-09 13:48:01] INFO root fetch - processPackages [bose]: Start processing: pyfall
+[2023-05-09 13:48:01] INFO root fetch - main [MainThread]: End processing [bose] error
+[2023-05-09 13:48:01] INFO root fetch - processPackages [rape-identification]: executing diffoscope
+[2023-05-09 13:48:01] INFO root fetch - processPackages [iqrfpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 13:48:01] INFO root fetch - processPackages [xmos-ai-tools]: New version: [0.2.2.dev91] Old Version: [0.2.2.dev51]
+[2023-05-09 13:48:01] INFO root fetch - processPackages [p-ttauto-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 13:48:01] INFO root fetch - processPackages [rape-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rape_identification-0.1.7.tar.gz tmp/rape_identification-0.1.8.tar.gz --markdown 20230509/r/rape-identification/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 13:48:01] INFO root fetch - processPackages [bionty]: New version: [0.9.0rc1] Old Version: [0.9.0]
+[2023-05-09 13:48:01] INFO root fetch - processPackages [labnas]: Downloading https://files.pythonhosted.org/packages/3c/52/1d9c7bff51711dc0567b31904a4b49604143a1805d21672a086568910081/labnas-0.1.2.tar.gz
+[2023-05-09 13:48:02] WARNING root fetch - processPackages [pyfall]: Skipping, unable to determine old version
+[2023-05-09 13:48:02] INFO root fetch - main [MainThread]: End processing [pyfall] error
+[2023-05-09 13:48:02] INFO root fetch - processPackages [yang-vlp]: executing diffoscope
+[2023-05-09 13:48:02] INFO root fetch - processPackages [yang-vlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yang-vlp-0.2.16.tar.gz tmp/yang-vlp-0.2.17.tar.gz --markdown 20230509/y/yang-vlp/0.2.16-0.2.17/diff.md --exclude *.pyd
+[2023-05-09 13:48:02] INFO root fetch - processPackages [bionty]: Downloading https://files.pythonhosted.org/packages/99/96/56b5f6e7d406917b173d9b761f4b2ff41b68d375105fe40b9b23131b295d/bionty-0.9.0.tar.gz
+[2023-05-09 13:48:02] INFO root fetch - processPackages [iqrfpy]: Downloading https://files.pythonhosted.org/packages/b7/5f/e812275617185f777c7fce9c456eb51a907a7befdc183c6889e181172873/iqrfpy-0.1.8.tar.gz
+[2023-05-09 13:48:02] INFO root fetch - processPackages [xmos-ai-tools]: Downloading https://files.pythonhosted.org/packages/45/ec/1596423fa6f0d2c54b1d97912de474f453e7e855296ee673b664073e93ea/xmos_ai_tools-0.2.2.dev51-py3-none-win_amd64.whl
+[2023-05-09 13:48:02] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-05-09 13:48:02] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.8.tar.gz tmp/auto-screener-0.0.9.tar.gz --markdown 20230509/a/auto-screener/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 13:48:02] INFO root fetch - processPackages [p-ttauto-crawler]: executing diffoscope
+[2023-05-09 13:48:02] INFO root fetch - processPackages [labnas]: Downloading https://files.pythonhosted.org/packages/8c/12/2a53db2424a4f141bc600c88abc8cfd1fdc840af8164b3fdbd05a9afe47c/labnas-0.1.3.tar.gz
+[2023-05-09 13:48:02] INFO root fetch - processPackages [p-ttauto-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-ttauto-crawler-0.0.8.tar.gz tmp/p-ttauto-crawler-0.0.9.tar.gz --markdown 20230509/p/p-ttauto-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 13:48:02] INFO root fetch - processPackages [bionty]: Downloading https://files.pythonhosted.org/packages/f4/01/3a99104d9a37cf7fbdae5c733cec97f252f8eb35f5553cd253a05edf8420/bionty-0.9.0rc1.tar.gz
+[2023-05-09 13:48:02] INFO root fetch - processPackages [iqrfpy]: Downloading https://files.pythonhosted.org/packages/61/4d/d6db2b0216d6f8be72314ce157fb65dd7999d0129899beaf32ce8889d1db/iqrfpy-0.1.9.tar.gz
+[2023-05-09 13:48:02] INFO root fetch - processPackages [labnas]: executing diffoscope
+[2023-05-09 13:48:02] INFO root fetch - processPackages [labnas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labnas-0.1.2.tar.gz tmp/labnas-0.1.3.tar.gz --markdown 20230509/l/labnas/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 13:48:02] INFO root fetch - processPackages [iqrfpy]: executing diffoscope
+[2023-05-09 13:48:02] INFO root fetch - processPackages [iqrfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iqrfpy-0.1.8.tar.gz tmp/iqrfpy-0.1.9.tar.gz --markdown 20230509/i/iqrfpy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 13:48:02] INFO root fetch - processPackages [bionty]: executing diffoscope
+[2023-05-09 13:48:02] INFO root fetch - processPackages [bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bionty-0.9.0.tar.gz tmp/bionty-0.9.0rc1.tar.gz --markdown 20230509/b/bionty/0.9.0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-05-09 13:48:02] WARNING root fetch - processPackages [xmos-ai-tools]: Skipping package: exceeds size limit 12231762>=10485760
+[2023-05-09 13:48:02] INFO root fetch - main [MainThread]: End processing [xmos-ai-tools] error
+[2023-05-09 13:48:03] INFO root fetch - main [MainThread]: End processing [rape-identification]: success
+[2023-05-09 13:48:03] INFO root fetch - main [MainThread]: End processing [labnas]: success
+[2023-05-09 13:48:03] INFO root fetch - main [MainThread]: End processing [rape-identification]: success
+[2023-05-09 13:48:03] INFO root fetch - main [MainThread]: End processing [p-ttauto-crawler]: success
+[2023-05-09 13:48:03] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-05-09 13:48:04] INFO root fetch - main [MainThread]: End processing [bionty]: success
+[2023-05-09 13:48:04] INFO root fetch - main [MainThread]: End processing [yang-vlp]: success
+[2023-05-09 13:48:07] INFO root fetch - main [MainThread]: End processing [iqrfpy]: success
+[2023-05-09 13:48:07] INFO root fetch - main [MainThread]: Store serial: [18031377]
