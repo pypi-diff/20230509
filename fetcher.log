@@ -15290,3 +15290,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 13:37:09] INFO root fetch - main [MainThread]: End processing [cdktf]: success
 [2023-05-09 13:37:15] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-05-09 13:37:15] INFO root fetch - main [MainThread]: Store serial: [18031307]
+[2023-05-09 13:42:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031307]
+[2023-05-09 13:42:24] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-09 13:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auto-screener
+[2023-05-09 13:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openstack-heat
+[2023-05-09 13:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openstack-heat
+[2023-05-09 13:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyre-check-nightly
+[2023-05-09 13:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: axiprop
+[2023-05-09 13:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openstack-heat
+[2023-05-09 13:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: s3autocpcp
+[2023-05-09 13:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shareconnect
+[2023-05-09 13:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: buteo
+[2023-05-09 13:42:24] INFO root fetch - processPackages [buteo]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-09 13:42:25] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101683630711] Old Version: [0.0.101683544238]
+[2023-05-09 13:42:25] INFO root fetch - processPackages [auto-screener]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 13:42:25] WARNING root fetch - processPackages [s3autocpcp]: Skipping, unable to determine old version
+[2023-05-09 13:42:25] INFO root fetch - main [MainThread]: End processing [s3autocpcp] error
+[2023-05-09 13:42:25] WARNING root fetch - processPackages [shareconnect]: Skipping, unable to determine old version
+[2023-05-09 13:42:25] WARNING root fetch - processPackages [axiprop]: Skipping, unable to determine old version
+[2023-05-09 13:42:25] INFO root fetch - main [MainThread]: End processing [shareconnect] error
+[2023-05-09 13:42:25] INFO root fetch - main [MainThread]: End processing [axiprop] error
+[2023-05-09 13:42:25] INFO root fetch - processPackages [openstack-heat]: New version: [20.0.0.0rc2] Old Version: [20.0.0.0rc1]
+[2023-05-09 13:42:25] INFO root fetch - processPackages [openstack-heat]: New version: [20.0.0.0rc2] Old Version: [20.0.0.0rc1]
+[2023-05-09 13:42:25] INFO root fetch - processPackages [openstack-heat]: New version: [20.0.0.0rc2] Old Version: [20.0.0.0rc1]
+[2023-05-09 13:42:25] INFO root fetch - processPackages [buteo]: executing diffoscope
+[2023-05-09 13:42:25] INFO root fetch - processPackages [buteo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buteo-0.9.1.tar.gz tmp/buteo-0.9.2.tar.gz --markdown 20230509/b/buteo/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-09 13:42:25] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/05/0a/f08b537a9a36e44dd4b336c2e80091b9bef360595647c4f271ed56ec3883/pyre-check-nightly-0.0.101683544238.tar.gz
+[2023-05-09 13:42:25] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23307044>=10485760
+[2023-05-09 13:42:25] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-05-09 13:42:25] INFO root fetch - processPackages [openstack-heat]: Downloading https://files.pythonhosted.org/packages/fd/10/821b15ba0866ba2c51b621f106e39fd8b44db73ec981fa2c92e1a41470e7/openstack-heat-20.0.0.0rc1.tar.gz
+[2023-05-09 13:42:25] INFO root fetch - processPackages [openstack-heat]: Downloading https://files.pythonhosted.org/packages/fd/10/821b15ba0866ba2c51b621f106e39fd8b44db73ec981fa2c92e1a41470e7/openstack-heat-20.0.0.0rc1.tar.gz
+[2023-05-09 13:42:25] INFO root fetch - processPackages [auto-screener]: Downloading https://files.pythonhosted.org/packages/95/23/4dbcfba64c876f7bcecd12377e084d5142ab1da8b4ebeb3d3a127852b847/auto-screener-0.0.8.tar.gz
+[2023-05-09 13:42:25] INFO root fetch - processPackages [openstack-heat]: Downloading https://files.pythonhosted.org/packages/fd/10/821b15ba0866ba2c51b621f106e39fd8b44db73ec981fa2c92e1a41470e7/openstack-heat-20.0.0.0rc1.tar.gz
+[2023-05-09 13:42:25] INFO root fetch - processPackages [auto-screener]: Downloading https://files.pythonhosted.org/packages/17/81/2cce88151208fb3d0d0ee59ce98a996260f0578227453f7753134f315aaa/auto-screener-0.0.9.tar.gz
+[2023-05-09 13:42:25] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-05-09 13:42:25] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.8.tar.gz tmp/auto-screener-0.0.9.tar.gz --markdown 20230509/a/auto-screener/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 13:42:26] INFO root fetch - processPackages [openstack-heat]: Downloading https://files.pythonhosted.org/packages/31/a1/256373b1d5501f449c373cd8ec89ef7ddb2125dfe5e8308779d5c2e2f4b8/openstack-heat-20.0.0.0rc2.tar.gz
+[2023-05-09 13:42:26] INFO root fetch - processPackages [openstack-heat]: Downloading https://files.pythonhosted.org/packages/31/a1/256373b1d5501f449c373cd8ec89ef7ddb2125dfe5e8308779d5c2e2f4b8/openstack-heat-20.0.0.0rc2.tar.gz
+[2023-05-09 13:42:26] INFO root fetch - processPackages [openstack-heat]: Downloading https://files.pythonhosted.org/packages/31/a1/256373b1d5501f449c373cd8ec89ef7ddb2125dfe5e8308779d5c2e2f4b8/openstack-heat-20.0.0.0rc2.tar.gz
+[2023-05-09 13:42:26] INFO root fetch - main [MainThread]: End processing [buteo]: success
+[2023-05-09 13:42:26] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-05-09 13:42:27] INFO root fetch - processPackages [openstack-heat]: executing diffoscope
+[2023-05-09 13:42:27] INFO root fetch - processPackages [openstack-heat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openstack-heat-20.0.0.0rc1.tar.gz tmp/openstack-heat-20.0.0.0rc2.tar.gz --markdown 20230509/o/openstack-heat/20.0.0.0rc1-20.0.0.0rc2/diff.md --exclude *.pyd
+[2023-05-09 13:42:27] INFO root fetch - processPackages [openstack-heat]: executing diffoscope
+[2023-05-09 13:42:27] INFO root fetch - processPackages [openstack-heat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openstack-heat-20.0.0.0rc1.tar.gz tmp/openstack-heat-20.0.0.0rc2.tar.gz --markdown 20230509/o/openstack-heat/20.0.0.0rc1-20.0.0.0rc2/diff.md --exclude *.pyd
+[2023-05-09 13:42:27] INFO root fetch - processPackages [openstack-heat]: executing diffoscope
+[2023-05-09 13:42:27] INFO root fetch - processPackages [openstack-heat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openstack-heat-20.0.0.0rc1.tar.gz tmp/openstack-heat-20.0.0.0rc2.tar.gz --markdown 20230509/o/openstack-heat/20.0.0.0rc1-20.0.0.0rc2/diff.md --exclude *.pyd
+[2023-05-09 13:42:49] INFO root fetch - main [MainThread]: End processing [openstack-heat]: success
+[2023-05-09 13:42:49] INFO root fetch - main [MainThread]: End processing [openstack-heat]: success
+[2023-05-09 13:42:50] INFO root fetch - main [MainThread]: End processing [openstack-heat]: success
+[2023-05-09 13:42:50] INFO root fetch - main [MainThread]: Store serial: [18031339]
