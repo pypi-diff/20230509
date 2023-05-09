@@ -11577,3 +11577,147 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 09:41:34] INFO root fetch - main [MainThread]: End processing [cloudnetpy-qc]: success
 [2023-05-09 09:41:36] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-05-09 09:41:36] INFO root fetch - main [MainThread]: Store serial: [18028996]
+[2023-05-09 09:46:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028996]
+[2023-05-09 09:46:45] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exodusutils
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libcnmc
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pocketrockit
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-bcmr
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dtlpy
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zillionare-omicron
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: taru
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: example-qazedc
+[2023-05-09 09:46:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dcarte
+[2023-05-09 09:46:45] INFO root fetch - processPackages [libcnmc]: New version: [23.9.1] Old Version: [23.9.0]
+[2023-05-09 09:46:45] INFO root fetch - processPackages [dcarte]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-09 09:46:45] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-09 09:46:45] INFO root fetch - processPackages [libcnmc]: executing diffoscope
+[2023-05-09 09:46:45] INFO root fetch - processPackages [libcnmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libcnmc-23.9.0.tar.gz tmp/libcnmc-23.9.1.tar.gz --markdown 20230509/l/libcnmc/23.9.0-23.9.1/diff.md --exclude *.pyd
+[2023-05-09 09:46:45] INFO root fetch - processPackages [exodusutils]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-05-09 09:46:45] INFO root fetch - processPackages [taru]: New version: [1.0.0] Old Version: [0.1.3]
+[2023-05-09 09:46:45] INFO root fetch - processPackages [pocketrockit]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 09:46:45] INFO root fetch - processPackages [example-qazedc]: New version: [1.0.0] Old Version: [0.2.0]
+[2023-05-09 09:46:45] INFO root fetch - processPackages [dcarte]: executing diffoscope
+[2023-05-09 09:46:45] INFO root fetch - processPackages [dcarte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcarte-0.4.8.tar.gz tmp/dcarte-0.4.9.tar.gz --markdown 20230509/d/dcarte/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-09 09:46:45] INFO root fetch - processPackages [dtlpy]: New version: [1.76.17] Old Version: [1.76.15]
+[2023-05-09 09:46:45] INFO root fetch - processPackages [django-bcmr]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 09:46:46] INFO root fetch - processPackages [zillionare-omicron]: New version: [2.0.0a69] Old Version: [2.0.0a68]
+[2023-05-09 09:46:46] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-05-09 09:46:46] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 09:46:46] INFO root fetch - processPackages [taru]: Downloading https://files.pythonhosted.org/packages/28/40/5738c401ab59fdfbe485c40a0e96790ac66e01ba12e62da6cb7cf6228bc7/taru-0.1.3.tar.gz
+[2023-05-09 09:46:46] INFO root fetch - processPackages [exodusutils]: Downloading https://files.pythonhosted.org/packages/6a/73/8528d31e8b44e95e1d1b25f2812403d52815e8a3f8519129fe20f8996f9d/exodusutils-0.3.7.tar.gz
+[2023-05-09 09:46:46] INFO root fetch - processPackages [zillionare-omicron]: Downloading https://files.pythonhosted.org/packages/3e/e2/ab7f62b42d82eabe70daed89e252d1de2e4cf0ea9b60da4864c08fc29b5c/zillionare_omicron-2.0.0a69.tar.gz
+[2023-05-09 09:46:46] INFO root fetch - processPackages [dtlpy]: Downloading https://files.pythonhosted.org/packages/97/f4/e8a04a4c0efc1e8830357ec08e0bc8cfff300b377ce3f4c5b24c4f705f71/dtlpy-1.76.15-py3-none-any.whl
+[2023-05-09 09:46:46] INFO root fetch - processPackages [django-bcmr]: Downloading https://files.pythonhosted.org/packages/7c/26/db336ba3b7636341085b4bbccdebb9ae05563f647093f660b855ff4a5188/django-bcmr-0.1.8.tar.gz
+[2023-05-09 09:46:46] INFO root fetch - processPackages [pocketrockit]: executing diffoscope
+[2023-05-09 09:46:46] INFO root fetch - processPackages [pocketrockit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pocketrockit-0.0.8.tar.gz tmp/pocketrockit-0.0.9.tar.gz --markdown 20230509/p/pocketrockit/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 09:46:46] INFO root fetch - processPackages [example-qazedc]: Downloading https://files.pythonhosted.org/packages/2d/d0/5028153a7b279831489b0bd998e7b216e58384c5bd8bced42bfcffaccf6d/example_qazedc-1.0.0.tar.gz
+[2023-05-09 09:46:46] INFO root fetch - processPackages [zillionare-omicron]: executing diffoscope
+[2023-05-09 09:46:46] INFO root fetch - processPackages [zillionare-omicron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zillionare_omicron-2.0.0a68.tar.gz tmp/zillionare_omicron-2.0.0a69.tar.gz --markdown 20230509/z/zillionare-omicron/2.0.0a68-2.0.0a69/diff.md --exclude *.pyd
+[2023-05-09 09:46:46] INFO root fetch - processPackages [example-qazedc]: executing diffoscope
+[2023-05-09 09:46:46] INFO root fetch - processPackages [example-qazedc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/example_qazedc-0.2.0.tar.gz tmp/example_qazedc-1.0.0.tar.gz --markdown 20230509/e/example-qazedc/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-09 09:46:46] INFO root fetch - processPackages [taru]: Downloading https://files.pythonhosted.org/packages/0b/db/c4898c4888d1f54342514b1c402644df5470024994e18b7880632ad7054e/taru-1.0.0.tar.gz
+[2023-05-09 09:46:46] INFO root fetch - processPackages [django-bcmr]: Downloading https://files.pythonhosted.org/packages/21/88/b5da39c547c30bc5829cac44851ac1862b5db2dac9292d20ccc0feaafaa2/django-bcmr-0.1.9.tar.gz
+[2023-05-09 09:46:46] INFO root fetch - processPackages [dtlpy]: Downloading https://files.pythonhosted.org/packages/52/cc/573ab78189bcf831d90da84a3678b8aaa8135402ef538e5e7ba63149f0ee/dtlpy-1.76.17-py3-none-any.whl
+[2023-05-09 09:46:46] INFO root fetch - processPackages [exodusutils]: Downloading https://files.pythonhosted.org/packages/e2/83/372173aabc6d446059c022a2637a661536088a9b6ea7ea3507ce56b46795/exodusutils-0.3.9.tar.gz
+[2023-05-09 09:46:46] INFO root fetch - processPackages [taru]: executing diffoscope
+[2023-05-09 09:46:46] INFO root fetch - processPackages [taru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taru-0.1.3.tar.gz tmp/taru-1.0.0.tar.gz --markdown 20230509/t/taru/0.1.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-09 09:46:46] INFO root fetch - processPackages [django-bcmr]: executing diffoscope
+[2023-05-09 09:46:46] INFO root fetch - processPackages [django-bcmr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bcmr-0.1.8.tar.gz tmp/django-bcmr-0.1.9.tar.gz --markdown 20230509/d/django-bcmr/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 09:46:46] INFO root fetch - processPackages [exodusutils]: executing diffoscope
+[2023-05-09 09:46:46] INFO root fetch - processPackages [exodusutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exodusutils-0.3.7.tar.gz tmp/exodusutils-0.3.9.tar.gz --markdown 20230509/e/exodusutils/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-05-09 09:46:46] INFO root fetch - processPackages [dtlpy]: executing diffoscope
+[2023-05-09 09:46:46] INFO root fetch - processPackages [dtlpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtlpy-1.76.15-py3-none-any.whl.zip tmp/dtlpy-1.76.17-py3-none-any.whl.zip --markdown 20230509/d/dtlpy/1.76.15-1.76.17/diff.md --exclude *.pyd
+[2023-05-09 09:46:47] INFO root fetch - processPackages [pocketrockit]: Start processing: pano-airflow-providers-amazon
+[2023-05-09 09:46:47] INFO root fetch - main [MainThread]: End processing [pocketrockit]: success
+[2023-05-09 09:46:47] INFO root fetch - processPackages [example-qazedc]: Start processing: modelbase
+[2023-05-09 09:46:47] INFO root fetch - main [MainThread]: End processing [example-qazedc]: success
+[2023-05-09 09:46:47] WARNING root fetch - processPackages [pano-airflow-providers-amazon]: Skipping, unable to determine old version
+[2023-05-09 09:46:47] INFO root fetch - processPackages [pano-airflow-providers-amazon]: Start processing: odoo13-addon-product-multi-barcode
+[2023-05-09 09:46:47] INFO root fetch - main [MainThread]: End processing [pano-airflow-providers-amazon] error
+[2023-05-09 09:46:47] INFO root fetch - processPackages [odoo13-addon-product-multi-barcode]: New version: [13.0.1.1.1.dev5] Old Version: [13.0.1.1.1.dev4]
+[2023-05-09 09:46:47] INFO root fetch - processPackages [taru]: Start processing: odoo14-addon-product-multi-barcode
+[2023-05-09 09:46:47] INFO root fetch - main [MainThread]: End processing [taru]: success
+[2023-05-09 09:46:47] INFO root fetch - processPackages [dcarte]: Start processing: odoo-addon-product-multi-barcode
+[2023-05-09 09:46:47] INFO root fetch - main [MainThread]: End processing [dcarte]: success
+[2023-05-09 09:46:47] INFO root fetch - processPackages [odoo13-addon-product-multi-barcode]: Downloading https://files.pythonhosted.org/packages/8c/16/1a9ff827db91be5ffa3f1c20719c15da4dc269b693a92e0729add7548077/odoo13_addon_product_multi_barcode-13.0.1.1.1.dev4-py3-none-any.whl
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo14-addon-product-multi-barcode]: New version: [14.0.1.1.3.dev4] Old Version: [14.0.1.1.3.dev3]
+[2023-05-09 09:46:48] INFO root fetch - processPackages [modelbase]: New version: [1rc2] Old Version: [1.9.3]
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addon-product-multi-barcode]: New version: [16.0.1.0.0.7] Old Version: [16.0.1.0.0.6]
+[2023-05-09 09:46:48] INFO root fetch - processPackages [django-bcmr]: Start processing: odoo-addons-oca-stock-logistics-barcode
+[2023-05-09 09:46:48] INFO root fetch - main [MainThread]: End processing [django-bcmr]: success
+[2023-05-09 09:46:48] INFO root fetch - processPackages [modelbase]: executing diffoscope
+[2023-05-09 09:46:48] INFO root fetch - processPackages [modelbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelbase-1.9.3.tar.gz tmp/modelbase-1rc2.tar.gz --markdown 20230509/m/modelbase/1.9.3-1rc2/diff.md --exclude *.pyd
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: New version: [16.0.20230508.0] Old Version: [16.0.20230406.0]
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo14-addon-product-multi-barcode]: Downloading https://files.pythonhosted.org/packages/0d/c2/21b9f3536917261cd0a6e99ca06131a0d638cfa7306144b0019c93edeaaa/odoo14_addon_product_multi_barcode-14.0.1.1.3.dev3-py3-none-any.whl
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addon-product-multi-barcode]: Downloading https://files.pythonhosted.org/packages/30/3d/f6992cd1b0a30df3ef13a093605e7dd9cb31e9ccd8255557a073d9b139e4/odoo_addon_product_multi_barcode-16.0.1.0.0.6-py3-none-any.whl
+[2023-05-09 09:46:48] INFO root fetch - processPackages [zillionare-omicron]: Start processing: garaprod
+[2023-05-09 09:46:48] INFO root fetch - main [MainThread]: End processing [zillionare-omicron]: success
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo13-addon-product-multi-barcode]: Downloading https://files.pythonhosted.org/packages/5c/04/44da5703d36e0cec922ee7c3e07fd1fcae3b822bc32602bf9682cacf3969/odoo13_addon_product_multi_barcode-13.0.1.1.1.dev5-py3-none-any.whl
+[2023-05-09 09:46:48] INFO root fetch - processPackages [garaprod]: New version: [0.1683618082.0] Old Version: [0.1683617809.0]
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/99/f9/0163f341956308130937db9cbacf5c78358ca9b3afbd5cdf5347c28f96d8/odoo_addons_oca_stock_logistics_barcode-16.0.20230406.0-py3-none-any.whl
+[2023-05-09 09:46:48] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 09:46:48] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683617809.0.tar.gz tmp/garaprod-0.1683618082.0.tar.gz --markdown 20230509/g/garaprod/0.1683617809.0-0.1683618082.0/diff.md --exclude *.pyd
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo13-addon-product-multi-barcode]: executing diffoscope
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo13-addon-product-multi-barcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_product_multi_barcode-13.0.1.1.1.dev4-py3-none-any.whl.zip tmp/odoo13_addon_product_multi_barcode-13.0.1.1.1.dev5-py3-none-any.whl.zip --markdown 20230509/o/odoo13-addon-product-multi-barcode/13.0.1.1.1.dev4-13.0.1.1.1.dev5/diff.md --exclude *.pyd
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addon-product-multi-barcode]: Downloading https://files.pythonhosted.org/packages/0f/7b/e80364b7465f3daf64241de3d381a10fd1d8047b3854efbba9e2bb4721f8/odoo_addon_product_multi_barcode-16.0.1.0.0.7-py3-none-any.whl
+[2023-05-09 09:46:48] INFO root fetch - processPackages [exodusutils]: Start processing: keras-nightly
+[2023-05-09 09:46:48] INFO root fetch - main [MainThread]: End processing [exodusutils]: success
+[2023-05-09 09:46:48] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo14-addon-product-multi-barcode]: Downloading https://files.pythonhosted.org/packages/47/94/7d0c829c700cba417fe3e94297b779e75544bece22940ecda88631dc6cb5/odoo14_addon_product_multi_barcode-14.0.1.1.3.dev4-py3-none-any.whl
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addon-product-multi-barcode]: executing diffoscope
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addon-product-multi-barcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_multi_barcode-16.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_product_multi_barcode-16.0.1.0.0.7-py3-none-any.whl.zip --markdown 20230509/o/odoo-addon-product-multi-barcode/16.0.1.0.0.6-16.0.1.0.0.7/diff.md --exclude *.pyd
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/0c/19/2b7569cf974883dcc156164a31ec9de78db45b1f16daeec65acea28ef5f9/odoo_addons_oca_stock_logistics_barcode-16.0.20230508.0-py3-none-any.whl
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo14-addon-product-multi-barcode]: executing diffoscope
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo14-addon-product-multi-barcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_product_multi_barcode-14.0.1.1.3.dev3-py3-none-any.whl.zip tmp/odoo14_addon_product_multi_barcode-14.0.1.1.3.dev4-py3-none-any.whl.zip --markdown 20230509/o/odoo14-addon-product-multi-barcode/14.0.1.1.3.dev3-14.0.1.1.3.dev4/diff.md --exclude *.pyd
+[2023-05-09 09:46:48] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-09 09:46:48] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230509/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: executing diffoscope
+[2023-05-09 09:46:48] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20230406.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20230508.0-py3-none-any.whl.zip --markdown 20230509/o/odoo-addons-oca-stock-logistics-barcode/16.0.20230406.0-16.0.20230508.0/diff.md --exclude *.pyd
+[2023-05-09 09:46:49] INFO root fetch - processPackages [garaprod]: Start processing: vantage6-common
+[2023-05-09 09:46:49] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 09:46:49] INFO root fetch - processPackages [vantage6-common]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 09:46:49] INFO root fetch - processPackages [dtlpy]: Start processing: vantage6-client
+[2023-05-09 09:46:49] INFO root fetch - main [MainThread]: End processing [dtlpy]: success
+[2023-05-09 09:46:49] INFO root fetch - processPackages [vantage6-common]: Downloading https://files.pythonhosted.org/packages/a6/b5/95633c913be25bee9297142dc76de6f1db5dc5187dee5ae47199b612eee9/vantage6-common-3.8.5.tar.gz
+[2023-05-09 09:46:49] INFO root fetch - processPackages [vantage6-client]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 09:46:49] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Start processing: vantage6
+[2023-05-09 09:46:49] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-barcode]: success
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-client]: Downloading https://files.pythonhosted.org/packages/53/d0/85054d272d77b44b7c3d061a584980545b6774e4097112cf4a7246c084ab/vantage6-client-3.8.5.tar.gz
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6]: Downloading https://files.pythonhosted.org/packages/f1/37/7b3cacf076b617b3eaeab656ddda0c4ab04f7c72c6b823ff2a0371480ab1/vantage6-3.8.5.tar.gz
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-common]: Downloading https://files.pythonhosted.org/packages/67/bf/edf0cd47908031dab94cc53aa53e7c6b6210c33c329f8046f34b127f7c1f/vantage6-common-3.8.6.tar.gz
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-client]: Downloading https://files.pythonhosted.org/packages/c2/26/f239ff00b7613d287c765a5b9b8aa5d360dd5eed3699661d789de7686ac8/vantage6-client-3.8.6.tar.gz
+[2023-05-09 09:46:50] INFO root fetch - processPackages [odoo-addon-product-multi-barcode]: Start processing: vantage6-node
+[2023-05-09 09:46:50] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-multi-barcode]: success
+[2023-05-09 09:46:50] INFO root fetch - processPackages [odoo14-addon-product-multi-barcode]: Start processing: vantage6-server
+[2023-05-09 09:46:50] INFO root fetch - main [MainThread]: End processing [odoo14-addon-product-multi-barcode]: success
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6]: Downloading https://files.pythonhosted.org/packages/f2/27/bc87f33fbe32756b483dda31ec3be151ef9a97cc86336119ff3c871d27d7/vantage6-3.8.6.tar.gz
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-node]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-common]: executing diffoscope
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-common-3.8.5.tar.gz tmp/vantage6-common-3.8.6.tar.gz --markdown 20230509/v/vantage6-common/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-client]: executing diffoscope
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-client-3.8.5.tar.gz tmp/vantage6-client-3.8.6.tar.gz --markdown 20230509/v/vantage6-client/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-server]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6]: executing diffoscope
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-3.8.5.tar.gz tmp/vantage6-3.8.6.tar.gz --markdown 20230509/v/vantage6/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-node]: Downloading https://files.pythonhosted.org/packages/4d/20/f1aa09045bc35662032145e7671375c3b049169670d2f4f5dfa292920a42/vantage6-node-3.8.5.tar.gz
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-server]: Downloading https://files.pythonhosted.org/packages/4e/88/d7049bd8fe08bbb764149ab5d86366470081d4b4ea6d91d3a0b6045064cf/vantage6-server-3.8.5.tar.gz
+[2023-05-09 09:46:50] INFO root fetch - main [MainThread]: End processing [modelbase]: success
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-node]: Downloading https://files.pythonhosted.org/packages/b2/86/fb772c1a9b24a52fcd34b51201f65bdcdba3d5c8fda9b791987f21aef438/vantage6-node-3.8.6.tar.gz
+[2023-05-09 09:46:50] INFO root fetch - processPackages [vantage6-server]: Downloading https://files.pythonhosted.org/packages/17/04/8eb6f0b40e60f365a2fc70addac7bed07f7cff3ce583a781a4f5983075c8/vantage6-server-3.8.6.tar.gz
+[2023-05-09 09:46:51] INFO root fetch - processPackages [vantage6-node]: executing diffoscope
+[2023-05-09 09:46:51] INFO root fetch - processPackages [vantage6-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-node-3.8.5.tar.gz tmp/vantage6-node-3.8.6.tar.gz --markdown 20230509/v/vantage6-node/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 09:46:51] INFO root fetch - processPackages [vantage6-server]: executing diffoscope
+[2023-05-09 09:46:51] INFO root fetch - processPackages [vantage6-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-server-3.8.5.tar.gz tmp/vantage6-server-3.8.6.tar.gz --markdown 20230509/v/vantage6-server/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-05-09 09:46:51] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-05-09 09:46:51] INFO root fetch - main [MainThread]: End processing [libcnmc]: success
+[2023-05-09 09:46:52] INFO root fetch - main [MainThread]: End processing [vantage6-common]: success
+[2023-05-09 09:46:52] INFO root fetch - main [MainThread]: End processing [vantage6-client]: success
+[2023-05-09 09:46:52] INFO root fetch - main [MainThread]: End processing [vantage6-node]: success
+[2023-05-09 09:46:52] INFO root fetch - main [MainThread]: End processing [vantage6-server]: success
+[2023-05-09 09:46:52] INFO root fetch - main [MainThread]: End processing [vantage6]: success
+[2023-05-09 09:46:57] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-09 09:47:17] INFO root fetch - main [MainThread]: End processing [odoo13-addon-product-multi-barcode]: success
+[2023-05-09 09:47:17] INFO root fetch - main [MainThread]: Store serial: [18029068]
