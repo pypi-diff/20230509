@@ -17215,3 +17215,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 15:42:52] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2023-05-09 15:42:53] INFO root fetch - main [MainThread]: End processing [GlobalPayments.Api]: success
 [2023-05-09 15:42:53] INFO root fetch - main [MainThread]: Store serial: [18032465]
+[2023-05-09 15:47:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032465]
+[2023-05-09 15:48:03] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tabpy
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecoscope
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vmn
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyowletapi
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: raga-cli
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: octue
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fbgemm-gpu-nightly
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: clophfit
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: inputty
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: noisepy-seis
+[2023-05-09 15:48:03] INFO root fetch - processPackages [tabpy]: New version: [2.7.1] Old Version: [2.7.0]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [noisepy-seis]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ecoscope]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [inputty]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [pyowletapi]: New version: [2023.5.9] Old Version: [2023.5.7]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.5.8] Old Version: [2023.5.7]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [vmn]: New version: [0.8.5rc1] Old Version: [0.8.4]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [raga-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [clophfit]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [octue]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 15:48:03] INFO root fetch - processPackages [pyowletapi]: executing diffoscope
+[2023-05-09 15:48:03] INFO root fetch - processPackages [pyowletapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyowletapi-2023.5.7.tar.gz tmp/pyowletapi-2023.5.9.tar.gz --markdown 20230509/p/pyowletapi/2023.5.7-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 15:48:03] INFO root fetch - processPackages [raga-cli]: executing diffoscope
+[2023-05-09 15:48:03] INFO root fetch - processPackages [raga-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raga-cli-0.1.8.tar.gz tmp/raga-cli-0.1.9.tar.gz --markdown 20230509/r/raga-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 15:48:03] INFO root fetch - processPackages [noisepy-seis]: Downloading https://files.pythonhosted.org/packages/91/91/6d806f601892b5c6320a6057d866efa998ee40bd7baba0ecc42d00b3643f/noisepy_seis-0.8.0.tar.gz
+[2023-05-09 15:48:03] INFO root fetch - processPackages [clophfit]: Downloading https://files.pythonhosted.org/packages/97/39/b9194e4f46411579889ae03e65735858600928ac168aee372ffc037bd0f4/clophfit-0.5.3.tar.gz
+[2023-05-09 15:48:03] INFO root fetch - processPackages [tabpy]: Downloading https://files.pythonhosted.org/packages/79/1b/6ff452b74540a4f1481b1782060bd8160c36570e967e57723018001c9b89/tabpy-2.7.0.tar.gz
+[2023-05-09 15:48:03] INFO root fetch - processPackages [inputty]: Downloading https://files.pythonhosted.org/packages/84/49/7d27fe9e416ba015a529da969b7fd0362bcb866216425ad15cf23e1f71d1/inputty-0.0.2.tar.gz
+[2023-05-09 15:48:03] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/0e/85/1c887102dcee036e5ebb617117c939c7692d626b54f664a4adbd3f3c7f4c/fbgemm_gpu_nightly-2023.5.7-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-09 15:48:03] INFO root fetch - processPackages [ecoscope]: Downloading https://files.pythonhosted.org/packages/e8/6e/f656e2837e0d2c0dd3c67866f901812c8c8be8bcdf6cffe053036654df96/ecoscope-1.1.2.tar.gz
+[2023-05-09 15:48:03] INFO root fetch - processPackages [octue]: Downloading https://files.pythonhosted.org/packages/dd/d0/c0bb1ee9e9a73810ece385ac5e1c2fb9127e1151077551911882a9ecb277/octue-0.9.8.tar.gz
+[2023-05-09 15:48:03] INFO root fetch - processPackages [inputty]: executing diffoscope
+[2023-05-09 15:48:03] INFO root fetch - processPackages [inputty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inputty-0.0.1.tar.gz tmp/inputty-0.0.2.tar.gz --markdown 20230509/i/inputty/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 15:48:03] INFO root fetch - processPackages [clophfit]: executing diffoscope
+[2023-05-09 15:48:03] INFO root fetch - processPackages [clophfit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clophfit-0.5.2.tar.gz tmp/clophfit-0.5.3.tar.gz --markdown 20230509/c/clophfit/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-09 15:48:03] INFO root fetch - processPackages [vmn]: Downloading https://files.pythonhosted.org/packages/a2/c8/3951f3f619c68f58a4bd9f47f9247bf9ce3136773dcb79e8b292c85080d8/vmn-0.8.5rc1-py3-none-any.whl
+[2023-05-09 15:48:03] INFO root fetch - processPackages [noisepy-seis]: Downloading https://files.pythonhosted.org/packages/9c/39/dc2ec80938f2716fcec46418cdea59d92b524d8df0a655d93c1b030a13b1/noisepy_seis-0.8.1.tar.gz
+[2023-05-09 15:48:04] INFO root fetch - processPackages [tabpy]: Downloading https://files.pythonhosted.org/packages/5b/8d/d37c53b7ac2d59d5bb7bed6c75be35bfa2d681a8abd9069e5bff8a22f411/tabpy-2.7.1.tar.gz
+[2023-05-09 15:48:04] INFO root fetch - processPackages [ecoscope]: Downloading https://files.pythonhosted.org/packages/f7/2d/46500c24353c95bce12fcb735afdf1223ab2e69e8c006df846b8658818e7/ecoscope-1.2.0.tar.gz
+[2023-05-09 15:48:04] INFO root fetch - processPackages [noisepy-seis]: executing diffoscope
+[2023-05-09 15:48:04] INFO root fetch - processPackages [noisepy-seis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noisepy_seis-0.8.0.tar.gz tmp/noisepy_seis-0.8.1.tar.gz --markdown 20230509/n/noisepy-seis/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-09 15:48:04] INFO root fetch - processPackages [vmn]: executing diffoscope
+[2023-05-09 15:48:04] INFO root fetch - processPackages [vmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmn-0.8.4-py3-none-any.whl.zip tmp/vmn-0.8.5rc1-py3-none-any.whl.zip --markdown 20230509/v/vmn/0.8.4-0.8.5rc1/diff.md --exclude *.pyd
+[2023-05-09 15:48:04] INFO root fetch - processPackages [ecoscope]: executing diffoscope
+[2023-05-09 15:48:04] INFO root fetch - processPackages [ecoscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecoscope-1.1.2.tar.gz tmp/ecoscope-1.2.0.tar.gz --markdown 20230509/e/ecoscope/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 15:48:04] INFO root fetch - processPackages [tabpy]: executing diffoscope
+[2023-05-09 15:48:04] INFO root fetch - processPackages [tabpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabpy-2.7.0.tar.gz tmp/tabpy-2.7.1.tar.gz --markdown 20230509/t/tabpy/2.7.0-2.7.1/diff.md --exclude *.pyd
+[2023-05-09 15:48:04] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 267847599>=10485760
+[2023-05-09 15:48:04] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Start processing: dxsp
+[2023-05-09 15:48:04] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-09 15:48:04] INFO root fetch - processPackages [dxsp]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-09 15:48:04] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-09 15:48:04] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.0.8.tar.gz tmp/dxsp-2.0.9.tar.gz --markdown 20230509/d/dxsp/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-09 15:48:04] INFO root fetch - processPackages [octue]: Downloading https://files.pythonhosted.org/packages/e9/05/d04ff47ecae5f4ddc8c3efb128793bc1868bdcf23f12394c61d55d48e6aa/octue-0.9.9.tar.gz
+[2023-05-09 15:48:04] INFO root fetch - processPackages [octue]: executing diffoscope
+[2023-05-09 15:48:04] INFO root fetch - processPackages [octue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octue-0.9.8.tar.gz tmp/octue-0.9.9.tar.gz --markdown 20230509/o/octue/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 15:48:05] INFO root fetch - processPackages [raga-cli]: Start processing: moleculekit
+[2023-05-09 15:48:05] INFO root fetch - main [MainThread]: End processing [raga-cli]: success
+[2023-05-09 15:48:05] INFO root fetch - processPackages [pyowletapi]: Start processing: certora-cli-alpha-niv-fix-check-results
+[2023-05-09 15:48:05] INFO root fetch - main [MainThread]: End processing [pyowletapi]: success
+[2023-05-09 15:48:05] INFO root fetch - processPackages [moleculekit]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-05-09 15:48:05] WARNING root fetch - processPackages [certora-cli-alpha-niv-fix-check-results]: Skipping, unable to determine old version
+[2023-05-09 15:48:05] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-niv-fix-check-results] error
+[2023-05-09 15:48:05] INFO root fetch - main [MainThread]: End processing [inputty]: success
+[2023-05-09 15:48:05] INFO root fetch - processPackages [moleculekit]: Downloading https://files.pythonhosted.org/packages/bd/54/7eaec59ff225b186934cbe0ea2e709af1864cac674dc9c8f2e7cf2d8adeb/moleculekit-1.6.9.tar.gz
+[2023-05-09 15:48:05] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-09 15:48:05] INFO root fetch - main [MainThread]: End processing [noisepy-seis]: success
+[2023-05-09 15:48:05] INFO root fetch - main [MainThread]: End processing [vmn]: success
+[2023-05-09 15:48:06] INFO root fetch - main [MainThread]: End processing [ecoscope]: success
+[2023-05-09 15:48:06] INFO root fetch - processPackages [moleculekit]: executing diffoscope
+[2023-05-09 15:48:06] INFO root fetch - processPackages [moleculekit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moleculekit-1.6.8.tar.gz tmp/moleculekit-1.6.9.tar.gz --markdown 20230509/m/moleculekit/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-05-09 15:48:07] INFO root fetch - main [MainThread]: End processing [tabpy]: success
+[2023-05-09 15:48:07] INFO root fetch - main [MainThread]: End processing [octue]: success
+[2023-05-09 15:48:09] INFO root fetch - main [MainThread]: End processing [clophfit]: success
+[2023-05-09 15:48:14] INFO root fetch - main [MainThread]: End processing [moleculekit]: success
+[2023-05-09 15:48:14] INFO root fetch - main [MainThread]: Store serial: [18032504]
