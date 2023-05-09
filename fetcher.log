@@ -19543,3 +19543,98 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 17:30:08] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
 [2023-05-09 17:30:27] INFO root fetch - main [MainThread]: End processing [volcengine-python-sdk]: success
 [2023-05-09 17:30:27] INFO root fetch - main [MainThread]: Store serial: [18034093]
+[2023-05-09 17:35:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034093]
+[2023-05-09 17:35:38] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyowletapi
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-azure-native
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydischarge
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: contrast-agent
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eotdl-cli
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nautobot-ssot-infoblox
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pg-bulk-ingest
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: udata-front
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tensorflow-federated
+[2023-05-09 17:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: code-loader
+[2023-05-09 17:35:38] INFO root fetch - processPackages [eotdl-cli]: New version: [2023.5.9.post3] Old Version: [2023.5.9.post2]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [udata-front]: New version: [3.2.3.dev9974] Old Version: [3.2.3.dev10339]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [eotdl-cli]: executing diffoscope
+[2023-05-09 17:35:38] INFO root fetch - processPackages [eotdl-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eotdl-cli-2023.5.9.post2.tar.gz tmp/eotdl-cli-2023.5.9.post3.tar.gz --markdown 20230509/e/eotdl-cli/2023.5.9.post2-2023.5.9.post3/diff.md --exclude *.pyd
+[2023-05-09 17:35:38] INFO root fetch - processPackages [tensorflow-federated]: New version: [0.9.0] Old Version: [0.7.0]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [pulumi-azure-native]: New version: [1.99.3a1681807800] Old Version: [1.99.3a1681488349]
+[2023-05-09 17:35:38] WARNING root fetch - processPackages [pg-bulk-ingest]: Skipping, unable to determine old version
+[2023-05-09 17:35:38] INFO root fetch - processPackages [nautobot-ssot-infoblox]: New version: [0.8.0] Old Version: [0.7.5]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [pg-bulk-ingest]: Start processing: spotipy-anon
+[2023-05-09 17:35:38] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest] error
+[2023-05-09 17:35:38] INFO root fetch - processPackages [pyowletapi]: New version: [2023.5.9] Old Version: [2023.5.7]
+[2023-05-09 17:35:38] WARNING root fetch - processPackages [pydischarge]: Skipping, unable to determine old version
+[2023-05-09 17:35:38] INFO root fetch - processPackages [pydischarge]: Start processing: spacy-to-hf
+[2023-05-09 17:35:38] INFO root fetch - main [MainThread]: End processing [pydischarge] error
+[2023-05-09 17:35:38] INFO root fetch - processPackages [contrast-agent]: New version: [5.9.1] Old Version: [5.9.0]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-09 17:35:38] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230509/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 17:35:38] WARNING root fetch - processPackages [spotipy-anon]: Skipping, unable to determine old version
+[2023-05-09 17:35:38] INFO root fetch - processPackages [spotipy-anon]: Start processing: edx-enterprise
+[2023-05-09 17:35:38] INFO root fetch - main [MainThread]: End processing [spotipy-anon] error
+[2023-05-09 17:35:38] INFO root fetch - processPackages [spacy-to-hf]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [udata-front]: executing diffoscope
+[2023-05-09 17:35:38] INFO root fetch - processPackages [udata-front]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udata_front-3.2.3.dev10339-py2.py3-none-any.whl.zip tmp/udata_front-3.2.3.dev9974-py2.py3-none-any.whl.zip --markdown 20230509/u/udata-front/3.2.3.dev10339-3.2.3.dev9974/diff.md --exclude *.pyd
+[2023-05-09 17:35:38] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/52/f3/3693eef5572581c854b7baa4a23609bed3bd058874015c550b7dfcf8d321/pulumi_azure_native-1.99.3a1681488349.tar.gz
+[2023-05-09 17:35:38] INFO root fetch - processPackages [edx-enterprise]: New version: [3.9.9] Old Version: [3.9.7]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [tensorflow-federated]: Downloading https://files.pythonhosted.org/packages/f5/b0/3ff47e8a240e05fe5b1943546ae5d647d4be46552a7b83e9d826f661106c/tensorflow_federated-0.7.0-py2.py3-none-any.whl
+[2023-05-09 17:35:38] INFO root fetch - processPackages [nautobot-ssot-infoblox]: Downloading https://files.pythonhosted.org/packages/5e/6d/848a0c5ba24f8e550bb4d1d43614af7385705439f5128775da3b49fb071f/nautobot_ssot_infoblox-0.7.5.tar.gz
+[2023-05-09 17:35:38] INFO root fetch - processPackages [contrast-agent]: Downloading https://files.pythonhosted.org/packages/fa/4f/561dff848ab959988cacc16c02374f870dfce30cde6aa7b8bb1e9d9a7b11/contrast-agent-5.9.0.tar.gz
+[2023-05-09 17:35:38] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 62615676>=10485760
+[2023-05-09 17:35:38] INFO root fetch - processPackages [pulumi-azure-native]: Start processing: TB2J
+[2023-05-09 17:35:38] INFO root fetch - main [MainThread]: End processing [pulumi-azure-native] error
+[2023-05-09 17:35:38] WARNING root fetch - processPackages [contrast-agent]: Skipping package: exceeds size limit 10668876>=10485760
+[2023-05-09 17:35:38] INFO root fetch - processPackages [contrast-agent]: Start processing: pandasflow
+[2023-05-09 17:35:38] INFO root fetch - main [MainThread]: End processing [contrast-agent] error
+[2023-05-09 17:35:38] INFO root fetch - processPackages [edx-enterprise]: executing diffoscope
+[2023-05-09 17:35:38] INFO root fetch - processPackages [edx-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edx-enterprise-3.9.7.tar.gz tmp/edx-enterprise-3.9.9.tar.gz --markdown 20230509/e/edx-enterprise/3.9.7-3.9.9/diff.md --exclude *.pyd
+[2023-05-09 17:35:38] INFO root fetch - processPackages [TB2J]: New version: [0.7.5] Old Version: [0.7.4rc3]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [pandasflow]: New version: [0.5.0] Old Version: [0.4.7]
+[2023-05-09 17:35:38] INFO root fetch - processPackages [pyowletapi]: executing diffoscope
+[2023-05-09 17:35:38] INFO root fetch - processPackages [pyowletapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyowletapi-2023.5.7.tar.gz tmp/pyowletapi-2023.5.9.tar.gz --markdown 20230509/p/pyowletapi/2023.5.7-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 17:35:39] INFO root fetch - processPackages [spacy-to-hf]: Downloading https://files.pythonhosted.org/packages/23/c8/1cc69ac1d7d8671b71da95e262bdb488c3f48d21b65991109976749adaa0/spacy-to-hf-0.0.3.tar.gz
+[2023-05-09 17:35:39] INFO root fetch - processPackages [tensorflow-federated]: Downloading https://files.pythonhosted.org/packages/9e/b9/ea984cee746438d7f67ef0a61a96c24d68a157901f39870fe0b38dc1d539/tensorflow_federated-0.9.0-py2.py3-none-any.whl
+[2023-05-09 17:35:39] INFO root fetch - processPackages [TB2J]: Downloading https://files.pythonhosted.org/packages/89/b5/af087b006fb39a8bce77a4db0dae9b44d2e79f358b166a92cc7bc341ab86/TB2J-0.7.4rc3.tar.gz
+[2023-05-09 17:35:39] INFO root fetch - processPackages [nautobot-ssot-infoblox]: Downloading https://files.pythonhosted.org/packages/bb/6a/644852851d7c325576f66bed5a99ae8e4cb4ba4304f69b31ab486cd1f656/nautobot_ssot_infoblox-0.8.0.tar.gz
+[2023-05-09 17:35:39] INFO root fetch - processPackages [pandasflow]: Downloading https://files.pythonhosted.org/packages/dc/f3/c45a3d7eed58a8964692da094478b17396f463e4d3ea2bc35b5d5a5ceedf/pandasflow-0.4.7.tar.gz
+[2023-05-09 17:35:39] INFO root fetch - processPackages [tensorflow-federated]: executing diffoscope
+[2023-05-09 17:35:39] INFO root fetch - processPackages [tensorflow-federated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_federated-0.7.0-py2.py3-none-any.whl.zip tmp/tensorflow_federated-0.9.0-py2.py3-none-any.whl.zip --markdown 20230509/t/tensorflow-federated/0.7.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 17:35:39] INFO root fetch - processPackages [nautobot-ssot-infoblox]: executing diffoscope
+[2023-05-09 17:35:39] INFO root fetch - processPackages [spacy-to-hf]: executing diffoscope
+[2023-05-09 17:35:39] INFO root fetch - processPackages [spacy-to-hf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacy-to-hf-0.0.2.tar.gz tmp/spacy-to-hf-0.0.3.tar.gz --markdown 20230509/s/spacy-to-hf/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 17:35:39] INFO root fetch - processPackages [nautobot-ssot-infoblox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautobot_ssot_infoblox-0.7.5.tar.gz tmp/nautobot_ssot_infoblox-0.8.0.tar.gz --markdown 20230509/n/nautobot-ssot-infoblox/0.7.5-0.8.0/diff.md --exclude *.pyd
+[2023-05-09 17:35:39] INFO root fetch - processPackages [pandasflow]: Downloading https://files.pythonhosted.org/packages/09/34/ac88789dec8eb371b5e6c31805992f2db616101712c1f834beef083d555b/pandasflow-0.5.0.tar.gz
+[2023-05-09 17:35:39] INFO root fetch - processPackages [pandasflow]: executing diffoscope
+[2023-05-09 17:35:39] INFO root fetch - processPackages [pandasflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasflow-0.4.7.tar.gz tmp/pandasflow-0.5.0.tar.gz --markdown 20230509/p/pandasflow/0.4.7-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 17:35:39] INFO root fetch - processPackages [TB2J]: Downloading https://files.pythonhosted.org/packages/f1/9f/26da5bc511f0ccf84eddef828aa8412dbebf0c7fd73a3f281a52dd098218/TB2J-0.7.5.tar.gz
+[2023-05-09 17:35:39] INFO root fetch - processPackages [TB2J]: executing diffoscope
+[2023-05-09 17:35:39] INFO root fetch - processPackages [TB2J]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TB2J-0.7.4rc3.tar.gz tmp/TB2J-0.7.5.tar.gz --markdown 20230509/T/TB2J/0.7.4rc3-0.7.5/diff.md --exclude *.pyd
+[2023-05-09 17:35:40] INFO root fetch - processPackages [eotdl-cli]: Start processing: djangoldp-application
+[2023-05-09 17:35:40] INFO root fetch - main [MainThread]: End processing [eotdl-cli]: success
+[2023-05-09 17:35:40] INFO root fetch - processPackages [code-loader]: Start processing: sageworks
+[2023-05-09 17:35:40] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-09 17:35:40] INFO root fetch - processPackages [djangoldp-application]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 17:35:40] INFO root fetch - processPackages [sageworks]: New version: [0.1.5.0] Old Version: [0.1.4.3]
+[2023-05-09 17:35:40] INFO root fetch - main [MainThread]: End processing [pyowletapi]: success
+[2023-05-09 17:35:40] INFO root fetch - processPackages [sageworks]: Downloading https://files.pythonhosted.org/packages/b9/68/57f58de599411027af8140fce641e8399076ca98b2dcfadb8c686ac4d975/sageworks-0.1.4.3.tar.gz
+[2023-05-09 17:35:40] INFO root fetch - processPackages [djangoldp-application]: Downloading https://files.pythonhosted.org/packages/2e/1c/522c2175159a2234f8846c0ef46ecbe3dff604e6e5ba541a9493a9c86ab7/djangoldp_application-1.0.8.tar.gz
+[2023-05-09 17:35:40] INFO root fetch - main [MainThread]: End processing [spacy-to-hf]: success
+[2023-05-09 17:35:40] INFO root fetch - processPackages [djangoldp-application]: Downloading https://files.pythonhosted.org/packages/06/fb/55007c4c5a878c8beece5afc51b811e672f188022d8b4fad5c06a518ec9d/djangoldp_application-1.0.9.tar.gz
+[2023-05-09 17:35:40] INFO root fetch - main [MainThread]: End processing [pandasflow]: success
+[2023-05-09 17:35:40] INFO root fetch - processPackages [djangoldp-application]: executing diffoscope
+[2023-05-09 17:35:40] INFO root fetch - processPackages [djangoldp-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_application-1.0.8.tar.gz tmp/djangoldp_application-1.0.9.tar.gz --markdown 20230509/d/djangoldp-application/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 17:35:40] INFO root fetch - main [MainThread]: End processing [nautobot-ssot-infoblox]: success
+[2023-05-09 17:35:41] INFO root fetch - processPackages [sageworks]: Downloading https://files.pythonhosted.org/packages/54/61/6e07eabd8cbd41dfc515140f9b89b952e2e1cf64db3bf62cfce9e712a469/sageworks-0.1.5.0.tar.gz
+[2023-05-09 17:35:41] INFO root fetch - main [MainThread]: End processing [TB2J]: success
+[2023-05-09 17:35:41] INFO root fetch - main [MainThread]: End processing [djangoldp-application]: success
+[2023-05-09 17:35:42] INFO root fetch - main [MainThread]: End processing [tensorflow-federated]: success
+[2023-05-09 17:35:42] INFO root fetch - processPackages [sageworks]: executing diffoscope
+[2023-05-09 17:35:42] INFO root fetch - processPackages [sageworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sageworks-0.1.4.3.tar.gz tmp/sageworks-0.1.5.0.tar.gz --markdown 20230509/s/sageworks/0.1.4.3-0.1.5.0/diff.md --exclude *.pyd
+[2023-05-09 17:35:44] INFO root fetch - main [MainThread]: End processing [edx-enterprise]: success
+[2023-05-09 17:35:45] INFO root fetch - main [MainThread]: End processing [sageworks]: success
+[2023-05-09 17:36:09] INFO root fetch - main [MainThread]: End processing [udata-front]: success
+[2023-05-09 17:36:09] INFO root fetch - main [MainThread]: Store serial: [18034142]
