@@ -9578,3 +9578,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 07:34:42] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
 [2023-05-09 07:34:42] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
 [2023-05-09 07:34:42] INFO root fetch - main [MainThread]: Store serial: [18027874]
+[2023-05-09 07:39:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027874]
+[2023-05-09 07:39:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-bunny
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nanomonsv
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-bunny
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ayugespidertools
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: misura
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hybrid-example
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-auth0
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: musegan
+[2023-05-09 07:39:51] INFO root fetch - processPackages [django-bunny]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 07:39:51] INFO root fetch - processPackages [django-bunny]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 07:39:51] INFO root fetch - processPackages [nanomonsv]: New version: [0.5.1] Old Version: [0.5.0b2]
+[2023-05-09 07:39:51] INFO root fetch - processPackages [musegan]: New version: [0.0.6] Old Version: [0.0.4]
+[2023-05-09 07:39:51] WARNING root fetch - processPackages [hybrid-example]: Skipping, unable to determine old version
+[2023-05-09 07:39:51] INFO root fetch - main [MainThread]: End processing [hybrid-example] error
+[2023-05-09 07:39:51] INFO root fetch - processPackages [misura]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ayugespidertools]: New version: [2.1.0] Old Version: [2.0.3]
+[2023-05-09 07:39:51] INFO root fetch - processPackages [pulumi-auth0]: New version: [2.9.0a1653604814] Old Version: [2.9.0a1651588791]
+[2023-05-09 07:39:51] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 07:39:51] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.8.tar.gz tmp/django-bunny-1.0.9.tar.gz --markdown 20230509/d/django-bunny/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 07:39:51] INFO root fetch - processPackages [django-bunny]: executing diffoscope
+[2023-05-09 07:39:51] INFO root fetch - processPackages [django-bunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bunny-1.0.8.tar.gz tmp/django-bunny-1.0.9.tar.gz --markdown 20230509/d/django-bunny/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 07:39:51] INFO root fetch - processPackages [nanomonsv]: Downloading https://files.pythonhosted.org/packages/09/67/cc66666ed48a2034c5b56f9cf7e0a66deac7ad90dfec88deb42d07eb7f85/nanomonsv-0.5.0b2.tar.gz
+[2023-05-09 07:39:51] INFO root fetch - processPackages [musegan]: Downloading https://files.pythonhosted.org/packages/12/f1/8e59dd4a998239d40ac900c4201f99ff6f7256bb646b3a4d035045e7070c/musegan-0.0.6.tar.gz
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ayugespidertools]: Downloading https://files.pythonhosted.org/packages/6e/e6/482608557eee33c97dca4997f3b9c371eda795f1a886d01ca34fac22b4d6/ayugespidertools-2.0.3.tar.gz
+[2023-05-09 07:39:51] INFO root fetch - processPackages [misura]: Downloading https://files.pythonhosted.org/packages/5b/68/b4adf55ba6f4076b95f149b396b06df1f11ec849ce6fc476f6945bd1992c/misura-1.5.3.tar.gz
+[2023-05-09 07:39:51] INFO root fetch - processPackages [pulumi-auth0]: Downloading https://files.pythonhosted.org/packages/3e/35/7d6e4499bceba97755c0134f6a13d88ed94dadff204afd15746602f4d885/pulumi_auth0-2.9.0a1651588791.tar.gz
+[2023-05-09 07:39:51] INFO root fetch - processPackages [musegan]: executing diffoscope
+[2023-05-09 07:39:51] INFO root fetch - processPackages [musegan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musegan-0.0.4.tar.gz tmp/musegan-0.0.6.tar.gz --markdown 20230509/m/musegan/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 07:39:51] INFO root fetch - processPackages [misura]: Downloading https://files.pythonhosted.org/packages/58/88/b52b36276a1ecd8307a2f459c7141ba2a1edf4ea8321d10b868b78043c60/misura-1.5.4.tar.gz
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ayugespidertools]: Downloading https://files.pythonhosted.org/packages/1a/dd/5795fae6005a4c45b9d8d85713d36463e4e57b4e1ba1e628f0cc7c199184/ayugespidertools-2.1.0.tar.gz
+[2023-05-09 07:39:51] INFO root fetch - processPackages [misura]: executing diffoscope
+[2023-05-09 07:39:51] INFO root fetch - processPackages [misura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/misura-1.5.3.tar.gz tmp/misura-1.5.4.tar.gz --markdown 20230509/m/misura/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-05-09 07:39:51] INFO root fetch - processPackages [nanomonsv]: Downloading https://files.pythonhosted.org/packages/a4/04/1136089512a8050178b741ea64c910f19fed3ed06035d7058434b4503bf1/nanomonsv-0.5.1.tar.gz
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ayugespidertools]: executing diffoscope
+[2023-05-09 07:39:51] INFO root fetch - processPackages [ayugespidertools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ayugespidertools-2.0.3.tar.gz tmp/ayugespidertools-2.1.0.tar.gz --markdown 20230509/a/ayugespidertools/2.0.3-2.1.0/diff.md --exclude *.pyd
+[2023-05-09 07:39:51] INFO root fetch - processPackages [pulumi-auth0]: Downloading https://files.pythonhosted.org/packages/19/fc/57f01dd941ba0ec2ad79d6e6f06dc951a65e89280d974bb8be71b3a6bc6a/pulumi_auth0-2.9.0a1653604814.tar.gz
+[2023-05-09 07:39:51] INFO root fetch - processPackages [nanomonsv]: executing diffoscope
+[2023-05-09 07:39:51] INFO root fetch - processPackages [nanomonsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanomonsv-0.5.0b2.tar.gz tmp/nanomonsv-0.5.1.tar.gz --markdown 20230509/n/nanomonsv/0.5.0b2-0.5.1/diff.md --exclude *.pyd
+[2023-05-09 07:39:51] INFO root fetch - processPackages [pulumi-auth0]: executing diffoscope
+[2023-05-09 07:39:51] INFO root fetch - processPackages [pulumi-auth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_auth0-2.9.0a1651588791.tar.gz tmp/pulumi_auth0-2.9.0a1653604814.tar.gz --markdown 20230509/p/pulumi-auth0/2.9.0a1651588791-2.9.0a1653604814/diff.md --exclude *.pyd
+[2023-05-09 07:39:52] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 07:39:52] INFO root fetch - main [MainThread]: End processing [django-bunny]: success
+[2023-05-09 07:39:52] INFO root fetch - main [MainThread]: End processing [musegan]: success
+[2023-05-09 07:39:52] INFO root fetch - main [MainThread]: End processing [misura]: success
+[2023-05-09 07:39:53] INFO root fetch - main [MainThread]: End processing [nanomonsv]: success
+[2023-05-09 07:39:53] INFO root fetch - main [MainThread]: End processing [pulumi-auth0]: success
+[2023-05-09 07:39:53] INFO root fetch - main [MainThread]: End processing [ayugespidertools]: success
+[2023-05-09 07:39:53] INFO root fetch - main [MainThread]: Store serial: [18027897]
