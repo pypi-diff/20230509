@@ -22663,3 +22663,75 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 20:13:32] INFO root fetch - processPackages [qcs-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcs_sdk_python-0.6.0rc0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/qcs_sdk_python-0.6.0rc1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230509/q/qcs-sdk-python/0.6.0rc0-0.6.0rc1/diff.md --exclude *.pyd
 [2023-05-09 20:15:44] INFO root fetch - main [MainThread]: End processing [qcs-sdk-python]: success
 [2023-05-09 20:15:44] INFO root fetch - main [MainThread]: Store serial: [18035890]
+[2023-05-09 20:21:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18035890]
+[2023-05-09 20:21:11] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bs-python-utils
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dreamai-pdf
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ia-sdk
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OctoBot-Tulipy
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: suzieq
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: html-msg
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: polywrap-http-plugin
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-extensions
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: segmentheepy-test
+[2023-05-09 20:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyboil
+[2023-05-09 20:21:12] INFO root fetch - processPackages [bs-python-utils]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [suzieq]: New version: [0.8.0] Old Version: [0.21.0rc1]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [dreamai-pdf]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [html-msg]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [polywrap-http-plugin]: New version: [0.1.0a6] Old Version: [0.1.0a5]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [segmentheepy-test]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [OctoBot-Tulipy]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [ia-sdk]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [cdk-extensions]: New version: [0.0.59] Old Version: [0.0.58]
+[2023-05-09 20:21:12] INFO root fetch - processPackages [segmentheepy-test]: executing diffoscope
+[2023-05-09 20:21:12] INFO root fetch - processPackages [segmentheepy-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segmentheepy_test-0.0.1-py3-none-any.whl.zip tmp/segmentheepy_test-0.0.2-py3-none-any.whl.zip --markdown 20230509/s/segmentheepy-test/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 20:21:12] INFO root fetch - processPackages [suzieq]: Downloading https://files.pythonhosted.org/packages/34/22/7d307affc78cfde8bc1d226492fb6645c691d437b13d15dd39ec6d69222e/suzieq-0.21.0rc1.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [polywrap-http-plugin]: Downloading https://files.pythonhosted.org/packages/55/7a/3404090b02d8175142a5adccd3c166ed593b76066be0d2d5e10dd71b8f75/polywrap_http_plugin-0.1.0a5.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [html-msg]: Downloading https://files.pythonhosted.org/packages/93/3e/369365bbf79e769573252dd334ea27e802b716010c2111caef6508c9c33a/html_msg-1.0.3.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [ia-sdk]: Downloading https://files.pythonhosted.org/packages/90/e8/41df6e9553036f67203cc29f343479bcaafed50d29db2e97f01ab31686c7/ia-sdk-0.3.8.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 20:21:12] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 20:21:12] INFO root fetch - processPackages [cdk-extensions]: Downloading https://files.pythonhosted.org/packages/66/91/c1ea14e2baa9b6f0cf364c8996f22f77a7442e551a85ee51b77663ba4b84/cdk-extensions-0.0.58.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [bs-python-utils]: Downloading https://files.pythonhosted.org/packages/fd/55/1a4d510a52d3b1a9810cac5a5436a759c481c39e41601ec09542d735d60a/bs_python_utils-0.0.6.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [OctoBot-Tulipy]: Downloading https://files.pythonhosted.org/packages/72/0d/b5627d80dcd5e27cf986b5f811ee1297f05e09883d7a7fc05a0f5012a92f/OctoBot-Tulipy-0.4.9.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [bs-python-utils]: executing diffoscope
+[2023-05-09 20:21:12] INFO root fetch - processPackages [bs-python-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bs_python_utils-0.0.5.tar.gz tmp/bs_python_utils-0.0.6.tar.gz --markdown 20230509/b/bs-python-utils/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 20:21:12] INFO root fetch - processPackages [dreamai-pdf]: executing diffoscope
+[2023-05-09 20:21:12] INFO root fetch - processPackages [dreamai-pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai_pdf-0.0.8.tar.gz tmp/dreamai_pdf-0.0.9.tar.gz --markdown 20230509/d/dreamai-pdf/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 20:21:12] INFO root fetch - processPackages [polywrap-http-plugin]: Downloading https://files.pythonhosted.org/packages/19/29/28dd35b4c201967af6790854e4ea7a371487de5d9650aac8ad7e2b17b5e1/polywrap_http_plugin-0.1.0a6.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [OctoBot-Tulipy]: executing diffoscope
+[2023-05-09 20:21:12] INFO root fetch - processPackages [OctoBot-Tulipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Tulipy-0.4.8.tar.gz tmp/OctoBot-Tulipy-0.4.9.tar.gz --markdown 20230509/O/OctoBot-Tulipy/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-09 20:21:12] INFO root fetch - processPackages [html-msg]: Downloading https://files.pythonhosted.org/packages/8f/3d/2269f7b1e898668b29a99871b90b33f07f03d9ee824e7b5f7b3c46f9cdc5/html_msg-1.0.4.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [suzieq]: Downloading https://files.pythonhosted.org/packages/5d/81/700f6c41a76269bbb239577f64d2ac2a13222d599e881a6c215144d48e27/suzieq-0.8.0.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [ia-sdk]: Downloading https://files.pythonhosted.org/packages/15/b1/a36a944cde31a37170a8faf4c4a9b8e8938a6d9e17d861f96bc9bf3d64c3/ia-sdk-0.3.9.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [polywrap-http-plugin]: executing diffoscope
+[2023-05-09 20:21:12] INFO root fetch - processPackages [polywrap-http-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_http_plugin-0.1.0a5.tar.gz tmp/polywrap_http_plugin-0.1.0a6.tar.gz --markdown 20230509/p/polywrap-http-plugin/0.1.0a5-0.1.0a6/diff.md --exclude *.pyd
+[2023-05-09 20:21:12] INFO root fetch - processPackages [html-msg]: executing diffoscope
+[2023-05-09 20:21:12] INFO root fetch - processPackages [html-msg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html_msg-1.0.3.tar.gz tmp/html_msg-1.0.4.tar.gz --markdown 20230509/h/html-msg/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-09 20:21:12] INFO root fetch - processPackages [cdk-extensions]: Downloading https://files.pythonhosted.org/packages/5b/89/d6d7ddd75a4c6464b8f6fbe9151cb1cd1055c74953de52ee869ee5b7ba16/cdk-extensions-0.0.59.tar.gz
+[2023-05-09 20:21:12] INFO root fetch - processPackages [ia-sdk]: executing diffoscope
+[2023-05-09 20:21:12] INFO root fetch - processPackages [ia-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ia-sdk-0.3.8.tar.gz tmp/ia-sdk-0.3.9.tar.gz --markdown 20230509/i/ia-sdk/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-09 20:21:12] INFO root fetch - processPackages [suzieq]: executing diffoscope
+[2023-05-09 20:21:12] INFO root fetch - processPackages [suzieq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/suzieq-0.21.0rc1.tar.gz tmp/suzieq-0.8.0.tar.gz --markdown 20230509/s/suzieq/0.21.0rc1-0.8.0/diff.md --exclude *.pyd
+[2023-05-09 20:21:13] INFO root fetch - processPackages [cdk-extensions]: executing diffoscope
+[2023-05-09 20:21:13] INFO root fetch - processPackages [cdk-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-extensions-0.0.58.tar.gz tmp/cdk-extensions-0.0.59.tar.gz --markdown 20230509/c/cdk-extensions/0.0.58-0.0.59/diff.md --exclude *.pyd
+[2023-05-09 20:21:13] INFO root fetch - processPackages [segmentheepy-test]: Start processing: eaxml2code
+[2023-05-09 20:21:13] INFO root fetch - main [MainThread]: End processing [segmentheepy-test]: success
+[2023-05-09 20:21:13] INFO root fetch - processPackages [eaxml2code]: New version: [0.9] Old Version: [0.8]
+[2023-05-09 20:21:13] INFO root fetch - processPackages [eaxml2code]: Downloading https://files.pythonhosted.org/packages/5e/41/758e9c9e237f5a9045a635ce79978289eb84fc89057ec1fe384421cc654b/eaxml2code-0.8.tar.gz
+[2023-05-09 20:21:13] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 20:21:13] INFO root fetch - main [MainThread]: End processing [bs-python-utils]: success
+[2023-05-09 20:21:14] INFO root fetch - main [MainThread]: End processing [polywrap-http-plugin]: success
+[2023-05-09 20:21:14] INFO root fetch - processPackages [eaxml2code]: Downloading https://files.pythonhosted.org/packages/4f/86/babce5f9e9707128bf0374e64bca900613c6038a2626e68497802a875e58/eaxml2code-0.9.tar.gz
+[2023-05-09 20:21:14] INFO root fetch - main [MainThread]: End processing [dreamai-pdf]: success
+[2023-05-09 20:21:14] INFO root fetch - processPackages [eaxml2code]: executing diffoscope
+[2023-05-09 20:21:14] INFO root fetch - processPackages [eaxml2code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eaxml2code-0.8.tar.gz tmp/eaxml2code-0.9.tar.gz --markdown 20230509/e/eaxml2code/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-09 20:21:14] INFO root fetch - main [MainThread]: End processing [html-msg]: success
+[2023-05-09 20:21:14] INFO root fetch - main [MainThread]: End processing [ia-sdk]: success
+[2023-05-09 20:21:15] INFO root fetch - main [MainThread]: End processing [eaxml2code]: success
+[2023-05-09 20:21:15] INFO root fetch - main [MainThread]: End processing [OctoBot-Tulipy]: success
+[2023-05-09 20:21:17] INFO root fetch - main [MainThread]: End processing [cdk-extensions]: success
+[2023-05-09 20:21:17] INFO root fetch - main [MainThread]: End processing [suzieq]: success
+[2023-05-09 20:21:17] INFO root fetch - main [MainThread]: Store serial: [18035971]
