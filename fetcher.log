@@ -10507,3 +10507,86 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 08:36:50] INFO root fetch - main [MainThread]: End processing [pulumi-postgresql]: success
 [2023-05-09 08:36:56] INFO root fetch - main [MainThread]: End processing [pulumi-openstack]: success
 [2023-05-09 08:36:56] INFO root fetch - main [MainThread]: Store serial: [18028371]
+[2023-05-09 08:42:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18028371]
+[2023-05-09 08:42:05] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-cloudflare
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-vpc-cli
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: redcat
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PolyRound
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: garaprod
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyjson5x
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: garaprod
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aws-bastion-cli
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pwl-chat-python
+[2023-05-09 08:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: betwatch
+[2023-05-09 08:42:05] INFO root fetch - processPackages [pwl-chat-python]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-09 08:42:05] INFO root fetch - processPackages [pulumi-cloudflare]: New version: [5.1.0a1683609631] Old Version: [5.1.0a1683350427]
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: New version: [0.1683614389.0] Old Version: [0.1683614249.0]
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-vpc-cli]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-09 08:42:05] INFO root fetch - processPackages [PolyRound]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-bastion-cli]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-09 08:42:05] WARNING root fetch - processPackages [redcat]: Skipping, unable to determine old version
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: New version: [0.1683614389.0] Old Version: [0.1683614249.0]
+[2023-05-09 08:42:05] INFO root fetch - processPackages [redcat]: Start processing: clevertable
+[2023-05-09 08:42:05] INFO root fetch - main [MainThread]: End processing [redcat] error
+[2023-05-09 08:42:05] INFO root fetch - processPackages [pwl-chat-python]: executing diffoscope
+[2023-05-09 08:42:05] INFO root fetch - processPackages [pwl-chat-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwl-chat-python-1.3.8.tar.gz tmp/pwl-chat-python-1.3.9.tar.gz --markdown 20230509/p/pwl-chat-python/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-09 08:42:05] INFO root fetch - processPackages [betwatch]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 08:42:05] WARNING root fetch - processPackages [pyjson5x]: Skipping, unable to determine old version
+[2023-05-09 08:42:05] INFO root fetch - processPackages [pyjson5x]: Start processing: photoprism-client
+[2023-05-09 08:42:05] INFO root fetch - main [MainThread]: End processing [pyjson5x] error
+[2023-05-09 08:42:05] INFO root fetch - processPackages [clevertable]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/e5/48/e4863544d789678031560f5789a6a0548064862fd18b9ffa2bee2a83359b/garaprod-0.1683614249.0.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/e5/48/e4863544d789678031560f5789a6a0548064862fd18b9ffa2bee2a83359b/garaprod-0.1683614249.0.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/bd/64/6fcdcd5125558867f47a5937eca46e1eb64526b2b47dd14d4f508ec1436a/pulumi_cloudflare-5.1.0a1683350427.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [photoprism-client]: New version: [0.2.1] Old Version: [0.1.3]
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-bastion-cli]: Downloading https://files.pythonhosted.org/packages/fe/ac/62de19acdae5e2272bbfd6e3a57e84e8ef498cff281b08aeacfe0244527f/aws-bastion-cli-0.2.2.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [PolyRound]: Downloading https://files.pythonhosted.org/packages/12/fa/021382efa71fb1efce3a1d2967584f0e052a3f44575f461ff1c978058174/PolyRound-0.2.8.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-vpc-cli]: Downloading https://files.pythonhosted.org/packages/61/5f/5915e13020d3910fc4509fba23ee84a7387275af6e606ca727afcb9fbcf0/aws-vpc-cli-0.5.4.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [betwatch]: Downloading https://files.pythonhosted.org/packages/9f/c0/e0343ac52214ca4478015fed4574d9ff1ff46bdfde414b32e6cd23ad73ef/betwatch-1.0.1.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/e7/b8/3d9ef293e689d767433bb5da6c7b3b4dd660e2f0c589561ae9b22e026502/garaprod-0.1683614389.0.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/e7/b8/3d9ef293e689d767433bb5da6c7b3b4dd660e2f0c589561ae9b22e026502/garaprod-0.1683614389.0.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683614249.0.tar.gz tmp/garaprod-0.1683614389.0.tar.gz --markdown 20230509/g/garaprod/0.1683614249.0-0.1683614389.0/diff.md --exclude *.pyd
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 08:42:05] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683614249.0.tar.gz tmp/garaprod-0.1683614389.0.tar.gz --markdown 20230509/g/garaprod/0.1683614249.0-0.1683614389.0/diff.md --exclude *.pyd
+[2023-05-09 08:42:05] INFO root fetch - processPackages [clevertable]: Downloading https://files.pythonhosted.org/packages/ae/4e/0fcaccc63de6f73ba55bc8e43aacc871f32f2474a26ac9946f14bc82499f/clevertable-2.0.0.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [betwatch]: Downloading https://files.pythonhosted.org/packages/b0/81/75ab9694a95f22413d38a06106f693700deccee4b2b8cb6e6024fa8484f1/betwatch-1.0.2.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [PolyRound]: Downloading https://files.pythonhosted.org/packages/06/55/45ee974757729599670fd09dda1bca1b4c2f99050afeec04282afe5db00c/PolyRound-0.2.9.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/d2/e5/7b930e66ac0302f844bc95f782dfc298858894eb284f894be353f36f39e6/pulumi_cloudflare-5.1.0a1683609631.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [PolyRound]: executing diffoscope
+[2023-05-09 08:42:05] INFO root fetch - processPackages [PolyRound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PolyRound-0.2.8.tar.gz tmp/PolyRound-0.2.9.tar.gz --markdown 20230509/P/PolyRound/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-vpc-cli]: Downloading https://files.pythonhosted.org/packages/bc/06/2251aef593e14192e7efa876f92d871579f2bb058af7969d472594f61673/aws-vpc-cli-0.5.5.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-bastion-cli]: Downloading https://files.pythonhosted.org/packages/42/51/9ac218c84158232ebb64db6615a796d2141a96bfdb4290a776501ed40160/aws-bastion-cli-0.2.3.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [photoprism-client]: Downloading https://files.pythonhosted.org/packages/8c/b4/cea253ebeaa3ba97ab4e9a6f227f1a817627a4371f0ca2969be8f354f294/photoprism_client-0.2.1.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-bastion-cli]: executing diffoscope
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-bastion-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-bastion-cli-0.2.2.tar.gz tmp/aws-bastion-cli-0.2.3.tar.gz --markdown 20230509/a/aws-bastion-cli/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-09 08:42:05] INFO root fetch - processPackages [clevertable]: Downloading https://files.pythonhosted.org/packages/fa/f2/c269bad8d58291f0d269cea1567d167d70ed3a190d9e454ced4ebaa9477a/clevertable-2.1.0.tar.gz
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-vpc-cli]: executing diffoscope
+[2023-05-09 08:42:05] INFO root fetch - processPackages [aws-vpc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-vpc-cli-0.5.4.tar.gz tmp/aws-vpc-cli-0.5.5.tar.gz --markdown 20230509/a/aws-vpc-cli/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-09 08:42:05] INFO root fetch - processPackages [betwatch]: executing diffoscope
+[2023-05-09 08:42:05] INFO root fetch - processPackages [betwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betwatch-1.0.1.tar.gz tmp/betwatch-1.0.2.tar.gz --markdown 20230509/b/betwatch/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 08:42:05] INFO root fetch - processPackages [pulumi-cloudflare]: executing diffoscope
+[2023-05-09 08:42:05] INFO root fetch - processPackages [pulumi-cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudflare-5.1.0a1683350427.tar.gz tmp/pulumi_cloudflare-5.1.0a1683609631.tar.gz --markdown 20230509/p/pulumi-cloudflare/5.1.0a1683350427-5.1.0a1683609631/diff.md --exclude *.pyd
+[2023-05-09 08:42:05] INFO root fetch - processPackages [photoprism-client]: executing diffoscope
+[2023-05-09 08:42:05] INFO root fetch - processPackages [photoprism-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/photoprism_client-0.1.3.tar.gz tmp/photoprism_client-0.2.1.tar.gz --markdown 20230509/p/photoprism-client/0.1.3-0.2.1/diff.md --exclude *.pyd
+[2023-05-09 08:42:06] INFO root fetch - processPackages [clevertable]: executing diffoscope
+[2023-05-09 08:42:06] INFO root fetch - processPackages [clevertable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clevertable-2.0.0.tar.gz tmp/clevertable-2.1.0.tar.gz --markdown 20230509/c/clevertable/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-05-09 08:42:07] INFO root fetch - processPackages [garaprod]: Start processing: grepexercises
+[2023-05-09 08:42:07] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 08:42:07] INFO root fetch - main [MainThread]: End processing [pwl-chat-python]: success
+[2023-05-09 08:42:07] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 08:42:07] INFO root fetch - processPackages [grepexercises]: New version: [1.0.0] Old Version: [0.9.1]
+[2023-05-09 08:42:07] INFO root fetch - main [MainThread]: End processing [PolyRound]: success
+[2023-05-09 08:42:07] INFO root fetch - main [MainThread]: End processing [aws-vpc-cli]: success
+[2023-05-09 08:42:07] INFO root fetch - processPackages [grepexercises]: Downloading https://files.pythonhosted.org/packages/24/ba/093246ea0f244b81bbcd7a9e3d16bf4ee09f870161dacd8e778ee1aea939/grepexercises-0.9.1.tar.gz
+[2023-05-09 08:42:07] INFO root fetch - main [MainThread]: End processing [aws-bastion-cli]: success
+[2023-05-09 08:42:07] INFO root fetch - main [MainThread]: End processing [photoprism-client]: success
+[2023-05-09 08:42:07] INFO root fetch - processPackages [grepexercises]: Downloading https://files.pythonhosted.org/packages/b9/29/81012428b29f27093611daa3875f11f984b18a09e4ac63050933f9ed1a27/grepexercises-1.0.0.tar.gz
+[2023-05-09 08:42:07] INFO root fetch - main [MainThread]: End processing [clevertable]: success
+[2023-05-09 08:42:07] INFO root fetch - processPackages [grepexercises]: executing diffoscope
+[2023-05-09 08:42:07] INFO root fetch - processPackages [grepexercises]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grepexercises-0.9.1.tar.gz tmp/grepexercises-1.0.0.tar.gz --markdown 20230509/g/grepexercises/0.9.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-09 08:42:08] INFO root fetch - main [MainThread]: End processing [betwatch]: success
+[2023-05-09 08:42:08] INFO root fetch - main [MainThread]: End processing [grepexercises]: success
+[2023-05-09 08:42:09] INFO root fetch - main [MainThread]: End processing [pulumi-cloudflare]: success
+[2023-05-09 08:42:09] INFO root fetch - main [MainThread]: Store serial: [18028461]
