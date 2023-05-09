@@ -8958,3 +8958,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 06:31:12] INFO root fetch - main [MainThread]: End processing [tooltime]: success
 [2023-05-09 06:31:14] INFO root fetch - main [MainThread]: End processing [pmdsky-debug-py]: success
 [2023-05-09 06:31:14] INFO root fetch - main [MainThread]: Store serial: [18027549]
+[2023-05-09 06:36:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027549]
+[2023-05-09 06:36:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-09 06:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmpool
+[2023-05-09 06:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezanchor
+[2023-05-09 06:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pads-gpt-assistant
+[2023-05-09 06:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyCapsid
+[2023-05-09 06:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rssbot
+[2023-05-09 06:36:22] WARNING root fetch - processPackages [ezanchor]: Skipping, unable to determine old version
+[2023-05-09 06:36:22] INFO root fetch - main [MainThread]: End processing [ezanchor] error
+[2023-05-09 06:36:22] INFO root fetch - processPackages [rssbot]: New version: [320] Old Version: [311]
+[2023-05-09 06:36:22] WARNING root fetch - processPackages [pads-gpt-assistant]: Skipping, unable to determine old version
+[2023-05-09 06:36:22] INFO root fetch - main [MainThread]: End processing [pads-gpt-assistant] error
+[2023-05-09 06:36:22] INFO root fetch - processPackages [llmpool]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 06:36:22] INFO root fetch - processPackages [pyCapsid]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-09 06:36:23] INFO root fetch - processPackages [rssbot]: Downloading https://files.pythonhosted.org/packages/34/25/5dacbeb3a5774eb6ae6a85f68f36b5f52f8fbbab95d7565150a3f2312d25/rssbot-311.tar.gz
+[2023-05-09 06:36:23] INFO root fetch - processPackages [pyCapsid]: Downloading https://files.pythonhosted.org/packages/83/33/2c119d17010d2cb241bed5d4ec5311c174b92a7dd1ac8c7da432c5462ae4/pyCapsid-0.1.9.tar.gz
+[2023-05-09 06:36:23] INFO root fetch - processPackages [llmpool]: Downloading https://files.pythonhosted.org/packages/98/0c/35bca0ef3cdee60620f6836b98fcb0445b654a7b0512e166558865047a55/llmpool-0.1.5-py3-none-any.whl
+[2023-05-09 06:36:23] INFO root fetch - processPackages [llmpool]: executing diffoscope
+[2023-05-09 06:36:23] INFO root fetch - processPackages [llmpool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmpool-0.1.4-py3-none-any.whl.zip tmp/llmpool-0.1.5-py3-none-any.whl.zip --markdown 20230509/l/llmpool/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 06:36:23] WARNING root fetch - processPackages [pyCapsid]: Skipping package: exceeds size limit 40974815>=10485760
+[2023-05-09 06:36:23] INFO root fetch - main [MainThread]: End processing [pyCapsid] error
+[2023-05-09 06:36:23] INFO root fetch - processPackages [rssbot]: Downloading https://files.pythonhosted.org/packages/b3/30/f86f082cfd0b918c0d3d99c6d78f6fdd6ea2ec7a6fe88d84fbd2adf012e1/rssbot-320.tar.gz
+[2023-05-09 06:36:23] INFO root fetch - processPackages [rssbot]: executing diffoscope
+[2023-05-09 06:36:23] INFO root fetch - processPackages [rssbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rssbot-311.tar.gz tmp/rssbot-320.tar.gz --markdown 20230509/r/rssbot/311-320/diff.md --exclude *.pyd
+[2023-05-09 06:36:24] INFO root fetch - main [MainThread]: End processing [llmpool]: success
+[2023-05-09 06:36:24] INFO root fetch - main [MainThread]: End processing [rssbot]: success
+[2023-05-09 06:36:24] INFO root fetch - main [MainThread]: Store serial: [18027567]
