@@ -14121,3 +14121,105 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 12:10:45] INFO root fetch - main [MainThread]: End processing [graphkit-learn]: success
 [2023-05-09 12:13:05] INFO root fetch - main [MainThread]: End processing [taipy-gui]: success
 [2023-05-09 12:13:05] INFO root fetch - main [MainThread]: Store serial: [18030554]
+[2023-05-09 12:18:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18030554]
+[2023-05-09 12:18:16] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amplitude-data-wrapper
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deeplake
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dm-reverb-nightly
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: actinia-core
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fractal-server
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: macrometa-target-mongo
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: macrometa-source-mongo
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bitsrun
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: webcam
+[2023-05-09 12:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: certora-cli-alpha-jaroslav-unsatCoreStats
+[2023-05-09 12:18:16] INFO root fetch - processPackages [amplitude-data-wrapper]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-09 12:18:16] INFO root fetch - processPackages [webcam]: New version: [1.0] Old Version: [0.9]
+[2023-05-09 12:18:16] INFO root fetch - processPackages [fractal-server]: New version: [1.2.5a1] Old Version: [1.2.5a0]
+[2023-05-09 12:18:16] INFO root fetch - processPackages [amplitude-data-wrapper]: executing diffoscope
+[2023-05-09 12:18:16] INFO root fetch - processPackages [amplitude-data-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amplitude-data-wrapper-0.3.8.tar.gz tmp/amplitude_data_wrapper-0.3.9.tar.gz --markdown 20230509/a/amplitude-data-wrapper/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-09 12:18:16] INFO root fetch - processPackages [actinia-core]: New version: [4.8.0] Old Version: [4.2.0]
+[2023-05-09 12:18:16] INFO root fetch - processPackages [macrometa-source-mongo]: New version: [0.0.35] Old Version: [0.0.34]
+[2023-05-09 12:18:16] INFO root fetch - processPackages [deeplake]: New version: [3.4.1] Old Version: [3.4.0]
+[2023-05-09 12:18:16] WARNING root fetch - processPackages [certora-cli-alpha-jaroslav-unsatCoreStats]: Skipping, unable to determine old version
+[2023-05-09 12:18:16] INFO root fetch - processPackages [bitsrun]: New version: [3.5.2] Old Version: [3.5.1]
+[2023-05-09 12:18:16] INFO root fetch - processPackages [certora-cli-alpha-jaroslav-unsatCoreStats]: Start processing: localstack-core
+[2023-05-09 12:18:16] INFO root fetch - processPackages [macrometa-target-mongo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 12:18:16] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jaroslav-unsatCoreStats] error
+[2023-05-09 12:18:16] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230509094015] Old Version: [2.0.3.dev20230509090139]
+[2023-05-09 12:18:16] INFO root fetch - processPackages [deeplake]: Downloading https://files.pythonhosted.org/packages/61/37/03cdbafdd6ccff34740e9b84121da6d5c1a46770686a55ea14eb909ad953/deeplake-3.4.0.tar.gz
+[2023-05-09 12:18:16] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-05-09 12:18:16] INFO root fetch - processPackages [webcam]: Downloading https://files.pythonhosted.org/packages/14/53/d04fc0c69c1aaedbc3e4a36974042aa65c8eaa1173e44c20a9cb0a522c66/webcam-1.0.tar.gz
+[2023-05-09 12:18:16] INFO root fetch - processPackages [macrometa-source-mongo]: Downloading https://files.pythonhosted.org/packages/55/1b/4eba08075f88a1d0c67adc2ea76630f54e578a74f08285f86280e1e4fa7d/macrometa-source-mongo-0.0.34.tar.gz
+[2023-05-09 12:18:16] INFO root fetch - processPackages [actinia-core]: Downloading https://files.pythonhosted.org/packages/4c/b5/13d4d20ee64538157ecc39c3882fe371da9fbf8ae0bf7867ade6d6f6d0a3/actinia_core-4.2.0-py3-none-any.whl
+[2023-05-09 12:18:16] INFO root fetch - processPackages [bitsrun]: Downloading https://files.pythonhosted.org/packages/5f/15/a948182b8b22d28fc7bc1f20e589d094dd4678cf23321a399f059f4f7cee/bitsrun-3.5.1.tar.gz
+[2023-05-09 12:18:16] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/72/59/f191db1c5e495903f665599b20fbfa3b26f92233d69b8d50ab061df534b4/localstack-core-2.0.3.dev20230509094015.tar.gz
+[2023-05-09 12:18:16] INFO root fetch - processPackages [webcam]: executing diffoscope
+[2023-05-09 12:18:16] INFO root fetch - processPackages [webcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webcam-0.9.tar.gz tmp/webcam-1.0.tar.gz --markdown 20230509/w/webcam/0.9-1.0/diff.md --exclude *.pyd
+[2023-05-09 12:18:16] INFO root fetch - processPackages [fractal-server]: Downloading https://files.pythonhosted.org/packages/16/b2/92d1082c6d18a99d08edba19b7ba9a4cd31a999825d63df2a5d26e9bec44/fractal_server-1.2.5a1.tar.gz
+[2023-05-09 12:18:16] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-09 12:18:16] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230509090139.tar.gz tmp/localstack-core-2.0.3.dev20230509094015.tar.gz --markdown 20230509/l/localstack-core/2.0.3.dev20230509090139-2.0.3.dev20230509094015/diff.md --exclude *.pyd
+[2023-05-09 12:18:16] INFO root fetch - processPackages [deeplake]: Downloading https://files.pythonhosted.org/packages/7b/1f/bffad2f617efa463ea1f345bb1ad4adb827eca69ea0a03fbbd6d4ec0ec54/deeplake-3.4.1.tar.gz
+[2023-05-09 12:18:16] INFO root fetch - processPackages [macrometa-target-mongo]: executing diffoscope
+[2023-05-09 12:18:16] INFO root fetch - processPackages [macrometa-target-mongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-mongo-0.0.8.tar.gz tmp/macrometa-target-mongo-0.0.9.tar.gz --markdown 20230509/m/macrometa-target-mongo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 12:18:16] INFO root fetch - processPackages [fractal-server]: executing diffoscope
+[2023-05-09 12:18:16] INFO root fetch - processPackages [fractal-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fractal_server-1.2.5a0.tar.gz tmp/fractal_server-1.2.5a1.tar.gz --markdown 20230509/f/fractal-server/1.2.5a0-1.2.5a1/diff.md --exclude *.pyd
+[2023-05-09 12:18:17] INFO root fetch - processPackages [bitsrun]: Downloading https://files.pythonhosted.org/packages/e3/c8/21c619526635ffdc168918e89b373ee7eb288448e63b0dae52e1de238ef1/bitsrun-3.5.2.tar.gz
+[2023-05-09 12:18:17] INFO root fetch - processPackages [actinia-core]: Downloading https://files.pythonhosted.org/packages/ea/9f/5806233dcd694ecd34a7c31d064b2b1dc59dd936cc9d679cf00574430f8a/actinia-core-4.8.0.tar.gz
+[2023-05-09 12:18:17] INFO root fetch - processPackages [macrometa-source-mongo]: Downloading https://files.pythonhosted.org/packages/4b/51/535af24c15f211a572a64472aaf974789d536a95b8d52f98534d4d4fa398/macrometa-source-mongo-0.0.35.tar.gz
+[2023-05-09 12:18:17] INFO root fetch - processPackages [deeplake]: executing diffoscope
+[2023-05-09 12:18:17] INFO root fetch - processPackages [deeplake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deeplake-3.4.0.tar.gz tmp/deeplake-3.4.1.tar.gz --markdown 20230509/d/deeplake/3.4.0-3.4.1/diff.md --exclude *.pyd
+[2023-05-09 12:18:17] INFO root fetch - processPackages [bitsrun]: executing diffoscope
+[2023-05-09 12:18:17] INFO root fetch - processPackages [bitsrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitsrun-3.5.1.tar.gz tmp/bitsrun-3.5.2.tar.gz --markdown 20230509/b/bitsrun/3.5.1-3.5.2/diff.md --exclude *.pyd
+[2023-05-09 12:18:17] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-05-09 12:18:17] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230509/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-05-09 12:18:17] INFO root fetch - processPackages [actinia-core]: executing diffoscope
+[2023-05-09 12:18:17] INFO root fetch - processPackages [actinia-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/actinia_core-4.2.0-py3-none-any.whl.zip tmp/actinia-core-4.8.0.tar.gz --markdown 20230509/a/actinia-core/4.2.0-4.8.0/diff.md --exclude *.pyd
+[2023-05-09 12:18:17] INFO root fetch - processPackages [macrometa-source-mongo]: executing diffoscope
+[2023-05-09 12:18:17] INFO root fetch - processPackages [macrometa-source-mongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-mongo-0.0.34.tar.gz tmp/macrometa-source-mongo-0.0.35.tar.gz --markdown 20230509/m/macrometa-source-mongo/0.0.34-0.0.35/diff.md --exclude *.pyd
+[2023-05-09 12:18:18] INFO root fetch - processPackages [amplitude-data-wrapper]: Start processing: pyasd
+[2023-05-09 12:18:18] INFO root fetch - main [MainThread]: End processing [amplitude-data-wrapper]: success
+[2023-05-09 12:18:18] INFO root fetch - processPackages [pyasd]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-09 12:18:18] INFO root fetch - processPackages [pyasd]: Downloading https://files.pythonhosted.org/packages/89/35/29cf13ec6a34305a92baa1aed057075ffd62b380f3f94aaa9606e35760aa/pyasd-0.0.6.tar.gz
+[2023-05-09 12:18:18] INFO root fetch - processPackages [webcam]: Start processing: dodo-is-api
+[2023-05-09 12:18:18] INFO root fetch - main [MainThread]: End processing [webcam]: success
+[2023-05-09 12:18:18] INFO root fetch - processPackages [pyasd]: executing diffoscope
+[2023-05-09 12:18:18] INFO root fetch - processPackages [pyasd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasd-0.0.5.tar.gz tmp/pyasd-0.0.6.tar.gz --markdown 20230509/p/pyasd/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 12:18:18] INFO root fetch - processPackages [macrometa-target-mongo]: Start processing: gcscore
+[2023-05-09 12:18:18] INFO root fetch - main [MainThread]: End processing [macrometa-target-mongo]: success
+[2023-05-09 12:18:18] INFO root fetch - processPackages [gcscore]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 12:18:18] INFO root fetch - processPackages [dodo-is-api]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-09 12:18:18] INFO root fetch - processPackages [gcscore]: executing diffoscope
+[2023-05-09 12:18:18] INFO root fetch - processPackages [gcscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcscore-0.0.8.tar.gz tmp/gcscore-0.0.9.tar.gz --markdown 20230509/g/gcscore/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 12:18:18] INFO root fetch - processPackages [bitsrun]: Start processing: pyncette
+[2023-05-09 12:18:18] INFO root fetch - main [MainThread]: End processing [bitsrun]: success
+[2023-05-09 12:18:18] INFO root fetch - processPackages [pyncette]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-09 12:18:18] INFO root fetch - processPackages [dodo-is-api]: Downloading https://files.pythonhosted.org/packages/b7/57/a62f0f34b0048a8f0ca81dbcdf7c94a69faedefba03e98004cd83647873c/dodo_is_api-0.4.0.tar.gz
+[2023-05-09 12:18:18] INFO root fetch - processPackages [pyncette]: executing diffoscope
+[2023-05-09 12:18:18] INFO root fetch - processPackages [pyncette]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyncette-0.8.1.tar.gz tmp/pyncette-0.9.0.tar.gz --markdown 20230509/p/pyncette/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 12:18:18] INFO root fetch - processPackages [dodo-is-api]: Downloading https://files.pythonhosted.org/packages/26/c2/dfee848c0172f3932d7e3133b2399a4b718481b35189eac8a04b1007ebee/dodo_is_api-0.5.0.tar.gz
+[2023-05-09 12:18:19] INFO root fetch - processPackages [dodo-is-api]: executing diffoscope
+[2023-05-09 12:18:19] INFO root fetch - processPackages [dodo-is-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dodo_is_api-0.4.0.tar.gz tmp/dodo_is_api-0.5.0.tar.gz --markdown 20230509/d/dodo-is-api/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 12:18:19] INFO root fetch - processPackages [actinia-core]: Start processing: gcsaws
+[2023-05-09 12:18:19] INFO root fetch - main [MainThread]: End processing [actinia-core]: success
+[2023-05-09 12:18:19] INFO root fetch - processPackages [macrometa-source-mongo]: Start processing: cycleops
+[2023-05-09 12:18:19] INFO root fetch - main [MainThread]: End processing [macrometa-source-mongo]: success
+[2023-05-09 12:18:19] INFO root fetch - processPackages [gcsaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 12:18:19] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-09 12:18:19] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.8.tar.gz tmp/gcsaws-0.0.9.tar.gz --markdown 20230509/g/gcsaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 12:18:19] INFO root fetch - processPackages [cycleops]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 12:18:19] INFO root fetch - processPackages [cycleops]: Downloading https://files.pythonhosted.org/packages/95/41/eee494db5a95a1b097d62eb4e76def9fe911d20fee7c31ff60608878f779/cycleops-0.1.0.tar.gz
+[2023-05-09 12:18:19] INFO root fetch - processPackages [cycleops]: Downloading https://files.pythonhosted.org/packages/87/b5/cedfe0a0819f58da66f3f6a93ada28425a63204ed2b08d6e4914a9bb49b7/cycleops-0.1.1.tar.gz
+[2023-05-09 12:18:19] INFO root fetch - processPackages [cycleops]: executing diffoscope
+[2023-05-09 12:18:19] INFO root fetch - processPackages [cycleops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycleops-0.1.0.tar.gz tmp/cycleops-0.1.1.tar.gz --markdown 20230509/c/cycleops/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 12:18:20] INFO root fetch - main [MainThread]: End processing [gcscore]: success
+[2023-05-09 12:18:20] INFO root fetch - main [MainThread]: End processing [dodo-is-api]: success
+[2023-05-09 12:18:20] INFO root fetch - main [MainThread]: End processing [pyasd]: success
+[2023-05-09 12:18:20] INFO root fetch - main [MainThread]: End processing [fractal-server]: success
+[2023-05-09 12:18:20] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-09 12:18:21] INFO root fetch - main [MainThread]: End processing [cycleops]: success
+[2023-05-09 12:18:21] INFO root fetch - main [MainThread]: End processing [pyncette]: success
+[2023-05-09 12:18:22] INFO root fetch - main [MainThread]: End processing [deeplake]: success
+[2023-05-09 12:18:26] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-09 12:19:17] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-05-09 12:19:17] INFO root fetch - main [MainThread]: Store serial: [18030611]
