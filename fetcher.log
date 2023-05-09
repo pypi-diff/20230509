@@ -22807,3 +22807,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 20:31:47] INFO root fetch - main [MainThread]: End processing [gpt-review]: success
 [2023-05-09 20:31:47] INFO root fetch - main [MainThread]: End processing [shexer]: success
 [2023-05-09 20:31:47] INFO root fetch - main [MainThread]: Store serial: [18036012]
+[2023-05-09 20:36:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18036012]
+[2023-05-09 20:36:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-09 20:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-alex-cvl-range-meta-fix
+[2023-05-09 20:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yo
+[2023-05-09 20:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: args-python
+[2023-05-09 20:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: phc-ingestion
+[2023-05-09 20:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-mail-tracking
+[2023-05-09 20:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nats-nsc
+[2023-05-09 20:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stdl
+[2023-05-09 20:36:57] WARNING root fetch - processPackages [certora-cli-alpha-alex-cvl-range-meta-fix]: Skipping, unable to determine old version
+[2023-05-09 20:36:57] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-alex-cvl-range-meta-fix] error
+[2023-05-09 20:36:57] INFO root fetch - processPackages [yo]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 20:36:57] INFO root fetch - processPackages [nats-nsc]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-05-09 20:36:57] INFO root fetch - processPackages [odoo-addon-mail-tracking]: New version: [15.0.2.0.4] Old Version: [15.0.2.0.3]
+[2023-05-09 20:36:57] WARNING root fetch - processPackages [args-python]: Skipping, unable to determine old version
+[2023-05-09 20:36:57] INFO root fetch - main [MainThread]: End processing [args-python] error
+[2023-05-09 20:36:57] INFO root fetch - processPackages [phc-ingestion]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-09 20:36:57] INFO root fetch - processPackages [stdl]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-09 20:36:57] INFO root fetch - processPackages [yo]: Downloading https://files.pythonhosted.org/packages/69/c5/d392916b4064321fc22caff08cf0e22e42646e767669c323b32c1002aaef/yo-1.0.0.tar.gz
+[2023-05-09 20:36:57] INFO root fetch - processPackages [odoo-addon-mail-tracking]: Downloading https://files.pythonhosted.org/packages/6a/b5/702304061a56ad6793d3a847c668a9027c7cd4278090fd3fd04790ab6942/odoo_addon_mail_tracking-15.0.2.0.3-py3-none-any.whl
+[2023-05-09 20:36:57] INFO root fetch - processPackages [phc-ingestion]: Downloading https://files.pythonhosted.org/packages/7c/50/dddee5ed9f37b0a223816dbcded72773737dfa9dda1c606fdb575b27a1f8/phc-ingestion-0.3.8.tar.gz
+[2023-05-09 20:36:57] WARNING root fetch - processPackages [phc-ingestion]: Skipping package: exceeds size limit 55817200>=10485760
+[2023-05-09 20:36:57] INFO root fetch - main [MainThread]: End processing [phc-ingestion] error
+[2023-05-09 20:36:57] INFO root fetch - processPackages [stdl]: Downloading https://files.pythonhosted.org/packages/3c/98/8d691d9e3863dde000f28a828f39dbd637330acbf6123c2875b0f028ab1e/stdl-0.4.2.tar.gz
+[2023-05-09 20:36:57] INFO root fetch - processPackages [nats-nsc]: Downloading https://files.pythonhosted.org/packages/9a/59/053fd10f6ebb4841598e408a2c4065bb4d5f07dcabe79de36620916089b4/nats_nsc-0.3.0.tar.gz
+[2023-05-09 20:36:58] INFO root fetch - processPackages [nats-nsc]: executing diffoscope
+[2023-05-09 20:36:58] INFO root fetch - processPackages [nats-nsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nats_nsc-0.2.3.tar.gz tmp/nats_nsc-0.3.0.tar.gz --markdown 20230509/n/nats-nsc/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 20:36:58] INFO root fetch - processPackages [yo]: Downloading https://files.pythonhosted.org/packages/f5/9d/1af4afadda8ca55feba381ee72c9726f3285dce37bd9d705483cedebf16a/yo-1.0.1.tar.gz
+[2023-05-09 20:36:58] INFO root fetch - processPackages [stdl]: Downloading https://files.pythonhosted.org/packages/35/5b/0526112b7493e966a711d6ebc636b889842e9484b07cca96142eb718884d/stdl-0.4.3.tar.gz
+[2023-05-09 20:36:58] INFO root fetch - processPackages [odoo-addon-mail-tracking]: Downloading https://files.pythonhosted.org/packages/40/50/967240bbdf001a21e562621b3f595f118075be010338b47109c0230444cf/odoo_addon_mail_tracking-15.0.2.0.4-py3-none-any.whl
+[2023-05-09 20:36:58] INFO root fetch - processPackages [yo]: executing diffoscope
+[2023-05-09 20:36:58] INFO root fetch - processPackages [yo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yo-1.0.0.tar.gz tmp/yo-1.0.1.tar.gz --markdown 20230509/y/yo/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 20:36:58] INFO root fetch - processPackages [odoo-addon-mail-tracking]: executing diffoscope
+[2023-05-09 20:36:58] INFO root fetch - processPackages [odoo-addon-mail-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mail_tracking-15.0.2.0.3-py3-none-any.whl.zip tmp/odoo_addon_mail_tracking-15.0.2.0.4-py3-none-any.whl.zip --markdown 20230509/o/odoo-addon-mail-tracking/15.0.2.0.3-15.0.2.0.4/diff.md --exclude *.pyd
+[2023-05-09 20:36:58] INFO root fetch - processPackages [stdl]: executing diffoscope
+[2023-05-09 20:36:58] INFO root fetch - processPackages [stdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stdl-0.4.2.tar.gz tmp/stdl-0.4.3.tar.gz --markdown 20230509/s/stdl/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-09 20:36:59] INFO root fetch - main [MainThread]: End processing [nats-nsc]: success
+[2023-05-09 20:36:59] INFO root fetch - main [MainThread]: End processing [stdl]: success
+[2023-05-09 20:36:59] INFO root fetch - main [MainThread]: End processing [yo]: success
+[2023-05-09 20:37:00] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-tracking]: success
+[2023-05-09 20:37:00] INFO root fetch - main [MainThread]: Store serial: [18036035]
