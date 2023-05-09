@@ -12739,3 +12739,83 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 10:58:18] INFO root fetch - main [MainThread]: End processing [NewsSentiment]: success
 [2023-05-09 10:58:18] INFO root fetch - main [MainThread]: End processing [deepke]: success
 [2023-05-09 10:58:18] INFO root fetch - main [MainThread]: Store serial: [18029740]
+[2023-05-09 11:03:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029740]
+[2023-05-09 11:03:27] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toolforge-weld
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stigg-api-client
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: masonite-servicing
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inspire-schemas
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: osc-lib
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mercury-robust
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spotON_sdk
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: localstack-core
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: neuralpit
+[2023-05-09 11:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bluetooth-adapters
+[2023-05-09 11:03:27] INFO root fetch - processPackages [stigg-api-client]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-09 11:03:27] INFO root fetch - processPackages [osc-lib]: New version: [2.7.0] Old Version: [2.6.2]
+[2023-05-09 11:03:27] INFO root fetch - processPackages [neuralpit]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 11:03:27] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230509083833] Old Version: [2.0.3.dev20230509073900]
+[2023-05-09 11:03:27] INFO root fetch - processPackages [toolforge-weld]: New version: [0.1.0.1] Old Version: [0.1]
+[2023-05-09 11:03:27] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2023-05-09 11:03:27] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-0.4.0.tar.gz tmp/stigg_api_client-0.5.0.tar.gz --markdown 20230509/s/stigg-api-client/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 11:03:27] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.2.7] Old Version: [0.0.2.6]
+[2023-05-09 11:03:27] INFO root fetch - processPackages [bluetooth-adapters]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 11:03:27] INFO root fetch - processPackages [mercury-robust]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 11:03:27] WARNING root fetch - processPackages [masonite-servicing]: Skipping, unable to determine old version
+[2023-05-09 11:03:27] INFO root fetch - processPackages [masonite-servicing]: Start processing: palmers-agents-general
+[2023-05-09 11:03:27] INFO root fetch - main [MainThread]: End processing [masonite-servicing] error
+[2023-05-09 11:03:27] INFO root fetch - processPackages [inspire-schemas]: New version: [9.0.0] Old Version: [8.0.0]
+[2023-05-09 11:03:27] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-09 11:03:27] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230509073900.tar.gz tmp/localstack-core-2.0.3.dev20230509083833.tar.gz --markdown 20230509/l/localstack-core/2.0.3.dev20230509073900-2.0.3.dev20230509083833/diff.md --exclude *.pyd
+[2023-05-09 11:03:27] INFO root fetch - processPackages [osc-lib]: Downloading https://files.pythonhosted.org/packages/87/ea/06418a0b00ffc10577ba8c840c6ab05ca542ee2d5bb1078789c68d12c918/osc-lib-2.6.2.tar.gz
+[2023-05-09 11:03:27] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-09 11:03:27] INFO root fetch - processPackages [toolforge-weld]: Downloading https://files.pythonhosted.org/packages/62/88/d89993133aea01bbed16cc5783d930bd9b6a5adc0b44878cd017c87fba4c/toolforge-weld-0.1.tar.gz
+[2023-05-09 11:03:27] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/f4/81/628db4e67ea204783adf5e6604ea13ce813ca5fd12d59081ef583d297929/spotON_sdk-0.0.2.6.tar.gz
+[2023-05-09 11:03:27] INFO root fetch - processPackages [bluetooth-adapters]: Downloading https://files.pythonhosted.org/packages/97/e6/295a3e28b4b43961f0e2b2937f0ce6b20b10263624ba11027112071f5bec/bluetooth_adapters-0.8.0.tar.gz
+[2023-05-09 11:03:27] INFO root fetch - processPackages [mercury-robust]: Downloading https://files.pythonhosted.org/packages/2f/d8/73d010b0db06a2e12825846fe67ed76d920288017741378451ee0492bc28/mercury-robust-0.0.1.tar.gz
+[2023-05-09 11:03:27] INFO root fetch - processPackages [inspire-schemas]: Downloading https://files.pythonhosted.org/packages/8b/d2/aad5d3d0cb1ebdf711e48df8c4478f7a2b1fdd77d08ea21ae30e0f345b01/inspire-schemas-8.0.0.tar.gz
+[2023-05-09 11:03:27] INFO root fetch - processPackages [neuralpit]: executing diffoscope
+[2023-05-09 11:03:27] INFO root fetch - processPackages [neuralpit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralpit-1.0.1.tar.gz tmp/neuralpit-1.0.2.tar.gz --markdown 20230509/n/neuralpit/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 11:03:27] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/2f/fe/c667568c2dc0435b1877b340f401a5a35eb21e7b12f39e7a43c953d72ceb/spotON_sdk-0.0.2.7.tar.gz
+[2023-05-09 11:03:27] INFO root fetch - processPackages [toolforge-weld]: Downloading https://files.pythonhosted.org/packages/62/96/2bc79dcb8170bcce85206297cf3c2b68676ed63affc4fb8430555bed5eb0/toolforge-weld-0.1.0.1.tar.gz
+[2023-05-09 11:03:27] INFO root fetch - processPackages [osc-lib]: Downloading https://files.pythonhosted.org/packages/c9/1a/29836591c14ac7e41bc83996e58b4bc3f9d20d9b14f342775f6e8d819347/osc-lib-2.7.0.tar.gz
+[2023-05-09 11:03:27] INFO root fetch - processPackages [palmers-agents-general]: Downloading https://files.pythonhosted.org/packages/ff/e8/b0601a9a18dc894ef50ce6f2a89a9003a65411d88e9368d9e3b360cdf791/palmers_agents_general-0.0.7.tar.gz
+[2023-05-09 11:03:28] INFO root fetch - processPackages [mercury-robust]: Downloading https://files.pythonhosted.org/packages/4d/bf/53861f44580051ccb3223b07e2d271e350990285d5488452f18e6d2e5a81/mercury-robust-0.0.2.tar.gz
+[2023-05-09 11:03:28] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-09 11:03:28] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.2.6.tar.gz tmp/spotON_sdk-0.0.2.7.tar.gz --markdown 20230509/s/spotON_sdk/0.0.2.6-0.0.2.7/diff.md --exclude *.pyd
+[2023-05-09 11:03:28] INFO root fetch - processPackages [bluetooth-adapters]: Downloading https://files.pythonhosted.org/packages/cb/29/45f86e0db2abae311227eac6d39f676f6e68930f05cd1210a8b69dca580e/bluetooth_adapters-0.9.0.tar.gz
+[2023-05-09 11:03:28] INFO root fetch - processPackages [inspire-schemas]: Downloading https://files.pythonhosted.org/packages/c4/81/b75803a91c2dacb0b3ec7566e003880b974b51b1b31f6e1b60c99e3d1572/inspire-schemas-9.0.0.tar.gz
+[2023-05-09 11:03:28] INFO root fetch - processPackages [toolforge-weld]: executing diffoscope
+[2023-05-09 11:03:28] INFO root fetch - processPackages [toolforge-weld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolforge-weld-0.1.tar.gz tmp/toolforge-weld-0.1.0.1.tar.gz --markdown 20230509/t/toolforge-weld/0.1-0.1.0.1/diff.md --exclude *.pyd
+[2023-05-09 11:03:28] INFO root fetch - processPackages [osc-lib]: executing diffoscope
+[2023-05-09 11:03:28] INFO root fetch - processPackages [osc-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osc-lib-2.6.2.tar.gz tmp/osc-lib-2.7.0.tar.gz --markdown 20230509/o/osc-lib/2.6.2-2.7.0/diff.md --exclude *.pyd
+[2023-05-09 11:03:28] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-09 11:03:28] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.6.tar.gz tmp/palmers_agents_general-0.0.7.tar.gz --markdown 20230509/p/palmers-agents-general/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-09 11:03:28] INFO root fetch - processPackages [mercury-robust]: executing diffoscope
+[2023-05-09 11:03:28] INFO root fetch - processPackages [mercury-robust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mercury-robust-0.0.1.tar.gz tmp/mercury-robust-0.0.2.tar.gz --markdown 20230509/m/mercury-robust/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 11:03:28] INFO root fetch - processPackages [inspire-schemas]: executing diffoscope
+[2023-05-09 11:03:28] INFO root fetch - processPackages [inspire-schemas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspire-schemas-8.0.0.tar.gz tmp/inspire-schemas-9.0.0.tar.gz --markdown 20230509/i/inspire-schemas/8.0.0-9.0.0/diff.md --exclude *.pyd
+[2023-05-09 11:03:28] INFO root fetch - processPackages [bluetooth-adapters]: executing diffoscope
+[2023-05-09 11:03:28] INFO root fetch - processPackages [bluetooth-adapters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluetooth_adapters-0.8.0.tar.gz tmp/bluetooth_adapters-0.9.0.tar.gz --markdown 20230509/b/bluetooth-adapters/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 11:03:28] INFO root fetch - processPackages [stigg-api-client]: Start processing: django-fragments
+[2023-05-09 11:03:28] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2023-05-09 11:03:28] INFO root fetch - processPackages [django-fragments]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 11:03:29] INFO root fetch - processPackages [django-fragments]: executing diffoscope
+[2023-05-09 11:03:29] INFO root fetch - processPackages [django-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_fragments-0.0.2.tar.gz tmp/django_fragments-0.0.3.tar.gz --markdown 20230509/d/django-fragments/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 11:03:29] INFO root fetch - processPackages [neuralpit]: Start processing: opendal
+[2023-05-09 11:03:29] INFO root fetch - main [MainThread]: End processing [neuralpit]: success
+[2023-05-09 11:03:29] INFO root fetch - processPackages [opendal]: New version: [0.34.0] Old Version: [0.33.3]
+[2023-05-09 11:03:29] INFO root fetch - processPackages [opendal]: Downloading https://files.pythonhosted.org/packages/a3/da/83d1d2434258a5e62d4cf959571dd8751f278126cb672d38797d1d2a86d6/opendal-0.34.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-09 11:03:29] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-09 11:03:29] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-09 11:03:29] INFO root fetch - main [MainThread]: End processing [toolforge-weld]: success
+[2023-05-09 11:03:30] INFO root fetch - main [MainThread]: End processing [bluetooth-adapters]: success
+[2023-05-09 11:03:30] INFO root fetch - main [MainThread]: End processing [mercury-robust]: success
+[2023-05-09 11:03:30] INFO root fetch - main [MainThread]: End processing [inspire-schemas]: success
+[2023-05-09 11:03:30] INFO root fetch - main [MainThread]: End processing [osc-lib]: success
+[2023-05-09 11:03:30] INFO root fetch - main [MainThread]: End processing [django-fragments]: success
+[2023-05-09 11:03:31] INFO root fetch - processPackages [opendal]: executing diffoscope
+[2023-05-09 11:03:31] INFO root fetch - processPackages [opendal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opendal-0.33.3.tar.gz tmp/opendal-0.34.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230509/o/opendal/0.33.3-0.34.0/diff.md --exclude *.pyd
+[2023-05-09 11:03:32] INFO root fetch - main [MainThread]: End processing [opendal]: success
+[2023-05-09 11:03:34] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-09 11:03:34] INFO root fetch - main [MainThread]: Store serial: [18029789]
