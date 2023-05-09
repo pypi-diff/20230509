@@ -14872,3 +14872,127 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 13:08:33] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
 [2023-05-09 13:08:47] INFO root fetch - main [MainThread]: End processing [ert]: success
 [2023-05-09 13:08:47] INFO root fetch - main [MainThread]: Store serial: [18031040]
+[2023-05-09 13:13:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031040]
+[2023-05-09 13:13:58] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dxsp
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-useful
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: junifer
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepperize.cdk-private-bucket
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pepperize.projen-awscdk-app-ts
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: metaapi-cloud-sdk
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alphaz
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lnschema_bionty
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: scisoftpy
+[2023-05-09 13:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: infodeslib
+[2023-05-09 13:13:59] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [junifer]: New version: [0.0.3.dev53] Old Version: [0.0.3.dev48]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: executing diffoscope
+[2023-05-09 13:13:59] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.projen-awscdk-app-ts-0.0.98.tar.gz tmp/pepperize.projen-awscdk-app-ts-0.0.99.tar.gz --markdown 20230509/p/pepperize.projen-awscdk-app-ts/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 13:13:59] INFO root fetch - processPackages [dxsp]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [junifer]: executing diffoscope
+[2023-05-09 13:13:59] INFO root fetch - processPackages [junifer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/junifer-0.0.3.dev48.tar.gz tmp/junifer-0.0.3.dev53.tar.gz --markdown 20230509/j/junifer/0.0.3.dev48-0.0.3.dev53/diff.md --exclude *.pyd
+[2023-05-09 13:13:59] WARNING root fetch - processPackages [infodeslib]: Skipping, unable to determine old version
+[2023-05-09 13:13:59] INFO root fetch - processPackages [flask-useful]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [infodeslib]: Start processing: ops-scenario
+[2023-05-09 13:13:59] INFO root fetch - main [MainThread]: End processing [infodeslib] error
+[2023-05-09 13:13:59] INFO root fetch - processPackages [metaapi-cloud-sdk]: New version: [9.1.0] Old Version: [9.0.0]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [scisoftpy]: New version: [2.29.1] Old Version: [2.29.0]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [alphaz]: New version: [0.7.7.9] Old Version: [0.7.7.8]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [lnschema_bionty]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [ops-scenario]: New version: [3.0a1] Old Version: [2.2]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [flask-useful]: Downloading https://files.pythonhosted.org/packages/46/8b/28e126d442f1c044a9c719126717e6177c14bd7b0c23c5d4647573cc4574/flask-useful-0.2.0.tar.gz
+[2023-05-09 13:13:59] INFO root fetch - processPackages [alphaz]: Downloading https://files.pythonhosted.org/packages/5b/a3/6cfa2b64f818469c22fd51f822bed7803719e10fc0d2a096cdcce74d1861/alphaz-0.7.7.8.tar.gz
+[2023-05-09 13:13:59] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 13:13:59] INFO root fetch - processPackages [lnschema_bionty]: Downloading https://files.pythonhosted.org/packages/12/bb/32a1cbaa73ee4f038a3540bbbf0b3d7e27f22edcdbd7d7c80667fef68afd/lnschema_bionty-0.8.1.tar.gz
+[2023-05-09 13:13:59] INFO root fetch - processPackages [scisoftpy]: Downloading https://files.pythonhosted.org/packages/43/5a/98d644ff4b3b9608e226e5ebfbe5bbedea9ef8866d619c90c9fa1aa4fbf7/scisoftpy-2.29.0.tar.gz
+[2023-05-09 13:13:59] INFO root fetch - processPackages [metaapi-cloud-sdk]: Downloading https://files.pythonhosted.org/packages/33/8c/7322724753bc179c29f91be8b4964d5f039c5ca35562b2a8df3301f9a5b0/metaapi_cloud_sdk-9.0.0.tar.gz
+[2023-05-09 13:13:59] INFO root fetch - processPackages [ops-scenario]: Downloading https://files.pythonhosted.org/packages/14/38/5cb64db32b087965adeca69988e835f4e6fceb1301a60cf5ba01895cd3c1/ops-scenario-2.2.tar.gz
+[2023-05-09 13:13:59] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-09 13:13:59] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.0.8.tar.gz tmp/dxsp-2.0.9.tar.gz --markdown 20230509/d/dxsp/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-09 13:13:59] INFO root fetch - processPackages [flask-useful]: Downloading https://files.pythonhosted.org/packages/59/a3/319896ffe6a93b29e3a44bbb0ef6235a9bcca5a0fd12dc597315c1553d87/flask-useful-0.2.1.tar.gz
+[2023-05-09 13:13:59] INFO root fetch - processPackages [scisoftpy]: Downloading https://files.pythonhosted.org/packages/b0/6b/bfc3a5e36ec307edb86e0c644fba4f7369bbd512d7347b46e861e4743ddc/scisoftpy-2.29.1.tar.gz
+[2023-05-09 13:13:59] INFO root fetch - processPackages [flask-useful]: executing diffoscope
+[2023-05-09 13:13:59] INFO root fetch - processPackages [flask-useful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-useful-0.2.0.tar.gz tmp/flask-useful-0.2.1.tar.gz --markdown 20230509/f/flask-useful/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-09 13:13:59] INFO root fetch - processPackages [ops-scenario]: Downloading https://files.pythonhosted.org/packages/79/57/9f813875464e689af8c53e9176379870aa1868a2853dfa4fabb04e5c66de/ops-scenario-3.0a1.tar.gz
+[2023-05-09 13:13:59] INFO root fetch - processPackages [scisoftpy]: executing diffoscope
+[2023-05-09 13:13:59] INFO root fetch - processPackages [scisoftpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scisoftpy-2.29.0.tar.gz tmp/scisoftpy-2.29.1.tar.gz --markdown 20230509/s/scisoftpy/2.29.0-2.29.1/diff.md --exclude *.pyd
+[2023-05-09 13:13:59] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: executing diffoscope
+[2023-05-09 13:13:59] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-private-bucket-0.0.98.tar.gz tmp/pepperize.cdk-private-bucket-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-private-bucket/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 13:13:59] INFO root fetch - processPackages [ops-scenario]: executing diffoscope
+[2023-05-09 13:13:59] INFO root fetch - processPackages [ops-scenario]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ops-scenario-2.2.tar.gz tmp/ops-scenario-3.0a1.tar.gz --markdown 20230509/o/ops-scenario/2.2-3.0a1/diff.md --exclude *.pyd
+[2023-05-09 13:13:59] INFO root fetch - processPackages [lnschema_bionty]: Downloading https://files.pythonhosted.org/packages/ed/64/d2babdba858b56f5825e7ac3e2d375cf42dcf278f3c6ad9daf179e40b556/lnschema_bionty-0.9.0.tar.gz
+[2023-05-09 13:14:00] INFO root fetch - processPackages [metaapi-cloud-sdk]: Downloading https://files.pythonhosted.org/packages/fd/e4/b2cb22b3a9fdf7221355894a097d71589eb7a4278d087eb9c6cf2102160a/metaapi_cloud_sdk-9.1.0.tar.gz
+[2023-05-09 13:14:00] INFO root fetch - processPackages [lnschema_bionty]: executing diffoscope
+[2023-05-09 13:14:00] INFO root fetch - processPackages [lnschema_bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_bionty-0.8.1.tar.gz tmp/lnschema_bionty-0.9.0.tar.gz --markdown 20230509/l/lnschema_bionty/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 13:14:00] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: Start processing: aspose-ocr-python-net
+[2023-05-09 13:14:00] INFO root fetch - main [MainThread]: End processing [pepperize.projen-awscdk-app-ts]: success
+[2023-05-09 13:14:00] WARNING root fetch - processPackages [aspose-ocr-python-net]: Skipping, unable to determine old version
+[2023-05-09 13:14:00] INFO root fetch - processPackages [aspose-ocr-python-net]: Start processing: fractal-server
+[2023-05-09 13:14:00] INFO root fetch - main [MainThread]: End processing [aspose-ocr-python-net] error
+[2023-05-09 13:14:00] INFO root fetch - processPackages [fractal-server]: New version: [1.2.5a2] Old Version: [1.2.5a1]
+[2023-05-09 13:14:00] INFO root fetch - processPackages [dxsp]: Start processing: windmill-api
+[2023-05-09 13:14:00] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-09 13:14:00] INFO root fetch - processPackages [fractal-server]: Downloading https://files.pythonhosted.org/packages/4f/e9/fbf77847f04e508a355be8c7b037c2757e915bd92fb6fa371ca47d81ae97/fractal_server-1.2.5a2.tar.gz
+[2023-05-09 13:14:00] INFO root fetch - processPackages [windmill-api]: New version: [1.96.3] Old Version: [1.96.2]
+[2023-05-09 13:14:00] INFO root fetch - processPackages [metaapi-cloud-sdk]: executing diffoscope
+[2023-05-09 13:14:00] INFO root fetch - processPackages [metaapi-cloud-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaapi_cloud_sdk-9.0.0.tar.gz tmp/metaapi_cloud_sdk-9.1.0.tar.gz --markdown 20230509/m/metaapi-cloud-sdk/9.0.0-9.1.0/diff.md --exclude *.pyd
+[2023-05-09 13:14:00] INFO root fetch - processPackages [fractal-server]: executing diffoscope
+[2023-05-09 13:14:00] INFO root fetch - processPackages [fractal-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fractal_server-1.2.5a1.tar.gz tmp/fractal_server-1.2.5a2.tar.gz --markdown 20230509/f/fractal-server/1.2.5a1-1.2.5a2/diff.md --exclude *.pyd
+[2023-05-09 13:14:01] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/fc/bb/e15c115e7d23212d09cab15e34a745ec4980820c6507a6e088e4c595ae66/windmill_api-1.96.3.tar.gz
+[2023-05-09 13:14:01] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: Start processing: wmill
+[2023-05-09 13:14:01] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-private-bucket]: success
+[2023-05-09 13:14:01] INFO root fetch - processPackages [wmill]: New version: [1.96.3] Old Version: [1.96.2]
+[2023-05-09 13:14:01] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-09 13:14:01] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.96.2.tar.gz tmp/windmill_api-1.96.3.tar.gz --markdown 20230509/w/windmill-api/1.96.2-1.96.3/diff.md --exclude *.pyd
+[2023-05-09 13:14:01] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-09 13:14:01] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.96.2.tar.gz tmp/wmill-1.96.3.tar.gz --markdown 20230509/w/wmill/1.96.2-1.96.3/diff.md --exclude *.pyd
+[2023-05-09 13:14:01] INFO root fetch - processPackages [alphaz]: Downloading https://files.pythonhosted.org/packages/4e/24/03767be3af24610488a2097b4454b6f91689c54df656a8fc7d8a3ec533b5/alphaz-0.7.7.9.tar.gz
+[2023-05-09 13:14:01] INFO root fetch - processPackages [flask-useful]: Start processing: rape-identification
+[2023-05-09 13:14:01] INFO root fetch - main [MainThread]: End processing [flask-useful]: success
+[2023-05-09 13:14:01] INFO root fetch - processPackages [rape-identification]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 13:14:01] INFO root fetch - processPackages [ops-scenario]: Start processing: wmill-pg
+[2023-05-09 13:14:01] INFO root fetch - main [MainThread]: End processing [ops-scenario]: success
+[2023-05-09 13:14:01] INFO root fetch - processPackages [rape-identification]: Downloading https://files.pythonhosted.org/packages/52/58/95a1de25dc5ff5fa8d8c67587ebe55b07b1bce78af6e255cb2ed9ffa3474/rape_identification-0.1.3.tar.gz
+[2023-05-09 13:14:01] INFO root fetch - processPackages [rape-identification]: executing diffoscope
+[2023-05-09 13:14:01] INFO root fetch - processPackages [rape-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rape_identification-0.1.2.tar.gz tmp/rape_identification-0.1.3.tar.gz --markdown 20230509/r/rape-identification/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 13:14:01] INFO root fetch - processPackages [wmill-pg]: New version: [1.97.0] Old Version: [1.96.3]
+[2023-05-09 13:14:02] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/85/62/979383e3f28d733810cc403a6545c094a69d619eb8619f324c1ac36bbb67/wmill_pg-1.97.0.tar.gz
+[2023-05-09 13:14:02] INFO root fetch - processPackages [lnschema_bionty]: Start processing: alphaz
+[2023-05-09 13:14:02] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
+[2023-05-09 13:14:02] INFO root fetch - processPackages [alphaz]: New version: [0.7.7.9] Old Version: [0.7.7.8]
+[2023-05-09 13:14:02] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-05-09 13:14:02] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.96.3.tar.gz tmp/wmill_pg-1.97.0.tar.gz --markdown 20230509/w/wmill-pg/1.96.3-1.97.0/diff.md --exclude *.pyd
+[2023-05-09 13:14:02] INFO root fetch - processPackages [alphaz]: Downloading https://files.pythonhosted.org/packages/4e/24/03767be3af24610488a2097b4454b6f91689c54df656a8fc7d8a3ec533b5/alphaz-0.7.7.9.tar.gz
+[2023-05-09 13:14:02] INFO root fetch - processPackages [wmill]: Start processing: pepperize.projen-awscdk-app-ts
+[2023-05-09 13:14:02] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-09 13:14:02] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 13:14:02] INFO root fetch - processPackages [scisoftpy]: Start processing: express-voc
+[2023-05-09 13:14:02] INFO root fetch - main [MainThread]: End processing [scisoftpy]: success
+[2023-05-09 13:14:02] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: executing diffoscope
+[2023-05-09 13:14:02] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.projen-awscdk-app-ts-0.0.98.tar.gz tmp/pepperize.projen-awscdk-app-ts-0.0.99.tar.gz --markdown 20230509/p/pepperize.projen-awscdk-app-ts/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 13:14:02] WARNING root fetch - processPackages [express-voc]: Skipping, unable to determine old version
+[2023-05-09 13:14:02] INFO root fetch - processPackages [express-voc]: Start processing: raga-cli
+[2023-05-09 13:14:02] INFO root fetch - main [MainThread]: End processing [express-voc] error
+[2023-05-09 13:14:02] INFO root fetch - processPackages [raga-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 13:14:02] INFO root fetch - processPackages [alphaz]: executing diffoscope
+[2023-05-09 13:14:02] INFO root fetch - processPackages [alphaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphaz-0.7.7.8.tar.gz tmp/alphaz-0.7.7.9.tar.gz --markdown 20230509/a/alphaz/0.7.7.8-0.7.7.9/diff.md --exclude *.pyd
+[2023-05-09 13:14:02] INFO root fetch - processPackages [alphaz]: executing diffoscope
+[2023-05-09 13:14:02] INFO root fetch - processPackages [alphaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphaz-0.7.7.8.tar.gz tmp/alphaz-0.7.7.9.tar.gz --markdown 20230509/a/alphaz/0.7.7.8-0.7.7.9/diff.md --exclude *.pyd
+[2023-05-09 13:14:03] INFO root fetch - processPackages [raga-cli]: executing diffoscope
+[2023-05-09 13:14:03] INFO root fetch - processPackages [raga-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raga-cli-0.1.8.tar.gz tmp/raga-cli-0.1.9.tar.gz --markdown 20230509/r/raga-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 13:14:03] INFO root fetch - processPackages [rape-identification]: Start processing: pepperize.cdk-private-bucket
+[2023-05-09 13:14:03] INFO root fetch - main [MainThread]: End processing [rape-identification]: success
+[2023-05-09 13:14:03] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 13:14:03] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: executing diffoscope
+[2023-05-09 13:14:03] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-private-bucket-0.0.98.tar.gz tmp/pepperize.cdk-private-bucket-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-private-bucket/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 13:14:03] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-05-09 13:14:04] INFO root fetch - main [MainThread]: End processing [junifer]: success
+[2023-05-09 13:14:04] INFO root fetch - main [MainThread]: End processing [pepperize.projen-awscdk-app-ts]: success
+[2023-05-09 13:14:04] INFO root fetch - main [MainThread]: End processing [fractal-server]: success
+[2023-05-09 13:14:04] INFO root fetch - main [MainThread]: End processing [metaapi-cloud-sdk]: success
+[2023-05-09 13:14:04] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-private-bucket]: success
+[2023-05-09 13:14:04] INFO root fetch - main [MainThread]: End processing [raga-cli]: success
+[2023-05-09 13:14:09] INFO root fetch - main [MainThread]: End processing [alphaz]: success
+[2023-05-09 13:14:10] INFO root fetch - main [MainThread]: End processing [alphaz]: success
+[2023-05-09 13:14:20] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-09 13:14:20] INFO root fetch - main [MainThread]: Store serial: [18031110]
