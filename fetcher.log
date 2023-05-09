@@ -23281,3 +23281,90 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 21:09:42] INFO root fetch - main [MainThread]: End processing [mainnet]: success
 [2023-05-09 21:09:44] INFO root fetch - main [MainThread]: End processing [amici]: success
 [2023-05-09 21:09:44] INFO root fetch - main [MainThread]: Store serial: [18036281]
+[2023-05-09 21:14:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18036281]
+[2023-05-09 21:14:53] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlcomputer
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cybrid-api-id-python
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cybrid-api-organization-python
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sbase
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: selenium-base
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytest-seleniumbase
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cybrid-api-bank-python
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytest-sbase
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: splight-lib
+[2023-05-09 21:14:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: semantic-navigator
+[2023-05-09 21:14:53] INFO root fetch - processPackages [semantic-navigator]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 21:14:53] WARNING root fetch - processPackages [nlcomputer]: Skipping, unable to determine old version
+[2023-05-09 21:14:53] INFO root fetch - processPackages [nlcomputer]: Start processing: pawflim
+[2023-05-09 21:14:53] INFO root fetch - main [MainThread]: End processing [nlcomputer] error
+[2023-05-09 21:14:53] INFO root fetch - processPackages [splight-lib]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-09 21:14:53] INFO root fetch - processPackages [pytest-seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 21:14:53] INFO root fetch - processPackages [selenium-base]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 21:14:53] WARNING root fetch - processPackages [pawflim]: Skipping, unable to determine old version
+[2023-05-09 21:14:53] INFO root fetch - processPackages [pawflim]: Start processing: Cypyonate
+[2023-05-09 21:14:53] INFO root fetch - processPackages [sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 21:14:53] INFO root fetch - main [MainThread]: End processing [pawflim] error
+[2023-05-09 21:14:53] INFO root fetch - processPackages [pytest-sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-09 21:14:53] WARNING root fetch - processPackages [Cypyonate]: Skipping, unable to determine old version
+[2023-05-09 21:14:53] INFO root fetch - processPackages [Cypyonate]: Start processing: attribtool
+[2023-05-09 21:14:53] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 21:14:53] INFO root fetch - main [MainThread]: End processing [Cypyonate] error
+[2023-05-09 21:14:53] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 21:14:53] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 21:14:53] INFO root fetch - processPackages [attribtool]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-09 21:14:53] INFO root fetch - processPackages [semantic-navigator]: Downloading https://files.pythonhosted.org/packages/82/b6/2d4f12a9e8d7aea28953c6cbd989a91d443c802a8bd87fe51079036117c9/semantic-navigator-0.1.0.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.3.8.tar.gz tmp/splight-lib-2.3.9.tar.gz --markdown 20230509/s/splight-lib/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-09 21:14:54] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:14:54] INFO root fetch - processPackages [pytest-seleniumbase]: Downloading https://files.pythonhosted.org/packages/40/bb/757cad3c5535e64c18cee852b145a86e4d539878bd9dce7c2934bcfb972d/pytest-seleniumbase-4.9.8.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [selenium-base]: Downloading https://files.pythonhosted.org/packages/49/eb/ad6c55d2af108681e38505aff036aef13544a2d1c09817221f499826a6f9/selenium-base-4.9.8.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [sbase]: Downloading https://files.pythonhosted.org/packages/10/f9/904caa9ffcdc6c4e7625f527d7ff03e2ccbecc9c360a7557b298321e506d/sbase-4.9.8.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [pytest-sbase]: Downloading https://files.pythonhosted.org/packages/91/87/a1223948d4bac31ab82915c4e7a930c22af874859aa805d6c3abd6b5bb3e/pytest-sbase-4.9.8.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:14:54] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:14:54] INFO root fetch - processPackages [attribtool]: Downloading https://files.pythonhosted.org/packages/be/a9/367b946663648dd8e48d146b1feb48b0d60b18b494f282320a8ec74e4405/attribtool-1.0.2.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [pytest-seleniumbase]: Downloading https://files.pythonhosted.org/packages/34/03/c67c6c24b8d7c3e49595b97d914034cf101d3d1d029f9e9453f497e0937a/pytest-seleniumbase-4.9.9.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [sbase]: Downloading https://files.pythonhosted.org/packages/d2/57/c23bf788f4a8fba6ef62c68be73c8fb443dc5aa71c69b03726c1254377f7/sbase-4.9.9.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [semantic-navigator]: Downloading https://files.pythonhosted.org/packages/98/bc/1a056d7906bdd5cc5ce83386eb704856127047e070b8309ed93d1c7857dc/semantic-navigator-0.1.1.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [selenium-base]: Downloading https://files.pythonhosted.org/packages/0a/3b/8bdd54f85b1550af5050c8683212c3f88b854c0ef99e22fa6fe216094900/selenium-base-4.9.9.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [attribtool]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [attribtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attribtool-1.0.1.tar.gz tmp/attribtool-1.0.2.tar.gz --markdown 20230509/a/attribtool/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 21:14:54] INFO root fetch - processPackages [pytest-seleniumbase]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [pytest-seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-seleniumbase-4.9.8.tar.gz tmp/pytest-seleniumbase-4.9.9.tar.gz --markdown 20230509/p/pytest-seleniumbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:14:54] INFO root fetch - processPackages [sbase]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbase-4.9.8.tar.gz tmp/sbase-4.9.9.tar.gz --markdown 20230509/s/sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:14:54] INFO root fetch - processPackages [selenium-base]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [selenium-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-base-4.9.8.tar.gz tmp/selenium-base-4.9.9.tar.gz --markdown 20230509/s/selenium-base/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:14:54] INFO root fetch - processPackages [pytest-sbase]: Downloading https://files.pythonhosted.org/packages/ea/6c/61da56c0f8d30ee6ecfbf486bd770ce073eba9a09e63981ae35863a37cb0/pytest-sbase-4.9.9.tar.gz
+[2023-05-09 21:14:54] INFO root fetch - processPackages [semantic-navigator]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [semantic-navigator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic-navigator-0.1.0.tar.gz tmp/semantic-navigator-0.1.1.tar.gz --markdown 20230509/s/semantic-navigator/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 21:14:54] INFO root fetch - processPackages [pytest-sbase]: executing diffoscope
+[2023-05-09 21:14:54] INFO root fetch - processPackages [pytest-sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-sbase-4.9.8.tar.gz tmp/pytest-sbase-4.9.9.tar.gz --markdown 20230509/p/pytest-sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-09 21:14:55] INFO root fetch - processPackages [attribtool]: Start processing: sequence-modelling
+[2023-05-09 21:14:55] INFO root fetch - main [MainThread]: End processing [attribtool]: success
+[2023-05-09 21:14:55] INFO root fetch - processPackages [sequence-modelling]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 21:14:55] INFO root fetch - processPackages [sequence-modelling]: Downloading https://files.pythonhosted.org/packages/12/2a/e2970d603bad51483f6f5c45388ad2f3c457dc356f4e95e913faa7120dfb/sequence_modelling-0.1.0.tar.gz
+[2023-05-09 21:14:56] INFO root fetch - processPackages [pytest-seleniumbase]: Start processing: e-models
+[2023-05-09 21:14:56] INFO root fetch - main [MainThread]: End processing [pytest-seleniumbase]: success
+[2023-05-09 21:14:56] INFO root fetch - main [MainThread]: End processing [selenium-base]: success
+[2023-05-09 21:14:56] INFO root fetch - processPackages [e-models]: New version: [1.3.1] Old Version: [1.3]
+[2023-05-09 21:14:56] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-09 21:14:56] INFO root fetch - processPackages [sequence-modelling]: Downloading https://files.pythonhosted.org/packages/99/d8/ebc3eb0fb7b8719736765a04e2b28953d66daba001208b07d4c9dc2ecc7b/sequence_modelling-0.1.1.tar.gz
+[2023-05-09 21:14:56] INFO root fetch - processPackages [e-models]: Downloading https://files.pythonhosted.org/packages/00/e0/41a61b287ec1bba6cf418e4a8fec6731a3df24f211d514003d36fe463093/e-models-1.3.tar.gz
+[2023-05-09 21:14:56] INFO root fetch - main [MainThread]: End processing [pytest-sbase]: success
+[2023-05-09 21:14:56] INFO root fetch - main [MainThread]: End processing [semantic-navigator]: success
+[2023-05-09 21:14:56] INFO root fetch - main [MainThread]: End processing [sbase]: success
+[2023-05-09 21:14:56] INFO root fetch - processPackages [e-models]: Downloading https://files.pythonhosted.org/packages/be/58/2fcdb52df605ca972be28cb6944ac28ab5a14266e66ae52840cf3456c32b/e_models-1.3.1-py3-none-any.whl
+[2023-05-09 21:14:56] INFO root fetch - processPackages [sequence-modelling]: executing diffoscope
+[2023-05-09 21:14:56] INFO root fetch - processPackages [sequence-modelling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequence_modelling-0.1.0.tar.gz tmp/sequence_modelling-0.1.1.tar.gz --markdown 20230509/s/sequence-modelling/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 21:14:56] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-09 21:14:56] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
+[2023-05-09 21:14:56] INFO root fetch - processPackages [e-models]: executing diffoscope
+[2023-05-09 21:14:56] INFO root fetch - processPackages [e-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e-models-1.3.tar.gz tmp/e_models-1.3.1-py3-none-any.whl.zip --markdown 20230509/e/e-models/1.3-1.3.1/diff.md --exclude *.pyd
+[2023-05-09 21:14:57] INFO root fetch - main [MainThread]: End processing [sequence-modelling]: success
+[2023-05-09 21:14:57] INFO root fetch - main [MainThread]: End processing [e-models]: success
+[2023-05-09 21:15:01] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-09 21:15:01] INFO root fetch - main [MainThread]: Store serial: [18036333]
