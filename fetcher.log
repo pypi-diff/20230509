@@ -2435,3 +2435,72 @@
 [2023-05-09 02:53:29] INFO root fetch - main [MainThread]: End processing [khloraascaf]: success
 [2023-05-09 02:55:16] INFO root fetch - main [MainThread]: End processing [benchling-api-client]: success
 [2023-05-09 02:55:16] INFO root fetch - main [MainThread]: Store serial: [18024423]
+[2023-05-09 03:00:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18024423]
+[2023-05-09 03:00:25] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioversions
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cli3
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: krtools
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyserve3
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-sns-notify
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-emrserverless-with-delta-lake
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-lambda-layer-wget
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: oexp
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rapidtide
+[2023-05-09 03:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aemcmc-nightly
+[2023-05-09 03:00:25] INFO root fetch - processPackages [cli3]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-09 03:00:25] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-09 03:00:25] WARNING root fetch - processPackages [krtools]: Skipping, unable to determine old version
+[2023-05-09 03:00:25] INFO root fetch - processPackages [pyserve3]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-09 03:00:25] INFO root fetch - processPackages [krtools]: Start processing: checkpoint-tool
+[2023-05-09 03:00:25] INFO root fetch - main [MainThread]: End processing [krtools] error
+[2023-05-09 03:00:25] INFO root fetch - processPackages [oexp]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-09 03:00:25] INFO root fetch - processPackages [rapidtide]: New version: [2.5.2] Old Version: [2.5.1.2]
+[2023-05-09 03:00:25] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230508] Old Version: [0.0.8.dev20230507]
+[2023-05-09 03:00:25] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-09 03:00:25] INFO root fetch - processPackages [checkpoint-tool]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-09 03:00:25] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 03:00:25] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-09 03:00:25] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-05-09 03:00:25] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230509/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-09 03:00:25] INFO root fetch - processPackages [cli3]: Downloading https://files.pythonhosted.org/packages/11/da/5e352404da10f2a238131122734d4d313a4d3c0d302b280d7ac005a0b413/cli3-1.1.0.tar.gz
+[2023-05-09 03:00:25] INFO root fetch - processPackages [oexp]: Downloading https://files.pythonhosted.org/packages/e9/cb/689aec5c26dae879aa7b56d86ccdd1a4c899edd80a07ffa8a1c5138017fd/oexp-0.4.0.tar.gz
+[2023-05-09 03:00:25] INFO root fetch - processPackages [rapidtide]: Downloading https://files.pythonhosted.org/packages/33/4f/acd4108b5cb59ecf2019102d065a2e7f6623d68905dd286a95ef9378add5/rapidtide-2.5.1.2.tar.gz
+[2023-05-09 03:00:25] INFO root fetch - processPackages [pyserve3]: Downloading https://files.pythonhosted.org/packages/bf/e0/c8395b8b6091077d89bd130c3d6b4dd1108ba5de21634fb34ddb2f3d75ab/pyserve3-0.0.5.tar.gz
+[2023-05-09 03:00:26] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-05-09 03:00:26] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230507.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230508.tar.gz --markdown 20230509/a/aemcmc-nightly/0.0.8.dev20230507-0.0.8.dev20230508/diff.md --exclude *.pyd
+[2023-05-09 03:00:26] INFO root fetch - processPackages [checkpoint-tool]: Downloading https://files.pythonhosted.org/packages/df/76/82ff0a69bb9e4c79584829ab792e94275f1725ab2fedab33890070ac700b/checkpoint_tool-0.7.1.tar.gz
+[2023-05-09 03:00:26] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-05-09 03:00:26] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230509/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 03:00:26] INFO root fetch - processPackages [cli3]: Downloading https://files.pythonhosted.org/packages/64/08/328919c2dddbbc890a6e09c4bcf36360b41adfea8381cc69cf6fce82cbed/cli3-1.1.1.tar.gz
+[2023-05-09 03:00:26] INFO root fetch - processPackages [oexp]: Downloading https://files.pythonhosted.org/packages/7a/f6/e10e17d023e8fd4cbab35fba5282511c79045c40db56f6c81f5001d0b9db/oexp-0.5.0.tar.gz
+[2023-05-09 03:00:26] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-09 03:00:26] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230509/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-09 03:00:26] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-05-09 03:00:26] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230509/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-09 03:00:26] INFO root fetch - processPackages [cli3]: executing diffoscope
+[2023-05-09 03:00:26] INFO root fetch - processPackages [cli3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli3-1.1.0.tar.gz tmp/cli3-1.1.1.tar.gz --markdown 20230509/c/cli3/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-09 03:00:26] INFO root fetch - processPackages [pyserve3]: Downloading https://files.pythonhosted.org/packages/b3/45/94f12f2636dfea7d6c20a5e112cecd403b6dfb862af6c5c366a5672044d6/pyserve3-0.0.6.tar.gz
+[2023-05-09 03:00:26] INFO root fetch - processPackages [pyserve3]: executing diffoscope
+[2023-05-09 03:00:26] INFO root fetch - processPackages [pyserve3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyserve3-0.0.5.tar.gz tmp/pyserve3-0.0.6.tar.gz --markdown 20230509/p/pyserve3/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 03:00:26] INFO root fetch - processPackages [oexp]: executing diffoscope
+[2023-05-09 03:00:26] INFO root fetch - processPackages [oexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oexp-0.4.0.tar.gz tmp/oexp-0.5.0.tar.gz --markdown 20230509/o/oexp/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 03:00:26] WARNING root fetch - processPackages [rapidtide]: Skipping package: exceeds size limit 10760518>=10485760
+[2023-05-09 03:00:26] INFO root fetch - processPackages [rapidtide]: Start processing: isthmuslib
+[2023-05-09 03:00:26] INFO root fetch - main [MainThread]: End processing [rapidtide] error
+[2023-05-09 03:00:26] INFO root fetch - processPackages [isthmuslib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 03:00:26] INFO root fetch - processPackages [checkpoint-tool]: Downloading https://files.pythonhosted.org/packages/eb/e6/359bb6fc4eecbf358da0c31ae3f861a57a613dc0f51d269bf4535ef6bfb1/checkpoint_tool-0.7.2.tar.gz
+[2023-05-09 03:00:26] INFO root fetch - processPackages [isthmuslib]: executing diffoscope
+[2023-05-09 03:00:26] INFO root fetch - processPackages [isthmuslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isthmuslib-0.0.98.tar.gz tmp/isthmuslib-0.0.99.tar.gz --markdown 20230509/i/isthmuslib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 03:00:26] INFO root fetch - processPackages [checkpoint-tool]: executing diffoscope
+[2023-05-09 03:00:26] INFO root fetch - processPackages [checkpoint-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkpoint_tool-0.7.1.tar.gz tmp/checkpoint_tool-0.7.2.tar.gz --markdown 20230509/c/checkpoint-tool/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-09 03:00:27] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2023-05-09 03:00:27] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-05-09 03:00:27] INFO root fetch - main [MainThread]: End processing [oexp]: success
+[2023-05-09 03:00:27] INFO root fetch - main [MainThread]: End processing [pyserve3]: success
+[2023-05-09 03:00:27] INFO root fetch - main [MainThread]: End processing [cli3]: success
+[2023-05-09 03:00:28] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-05-09 03:00:28] INFO root fetch - main [MainThread]: End processing [checkpoint-tool]: success
+[2023-05-09 03:00:28] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-09 03:00:29] INFO root fetch - main [MainThread]: End processing [isthmuslib]: success
+[2023-05-09 03:00:46] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-05-09 03:00:46] INFO root fetch - main [MainThread]: Store serial: [18024458]
