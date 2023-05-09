@@ -17955,3 +17955,131 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 16:21:40] INFO root fetch - main [MainThread]: End processing [apache-airflow-client]: success
 [2023-05-09 16:22:08] INFO root fetch - main [MainThread]: End processing [udata-front]: success
 [2023-05-09 16:22:08] INFO root fetch - main [MainThread]: Store serial: [18032987]
+[2023-05-09 16:27:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032987]
+[2023-05-09 16:27:17] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: serverless-sdk
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: domino-py
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nexus-api
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nexus-extensibility
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nexus-utilities
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pepperize.cdk-dynamodb-backup
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: openxes-cli-py
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: spanishconjugator
+[2023-05-09 16:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sg-hello-pypi
+[2023-05-09 16:27:17] INFO root fetch - processPackages [nexus-utilities]: New version: [0.2.1] Old Version: [0.1.8]
+[2023-05-09 16:27:17] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 16:27:17] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-09 16:27:17] WARNING root fetch - processPackages [sg-hello-pypi]: Skipping, unable to determine old version
+[2023-05-09 16:27:17] INFO root fetch - processPackages [sg-hello-pypi]: Start processing: mongomancy
+[2023-05-09 16:27:17] INFO root fetch - processPackages [nexus-api]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-05-09 16:27:17] INFO root fetch - processPackages [serverless-sdk]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-05-09 16:27:17] INFO root fetch - main [MainThread]: End processing [sg-hello-pypi] error
+[2023-05-09 16:27:17] INFO root fetch - processPackages [openxes-cli-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 16:27:17] INFO root fetch - processPackages [domino-py]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 16:27:17] INFO root fetch - processPackages [nexus-extensibility]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-05-09 16:27:18] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-09 16:27:18] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: executing diffoscope
+[2023-05-09 16:27:18] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-dynamodb-backup-0.0.98.tar.gz tmp/pepperize.cdk-dynamodb-backup-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-dynamodb-backup/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 16:27:18] INFO root fetch - processPackages [mongomancy]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-09 16:27:18] INFO root fetch - processPackages [nexus-utilities]: executing diffoscope
+[2023-05-09 16:27:18] INFO root fetch - processPackages [nexus-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-utilities-0.1.8.tar.gz tmp/nexus-utilities-0.2.1.tar.gz --markdown 20230509/n/nexus-utilities/0.1.8-0.2.1/diff.md --exclude *.pyd
+[2023-05-09 16:27:18] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-09 16:27:18] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230509/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-09 16:27:18] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-09 16:27:18] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230509/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-09 16:27:18] INFO root fetch - processPackages [serverless-sdk]: Downloading https://files.pythonhosted.org/packages/34/07/1fbd666da721a6e8ad67e83b9b77cc6e1cf81546a9f172f1ff92eddb4560/serverless-sdk-0.4.6.tar.gz
+[2023-05-09 16:27:18] INFO root fetch - processPackages [openxes-cli-py]: Downloading https://files.pythonhosted.org/packages/17/e1/0ad487af158d7180cf58faa7d7d7f5cdb581ceb1527a13f0d79bb875ecba/openxes_cli_py-0.1.8.tar.gz
+[2023-05-09 16:27:18] INFO root fetch - processPackages [mongomancy]: Downloading https://files.pythonhosted.org/packages/84/be/e88f601b11dda73f8d283e8c3d1a7e053d28a17446aeb63dd65a2cde1527/mongomancy-0.1.2.tar.gz
+[2023-05-09 16:27:18] INFO root fetch - processPackages [nexus-extensibility]: executing diffoscope
+[2023-05-09 16:27:18] INFO root fetch - processPackages [nexus-extensibility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus_extensibility-2.0.0b8-py3-none-any.whl.zip tmp/nexus_extensibility-2.0.0b9-py3-none-any.whl.zip --markdown 20230509/n/nexus-extensibility/2.0.0b8-2.0.0b9/diff.md --exclude *.pyd
+[2023-05-09 16:27:18] INFO root fetch - processPackages [nexus-api]: executing diffoscope
+[2023-05-09 16:27:18] INFO root fetch - processPackages [nexus-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus_api-2.0.0b8-py3-none-any.whl.zip tmp/nexus_api-2.0.0b9-py3-none-any.whl.zip --markdown 20230509/n/nexus-api/2.0.0b8-2.0.0b9/diff.md --exclude *.pyd
+[2023-05-09 16:27:18] INFO root fetch - processPackages [domino-py]: executing diffoscope
+[2023-05-09 16:27:18] INFO root fetch - processPackages [domino-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domino-py-0.1.8.tar.gz tmp/domino-py-0.1.9.tar.gz --markdown 20230509/d/domino-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 16:27:18] INFO root fetch - processPackages [mongomancy]: executing diffoscope
+[2023-05-09 16:27:18] INFO root fetch - processPackages [mongomancy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongomancy-0.1.1.tar.gz tmp/mongomancy-0.1.2.tar.gz --markdown 20230509/m/mongomancy/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-09 16:27:18] INFO root fetch - processPackages [serverless-sdk]: Downloading https://files.pythonhosted.org/packages/44/32/2a9d8abdec5b83aac32515703405c4cea98833378391a714bda3de2b5be0/serverless-sdk-0.4.7.tar.gz
+[2023-05-09 16:27:18] INFO root fetch - processPackages [serverless-sdk]: executing diffoscope
+[2023-05-09 16:27:18] INFO root fetch - processPackages [serverless-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serverless-sdk-0.4.6.tar.gz tmp/serverless-sdk-0.4.7.tar.gz --markdown 20230509/s/serverless-sdk/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-05-09 16:27:19] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: Start processing: certora-cli-alpha-shelly-whenwillitbeoverinternalfunctions
+[2023-05-09 16:27:19] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-dynamodb-backup]: success
+[2023-05-09 16:27:19] WARNING root fetch - processPackages [certora-cli-alpha-shelly-whenwillitbeoverinternalfunctions]: Skipping, unable to determine old version
+[2023-05-09 16:27:19] INFO root fetch - processPackages [certora-cli-alpha-shelly-whenwillitbeoverinternalfunctions]: Start processing: batframes
+[2023-05-09 16:27:19] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-whenwillitbeoverinternalfunctions] error
+[2023-05-09 16:27:19] INFO root fetch - processPackages [batframes]: New version: [1.0.0.1] Old Version: [1.0.0]
+[2023-05-09 16:27:19] INFO root fetch - processPackages [batframes]: executing diffoscope
+[2023-05-09 16:27:19] INFO root fetch - processPackages [batframes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batframes-1.0.0.tar.gz tmp/batframes-1.0.0.1.tar.gz --markdown 20230509/b/batframes/1.0.0-1.0.0.1/diff.md --exclude *.pyd
+[2023-05-09 16:27:19] INFO root fetch - processPackages [nexus-utilities]: Start processing: api-deploy
+[2023-05-09 16:27:19] INFO root fetch - main [MainThread]: End processing [nexus-utilities]: success
+[2023-05-09 16:27:19] WARNING root fetch - processPackages [api-deploy]: Skipping, unable to determine old version
+[2023-05-09 16:27:19] INFO root fetch - processPackages [api-deploy]: Start processing: th2-data-services
+[2023-05-09 16:27:19] INFO root fetch - main [MainThread]: End processing [api-deploy] error
+[2023-05-09 16:27:19] INFO root fetch - processPackages [th2-data-services]: New version: [2.0.0.dev4926049061] Old Version: [2.0.0.dev4925844112]
+[2023-05-09 16:27:19] INFO root fetch - processPackages [openxes-cli-py]: Downloading https://files.pythonhosted.org/packages/3b/99/2388e0d7e18aaf6f611a9a6061b4f7b9c6252bedd59477849faada34c8d1/openxes_cli_py-0.1.9.tar.gz
+[2023-05-09 16:27:19] INFO root fetch - processPackages [nexus-extensibility]: Start processing: django-districts
+[2023-05-09 16:27:19] INFO root fetch - main [MainThread]: End processing [nexus-extensibility]: success
+[2023-05-09 16:27:19] INFO root fetch - processPackages [th2-data-services]: Downloading https://files.pythonhosted.org/packages/0b/4d/3d896814354d1ff384f791565edd831f5410e7a05555b6ec1aaa71c52f89/th2_data_services-2.0.0.dev4926049061.tar.gz
+[2023-05-09 16:27:19] INFO root fetch - processPackages [django-districts]: New version: [2023.2] Old Version: [2023.1]
+[2023-05-09 16:27:20] INFO root fetch - processPackages [th2-data-services]: executing diffoscope
+[2023-05-09 16:27:20] INFO root fetch - processPackages [th2-data-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_data_services-2.0.0.dev4925844112.tar.gz tmp/th2_data_services-2.0.0.dev4926049061.tar.gz --markdown 20230509/t/th2-data-services/2.0.0.dev4925844112-2.0.0.dev4926049061/diff.md --exclude *.pyd
+[2023-05-09 16:27:20] INFO root fetch - processPackages [mongomancy]: Start processing: spotON_sdk
+[2023-05-09 16:27:20] INFO root fetch - main [MainThread]: End processing [mongomancy]: success
+[2023-05-09 16:27:20] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.3.1] Old Version: [0.0.3.0]
+[2023-05-09 16:27:20] INFO root fetch - processPackages [django-districts]: Downloading https://files.pythonhosted.org/packages/e9/a2/f7dacc92609c24e67b0d668ed5c4e945c805c9a884c3aa134aa6b55a143b/django-districts-2023.1.tar.gz
+[2023-05-09 16:27:20] INFO root fetch - processPackages [spanishconjugator]: Start processing: terick
+[2023-05-09 16:27:20] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-09 16:27:20] INFO root fetch - processPackages [nexus-api]: Start processing: dcentrapi
+[2023-05-09 16:27:20] INFO root fetch - main [MainThread]: End processing [nexus-api]: success
+[2023-05-09 16:27:20] INFO root fetch - processPackages [serverless-sdk]: Start processing: shareddata
+[2023-05-09 16:27:20] INFO root fetch - main [MainThread]: End processing [serverless-sdk]: success
+[2023-05-09 16:27:20] INFO root fetch - processPackages [shareddata]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-05-09 16:27:20] INFO root fetch - processPackages [spanishconjugator]: Start processing: odoo-addon-sale-exception
+[2023-05-09 16:27:20] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-09 16:27:20] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/01/a0/402d90be535f628f8ebcd7da40a8dfef5f7479f93a47a5d7d0ede99f2c0a/spotON_sdk-0.0.3.1.tar.gz
+[2023-05-09 16:27:20] INFO root fetch - processPackages [terick]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-09 16:27:20] INFO root fetch - processPackages [dcentrapi]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-09 16:27:20] INFO root fetch - processPackages [django-districts]: Downloading https://files.pythonhosted.org/packages/85/ce/fe94521480891bc020961de45b3487f25408c154383302d362788a4c92aa/django-districts-2023.2.tar.gz
+[2023-05-09 16:27:20] INFO root fetch - processPackages [shareddata]: executing diffoscope
+[2023-05-09 16:27:20] INFO root fetch - processPackages [shareddata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shareddata-2.0.7.tar.gz tmp/shareddata-2.0.8.tar.gz --markdown 20230509/s/shareddata/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2023-05-09 16:27:20] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-09 16:27:20] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.3.0.tar.gz tmp/spotON_sdk-0.0.3.1.tar.gz --markdown 20230509/s/spotON_sdk/0.0.3.0-0.0.3.1/diff.md --exclude *.pyd
+[2023-05-09 16:27:20] INFO root fetch - processPackages [odoo-addon-sale-exception]: New version: [16.0.1.2.0] Old Version: [16.0.1.1.0]
+[2023-05-09 16:27:20] INFO root fetch - processPackages [openxes-cli-py]: executing diffoscope
+[2023-05-09 16:27:20] INFO root fetch - processPackages [openxes-cli-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openxes_cli_py-0.1.8.tar.gz tmp/openxes_cli_py-0.1.9.tar.gz --markdown 20230509/o/openxes-cli-py/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 16:27:20] INFO root fetch - processPackages [django-districts]: executing diffoscope
+[2023-05-09 16:27:20] INFO root fetch - processPackages [django-districts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-districts-2023.1.tar.gz tmp/django-districts-2023.2.tar.gz --markdown 20230509/d/django-districts/2023.1-2023.2/diff.md --exclude *.pyd
+[2023-05-09 16:27:20] INFO root fetch - processPackages [dcentrapi]: Downloading https://files.pythonhosted.org/packages/56/cf/bd3faaf4b77b89df2721f7e0fabec9169c02ed013de7d21eeaaa9b6ecc2d/dcentrapi-0.2.0.tar.gz
+[2023-05-09 16:27:20] INFO root fetch - processPackages [terick]: Downloading https://files.pythonhosted.org/packages/6c/6d/7ef3f638f00f1563ade751ff3f6dc385dd3e5600d64a2558c770f66bdbed/terick-0.2.1.tar.gz
+[2023-05-09 16:27:20] INFO root fetch - processPackages [odoo-addon-sale-exception]: Downloading https://files.pythonhosted.org/packages/0a/41/d9c0c3f2bb03a6533e7bd79f010f8f25d6e7055fe69d37a393e5edc70aa2/odoo_addon_sale_exception-16.0.1.1.0-py3-none-any.whl
+[2023-05-09 16:27:20] INFO root fetch - processPackages [dcentrapi]: Downloading https://files.pythonhosted.org/packages/24/f8/9f91cfd424fd527b5521abef1964880663f80b13abb0e4b52dfcb2b227e5/dcentrapi-0.2.1.tar.gz
+[2023-05-09 16:27:20] INFO root fetch - processPackages [dcentrapi]: executing diffoscope
+[2023-05-09 16:27:20] INFO root fetch - processPackages [dcentrapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcentrapi-0.2.0.tar.gz tmp/dcentrapi-0.2.1.tar.gz --markdown 20230509/d/dcentrapi/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-09 16:27:20] INFO root fetch - processPackages [odoo-addon-sale-exception]: Downloading https://files.pythonhosted.org/packages/3e/96/8347b386e1acbd7a2025a49bcddfb6f620fb203155cfb67f2cba421febe5/odoo_addon_sale_exception-16.0.1.2.0-py3-none-any.whl
+[2023-05-09 16:27:21] INFO root fetch - processPackages [terick]: Downloading https://files.pythonhosted.org/packages/5b/aa/2cf2798ea1341057cec8fe4bf0d4661be2cca1a184b01ec33527ca5b58e7/terick-0.2.2.tar.gz
+[2023-05-09 16:27:21] INFO root fetch - processPackages [odoo-addon-sale-exception]: executing diffoscope
+[2023-05-09 16:27:21] INFO root fetch - processPackages [odoo-addon-sale-exception]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_exception-16.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_sale_exception-16.0.1.2.0-py3-none-any.whl.zip --markdown 20230509/o/odoo-addon-sale-exception/16.0.1.1.0-16.0.1.2.0/diff.md --exclude *.pyd
+[2023-05-09 16:27:21] INFO root fetch - processPackages [terick]: executing diffoscope
+[2023-05-09 16:27:21] INFO root fetch - processPackages [terick]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terick-0.2.1.tar.gz tmp/terick-0.2.2.tar.gz --markdown 20230509/t/terick/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-09 16:27:21] INFO root fetch - processPackages [domino-py]: Start processing: enhanceezqq
+[2023-05-09 16:27:21] INFO root fetch - main [MainThread]: End processing [domino-py]: success
+[2023-05-09 16:27:21] INFO root fetch - processPackages [enhanceezqq]: New version: [1.0.0.2] Old Version: [1.0.0.1]
+[2023-05-09 16:27:21] INFO root fetch - processPackages [spotON_sdk]: Start processing: wpwatcher
+[2023-05-09 16:27:21] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-09 16:27:21] INFO root fetch - processPackages [wpwatcher]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-05-09 16:27:21] INFO root fetch - processPackages [wpwatcher]: executing diffoscope
+[2023-05-09 16:27:21] INFO root fetch - processPackages [wpwatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wpwatcher-3.0.5.tar.gz tmp/wpwatcher-3.0.6.tar.gz --markdown 20230509/w/wpwatcher/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2023-05-09 16:27:21] INFO root fetch - main [MainThread]: End processing [shareddata]: success
+[2023-05-09 16:27:21] INFO root fetch - main [MainThread]: End processing [batframes]: success
+[2023-05-09 16:27:21] INFO root fetch - processPackages [enhanceezqq]: Downloading https://files.pythonhosted.org/packages/91/e7/c8c9aeca523b741944e713afef37313ed7948d2194a73f2e3f68f920a193/enhanceezqq-1.0.0.2.tar.gz
+[2023-05-09 16:27:22] INFO root fetch - processPackages [enhanceezqq]: executing diffoscope
+[2023-05-09 16:27:22] INFO root fetch - processPackages [enhanceezqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhanceezqq-1.0.0.1.tar.gz tmp/enhanceezqq-1.0.0.2.tar.gz --markdown 20230509/e/enhanceezqq/1.0.0.1-1.0.0.2/diff.md --exclude *.pyd
+[2023-05-09 16:27:22] INFO root fetch - main [MainThread]: End processing [dcentrapi]: success
+[2023-05-09 16:27:22] INFO root fetch - main [MainThread]: End processing [terick]: success
+[2023-05-09 16:27:22] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-exception]: success
+[2023-05-09 16:27:22] INFO root fetch - main [MainThread]: End processing [th2-data-services]: success
+[2023-05-09 16:27:23] INFO root fetch - main [MainThread]: End processing [wpwatcher]: success
+[2023-05-09 16:27:23] INFO root fetch - main [MainThread]: End processing [enhanceezqq]: success
+[2023-05-09 16:27:23] INFO root fetch - main [MainThread]: End processing [django-districts]: success
+[2023-05-09 16:28:33] INFO root fetch - main [MainThread]: End processing [openxes-cli-py]: success
+[2023-05-09 16:28:33] INFO root fetch - main [MainThread]: Store serial: [18033057]
