@@ -16279,3 +16279,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 14:57:09] INFO root fetch - main [MainThread]: End processing [text-fabric]: success
 [2023-05-09 14:57:21] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-csgo-case-simulator]: success
 [2023-05-09 14:57:21] INFO root fetch - main [MainThread]: Store serial: [18031892]
+[2023-05-09 15:02:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031892]
+[2023-05-09 15:02:30] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pinuccio
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openspoor
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.cdk-route53-health-check
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bambooai
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: finnsult
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aa-memberaudit
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pybeans
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lamindb
+[2023-05-09 15:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: badgescale-ys-plt
+[2023-05-09 15:02:30] INFO root fetch - processPackages [finnsult]: New version: [1.1] Old Version: [1.0]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [bambooai]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [pybeans]: New version: [1.7.6] Old Version: [1.7.5]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [openspoor]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [pinuccio]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230509.12.59.399222] Old Version: [20230509.12.47.289540]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [badgescale-ys-plt]: New version: [9.0] Old Version: [8.0]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [aa-memberaudit]: New version: [2.8.1] Old Version: [2.8.0]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [lamindb]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: executing diffoscope
+[2023-05-09 15:02:30] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-route53-health-check-0.0.98.tar.gz tmp/pepperize.cdk-route53-health-check-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-route53-health-check/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 15:02:30] INFO root fetch - processPackages [finnsult]: Downloading https://files.pythonhosted.org/packages/6f/1e/46eb20358e21d7474784d754bcff820a4734472e7941400f326284bc2516/finnsult-1.0-py3-none-any.whl
+[2023-05-09 15:02:30] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/9d/49/0fad8b443a471d813448ae6fcd50ed044dac112e3f81d1f97b768b7a2418/certora-cli-alpha-roy-CERT-1955-assertHits-20230509.12.47.289540.tar.gz
+[2023-05-09 15:02:30] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/0a/b1/378774647832045b4a356b151cce41ec183fb784b2fb866e01e3c7bdcdc2/bambooai-0.1.1.tar.gz
+[2023-05-09 15:02:30] INFO root fetch - processPackages [openspoor]: Downloading https://files.pythonhosted.org/packages/92/92/2e434ea3bb90866b89e17f70b95663465e8e946e42b972ccf68d4cbbd075/openspoor-0.2.4.tar.gz
+[2023-05-09 15:02:30] INFO root fetch - processPackages [pinuccio]: Downloading https://files.pythonhosted.org/packages/31/20/b09b848aca03081fe4c059443c01d7be1ba9ac12795475fe255544e3e074/pinuccio-0.0.8.tar.gz
+[2023-05-09 15:02:30] INFO root fetch - processPackages [lamindb]: Downloading https://files.pythonhosted.org/packages/15/74/34148a2f59ec5fafeee3ffbc599388444e1e8d22d525c0b2e244aa151fef/lamindb-0.9.4.tar.gz
+[2023-05-09 15:02:30] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38475450>=10485760
+[2023-05-09 15:02:30] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Start processing: pygoslin
+[2023-05-09 15:02:30] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-09 15:02:30] INFO root fetch - processPackages [badgescale-ys-plt]: Downloading https://files.pythonhosted.org/packages/71/88/23f5c6572debd0f647130a7ac089f537c00c3e8b26437c901a3fe933dbfe/badgescale_ys_plt-9.0-py3-none-any.whl
+[2023-05-09 15:02:30] INFO root fetch - processPackages [pygoslin]: New version: [2.1.0] Old Version: [2.0.2]
+[2023-05-09 15:02:30] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-09 15:02:30] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.1.0.tar.gz tmp/bambooai-0.1.1.tar.gz --markdown 20230509/b/bambooai/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 15:02:30] INFO root fetch - processPackages [pybeans]: Downloading https://files.pythonhosted.org/packages/e2/39/4c91dc9a0b4a85304dad9661a93c0a0ac9a1103c2e5085ae03a090a2835f/pybeans-1.7.6.tar.gz
+[2023-05-09 15:02:30] INFO root fetch - processPackages [aa-memberaudit]: Downloading https://files.pythonhosted.org/packages/78/94/4d340b4ca5f2c07c33274e4d0db214d2e6c584be37893de290e30a16d9d9/aa_memberaudit-2.8.1.tar.gz
+[2023-05-09 15:02:31] INFO root fetch - processPackages [pybeans]: executing diffoscope
+[2023-05-09 15:02:31] INFO root fetch - processPackages [pybeans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybeans-1.7.5.tar.gz tmp/pybeans-1.7.6.tar.gz --markdown 20230509/p/pybeans/1.7.5-1.7.6/diff.md --exclude *.pyd
+[2023-05-09 15:02:31] INFO root fetch - processPackages [badgescale-ys-plt]: executing diffoscope
+[2023-05-09 15:02:31] INFO root fetch - processPackages [badgescale-ys-plt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgescale_ys_plt-8.0-py3-none-any.whl.zip tmp/badgescale_ys_plt-9.0-py3-none-any.whl.zip --markdown 20230509/b/badgescale-ys-plt/8.0-9.0/diff.md --exclude *.pyd
+[2023-05-09 15:02:31] INFO root fetch - processPackages [finnsult]: Downloading https://files.pythonhosted.org/packages/9a/c1/940ef5f72dbac51bc9df16b102ca1e7b5d54b9343309e45f20568b5a7993/finnsult-1.1.tar.gz
+[2023-05-09 15:02:31] INFO root fetch - processPackages [pygoslin]: Downloading https://files.pythonhosted.org/packages/82/0c/d506ec71a1ac5bb83f2406fdeee17245559fd44e2e1286284bb1fb87de73/pygoslin-2.0.2.tar.gz
+[2023-05-09 15:02:31] INFO root fetch - processPackages [aa-memberaudit]: executing diffoscope
+[2023-05-09 15:02:31] INFO root fetch - processPackages [aa-memberaudit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_memberaudit-2.8.0.tar.gz tmp/aa_memberaudit-2.8.1.tar.gz --markdown 20230509/a/aa-memberaudit/2.8.0-2.8.1/diff.md --exclude *.pyd
+[2023-05-09 15:02:31] INFO root fetch - processPackages [finnsult]: executing diffoscope
+[2023-05-09 15:02:31] INFO root fetch - processPackages [finnsult]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finnsult-1.0-py3-none-any.whl.zip tmp/finnsult-1.1.tar.gz --markdown 20230509/f/finnsult/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-09 15:02:31] INFO root fetch - processPackages [openspoor]: Downloading https://files.pythonhosted.org/packages/17/12/c73124fc558eba8fc10235db2ba9b81f8584e5c22d156d0806c5d5d29a0e/openspoor-0.2.5.tar.gz
+[2023-05-09 15:02:31] INFO root fetch - processPackages [pinuccio]: Downloading https://files.pythonhosted.org/packages/a2/0b/6a95a7c5aa593bc704bcd07d05458c4b6bca5a7ad3f6d3d7e529a1eb592e/pinuccio-0.0.9.tar.gz
+[2023-05-09 15:02:31] INFO root fetch - processPackages [lamindb]: Downloading https://files.pythonhosted.org/packages/a8/dd/da42b7dd3f39064fda6a4977c93f1a040eefa69ef3a3cefd7b4b8d13efb6/lamindb-0.9.6.tar.gz
+[2023-05-09 15:02:31] INFO root fetch - processPackages [openspoor]: executing diffoscope
+[2023-05-09 15:02:31] INFO root fetch - processPackages [openspoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openspoor-0.2.4.tar.gz tmp/openspoor-0.2.5.tar.gz --markdown 20230509/o/openspoor/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-09 15:02:31] INFO root fetch - processPackages [pinuccio]: executing diffoscope
+[2023-05-09 15:02:31] INFO root fetch - processPackages [pinuccio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinuccio-0.0.8.tar.gz tmp/pinuccio-0.0.9.tar.gz --markdown 20230509/p/pinuccio/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 15:02:31] INFO root fetch - processPackages [lamindb]: executing diffoscope
+[2023-05-09 15:02:31] INFO root fetch - processPackages [lamindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb-0.9.4.tar.gz tmp/lamindb-0.9.6.tar.gz --markdown 20230509/l/lamindb/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-05-09 15:02:31] INFO root fetch - processPackages [pygoslin]: Downloading https://files.pythonhosted.org/packages/63/6c/57afd2bb3d2bb0814e1ea6b9f96a5d780a8f5be548d8d86745b168b1fe27/pygoslin-2.1.0-py3.8.egg
+[2023-05-09 15:02:31] INFO root fetch - processPackages [pygoslin]: executing diffoscope
+[2023-05-09 15:02:31] INFO root fetch - processPackages [pygoslin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygoslin-2.0.2.tar.gz tmp/pygoslin-2.1.0-py3.8.egg --markdown 20230509/p/pygoslin/2.0.2-2.1.0/diff.md --exclude *.pyd
+[2023-05-09 15:02:32] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-09 15:02:32] INFO root fetch - main [MainThread]: End processing [finnsult]: success
+[2023-05-09 15:02:32] INFO root fetch - main [MainThread]: End processing [pybeans]: success
+[2023-05-09 15:02:32] INFO root fetch - main [MainThread]: End processing [pinuccio]: success
+[2023-05-09 15:02:33] INFO root fetch - main [MainThread]: End processing [pygoslin]: success
+[2023-05-09 15:02:33] INFO root fetch - main [MainThread]: End processing [badgescale-ys-plt]: success
+[2023-05-09 15:02:33] INFO root fetch - main [MainThread]: End processing [openspoor]: success
+[2023-05-09 15:02:33] INFO root fetch - main [MainThread]: End processing [lamindb]: success
+[2023-05-09 15:02:35] INFO root fetch - main [MainThread]: End processing [aa-memberaudit]: success
+[2023-05-09 15:03:01] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
+[2023-05-09 15:03:01] INFO root fetch - main [MainThread]: Store serial: [18031924]
