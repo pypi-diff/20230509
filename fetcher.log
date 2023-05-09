@@ -15400,3 +15400,165 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 13:48:04] INFO root fetch - main [MainThread]: End processing [yang-vlp]: success
 [2023-05-09 13:48:07] INFO root fetch - main [MainThread]: End processing [iqrfpy]: success
 [2023-05-09 13:48:07] INFO root fetch - main [MainThread]: Store serial: [18031377]
+[2023-05-09 13:53:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031377]
+[2023-05-09 13:53:19] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyinterpolate
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autothread
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CreateAI
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spectacularAI
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: s3autocp
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GramGetter
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: git3Client
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyalslib
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: labnas
+[2023-05-09 13:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: CreateAI
+[2023-05-09 13:53:19] INFO root fetch - processPackages [CreateAI]: New version: [0.9.3] Old Version: [0.8.2]
+[2023-05-09 13:53:19] INFO root fetch - processPackages [labnas]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 13:53:19] INFO root fetch - processPackages [CreateAI]: New version: [0.9.3] Old Version: [0.8.2]
+[2023-05-09 13:53:19] INFO root fetch - processPackages [CreateAI]: executing diffoscope
+[2023-05-09 13:53:19] INFO root fetch - processPackages [CreateAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CreateAI-0.8.2.tar.gz tmp/CreateAI-0.9.3.tar.gz --markdown 20230509/C/CreateAI/0.8.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-09 13:53:19] INFO root fetch - processPackages [pyinterpolate]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-09 13:53:19] INFO root fetch - processPackages [autothread]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 13:53:19] WARNING root fetch - processPackages [s3autocp]: Skipping, unable to determine old version
+[2023-05-09 13:53:19] INFO root fetch - processPackages [labnas]: executing diffoscope
+[2023-05-09 13:53:19] INFO root fetch - processPackages [s3autocp]: Start processing: hiddifypanel
+[2023-05-09 13:53:19] INFO root fetch - main [MainThread]: End processing [s3autocp] error
+[2023-05-09 13:53:19] INFO root fetch - processPackages [labnas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labnas-0.1.2.tar.gz tmp/labnas-0.1.3.tar.gz --markdown 20230509/l/labnas/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 13:53:19] INFO root fetch - processPackages [CreateAI]: executing diffoscope
+[2023-05-09 13:53:19] WARNING root fetch - processPackages [GramGetter]: Skipping, unable to determine old version
+[2023-05-09 13:53:19] INFO root fetch - processPackages [CreateAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CreateAI-0.8.2.tar.gz tmp/CreateAI-0.9.3.tar.gz --markdown 20230509/C/CreateAI/0.8.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-09 13:53:19] INFO root fetch - processPackages [pyalslib]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-09 13:53:19] INFO root fetch - processPackages [GramGetter]: Start processing: zillionare-trader-client
+[2023-05-09 13:53:19] INFO root fetch - main [MainThread]: End processing [GramGetter] error
+[2023-05-09 13:53:19] INFO root fetch - processPackages [git3Client]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-09 13:53:19] INFO root fetch - processPackages [spectacularAI]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-09 13:53:19] INFO root fetch - processPackages [zillionare-trader-client]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-09 13:53:19] INFO root fetch - processPackages [autothread]: Downloading https://files.pythonhosted.org/packages/95/a5/0b8881991987d8050ebde7a8d8fa318760762f94fecf23789dc72240b394/autothread-0.0.8.tar.gz
+[2023-05-09 13:53:19] INFO root fetch - processPackages [git3Client]: Downloading https://files.pythonhosted.org/packages/2c/72/70fb03a1b17fc0dbe6dcae443e11d56f07bc35b4fada1f34c91e392b1c88/git3Client-0.2.5.tar.gz
+[2023-05-09 13:53:19] INFO root fetch - processPackages [pyalslib]: Downloading https://files.pythonhosted.org/packages/20/22/60bc0cc505447000fcb1445da1b398f972e584f7a2635db9d2ad5a8c8b15/pyalslib-1.0.1.tar.gz
+[2023-05-09 13:53:19] INFO root fetch - processPackages [spectacularAI]: Downloading https://files.pythonhosted.org/packages/07/34/c7075d79600a0fd2ad101fcb775ecf2d865ccddfd6ad278ca54351cc9e74/spectacularAI-1.8.0-cp39-cp39-win_amd64.whl
+[2023-05-09 13:53:19] INFO root fetch - processPackages [pyinterpolate]: Downloading https://files.pythonhosted.org/packages/ec/64/2b5a83b456e3776896d7faa0b04fd54ababaf19ece08372736ef4907c345/pyinterpolate-0.4.1.tar.gz
+[2023-05-09 13:53:19] INFO root fetch - processPackages [hiddifypanel]: New version: [6.5.4] Old Version: [6.5.3]
+[2023-05-09 13:53:19] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/40/45/80efa1babba2036d37fa32560a3c72214f21c0c35d7951c0b967064d2f8b/hiddifypanel-6.5.3-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-09 13:53:19] INFO root fetch - processPackages [autothread]: Downloading https://files.pythonhosted.org/packages/8a/4c/745a515b99910d103352c5ba8de4ff24f9f5b35d69154d9742eb39d5426e/autothread-0.0.9.tar.gz
+[2023-05-09 13:53:19] INFO root fetch - processPackages [pyalslib]: Downloading https://files.pythonhosted.org/packages/7b/20/5df24e49c8dbdfd2322b3881dd6e727c588c380ab55a387455d550c4b2d9/pyalslib-1.1.0.tar.gz
+[2023-05-09 13:53:19] INFO root fetch - processPackages [git3Client]: Downloading https://files.pythonhosted.org/packages/74/8d/f9c0513878e9a14c4ebbb3cd91e554b26ab3fb746e0044749f3a1fe9837a/git3Client-0.2.6.tar.gz
+[2023-05-09 13:53:19] INFO root fetch - processPackages [zillionare-trader-client]: Downloading https://files.pythonhosted.org/packages/1c/27/7ec7badbc63306e7acc9335780a7e5cc79ebf70174bbce80490acb5ad947/zillionare_trader_client-0.4.2.tar.gz
+[2023-05-09 13:53:19] INFO root fetch - processPackages [pyinterpolate]: Downloading https://files.pythonhosted.org/packages/e3/b6/0d601f58b1b3c1209c9c54102a30929d99a2175257e296406725986c0d2b/pyinterpolate-0.4.2.tar.gz
+[2023-05-09 13:53:20] INFO root fetch - processPackages [pyalslib]: executing diffoscope
+[2023-05-09 13:53:20] INFO root fetch - processPackages [pyalslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyalslib-1.0.1.tar.gz tmp/pyalslib-1.1.0.tar.gz --markdown 20230509/p/pyalslib/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 13:53:20] INFO root fetch - processPackages [git3Client]: executing diffoscope
+[2023-05-09 13:53:20] INFO root fetch - processPackages [git3Client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git3Client-0.2.5.tar.gz tmp/git3Client-0.2.6.tar.gz --markdown 20230509/g/git3Client/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-09 13:53:20] INFO root fetch - processPackages [autothread]: executing diffoscope
+[2023-05-09 13:53:20] INFO root fetch - processPackages [autothread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autothread-0.0.8.tar.gz tmp/autothread-0.0.9.tar.gz --markdown 20230509/a/autothread/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 13:53:20] INFO root fetch - processPackages [pyinterpolate]: executing diffoscope
+[2023-05-09 13:53:20] INFO root fetch - processPackages [pyinterpolate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinterpolate-0.4.1.tar.gz tmp/pyinterpolate-0.4.2.tar.gz --markdown 20230509/p/pyinterpolate/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-09 13:53:20] INFO root fetch - processPackages [zillionare-trader-client]: executing diffoscope
+[2023-05-09 13:53:20] INFO root fetch - processPackages [spectacularAI]: Downloading https://files.pythonhosted.org/packages/59/13/838f1080972e69faa65654d7a73522bc0b85755f60983a4088f2a8032ef4/spectacularAI-1.9.0-cp39-cp39-win_amd64.whl
+[2023-05-09 13:53:20] INFO root fetch - processPackages [zillionare-trader-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zillionare_trader_client-0.4.1.tar.gz tmp/zillionare_trader_client-0.4.2.tar.gz --markdown 20230509/z/zillionare-trader-client/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-09 13:53:20] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/85/d5/fe520b79462343a0766fec7d8d181b4e307f40f9226769012cb212cad3d3/hiddifypanel-6.5.4-cp39-cp39-manylinux2014_aarch64.whl
+[2023-05-09 13:53:20] INFO root fetch - main [MainThread]: End processing [CreateAI]: success
+[2023-05-09 13:53:20] INFO root fetch - main [MainThread]: End processing [labnas]: success
+[2023-05-09 13:53:20] INFO root fetch - main [MainThread]: End processing [CreateAI]: success
+[2023-05-09 13:53:20] INFO root fetch - processPackages [spectacularAI]: executing diffoscope
+[2023-05-09 13:53:20] INFO root fetch - processPackages [spectacularAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectacularAI-1.8.0-cp39-cp39-win_amd64.whl.zip tmp/spectacularAI-1.9.0-cp39-cp39-win_amd64.whl.zip --markdown 20230509/s/spectacularAI/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 13:53:21] INFO root fetch - main [MainThread]: End processing [autothread]: success
+[2023-05-09 13:53:21] INFO root fetch - main [MainThread]: End processing [pyalslib]: success
+[2023-05-09 13:53:21] INFO root fetch - main [MainThread]: End processing [git3Client]: success
+[2023-05-09 13:53:21] INFO root fetch - main [MainThread]: End processing [zillionare-trader-client]: success
+[2023-05-09 13:53:21] INFO root fetch - main [MainThread]: End processing [pyinterpolate]: success
+[2023-05-09 13:53:22] ERROR root fetch - processPackages [spectacularAI]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=139639251803488)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=139639386021376)
+
+[2023-05-09 13:53:22] INFO root fetch - main [MainThread]: End processing [spectacularAI] error
+[2023-05-09 13:53:22] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-09 13:53:22] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-6.5.3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-6.5.4-cp39-cp39-manylinux2014_aarch64.whl.zip --markdown 20230509/h/hiddifypanel/6.5.3-6.5.4/diff.md --exclude *.pyd
+[2023-05-09 13:53:37] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-09 13:53:37] INFO root fetch - main [MainThread]: Store serial: [18031429]
