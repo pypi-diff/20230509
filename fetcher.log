@@ -17570,3 +17570,154 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 16:04:41] INFO root fetch - main [MainThread]: End processing [zenoml]: success
 [2023-05-09 16:04:47] INFO root fetch - main [MainThread]: End processing [utilmy]: success
 [2023-05-09 16:04:47] INFO root fetch - main [MainThread]: Store serial: [18032704]
+[2023-05-09 16:09:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032704]
+[2023-05-09 16:09:58] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xfem
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-spark-gpt
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easy-mitk
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jobbergate-cli
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kstreams
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jobbergate-api
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jobbergate-core
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bloboluni
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: britive
+[2023-05-09 16:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: metaphor-models
+[2023-05-09 16:09:59] WARNING root fetch - processPackages [bloboluni]: Skipping, unable to determine old version
+[2023-05-09 16:09:59] INFO root fetch - processPackages [bloboluni]: Start processing: aws-codeseeder
+[2023-05-09 16:09:59] INFO root fetch - main [MainThread]: End processing [bloboluni] error
+[2023-05-09 16:09:59] INFO root fetch - processPackages [easy-mitk]: New version: [0.1.0rc1] Old Version: [0.0.2]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [xfem]: New version: [2.1.2301.post9.dev0] Old Version: [2.1.2301.post7.dev0]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-cli]: New version: [3.5.0a3] Old Version: [3.5.0a2]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-core]: New version: [3.5.0a3] Old Version: [3.5.0a2]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-api]: New version: [3.5.0a3] Old Version: [3.5.0a2]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [britive]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [aws-codeseeder]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [kstreams]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [metaphor-models]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 16:09:59] INFO root fetch - processPackages [aws-codeseeder]: Downloading https://files.pythonhosted.org/packages/c5/93/91008612424e73814de04397ae8f2e440e5161ee17e19dafabdcc3038ff3/aws_codeseeder-0.9.0-py3-none-any.whl
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-core]: Downloading https://files.pythonhosted.org/packages/0a/9d/fd6248cc4b12c9ad44f10757c76c6db3b160d55917bf3ee0c093c7912078/jobbergate-core-3.5.0a2.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-cli]: Downloading https://files.pythonhosted.org/packages/c1/22/e58fa7cb3de06bcd00ff9f895dd01db289408f46d79775d0b4a51f15728e/jobbergate-cli-3.5.0a2.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [britive]: Downloading https://files.pythonhosted.org/packages/ad/fe/09512cf25bfb5eebb803da0b5f76924c129c7ffe22d960be8db84a4705d5/britive-2.8.1.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [metaphor-models]: Downloading https://files.pythonhosted.org/packages/74/c8/861ac19e980a9e86a231d993a5edbbe8c2ed5a3c7ec8a0d0202fc8ec34c7/metaphor-models-0.9.0.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Downloading https://files.pythonhosted.org/packages/e0/57/2bd20a7f3d05a6c518fd821906393b88c426e897c83794ce580d97605a29/nonebot_plugin_spark_gpt-0.1.0.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-api]: Downloading https://files.pythonhosted.org/packages/22/3a/fb1f4a5990e355ba274e782e1691acb50eb9a1d2b64fe459a078040f4cb3/jobbergate-api-3.5.0a2.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [xfem]: executing diffoscope
+[2023-05-09 16:09:59] INFO root fetch - processPackages [xfem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xfem-2.1.2301.post7.dev0.tar.gz tmp/xfem-2.1.2301.post9.dev0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230509/x/xfem/2.1.2301.post7.dev0-2.1.2301.post9.dev0/diff.md --exclude *.pyd
+[2023-05-09 16:09:59] INFO root fetch - processPackages [easy-mitk]: Downloading https://files.pythonhosted.org/packages/27/27/f19b944394261b57168d26a6d2a281520f2afb3f3c142a0b164b097c32ee/easy_mitk-0.1.0rc1.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [easy-mitk]: executing diffoscope
+[2023-05-09 16:09:59] INFO root fetch - processPackages [easy-mitk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_mitk-0.0.2.tar.gz tmp/easy_mitk-0.1.0rc1.tar.gz --markdown 20230509/e/easy-mitk/0.0.2-0.1.0rc1/diff.md --exclude *.pyd
+[2023-05-09 16:09:59] INFO root fetch - processPackages [aws-codeseeder]: Downloading https://files.pythonhosted.org/packages/3c/96/908e1308e14c9c9a060af4d35ce3fa15d9d10a097e16844b0b51b3ee5d2f/aws_codeseeder-0.9.1-py3-none-any.whl
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-core]: Downloading https://files.pythonhosted.org/packages/c9/6f/23be3ccae30252ff73711aba7aad5e14d904532555d79175890e56191686/jobbergate_core-3.5.0a3.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-api]: Downloading https://files.pythonhosted.org/packages/f9/3c/c47c75d60a3cce8d385b51c48b28e17866fb5ca21900a73d54b8f913a523/jobbergate_api-3.5.0a3.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [kstreams]: executing diffoscope
+[2023-05-09 16:09:59] INFO root fetch - processPackages [kstreams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kstreams-0.9.0.tar.gz tmp/kstreams-0.9.1.tar.gz --markdown 20230509/k/kstreams/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-cli]: Downloading https://files.pythonhosted.org/packages/c3/20/bd59f56a7f196707eafea2c04ffb12f098fbf2f923bec65e671d6d9fd26f/jobbergate_cli-3.5.0a3.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [britive]: Downloading https://files.pythonhosted.org/packages/f5/b8/6056ab55919b8f38bd45f07c3be6ed61a97bc56f413f4e0e1e8ebb38e7c4/britive-2.9.0.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Downloading https://files.pythonhosted.org/packages/43/87/3742dbef58b987190f9eae665a9c1a21ac36b797fc9cc4a0edec9dc7b3f1/nonebot_plugin_spark_gpt-0.1.1.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-core]: executing diffoscope
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobbergate-core-3.5.0a2.tar.gz tmp/jobbergate_core-3.5.0a3.tar.gz --markdown 20230509/j/jobbergate-core/3.5.0a2-3.5.0a3/diff.md --exclude *.pyd
+[2023-05-09 16:09:59] INFO root fetch - processPackages [aws-codeseeder]: executing diffoscope
+[2023-05-09 16:09:59] INFO root fetch - processPackages [aws-codeseeder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_codeseeder-0.9.0-py3-none-any.whl.zip tmp/aws_codeseeder-0.9.1-py3-none-any.whl.zip --markdown 20230509/a/aws-codeseeder/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-api]: executing diffoscope
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobbergate-api-3.5.0a2.tar.gz tmp/jobbergate_api-3.5.0a3.tar.gz --markdown 20230509/j/jobbergate-api/3.5.0a2-3.5.0a3/diff.md --exclude *.pyd
+[2023-05-09 16:09:59] INFO root fetch - processPackages [metaphor-models]: Downloading https://files.pythonhosted.org/packages/56/65/21a7865fd28d1a8651af865fd1ef807e93d934f8e69bf168c4bd764821d7/metaphor-models-0.9.1.tar.gz
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-cli]: executing diffoscope
+[2023-05-09 16:09:59] INFO root fetch - processPackages [jobbergate-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobbergate-cli-3.5.0a2.tar.gz tmp/jobbergate_cli-3.5.0a3.tar.gz --markdown 20230509/j/jobbergate-cli/3.5.0a2-3.5.0a3/diff.md --exclude *.pyd
+[2023-05-09 16:09:59] INFO root fetch - processPackages [britive]: executing diffoscope
+[2023-05-09 16:09:59] INFO root fetch - processPackages [britive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/britive-2.8.1.tar.gz tmp/britive-2.9.0.tar.gz --markdown 20230509/b/britive/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-05-09 16:09:59] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: executing diffoscope
+[2023-05-09 16:09:59] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_spark_gpt-0.1.0.tar.gz tmp/nonebot_plugin_spark_gpt-0.1.1.tar.gz --markdown 20230509/n/nonebot-plugin-spark-gpt/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 16:10:00] INFO root fetch - processPackages [metaphor-models]: executing diffoscope
+[2023-05-09 16:10:00] INFO root fetch - processPackages [metaphor-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaphor-models-0.9.0.tar.gz tmp/metaphor-models-0.9.1.tar.gz --markdown 20230509/m/metaphor-models/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 16:10:00] ERROR root fetch - processPackages [jobbergate-cli]: Diffoscope failed: Error: error creating container storage: the container name "interesting_antonelli" is already in use by "03c76ee9e3d4433fc7bdaffb3c9a91b7192704e6024f1a92d3dac4a935474f5b". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-09 16:10:00] INFO root fetch - processPackages [jobbergate-cli]: Start processing: matcha-ml
+[2023-05-09 16:10:00] INFO root fetch - main [MainThread]: End processing [jobbergate-cli] error
+[2023-05-09 16:10:00] WARNING root fetch - processPackages [matcha-ml]: Skipping, unable to determine old version
+[2023-05-09 16:10:00] INFO root fetch - processPackages [matcha-ml]: Start processing: authzed
+[2023-05-09 16:10:00] INFO root fetch - main [MainThread]: End processing [matcha-ml] error
+[2023-05-09 16:10:00] INFO root fetch - processPackages [authzed]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 16:10:00] INFO root fetch - processPackages [authzed]: Downloading https://files.pythonhosted.org/packages/a2/d0/94c8d943d290aa807b016eaa79bbef7e9882de4ecb7d406ef8592641f20d/authzed-0.8.0.tar.gz
+[2023-05-09 16:10:00] INFO root fetch - processPackages [authzed]: Downloading https://files.pythonhosted.org/packages/fd/9c/82068582253699442788bd6f99de92d358f6bd84abda9f0ef10e86f54ac4/authzed-0.9.0.tar.gz
+[2023-05-09 16:10:00] INFO root fetch - processPackages [authzed]: executing diffoscope
+[2023-05-09 16:10:00] INFO root fetch - processPackages [authzed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authzed-0.8.0.tar.gz tmp/authzed-0.9.0.tar.gz --markdown 20230509/a/authzed/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 16:10:01] INFO root fetch - processPackages [jobbergate-core]: Start processing: cog-airflow-notify-sns
+[2023-05-09 16:10:01] INFO root fetch - main [MainThread]: End processing [jobbergate-core]: success
+[2023-05-09 16:10:01] INFO root fetch - processPackages [easy-mitk]: Start processing: djungle-rulesengine-client
+[2023-05-09 16:10:01] INFO root fetch - main [MainThread]: End processing [easy-mitk]: success
+[2023-05-09 16:10:01] INFO root fetch - processPackages [cog-airflow-notify-sns]: New version: [1.0.2] Old Version: [0.0.1]
+[2023-05-09 16:10:01] INFO root fetch - processPackages [cog-airflow-notify-sns]: executing diffoscope
+[2023-05-09 16:10:01] INFO root fetch - processPackages [cog-airflow-notify-sns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cog-airflow-notify-sns-0.0.1.tar.gz tmp/cog-airflow-notify-sns-1.0.2.tar.gz --markdown 20230509/c/cog-airflow-notify-sns/0.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-09 16:10:01] INFO root fetch - processPackages [djungle-rulesengine-client]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-09 16:10:01] INFO root fetch - processPackages [aws-codeseeder]: Start processing: KeyboardPaster
+[2023-05-09 16:10:01] INFO root fetch - main [MainThread]: End processing [aws-codeseeder]: success
+[2023-05-09 16:10:01] INFO root fetch - processPackages [KeyboardPaster]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 16:10:01] INFO root fetch - processPackages [djungle-rulesengine-client]: Downloading https://files.pythonhosted.org/packages/f4/46/007a7b96863a4bcbbe7be94052f845ca1d45111ba6e205c3fe483451afa2/djungle-rulesengine-client-0.3.0.tar.gz
+[2023-05-09 16:10:01] INFO root fetch - processPackages [KeyboardPaster]: Downloading https://files.pythonhosted.org/packages/11/37/c6391593faca7efd3a20cda2799dad473f0ee1adfb344b6da6a3b6de750f/KeyboardPaster-0.1.5.tar.gz
+[2023-05-09 16:10:01] INFO root fetch - processPackages [djungle-rulesengine-client]: executing diffoscope
+[2023-05-09 16:10:01] INFO root fetch - processPackages [djungle-rulesengine-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djungle-rulesengine-client-0.2.0.tar.gz tmp/djungle-rulesengine-client-0.3.0.tar.gz --markdown 20230509/d/djungle-rulesengine-client/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 16:10:01] INFO root fetch - processPackages [kstreams]: Start processing: splight-cli
+[2023-05-09 16:10:01] INFO root fetch - main [MainThread]: End processing [kstreams]: success
+[2023-05-09 16:10:01] INFO root fetch - processPackages [KeyboardPaster]: executing diffoscope
+[2023-05-09 16:10:01] INFO root fetch - processPackages [KeyboardPaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KeyboardPaster-0.1.4.tar.gz tmp/KeyboardPaster-0.1.5.tar.gz --markdown 20230509/K/KeyboardPaster/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 16:10:01] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-09 16:10:01] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-05-09 16:10:01] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230509/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-09 16:10:02] INFO root fetch - processPackages [metaphor-models]: Start processing: certora-cli-alpha-uri-eradicate-certora-dir
+[2023-05-09 16:10:02] INFO root fetch - main [MainThread]: End processing [metaphor-models]: success
+[2023-05-09 16:10:02] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: New version: [20230509.12.41.395294] Old Version: [20230509.11.19.447387]
+[2023-05-09 16:10:02] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Downloading https://files.pythonhosted.org/packages/f1/c3/247ef7f44f1e0e7d2f94406a52a2886b647525dd9fe590fde54c2b9922b8/certora-cli-alpha-uri-eradicate_certora_dir-20230509.11.19.447387.tar.gz
+[2023-05-09 16:10:02] WARNING root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Skipping package: exceeds size limit 38474181>=10485760
+[2023-05-09 16:10:02] INFO root fetch - processPackages [certora-cli-alpha-uri-eradicate-certora-dir]: Start processing: certora-cli-alpha-eyalf-improve-isCopyLoop
+[2023-05-09 16:10:02] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-uri-eradicate-certora-dir] error
+[2023-05-09 16:10:02] INFO root fetch - processPackages [authzed]: Start processing: cfrainbow
+[2023-05-09 16:10:02] INFO root fetch - main [MainThread]: End processing [authzed]: success
+[2023-05-09 16:10:02] INFO root fetch - processPackages [cog-airflow-notify-sns]: Start processing: pyarmor.cli
+[2023-05-09 16:10:02] INFO root fetch - main [MainThread]: End processing [cog-airflow-notify-sns]: success
+[2023-05-09 16:10:02] WARNING root fetch - processPackages [certora-cli-alpha-eyalf-improve-isCopyLoop]: Skipping, unable to determine old version
+[2023-05-09 16:10:02] INFO root fetch - processPackages [certora-cli-alpha-eyalf-improve-isCopyLoop]: Start processing: pyarmor.cli.core
+[2023-05-09 16:10:02] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eyalf-improve-isCopyLoop] error
+[2023-05-09 16:10:02] WARNING root fetch - processPackages [cfrainbow]: Skipping, unable to determine old version
+[2023-05-09 16:10:02] INFO root fetch - processPackages [cfrainbow]: Start processing: garatool
+[2023-05-09 16:10:02] INFO root fetch - main [MainThread]: End processing [cfrainbow] error
+[2023-05-09 16:10:02] INFO root fetch - processPackages [pyarmor.cli]: New version: [8.2.dev2] Old Version: [8.2.dev1]
+[2023-05-09 16:10:02] INFO root fetch - processPackages [garatool]: New version: [0.1683641371.0] Old Version: [0.1683641352.0]
+[2023-05-09 16:10:02] INFO root fetch - processPackages [britive]: Start processing: garatool
+[2023-05-09 16:10:02] INFO root fetch - main [MainThread]: End processing [britive]: success
+[2023-05-09 16:10:02] INFO root fetch - processPackages [pyarmor.cli]: Downloading https://files.pythonhosted.org/packages/16/a5/4072c136091c636b41e19e77997027cd60aa089a9015d15962c9a043e5f8/pyarmor.cli-8.2.dev1-py2.py3-none-any.whl
+[2023-05-09 16:10:02] INFO root fetch - processPackages [garatool]: New version: [0.1683641371.0] Old Version: [0.1683641352.0]
+[2023-05-09 16:10:02] INFO root fetch - processPackages [pyarmor.cli.core]: New version: [3.2.dev2] Old Version: [3.2.dev1]
+[2023-05-09 16:10:02] INFO root fetch - processPackages [jobbergate-api]: Start processing: tiledb-cloud
+[2023-05-09 16:10:02] INFO root fetch - main [MainThread]: End processing [jobbergate-api]: success
+[2023-05-09 16:10:02] INFO root fetch - main [MainThread]: End processing [djungle-rulesengine-client]: success
+[2023-05-09 16:10:03] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/b3/41/263e2347504e3f8dc56667ace627edea6e845a35ab43515ca6871ba787a4/garatool-0.1683641352.0.tar.gz
+[2023-05-09 16:10:03] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/b3/41/263e2347504e3f8dc56667ace627edea6e845a35ab43515ca6871ba787a4/garatool-0.1683641352.0.tar.gz
+[2023-05-09 16:10:03] INFO root fetch - main [MainThread]: End processing [KeyboardPaster]: success
+[2023-05-09 16:10:03] INFO root fetch - processPackages [tiledb-cloud]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-09 16:10:03] INFO root fetch - processPackages [pyarmor.cli.core]: Downloading https://files.pythonhosted.org/packages/48/21/f309e3e6a66c267acb350a388359fa9cf280f6e75c917b4f765a9b99881e/pyarmor.cli.core-3.2.dev1-cp39-none-win_amd64.whl
+[2023-05-09 16:10:03] INFO root fetch - processPackages [tiledb-cloud]: Downloading https://files.pythonhosted.org/packages/4d/e2/38ce15b3fcb2200474c3f28f12ab07f8fedb6d754ec30860278cc1b550fd/tiledb_cloud-0.9.4-py3-none-any.whl
+[2023-05-09 16:10:03] INFO root fetch - processPackages [pyarmor.cli]: Downloading https://files.pythonhosted.org/packages/58/d6/ac109f3c3337cabe88f01410b858a2020a8f962d90fff6c3cb4d659dab24/pyarmor.cli-8.2.dev2-py2.py3-none-any.whl
+[2023-05-09 16:10:03] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/f2/06/7c93cb7543a101364d5241787838a9a480f19e303d9814052a1434ef0858/garatool-0.1683641371.0.tar.gz
+[2023-05-09 16:10:03] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/f2/06/7c93cb7543a101364d5241787838a9a480f19e303d9814052a1434ef0858/garatool-0.1683641371.0.tar.gz
+[2023-05-09 16:10:03] INFO root fetch - processPackages [pyarmor.cli.core]: Downloading https://files.pythonhosted.org/packages/fd/1a/f6bf6d3f325ce7a27ea433aee7c098a8d878b83307538ce49c7ef9c1c891/pyarmor.cli.core-3.2.dev2-cp39-none-win_amd64.whl
+[2023-05-09 16:10:03] INFO root fetch - processPackages [pyarmor.cli]: executing diffoscope
+[2023-05-09 16:10:03] INFO root fetch - processPackages [pyarmor.cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli-8.2.dev1-py2.py3-none-any.whl.zip tmp/pyarmor.cli-8.2.dev2-py2.py3-none-any.whl.zip --markdown 20230509/p/pyarmor.cli/8.2.dev1-8.2.dev2/diff.md --exclude *.pyd
+[2023-05-09 16:10:03] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 16:10:03] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683641352.0.tar.gz tmp/garatool-0.1683641371.0.tar.gz --markdown 20230509/g/garatool/0.1683641352.0-0.1683641371.0/diff.md --exclude *.pyd
+[2023-05-09 16:10:03] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-09 16:10:03] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683641352.0.tar.gz tmp/garatool-0.1683641371.0.tar.gz --markdown 20230509/g/garatool/0.1683641352.0-0.1683641371.0/diff.md --exclude *.pyd
+[2023-05-09 16:10:03] INFO root fetch - processPackages [tiledb-cloud]: Downloading https://files.pythonhosted.org/packages/aa/55/f0fcd5db15793f389dfd3c37e59718e290812cc782a170f0e8e71ed01c95/tiledb_cloud-0.9.5-py3-none-any.whl
+[2023-05-09 16:10:03] INFO root fetch - processPackages [pyarmor.cli.core]: executing diffoscope
+[2023-05-09 16:10:03] INFO root fetch - processPackages [pyarmor.cli.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core-3.2.dev1-cp39-none-win_amd64.whl.zip tmp/pyarmor.cli.core-3.2.dev2-cp39-none-win_amd64.whl.zip --markdown 20230509/p/pyarmor.cli.core/3.2.dev1-3.2.dev2/diff.md --exclude *.pyd
+[2023-05-09 16:10:03] INFO root fetch - main [MainThread]: End processing [xfem]: success
+[2023-05-09 16:10:03] INFO root fetch - processPackages [tiledb-cloud]: executing diffoscope
+[2023-05-09 16:10:03] INFO root fetch - processPackages [tiledb-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiledb_cloud-0.9.4-py3-none-any.whl.zip tmp/tiledb_cloud-0.9.5-py3-none-any.whl.zip --markdown 20230509/t/tiledb-cloud/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-09 16:10:04] INFO root fetch - main [MainThread]: End processing [splight-cli]: success
+[2023-05-09 16:10:04] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-spark-gpt]: success
+[2023-05-09 16:10:04] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 16:10:04] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-09 16:10:04] INFO root fetch - main [MainThread]: End processing [pyarmor.cli]: success
+[2023-05-09 16:10:11] INFO root fetch - main [MainThread]: End processing [tiledb-cloud]: success
+[2023-05-09 16:10:35] INFO root fetch - main [MainThread]: End processing [pyarmor.cli.core]: success
+[2023-05-09 16:10:35] INFO root fetch - main [MainThread]: Store serial: [18032798]
