@@ -18975,3 +18975,178 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 17:07:13] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
 [2023-05-09 17:07:16] INFO root fetch - main [MainThread]: End processing [whisper-cpp-python]: success
 [2023-05-09 17:07:16] INFO root fetch - main [MainThread]: Store serial: [18033661]
+[2023-05-09 17:12:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18033661]
+[2023-05-09 17:12:25] INFO root fetch - main [MainThread]: Found 29 changed packages
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robusta-cli
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: subsonic-connector
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ifd-python
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybrook
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simsopt
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mlrun
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyHarshit
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Geode-Explicit
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dataquality
+[2023-05-09 17:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: LbNightlyTools
+[2023-05-09 17:12:25] INFO root fetch - processPackages [pybrook]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 17:12:25] INFO root fetch - processPackages [subsonic-connector]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-09 17:12:26] INFO root fetch - processPackages [robusta-cli]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-09 17:12:26] INFO root fetch - processPackages [PyHarshit]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 17:12:26] INFO root fetch - processPackages [Geode-Explicit]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-05-09 17:12:26] INFO root fetch - processPackages [simsopt]: New version: [0.9.4] Old Version: [0.9.2]
+[2023-05-09 17:12:26] INFO root fetch - processPackages [LbNightlyTools]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-09 17:12:26] INFO root fetch - processPackages [mlrun]: New version: [1.4.0rc2] Old Version: [1.4.0rc1]
+[2023-05-09 17:12:26] INFO root fetch - processPackages [dataquality]: New version: [0.9.1a3] Old Version: [0.9.1a2]
+[2023-05-09 17:12:26] WARNING root fetch - processPackages [ifd-python]: Skipping, unable to determine old version
+[2023-05-09 17:12:26] INFO root fetch - processPackages [ifd-python]: Start processing: pyopencl
+[2023-05-09 17:12:26] INFO root fetch - main [MainThread]: End processing [ifd-python] error
+[2023-05-09 17:12:26] INFO root fetch - processPackages [robusta-cli]: executing diffoscope
+[2023-05-09 17:12:26] INFO root fetch - processPackages [robusta-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robusta-cli-0.9.7.tar.gz tmp/robusta-cli-0.9.9.tar.gz --markdown 20230509/r/robusta-cli/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pyopencl]: New version: [2023.1] Old Version: [2022.3.1]
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pybrook]: Downloading https://files.pythonhosted.org/packages/63/6c/145bfc82022ce5abffbd11e95c2e9aee6dc9062856ead6d092262ad98ee9/pybrook-0.1.5.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [dataquality]: Downloading https://files.pythonhosted.org/packages/ad/b4/d2c530199f37701365937fc02ae854c2c72383738acc69836a7436ad92e7/dataquality-0.9.1a2.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [PyHarshit]: Downloading https://files.pythonhosted.org/packages/29/b0/86997e37f9e8569c692371fe7e54f3f1c5b104feb0d106aecbaf333cde06/PyHarshit-0.0.3.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [Geode-Explicit]: Downloading https://files.pythonhosted.org/packages/fd/75/290d40a8bd2aeec3881ea5497afd106fcb86d062858426a7f6ac720a2644/Geode_Explicit-3.0.3-cp39-cp39-win_amd64.whl
+[2023-05-09 17:12:26] INFO root fetch - processPackages [subsonic-connector]: Downloading https://files.pythonhosted.org/packages/62/c3/d7e967847031d71c9ff4b684e65ba838cea50eb70ebf0a8283f15ee04357/subsonic_connector-0.1.8.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/7e/c1/fe1746b171761863039fff40ca75077bb645e73b97462dae70f103edfadc/mlrun-1.4.0rc1-py3-none-any.whl
+[2023-05-09 17:12:26] INFO root fetch - processPackages [simsopt]: Downloading https://files.pythonhosted.org/packages/95/7b/6c611a204e5830f53556a4d39344658f3f9b1cad1d01cc1af66111cb3f7f/simsopt-0.9.2.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [LbNightlyTools]: Downloading https://files.pythonhosted.org/packages/e8/b5/a810fde1a1a3f9b6b9cea7023cf753b77b967e53d829831c8eb6597d37ad/LbNightlyTools-3.0.8.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [PyHarshit]: executing diffoscope
+[2023-05-09 17:12:26] INFO root fetch - processPackages [PyHarshit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyHarshit-0.0.2.tar.gz tmp/PyHarshit-0.0.3.tar.gz --markdown 20230509/P/PyHarshit/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pybrook]: executing diffoscope
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pybrook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrook-0.1.4.tar.gz tmp/pybrook-0.1.5.tar.gz --markdown 20230509/p/pybrook/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pyopencl]: Downloading https://files.pythonhosted.org/packages/dd/4c/7f60601cb3e55d21cff151da2121d7d19e8f9f69e3519dc8fca2593668b2/pyopencl-2022.3.1.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [dataquality]: Downloading https://files.pythonhosted.org/packages/87/d8/61d1a4a3be7f0f503ea2fcf3fbd6adddcac57d7852d21d3dbb4f1e675b4c/dataquality-0.9.1a3.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pyopencl]: Downloading https://files.pythonhosted.org/packages/63/1e/512d84caeea127b03730b4028147491ef1b49a8526f246c4cbff61f21b9e/pyopencl-2023.1.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [Geode-Explicit]: Downloading https://files.pythonhosted.org/packages/4b/58/1a33e9a74856882bd790d8c2ab9fdc98444442561d6da4871b5416e4305d/Geode_Explicit-3.0.4-cp39-cp39-win_amd64.whl
+[2023-05-09 17:12:26] INFO root fetch - processPackages [dataquality]: executing diffoscope
+[2023-05-09 17:12:26] INFO root fetch - processPackages [dataquality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataquality-0.9.1a2.tar.gz tmp/dataquality-0.9.1a3.tar.gz --markdown 20230509/d/dataquality/0.9.1a2-0.9.1a3/diff.md --exclude *.pyd
+[2023-05-09 17:12:26] INFO root fetch - processPackages [subsonic-connector]: Downloading https://files.pythonhosted.org/packages/03/f4/6d165d761196dedf218646d3c156f5c0e28a005d8a41d2e573abd6b34728/subsonic_connector-0.1.9.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/23/7d/4c1353c3a8ebabe529ae40757447c6612aeed08fddca315e5e68f43ddbba/mlrun-1.4.0rc2-py3-none-any.whl
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pyopencl]: executing diffoscope
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pyopencl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopencl-2022.3.1.tar.gz tmp/pyopencl-2023.1.tar.gz --markdown 20230509/p/pyopencl/2022.3.1-2023.1/diff.md --exclude *.pyd
+[2023-05-09 17:12:26] INFO root fetch - processPackages [Geode-Explicit]: executing diffoscope
+[2023-05-09 17:12:26] INFO root fetch - processPackages [Geode-Explicit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Explicit-3.0.3-cp39-cp39-win_amd64.whl.zip tmp/Geode_Explicit-3.0.4-cp39-cp39-win_amd64.whl.zip --markdown 20230509/G/Geode-Explicit/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-05-09 17:12:26] WARNING root fetch - processPackages [simsopt]: Skipping package: exceeds size limit 29878827>=10485760
+[2023-05-09 17:12:26] INFO root fetch - processPackages [simsopt]: Start processing: pepperize.cdk-security-group
+[2023-05-09 17:12:26] INFO root fetch - main [MainThread]: End processing [simsopt] error
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pepperize.cdk-security-group]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 17:12:26] INFO root fetch - processPackages [LbNightlyTools]: Downloading https://files.pythonhosted.org/packages/51/fa/9c92013dcb7178b558b9f90d6b89df82070caf9d26a963eb71ddf4899f17/LbNightlyTools-3.0.9.tar.gz
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pepperize.cdk-security-group]: executing diffoscope
+[2023-05-09 17:12:26] INFO root fetch - processPackages [pepperize.cdk-security-group]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-security-group-0.0.98.tar.gz tmp/pepperize.cdk-security-group-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-security-group/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 17:12:26] INFO root fetch - processPackages [mlrun]: executing diffoscope
+[2023-05-09 17:12:26] INFO root fetch - processPackages [mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun-1.4.0rc1-py3-none-any.whl.zip tmp/mlrun-1.4.0rc2-py3-none-any.whl.zip --markdown 20230509/m/mlrun/1.4.0rc1-1.4.0rc2/diff.md --exclude *.pyd
+[2023-05-09 17:12:27] INFO root fetch - processPackages [subsonic-connector]: executing diffoscope
+[2023-05-09 17:12:27] INFO root fetch - processPackages [subsonic-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subsonic_connector-0.1.8.tar.gz tmp/subsonic_connector-0.1.9.tar.gz --markdown 20230509/s/subsonic-connector/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 17:12:27] INFO root fetch - processPackages [LbNightlyTools]: executing diffoscope
+[2023-05-09 17:12:27] INFO root fetch - processPackages [LbNightlyTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LbNightlyTools-3.0.8.tar.gz tmp/LbNightlyTools-3.0.9.tar.gz --markdown 20230509/L/LbNightlyTools/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-09 17:12:27] INFO root fetch - processPackages [PyHarshit]: Start processing: certora-cli-alpha-master
+[2023-05-09 17:12:27] INFO root fetch - main [MainThread]: End processing [PyHarshit]: success
+[2023-05-09 17:12:27] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230509.9.27.572322] Old Version: [20230509.15.9.669451]
+[2023-05-09 17:12:27] INFO root fetch - processPackages [pybrook]: Start processing: biom-format
+[2023-05-09 17:12:27] INFO root fetch - main [MainThread]: End processing [pybrook]: success
+[2023-05-09 17:12:27] INFO root fetch - processPackages [biom-format]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-09 17:12:27] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/5e/ad/a9c060f39c2b6829f9483037fb10c14cf06f77ae868b2d8251f5a3bdbcdb/certora-cli-alpha-master-20230509.15.9.669451.tar.gz
+[2023-05-09 17:12:27] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39213246>=10485760
+[2023-05-09 17:12:27] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: basic-math-operations
+[2023-05-09 17:12:27] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-09 17:12:27] INFO root fetch - processPackages [basic-math-operations]: New version: [1.0.160] Old Version: [1.0.159]
+[2023-05-09 17:12:28] INFO root fetch - processPackages [biom-format]: Downloading https://files.pythonhosted.org/packages/c1/c6/3b4284680b390a6c0a39de2fddddfe19a28d1bdceb5951713c483c147f44/biom-format-2.1.8-1.tar.gz
+[2023-05-09 17:12:28] WARNING root fetch - processPackages [biom-format]: Skipping package: exceeds size limit 11673785>=10485760
+[2023-05-09 17:12:28] INFO root fetch - processPackages [biom-format]: Start processing: ezcharts
+[2023-05-09 17:12:28] INFO root fetch - main [MainThread]: End processing [biom-format] error
+[2023-05-09 17:12:28] INFO root fetch - processPackages [ezcharts]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-09 17:12:28] INFO root fetch - processPackages [subsonic-connector]: Start processing: surquest-utils-config-formatter
+[2023-05-09 17:12:28] INFO root fetch - main [MainThread]: End processing [subsonic-connector]: success
+[2023-05-09 17:12:28] INFO root fetch - processPackages [basic-math-operations]: Downloading https://files.pythonhosted.org/packages/e0/90/33f4d19defcf3cf801e1599f66a2ae239af916fcf90bbd7b1618779ae7d8/basic_math_operations-1.0.160.tar.gz
+[2023-05-09 17:12:28] INFO root fetch - processPackages [surquest-utils-config-formatter]: New version: [0.0.2] Old Version: [0.0.1rc4]
+[2023-05-09 17:12:28] INFO root fetch - processPackages [ezcharts]: Downloading https://files.pythonhosted.org/packages/7c/5c/cde3ab81a866320d0c6ae32cdf8fe449181b6d84cb6ead61a4725a91bd8a/ezcharts-0.3.6.tar.gz
+[2023-05-09 17:12:28] INFO root fetch - processPackages [basic-math-operations]: executing diffoscope
+[2023-05-09 17:12:28] INFO root fetch - processPackages [basic-math-operations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basic_math_operations-1.0.159.tar.gz tmp/basic_math_operations-1.0.160.tar.gz --markdown 20230509/b/basic-math-operations/1.0.159-1.0.160/diff.md --exclude *.pyd
+[2023-05-09 17:12:28] INFO root fetch - processPackages [pepperize.cdk-security-group]: Start processing: blindschleiche
+[2023-05-09 17:12:28] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-security-group]: success
+[2023-05-09 17:12:28] INFO root fetch - processPackages [surquest-utils-config-formatter]: Downloading https://files.pythonhosted.org/packages/f7/01/62e0b71172f10eacd0bf8e887652df15ce5da1fc3883d5bbfad26620b44f/surquest_utils_config_formatter-0.0.1rc4.tar.gz
+[2023-05-09 17:12:28] INFO root fetch - processPackages [blindschleiche]: New version: [0.1.9] Old Version: [0.1.7]
+[2023-05-09 17:12:28] INFO root fetch - processPackages [ezcharts]: Downloading https://files.pythonhosted.org/packages/8a/99/bd8b9eca8dcb112dc6d5c28f0c2576a5403fb633356c5dd6728f235659d6/ezcharts-0.3.7.tar.gz
+[2023-05-09 17:12:28] INFO root fetch - processPackages [blindschleiche]: Downloading https://files.pythonhosted.org/packages/2b/25/9b31a07cbd59e1bc4742647f53231253bf8941542e36ee4e44798a1d1310/blindschleiche-0.1.7.tar.gz
+[2023-05-09 17:12:28] INFO root fetch - processPackages [surquest-utils-config-formatter]: Downloading https://files.pythonhosted.org/packages/42/2e/f0faaae2aa2f771ee8de12eb8d6c6ea0cd9b0b1f6ff464a1e76adf2f4cf4/surquest_utils_config_formatter-0.0.2.tar.gz
+[2023-05-09 17:12:29] INFO root fetch - processPackages [surquest-utils-config-formatter]: executing diffoscope
+[2023-05-09 17:12:29] INFO root fetch - processPackages [surquest-utils-config-formatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surquest_utils_config_formatter-0.0.1rc4.tar.gz tmp/surquest_utils_config_formatter-0.0.2.tar.gz --markdown 20230509/s/surquest-utils-config-formatter/0.0.1rc4-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 17:12:29] INFO root fetch - processPackages [blindschleiche]: Downloading https://files.pythonhosted.org/packages/ed/03/8007bb112d8667eb68c48f1d60f95be6395021661110b16ac3963127fc99/blindschleiche-0.1.9.tar.gz
+[2023-05-09 17:12:29] INFO root fetch - processPackages [ezcharts]: executing diffoscope
+[2023-05-09 17:12:29] INFO root fetch - processPackages [ezcharts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezcharts-0.3.6.tar.gz tmp/ezcharts-0.3.7.tar.gz --markdown 20230509/e/ezcharts/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-09 17:12:29] INFO root fetch - processPackages [blindschleiche]: executing diffoscope
+[2023-05-09 17:12:29] INFO root fetch - processPackages [blindschleiche]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blindschleiche-0.1.7.tar.gz tmp/blindschleiche-0.1.9.tar.gz --markdown 20230509/b/blindschleiche/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2023-05-09 17:12:29] INFO root fetch - processPackages [pyopencl]: Start processing: sports2d
+[2023-05-09 17:12:29] INFO root fetch - main [MainThread]: End processing [pyopencl]: success
+[2023-05-09 17:12:29] INFO root fetch - processPackages [sports2d]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-09 17:12:29] INFO root fetch - processPackages [sports2d]: Downloading https://files.pythonhosted.org/packages/da/91/ec5b1d78f49eae19382e0009112eb4c1baa4afd965e94771b682fd596c0e/sports2d-0.1.0.tar.gz
+[2023-05-09 17:12:30] INFO root fetch - processPackages [basic-math-operations]: Start processing: dkist-processing-common
+[2023-05-09 17:12:30] INFO root fetch - main [MainThread]: End processing [basic-math-operations]: success
+[2023-05-09 17:12:30] INFO root fetch - processPackages [dkist-processing-common]: New version: [2.6.1rc2] Old Version: [2.6.1rc1]
+[2023-05-09 17:12:30] INFO root fetch - processPackages [sports2d]: executing diffoscope
+[2023-05-09 17:12:30] INFO root fetch - processPackages [sports2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sports2d-0.0.9.tar.gz tmp/sports2d-0.1.0.tar.gz --markdown 20230509/s/sports2d/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 17:12:30] INFO root fetch - processPackages [robusta-cli]: Start processing: mythic-container
+[2023-05-09 17:12:30] INFO root fetch - main [MainThread]: End processing [robusta-cli]: success
+[2023-05-09 17:12:30] INFO root fetch - processPackages [mythic-container]: New version: [0.2.6rc2] Old Version: [0.2.6rc1]
+[2023-05-09 17:12:30] INFO root fetch - processPackages [dkist-processing-common]: Downloading https://files.pythonhosted.org/packages/6e/5e/223692405a7cc6fb0b0542e4bd4254ed2f880d8a190889bc90af4f9a5dfa/dkist-processing-common-2.6.1rc2.tar.gz
+[2023-05-09 17:12:30] INFO root fetch - processPackages [mythic-container]: executing diffoscope
+[2023-05-09 17:12:30] INFO root fetch - processPackages [mythic-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mythic_container-0.2.6rc1.tar.gz tmp/mythic_container-0.2.6rc2.tar.gz --markdown 20230509/m/mythic-container/0.2.6rc1-0.2.6rc2/diff.md --exclude *.pyd
+[2023-05-09 17:12:30] INFO root fetch - processPackages [dkist-processing-common]: executing diffoscope
+[2023-05-09 17:12:30] INFO root fetch - processPackages [dkist-processing-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-processing-common-2.6.1rc1.tar.gz tmp/dkist-processing-common-2.6.1rc2.tar.gz --markdown 20230509/d/dkist-processing-common/2.6.1rc1-2.6.1rc2/diff.md --exclude *.pyd
+[2023-05-09 17:12:30] INFO root fetch - processPackages [surquest-utils-config-formatter]: Start processing: semsimian
+[2023-05-09 17:12:30] INFO root fetch - main [MainThread]: End processing [surquest-utils-config-formatter]: success
+[2023-05-09 17:12:30] INFO root fetch - processPackages [dataquality]: Start processing: netbox-config-backup
+[2023-05-09 17:12:30] INFO root fetch - main [MainThread]: End processing [dataquality]: success
+[2023-05-09 17:12:30] WARNING root fetch - processPackages [semsimian]: Skipping, unable to determine old version
+[2023-05-09 17:12:30] INFO root fetch - processPackages [semsimian]: Start processing: flatbuffers
+[2023-05-09 17:12:30] INFO root fetch - main [MainThread]: End processing [semsimian] error
+[2023-05-09 17:12:30] INFO root fetch - processPackages [netbox-config-backup]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-05-09 17:12:30] INFO root fetch - processPackages [flatbuffers]: New version: [23.3.3] Old Version: [23.1.4]
+[2023-05-09 17:12:30] INFO root fetch - processPackages [netbox-config-backup]: Downloading https://files.pythonhosted.org/packages/b4/8c/d4e54dcc56113ad62c1ec46637afa7a44f99b456a92a31b83a35c12e6c79/netbox_config_backup-1.4.3.tar.gz
+[2023-05-09 17:12:30] INFO root fetch - processPackages [flatbuffers]: Downloading https://files.pythonhosted.org/packages/5b/ae/97f2f884adf449867cd40fac069a7a62e4812fad4156a0a3cbc2c582c7b5/flatbuffers-23.1.4.tar.gz
+[2023-05-09 17:12:30] INFO root fetch - processPackages [netbox-config-backup]: executing diffoscope
+[2023-05-09 17:12:30] INFO root fetch - processPackages [netbox-config-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox_config_backup-1.4.2.tar.gz tmp/netbox_config_backup-1.4.3.tar.gz --markdown 20230509/n/netbox-config-backup/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-05-09 17:12:30] INFO root fetch - processPackages [blindschleiche]: Start processing: PlexPreferNonForcedSubs
+[2023-05-09 17:12:30] INFO root fetch - main [MainThread]: End processing [blindschleiche]: success
+[2023-05-09 17:12:30] INFO root fetch - processPackages [flatbuffers]: Downloading https://files.pythonhosted.org/packages/b9/58/6832a92830c8055d81935bfa4da4ebd83b480f799cd47c75f5f369257995/flatbuffers-23.3.3.tar.gz
+[2023-05-09 17:12:30] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: New version: [2.1.3] Old Version: [2.1.2]
+[2023-05-09 17:12:30] INFO root fetch - processPackages [flatbuffers]: executing diffoscope
+[2023-05-09 17:12:30] INFO root fetch - processPackages [flatbuffers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatbuffers-23.1.4.tar.gz tmp/flatbuffers-23.3.3.tar.gz --markdown 20230509/f/flatbuffers/23.1.4-23.3.3/diff.md --exclude *.pyd
+[2023-05-09 17:12:31] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: executing diffoscope
+[2023-05-09 17:12:31] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PlexPreferNonForcedSubs-2.1.2.tar.gz tmp/PlexPreferNonForcedSubs-2.1.3.tar.gz --markdown 20230509/P/PlexPreferNonForcedSubs/2.1.2-2.1.3/diff.md --exclude *.pyd
+[2023-05-09 17:12:31] INFO root fetch - processPackages [LbNightlyTools]: Start processing: nomnomdata-engine
+[2023-05-09 17:12:31] INFO root fetch - main [MainThread]: End processing [LbNightlyTools]: success
+[2023-05-09 17:12:31] INFO root fetch - processPackages [nomnomdata-engine]: New version: [1.1.9] Old Version: [1.1.8.post6.dev0]
+[2023-05-09 17:12:31] INFO root fetch - processPackages [nomnomdata-engine]: Downloading https://files.pythonhosted.org/packages/29/ca/6d982a8c2b03cf4674754f450cf541fc754fd3a21b93b0aa0560ca38ce09/nomnomdata-engine-1.1.8.post6.dev0.tar.gz
+[2023-05-09 17:12:32] INFO root fetch - processPackages [mlrun]: Start processing: libertem-live
+[2023-05-09 17:12:32] INFO root fetch - main [MainThread]: End processing [mlrun]: success
+[2023-05-09 17:12:32] INFO root fetch - processPackages [dkist-processing-common]: Start processing: inputty
+[2023-05-09 17:12:32] INFO root fetch - main [MainThread]: End processing [dkist-processing-common]: success
+[2023-05-09 17:12:32] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: Start processing: not1mm
+[2023-05-09 17:12:32] INFO root fetch - main [MainThread]: End processing [PlexPreferNonForcedSubs]: success
+[2023-05-09 17:12:32] INFO root fetch - processPackages [inputty]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 17:12:32] INFO root fetch - processPackages [not1mm]: New version: [23.5.8] Old Version: [23.5.7]
+[2023-05-09 17:12:32] INFO root fetch - processPackages [libertem-live]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-09 17:12:32] INFO root fetch - main [MainThread]: End processing [netbox-config-backup]: success
+[2023-05-09 17:12:32] INFO root fetch - processPackages [inputty]: executing diffoscope
+[2023-05-09 17:12:32] INFO root fetch - processPackages [inputty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inputty-0.0.1.tar.gz tmp/inputty-0.0.2.tar.gz --markdown 20230509/i/inputty/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 17:12:32] INFO root fetch - processPackages [libertem-live]: Downloading https://files.pythonhosted.org/packages/92/31/729304b940a04e0225d5219a68e92a20e3774c9469bedf7e4fc28651cb67/libertem-live-0.2.0.tar.gz
+[2023-05-09 17:12:32] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/b1/9b/cf82db52bdeef12443c43624fd126b2e91559f8ceced8a77157496990dd1/not1mm-23.5.8.tar.gz
+[2023-05-09 17:12:32] INFO root fetch - processPackages [nomnomdata-engine]: Downloading https://files.pythonhosted.org/packages/2f/c8/ecfb7b0b8c8d033e114ff0d96f1dd7bcc8133c9e475a23340d0103ee13c3/nomnomdata-engine-1.1.9.tar.gz
+[2023-05-09 17:12:32] INFO root fetch - processPackages [libertem-live]: Downloading https://files.pythonhosted.org/packages/1a/e2/857a174b926a81d6134d6af812f59fdb6358113d54a7c3402e79a04708fe/libertem-live-0.2.1.tar.gz
+[2023-05-09 17:12:32] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-05-09 17:12:32] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.5.7.tar.gz tmp/not1mm-23.5.8.tar.gz --markdown 20230509/n/not1mm/23.5.7-23.5.8/diff.md --exclude *.pyd
+[2023-05-09 17:12:32] INFO root fetch - main [MainThread]: End processing [flatbuffers]: success
+[2023-05-09 17:12:32] INFO root fetch - processPackages [libertem-live]: executing diffoscope
+[2023-05-09 17:12:32] INFO root fetch - processPackages [libertem-live]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libertem-live-0.2.0.tar.gz tmp/libertem-live-0.2.1.tar.gz --markdown 20230509/l/libertem-live/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-09 17:12:33] INFO root fetch - processPackages [nomnomdata-engine]: executing diffoscope
+[2023-05-09 17:12:33] INFO root fetch - processPackages [nomnomdata-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomnomdata-engine-1.1.8.post6.dev0.tar.gz tmp/nomnomdata-engine-1.1.9.tar.gz --markdown 20230509/n/nomnomdata-engine/1.1.8.post6.dev0-1.1.9/diff.md --exclude *.pyd
+[2023-05-09 17:12:33] INFO root fetch - main [MainThread]: End processing [inputty]: success
+[2023-05-09 17:12:33] INFO root fetch - main [MainThread]: End processing [mythic-container]: success
+[2023-05-09 17:12:34] INFO root fetch - main [MainThread]: End processing [sports2d]: success
+[2023-05-09 17:12:34] INFO root fetch - main [MainThread]: End processing [nomnomdata-engine]: success
+[2023-05-09 17:12:34] INFO root fetch - main [MainThread]: End processing [libertem-live]: success
+[2023-05-09 17:12:35] INFO root fetch - main [MainThread]: End processing [ezcharts]: success
+[2023-05-09 17:12:37] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-05-09 17:12:43] INFO root fetch - main [MainThread]: End processing [Geode-Explicit]: success
+[2023-05-09 17:12:43] INFO root fetch - main [MainThread]: Store serial: [18033851]
