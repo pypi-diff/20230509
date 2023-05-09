@@ -15823,3 +15823,79 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 14:30:23] INFO root fetch - main [MainThread]: End processing [q2terminal]: success
 [2023-05-09 14:30:23] INFO root fetch - main [MainThread]: End processing [opengpt]: success
 [2023-05-09 14:30:23] INFO root fetch - main [MainThread]: Store serial: [18031618]
+[2023-05-09 14:35:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031618]
+[2023-05-09 14:35:32] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eoshep
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: infodeslib
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GramGetter
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seqsum
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asgi-matomo
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tomato-engine
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tomni
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: variation-normalizer
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: map-with-stats
+[2023-05-09 14:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aioWiserHeatAPI
+[2023-05-09 14:35:32] INFO root fetch - processPackages [GramGetter]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-09 14:35:32] INFO root fetch - processPackages [eoshep]: New version: [1.0.7.dev1230] Old Version: [1.0.7.dev1227]
+[2023-05-09 14:35:32] INFO root fetch - processPackages [infodeslib]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-09 14:35:33] WARNING root fetch - processPackages [seqsum]: Skipping, unable to determine old version
+[2023-05-09 14:35:33] INFO root fetch - processPackages [seqsum]: Start processing: buteo
+[2023-05-09 14:35:33] INFO root fetch - main [MainThread]: End processing [seqsum] error
+[2023-05-09 14:35:33] INFO root fetch - processPackages [map-with-stats]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-05-09 14:35:33] INFO root fetch - processPackages [asgi-matomo]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomato-engine]: New version: [1.8.4] Old Version: [1.8.3]
+[2023-05-09 14:35:33] INFO root fetch - processPackages [aioWiserHeatAPI]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomni]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-09 14:35:33] INFO root fetch - processPackages [variation-normalizer]: New version: [0.7.dev0] Old Version: [0.7.0.dev7]
+[2023-05-09 14:35:33] INFO root fetch - processPackages [buteo]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-09 14:35:33] INFO root fetch - processPackages [GramGetter]: Downloading https://files.pythonhosted.org/packages/0f/23/36644f458b5a459cc4e11cb9b5f8fa03df67c20d192d51566d3500314ca4/GramGetter-0.1.0.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [infodeslib]: Downloading https://files.pythonhosted.org/packages/b7/cb/e3ff548b66fab09b1710696bdda0531f368bf24e3c230929753c0cd7dadb/infodeslib-0.1.4.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [eoshep]: Downloading https://files.pythonhosted.org/packages/40/ec/66d49c69b04c317fc48389ea80f7a09dcf0b1d5f94131aa7a974c96148ce/eoshep-1.0.7.dev1227-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-09 14:35:33] WARNING root fetch - processPackages [eoshep]: Skipping package: exceeds size limit 68539553>=10485760
+[2023-05-09 14:35:33] INFO root fetch - processPackages [eoshep]: Start processing: PyStorCLI2
+[2023-05-09 14:35:33] INFO root fetch - main [MainThread]: End processing [eoshep] error
+[2023-05-09 14:35:33] INFO root fetch - processPackages [aioWiserHeatAPI]: Downloading https://files.pythonhosted.org/packages/31/20/d61daeae72aa49a6944f3f6795b8826e8da4fa09a905a82fe4bfc6dcaf48/aioWiserHeatAPI-1.3.3.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomato-engine]: Downloading https://files.pythonhosted.org/packages/dd/f5/b8f7e4539a24f7a03f4a56fa2b15deb07792ffb5eec49fb177426e8c6179/tomato-engine-1.8.3.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [asgi-matomo]: Downloading https://files.pythonhosted.org/packages/ca/9c/cd706bb38750d99b1e8b9cb92e04d5afcff6bbb6f8480e3b1c1b0a512287/asgi_matomo-0.1.0.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomni]: Downloading https://files.pythonhosted.org/packages/52/cb/129fbb19429d77d537dde9cf3140fe31634838353b5845a3a190723d922d/tomni-1.9.1.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [infodeslib]: executing diffoscope
+[2023-05-09 14:35:33] INFO root fetch - processPackages [infodeslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infodeslib-0.1.3.tar.gz tmp/infodeslib-0.1.4.tar.gz --markdown 20230509/i/infodeslib/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-09 14:35:33] INFO root fetch - processPackages [map-with-stats]: Downloading https://files.pythonhosted.org/packages/92/5b/33d565e2b617c37a4f4d382a07a237ad7d3554ecc75a6cdcec4d88f0bca6/map_with_stats-0.0.5.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [PyStorCLI2]: New version: [0.6.4.dev27] Old Version: [0.6.4.dev26]
+[2023-05-09 14:35:33] INFO root fetch - processPackages [buteo]: Downloading https://files.pythonhosted.org/packages/3e/d5/fb7fbc87d903059cd4f00eb0d9fcf1a646593c12c799dbee10dd7192b508/buteo-0.9.4.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [GramGetter]: Downloading https://files.pythonhosted.org/packages/7b/08/6180e7ddef9a6a69bc872e3062c6244db9b5c0747027e17483ff6e64a7ea/GramGetter-0.2.0.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [buteo]: executing diffoscope
+[2023-05-09 14:35:33] INFO root fetch - processPackages [buteo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buteo-0.9.3.tar.gz tmp/buteo-0.9.4.tar.gz --markdown 20230509/b/buteo/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-09 14:35:33] INFO root fetch - processPackages [variation-normalizer]: executing diffoscope
+[2023-05-09 14:35:33] INFO root fetch - processPackages [variation-normalizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variation-normalizer-0.7.0.dev7.tar.gz tmp/variation-normalizer-0.7.dev0.tar.gz --markdown 20230509/v/variation-normalizer/0.7.0.dev7-0.7.dev0/diff.md --exclude *.pyd
+[2023-05-09 14:35:33] INFO root fetch - processPackages [asgi-matomo]: Downloading https://files.pythonhosted.org/packages/e0/b0/60477066d50d5b83d68263480ec090bc1af77a9accd437ad6165f048c443/asgi_matomo-0.1.1.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [GramGetter]: executing diffoscope
+[2023-05-09 14:35:33] INFO root fetch - processPackages [GramGetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GramGetter-0.1.0.tar.gz tmp/GramGetter-0.2.0.tar.gz --markdown 20230509/G/GramGetter/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 14:35:33] INFO root fetch - processPackages [PyStorCLI2]: Downloading https://files.pythonhosted.org/packages/e4/55/7210739dfa0468d1f48fa0b9e271bad03dcaba58a48a4d280fafc5b4c9ab/PyStorCLI2-0.6.4.dev27.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomato-engine]: Downloading https://files.pythonhosted.org/packages/a7/f7/7b1c84754d222cc14f583c2a30567a5e9a9ebcc4cf1a15c983fba3db6e37/tomato-engine-1.8.4.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [aioWiserHeatAPI]: Downloading https://files.pythonhosted.org/packages/5e/c9/968f2680aa540ab2a0dd20b4f7f2e34410bf48178388fb000e93f777231d/aioWiserHeatAPI-1.3.4.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [PyStorCLI2]: executing diffoscope
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomni]: Downloading https://files.pythonhosted.org/packages/d5/9a/896e8c47073505e0fa333d3230a5c494550b07d5c5fb49da4ad796c271b5/tomni-1.9.2.tar.gz
+[2023-05-09 14:35:33] INFO root fetch - processPackages [PyStorCLI2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyStorCLI2-0.6.4.dev26.tar.gz tmp/PyStorCLI2-0.6.4.dev27.tar.gz --markdown 20230509/P/PyStorCLI2/0.6.4.dev26-0.6.4.dev27/diff.md --exclude *.pyd
+[2023-05-09 14:35:33] INFO root fetch - processPackages [asgi-matomo]: executing diffoscope
+[2023-05-09 14:35:33] INFO root fetch - processPackages [asgi-matomo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgi_matomo-0.1.0.tar.gz tmp/asgi_matomo-0.1.1.tar.gz --markdown 20230509/a/asgi-matomo/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomato-engine]: executing diffoscope
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomato-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomato-engine-1.8.3.tar.gz tmp/tomato-engine-1.8.4.tar.gz --markdown 20230509/t/tomato-engine/1.8.3-1.8.4/diff.md --exclude *.pyd
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomni]: executing diffoscope
+[2023-05-09 14:35:33] INFO root fetch - processPackages [tomni]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomni-1.9.1.tar.gz tmp/tomni-1.9.2.tar.gz --markdown 20230509/t/tomni/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-09 14:35:33] INFO root fetch - processPackages [aioWiserHeatAPI]: executing diffoscope
+[2023-05-09 14:35:33] INFO root fetch - processPackages [aioWiserHeatAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioWiserHeatAPI-1.3.3.tar.gz tmp/aioWiserHeatAPI-1.3.4.tar.gz --markdown 20230509/a/aioWiserHeatAPI/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-05-09 14:35:33] INFO root fetch - processPackages [map-with-stats]: Downloading https://files.pythonhosted.org/packages/e5/e9/003df478ff1564c7e5eecc0ce8af0ae32adab70f6384ab5989599820c50d/map_with_stats-0.1.0.tar.gz
+[2023-05-09 14:35:34] INFO root fetch - processPackages [map-with-stats]: executing diffoscope
+[2023-05-09 14:35:34] INFO root fetch - processPackages [map-with-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/map_with_stats-0.0.5.tar.gz tmp/map_with_stats-0.1.0.tar.gz --markdown 20230509/m/map-with-stats/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 14:35:35] INFO root fetch - main [MainThread]: End processing [GramGetter]: success
+[2023-05-09 14:35:35] INFO root fetch - main [MainThread]: End processing [asgi-matomo]: success
+[2023-05-09 14:35:35] INFO root fetch - main [MainThread]: End processing [aioWiserHeatAPI]: success
+[2023-05-09 14:35:35] INFO root fetch - main [MainThread]: End processing [map-with-stats]: success
+[2023-05-09 14:35:35] INFO root fetch - main [MainThread]: End processing [tomato-engine]: success
+[2023-05-09 14:35:36] INFO root fetch - main [MainThread]: End processing [infodeslib]: success
+[2023-05-09 14:35:36] INFO root fetch - main [MainThread]: End processing [tomni]: success
+[2023-05-09 14:35:36] INFO root fetch - main [MainThread]: End processing [PyStorCLI2]: success
+[2023-05-09 14:35:37] INFO root fetch - main [MainThread]: End processing [buteo]: success
+[2023-05-09 14:35:37] INFO root fetch - main [MainThread]: End processing [variation-normalizer]: success
+[2023-05-09 14:35:37] INFO root fetch - main [MainThread]: Store serial: [18031664]
