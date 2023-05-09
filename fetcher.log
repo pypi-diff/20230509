@@ -22185,3 +22185,94 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 19:47:08] INFO root fetch - main [MainThread]: End processing [sqlalchemy-gql]: success
 [2023-05-09 19:47:12] INFO root fetch - main [MainThread]: End processing [pait]: success
 [2023-05-09 19:47:12] INFO root fetch - main [MainThread]: Store serial: [18035625]
+[2023-05-09 19:52:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18035625]
+[2023-05-09 19:52:21] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyboil
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cohere
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ssm-ps-template
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: packagepaths
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zero-3rdparty
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aiosolr
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: model-lib
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: docker-compose-parser
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: compose-chart-export
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: express-pascal-voc-tools
+[2023-05-09 19:52:21] INFO root fetch - processPackages [ssm-ps-template]: New version: [1.0.0b2] Old Version: [1.0.0b1]
+[2023-05-09 19:52:21] INFO root fetch - processPackages [compose-chart-export]: New version: [0.0.17] Old Version: [0.0.16rc1]
+[2023-05-09 19:52:21] ERROR root fetch - processPackages [packagepaths]: Unable to get metadata: No such project 'packagepaths'
+[2023-05-09 19:52:21] INFO root fetch - processPackages [pyboil]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-09 19:52:21] INFO root fetch - processPackages [packagepaths]: Start processing: pydischarge
+[2023-05-09 19:52:21] INFO root fetch - main [MainThread]: End processing [packagepaths] error
+[2023-05-09 19:52:21] INFO root fetch - processPackages [zero-3rdparty]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 19:52:21] INFO root fetch - processPackages [express-pascal-voc-tools]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-05-09 19:52:21] INFO root fetch - processPackages [docker-compose-parser]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-05-09 19:52:21] INFO root fetch - processPackages [model-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 19:52:21] INFO root fetch - processPackages [cohere]: New version: [4.4.1] Old Version: [4.4.0]
+[2023-05-09 19:52:21] INFO root fetch - processPackages [aiosolr]: New version: [4.3.0] Old Version: [4.2.7]
+[2023-05-09 19:52:21] INFO root fetch - processPackages [pydischarge]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-05-09 19:52:21] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 19:52:21] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.8.tar.gz tmp/pyboil-0.5.9.tar.gz --markdown 20230509/p/pyboil/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-09 19:52:22] INFO root fetch - processPackages [express-pascal-voc-tools]: Downloading https://files.pythonhosted.org/packages/33/ab/153fdaad282b886a83a3ef08d2fc2c85cececc9b7fb64df243d2b3e76d42/express-pascal-voc-tools-0.0.1.tar.gz
+[2023-05-09 19:52:22] INFO root fetch - processPackages [ssm-ps-template]: Downloading https://files.pythonhosted.org/packages/f5/f2/3a363554795821b98f8b2f0a06f01f8be2468f51c4ea2b8435e853ec84e3/ssm-ps-template-1.0.0b2.tar.gz
+[2023-05-09 19:52:22] INFO root fetch - processPackages [cohere]: Downloading https://files.pythonhosted.org/packages/d7/4f/7c88c8d7de3d3dd87bd3b180726263713e3ab4e43ceb7c37db9c98334468/cohere-4.4.1.tar.gz
+[2023-05-09 19:52:22] INFO root fetch - processPackages [docker-compose-parser]: Downloading https://files.pythonhosted.org/packages/c7/d0/8998761dea67b3c8f6b6f789bc2c21309e481e70a1b2ddba539c3f9ee0c8/docker_compose_parser-0.0.16-py3-none-any.whl
+[2023-05-09 19:52:22] INFO root fetch - processPackages [model-lib]: Downloading https://files.pythonhosted.org/packages/3a/37/f439fc46ad12d47c469a89b962f6930daa6f1af9319dce3ed5f398a5b0f2/model_lib-0.0.8-py3-none-any.whl
+[2023-05-09 19:52:22] INFO root fetch - processPackages [zero-3rdparty]: Downloading https://files.pythonhosted.org/packages/02/77/9b25da26d84e860f91f7869dd90591c0aec5e456c230be79db7208e01a37/zero_3rdparty-0.0.8-py3-none-any.whl
+[2023-05-09 19:52:22] INFO root fetch - processPackages [aiosolr]: Downloading https://files.pythonhosted.org/packages/60/ec/4c805c3bf336a654c79969ae008356738b5ed2e5d5641846d46175dc16be/aiosolr-4.2.7.tar.gz
+[2023-05-09 19:52:22] INFO root fetch - processPackages [pydischarge]: Downloading https://files.pythonhosted.org/packages/0e/80/3613401ed28eb6f98f663218c28c1fd36a7fef57a204449603a02dc907b1/pydischarge-0.0.3.tar.gz
+[2023-05-09 19:52:22] INFO root fetch - processPackages [compose-chart-export]: Downloading https://files.pythonhosted.org/packages/dd/70/507d6c30812e7c6a98894e1882d0926dbb8a74c1c4cd67f007acc9758406/compose_chart_export-0.0.17-py3-none-any.whl
+[2023-05-09 19:52:22] INFO root fetch - processPackages [compose-chart-export]: executing diffoscope
+[2023-05-09 19:52:22] INFO root fetch - processPackages [compose-chart-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compose_chart_export-0.0.16rc1-py3-none-any.whl.zip tmp/compose_chart_export-0.0.17-py3-none-any.whl.zip --markdown 20230509/c/compose-chart-export/0.0.16rc1-0.0.17/diff.md --exclude *.pyd
+[2023-05-09 19:52:22] INFO root fetch - processPackages [cohere]: executing diffoscope
+[2023-05-09 19:52:22] INFO root fetch - processPackages [ssm-ps-template]: executing diffoscope
+[2023-05-09 19:52:22] INFO root fetch - processPackages [cohere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cohere-4.4.0.tar.gz tmp/cohere-4.4.1.tar.gz --markdown 20230509/c/cohere/4.4.0-4.4.1/diff.md --exclude *.pyd
+[2023-05-09 19:52:22] INFO root fetch - processPackages [ssm-ps-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssm-ps-template-1.0.0b1.tar.gz tmp/ssm-ps-template-1.0.0b2.tar.gz --markdown 20230509/s/ssm-ps-template/1.0.0b1-1.0.0b2/diff.md --exclude *.pyd
+[2023-05-09 19:52:22] INFO root fetch - processPackages [docker-compose-parser]: Downloading https://files.pythonhosted.org/packages/a8/fd/14ef148350066d96bad435f4eeeda8860b76a38f43cdda6094f4b1c2b2c5/docker_compose_parser-0.0.17-py3-none-any.whl
+[2023-05-09 19:52:22] INFO root fetch - processPackages [aiosolr]: Downloading https://files.pythonhosted.org/packages/08/e0/4288c8b0af9d269e97774c670b29435a6b75efaab2e9572cb3e9d0b53b76/aiosolr-4.3.0.tar.gz
+[2023-05-09 19:52:22] INFO root fetch - processPackages [express-pascal-voc-tools]: Downloading https://files.pythonhosted.org/packages/6b/4a/cf88eb76ac563decc968c24778e5e45db43abf16b799895cf5bce29d8345/express-pascal-voc-tools-0.1.0.tar.gz
+[2023-05-09 19:52:22] INFO root fetch - processPackages [pydischarge]: Downloading https://files.pythonhosted.org/packages/71/ca/2af3223dfe4c589330dd67731c29400aa4417b2d3f295c3813792f1f9111/pydischarge-0.0.5.tar.gz
+[2023-05-09 19:52:22] INFO root fetch - processPackages [aiosolr]: executing diffoscope
+[2023-05-09 19:52:22] INFO root fetch - processPackages [aiosolr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosolr-4.2.7.tar.gz tmp/aiosolr-4.3.0.tar.gz --markdown 20230509/a/aiosolr/4.2.7-4.3.0/diff.md --exclude *.pyd
+[2023-05-09 19:52:22] INFO root fetch - processPackages [model-lib]: Downloading https://files.pythonhosted.org/packages/0e/81/219c8c28610fddb4410a4cb595f3323d27988d35dd0ab098737ad0d8b598/model_lib-0.0.9-py3-none-any.whl
+[2023-05-09 19:52:22] INFO root fetch - processPackages [docker-compose-parser]: executing diffoscope
+[2023-05-09 19:52:22] INFO root fetch - processPackages [docker-compose-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker_compose_parser-0.0.16-py3-none-any.whl.zip tmp/docker_compose_parser-0.0.17-py3-none-any.whl.zip --markdown 20230509/d/docker-compose-parser/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-05-09 19:52:22] INFO root fetch - processPackages [express-pascal-voc-tools]: executing diffoscope
+[2023-05-09 19:52:22] INFO root fetch - processPackages [express-pascal-voc-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/express-pascal-voc-tools-0.0.1.tar.gz tmp/express-pascal-voc-tools-0.1.0.tar.gz --markdown 20230509/e/express-pascal-voc-tools/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-05-09 19:52:22] INFO root fetch - processPackages [model-lib]: executing diffoscope
+[2023-05-09 19:52:22] INFO root fetch - processPackages [model-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_lib-0.0.8-py3-none-any.whl.zip tmp/model_lib-0.0.9-py3-none-any.whl.zip --markdown 20230509/m/model-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 19:52:22] INFO root fetch - processPackages [pydischarge]: executing diffoscope
+[2023-05-09 19:52:22] INFO root fetch - processPackages [pydischarge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydischarge-0.0.3.tar.gz tmp/pydischarge-0.0.5.tar.gz --markdown 20230509/p/pydischarge/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 19:52:22] INFO root fetch - processPackages [zero-3rdparty]: Downloading https://files.pythonhosted.org/packages/ac/57/d5880eac743d0a1370807895ce1e784289fd0b2bd6cbcba1b3fb57043af3/zero_3rdparty-0.0.9-py3-none-any.whl
+[2023-05-09 19:52:23] INFO root fetch - processPackages [zero-3rdparty]: executing diffoscope
+[2023-05-09 19:52:23] INFO root fetch - processPackages [zero-3rdparty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zero_3rdparty-0.0.8-py3-none-any.whl.zip tmp/zero_3rdparty-0.0.9-py3-none-any.whl.zip --markdown 20230509/z/zero-3rdparty/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 19:52:23] INFO root fetch - processPackages [pyboil]: Start processing: pants-py-deploy
+[2023-05-09 19:52:23] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 19:52:23] INFO root fetch - processPackages [pants-py-deploy]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-05-09 19:52:23] INFO root fetch - processPackages [compose-chart-export]: Start processing: aind-data-schema
+[2023-05-09 19:52:23] INFO root fetch - main [MainThread]: End processing [compose-chart-export]: success
+[2023-05-09 19:52:23] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-09 19:52:23] INFO root fetch - processPackages [pants-py-deploy]: Downloading https://files.pythonhosted.org/packages/97/76/2456912d62ece8598c629dc5bf80fc59546cc7e769861750dfac2730c1dd/pants_py_deploy-0.0.16-py3-none-any.whl
+[2023-05-09 19:52:23] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2023-05-09 19:52:23] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20230509/a/aind-data-schema/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-09 19:52:23] INFO root fetch - processPackages [docker-compose-parser]: Start processing: summdata
+[2023-05-09 19:52:23] INFO root fetch - main [MainThread]: End processing [docker-compose-parser]: success
+[2023-05-09 19:52:23] INFO root fetch - processPackages [ssm-ps-template]: Start processing: ctgan
+[2023-05-09 19:52:23] INFO root fetch - main [MainThread]: End processing [ssm-ps-template]: success
+[2023-05-09 19:52:23] INFO root fetch - main [MainThread]: End processing [aiosolr]: success
+[2023-05-09 19:52:23] INFO root fetch - processPackages [ctgan]: New version: [0.7.2.dev1] Old Version: [0.7.2.dev0]
+[2023-05-09 19:52:23] WARNING root fetch - processPackages [summdata]: Skipping, unable to determine old version
+[2023-05-09 19:52:23] INFO root fetch - main [MainThread]: End processing [summdata] error
+[2023-05-09 19:52:23] INFO root fetch - processPackages [pants-py-deploy]: Downloading https://files.pythonhosted.org/packages/ce/35/a793f6f877935ed9c8703f4e9ecf7b2f233d6a0ca9ecaeee64bbc4480730/pants_py_deploy-0.0.17-py3-none-any.whl
+[2023-05-09 19:52:24] INFO root fetch - processPackages [ctgan]: executing diffoscope
+[2023-05-09 19:52:24] INFO root fetch - processPackages [ctgan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctgan-0.7.2.dev0.tar.gz tmp/ctgan-0.7.2.dev1.tar.gz --markdown 20230509/c/ctgan/0.7.2.dev0-0.7.2.dev1/diff.md --exclude *.pyd
+[2023-05-09 19:52:24] INFO root fetch - main [MainThread]: End processing [cohere]: success
+[2023-05-09 19:52:24] INFO root fetch - processPackages [pants-py-deploy]: executing diffoscope
+[2023-05-09 19:52:24] INFO root fetch - processPackages [pants-py-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pants_py_deploy-0.0.16-py3-none-any.whl.zip tmp/pants_py_deploy-0.0.17-py3-none-any.whl.zip --markdown 20230509/p/pants-py-deploy/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-05-09 19:52:24] INFO root fetch - main [MainThread]: End processing [express-pascal-voc-tools]: success
+[2023-05-09 19:52:24] INFO root fetch - main [MainThread]: End processing [model-lib]: success
+[2023-05-09 19:52:24] INFO root fetch - main [MainThread]: End processing [zero-3rdparty]: success
+[2023-05-09 19:52:25] INFO root fetch - main [MainThread]: End processing [ctgan]: success
+[2023-05-09 19:52:25] INFO root fetch - main [MainThread]: End processing [pants-py-deploy]: success
+[2023-05-09 19:52:25] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
+[2023-05-09 19:52:27] INFO root fetch - main [MainThread]: End processing [pydischarge]: success
+[2023-05-09 19:52:27] INFO root fetch - main [MainThread]: Store serial: [18035671]
