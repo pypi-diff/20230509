@@ -17027,3 +17027,191 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 15:36:49] INFO root fetch - main [MainThread]: End processing [zenoml]: success
 [2023-05-09 15:37:26] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-05-09 15:37:26] INFO root fetch - main [MainThread]: Store serial: [18032370]
+[2023-05-09 15:42:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032370]
+[2023-05-09 15:42:43] INFO root fetch - main [MainThread]: Found 30 changed packages
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netbox-tunnels2
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: badgescale-ys-plt
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ansys-sphinx-theme
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-socio-grpc
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: buz
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: checkdmarc
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vantage6-common
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vantage6-client
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: asdm
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vantage6
+[2023-05-09 15:42:43] INFO root fetch - processPackages [netbox-tunnels2]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [buz]: New version: [1.9.0rc1] Old Version: [1.8.0rc1]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [badgescale-ys-plt]: New version: [9.0] Old Version: [8.0]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [asdm]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ansys-sphinx-theme]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [checkdmarc]: New version: [4.6.0] Old Version: [4.5.2]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [vantage6-client]: New version: [3.9.0rc2] Old Version: [3.8.7rc1]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [django-socio-grpc]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [vantage6-common]: New version: [3.9.0rc2] Old Version: [3.8.7rc1]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [vantage6]: New version: [3.9.0rc2] Old Version: [3.8.7rc1]
+[2023-05-09 15:42:43] INFO root fetch - processPackages [netbox-tunnels2]: Downloading https://files.pythonhosted.org/packages/a2/35/f8cf4e6987a17ca89c7c702a9563b0d69a3d4afc6d442a5a3598918de17d/netbox-tunnels2-0.2.3.tar.gz
+[2023-05-09 15:42:43] INFO root fetch - processPackages [vantage6-client]: Downloading https://files.pythonhosted.org/packages/1e/01/846595fba1ef8849fe5fedae01a03d85e041666d8807f6724ea573b51136/vantage6-client-3.8.7rc1.tar.gz
+[2023-05-09 15:42:43] INFO root fetch - processPackages [vantage6-common]: Downloading https://files.pythonhosted.org/packages/0e/87/ce503a51da369459db1ff7918fdf810e33f24e6a435a13fb289f42693cec/vantage6-common-3.8.7rc1.tar.gz
+[2023-05-09 15:42:43] INFO root fetch - processPackages [vantage6]: Downloading https://files.pythonhosted.org/packages/3b/8e/42aaca7ae485bf71131c286d513592ac9ae826e6023a35300d511e9331f7/vantage6-3.8.7rc1.tar.gz
+[2023-05-09 15:42:43] INFO root fetch - processPackages [buz]: Downloading https://files.pythonhosted.org/packages/6f/06/95723e559c3c38613f0415af483cfebcb7413b30975ba4b6a50a70a2a40e/buz-1.8.0rc1.tar.gz
+[2023-05-09 15:42:43] INFO root fetch - processPackages [ansys-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/ff/ed/eaba1d94eb6e4d850323103f8bcfc9d37f4b4ca7bc8061fe45c76ddf50a3/ansys-sphinx-theme-0.9.8.tar.gz
+[2023-05-09 15:42:43] INFO root fetch - processPackages [checkdmarc]: Downloading https://files.pythonhosted.org/packages/bc/9d/239818c36780760bf371000f269a2ddc31be200bc612412a5f69544262a2/checkdmarc-4.5.2.tar.gz
+[2023-05-09 15:42:44] INFO root fetch - processPackages [asdm]: Downloading https://files.pythonhosted.org/packages/fe/08/0c9e0966eddaeceec049d127937456caa94847d7538153dff0e6c31f0555/asdm-0.0.3.tar.gz
+[2023-05-09 15:42:44] INFO root fetch - processPackages [netbox-tunnels2]: Downloading https://files.pythonhosted.org/packages/48/fe/d07fb1df67ddbaf0bcc60ee4ce8e34f6741d79130563f21dc2d19d805bad/netbox-tunnels2-0.2.4.tar.gz
+[2023-05-09 15:42:44] INFO root fetch - processPackages [netbox-tunnels2]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [netbox-tunnels2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-tunnels2-0.2.3.tar.gz tmp/netbox-tunnels2-0.2.4.tar.gz --markdown 20230509/n/netbox-tunnels2/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-09 15:42:44] INFO root fetch - processPackages [badgescale-ys-plt]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [badgescale-ys-plt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badgescale_ys_plt-8.0-py3-none-any.whl.zip tmp/badgescale_ys_plt-9.0-py3-none-any.whl.zip --markdown 20230509/b/badgescale-ys-plt/8.0-9.0/diff.md --exclude *.pyd
+[2023-05-09 15:42:44] INFO root fetch - processPackages [vantage6-client]: Downloading https://files.pythonhosted.org/packages/cc/8a/7abb292e0070d775645f93a42c4c2021a36654aa36658a826b16e872bac6/vantage6-client-3.9.0rc2.tar.gz
+[2023-05-09 15:42:44] INFO root fetch - processPackages [django-socio-grpc]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [django-socio-grpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-socio-grpc-0.8.9.tar.gz tmp/django-socio-grpc-0.9.0.tar.gz --markdown 20230509/d/django-socio-grpc/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 15:42:44] INFO root fetch - processPackages [asdm]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [asdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asdm-0.0.2.tar.gz tmp/asdm-0.0.3.tar.gz --markdown 20230509/a/asdm/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-09 15:42:44] INFO root fetch - processPackages [vantage6]: Downloading https://files.pythonhosted.org/packages/79/28/e84e0e783a03637496f2b5fd1c5d7b203696fd490d45d44eebad6876491d/vantage6-3.9.0rc2.tar.gz
+[2023-05-09 15:42:44] INFO root fetch - processPackages [vantage6-common]: Downloading https://files.pythonhosted.org/packages/04/98/abda7369242fa6c3acba2926ec79b399130654bee32e327caf5a0dadd8c3/vantage6-common-3.9.0rc2.tar.gz
+[2023-05-09 15:42:44] INFO root fetch - processPackages [checkdmarc]: Downloading https://files.pythonhosted.org/packages/f4/11/7abebcf2020d3e8791133fde65147a26e921ebdffd4b80ae6984c90a8ff0/checkdmarc-4.6.0.tar.gz
+[2023-05-09 15:42:44] INFO root fetch - processPackages [ansys-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/70/5b/157d8b6bf61c537f299e3cf927537b5c17116cd0a7b718eae284558b48e3/ansys-sphinx-theme-0.9.9.tar.gz
+[2023-05-09 15:42:44] INFO root fetch - processPackages [checkdmarc]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [checkdmarc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkdmarc-4.5.2.tar.gz tmp/checkdmarc-4.6.0.tar.gz --markdown 20230509/c/checkdmarc/4.5.2-4.6.0/diff.md --exclude *.pyd
+[2023-05-09 15:42:44] INFO root fetch - processPackages [buz]: Downloading https://files.pythonhosted.org/packages/11/cc/a72801e5884bc068b97229f200a9f3ada5d3d8184f34c1abc3ab1046c3e5/buz-1.9.0rc1.tar.gz
+[2023-05-09 15:42:44] INFO root fetch - processPackages [vantage6-client]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [vantage6-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-client-3.8.7rc1.tar.gz tmp/vantage6-client-3.9.0rc2.tar.gz --markdown 20230509/v/vantage6-client/3.8.7rc1-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-09 15:42:44] INFO root fetch - processPackages [ansys-sphinx-theme]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [ansys-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansys-sphinx-theme-0.9.8.tar.gz tmp/ansys-sphinx-theme-0.9.9.tar.gz --markdown 20230509/a/ansys-sphinx-theme/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 15:42:44] INFO root fetch - processPackages [vantage6-common]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [vantage6-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-common-3.8.7rc1.tar.gz tmp/vantage6-common-3.9.0rc2.tar.gz --markdown 20230509/v/vantage6-common/3.8.7rc1-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-09 15:42:44] INFO root fetch - processPackages [vantage6]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [vantage6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-3.8.7rc1.tar.gz tmp/vantage6-3.9.0rc2.tar.gz --markdown 20230509/v/vantage6/3.8.7rc1-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-09 15:42:44] INFO root fetch - processPackages [buz]: executing diffoscope
+[2023-05-09 15:42:44] INFO root fetch - processPackages [buz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buz-1.8.0rc1.tar.gz tmp/buz-1.9.0rc1.tar.gz --markdown 20230509/b/buz/1.8.0rc1-1.9.0rc1/diff.md --exclude *.pyd
+[2023-05-09 15:42:46] INFO root fetch - processPackages [checkdmarc]: Start processing: vantage6-node
+[2023-05-09 15:42:46] INFO root fetch - main [MainThread]: End processing [checkdmarc]: success
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-node]: New version: [3.9.0rc2] Old Version: [3.8.7rc1]
+[2023-05-09 15:42:46] INFO root fetch - processPackages [badgescale-ys-plt]: Start processing: vantage6-server
+[2023-05-09 15:42:46] INFO root fetch - main [MainThread]: End processing [badgescale-ys-plt]: success
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-server]: New version: [3.9.0rc2] Old Version: [3.8.7rc1]
+[2023-05-09 15:42:46] INFO root fetch - processPackages [django-socio-grpc]: Start processing: xia-compiler-openapi
+[2023-05-09 15:42:46] INFO root fetch - main [MainThread]: End processing [django-socio-grpc]: success
+[2023-05-09 15:42:46] INFO root fetch - processPackages [xia-compiler-openapi]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-client]: Start processing: barbell2-bodycomp
+[2023-05-09 15:42:46] INFO root fetch - main [MainThread]: End processing [vantage6-client]: success
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-node]: Downloading https://files.pythonhosted.org/packages/bc/69/aa804affa1743e4484c4d5db091e72078424e58171991466421ad7e22025/vantage6-node-3.8.7rc1.tar.gz
+[2023-05-09 15:42:46] INFO root fetch - processPackages [barbell2-bodycomp]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-server]: Downloading https://files.pythonhosted.org/packages/7e/47/b8800a4d3fda109f111527927b428194e965b8b980e6f48482e635599d59/vantage6-server-3.8.7rc1.tar.gz
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6]: Start processing: sat-utils
+[2023-05-09 15:42:46] INFO root fetch - main [MainThread]: End processing [vantage6]: success
+[2023-05-09 15:42:46] INFO root fetch - processPackages [sat-utils]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-09 15:42:46] INFO root fetch - processPackages [barbell2-bodycomp]: executing diffoscope
+[2023-05-09 15:42:46] INFO root fetch - processPackages [barbell2-bodycomp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barbell2_bodycomp-0.8.0.tar.gz tmp/barbell2_bodycomp-0.9.0.tar.gz --markdown 20230509/b/barbell2-bodycomp/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 15:42:46] INFO root fetch - processPackages [xia-compiler-openapi]: Downloading https://files.pythonhosted.org/packages/fd/df/8f2e90330388d0fa221010ba347dde54682a1d0ff006beaa037195c2434f/xia_compiler_openapi-0.1.8-cp39-none-win_amd64.whl
+[2023-05-09 15:42:46] INFO root fetch - processPackages [xia-compiler-openapi]: executing diffoscope
+[2023-05-09 15:42:46] INFO root fetch - processPackages [xia-compiler-openapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_compiler_openapi-0.1.7-cp39-none-win_amd64.whl.zip tmp/xia_compiler_openapi-0.1.8-cp39-none-win_amd64.whl.zip --markdown 20230509/x/xia-compiler-openapi/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 15:42:46] INFO root fetch - processPackages [buz]: Start processing: mythic-container
+[2023-05-09 15:42:46] INFO root fetch - main [MainThread]: End processing [buz]: success
+[2023-05-09 15:42:46] INFO root fetch - processPackages [sat-utils]: Downloading https://files.pythonhosted.org/packages/c6/65/2b2ae1ff2488277f4c6367fb12d5121571fb274feb422b81ea55899c5d22/sat-utils-1.1.3.tar.gz
+[2023-05-09 15:42:46] INFO root fetch - processPackages [mythic-container]: New version: [0.2.6rc1] Old Version: [0.2.5]
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-node]: Downloading https://files.pythonhosted.org/packages/90/d2/2f29a2ff10348e0426f2c1ddfdf2bd721cdf127d749f7854c12f28ba1a15/vantage6-node-3.9.0rc2.tar.gz
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-server]: Downloading https://files.pythonhosted.org/packages/93/a4/4faa09e9d314fa4e9ae0ddfc4677720ec30f7b78ec12b20c1174cb4e9e1a/vantage6-server-3.9.0rc2.tar.gz
+[2023-05-09 15:42:46] INFO root fetch - processPackages [sat-utils]: Downloading https://files.pythonhosted.org/packages/26/6b/be4d5e98d5cfa623bad00808890f502ece4d19c55849606d20e25ad3fb55/sat-utils-1.1.4.tar.gz
+[2023-05-09 15:42:46] INFO root fetch - processPackages [mythic-container]: Downloading https://files.pythonhosted.org/packages/73/05/c4fe773b35c7218446f59850797c8fbb0a72090c8a1f557f9dd88d26fdce/mythic_container-0.2.6rc1.tar.gz
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-node]: executing diffoscope
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-node-3.8.7rc1.tar.gz tmp/vantage6-node-3.9.0rc2.tar.gz --markdown 20230509/v/vantage6-node/3.8.7rc1-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-09 15:42:46] INFO root fetch - processPackages [sat-utils]: executing diffoscope
+[2023-05-09 15:42:46] INFO root fetch - processPackages [sat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sat-utils-1.1.3.tar.gz tmp/sat-utils-1.1.4.tar.gz --markdown 20230509/s/sat-utils/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-server]: executing diffoscope
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vantage6-server-3.8.7rc1.tar.gz tmp/vantage6-server-3.9.0rc2.tar.gz --markdown 20230509/v/vantage6-server/3.8.7rc1-3.9.0rc2/diff.md --exclude *.pyd
+[2023-05-09 15:42:46] INFO root fetch - processPackages [vantage6-common]: Start processing: arraylib-solve
+[2023-05-09 15:42:46] INFO root fetch - main [MainThread]: End processing [vantage6-common]: success
+[2023-05-09 15:42:46] INFO root fetch - processPackages [arraylib-solve]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 15:42:46] INFO root fetch - processPackages [mythic-container]: executing diffoscope
+[2023-05-09 15:42:46] INFO root fetch - processPackages [mythic-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mythic_container-0.2.5.tar.gz tmp/mythic_container-0.2.6rc1.tar.gz --markdown 20230509/m/mythic-container/0.2.5-0.2.6rc1/diff.md --exclude *.pyd
+[2023-05-09 15:42:47] INFO root fetch - processPackages [arraylib-solve]: Downloading https://files.pythonhosted.org/packages/54/a8/3ce0db62e41731b9c9bc19b0b253b6db4486b7a766443276c20c5d0f00d5/arraylib_solve-0.8.0.tar.gz
+[2023-05-09 15:42:47] INFO root fetch - processPackages [netbox-tunnels2]: Start processing: mongomancy
+[2023-05-09 15:42:47] INFO root fetch - main [MainThread]: End processing [netbox-tunnels2]: success
+[2023-05-09 15:42:47] INFO root fetch - processPackages [mongomancy]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 15:42:47] INFO root fetch - processPackages [arraylib-solve]: Downloading https://files.pythonhosted.org/packages/99/da/01f7df718ea448ff62fb19424a662d999214580ce453370bbadaf861d9bf/arraylib_solve-0.9.0.tar.gz
+[2023-05-09 15:42:47] INFO root fetch - processPackages [arraylib-solve]: executing diffoscope
+[2023-05-09 15:42:47] INFO root fetch - processPackages [arraylib-solve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraylib_solve-0.8.0.tar.gz tmp/arraylib_solve-0.9.0.tar.gz --markdown 20230509/a/arraylib-solve/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 15:42:47] INFO root fetch - processPackages [mongomancy]: Downloading https://files.pythonhosted.org/packages/a8/59/d862d617e897bc3a4fae9ebf961414f8492add8dc894f813459d5ce0c39f/mongomancy-0.1.1.tar.gz
+[2023-05-09 15:42:47] INFO root fetch - processPackages [mongomancy]: executing diffoscope
+[2023-05-09 15:42:47] INFO root fetch - processPackages [mongomancy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongomancy-0.1.0.tar.gz tmp/mongomancy-0.1.1.tar.gz --markdown 20230509/m/mongomancy/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 15:42:47] INFO root fetch - processPackages [barbell2-bodycomp]: Start processing: cybrid-api-organization-python
+[2023-05-09 15:42:47] INFO root fetch - main [MainThread]: End processing [barbell2-bodycomp]: success
+[2023-05-09 15:42:47] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 15:42:48] INFO root fetch - processPackages [xia-compiler-openapi]: Start processing: PyHarshit
+[2023-05-09 15:42:48] INFO root fetch - main [MainThread]: End processing [xia-compiler-openapi]: success
+[2023-05-09 15:42:48] INFO root fetch - processPackages [PyHarshit]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 15:42:48] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-09 15:42:48] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 15:42:48] INFO root fetch - processPackages [PyHarshit]: Downloading https://files.pythonhosted.org/packages/55/c0/918ceb2e450356a00789adbc16e013d04cdaa05de584544cd426d5c30471/PyHarshit-0.0.1.tar.gz
+[2023-05-09 15:42:48] INFO root fetch - processPackages [PyHarshit]: Downloading https://files.pythonhosted.org/packages/f8/35/033cc7ec849ce3938282c775a7790ce26fc3db69450d6470961a84248afd/PyHarshit-0.0.2.tar.gz
+[2023-05-09 15:42:48] INFO root fetch - processPackages [PyHarshit]: executing diffoscope
+[2023-05-09 15:42:48] INFO root fetch - processPackages [PyHarshit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyHarshit-0.0.1.tar.gz tmp/PyHarshit-0.0.2.tar.gz --markdown 20230509/P/PyHarshit/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 15:42:48] INFO root fetch - processPackages [ansys-sphinx-theme]: Start processing: cybrid-api-id-python
+[2023-05-09 15:42:48] INFO root fetch - main [MainThread]: End processing [ansys-sphinx-theme]: success
+[2023-05-09 15:42:48] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 15:42:48] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-09 15:42:48] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 15:42:49] INFO root fetch - processPackages [sat-utils]: Start processing: tllab-common
+[2023-05-09 15:42:49] INFO root fetch - main [MainThread]: End processing [sat-utils]: success
+[2023-05-09 15:42:49] INFO root fetch - processPackages [tllab-common]: New version: [2023.4.1] Old Version: [2023.4.0]
+[2023-05-09 15:42:49] INFO root fetch - processPackages [tllab-common]: Downloading https://files.pythonhosted.org/packages/40/e9/392e321bd7e1f50f1aeb542b2bc591fad8af53211b202a395b1f3b95388f/tllab_common-2023.4.0.tar.gz
+[2023-05-09 15:42:49] INFO root fetch - processPackages [vantage6-node]: Start processing: cybrid-api-bank-python
+[2023-05-09 15:42:49] INFO root fetch - main [MainThread]: End processing [vantage6-node]: success
+[2023-05-09 15:42:49] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-09 15:42:49] INFO root fetch - processPackages [arraylib-solve]: Start processing: graph-z-c
+[2023-05-09 15:42:49] INFO root fetch - main [MainThread]: End processing [arraylib-solve]: success
+[2023-05-09 15:42:49] INFO root fetch - processPackages [graph-z-c]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-09 15:42:49] INFO root fetch - processPackages [tllab-common]: Downloading https://files.pythonhosted.org/packages/0d/c7/a9ca8b949467cff05e1feea52bc069ec5a2cbbb9a57edd74a08000fbeae7/tllab_common-2023.4.1.tar.gz
+[2023-05-09 15:42:49] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-09 15:42:49] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230509/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-09 15:42:49] INFO root fetch - processPackages [mythic-container]: Start processing: jackpolynomials
+[2023-05-09 15:42:49] INFO root fetch - main [MainThread]: End processing [mythic-container]: success
+[2023-05-09 15:42:49] INFO root fetch - processPackages [tllab-common]: executing diffoscope
+[2023-05-09 15:42:49] INFO root fetch - processPackages [tllab-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tllab_common-2023.4.0.tar.gz tmp/tllab_common-2023.4.1.tar.gz --markdown 20230509/t/tllab-common/2023.4.0-2023.4.1/diff.md --exclude *.pyd
+[2023-05-09 15:42:49] WARNING root fetch - processPackages [jackpolynomials]: Skipping, unable to determine old version
+[2023-05-09 15:42:49] INFO root fetch - processPackages [jackpolynomials]: Start processing: GlobalPayments.Api
+[2023-05-09 15:42:49] INFO root fetch - main [MainThread]: End processing [jackpolynomials] error
+[2023-05-09 15:42:49] INFO root fetch - processPackages [GlobalPayments.Api]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-09 15:42:49] INFO root fetch - processPackages [graph-z-c]: Downloading https://files.pythonhosted.org/packages/c3/89/b76555a5d265b891f109a4a8744814ef1516a9bcba1d4aaa645308332239/graph_z_c-0.0.5.tar.gz
+[2023-05-09 15:42:50] INFO root fetch - processPackages [graph-z-c]: executing diffoscope
+[2023-05-09 15:42:50] INFO root fetch - processPackages [graph-z-c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph_z_c-0.0.4.tar.gz tmp/graph_z_c-0.0.5.tar.gz --markdown 20230509/g/graph-z-c/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 15:42:50] INFO root fetch - processPackages [mongomancy]: Start processing: inputty
+[2023-05-09 15:42:50] INFO root fetch - main [MainThread]: End processing [mongomancy]: success
+[2023-05-09 15:42:50] INFO root fetch - processPackages [GlobalPayments.Api]: Downloading https://files.pythonhosted.org/packages/b5/c0/168b10490d62b92f5156540a8d9b6dbc228bbe01ba9713db486d9bb61b9c/GlobalPayments.Api-1.0.6.tar.gz
+[2023-05-09 15:42:50] INFO root fetch - processPackages [inputty]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-09 15:42:50] INFO root fetch - processPackages [vantage6-server]: Start processing: FlyHash
+[2023-05-09 15:42:50] INFO root fetch - main [MainThread]: End processing [vantage6-server]: success
+[2023-05-09 15:42:50] INFO root fetch - processPackages [FlyHash]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-09 15:42:50] INFO root fetch - processPackages [inputty]: Downloading https://files.pythonhosted.org/packages/38/4f/7a8869e8d4f1b43d9348f6773bd4e488b92e92dd1916433e65602017e0ee/inputty-0.0.0.tar.gz
+[2023-05-09 15:42:50] INFO root fetch - processPackages [PyHarshit]: Start processing: nonebot-plugin-spark-gpt
+[2023-05-09 15:42:50] INFO root fetch - main [MainThread]: End processing [PyHarshit]: success
+[2023-05-09 15:42:50] INFO root fetch - processPackages [FlyHash]: Downloading https://files.pythonhosted.org/packages/02/d7/0f6c2ba815c2f64d19303e0b0a878bd3acbfa7e8e181e98f403c789e341a/FlyHash-0.1.0.tar.gz
+[2023-05-09 15:42:50] WARNING root fetch - processPackages [nonebot-plugin-spark-gpt]: Skipping, unable to determine old version
+[2023-05-09 15:42:50] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Start processing: tap-github
+[2023-05-09 15:42:50] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-spark-gpt] error
+[2023-05-09 15:42:50] INFO root fetch - processPackages [GlobalPayments.Api]: Downloading https://files.pythonhosted.org/packages/1a/6a/e0b71a51ffd856da39908dad7fd1198666e0d4eca518cc5a460c78a8ba6a/GlobalPayments.Api-1.0.7.tar.gz
+[2023-05-09 15:42:50] INFO root fetch - processPackages [tap-github]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-09 15:42:50] INFO root fetch - processPackages [GlobalPayments.Api]: executing diffoscope
+[2023-05-09 15:42:50] INFO root fetch - processPackages [GlobalPayments.Api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GlobalPayments.Api-1.0.6.tar.gz tmp/GlobalPayments.Api-1.0.7.tar.gz --markdown 20230509/G/GlobalPayments.Api/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-09 15:42:50] INFO root fetch - main [MainThread]: End processing [asdm]: success
+[2023-05-09 15:42:50] INFO root fetch - processPackages [tap-github]: Downloading https://files.pythonhosted.org/packages/8f/7f/b67251a49ea4c249af2fa015d14d16221adab9d82cfdf0e52502a82fd831/tap-github-2.0.0.tar.gz
+[2023-05-09 15:42:50] INFO root fetch - processPackages [inputty]: Downloading https://files.pythonhosted.org/packages/b6/59/4aa4db9979d7c2a334aa08ca21e00e682ce99a1d63fc4743adbc42e476d3/inputty-0.0.1.tar.gz
+[2023-05-09 15:42:50] INFO root fetch - processPackages [FlyHash]: Downloading https://files.pythonhosted.org/packages/41/a5/fbc3a565bec951634d36b5d724dd4caa24bbc4f10ec9dd060fb0e10bcdbf/FlyHash-0.2.0.tar.gz
+[2023-05-09 15:42:50] INFO root fetch - processPackages [FlyHash]: executing diffoscope
+[2023-05-09 15:42:50] INFO root fetch - processPackages [inputty]: executing diffoscope
+[2023-05-09 15:42:50] INFO root fetch - processPackages [FlyHash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlyHash-0.1.0.tar.gz tmp/FlyHash-0.2.0.tar.gz --markdown 20230509/F/FlyHash/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-09 15:42:50] INFO root fetch - processPackages [inputty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inputty-0.0.0.tar.gz tmp/inputty-0.0.1.tar.gz --markdown 20230509/i/inputty/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-09 15:42:50] INFO root fetch - processPackages [tap-github]: Downloading https://files.pythonhosted.org/packages/f2/d9/7d62852083d5dff0d2668300b1b5b5c410738a05d18650e198fdd45e91ea/tap-github-2.0.1.tar.gz
+[2023-05-09 15:42:50] INFO root fetch - processPackages [tap-github]: executing diffoscope
+[2023-05-09 15:42:50] INFO root fetch - processPackages [tap-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap-github-2.0.0.tar.gz tmp/tap-github-2.0.1.tar.gz --markdown 20230509/t/tap-github/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-09 15:42:51] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-09 15:42:51] INFO root fetch - main [MainThread]: End processing [graph-z-c]: success
+[2023-05-09 15:42:51] INFO root fetch - main [MainThread]: End processing [tllab-common]: success
+[2023-05-09 15:42:51] INFO root fetch - main [MainThread]: End processing [FlyHash]: success
+[2023-05-09 15:42:52] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-09 15:42:52] INFO root fetch - main [MainThread]: End processing [inputty]: success
+[2023-05-09 15:42:52] INFO root fetch - main [MainThread]: End processing [tap-github]: success
+[2023-05-09 15:42:52] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-09 15:42:53] INFO root fetch - main [MainThread]: End processing [GlobalPayments.Api]: success
+[2023-05-09 15:42:53] INFO root fetch - main [MainThread]: Store serial: [18032465]
