@@ -20225,3 +20225,135 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 18:08:28] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
 [2023-05-09 18:08:39] INFO root fetch - main [MainThread]: End processing [cubicweb]: success
 [2023-05-09 18:08:39] INFO root fetch - main [MainThread]: Store serial: [18034512]
+[2023-05-09 18:13:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034512]
+[2023-05-09 18:13:50] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ambient-package-update
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-vpc
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lmn
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: brer-md
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: unpast
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foundationdb
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hatlib
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: maddaq
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: palmers-agents-general
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: awc
+[2023-05-09 18:13:50] INFO root fetch - processPackages [brer-md]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ambient-package-update]: New version: [23.5.9] Old Version: [23.5.8]
+[2023-05-09 18:13:50] INFO root fetch - processPackages [foundationdb]: New version: [7.2.5] Old Version: [7.2.4]
+[2023-05-09 18:13:50] INFO root fetch - processPackages [lmn]: New version: [0.2.5] Old Version: [0.2.4rc1]
+[2023-05-09 18:13:50] WARNING root fetch - processPackages [unpast]: Skipping, unable to determine old version
+[2023-05-09 18:13:50] INFO root fetch - processPackages [unpast]: Start processing: volttron-lib-base-historian
+[2023-05-09 18:13:50] INFO root fetch - main [MainThread]: End processing [unpast] error
+[2023-05-09 18:13:50] INFO root fetch - processPackages [awc]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-05-09 18:13:50] INFO root fetch - processPackages [maddaq]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-05-09 18:13:50] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.10.0] Old Version: [0.0.9]
+[2023-05-09 18:13:50] INFO root fetch - processPackages [hatlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 18:13:50] INFO root fetch - processPackages [volttron-lib-base-historian]: New version: [0.2.0rc3] Old Version: [0.2.0rc2]
+[2023-05-09 18:13:50] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 18:13:50] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-09 18:13:50] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.9.tar.gz tmp/palmers_agents_general-0.10.0.tar.gz --markdown 20230509/p/palmers-agents-general/0.0.9-0.10.0/diff.md --exclude *.pyd
+[2023-05-09 18:13:50] INFO root fetch - processPackages [maddaq]: Downloading https://files.pythonhosted.org/packages/6c/b0/2efc63ecf2ba2884de63fa77a78be58d4fd3e2f35caa80f7c1cc4db18614/maddaq-0.7.6.tar.gz
+[2023-05-09 18:13:50] INFO root fetch - processPackages [foundationdb]: Downloading https://files.pythonhosted.org/packages/de/2e/a75fd01868e26a42ab15efaa76379fb48754ebb7c0b2236ec571c2102499/foundationdb-7.2.4.tar.gz
+[2023-05-09 18:13:50] INFO root fetch - processPackages [awc]: Downloading https://files.pythonhosted.org/packages/32/bd/ffcf9a8d11c39e10c2915a979d22d336f56f937976c92cdc69a2c0524654/awc-3.1.0-py2.py3-none-any.whl
+[2023-05-09 18:13:50] INFO root fetch - processPackages [lmn]: Downloading https://files.pythonhosted.org/packages/13/6c/f72357836a63b57232dbb0e229d9fd1871dc581732ec77d5219154917034/lmn-0.2.4rc1.tar.gz
+[2023-05-09 18:13:50] INFO root fetch - processPackages [brer-md]: Downloading https://files.pythonhosted.org/packages/ec/8c/dbbcbc3a8d4df7c363cd36d30f2f716e66a5dd54984fb25fae71c56d74de/brer-md-2.0.0b8.tar.gz
+[2023-05-09 18:13:50] INFO root fetch - processPackages [volttron-lib-base-historian]: Downloading https://files.pythonhosted.org/packages/5c/6e/3d55e6eb0502d79d3b84b8722eab46f2bd94778f073239b7bcb2d6c08473/volttron_lib_base_historian-0.2.0rc2.tar.gz
+[2023-05-09 18:13:50] INFO root fetch - processPackages [awc]: executing diffoscope
+[2023-05-09 18:13:50] INFO root fetch - processPackages [awc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc-3.0.0-py2.py3-none-any.whl.zip tmp/awc-3.1.0-py2.py3-none-any.whl.zip --markdown 20230509/a/awc/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-05-09 18:13:50] INFO root fetch - processPackages [ambient-package-update]: Downloading https://files.pythonhosted.org/packages/54/f8/f4b1eb44c8d952aaad498537ceaef44db49cb683feb484baf612a54c0926/ambient-package-update-23.5.9.tar.gz
+[2023-05-09 18:13:51] INFO root fetch - processPackages [maddaq]: Downloading https://files.pythonhosted.org/packages/6c/0d/51c1aac387d316725ddfe89aa7d5c35ceef65f3c0f4cfabce731d9c3d43c/maddaq-0.7.7.tar.gz
+[2023-05-09 18:13:51] INFO root fetch - processPackages [maddaq]: executing diffoscope
+[2023-05-09 18:13:51] INFO root fetch - processPackages [maddaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maddaq-0.7.6.tar.gz tmp/maddaq-0.7.7.tar.gz --markdown 20230509/m/maddaq/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-05-09 18:13:51] INFO root fetch - processPackages [ambient-package-update]: executing diffoscope
+[2023-05-09 18:13:51] INFO root fetch - processPackages [ambient-package-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient-package-update-23.5.8.tar.gz tmp/ambient-package-update-23.5.9.tar.gz --markdown 20230509/a/ambient-package-update/23.5.8-23.5.9/diff.md --exclude *.pyd
+[2023-05-09 18:13:51] INFO root fetch - processPackages [hatlib]: executing diffoscope
+[2023-05-09 18:13:51] INFO root fetch - processPackages [hatlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatlib-0.0.8.tar.gz tmp/hatlib-0.0.9.tar.gz --markdown 20230509/h/hatlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:13:51] INFO root fetch - processPackages [lmn]: Downloading https://files.pythonhosted.org/packages/25/0f/1445e51c90751b544bb113c3cab2ec6911d4a65fc177c2e21dd8f7d60700/lmn-0.2.5.tar.gz
+[2023-05-09 18:13:51] INFO root fetch - processPackages [volttron-lib-base-historian]: Downloading https://files.pythonhosted.org/packages/a1/ce/8ce5a51b1044ea2d2752f302a610bc28a52afae8a26141fd0284f3150102/volttron_lib_base_historian-0.2.0rc3.tar.gz
+[2023-05-09 18:13:51] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-05-09 18:13:51] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230509/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 18:13:51] INFO root fetch - processPackages [lmn]: executing diffoscope
+[2023-05-09 18:13:51] INFO root fetch - processPackages [lmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmn-0.2.4rc1.tar.gz tmp/lmn-0.2.5.tar.gz --markdown 20230509/l/lmn/0.2.4rc1-0.2.5/diff.md --exclude *.pyd
+[2023-05-09 18:13:51] INFO root fetch - processPackages [foundationdb]: Downloading https://files.pythonhosted.org/packages/04/b4/e8ca601003fc927b656f2e0f83c4f65e8841f4b9b472e99b9a00508e68f4/foundationdb-7.2.5.tar.gz
+[2023-05-09 18:13:51] INFO root fetch - processPackages [foundationdb]: executing diffoscope
+[2023-05-09 18:13:51] INFO root fetch - processPackages [foundationdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foundationdb-7.2.4.tar.gz tmp/foundationdb-7.2.5.tar.gz --markdown 20230509/f/foundationdb/7.2.4-7.2.5/diff.md --exclude *.pyd
+[2023-05-09 18:13:51] INFO root fetch - processPackages [volttron-lib-base-historian]: executing diffoscope
+[2023-05-09 18:13:51] INFO root fetch - processPackages [volttron-lib-base-historian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volttron_lib_base_historian-0.2.0rc2.tar.gz tmp/volttron_lib_base_historian-0.2.0rc3.tar.gz --markdown 20230509/v/volttron-lib-base-historian/0.2.0rc2-0.2.0rc3/diff.md --exclude *.pyd
+[2023-05-09 18:13:52] INFO root fetch - processPackages [palmers-agents-general]: Start processing: plotnine
+[2023-05-09 18:13:52] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-09 18:13:52] INFO root fetch - processPackages [plotnine]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 18:13:52] INFO root fetch - processPackages [brer-md]: Downloading https://files.pythonhosted.org/packages/ca/9d/c8dfd5a621cf518845bcf2fbf22d07b6b187058801448bad8724041010f3/brer-md-2.0.0b9.tar.gz
+[2023-05-09 18:13:52] INFO root fetch - processPackages [plotnine]: executing diffoscope
+[2023-05-09 18:13:52] INFO root fetch - processPackages [plotnine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotnine-0.8.0.tar.gz tmp/plotnine-0.9.0.tar.gz --markdown 20230509/p/plotnine/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 18:13:52] INFO root fetch - processPackages [awc]: Start processing: dask-histogram
+[2023-05-09 18:13:52] INFO root fetch - main [MainThread]: End processing [awc]: success
+[2023-05-09 18:13:52] INFO root fetch - processPackages [dask-histogram]: New version: [2023.5.0] Old Version: [2023.4.4]
+[2023-05-09 18:13:52] INFO root fetch - processPackages [maddaq]: Start processing: vdk-dag
+[2023-05-09 18:13:52] INFO root fetch - main [MainThread]: End processing [maddaq]: success
+[2023-05-09 18:13:52] INFO root fetch - processPackages [brer-md]: executing diffoscope
+[2023-05-09 18:13:52] INFO root fetch - processPackages [brer-md]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brer-md-2.0.0b8.tar.gz tmp/brer-md-2.0.0b9.tar.gz --markdown 20230509/b/brer-md/2.0.0b8-2.0.0b9/diff.md --exclude *.pyd
+[2023-05-09 18:13:52] INFO root fetch - processPackages [vdk-dag]: New version: [0.1.861974079] Old Version: [0.1.861330674]
+[2023-05-09 18:13:52] INFO root fetch - processPackages [dask-histogram]: Downloading https://files.pythonhosted.org/packages/b7/14/bbb5ad12cab2a9a5f287ed724e39b7d4f4b5113c0404372b41e5fd36baed/dask_histogram-2023.4.4.tar.gz
+[2023-05-09 18:13:52] INFO root fetch - processPackages [vdk-dag]: Downloading https://files.pythonhosted.org/packages/87/47/c9241d82908066322e6e45fe965ffd7b3732b95ebaaac20827c003b20af5/vdk-dag-0.1.861974079.tar.gz
+[2023-05-09 18:13:52] INFO root fetch - processPackages [foundationdb]: Start processing: spswarehouse
+[2023-05-09 18:13:52] INFO root fetch - main [MainThread]: End processing [foundationdb]: success
+[2023-05-09 18:13:52] INFO root fetch - processPackages [spswarehouse]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 18:13:52] INFO root fetch - processPackages [pepperize.cdk-vpc]: Start processing: image-to-arduino
+[2023-05-09 18:13:52] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-vpc]: success
+[2023-05-09 18:13:52] INFO root fetch - processPackages [dask-histogram]: Downloading https://files.pythonhosted.org/packages/06/d2/3a09ff8bf93b0527f40b71692513b56b270cb45eea57f27d9b1cdf5590cc/dask_histogram-2023.5.0.tar.gz
+[2023-05-09 18:13:52] INFO root fetch - processPackages [image-to-arduino]: New version: [1.0.4.3] Old Version: [1.0.4.2]
+[2023-05-09 18:13:52] INFO root fetch - processPackages [vdk-dag]: executing diffoscope
+[2023-05-09 18:13:52] INFO root fetch - processPackages [vdk-dag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vdk-dag-0.1.861330674.tar.gz tmp/vdk-dag-0.1.861974079.tar.gz --markdown 20230509/v/vdk-dag/0.1.861330674-0.1.861974079/diff.md --exclude *.pyd
+[2023-05-09 18:13:53] INFO root fetch - processPackages [dask-histogram]: executing diffoscope
+[2023-05-09 18:13:53] INFO root fetch - processPackages [dask-histogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask_histogram-2023.4.4.tar.gz tmp/dask_histogram-2023.5.0.tar.gz --markdown 20230509/d/dask-histogram/2023.4.4-2023.5.0/diff.md --exclude *.pyd
+[2023-05-09 18:13:53] INFO root fetch - processPackages [spswarehouse]: Downloading https://files.pythonhosted.org/packages/ae/33/4bc502c178dae6d9fd2e8791e96d871f126ff7ae56b23601e87a4679773a/spswarehouse-0.1.1.tar.gz
+[2023-05-09 18:13:53] INFO root fetch - processPackages [hatlib]: Start processing: captcha6
+[2023-05-09 18:13:53] INFO root fetch - main [MainThread]: End processing [hatlib]: success
+[2023-05-09 18:13:53] INFO root fetch - processPackages [image-to-arduino]: Downloading https://files.pythonhosted.org/packages/60/8b/b1e497a9702eac0798e98cd8a8c85455722f483046167583b7154e636ea9/image-to-arduino-1.0.4.3.tar.gz
+[2023-05-09 18:13:53] INFO root fetch - processPackages [captcha6]: New version: [0.7] Old Version: [0.6]
+[2023-05-09 18:13:53] INFO root fetch - processPackages [ambient-package-update]: Start processing: protarrow
+[2023-05-09 18:13:53] INFO root fetch - main [MainThread]: End processing [ambient-package-update]: success
+[2023-05-09 18:13:53] INFO root fetch - processPackages [volttron-lib-base-historian]: Start processing: tldr
+[2023-05-09 18:13:53] INFO root fetch - main [MainThread]: End processing [volttron-lib-base-historian]: success
+[2023-05-09 18:13:53] INFO root fetch - processPackages [protarrow]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 18:13:53] INFO root fetch - processPackages [spswarehouse]: executing diffoscope
+[2023-05-09 18:13:53] INFO root fetch - processPackages [spswarehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spswarehouse-0.1.0.tar.gz tmp/spswarehouse-0.1.1.tar.gz --markdown 20230509/s/spswarehouse/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 18:13:53] INFO root fetch - processPackages [image-to-arduino]: executing diffoscope
+[2023-05-09 18:13:53] INFO root fetch - processPackages [image-to-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-to-arduino-1.0.4.2.tar.gz tmp/image-to-arduino-1.0.4.3.tar.gz --markdown 20230509/i/image-to-arduino/1.0.4.2-1.0.4.3/diff.md --exclude *.pyd
+[2023-05-09 18:13:53] INFO root fetch - processPackages [tldr]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-05-09 18:13:53] INFO root fetch - processPackages [captcha6]: Downloading https://files.pythonhosted.org/packages/50/83/34c0b0e83931c5de1566e8959a78a525c62948b131815b5c71108244d4a8/captcha6-0.6.tar.gz
+[2023-05-09 18:13:53] INFO root fetch - processPackages [lmn]: Start processing: nexus-utilities
+[2023-05-09 18:13:53] INFO root fetch - main [MainThread]: End processing [lmn]: success
+[2023-05-09 18:13:53] INFO root fetch - processPackages [nexus-utilities]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-09 18:13:53] INFO root fetch - processPackages [protarrow]: Downloading https://files.pythonhosted.org/packages/b9/43/7a706d526c027d3fa7ad9fe254d03993a752be537f450217c218a6d403b0/protarrow-0.1.4.tar.gz
+[2023-05-09 18:13:53] INFO root fetch - processPackages [tldr]: Downloading https://files.pythonhosted.org/packages/f4/14/29f31a5eccebe86e963e87a895641674d61e32f4d76421d6c1d625b876c7/tldr-3.1.0.tar.gz
+[2023-05-09 18:13:53] INFO root fetch - processPackages [captcha6]: Downloading https://files.pythonhosted.org/packages/29/16/d79643345325d2c1f4c8462b98adf4777b70886037987182de96ec06e9d0/captcha6-0.7.tar.gz
+[2023-05-09 18:13:53] INFO root fetch - processPackages [nexus-utilities]: Downloading https://files.pythonhosted.org/packages/94/51/39905bc392140db59b1abc9ffa88310fbbf639d8abdfed90327303ace298/nexus-utilities-0.2.2.tar.gz
+[2023-05-09 18:13:53] INFO root fetch - processPackages [nexus-utilities]: executing diffoscope
+[2023-05-09 18:13:53] INFO root fetch - processPackages [nexus-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-utilities-0.2.1.tar.gz tmp/nexus-utilities-0.2.2.tar.gz --markdown 20230509/n/nexus-utilities/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-09 18:13:53] INFO root fetch - processPackages [captcha6]: executing diffoscope
+[2023-05-09 18:13:53] INFO root fetch - processPackages [captcha6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/captcha6-0.6.tar.gz tmp/captcha6-0.7.tar.gz --markdown 20230509/c/captcha6/0.6-0.7/diff.md --exclude *.pyd
+[2023-05-09 18:13:53] INFO root fetch - processPackages [protarrow]: Downloading https://files.pythonhosted.org/packages/ca/42/2c06c5c7bb7fd37529163b922ea8604b12be65b721718adffb299b0c92bd/protarrow-0.1.5.tar.gz
+[2023-05-09 18:13:53] INFO root fetch - processPackages [protarrow]: executing diffoscope
+[2023-05-09 18:13:53] INFO root fetch - processPackages [tldr]: Downloading https://files.pythonhosted.org/packages/d5/ce/26518ec917e7d15a3cd039f3a63b86a95270a84f38bb118cf3cec1546c58/tldr-3.2.0.tar.gz
+[2023-05-09 18:13:53] INFO root fetch - processPackages [protarrow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protarrow-0.1.4.tar.gz tmp/protarrow-0.1.5.tar.gz --markdown 20230509/p/protarrow/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 18:13:54] INFO root fetch - processPackages [tldr]: executing diffoscope
+[2023-05-09 18:13:54] INFO root fetch - processPackages [tldr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tldr-3.1.0.tar.gz tmp/tldr-3.2.0.tar.gz --markdown 20230509/t/tldr/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-05-09 18:13:54] INFO root fetch - processPackages [dask-histogram]: Start processing: azure-servicebus
+[2023-05-09 18:13:54] INFO root fetch - main [MainThread]: End processing [dask-histogram]: success
+[2023-05-09 18:13:54] INFO root fetch - processPackages [azure-servicebus]: New version: [7.9.0b1] Old Version: [7.9.0a1]
+[2023-05-09 18:13:54] INFO root fetch - main [MainThread]: End processing [image-to-arduino]: success
+[2023-05-09 18:13:54] INFO root fetch - processPackages [azure-servicebus]: Downloading https://files.pythonhosted.org/packages/12/af/9653824eaaf5e4e17f1f966fb3313c33cb29713afd398e9044c36db257d0/azure-servicebus-7.9.0a1.zip
+[2023-05-09 18:13:54] INFO root fetch - main [MainThread]: End processing [vdk-dag]: success
+[2023-05-09 18:13:55] INFO root fetch - main [MainThread]: End processing [nexus-utilities]: success
+[2023-05-09 18:13:55] INFO root fetch - main [MainThread]: End processing [captcha6]: success
+[2023-05-09 18:13:55] INFO root fetch - main [MainThread]: End processing [spswarehouse]: success
+[2023-05-09 18:13:55] INFO root fetch - main [MainThread]: End processing [protarrow]: success
+[2023-05-09 18:13:55] INFO root fetch - processPackages [azure-servicebus]: Downloading https://files.pythonhosted.org/packages/5a/d9/8b3706d89b2fdb9484051a38fb607a1787c1ef6cfc4b9bb14b25b98f7afe/azure-servicebus-7.9.0b1.zip
+[2023-05-09 18:13:55] INFO root fetch - main [MainThread]: End processing [tldr]: success
+[2023-05-09 18:13:55] INFO root fetch - processPackages [azure-servicebus]: executing diffoscope
+[2023-05-09 18:13:55] INFO root fetch - processPackages [azure-servicebus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-servicebus-7.9.0a1.zip tmp/azure-servicebus-7.9.0b1.zip --markdown 20230509/a/azure-servicebus/7.9.0a1-7.9.0b1/diff.md --exclude *.pyd
+[2023-05-09 18:13:56] INFO root fetch - main [MainThread]: End processing [brer-md]: success
+[2023-05-09 18:13:59] INFO root fetch - main [MainThread]: End processing [plotnine]: success
+[2023-05-09 18:13:59] INFO root fetch - main [MainThread]: End processing [azure-servicebus]: success
+[2023-05-09 18:13:59] INFO root fetch - main [MainThread]: Store serial: [18034575]
