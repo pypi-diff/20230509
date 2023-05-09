@@ -19847,3 +19847,82 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 17:47:12] INFO root fetch - main [MainThread]: End processing [litestar]: success
 [2023-05-09 17:47:12] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
 [2023-05-09 17:47:12] INFO root fetch - main [MainThread]: Store serial: [18034264]
+[2023-05-09 17:52:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034264]
+[2023-05-09 17:52:22] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: palmers-agents-general
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: corva-sdk
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aioinsta
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: upgini
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blond
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ml-jobs
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: schematic-db
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dbt-databricks
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: awc-cli
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dsmlibrary
+[2023-05-09 17:52:22] INFO root fetch - processPackages [palmers-agents-general]: New version: [0.10.0] Old Version: [0.0.9]
+[2023-05-09 17:52:22] INFO root fetch - processPackages [dsmlibrary]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 17:52:22] INFO root fetch - processPackages [corva-sdk]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-09 17:52:22] INFO root fetch - processPackages [aioinsta]: New version: [1.5] Old Version: [1.4]
+[2023-05-09 17:52:22] INFO root fetch - processPackages [schematic-db]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 17:52:22] WARNING root fetch - processPackages [ml-jobs]: Skipping, unable to determine old version
+[2023-05-09 17:52:22] INFO root fetch - processPackages [awc-cli]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-09 17:52:22] INFO root fetch - processPackages [blond]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-09 17:52:22] INFO root fetch - processPackages [ml-jobs]: Start processing: cracklib
+[2023-05-09 17:52:22] INFO root fetch - main [MainThread]: End processing [ml-jobs] error
+[2023-05-09 17:52:22] INFO root fetch - processPackages [dbt-databricks]: New version: [1.5.1] Old Version: [1.5.0rc1]
+[2023-05-09 17:52:22] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-09 17:52:22] INFO root fetch - processPackages [cracklib]: New version: [2.9.6] Old Version: [2.9.3]
+[2023-05-09 17:52:22] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2023-05-09 17:52:22] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20230509/u/upgini/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-09 17:52:22] INFO root fetch - processPackages [aioinsta]: Downloading https://files.pythonhosted.org/packages/f1/24/5be4cb52c27891e55f96cad934f526d14d1acc2454065c1e84e6ead55b9c/aioinsta-1.5.tar.gz
+[2023-05-09 17:52:22] INFO root fetch - processPackages [blond]: Downloading https://files.pythonhosted.org/packages/87/d5/0b71c9bab9632519dbe84269847ffdd1b967662cf1611d5e2f84312450f5/blond-2.1.1.tar.gz
+[2023-05-09 17:52:22] INFO root fetch - processPackages [dbt-databricks]: Downloading https://files.pythonhosted.org/packages/62/3c/45ae6c0c8cadf94f2138ab8be5afb0e8d42cbc61998d8a4a6220a1c7f76f/dbt-databricks-1.5.0rc1.tar.gz
+[2023-05-09 17:52:22] INFO root fetch - processPackages [schematic-db]: Downloading https://files.pythonhosted.org/packages/f0/ff/8c96ae409d8249cf82ec27f0866e344d5dd53e94e9f6eea3a15db94822c7/schematic_db-0.0.8.tar.gz
+[2023-05-09 17:52:22] INFO root fetch - processPackages [palmers-agents-general]: Downloading https://files.pythonhosted.org/packages/3a/e5/307d9a402e1e9d0415991ed60fc33e2ddddc0a275cc3ad0c5917b294d551/palmers_agents_general-0.10.0.tar.gz
+[2023-05-09 17:52:22] INFO root fetch - processPackages [aioinsta]: executing diffoscope
+[2023-05-09 17:52:22] INFO root fetch - processPackages [aioinsta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioinsta-1.4.tar.gz tmp/aioinsta-1.5.tar.gz --markdown 20230509/a/aioinsta/1.4-1.5/diff.md --exclude *.pyd
+[2023-05-09 17:52:22] INFO root fetch - processPackages [cracklib]: Downloading https://files.pythonhosted.org/packages/4d/89/f78c127250bf3c396da5987ff5293c5ec9f89fcc3d7a52936625947cc230/cracklib-2.9.3.tar.gz
+[2023-05-09 17:52:22] INFO root fetch - processPackages [dsmlibrary]: executing diffoscope
+[2023-05-09 17:52:22] INFO root fetch - processPackages [corva-sdk]: Downloading https://files.pythonhosted.org/packages/e0/21/1a68a30e1f22c4bfb7e94c7a060268a83c4a31231bb22108ad0a07bc6dd5/corva-sdk-1.9.0.tar.gz
+[2023-05-09 17:52:22] INFO root fetch - processPackages [dsmlibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsmlibrary-1.0.8.tar.gz tmp/dsmlibrary-1.0.9.tar.gz --markdown 20230509/d/dsmlibrary/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 17:52:22] INFO root fetch - processPackages [palmers-agents-general]: executing diffoscope
+[2023-05-09 17:52:22] INFO root fetch - processPackages [palmers-agents-general]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palmers_agents_general-0.0.9.tar.gz tmp/palmers_agents_general-0.10.0.tar.gz --markdown 20230509/p/palmers-agents-general/0.0.9-0.10.0/diff.md --exclude *.pyd
+[2023-05-09 17:52:22] INFO root fetch - processPackages [awc-cli]: Downloading https://files.pythonhosted.org/packages/e5/a6/9c5a0af798c239f6930a6b0d737919e0b9b71f338cb49d1eb717311868e5/awc_cli-1.2.0-py2.py3-none-any.whl
+[2023-05-09 17:52:22] INFO root fetch - processPackages [dbt-databricks]: Downloading https://files.pythonhosted.org/packages/11/5d/4a0e120eef6261372660fbf4c980f67c90c89026425c16020018ee86b78e/dbt-databricks-1.5.1.tar.gz
+[2023-05-09 17:52:22] INFO root fetch - processPackages [awc-cli]: executing diffoscope
+[2023-05-09 17:52:22] INFO root fetch - processPackages [awc-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awc_cli-1.1.0-py2.py3-none-any.whl.zip tmp/awc_cli-1.2.0-py2.py3-none-any.whl.zip --markdown 20230509/a/awc-cli/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 17:52:22] INFO root fetch - processPackages [dbt-databricks]: executing diffoscope
+[2023-05-09 17:52:22] INFO root fetch - processPackages [dbt-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-databricks-1.5.0rc1.tar.gz tmp/dbt-databricks-1.5.1.tar.gz --markdown 20230509/d/dbt-databricks/1.5.0rc1-1.5.1/diff.md --exclude *.pyd
+[2023-05-09 17:52:22] INFO root fetch - processPackages [schematic-db]: Downloading https://files.pythonhosted.org/packages/e5/f8/2b64f4934b62c6569a72b84ad8bf1d1b30c957480b47700ddff4a29aeb7c/schematic_db-0.0.9.tar.gz
+[2023-05-09 17:52:22] INFO root fetch - processPackages [cracklib]: Downloading https://files.pythonhosted.org/packages/05/96/ef45729b4e86e394bd53f1148a9a8c95d6124b957fb3352eebd4b7e9bdff/cracklib-2.9.6.tar.gz
+[2023-05-09 17:52:23] INFO root fetch - processPackages [corva-sdk]: Downloading https://files.pythonhosted.org/packages/ff/5a/9e0ea1bf099fa95859d70453f1a6913dc92443065f6137bbbde359f1ff11/corva-sdk-1.9.1.tar.gz
+[2023-05-09 17:52:23] INFO root fetch - processPackages [cracklib]: executing diffoscope
+[2023-05-09 17:52:23] INFO root fetch - processPackages [cracklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cracklib-2.9.3.tar.gz tmp/cracklib-2.9.6.tar.gz --markdown 20230509/c/cracklib/2.9.3-2.9.6/diff.md --exclude *.pyd
+[2023-05-09 17:52:23] INFO root fetch - processPackages [corva-sdk]: executing diffoscope
+[2023-05-09 17:52:23] INFO root fetch - processPackages [corva-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corva-sdk-1.9.0.tar.gz tmp/corva-sdk-1.9.1.tar.gz --markdown 20230509/c/corva-sdk/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-09 17:52:23] INFO root fetch - processPackages [schematic-db]: executing diffoscope
+[2023-05-09 17:52:23] INFO root fetch - processPackages [schematic-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schematic_db-0.0.8.tar.gz tmp/schematic_db-0.0.9.tar.gz --markdown 20230509/s/schematic-db/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 17:52:23] INFO root fetch - processPackages [blond]: Downloading https://files.pythonhosted.org/packages/b5/0c/b37200ea0d466d301e239cab49b0b325da0f479b84e8f13a2ffc40c4f657/blond-2.1.2.tar.gz
+[2023-05-09 17:52:23] INFO root fetch - processPackages [blond]: executing diffoscope
+[2023-05-09 17:52:23] INFO root fetch - processPackages [blond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blond-2.1.1.tar.gz tmp/blond-2.1.2.tar.gz --markdown 20230509/b/blond/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-09 17:52:24] INFO root fetch - processPackages [aioinsta]: Start processing: pydischarge
+[2023-05-09 17:52:24] INFO root fetch - main [MainThread]: End processing [aioinsta]: success
+[2023-05-09 17:52:24] WARNING root fetch - processPackages [pydischarge]: Skipping, unable to determine old version
+[2023-05-09 17:52:24] INFO root fetch - processPackages [pydischarge]: Start processing: firex-flame
+[2023-05-09 17:52:24] INFO root fetch - main [MainThread]: End processing [pydischarge] error
+[2023-05-09 17:52:24] INFO root fetch - processPackages [firex-flame]: New version: [2.5.9] Old Version: [2.5.8]
+[2023-05-09 17:52:24] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2023-05-09 17:52:24] INFO root fetch - processPackages [firex-flame]: Downloading https://files.pythonhosted.org/packages/dc/7d/3b1e2c19aa2fe6256a43158ae1ec3313fa3bc2f294209fe350745fd4d4f9/firex_flame-2.5.8.tar.gz
+[2023-05-09 17:52:24] INFO root fetch - main [MainThread]: End processing [dsmlibrary]: success
+[2023-05-09 17:52:24] INFO root fetch - main [MainThread]: End processing [palmers-agents-general]: success
+[2023-05-09 17:52:24] INFO root fetch - main [MainThread]: End processing [awc-cli]: success
+[2023-05-09 17:52:24] INFO root fetch - main [MainThread]: End processing [cracklib]: success
+[2023-05-09 17:52:24] INFO root fetch - processPackages [firex-flame]: Downloading https://files.pythonhosted.org/packages/44/a9/a582d9505de7a0f1586e4db35b33464bdbabc31678bcf8df63160eedae9a/firex_flame-2.5.9.tar.gz
+[2023-05-09 17:52:24] INFO root fetch - main [MainThread]: End processing [corva-sdk]: success
+[2023-05-09 17:52:25] INFO root fetch - main [MainThread]: End processing [dbt-databricks]: success
+[2023-05-09 17:52:25] INFO root fetch - main [MainThread]: End processing [schematic-db]: success
+[2023-05-09 17:52:25] INFO root fetch - processPackages [firex-flame]: executing diffoscope
+[2023-05-09 17:52:25] INFO root fetch - processPackages [firex-flame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firex_flame-2.5.8.tar.gz tmp/firex_flame-2.5.9.tar.gz --markdown 20230509/f/firex-flame/2.5.8-2.5.9/diff.md --exclude *.pyd
+[2023-05-09 17:52:26] INFO root fetch - main [MainThread]: End processing [firex-flame]: success
+[2023-05-09 17:52:29] INFO root fetch - main [MainThread]: End processing [blond]: success
+[2023-05-09 17:52:29] INFO root fetch - main [MainThread]: Store serial: [18034306]
