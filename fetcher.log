@@ -20602,3 +20602,186 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 18:24:36] INFO root fetch - main [MainThread]: End processing [MCSimPython]: success
 [2023-05-09 18:26:44] INFO root fetch - main [MainThread]: End processing [cfn-lint]: success
 [2023-05-09 18:26:44] INFO root fetch - main [MainThread]: Store serial: [18034708]
+[2023-05-09 18:31:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18034708]
+[2023-05-09 18:31:55] INFO root fetch - main [MainThread]: Found 29 changed packages
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-yuvalbd-function-signature-formatting
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beavers
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: premium
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-spotinst
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyboil
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: MomentumX
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: FATtools
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nexus-utilities
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: supertokens-python
+[2023-05-09 18:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: raspunzel
+[2023-05-09 18:31:55] WARNING root fetch - processPackages [beavers]: Skipping, unable to determine old version
+[2023-05-09 18:31:55] INFO root fetch - processPackages [beavers]: Start processing: mlserver
+[2023-05-09 18:31:55] INFO root fetch - main [MainThread]: End processing [beavers] error
+[2023-05-09 18:31:55] WARNING root fetch - processPackages [certora-cli-alpha-yuvalbd-function-signature-formatting]: Skipping, unable to determine old version
+[2023-05-09 18:31:55] INFO root fetch - processPackages [certora-cli-alpha-yuvalbd-function-signature-formatting]: Start processing: inverter-connect
+[2023-05-09 18:31:55] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-yuvalbd-function-signature-formatting] error
+[2023-05-09 18:31:55] INFO root fetch - processPackages [pyboil]: New version: [0.5.2] Old Version: [0.5.0]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [premium]: New version: [23.5.11.1] Old Version: [23.5.10.0]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [FATtools]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [supertokens-python]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [nexus-utilities]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [inverter-connect]: New version: [0.7.0rc1] Old Version: [0.6.1]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [MomentumX]: New version: [2.7.0] Old Version: [2.6.5]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [raspunzel]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [mlserver]: New version: [1.4.0.dev2] Old Version: [1.3.2rc3]
+[2023-05-09 18:31:55] INFO root fetch - processPackages [pyboil]: Downloading https://files.pythonhosted.org/packages/8b/50/5839454b550fdfc5dc072c3f1be84c11ff7c6e91b28c039e41f324154437/pyboil-0.5.0.tar.gz
+[2023-05-09 18:31:55] INFO root fetch - processPackages [nexus-utilities]: Downloading https://files.pythonhosted.org/packages/c3/49/9b761074f2bfddc6144eb58190152a8ab8ba479e94fa51fdfcc550b0a131/nexus-utilities-0.2.4.tar.gz
+[2023-05-09 18:31:55] INFO root fetch - processPackages [mlserver]: Downloading https://files.pythonhosted.org/packages/21/59/3ed01227e3d515b0c6ae2569f5719544a48ee8dafec838e711feff897557/mlserver-1.3.2rc3.tar.gz
+[2023-05-09 18:31:55] INFO root fetch - processPackages [FATtools]: Downloading https://files.pythonhosted.org/packages/24/24/933a0201b4e55a6e8d2473a7c49c553d69e947253d7b4d4d1626766cef18/FATtools-1.0.8-py3-none-any.whl
+[2023-05-09 18:31:55] INFO root fetch - processPackages [raspunzel]: Downloading https://files.pythonhosted.org/packages/6c/de/56f5dcee747afe7da23f0eab417e8b60dee4c3a58fd6a7c5b1e06e22f9e8/raspunzel-0.2.0.tar.gz
+[2023-05-09 18:31:55] INFO root fetch - processPackages [MomentumX]: Downloading https://files.pythonhosted.org/packages/8c/1d/59e9c392b61f35c722473badf2676d5c3027f7a6c64a84ba59aef5b288ac/MomentumX-2.6.5.tar.gz
+[2023-05-09 18:31:55] INFO root fetch - processPackages [supertokens-python]: Downloading https://files.pythonhosted.org/packages/41/34/31967fb29a967744e011eb91331a2937f19d9882acccbefdef89c41d48ce/supertokens_python-0.9.0.tar.gz
+[2023-05-09 18:31:55] INFO root fetch - processPackages [premium]: Downloading https://files.pythonhosted.org/packages/f7/b1/ddce35d6c54b8b17de3ce086bdb866cec9ee2254c73ed617d8b67367e14e/premium-23.5.11.1.tar.gz
+[2023-05-09 18:31:55] INFO root fetch - processPackages [mlserver]: Downloading https://files.pythonhosted.org/packages/5d/e9/3e344dce4950484ad82639f03f62c93f144f135e8d5e5f9af13e64b531a4/mlserver-1.4.0.dev2.tar.gz
+[2023-05-09 18:31:56] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2023-05-09 18:31:56] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20230509/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/diff.md --exclude *.pyd
+[2023-05-09 18:31:56] INFO root fetch - processPackages [inverter-connect]: Downloading https://files.pythonhosted.org/packages/24/e7/c9d4845ddd4622773658e396152bd064a6ede608bd9e71e2aa043e9935fe/inverter-connect-0.7.0rc1.tar.gz
+[2023-05-09 18:31:56] INFO root fetch - processPackages [pyboil]: Downloading https://files.pythonhosted.org/packages/92/63/5c2dc040003bf9c8d43471ece9485d2cbcd8a0504b01b442420a97db852f/pyboil-0.5.2.tar.gz
+[2023-05-09 18:31:56] INFO root fetch - processPackages [raspunzel]: Downloading https://files.pythonhosted.org/packages/a3/43/cd7db1db4d842fd4146cd2fc8cdc9865b249724b9363b7b8e30b3abdfa44/raspunzel-0.3.0.tar.gz
+[2023-05-09 18:31:56] INFO root fetch - processPackages [MomentumX]: Downloading https://files.pythonhosted.org/packages/8e/72/3ba4f97ce8886acefe039a37bb9bab8c9c8c12d64565e3b87465a20d68ce/MomentumX-2.7.0.tar.gz
+[2023-05-09 18:31:56] INFO root fetch - processPackages [FATtools]: Downloading https://files.pythonhosted.org/packages/39/de/27ad141dc2d3176c8aff292eada5a66869a0d4d7a3435725fda7919a2ea9/FATtools-1.0.9.tar.gz
+[2023-05-09 18:31:56] INFO root fetch - processPackages [nexus-utilities]: Downloading https://files.pythonhosted.org/packages/af/ef/7e97751a7491c58a4ee26b3126dba22b4aa8df9aa4fc0045c263c56b31c3/nexus-utilities-0.2.5.tar.gz
+[2023-05-09 18:31:56] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 18:31:56] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.0.tar.gz tmp/pyboil-0.5.2.tar.gz --markdown 20230509/p/pyboil/0.5.0-0.5.2/diff.md --exclude *.pyd
+[2023-05-09 18:31:56] INFO root fetch - processPackages [inverter-connect]: executing diffoscope
+[2023-05-09 18:31:56] INFO root fetch - processPackages [inverter-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverter-connect-0.6.1.tar.gz tmp/inverter-connect-0.7.0rc1.tar.gz --markdown 20230509/i/inverter-connect/0.6.1-0.7.0rc1/diff.md --exclude *.pyd
+[2023-05-09 18:31:56] INFO root fetch - processPackages [mlserver]: executing diffoscope
+[2023-05-09 18:31:56] INFO root fetch - processPackages [mlserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-1.3.2rc3.tar.gz tmp/mlserver-1.4.0.dev2.tar.gz --markdown 20230509/m/mlserver/1.3.2rc3-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-09 18:31:56] INFO root fetch - processPackages [nexus-utilities]: executing diffoscope
+[2023-05-09 18:31:56] INFO root fetch - processPackages [nexus-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-utilities-0.2.4.tar.gz tmp/nexus-utilities-0.2.5.tar.gz --markdown 20230509/n/nexus-utilities/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-09 18:31:56] INFO root fetch - processPackages [MomentumX]: executing diffoscope
+[2023-05-09 18:31:56] INFO root fetch - processPackages [MomentumX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MomentumX-2.6.5.tar.gz tmp/MomentumX-2.7.0.tar.gz --markdown 20230509/M/MomentumX/2.6.5-2.7.0/diff.md --exclude *.pyd
+[2023-05-09 18:31:56] INFO root fetch - processPackages [raspunzel]: executing diffoscope
+[2023-05-09 18:31:56] INFO root fetch - processPackages [raspunzel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raspunzel-0.2.0.tar.gz tmp/raspunzel-0.3.0.tar.gz --markdown 20230509/r/raspunzel/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-09 18:31:56] INFO root fetch - processPackages [supertokens-python]: Downloading https://files.pythonhosted.org/packages/9d/b6/1579872040858340507fd930b8d80cc6f32b03fdf8a1a46b669704ba8615/supertokens_python-0.9.1.tar.gz
+[2023-05-09 18:31:56] INFO root fetch - processPackages [FATtools]: executing diffoscope
+[2023-05-09 18:31:56] INFO root fetch - processPackages [FATtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FATtools-1.0.8-py3-none-any.whl.zip tmp/FATtools-1.0.9.tar.gz --markdown 20230509/F/FATtools/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:31:56] INFO root fetch - processPackages [supertokens-python]: executing diffoscope
+[2023-05-09 18:31:56] INFO root fetch - processPackages [supertokens-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supertokens_python-0.9.0.tar.gz tmp/supertokens_python-0.9.1.tar.gz --markdown 20230509/s/supertokens-python/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-09 18:31:57] INFO root fetch - processPackages [premium]: executing diffoscope
+[2023-05-09 18:31:57] INFO root fetch - processPackages [premium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/premium-23.5.10.0.tar.gz tmp/premium-23.5.11.1.tar.gz --markdown 20230509/p/premium/23.5.10.0-23.5.11.1/diff.md --exclude *.pyd
+[2023-05-09 18:31:57] INFO root fetch - processPackages [pyboil]: Start processing: mlserver-sklearn
+[2023-05-09 18:31:57] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 18:31:57] INFO root fetch - processPackages [mlserver-sklearn]: New version: [1.4.0.dev2] Old Version: [1.3.2rc3]
+[2023-05-09 18:31:57] INFO root fetch - processPackages [mlserver-sklearn]: Downloading https://files.pythonhosted.org/packages/e0/e0/de2d332f98c4fcd1455f1106864880b42823b46b09ba19ba864e2b14b2ec/mlserver-sklearn-1.3.2rc3.tar.gz
+[2023-05-09 18:31:57] INFO root fetch - processPackages [mlserver-sklearn]: Downloading https://files.pythonhosted.org/packages/a9/1f/259c6b8407fa04124af450e06afbcdf10587f4feada8aba9f8fd1415f8f7/mlserver-sklearn-1.4.0.dev2.tar.gz
+[2023-05-09 18:31:58] INFO root fetch - processPackages [FATtools]: Start processing: mlserver-alibi-explain
+[2023-05-09 18:31:58] INFO root fetch - main [MainThread]: End processing [FATtools]: success
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-sklearn]: executing diffoscope
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-sklearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-sklearn-1.3.2rc3.tar.gz tmp/mlserver-sklearn-1.4.0.dev2.tar.gz --markdown 20230509/m/mlserver-sklearn/1.3.2rc3-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-alibi-explain]: New version: [1.4.0.dev2] Old Version: [1.3.2rc3]
+[2023-05-09 18:31:58] INFO root fetch - processPackages [MomentumX]: Start processing: mlserver-xgboost
+[2023-05-09 18:31:58] INFO root fetch - main [MainThread]: End processing [MomentumX]: success
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-xgboost]: New version: [1.4.0.dev2] Old Version: [1.3.2rc3]
+[2023-05-09 18:31:58] INFO root fetch - processPackages [nexus-utilities]: Start processing: schematic-db
+[2023-05-09 18:31:58] INFO root fetch - main [MainThread]: End processing [nexus-utilities]: success
+[2023-05-09 18:31:58] INFO root fetch - processPackages [schematic-db]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-alibi-explain]: Downloading https://files.pythonhosted.org/packages/c3/c2/f682410387f93928faf0635dd7e8d50f7d807f286e0d7428b7575f56bef2/mlserver-alibi-explain-1.3.2rc3.tar.gz
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver]: Start processing: mlserver-lightgbm
+[2023-05-09 18:31:58] INFO root fetch - processPackages [raspunzel]: Start processing: mlserver-mlflow
+[2023-05-09 18:31:58] INFO root fetch - main [MainThread]: End processing [mlserver]: success
+[2023-05-09 18:31:58] INFO root fetch - main [MainThread]: End processing [raspunzel]: success
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-lightgbm]: New version: [1.4.0.dev2] Old Version: [1.3.2rc3]
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-mlflow]: New version: [1.4.0.dev2] Old Version: [1.3.2rc3]
+[2023-05-09 18:31:58] INFO root fetch - processPackages [schematic-db]: executing diffoscope
+[2023-05-09 18:31:58] INFO root fetch - processPackages [schematic-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schematic_db-0.0.8.tar.gz tmp/schematic_db-0.0.9.tar.gz --markdown 20230509/s/schematic-db/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-xgboost]: Downloading https://files.pythonhosted.org/packages/e5/23/c19539e3ea8a58617b7d57160db183a99e3751b6bb55d12e380b910ac66b/mlserver-xgboost-1.3.2rc3.tar.gz
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-mlflow]: Downloading https://files.pythonhosted.org/packages/a0/9f/c47fc95e044eb4bf7d69161b7d8c287a3c02a4283c3a58247c1d11dababb/mlserver-mlflow-1.3.2rc3.tar.gz
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-lightgbm]: Downloading https://files.pythonhosted.org/packages/97/d1/17c5cf6c0f948bf71c87aaa85dfc88a6810794b3b0a0c44b51204268d242/mlserver-lightgbm-1.3.2rc3.tar.gz
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-xgboost]: Downloading https://files.pythonhosted.org/packages/a9/4e/d37fe531858b5a0b361eadf69589e29ca81641b6d2581ebfb3010d756d63/mlserver-xgboost-1.4.0.dev2.tar.gz
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-alibi-explain]: Downloading https://files.pythonhosted.org/packages/4c/ff/8fee52bea3e7c1e8ae468fcbc17d72675b3e31f4c766303a884ef0a13022/mlserver-alibi-explain-1.4.0.dev2.tar.gz
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-lightgbm]: Downloading https://files.pythonhosted.org/packages/45/33/3f2748f79aa1b4bef981eec337edc621a424474f69062004e620da744793/mlserver-lightgbm-1.4.0.dev2.tar.gz
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-xgboost]: executing diffoscope
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-xgboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-xgboost-1.3.2rc3.tar.gz tmp/mlserver-xgboost-1.4.0.dev2.tar.gz --markdown 20230509/m/mlserver-xgboost/1.3.2rc3-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-alibi-explain]: executing diffoscope
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-alibi-explain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-explain-1.3.2rc3.tar.gz tmp/mlserver-alibi-explain-1.4.0.dev2.tar.gz --markdown 20230509/m/mlserver-alibi-explain/1.3.2rc3-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-mlflow]: Downloading https://files.pythonhosted.org/packages/30/19/1aaf2cad4df35702cdb9d097b2df2c2b58d1cbfb9df3c6f3e39b559a2264/mlserver-mlflow-1.4.0.dev2.tar.gz
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-lightgbm]: executing diffoscope
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-lightgbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-lightgbm-1.3.2rc3.tar.gz tmp/mlserver-lightgbm-1.4.0.dev2.tar.gz --markdown 20230509/m/mlserver-lightgbm/1.3.2rc3-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-mlflow]: executing diffoscope
+[2023-05-09 18:31:58] INFO root fetch - processPackages [mlserver-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mlflow-1.3.2rc3.tar.gz tmp/mlserver-mlflow-1.4.0.dev2.tar.gz --markdown 20230509/m/mlserver-mlflow/1.3.2rc3-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-09 18:31:59] INFO root fetch - processPackages [inverter-connect]: Start processing: mlserver-mllib
+[2023-05-09 18:31:59] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-mllib]: New version: [1.4.0.dev2] Old Version: [1.3.2rc3]
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-mllib]: Downloading https://files.pythonhosted.org/packages/25/82/5f5a82e4b1e76b1cad85654d77ca5107ea44e612492c95a48e7788fa4aa5/mlserver-mllib-1.3.2rc3.tar.gz
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-sklearn]: Start processing: mlserver-alibi-detect
+[2023-05-09 18:31:59] INFO root fetch - main [MainThread]: End processing [mlserver-sklearn]: success
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-mllib]: Downloading https://files.pythonhosted.org/packages/58/bb/f4a9f4208e47476294a4fe6e1e997c99d4884bae6544ba565f968ebcd0b4/mlserver-mllib-1.4.0.dev2.tar.gz
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-alibi-detect]: New version: [1.4.0.dev2] Old Version: [1.3.2rc3]
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-mllib]: executing diffoscope
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-mllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mllib-1.3.2rc3.tar.gz tmp/mlserver-mllib-1.4.0.dev2.tar.gz --markdown 20230509/m/mlserver-mllib/1.3.2rc3-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-alibi-detect]: Downloading https://files.pythonhosted.org/packages/21/93/594c2c9d33604b1406c28a0568832290cd8188f54d5ed44c6b21542dce82/mlserver-alibi-detect-1.3.2rc3.tar.gz
+[2023-05-09 18:31:59] INFO root fetch - processPackages [schematic-db]: Start processing: aesara
+[2023-05-09 18:31:59] INFO root fetch - main [MainThread]: End processing [schematic-db]: success
+[2023-05-09 18:31:59] INFO root fetch - processPackages [aesara]: New version: [2.9.0] Old Version: [2.8.9]
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-alibi-detect]: Downloading https://files.pythonhosted.org/packages/1e/9b/d8de9dd6f90d71c11ff42051fb1c8ea4f84b45d6f1568c2847cbef247ac6/mlserver-alibi-detect-1.4.0.dev2.tar.gz
+[2023-05-09 18:31:59] INFO root fetch - processPackages [aesara]: Downloading https://files.pythonhosted.org/packages/62/8e/9d3be3ba2bec5d4d59ca00728670338b29d784b231da7474c91766e408d4/aesara-2.8.9.tar.gz
+[2023-05-09 18:31:59] INFO root fetch - processPackages [premium]: Start processing: mlserver-huggingface
+[2023-05-09 18:31:59] INFO root fetch - main [MainThread]: End processing [premium]: success
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-alibi-detect]: executing diffoscope
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-alibi-detect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-detect-1.3.2rc3.tar.gz tmp/mlserver-alibi-detect-1.4.0.dev2.tar.gz --markdown 20230509/m/mlserver-alibi-detect/1.3.2rc3-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-09 18:31:59] INFO root fetch - processPackages [mlserver-huggingface]: New version: [1.4.0.dev2] Old Version: [1.3.2rc3]
+[2023-05-09 18:32:00] INFO root fetch - processPackages [mlserver-xgboost]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-09 18:32:00] INFO root fetch - main [MainThread]: End processing [mlserver-xgboost]: success
+[2023-05-09 18:32:00] INFO root fetch - processPackages [mlserver-huggingface]: Downloading https://files.pythonhosted.org/packages/00/4b/785329134f500d3a426c70da9e313ccd9842eddd8fade49f1984992489c5/mlserver-huggingface-1.3.2rc3.tar.gz
+[2023-05-09 18:32:00] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230509.16.29.808103] Old Version: [20230509.15.44.285120]
+[2023-05-09 18:32:00] INFO root fetch - processPackages [mlserver-lightgbm]: Start processing: pyboil
+[2023-05-09 18:32:00] INFO root fetch - main [MainThread]: End processing [mlserver-lightgbm]: success
+[2023-05-09 18:32:00] INFO root fetch - processPackages [pyboil]: New version: [0.5.2] Old Version: [0.5.0]
+[2023-05-09 18:32:00] INFO root fetch - processPackages [mlserver-alibi-explain]: Start processing: dexguru-sdk
+[2023-05-09 18:32:00] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-explain]: success
+[2023-05-09 18:32:00] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/1f/22/9969367a6062aaf107f644658209fb78ea7a592266bfe17ec2caa3eb59bf/certora-cli-alpha-roy-CERT-1955-assertHits-20230509.15.44.285120.tar.gz
+[2023-05-09 18:32:00] INFO root fetch - processPackages [dexguru-sdk]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-09 18:32:00] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38475429>=10485760
+[2023-05-09 18:32:00] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Start processing: nexus-utilities
+[2023-05-09 18:32:00] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-09 18:32:00] INFO root fetch - processPackages [pyboil]: executing diffoscope
+[2023-05-09 18:32:00] INFO root fetch - processPackages [pyboil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboil-0.5.0.tar.gz tmp/pyboil-0.5.2.tar.gz --markdown 20230509/p/pyboil/0.5.0-0.5.2/diff.md --exclude *.pyd
+[2023-05-09 18:32:00] INFO root fetch - processPackages [nexus-utilities]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-09 18:32:00] INFO root fetch - processPackages [mlserver-mlflow]: Start processing: pyquokka
+[2023-05-09 18:32:00] INFO root fetch - main [MainThread]: End processing [mlserver-mlflow]: success
+[2023-05-09 18:32:00] INFO root fetch - processPackages [pyquokka]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 18:32:00] INFO root fetch - processPackages [mlserver-huggingface]: Downloading https://files.pythonhosted.org/packages/f0/83/2735b6f081605f7c92fa3d85a4716cadd7b0eb1a50a71cdf6ec89daf1698/mlserver-huggingface-1.4.0.dev2.tar.gz
+[2023-05-09 18:32:00] INFO root fetch - processPackages [nexus-utilities]: executing diffoscope
+[2023-05-09 18:32:00] INFO root fetch - processPackages [nexus-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-utilities-0.2.4.tar.gz tmp/nexus-utilities-0.2.5.tar.gz --markdown 20230509/n/nexus-utilities/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-09 18:32:00] INFO root fetch - processPackages [dexguru-sdk]: Downloading https://files.pythonhosted.org/packages/e6/c5/f1e994965900a3d620ca575de2f69d966e1d5f84239439090d6ff99b9614/dexguru-sdk-0.2.7.tar.gz
+[2023-05-09 18:32:00] INFO root fetch - processPackages [mlserver-huggingface]: executing diffoscope
+[2023-05-09 18:32:00] INFO root fetch - processPackages [mlserver-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-huggingface-1.3.2rc3.tar.gz tmp/mlserver-huggingface-1.4.0.dev2.tar.gz --markdown 20230509/m/mlserver-huggingface/1.3.2rc3-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-09 18:32:00] INFO root fetch - processPackages [supertokens-python]: Start processing: assisted-service-client
+[2023-05-09 18:32:00] INFO root fetch - main [MainThread]: End processing [supertokens-python]: success
+[2023-05-09 18:32:00] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-09 18:32:00] INFO root fetch - processPackages [pyquokka]: Downloading https://files.pythonhosted.org/packages/41/a7/60ebdde64f9625dd94a114d542877cd1db3eda4b8dce3515a89a58dfc7ca/pyquokka-0.2.9-py3-none-any.whl
+[2023-05-09 18:32:00] INFO root fetch - processPackages [mlserver-mllib]: Start processing: edx-arch-experiments
+[2023-05-09 18:32:00] INFO root fetch - main [MainThread]: End processing [mlserver-mllib]: success
+[2023-05-09 18:32:00] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-09 18:32:00] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230509/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-09 18:32:00] INFO root fetch - processPackages [dexguru-sdk]: Downloading https://files.pythonhosted.org/packages/82/b8/cc3660925900ac4ae7673adcdb25b15beb4d2747b7f0aa015918fb63a4d4/dexguru-sdk-0.2.8.tar.gz
+[2023-05-09 18:32:00] INFO root fetch - processPackages [pyquokka]: executing diffoscope
+[2023-05-09 18:32:00] INFO root fetch - processPackages [pyquokka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyquokka-0.2.8-py3-none-any.whl.zip tmp/pyquokka-0.2.9-py3-none-any.whl.zip --markdown 20230509/p/pyquokka/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 18:32:00] INFO root fetch - processPackages [edx-arch-experiments]: New version: [1.2.0] Old Version: [1.1.4]
+[2023-05-09 18:32:01] INFO root fetch - processPackages [dexguru-sdk]: executing diffoscope
+[2023-05-09 18:32:01] INFO root fetch - processPackages [dexguru-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dexguru-sdk-0.2.7.tar.gz tmp/dexguru-sdk-0.2.8.tar.gz --markdown 20230509/d/dexguru-sdk/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-09 18:32:01] INFO root fetch - processPackages [edx-arch-experiments]: Downloading https://files.pythonhosted.org/packages/a9/9c/8fdb4584ef27a882a4e250fb1a2f458692785fdb2f2ce08553c13a72f050/edx-arch-experiments-1.1.4.tar.gz
+[2023-05-09 18:32:01] INFO root fetch - processPackages [aesara]: Downloading https://files.pythonhosted.org/packages/f8/bb/d1e1ccf2d7d9f73ba47ba7eaa7d16a5036d009f61760d875dfd110fd032f/aesara-2.9.0.tar.gz
+[2023-05-09 18:32:01] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-detect]: success
+[2023-05-09 18:32:01] INFO root fetch - main [MainThread]: End processing [pyboil]: success
+[2023-05-09 18:32:01] INFO root fetch - processPackages [edx-arch-experiments]: Downloading https://files.pythonhosted.org/packages/bd/4f/3af93679ea3268caed21632cf8b2fb1b7f0ee3dc02bf571caae3250c652c/edx-arch-experiments-1.2.0.tar.gz
+[2023-05-09 18:32:01] INFO root fetch - processPackages [edx-arch-experiments]: executing diffoscope
+[2023-05-09 18:32:01] INFO root fetch - processPackages [edx-arch-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edx-arch-experiments-1.1.4.tar.gz tmp/edx-arch-experiments-1.2.0.tar.gz --markdown 20230509/e/edx-arch-experiments/1.1.4-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 18:32:01] INFO root fetch - processPackages [aesara]: executing diffoscope
+[2023-05-09 18:32:01] INFO root fetch - processPackages [aesara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aesara-2.8.9.tar.gz tmp/aesara-2.9.0.tar.gz --markdown 20230509/a/aesara/2.8.9-2.9.0/diff.md --exclude *.pyd
+[2023-05-09 18:32:02] INFO root fetch - main [MainThread]: End processing [nexus-utilities]: success
+[2023-05-09 18:32:02] INFO root fetch - main [MainThread]: End processing [mlserver-huggingface]: success
+[2023-05-09 18:32:02] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2023-05-09 18:32:02] INFO root fetch - main [MainThread]: End processing [dexguru-sdk]: success
+[2023-05-09 18:32:02] INFO root fetch - main [MainThread]: End processing [pyquokka]: success
+[2023-05-09 18:32:03] INFO root fetch - main [MainThread]: End processing [edx-arch-experiments]: success
+[2023-05-09 18:32:04] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-09 18:32:13] INFO root fetch - main [MainThread]: End processing [aesara]: success
+[2023-05-09 18:32:13] INFO root fetch - main [MainThread]: Store serial: [18034806]
