@@ -8288,3 +8288,81 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 05:35:19] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-imm]: success
 [2023-05-09 05:35:21] INFO root fetch - main [MainThread]: End processing [intecomm-edc]: success
 [2023-05-09 05:35:21] INFO root fetch - main [MainThread]: Store serial: [18027224]
+[2023-05-09 05:40:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18027224]
+[2023-05-09 05:40:30] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: databricks-sql-connector
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: safe-eth-py-suraneti
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-imm20200930
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: garaprod
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hubitatcontrol
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yohsin3d
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mojo-interop
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: enrRiceTrait
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: garaprod
+[2023-05-09 05:40:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dingding-sdk
+[2023-05-09 05:40:30] INFO root fetch - processPackages [safe-eth-py-suraneti]: New version: [5.3.4] Old Version: [5.3.3]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: New version: [0.1683603566.0] Old Version: [0.1683603402.0]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [databricks-sql-connector]: New version: [2.5.2] Old Version: [2.5.1]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [dingding-sdk]: New version: [0.0.6] Old Version: [0.0.4]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [alibabacloud-imm20200930]: New version: [2.1.9] Old Version: [2.1.7]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [yohsin3d]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [hubitatcontrol]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: New version: [0.1683603566.0] Old Version: [0.1683603402.0]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [enrRiceTrait]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [mojo-interop]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/73/6d/15c092221a7cc2ef28d9fa3016f8ed7ad2eef4d5752089b44cd952e7e0c8/garaprod-0.1683603402.0.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/73/6d/15c092221a7cc2ef28d9fa3016f8ed7ad2eef4d5752089b44cd952e7e0c8/garaprod-0.1683603402.0.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [databricks-sql-connector]: Downloading https://files.pythonhosted.org/packages/a4/af/7c0175d3f795fc349ce297d2ce05d95a33ceb0b09918dc23d406d1cb003f/databricks_sql_connector-2.5.1.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [dingding-sdk]: Downloading https://files.pythonhosted.org/packages/c9/ad/d33b67e7fda40d17797c1df3c1791b0603d50e5e54df2440351225c9ec73/dingding-sdk-0.0.4.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [alibabacloud-imm20200930]: Downloading https://files.pythonhosted.org/packages/b5/8d/84c807be9c3e852423de2edb63c46a0f3d5c36fffa1407fef239a1a48a5f/alibabacloud_imm20200930-2.1.7.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [safe-eth-py-suraneti]: Downloading https://files.pythonhosted.org/packages/4b/26/d16d20355ed23bb98fb0270cc61acbb6fb7bdd7ab1a646985211bf92ddb6/safe-eth-py-suraneti-5.3.4.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [hubitatcontrol]: Downloading https://files.pythonhosted.org/packages/55/8f/3c9ad32f8fe9c577420879300a60d7f606c08bc14e928e64424cdc19d0ed/hubitatcontrol-2.2.0.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [mojo-interop]: Downloading https://files.pythonhosted.org/packages/55/36/9f539ca328591858e08e09e01710b5923e4b5fe2e60213684f9eb88bbee1/mojo_interop-0.0.8.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [enrRiceTrait]: Downloading https://files.pythonhosted.org/packages/36/99/c2db7f8f6da87700f3bc517969afda27e534b01539c6c2b70ce45dbc5020/enrRiceTrait-1.4.3.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [yohsin3d]: Downloading https://files.pythonhosted.org/packages/ab/f3/429c99e2c25f1eea4d4c72a13f7b28f6b97845b8991b94c0f0c0c1f293a3/yohsin3d-0.4.4.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [safe-eth-py-suraneti]: executing diffoscope
+[2023-05-09 05:40:30] INFO root fetch - processPackages [safe-eth-py-suraneti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safe-eth-py-suraneti-5.3.3.tar.gz tmp/safe-eth-py-suraneti-5.3.4.tar.gz --markdown 20230509/s/safe-eth-py-suraneti/5.3.3-5.3.4/diff.md --exclude *.pyd
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/df/f9/be685cbfb2eb7b8a36f3ef12461c4f987343aa8fb69c5e9502598c3b49cb/garaprod-0.1683603566.0.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: Downloading https://files.pythonhosted.org/packages/df/f9/be685cbfb2eb7b8a36f3ef12461c4f987343aa8fb69c5e9502598c3b49cb/garaprod-0.1683603566.0.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [yohsin3d]: executing diffoscope
+[2023-05-09 05:40:30] INFO root fetch - processPackages [yohsin3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yohsin3d-0.4.3.tar.gz tmp/yohsin3d-0.4.4.tar.gz --markdown 20230509/y/yohsin3d/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-09 05:40:30] INFO root fetch - processPackages [databricks-sql-connector]: Downloading https://files.pythonhosted.org/packages/8b/5f/86c7298ee3fc3706bbaf678b52e6be5fbc1aeff0c19ec244fbca918f446e/databricks_sql_connector-2.5.2.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [dingding-sdk]: Downloading https://files.pythonhosted.org/packages/f4/96/b7b3e9d4f9f3db3e362621b3f08e4bfde2bdaf8d8bf860267d16c2850133/dingding-sdk-0.0.6.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [hubitatcontrol]: Downloading https://files.pythonhosted.org/packages/f3/57/c89346d0240bfd792a79489a95f4c51a1268d7eae0bd0eccba4239743147/hubitatcontrol-2.3.0.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [mojo-interop]: Downloading https://files.pythonhosted.org/packages/ea/70/9e09838bffe5311c4accab6c3c9f2293ee5a591bd45e9bf64ebb9a01b20d/mojo_interop-0.0.9.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [alibabacloud-imm20200930]: Downloading https://files.pythonhosted.org/packages/f0/7d/027b91852a9ffc953a51ba49f57242dcc4aff3ffdd1a4459197f6630514e/alibabacloud_imm20200930-2.1.9.tar.gz
+[2023-05-09 05:40:30] INFO root fetch - processPackages [databricks-sql-connector]: executing diffoscope
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: executing diffoscope
+[2023-05-09 05:40:30] INFO root fetch - processPackages [databricks-sql-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks_sql_connector-2.5.1.tar.gz tmp/databricks_sql_connector-2.5.2.tar.gz --markdown 20230509/d/databricks-sql-connector/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683603402.0.tar.gz tmp/garaprod-0.1683603566.0.tar.gz --markdown 20230509/g/garaprod/0.1683603402.0-0.1683603566.0/diff.md --exclude *.pyd
+[2023-05-09 05:40:30] INFO root fetch - processPackages [garaprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garaprod-0.1683603402.0.tar.gz tmp/garaprod-0.1683603566.0.tar.gz --markdown 20230509/g/garaprod/0.1683603402.0-0.1683603566.0/diff.md --exclude *.pyd
+[2023-05-09 05:40:30] INFO root fetch - processPackages [hubitatcontrol]: executing diffoscope
+[2023-05-09 05:40:30] INFO root fetch - processPackages [hubitatcontrol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hubitatcontrol-2.2.0.tar.gz tmp/hubitatcontrol-2.3.0.tar.gz --markdown 20230509/h/hubitatcontrol/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-05-09 05:40:30] INFO root fetch - processPackages [alibabacloud-imm20200930]: executing diffoscope
+[2023-05-09 05:40:30] INFO root fetch - processPackages [alibabacloud-imm20200930]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_imm20200930-2.1.7.tar.gz tmp/alibabacloud_imm20200930-2.1.9.tar.gz --markdown 20230509/a/alibabacloud-imm20200930/2.1.7-2.1.9/diff.md --exclude *.pyd
+[2023-05-09 05:40:31] INFO root fetch - processPackages [dingding-sdk]: executing diffoscope
+[2023-05-09 05:40:31] INFO root fetch - processPackages [dingding-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingding-sdk-0.0.4.tar.gz tmp/dingding-sdk-0.0.6.tar.gz --markdown 20230509/d/dingding-sdk/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2023-05-09 05:40:31] INFO root fetch - processPackages [enrRiceTrait]: Downloading https://files.pythonhosted.org/packages/62/c5/905833d39db1c7eb026df5ff981e42654dd069676448f4f2a1529e15eb44/enrRiceTrait-1.4.4.tar.gz
+[2023-05-09 05:40:31] INFO root fetch - processPackages [mojo-interop]: executing diffoscope
+[2023-05-09 05:40:31] INFO root fetch - processPackages [mojo-interop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_interop-0.0.8.tar.gz tmp/mojo_interop-0.0.9.tar.gz --markdown 20230509/m/mojo-interop/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 05:40:31] INFO root fetch - processPackages [enrRiceTrait]: executing diffoscope
+[2023-05-09 05:40:31] INFO root fetch - processPackages [enrRiceTrait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enrRiceTrait-1.4.3.tar.gz tmp/enrRiceTrait-1.4.4.tar.gz --markdown 20230509/e/enrRiceTrait/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-05-09 05:40:32] INFO root fetch - processPackages [garaprod]: Start processing: hk-libs
+[2023-05-09 05:40:32] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 05:40:32] INFO root fetch - processPackages [hk-libs]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-09 05:40:32] INFO root fetch - main [MainThread]: End processing [garaprod]: success
+[2023-05-09 05:40:32] INFO root fetch - processPackages [hk-libs]: Downloading https://files.pythonhosted.org/packages/39/64/9503fa5195376eae51f87910e59ff3836ab57581b21456b4db29acf605f0/hk_libs-1.2.0-py3-none-any.whl
+[2023-05-09 05:40:32] INFO root fetch - main [MainThread]: End processing [hubitatcontrol]: success
+[2023-05-09 05:40:32] INFO root fetch - main [MainThread]: End processing [databricks-sql-connector]: success
+[2023-05-09 05:40:32] INFO root fetch - processPackages [hk-libs]: Downloading https://files.pythonhosted.org/packages/46/9f/633f906cc8f34a041d20d07381bbaf74f3a78111ca5e3d77419b9cb239eb/hk_libs-1.2.1-py3-none-any.whl
+[2023-05-09 05:40:32] INFO root fetch - main [MainThread]: End processing [yohsin3d]: success
+[2023-05-09 05:40:32] INFO root fetch - processPackages [hk-libs]: executing diffoscope
+[2023-05-09 05:40:32] INFO root fetch - processPackages [hk-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hk_libs-1.2.0-py3-none-any.whl.zip tmp/hk_libs-1.2.1-py3-none-any.whl.zip --markdown 20230509/h/hk-libs/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-09 05:40:32] INFO root fetch - main [MainThread]: End processing [dingding-sdk]: success
+[2023-05-09 05:40:33] INFO root fetch - main [MainThread]: End processing [enrRiceTrait]: success
+[2023-05-09 05:40:33] INFO root fetch - main [MainThread]: End processing [hk-libs]: success
+[2023-05-09 05:40:34] INFO root fetch - main [MainThread]: End processing [alibabacloud-imm20200930]: success
+[2023-05-09 05:40:36] INFO root fetch - main [MainThread]: End processing [safe-eth-py-suraneti]: success
+[2023-05-09 05:40:37] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
+[2023-05-09 05:40:37] INFO root fetch - main [MainThread]: Store serial: [18027262]
