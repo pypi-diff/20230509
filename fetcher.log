@@ -2592,3 +2592,26 @@
 [2023-05-09 03:11:39] INFO root fetch - main [MainThread]: End processing [checkpoint-tool]: success
 [2023-05-09 03:11:40] INFO root fetch - main [MainThread]: End processing [alive-progress]: success
 [2023-05-09 03:11:40] INFO root fetch - main [MainThread]: Store serial: [18024517]
+[2023-05-09 03:16:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18024517]
+[2023-05-09 03:16:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-09 03:16:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-sops-secrets
+[2023-05-09 03:16:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-ultralytics-plugin
+[2023-05-09 03:16:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mctthermalface
+[2023-05-09 03:16:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: terminal-agent-x
+[2023-05-09 03:16:48] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.86]
+[2023-05-09 03:16:48] WARNING root fetch - processPackages [terminal-agent-x]: Skipping, unable to determine old version
+[2023-05-09 03:16:48] INFO root fetch - processPackages [mkdocs-ultralytics-plugin]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 03:16:48] INFO root fetch - main [MainThread]: End processing [terminal-agent-x] error
+[2023-05-09 03:16:48] INFO root fetch - processPackages [mctthermalface]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-09 03:16:48] INFO root fetch - processPackages [mkdocs-ultralytics-plugin]: executing diffoscope
+[2023-05-09 03:16:48] INFO root fetch - processPackages [mkdocs-ultralytics-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-ultralytics-plugin-0.0.8.tar.gz tmp/mkdocs-ultralytics-plugin-0.0.9.tar.gz --markdown 20230509/m/mkdocs-ultralytics-plugin/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 03:16:48] INFO root fetch - processPackages [cdk-sops-secrets]: Downloading https://files.pythonhosted.org/packages/49/5d/5a0f68b29d26e654a4ac434d0827785df710a98f1fb6240257d82ab6f105/cdk-sops-secrets-1.2.86.tar.gz
+[2023-05-09 03:16:48] INFO root fetch - processPackages [mctthermalface]: Downloading https://files.pythonhosted.org/packages/bb/d8/ef1c87517cef623637dea46312fe6f89adc619da63a915f346df0f205b65/MCTThermalFace-0.1.3-py3-none-any.whl
+[2023-05-09 03:16:49] INFO root fetch - processPackages [mctthermalface]: executing diffoscope
+[2023-05-09 03:16:49] INFO root fetch - processPackages [mctthermalface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MCTThermalFace-0.1.2.tar.gz tmp/MCTThermalFace-0.1.3-py3-none-any.whl.zip --markdown 20230509/m/mctthermalface/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-09 03:16:49] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-05-09 03:16:49] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.86.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230509/c/cdk-sops-secrets/1.2.86-1.2.9/diff.md --exclude *.pyd
+[2023-05-09 03:16:49] INFO root fetch - main [MainThread]: End processing [mkdocs-ultralytics-plugin]: success
+[2023-05-09 03:16:49] INFO root fetch - main [MainThread]: End processing [mctthermalface]: success
+[2023-05-09 03:16:50] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-05-09 03:16:50] INFO root fetch - main [MainThread]: Store serial: [18024535]
