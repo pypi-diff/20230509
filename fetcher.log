@@ -22955,3 +22955,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 20:47:25] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
 [2023-05-09 20:47:26] INFO root fetch - main [MainThread]: End processing [sympy2c]: success
 [2023-05-09 20:47:26] INFO root fetch - main [MainThread]: Store serial: [18036091]
+[2023-05-09 20:52:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18036091]
+[2023-05-09 20:52:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-09 20:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-jtoman-source-copy-refactor
+[2023-05-09 20:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oursin
+[2023-05-09 20:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdfalyzer
+[2023-05-09 20:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gridworks-debug-cli
+[2023-05-09 20:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-aws
+[2023-05-09 20:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dash-connectivity-viewer
+[2023-05-09 20:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: basal-and-bark
+[2023-05-09 20:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jaaql-middleware-python
+[2023-05-09 20:52:35] INFO root fetch - processPackages [certora-cli-alpha-jtoman-source-copy-refactor]: New version: [20230509.2.1.997423] Old Version: [20230509.18.47.491829]
+[2023-05-09 20:52:35] INFO root fetch - processPackages [pdfalyzer]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-09 20:52:35] WARNING root fetch - processPackages [dash-connectivity-viewer]: Skipping, unable to determine old version
+[2023-05-09 20:52:35] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer] error
+[2023-05-09 20:52:35] INFO root fetch - processPackages [oursin]: New version: [0.4.7] Old Version: [0.4.5]
+[2023-05-09 20:52:35] INFO root fetch - processPackages [gridworks-debug-cli]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-09 20:52:35] INFO root fetch - processPackages [basal-and-bark]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-09 20:52:35] INFO root fetch - processPackages [pulumi-aws]: New version: [5.9.2] Old Version: [5.9.1]
+[2023-05-09 20:52:35] INFO root fetch - processPackages [jaaql-middleware-python]: New version: [4.9.1] Old Version: [4.9.0]
+[2023-05-09 20:52:35] INFO root fetch - processPackages [certora-cli-alpha-jtoman-source-copy-refactor]: Downloading https://files.pythonhosted.org/packages/40/e0/7e3d642a2ae640361d5e80fa825f73c85e54768561c79287098b19d62e82/certora-cli-alpha-jtoman-source-copy-refactor-20230509.18.47.491829.tar.gz
+[2023-05-09 20:52:36] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-source-copy-refactor]: Skipping package: exceeds size limit 38477226>=10485760
+[2023-05-09 20:52:36] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-source-copy-refactor] error
+[2023-05-09 20:52:36] INFO root fetch - processPackages [gridworks-debug-cli]: Downloading https://files.pythonhosted.org/packages/2e/3f/597bd0ba9168252889e09aaa0217f6e6cb5c616408de48fc2ce32d999a3f/gridworks_debug_cli-0.2.6.tar.gz
+[2023-05-09 20:52:36] INFO root fetch - processPackages [pdfalyzer]: Downloading https://files.pythonhosted.org/packages/db/4c/ec53e44e05c528bb69bf4722a51a6322a87fd7df526649f30bfb1eda93ab/pdfalyzer-1.8.3.tar.gz
+[2023-05-09 20:52:36] INFO root fetch - processPackages [oursin]: Downloading https://files.pythonhosted.org/packages/ee/cd/bde7f424c7ed8ef4961099ce3dcfb06f7e3415e56798120c978b381f6859/oursin-0.4.5.tar.gz
+[2023-05-09 20:52:36] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/e5/69/3ce582391765ac681b8fe873c7c0edc5e4d4d60649195f04a5f5359a24fb/pulumi_aws-5.9.1.tar.gz
+[2023-05-09 20:52:36] INFO root fetch - processPackages [basal-and-bark]: Downloading https://files.pythonhosted.org/packages/2f/9d/fba534f8d684fb83751c1ebdd5c972cfff6958479c56904a9190fb2841c0/basal_and_bark-0.0.8.tar.gz
+[2023-05-09 20:52:36] INFO root fetch - processPackages [jaaql-middleware-python]: executing diffoscope
+[2023-05-09 20:52:36] INFO root fetch - processPackages [jaaql-middleware-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaaql-middleware-python-4.9.0.tar.gz tmp/jaaql-middleware-python-4.9.1.tar.gz --markdown 20230509/j/jaaql-middleware-python/4.9.0-4.9.1/diff.md --exclude *.pyd
+[2023-05-09 20:52:36] INFO root fetch - processPackages [basal-and-bark]: executing diffoscope
+[2023-05-09 20:52:36] INFO root fetch - processPackages [basal-and-bark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basal_and_bark-0.0.7.tar.gz tmp/basal_and_bark-0.0.8.tar.gz --markdown 20230509/b/basal-and-bark/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-09 20:52:36] INFO root fetch - processPackages [oursin]: Downloading https://files.pythonhosted.org/packages/41/1a/c83b2b2700fe1d9a475f796ae8079601034d3155670a7c5e61b83a6435c0/oursin-0.4.7.tar.gz
+[2023-05-09 20:52:36] INFO root fetch - processPackages [oursin]: executing diffoscope
+[2023-05-09 20:52:36] INFO root fetch - processPackages [oursin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oursin-0.4.5.tar.gz tmp/oursin-0.4.7.tar.gz --markdown 20230509/o/oursin/0.4.5-0.4.7/diff.md --exclude *.pyd
+[2023-05-09 20:52:36] INFO root fetch - processPackages [gridworks-debug-cli]: Downloading https://files.pythonhosted.org/packages/51/2e/e609105eff61628143d43c8536c7daa990f02f40d0c3b52c727db81166b1/gridworks_debug_cli-0.2.7.tar.gz
+[2023-05-09 20:52:36] INFO root fetch - processPackages [gridworks-debug-cli]: executing diffoscope
+[2023-05-09 20:52:36] INFO root fetch - processPackages [gridworks-debug-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridworks_debug_cli-0.2.6.tar.gz tmp/gridworks_debug_cli-0.2.7.tar.gz --markdown 20230509/g/gridworks-debug-cli/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-09 20:52:37] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/b5/2d/3bb0c09182c2672c439edaba78942269f26ed68f8f3385d942e13fb37ce5/pulumi_aws-5.9.2.tar.gz
+[2023-05-09 20:52:37] INFO root fetch - main [MainThread]: End processing [basal-and-bark]: success
+[2023-05-09 20:52:37] INFO root fetch - processPackages [pdfalyzer]: Downloading https://files.pythonhosted.org/packages/da/9a/03587243afdba9875eca814e7bbdd178d8cf398c846fd499c66927be46a1/pdfalyzer-1.9.0.tar.gz
+[2023-05-09 20:52:37] INFO root fetch - main [MainThread]: End processing [jaaql-middleware-python]: success
+[2023-05-09 20:52:37] INFO root fetch - main [MainThread]: End processing [oursin]: success
+[2023-05-09 20:52:37] INFO root fetch - main [MainThread]: End processing [gridworks-debug-cli]: success
+[2023-05-09 20:52:37] INFO root fetch - processPackages [pulumi-aws]: executing diffoscope
+[2023-05-09 20:52:37] INFO root fetch - processPackages [pulumi-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws-5.9.1.tar.gz tmp/pulumi_aws-5.9.2.tar.gz --markdown 20230509/p/pulumi-aws/5.9.1-5.9.2/diff.md --exclude *.pyd
+[2023-05-09 20:52:37] INFO root fetch - processPackages [pdfalyzer]: executing diffoscope
+[2023-05-09 20:52:37] INFO root fetch - processPackages [pdfalyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfalyzer-1.8.3.tar.gz tmp/pdfalyzer-1.9.0.tar.gz --markdown 20230509/p/pdfalyzer/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-09 20:52:39] INFO root fetch - main [MainThread]: End processing [pdfalyzer]: success
+[2023-05-09 20:53:15] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
+[2023-05-09 20:53:15] INFO root fetch - main [MainThread]: Store serial: [18036117]
