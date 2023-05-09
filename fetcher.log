@@ -17502,3 +17502,71 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 15:59:06] INFO root fetch - main [MainThread]: End processing [areixio]: success
 [2023-05-09 15:59:07] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-09 15:59:07] INFO root fetch - main [MainThread]: Store serial: [18032664]
+[2023-05-09 16:04:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032664]
+[2023-05-09 16:04:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: assemblyline
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assemblyline-core
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: boonamber
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xfem
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: utilmy
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: censys
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pytedea
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: psyke
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: microprediction
+[2023-05-09 16:04:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: phy-qcs
+[2023-05-09 16:04:21] INFO root fetch - processPackages [censys]: New version: [2.2.2] Old Version: [2.2.1]
+[2023-05-09 16:04:21] INFO root fetch - processPackages [xfem]: New version: [2.1.2301.post9.dev0] Old Version: [2.1.2301.post7.dev0]
+[2023-05-09 16:04:21] INFO root fetch - processPackages [boonamber]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-09 16:04:21] INFO root fetch - processPackages [pytedea]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-09 16:04:21] INFO root fetch - processPackages [microprediction]: New version: [1.2.0] Old Version: [1.1.8]
+[2023-05-09 16:04:21] INFO root fetch - processPackages [psyke]: New version: [0.3.3.dev9] Old Version: [0.3.3.dev8]
+[2023-05-09 16:04:21] INFO root fetch - processPackages [assemblyline]: New version: [4.4.1.dev9] Old Version: [4.4.1.dev8]
+[2023-05-09 16:04:21] INFO root fetch - processPackages [assemblyline-core]: New version: [4.4.1.dev9] Old Version: [4.4.1.dev8]
+[2023-05-09 16:04:21] INFO root fetch - processPackages [utilmy]: New version: [0.1.16836407] Old Version: [0.1.16830011]
+[2023-05-09 16:04:21] WARNING root fetch - processPackages [phy-qcs]: Skipping, unable to determine old version
+[2023-05-09 16:04:21] INFO root fetch - processPackages [phy-qcs]: Start processing: zenoml
+[2023-05-09 16:04:21] INFO root fetch - main [MainThread]: End processing [phy-qcs] error
+[2023-05-09 16:04:21] INFO root fetch - processPackages [zenoml]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-05-09 16:04:21] INFO root fetch - processPackages [assemblyline]: executing diffoscope
+[2023-05-09 16:04:21] INFO root fetch - processPackages [assemblyline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-4.4.1.dev8.tar.gz tmp/assemblyline-4.4.1.dev9.tar.gz --markdown 20230509/a/assemblyline/4.4.1.dev8-4.4.1.dev9/diff.md --exclude *.pyd
+[2023-05-09 16:04:21] INFO root fetch - processPackages [boonamber]: Downloading https://files.pythonhosted.org/packages/5b/64/401439c09816b9770dcfa05a8ab3ba1a58bed726afa6bcc229f2d06284fa/boonamber-2.0.1.tar.gz
+[2023-05-09 16:04:21] INFO root fetch - processPackages [pytedea]: Downloading https://files.pythonhosted.org/packages/43/cc/ef370a1f245a21331d192b81b86d875d84dccf6584eba9bfe09b50fe9f68/pytedea-0.0.3.tar.gz
+[2023-05-09 16:04:21] INFO root fetch - processPackages [microprediction]: Downloading https://files.pythonhosted.org/packages/f2/51/12f898f2019302195b61498491532d94621bd4ee9dc786f6d878b7b786cd/microprediction-1.1.8.tar.gz
+[2023-05-09 16:04:21] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/95/75/5094cebb9c54ae6e673b5ba2fcb12825e18360a8028d986ef253896c17b8/utilmy-0.1.16830011.tar.gz
+[2023-05-09 16:04:21] INFO root fetch - processPackages [censys]: Downloading https://files.pythonhosted.org/packages/b5/ac/8ed03674e06b7a15c08695ef1addbfa09c75e7cccecd988d07fc0a67cb17/censys-2.2.2.tar.gz
+[2023-05-09 16:04:21] INFO root fetch - processPackages [zenoml]: executing diffoscope
+[2023-05-09 16:04:21] INFO root fetch - processPackages [zenoml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenoml-0.4.9.tar.gz tmp/zenoml-0.5.0.tar.gz --markdown 20230509/z/zenoml/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-05-09 16:04:21] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/78/e2/a85928421022abb2fef852381e5c7090aa9e82017ca8a0e4705a1eea7b59/psyke-0.3.3.dev8.tar.gz
+[2023-05-09 16:04:21] INFO root fetch - processPackages [censys]: executing diffoscope
+[2023-05-09 16:04:21] INFO root fetch - processPackages [censys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/censys-2.2.1.tar.gz tmp/censys-2.2.2.tar.gz --markdown 20230509/c/censys/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2023-05-09 16:04:21] INFO root fetch - processPackages [xfem]: Downloading https://files.pythonhosted.org/packages/41/1b/0e5a5617abb1f47c109eb969790cb98a988ac58980d39d4426283662f654/xfem-2.1.2301.post9.dev0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-09 16:04:22] INFO root fetch - processPackages [assemblyline-core]: executing diffoscope
+[2023-05-09 16:04:22] INFO root fetch - processPackages [assemblyline-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-core-4.4.1.dev8.tar.gz tmp/assemblyline-core-4.4.1.dev9.tar.gz --markdown 20230509/a/assemblyline-core/4.4.1.dev8-4.4.1.dev9/diff.md --exclude *.pyd
+[2023-05-09 16:04:22] INFO root fetch - processPackages [boonamber]: Downloading https://files.pythonhosted.org/packages/ca/c2/77f7c88695d45d99a5e882e00fd8bdfb7314cc7e51910ac262d2e3b5dd36/boonamber-2.0.2.tar.gz
+[2023-05-09 16:04:22] INFO root fetch - processPackages [pytedea]: Downloading https://files.pythonhosted.org/packages/39/80/c8171296111b6e0adefbe4fce0fc4a2027be56dcfea1c44b5bc7993b0690/pytedea-0.0.4.tar.gz
+[2023-05-09 16:04:22] INFO root fetch - processPackages [boonamber]: executing diffoscope
+[2023-05-09 16:04:22] INFO root fetch - processPackages [boonamber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boonamber-2.0.1.tar.gz tmp/boonamber-2.0.2.tar.gz --markdown 20230509/b/boonamber/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-09 16:04:22] INFO root fetch - processPackages [pytedea]: executing diffoscope
+[2023-05-09 16:04:22] INFO root fetch - processPackages [pytedea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytedea-0.0.3.tar.gz tmp/pytedea-0.0.4.tar.gz --markdown 20230509/p/pytedea/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-09 16:04:22] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/0d/2f/8afea845ec96e5d16388f169cd924855bf4a09b7b50f076c7ca9580ba75f/psyke-0.3.3.dev9.tar.gz
+[2023-05-09 16:04:22] INFO root fetch - processPackages [xfem]: executing diffoscope
+[2023-05-09 16:04:22] INFO root fetch - processPackages [xfem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xfem-2.1.2301.post7.dev0.tar.gz tmp/xfem-2.1.2301.post9.dev0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230509/x/xfem/2.1.2301.post7.dev0-2.1.2301.post9.dev0/diff.md --exclude *.pyd
+[2023-05-09 16:04:22] INFO root fetch - processPackages [microprediction]: Downloading https://files.pythonhosted.org/packages/9f/ad/b794589ca88251eb21970a77ade16592c541d579df6603b2db0f4ea5a0b9/microprediction-1.2.0.tar.gz
+[2023-05-09 16:04:22] INFO root fetch - processPackages [microprediction]: executing diffoscope
+[2023-05-09 16:04:22] INFO root fetch - processPackages [microprediction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microprediction-1.1.8.tar.gz tmp/microprediction-1.2.0.tar.gz --markdown 20230509/m/microprediction/1.1.8-1.2.0/diff.md --exclude *.pyd
+[2023-05-09 16:04:22] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-05-09 16:04:22] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.3.3.dev8.tar.gz tmp/psyke-0.3.3.dev9.tar.gz --markdown 20230509/p/psyke/0.3.3.dev8-0.3.3.dev9/diff.md --exclude *.pyd
+[2023-05-09 16:04:23] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/fd/ee/8e2013ef3ab7d020cbc8adea5ac9e9206f33b193158efa369a70cc3efaf6/utilmy-0.1.16836407.tar.gz
+[2023-05-09 16:04:23] INFO root fetch - processPackages [utilmy]: executing diffoscope
+[2023-05-09 16:04:23] INFO root fetch - processPackages [utilmy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilmy-0.1.16830011.tar.gz tmp/utilmy-0.1.16836407.tar.gz --markdown 20230509/u/utilmy/0.1.16830011-0.1.16836407/diff.md --exclude *.pyd
+[2023-05-09 16:04:23] INFO root fetch - main [MainThread]: End processing [xfem]: success
+[2023-05-09 16:04:24] INFO root fetch - main [MainThread]: End processing [pytedea]: success
+[2023-05-09 16:04:24] INFO root fetch - main [MainThread]: End processing [boonamber]: success
+[2023-05-09 16:04:24] INFO root fetch - main [MainThread]: End processing [microprediction]: success
+[2023-05-09 16:04:24] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-05-09 16:04:25] INFO root fetch - main [MainThread]: End processing [censys]: success
+[2023-05-09 16:04:25] INFO root fetch - main [MainThread]: End processing [assemblyline-core]: success
+[2023-05-09 16:04:26] INFO root fetch - main [MainThread]: End processing [assemblyline]: success
+[2023-05-09 16:04:41] INFO root fetch - main [MainThread]: End processing [zenoml]: success
+[2023-05-09 16:04:47] INFO root fetch - main [MainThread]: End processing [utilmy]: success
+[2023-05-09 16:04:47] INFO root fetch - main [MainThread]: Store serial: [18032704]

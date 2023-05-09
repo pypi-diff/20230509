@@ -1,4 +1,4 @@
-# Comparing `tmp/xfem-2.1.2301.post7.dev0.tar.gz` & `tmp/xfem-2.1.2301.post9.dev0-cp39-cp39-macosx_11_0_x86_64.whl.zip`
+# Comparing `tmp/xfem-2.1.2301.post7.dev0.tar.gz` & `tmp/xfem-2.1.2301.post9.dev0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip`
 
 ## filetype from file(1)
 
