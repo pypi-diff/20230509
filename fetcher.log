@@ -15215,3 +15215,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 13:30:00] INFO root fetch - main [MainThread]: End processing [money-to-prisoners-common]: success
 [2023-05-09 13:30:01] INFO root fetch - main [MainThread]: End processing [numba-stats]: success
 [2023-05-09 13:30:01] INFO root fetch - main [MainThread]: Store serial: [18031268]
+[2023-05-09 13:31:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18031268]
+[2023-05-09 13:31:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-09 13:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-uri-generate-link-json
+[2023-05-09 13:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchserve-nightly
+[2023-05-09 13:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-archiver-nightly
+[2023-05-09 13:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-workflow-archiver-nightly
+[2023-05-09 13:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: omniplate
+[2023-05-09 13:31:52] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.8] Old Version: [2023.5.7]
+[2023-05-09 13:31:52] INFO root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: New version: [20230509.9.22.437626] Old Version: [20230509.10.9.521320]
+[2023-05-09 13:31:52] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-09 13:31:52] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-09 13:31:52] INFO root fetch - processPackages [omniplate]: New version: [0.9.82] Old Version: [0.9.6]
+[2023-05-09 13:31:52] INFO root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: Downloading https://files.pythonhosted.org/packages/9e/0e/b20f75b7b87723d338b46ad03016953387420c21828eecd2c6f588268618/certora-cli-alpha-uri-generate_link_json-20230509.10.9.521320.tar.gz
+[2023-05-09 13:31:52] WARNING root fetch - processPackages [certora-cli-alpha-uri-generate-link-json]: Skipping package: exceeds size limit 39214028>=10485760
+[2023-05-09 13:31:52] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-uri-generate-link-json] error
+[2023-05-09 13:31:52] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/28/be/2fa33687a55b658bd4f93636e506af45f7b1ea0894a3424f7c1e7d660e6a/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl
+[2023-05-09 13:31:52] INFO root fetch - processPackages [omniplate]: Downloading https://files.pythonhosted.org/packages/04/9b/0e36fafd9aba45e03505b8eba4b762bf6dc77a34c9afc6252fa18b75b7b9/omniplate-0.9.6.tar.gz
+[2023-05-09 13:31:52] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/84/1f/9485a72320b2c7f49d6a9304acfbc2bd5fe71c25e0e7a3844ce81a1ed180/torchserve_nightly-2023.5.8-py3-none-any.whl
+[2023-05-09 13:31:52] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/bd/a9/03b80eb9353184dc3d312e985e22dc69d65c449643d5d5ec8ccd09008782/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl
+[2023-05-09 13:31:52] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716791>=10485760
+[2023-05-09 13:31:52] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-09 13:31:52] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-09 13:31:52] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.7-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl.zip --markdown 20230509/t/torch-model-archiver-nightly/2023.5.7-2023.5.8/diff.md --exclude *.pyd
+[2023-05-09 13:31:52] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/b0/b3/2d52ec1bd0dd1dae05bbb5823675d0ef4fe27885ba7d4bc77942b66af6c2/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl
+[2023-05-09 13:31:53] INFO root fetch - processPackages [omniplate]: Downloading https://files.pythonhosted.org/packages/98/f6/21c275bc69ed9ce270e93cb3d14732b99a13348702bb46206a68a068ca7e/omniplate-0.9.82.tar.gz
+[2023-05-09 13:31:53] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-09 13:31:53] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230509/t/torch-workflow-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 13:31:53] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-09 13:31:54] INFO root fetch - processPackages [omniplate]: executing diffoscope
+[2023-05-09 13:31:54] INFO root fetch - processPackages [omniplate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniplate-0.9.6.tar.gz tmp/omniplate-0.9.82.tar.gz --markdown 20230509/o/omniplate/0.9.6-0.9.82/diff.md --exclude *.pyd
+[2023-05-09 13:31:54] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-09 13:31:55] INFO root fetch - main [MainThread]: End processing [omniplate]: success
+[2023-05-09 13:31:55] INFO root fetch - main [MainThread]: Store serial: [18031285]
