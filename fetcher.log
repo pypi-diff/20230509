@@ -5455,3 +5455,83 @@
 [2023-05-09 03:46:00] INFO root fetch - main [MainThread]: End processing [decentro-in-kyc-python-sdk]: success
 [2023-05-09 03:48:16] INFO root fetch - main [MainThread]: End processing [pytype]: success
 [2023-05-09 03:48:16] INFO root fetch - main [MainThread]: Store serial: [18025809]
+[2023-05-09 03:53:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18025809]
+[2023-05-09 03:53:25] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oexp
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ConcurrentDatabase
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SpatialGlue
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: static-frame
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nebari-workflow-controller
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tracer-spans-python
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oexp
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flask-securelogin
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ipfskvs
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: checkpoint-tool
+[2023-05-09 03:53:25] INFO root fetch - processPackages [SpatialGlue]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-09 03:53:25] INFO root fetch - processPackages [oexp]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-09 03:53:25] INFO root fetch - processPackages [nebari-workflow-controller]: New version: [2023.5.4] Old Version: [2023.5.3]
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ConcurrentDatabase]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-09 03:53:25] INFO root fetch - processPackages [checkpoint-tool]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-09 03:53:25] WARNING root fetch - processPackages [tracer-spans-python]: Skipping, unable to determine old version
+[2023-05-09 03:53:25] INFO root fetch - processPackages [tracer-spans-python]: Start processing: nonebot-plugin-shindan
+[2023-05-09 03:53:25] INFO root fetch - main [MainThread]: End processing [tracer-spans-python] error
+[2023-05-09 03:53:25] INFO root fetch - processPackages [flask-securelogin]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ipfskvs]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-09 03:53:25] INFO root fetch - processPackages [oexp]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-09 03:53:25] INFO root fetch - processPackages [static-frame]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-09 03:53:25] INFO root fetch - processPackages [nonebot-plugin-shindan]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-09 03:53:25] INFO root fetch - processPackages [nebari-workflow-controller]: Downloading https://files.pythonhosted.org/packages/16/73/5ae76bd15e6884d318da78c740f9bd522467cdc701626f1c3f891d12ca82/nebari_workflow_controller-2023.5.3.tar.gz
+[2023-05-09 03:53:25] INFO root fetch - processPackages [checkpoint-tool]: Downloading https://files.pythonhosted.org/packages/3b/86/fb04e575b6e9e5f6e778a5e80f73fa2e3db4542603e9c9e5c6e82a277c57/checkpoint_tool-0.7.5.tar.gz
+[2023-05-09 03:53:25] INFO root fetch - processPackages [oexp]: Downloading https://files.pythonhosted.org/packages/7c/41/0fa2638c0eb77cdfe155d137b8435873b40dd38470eb436785331e9a594f/oexp-0.5.2.tar.gz
+[2023-05-09 03:53:25] INFO root fetch - processPackages [oexp]: Downloading https://files.pythonhosted.org/packages/7c/41/0fa2638c0eb77cdfe155d137b8435873b40dd38470eb436785331e9a594f/oexp-0.5.2.tar.gz
+[2023-05-09 03:53:25] INFO root fetch - processPackages [flask-securelogin]: Downloading https://files.pythonhosted.org/packages/89/5e/0aaec4a5c0364bca761eba504bd088a6b9717721d772645db02f04565c95/flask-securelogin-0.1.0.tar.gz
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ConcurrentDatabase]: Downloading https://files.pythonhosted.org/packages/a2/2a/eb043f1c69646d4db9a7632296820fb97b5229c1e790a67d67cf45252e4a/ConcurrentDatabase-0.0.7.tar.gz
+[2023-05-09 03:53:25] INFO root fetch - processPackages [nonebot-plugin-shindan]: Downloading https://files.pythonhosted.org/packages/6d/8b/df24a227c548fee321261eec3e61655f4076fee3295340a92b61080c48a0/nonebot_plugin_shindan-0.3.2.tar.gz
+[2023-05-09 03:53:25] INFO root fetch - processPackages [static-frame]: Downloading https://files.pythonhosted.org/packages/5a/c2/275a413fe1ff9b46a610d74c6e6554a4316e822077361738cc856e6267e4/static-frame-1.4.1.tar.gz
+[2023-05-09 03:53:25] INFO root fetch - processPackages [ipfskvs]: Downloading https://files.pythonhosted.org/packages/ab/3e/69a1fd7992f3a90b4f2d82af5dbfbb1590d53d8f8b7651df56e5829a1f12/ipfskvs-0.1.8.tar.gz
+[2023-05-09 03:53:26] INFO root fetch - processPackages [SpatialGlue]: Downloading https://files.pythonhosted.org/packages/50/86/778f76a45fd204f459e405e74297798a5f74a6451240051c12ecfc06690b/SpatialGlue-1.0.2.tar.gz
+[2023-05-09 03:53:26] INFO root fetch - processPackages [checkpoint-tool]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [checkpoint-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkpoint_tool-0.7.4.tar.gz tmp/checkpoint_tool-0.7.5.tar.gz --markdown 20230509/c/checkpoint-tool/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-09 03:53:26] INFO root fetch - processPackages [ipfskvs]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [ipfskvs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipfskvs-0.1.7.tar.gz tmp/ipfskvs-0.1.8.tar.gz --markdown 20230509/i/ipfskvs/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-09 03:53:26] INFO root fetch - processPackages [nebari-workflow-controller]: Downloading https://files.pythonhosted.org/packages/48/ce/b45793e180fd099b13b5a8f3d8f39ab0e6875003bc9f4b4f13397d0f1ac4/nebari_workflow_controller-2023.5.4.tar.gz
+[2023-05-09 03:53:26] INFO root fetch - processPackages [oexp]: Downloading https://files.pythonhosted.org/packages/c7/7b/ab025e15f03818041b175d4e5e79270b6889afd094583322cea9f1986fd6/oexp-0.5.3.tar.gz
+[2023-05-09 03:53:26] INFO root fetch - processPackages [oexp]: Downloading https://files.pythonhosted.org/packages/c7/7b/ab025e15f03818041b175d4e5e79270b6889afd094583322cea9f1986fd6/oexp-0.5.3.tar.gz
+[2023-05-09 03:53:26] INFO root fetch - processPackages [ConcurrentDatabase]: Downloading https://files.pythonhosted.org/packages/2f/58/7ba2de7627b2d8b3aa049ef6481ce3f08e9a90276443ccbfd85a8a59baf5/ConcurrentDatabase-0.0.8.tar.gz
+[2023-05-09 03:53:26] INFO root fetch - processPackages [SpatialGlue]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [SpatialGlue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpatialGlue-1.0.0.tar.gz tmp/SpatialGlue-1.0.2.tar.gz --markdown 20230509/S/SpatialGlue/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-09 03:53:26] INFO root fetch - processPackages [nonebot-plugin-shindan]: Downloading https://files.pythonhosted.org/packages/b9/29/2e78987315231082b69c2f65b0e08bbd8cb8463d94af99fd45187a970cea/nonebot_plugin_shindan-0.3.3.tar.gz
+[2023-05-09 03:53:26] INFO root fetch - processPackages [nebari-workflow-controller]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [nebari-workflow-controller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nebari_workflow_controller-2023.5.3.tar.gz tmp/nebari_workflow_controller-2023.5.4.tar.gz --markdown 20230509/n/nebari-workflow-controller/2023.5.3-2023.5.4/diff.md --exclude *.pyd
+[2023-05-09 03:53:26] INFO root fetch - processPackages [flask-securelogin]: Downloading https://files.pythonhosted.org/packages/c0/45/0a23b14ed7bc3e3045209163d278b2064e80cea48841c0313ac9c910ea7e/flask-securelogin-0.1.1.tar.gz
+[2023-05-09 03:53:26] INFO root fetch - processPackages [static-frame]: Downloading https://files.pythonhosted.org/packages/d8/59/b849b72b093380bf1cabe045e241f1ed03c8b5ab5e41e9ab374815f88bc7/static-frame-1.4.2.tar.gz
+[2023-05-09 03:53:26] INFO root fetch - processPackages [oexp]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [oexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oexp-0.5.2.tar.gz tmp/oexp-0.5.3.tar.gz --markdown 20230509/o/oexp/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-09 03:53:26] INFO root fetch - processPackages [oexp]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [oexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oexp-0.5.2.tar.gz tmp/oexp-0.5.3.tar.gz --markdown 20230509/o/oexp/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-09 03:53:26] INFO root fetch - processPackages [ConcurrentDatabase]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [ConcurrentDatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ConcurrentDatabase-0.0.7.tar.gz tmp/ConcurrentDatabase-0.0.8.tar.gz --markdown 20230509/C/ConcurrentDatabase/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-09 03:53:26] INFO root fetch - processPackages [static-frame]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [static-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/static-frame-1.4.1.tar.gz tmp/static-frame-1.4.2.tar.gz --markdown 20230509/s/static-frame/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-09 03:53:26] INFO root fetch - processPackages [flask-securelogin]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [flask-securelogin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-securelogin-0.1.0.tar.gz tmp/flask-securelogin-0.1.1.tar.gz --markdown 20230509/f/flask-securelogin/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-09 03:53:26] INFO root fetch - processPackages [nonebot-plugin-shindan]: executing diffoscope
+[2023-05-09 03:53:26] INFO root fetch - processPackages [nonebot-plugin-shindan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_shindan-0.3.2.tar.gz tmp/nonebot_plugin_shindan-0.3.3.tar.gz --markdown 20230509/n/nonebot-plugin-shindan/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-09 03:53:27] INFO root fetch - processPackages [ipfskvs]: Start processing: circuitpython-styles
+[2023-05-09 03:53:27] INFO root fetch - main [MainThread]: End processing [ipfskvs]: success
+[2023-05-09 03:53:27] INFO root fetch - processPackages [circuitpython-styles]: New version: [0.7.0] Old Version: [0.6.3]
+[2023-05-09 03:53:27] INFO root fetch - main [MainThread]: End processing [oexp]: success
+[2023-05-09 03:53:27] INFO root fetch - main [MainThread]: End processing [SpatialGlue]: success
+[2023-05-09 03:53:27] INFO root fetch - main [MainThread]: End processing [checkpoint-tool]: success
+[2023-05-09 03:53:27] INFO root fetch - processPackages [circuitpython-styles]: Downloading https://files.pythonhosted.org/packages/d8/b1/34c048e5a35a689628cdcff8c3b5ad587837f4a10d28f272e521b4f54f6e/circuitpython-styles-0.6.3.tar.gz
+[2023-05-09 03:53:28] INFO root fetch - main [MainThread]: End processing [ConcurrentDatabase]: success
+[2023-05-09 03:53:28] INFO root fetch - main [MainThread]: End processing [flask-securelogin]: success
+[2023-05-09 03:53:28] INFO root fetch - processPackages [circuitpython-styles]: Downloading https://files.pythonhosted.org/packages/e8/c8/c45e31d965efd3ddd96a49b2fa8fec1f60d1c42bd220472d604c89974b2e/circuitpython-styles-0.7.0.tar.gz
+[2023-05-09 03:53:28] INFO root fetch - main [MainThread]: End processing [oexp]: success
+[2023-05-09 03:53:28] INFO root fetch - processPackages [circuitpython-styles]: executing diffoscope
+[2023-05-09 03:53:28] INFO root fetch - processPackages [circuitpython-styles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-styles-0.6.3.tar.gz tmp/circuitpython-styles-0.7.0.tar.gz --markdown 20230509/c/circuitpython-styles/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2023-05-09 03:53:29] INFO root fetch - main [MainThread]: End processing [nebari-workflow-controller]: success
+[2023-05-09 03:53:29] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-shindan]: success
+[2023-05-09 03:53:29] INFO root fetch - main [MainThread]: End processing [circuitpython-styles]: success
+[2023-05-09 03:53:30] INFO root fetch - main [MainThread]: End processing [static-frame]: success
+[2023-05-09 03:53:30] INFO root fetch - main [MainThread]: Store serial: [18025848]
