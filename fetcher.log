@@ -17293,3 +17293,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 15:48:09] INFO root fetch - main [MainThread]: End processing [clophfit]: success
 [2023-05-09 15:48:14] INFO root fetch - main [MainThread]: End processing [moleculekit]: success
 [2023-05-09 15:48:14] INFO root fetch - main [MainThread]: Store serial: [18032504]
+[2023-05-09 15:53:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032504]
+[2023-05-09 15:53:23] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: virtru-sdk
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aphos-openapi
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shared-atomic-enterprise
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mujoco-dev
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: guidance
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nwebclient
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alphaz
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyowletapi
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ovos-ww-plugin-precise-lite
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: shared-atomic-enterprise
+[2023-05-09 15:53:23] INFO root fetch - processPackages [guidance]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 15:53:23] INFO root fetch - processPackages [alphaz]: New version: [0.7.7.9] Old Version: [0.7.7.8]
+[2023-05-09 15:53:23] INFO root fetch - processPackages [pyowletapi]: New version: [2023.5.9] Old Version: [2023.5.7]
+[2023-05-09 15:53:23] INFO root fetch - processPackages [mujoco-dev]: New version: [2.3.6.dev530561729] Old Version: [2.3.6.dev530559807]
+[2023-05-09 15:53:23] INFO root fetch - processPackages [shared-atomic-enterprise]: New version: [5!2.3.3] Old Version: [5!2.3.2]
+[2023-05-09 15:53:23] INFO root fetch - processPackages [shared-atomic-enterprise]: New version: [5!2.3.3] Old Version: [5!2.3.2]
+[2023-05-09 15:53:23] INFO root fetch - processPackages [virtru-sdk]: New version: [2.7.0a1325] Old Version: [2.7.0a1324]
+[2023-05-09 15:53:23] INFO root fetch - processPackages [aphos-openapi]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-05-09 15:53:23] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: New version: [0.1.2a4] Old Version: [0.1.2a3]
+[2023-05-09 15:53:23] INFO root fetch - processPackages [pyowletapi]: executing diffoscope
+[2023-05-09 15:53:23] INFO root fetch - processPackages [pyowletapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyowletapi-2023.5.7.tar.gz tmp/pyowletapi-2023.5.9.tar.gz --markdown 20230509/p/pyowletapi/2023.5.7-2023.5.9/diff.md --exclude *.pyd
+[2023-05-09 15:53:23] INFO root fetch - processPackages [alphaz]: executing diffoscope
+[2023-05-09 15:53:23] INFO root fetch - processPackages [alphaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphaz-0.7.7.8.tar.gz tmp/alphaz-0.7.7.9.tar.gz --markdown 20230509/a/alphaz/0.7.7.8-0.7.7.9/diff.md --exclude *.pyd
+[2023-05-09 15:53:24] INFO root fetch - processPackages [nwebclient]: New version: [1.0.89] Old Version: [1.0.88]
+[2023-05-09 15:53:24] INFO root fetch - processPackages [guidance]: executing diffoscope
+[2023-05-09 15:53:24] INFO root fetch - processPackages [guidance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guidance-0.0.8.tar.gz tmp/guidance-0.0.9.tar.gz --markdown 20230509/g/guidance/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 15:53:24] INFO root fetch - processPackages [virtru-sdk]: Downloading https://files.pythonhosted.org/packages/f8/cb/9f5fbb5b19a94f2c9cca01ad552feca0600604047f235dfbe785ef4eb2a5/virtru_sdk-2.7.0a1325-cp39-cp39-win_amd64.whl
+[2023-05-09 15:53:24] INFO root fetch - processPackages [aphos-openapi]: Downloading https://files.pythonhosted.org/packages/dd/bc/6848e13c7bf6e5b4dd70cb6b923b723bd29114a2a854f03287f46af3cfb6/aphos_openapi-2.4.0.tar.gz
+[2023-05-09 15:53:24] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: Downloading https://files.pythonhosted.org/packages/f5/32/0955dab034459035f14343d78cf7c03517449209a8b8dfa9a2604937cf76/ovos_ww_plugin_precise_lite-0.1.2a3-py3-none-any.whl
+[2023-05-09 15:53:24] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/a6/43/d09c0536aef21af9fccb92d7aab11e26b7f2ded304005c6b40a31713a70a/nwebclient-1.0.88.tar.gz
+[2023-05-09 15:53:24] INFO root fetch - processPackages [virtru-sdk]: executing diffoscope
+[2023-05-09 15:53:24] INFO root fetch - processPackages [virtru-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/virtru_sdk-2.7.0a1324-cp39-cp39-win_amd64.whl.zip tmp/virtru_sdk-2.7.0a1325-cp39-cp39-win_amd64.whl.zip --markdown 20230509/v/virtru-sdk/2.7.0a1324-2.7.0a1325/diff.md --exclude *.pyd
+[2023-05-09 15:53:24] INFO root fetch - processPackages [shared-atomic-enterprise]: executing diffoscope
+[2023-05-09 15:53:24] INFO root fetch - processPackages [shared-atomic-enterprise]: executing diffoscope
+[2023-05-09 15:53:24] INFO root fetch - processPackages [shared-atomic-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shared_atomic_enterprise-5!2.3.2-py39-none-win_amd64.whl.zip tmp/shared_atomic_enterprise-5!2.3.3-py39-none-win_amd64.whl.zip --markdown 20230509/s/shared-atomic-enterprise/5!2.3.2-5!2.3.3/diff.md --exclude *.pyd
+[2023-05-09 15:53:24] INFO root fetch - processPackages [shared-atomic-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shared_atomic_enterprise-5!2.3.2-py39-none-win_amd64.whl.zip tmp/shared_atomic_enterprise-5!2.3.3-py39-none-win_amd64.whl.zip --markdown 20230509/s/shared-atomic-enterprise/5!2.3.2-5!2.3.3/diff.md --exclude *.pyd
+[2023-05-09 15:53:24] INFO root fetch - processPackages [mujoco-dev]: executing diffoscope
+[2023-05-09 15:53:24] INFO root fetch - processPackages [mujoco-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mujoco_dev-2.3.6.dev530559807-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/mujoco_dev-2.3.6.dev530561729-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230509/m/mujoco-dev/2.3.6.dev530559807-2.3.6.dev530561729/diff.md --exclude *.pyd
+[2023-05-09 15:53:24] INFO root fetch - processPackages [aphos-openapi]: Downloading https://files.pythonhosted.org/packages/4f/d8/2fedc7c169df9d223fd1985d3cf9dc6d96e0eaa2f633103a67c417dc46ed/aphos_openapi-2.5.0.tar.gz
+[2023-05-09 15:53:24] INFO root fetch - processPackages [nwebclient]: Downloading https://files.pythonhosted.org/packages/9d/9d/a61832c645e7bf4e287c8fd57bd6acc4aa8ca81669902221cfff3c0dfa72/nwebclient-1.0.89.tar.gz
+[2023-05-09 15:53:24] INFO root fetch - processPackages [aphos-openapi]: executing diffoscope
+[2023-05-09 15:53:24] INFO root fetch - processPackages [aphos-openapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aphos_openapi-2.4.0.tar.gz tmp/aphos_openapi-2.5.0.tar.gz --markdown 20230509/a/aphos-openapi/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-05-09 15:53:24] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-05-09 15:53:24] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.88.tar.gz tmp/nwebclient-1.0.89.tar.gz --markdown 20230509/n/nwebclient/1.0.88-1.0.89/diff.md --exclude *.pyd
+[2023-05-09 15:53:24] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: Downloading https://files.pythonhosted.org/packages/50/e4/d5d27725ffb3f14cc2981cf7728527be8417485276520ebdd6eb7e9779e1/ovos_ww_plugin_precise_lite-0.1.2a4-py3-none-any.whl
+[2023-05-09 15:53:24] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: executing diffoscope
+[2023-05-09 15:53:24] INFO root fetch - processPackages [ovos-ww-plugin-precise-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_ww_plugin_precise_lite-0.1.2a3-py3-none-any.whl.zip tmp/ovos_ww_plugin_precise_lite-0.1.2a4-py3-none-any.whl.zip --markdown 20230509/o/ovos-ww-plugin-precise-lite/0.1.2a3-0.1.2a4/diff.md --exclude *.pyd
+[2023-05-09 15:53:25] INFO root fetch - processPackages [pyowletapi]: Start processing: emBRICK
+[2023-05-09 15:53:25] INFO root fetch - main [MainThread]: End processing [pyowletapi]: success
+[2023-05-09 15:53:25] INFO root fetch - processPackages [emBRICK]: New version: [0.21] Old Version: [0.20]
+[2023-05-09 15:53:25] INFO root fetch - main [MainThread]: End processing [virtru-sdk]: success
+[2023-05-09 15:53:25] INFO root fetch - processPackages [emBRICK]: executing diffoscope
+[2023-05-09 15:53:25] INFO root fetch - processPackages [emBRICK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emBRICK-0.20.tar.gz tmp/emBRICK-0.21.tar.gz --markdown 20230509/e/emBRICK/0.20-0.21/diff.md --exclude *.pyd
+[2023-05-09 15:53:25] INFO root fetch - main [MainThread]: End processing [guidance]: success
+[2023-05-09 15:53:26] INFO root fetch - main [MainThread]: End processing [ovos-ww-plugin-precise-lite]: success
+[2023-05-09 15:53:26] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-05-09 15:53:26] INFO root fetch - main [MainThread]: End processing [emBRICK]: success
+[2023-05-09 15:53:27] INFO root fetch - main [MainThread]: End processing [aphos-openapi]: success
+[2023-05-09 15:53:29] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
+[2023-05-09 15:53:30] INFO root fetch - main [MainThread]: End processing [alphaz]: success
+[2023-05-09 15:53:39] INFO root fetch - main [MainThread]: End processing [shared-atomic-enterprise]: success
+[2023-05-09 15:53:41] INFO root fetch - main [MainThread]: End processing [shared-atomic-enterprise]: success
+[2023-05-09 15:53:41] INFO root fetch - main [MainThread]: Store serial: [18032578]
