@@ -16584,3 +16584,102 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-05-09 15:13:53] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-05-09 15:13:57] INFO root fetch - main [MainThread]: End processing [cog-airflow-notify-sns]: success
 [2023-05-09 15:13:57] INFO root fetch - main [MainThread]: Store serial: [18032098]
+[2023-05-09 15:19:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18032098]
+[2023-05-09 15:19:06] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eotdl-cli
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sakkara
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kalm
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stitchtoon
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-roy-CERT-1891-allocId-c
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: manticore
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bcirisktools
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jhdata
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-09 15:19:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: unpast
+[2023-05-09 15:19:06] INFO root fetch - processPackages [eotdl-cli]: New version: [2023.5.9.post2] Old Version: [2023.5.9]
+[2023-05-09 15:19:06] INFO root fetch - processPackages [stitchtoon]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-09 15:19:06] INFO root fetch - processPackages [bcirisktools]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 15:19:06] INFO root fetch - processPackages [kalm]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-09 15:19:06] INFO root fetch - processPackages [sakkara]: New version: [0.6.0] Old Version: [0.5.3]
+[2023-05-09 15:19:06] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1891-allocId-c]: New version: [20230509.13.14.61130] Old Version: [20230508.16.36.710942]
+[2023-05-09 15:19:06] INFO root fetch - processPackages [jhdata]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-09 15:19:06] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230509.12.59.399222] Old Version: [20230509.12.47.289540]
+[2023-05-09 15:19:06] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230509] Old Version: [0.3.8.dev230508]
+[2023-05-09 15:19:06] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/9d/49/0fad8b443a471d813448ae6fcd50ed044dac112e3f81d1f97b768b7a2418/certora-cli-alpha-roy-CERT-1955-assertHits-20230509.12.47.289540.tar.gz
+[2023-05-09 15:19:06] WARNING root fetch - processPackages [unpast]: Skipping, unable to determine old version
+[2023-05-09 15:19:06] INFO root fetch - processPackages [unpast]: Start processing: aislib
+[2023-05-09 15:19:06] INFO root fetch - main [MainThread]: End processing [unpast] error
+[2023-05-09 15:19:07] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 38475450>=10485760
+[2023-05-09 15:19:07] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Start processing: cgiw
+[2023-05-09 15:19:07] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-09 15:19:07] INFO root fetch - processPackages [aislib]: New version: [0.1.9a0] Old Version: [0.1.8a0]
+[2023-05-09 15:19:07] INFO root fetch - processPackages [bcirisktools]: Downloading https://files.pythonhosted.org/packages/b5/38/33dc609c0b911f96493fafa17035e093126e3b7471b2cb3f5f4ba1d7042c/bcirisktools-0.2.9.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [aislib]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [jhdata]: Downloading https://files.pythonhosted.org/packages/c2/5c/79815d0fc079e45b7126932c5ee9d0aa9f9c1e07191455ca45b4d7aa503b/jhdata-1.0.8.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [aislib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aislib-0.1.8a0.tar.gz tmp/aislib-0.1.9a0.tar.gz --markdown 20230509/a/aislib/0.1.8a0-0.1.9a0/diff.md --exclude *.pyd
+[2023-05-09 15:19:07] INFO root fetch - processPackages [kalm]: Downloading https://files.pythonhosted.org/packages/39/b7/d2b31157a9c6fd14a06bc59a9b5b90705403db99e5f0d4329f3ffc10781c/kalm-0.5.3.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [sakkara]: Downloading https://files.pythonhosted.org/packages/ab/7c/c9ddbf2a5c90f1de13ce585782274bc9aa0d3389668869a7783160c970f2/sakkara-0.5.3.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1891-allocId-c]: Downloading https://files.pythonhosted.org/packages/d3/37/47671e369229affb5b01e72d1f9009d24cd824f3d07180130754c6703843/certora-cli-alpha-roy-CERT-1891-allocId-c-20230508.16.36.710942.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [cgiw]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-09 15:19:07] INFO root fetch - processPackages [bcirisktools]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [bcirisktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcirisktools-0.2.8.tar.gz tmp/bcirisktools-0.2.9.tar.gz --markdown 20230509/b/bcirisktools/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 15:19:07] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1891-allocId-c]: Skipping package: exceeds size limit 38483388>=10485760
+[2023-05-09 15:19:07] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1891-allocId-c]: Start processing: kalm
+[2023-05-09 15:19:07] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1891-allocId-c] error
+[2023-05-09 15:19:07] INFO root fetch - processPackages [eotdl-cli]: Downloading https://files.pythonhosted.org/packages/66/c9/0f6d47b46448c79ecddaa42b724d450098f91db987bdfc142d3b061d2900/eotdl-cli-2023.5.9.post2.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [stitchtoon]: Downloading https://files.pythonhosted.org/packages/d8/d7/fcce7ab4558e72fc0b54c50a71a17d007cda58219580e653c5db777c91ff/stitchtoon-1.1.0.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [kalm]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-09 15:19:07] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/67/b4/8df6bfff7e4c460db69c2b9a4c610e46de43899985c4a60ee09b48ef620b/manticore-0.3.8.dev230509.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [cgiw]: Downloading https://files.pythonhosted.org/packages/03/67/1b1354bdce40f3b76dd3f62b2132f089b83575d4cb431508ceac54e4e6ee/cgiw-0.1.4.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [sakkara]: Downloading https://files.pythonhosted.org/packages/d1/6b/ca6010f579c30752d3dd1ae5dc4590d9235920bfb42a2995ef0839eb6121/sakkara-0.6.0.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [eotdl-cli]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [eotdl-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eotdl-cli-2023.5.9.tar.gz tmp/eotdl-cli-2023.5.9.post2.tar.gz --markdown 20230509/e/eotdl-cli/2023.5.9-2023.5.9.post2/diff.md --exclude *.pyd
+[2023-05-09 15:19:07] INFO root fetch - processPackages [kalm]: Downloading https://files.pythonhosted.org/packages/32/62/2c826afeb01c5cdd21955fe25dc1807d5e3b49ddeaa06da1f574e39f2fe8/kalm-0.5.4.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [kalm]: Downloading https://files.pythonhosted.org/packages/32/62/2c826afeb01c5cdd21955fe25dc1807d5e3b49ddeaa06da1f574e39f2fe8/kalm-0.5.4.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [jhdata]: Downloading https://files.pythonhosted.org/packages/80/e3/ddbeca24baab4d889b7a8e3c17240ef0ab9144556172f2f9a63e67a96df6/jhdata-1.0.9.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230508.tar.gz tmp/manticore-0.3.8.dev230509.tar.gz --markdown 20230509/m/manticore/0.3.8.dev230508-0.3.8.dev230509/diff.md --exclude *.pyd
+[2023-05-09 15:19:07] INFO root fetch - processPackages [sakkara]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [sakkara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sakkara-0.5.3.tar.gz tmp/sakkara-0.6.0.tar.gz --markdown 20230509/s/sakkara/0.5.3-0.6.0/diff.md --exclude *.pyd
+[2023-05-09 15:19:07] INFO root fetch - processPackages [cgiw]: Downloading https://files.pythonhosted.org/packages/d5/4d/94d38797aca1e0caa4ac665335824261cc956bf150a8cb1ccdc0fcf0201d/cgiw-0.1.5.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [jhdata]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [jhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jhdata-1.0.8.tar.gz tmp/jhdata-1.0.9.tar.gz --markdown 20230509/j/jhdata/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-09 15:19:07] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.5.3.tar.gz tmp/kalm-0.5.4.tar.gz --markdown 20230509/k/kalm/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-09 15:19:07] INFO root fetch - processPackages [stitchtoon]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [stitchtoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stitchtoon-1.0.0.tar.gz tmp/stitchtoon-1.1.0.tar.gz --markdown 20230509/s/stitchtoon/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 15:19:07] INFO root fetch - processPackages [cgiw]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [cgiw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cgiw-0.1.4.tar.gz tmp/cgiw-0.1.5.tar.gz --markdown 20230509/c/cgiw/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-09 15:19:07] INFO root fetch - processPackages [kalm]: Downloading https://files.pythonhosted.org/packages/3f/99/5790ac5d5a7606d22538e4774ccceae8ef01f7675a0178181882348a4d1e/kalm-0.5.5.tar.gz
+[2023-05-09 15:19:07] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-05-09 15:19:07] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.5.4.tar.gz tmp/kalm-0.5.5.tar.gz --markdown 20230509/k/kalm/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-09 15:19:08] INFO root fetch - processPackages [aislib]: Start processing: sunpeek
+[2023-05-09 15:19:08] INFO root fetch - main [MainThread]: End processing [aislib]: success
+[2023-05-09 15:19:08] INFO root fetch - processPackages [eotdl-cli]: Start processing: enebootools
+[2023-05-09 15:19:08] INFO root fetch - main [MainThread]: End processing [eotdl-cli]: success
+[2023-05-09 15:19:08] INFO root fetch - processPackages [sunpeek]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 15:19:09] INFO root fetch - processPackages [sunpeek]: executing diffoscope
+[2023-05-09 15:19:09] INFO root fetch - processPackages [sunpeek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunpeek-0.2.8-py3-none-any.whl.zip tmp/sunpeek-0.2.9-py3-none-any.whl.zip --markdown 20230509/s/sunpeek/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 15:19:09] INFO root fetch - processPackages [enebootools]: New version: [2.0.0] Old Version: [1.8.2]
+[2023-05-09 15:19:09] INFO root fetch - processPackages [bcirisktools]: Start processing: bitmovin-api-sdk
+[2023-05-09 15:19:09] INFO root fetch - main [MainThread]: End processing [bcirisktools]: success
+[2023-05-09 15:19:09] INFO root fetch - processPackages [enebootools]: Downloading https://files.pythonhosted.org/packages/1d/be/50ff1ded827e99acec6a8369738bc8ad50bd37c22076afad76fe3cf63dbb/enebootools-1.8.2.tar.gz
+[2023-05-09 15:19:09] INFO root fetch - processPackages [bitmovin-api-sdk]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-09 15:19:09] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-05-09 15:19:09] INFO root fetch - processPackages [enebootools]: Downloading https://files.pythonhosted.org/packages/3c/4e/60b30515cbdfe982077c0657bbbb4d858d38a6b23afbcdc59c1332c9d4e8/enebootools-2.0.0.tar.gz
+[2023-05-09 15:19:09] INFO root fetch - processPackages [bitmovin-api-sdk]: Downloading https://files.pythonhosted.org/packages/99/5f/f312c7ae4e19c02c92be74787a5b90e06fd5c451af1d3ae05598ba30e3b1/bitmovin-api-sdk-1.98.0.tar.gz
+[2023-05-09 15:19:09] INFO root fetch - main [MainThread]: End processing [jhdata]: success
+[2023-05-09 15:19:09] INFO root fetch - processPackages [enebootools]: executing diffoscope
+[2023-05-09 15:19:09] INFO root fetch - processPackages [enebootools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enebootools-1.8.2.tar.gz tmp/enebootools-2.0.0.tar.gz --markdown 20230509/e/enebootools/1.8.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-09 15:19:09] INFO root fetch - main [MainThread]: End processing [sakkara]: success
+[2023-05-09 15:19:09] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-05-09 15:19:09] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-05-09 15:19:09] INFO root fetch - processPackages [bitmovin-api-sdk]: Downloading https://files.pythonhosted.org/packages/34/91/b3a6a32567ee1b2b10fdb861f77466abd3a7b2db538088f87351199da0bc/bitmovin-api-sdk-1.99.0.tar.gz
+[2023-05-09 15:19:09] INFO root fetch - main [MainThread]: End processing [cgiw]: success
+[2023-05-09 15:19:10] INFO root fetch - processPackages [bitmovin-api-sdk]: executing diffoscope
+[2023-05-09 15:19:10] INFO root fetch - processPackages [bitmovin-api-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitmovin-api-sdk-1.98.0.tar.gz tmp/bitmovin-api-sdk-1.99.0.tar.gz --markdown 20230509/b/bitmovin-api-sdk/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-09 15:19:10] INFO root fetch - main [MainThread]: End processing [sunpeek]: success
+[2023-05-09 15:19:11] INFO root fetch - main [MainThread]: End processing [enebootools]: success
+[2023-05-09 15:19:12] INFO root fetch - main [MainThread]: End processing [stitchtoon]: success
+[2023-05-09 15:19:47] INFO root fetch - main [MainThread]: End processing [bitmovin-api-sdk]: success
+[2023-05-09 15:19:47] INFO root fetch - main [MainThread]: Store serial: [18032152]
