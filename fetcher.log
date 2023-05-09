@@ -13032,3 +13032,111 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 11:14:06] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
 [2023-05-09 11:14:44] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-09 11:14:44] INFO root fetch - main [MainThread]: Store serial: [18029926]
+[2023-05-09 11:19:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029926]
+[2023-05-09 11:19:53] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mse-cli
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-protobuf
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sphinxcontrib-yamcs
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydae
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: daktari
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pepperize.projen-awscdk-construct
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alfred-pyflow
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: digi-connectcore-ble
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: QuNet
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: softlab
+[2023-05-09 11:19:53] INFO root fetch - processPackages [alfred-pyflow]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-09 11:19:53] WARNING root fetch - processPackages [digi-connectcore-ble]: Skipping, unable to determine old version
+[2023-05-09 11:19:53] INFO root fetch - processPackages [digi-connectcore-ble]: Start processing: ramodels
+[2023-05-09 11:19:53] INFO root fetch - main [MainThread]: End processing [digi-connectcore-ble] error
+[2023-05-09 11:19:53] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 11:19:53] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-09 11:19:53] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-05-09 11:19:53] INFO root fetch - processPackages [sphinxcontrib-yamcs]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-05-09 11:19:53] INFO root fetch - processPackages [types-protobuf]: New version: [4.23.0.0] Old Version: [4.22.0.2]
+[2023-05-09 11:19:53] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230509/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 11:19:53] WARNING root fetch - processPackages [softlab]: Skipping, unable to determine old version
+[2023-05-09 11:19:53] INFO root fetch - processPackages [softlab]: Start processing: phdu
+[2023-05-09 11:19:53] INFO root fetch - main [MainThread]: End processing [softlab] error
+[2023-05-09 11:19:53] INFO root fetch - processPackages [mse-cli]: New version: [0.9.0] Old Version: [0.12.0]
+[2023-05-09 11:19:53] INFO root fetch - processPackages [pydae]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-09 11:19:53] INFO root fetch - processPackages [alfred-pyflow]: executing diffoscope
+[2023-05-09 11:19:53] INFO root fetch - processPackages [alfred-pyflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfred_pyflow-0.4.3.tar.gz tmp/alfred_pyflow-0.4.4.tar.gz --markdown 20230509/a/alfred-pyflow/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-09 11:19:53] INFO root fetch - processPackages [daktari]: New version: [0.0.97] Old Version: [0.0.96]
+[2023-05-09 11:19:53] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2023-05-09 11:19:53] INFO root fetch - processPackages [phdu]: New version: [1.9b4] Old Version: [1.9b3]
+[2023-05-09 11:19:53] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: executing diffoscope
+[2023-05-09 11:19:53] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.projen-awscdk-construct-0.0.98.tar.gz tmp/pepperize.projen-awscdk-construct-0.0.99.tar.gz --markdown 20230509/p/pepperize.projen-awscdk-construct/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-09 11:19:54] INFO root fetch - processPackages [mse-cli]: Downloading https://files.pythonhosted.org/packages/be/b9/ed43486d84f3ea8a91711b93c98ca7f85dd0228aa9192f11dd7fdd0189f5/mse_cli-0.12.0.tar.gz
+[2023-05-09 11:19:54] INFO root fetch - processPackages [sphinxcontrib-yamcs]: Downloading https://files.pythonhosted.org/packages/5c/00/74e3b4f68d707d3bf8be1dda01caf17bf61dc7ab6e77d847a5146c8df5eb/sphinxcontrib-yamcs-1.2.7.tar.gz
+[2023-05-09 11:19:54] INFO root fetch - processPackages [pydae]: Downloading https://files.pythonhosted.org/packages/7d/df/18fbeeac68b8076a40737405fc9638efb381a7dae1ccdfa520fe3810b1cd/pydae-0.8.0.tar.gz
+[2023-05-09 11:19:54] INFO root fetch - processPackages [types-protobuf]: Downloading https://files.pythonhosted.org/packages/e6/8b/17806c6ef16ac48bc897fdb6ac497214dba7064dd5561e39b50393b80201/types-protobuf-4.22.0.2.tar.gz
+[2023-05-09 11:19:54] INFO root fetch - processPackages [phdu]: Downloading https://files.pythonhosted.org/packages/5b/4c/68513ab0be91ebd1a29608af4142b20539f6151ed4c713969673d48b0d0a/phdu-1.9b4.tar.gz
+[2023-05-09 11:19:54] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2023-05-09 11:19:54] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20230509/r/ramodels/9.7.2-9.7.3/diff.md --exclude *.pyd
+[2023-05-09 11:19:54] INFO root fetch - processPackages [phdu]: executing diffoscope
+[2023-05-09 11:19:54] INFO root fetch - processPackages [phdu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phdu-1.9b3.tar.gz tmp/phdu-1.9b4.tar.gz --markdown 20230509/p/phdu/1.9b3-1.9b4/diff.md --exclude *.pyd
+[2023-05-09 11:19:54] INFO root fetch - processPackages [daktari]: Downloading https://files.pythonhosted.org/packages/00/ee/97bf18dd7b681ef84bb57964b8a77c5b64632e71732c97433c49181b9d8f/daktari-0.0.97.tar.gz
+[2023-05-09 11:19:54] INFO root fetch - processPackages [types-protobuf]: Downloading https://files.pythonhosted.org/packages/a7/72/981f81aef576108e0467a7b23d88c21fb3709a12d17719446fc2f8c72b40/types-protobuf-4.23.0.0.tar.gz
+[2023-05-09 11:19:54] INFO root fetch - processPackages [mse-cli]: Downloading https://files.pythonhosted.org/packages/e6/8d/4498792a12c6a0832116bcf414b37cf8852bbc2da25fc07c1536da48b387/mse_cli-0.9.0-py3-none-any.whl
+[2023-05-09 11:19:54] INFO root fetch - processPackages [daktari]: executing diffoscope
+[2023-05-09 11:19:54] INFO root fetch - processPackages [daktari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daktari-0.0.96.tar.gz tmp/daktari-0.0.97.tar.gz --markdown 20230509/d/daktari/0.0.96-0.0.97/diff.md --exclude *.pyd
+[2023-05-09 11:19:54] INFO root fetch - processPackages [types-protobuf]: executing diffoscope
+[2023-05-09 11:19:54] INFO root fetch - processPackages [types-protobuf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-protobuf-4.22.0.2.tar.gz tmp/types-protobuf-4.23.0.0.tar.gz --markdown 20230509/t/types-protobuf/4.22.0.2-4.23.0.0/diff.md --exclude *.pyd
+[2023-05-09 11:19:54] INFO root fetch - processPackages [mse-cli]: executing diffoscope
+[2023-05-09 11:19:54] INFO root fetch - processPackages [mse-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mse_cli-0.12.0.tar.gz tmp/mse_cli-0.9.0-py3-none-any.whl.zip --markdown 20230509/m/mse-cli/0.12.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-09 11:19:54] WARNING root fetch - processPackages [pydae]: Skipping package: exceeds size limit 76279170>=10485760
+[2023-05-09 11:19:54] INFO root fetch - processPackages [pydae]: Start processing: birentechci
+[2023-05-09 11:19:54] INFO root fetch - main [MainThread]: End processing [pydae] error
+[2023-05-09 11:19:54] INFO root fetch - processPackages [birentechci]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-09 11:19:54] INFO root fetch - processPackages [birentechci]: executing diffoscope
+[2023-05-09 11:19:54] INFO root fetch - processPackages [birentechci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/birentechci-0.0.8.tar.gz tmp/birentechci-0.0.9.tar.gz --markdown 20230509/b/birentechci/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-09 11:19:54] INFO root fetch - processPackages [sphinxcontrib-yamcs]: Downloading https://files.pythonhosted.org/packages/82/c5/373d930828eb3138c893c425f7a039f336a6f1f2aef06e11174a883c1954/sphinxcontrib-yamcs-1.2.8.tar.gz
+[2023-05-09 11:19:55] INFO root fetch - processPackages [sphinxcontrib-yamcs]: executing diffoscope
+[2023-05-09 11:19:55] INFO root fetch - processPackages [sphinxcontrib-yamcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib-yamcs-1.2.7.tar.gz tmp/sphinxcontrib-yamcs-1.2.8.tar.gz --markdown 20230509/s/sphinxcontrib-yamcs/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-05-09 11:19:55] INFO root fetch - processPackages [alfred-pyflow]: Start processing: licensekeygentest
+[2023-05-09 11:19:55] INFO root fetch - main [MainThread]: End processing [alfred-pyflow]: success
+[2023-05-09 11:19:55] INFO root fetch - processPackages [licensekeygentest]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-09 11:19:55] INFO root fetch - processPackages [QuNet]: Start processing: vdk-dag
+[2023-05-09 11:19:55] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-05-09 11:19:55] INFO root fetch - processPackages [licensekeygentest]: executing diffoscope
+[2023-05-09 11:19:55] INFO root fetch - processPackages [licensekeygentest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/licensekeygentest-0.0.1.tar.gz tmp/licensekeygentest-0.0.2.tar.gz --markdown 20230509/l/licensekeygentest/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-09 11:19:55] INFO root fetch - processPackages [vdk-dag]: New version: [0.1.861330674] Old Version: [0.1.858308711]
+[2023-05-09 11:19:55] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: Start processing: steampunk-spotter
+[2023-05-09 11:19:55] INFO root fetch - main [MainThread]: End processing [pepperize.projen-awscdk-construct]: success
+[2023-05-09 11:19:56] INFO root fetch - processPackages [steampunk-spotter]: New version: [1.2.7a2] Old Version: [1.2.6rc1]
+[2023-05-09 11:19:56] INFO root fetch - processPackages [vdk-dag]: Downloading https://files.pythonhosted.org/packages/aa/eb/281309a12969b599b7dfc9d42d9d530c5f6e293f6e0dbedac206718111df/vdk-dag-0.1.858308711.tar.gz
+[2023-05-09 11:19:56] INFO root fetch - processPackages [ramodels]: Start processing: akshare
+[2023-05-09 11:19:56] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2023-05-09 11:19:56] INFO root fetch - processPackages [steampunk-spotter]: Downloading https://files.pythonhosted.org/packages/d2/bd/4bc865a8e0b0c11374c87aba008d0aadb190edc416657ce55ef442773763/steampunk_spotter-1.2.6rc1-py3-none-any.whl
+[2023-05-09 11:19:56] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-09 11:19:56] INFO root fetch - processPackages [types-protobuf]: Start processing: inels-mqtt-new
+[2023-05-09 11:19:56] INFO root fetch - main [MainThread]: End processing [types-protobuf]: success
+[2023-05-09 11:19:56] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-05-09 11:19:56] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230509/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-09 11:19:56] INFO root fetch - processPackages [phdu]: Start processing: antchain-ak-ee637c8293f64104af9686dc12e0cd18
+[2023-05-09 11:19:56] INFO root fetch - main [MainThread]: End processing [phdu]: success
+[2023-05-09 11:19:56] INFO root fetch - processPackages [vdk-dag]: Downloading https://files.pythonhosted.org/packages/fc/61/b8d1c25d42145bad0e3836774e5251e7bab2619560e2f270dba0e378fd98/vdk-dag-0.1.861330674.tar.gz
+[2023-05-09 11:19:56] INFO root fetch - processPackages [antchain-ak-ee637c8293f64104af9686dc12e0cd18]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-09 11:19:56] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-05-09 11:19:56] INFO root fetch - processPackages [vdk-dag]: executing diffoscope
+[2023-05-09 11:19:56] INFO root fetch - processPackages [vdk-dag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vdk-dag-0.1.858308711.tar.gz tmp/vdk-dag-0.1.861330674.tar.gz --markdown 20230509/v/vdk-dag/0.1.858308711-0.1.861330674/diff.md --exclude *.pyd
+[2023-05-09 11:19:56] INFO root fetch - processPackages [antchain-ak-ee637c8293f64104af9686dc12e0cd18]: executing diffoscope
+[2023-05-09 11:19:56] INFO root fetch - processPackages [antchain-ak-ee637c8293f64104af9686dc12e0cd18]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_ak_ee637c8293f64104af9686dc12e0cd18-1.0.2.tar.gz tmp/antchain_ak_ee637c8293f64104af9686dc12e0cd18-1.1.0.tar.gz --markdown 20230509/a/antchain-ak-ee637c8293f64104af9686dc12e0cd18/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-09 11:19:56] INFO root fetch - processPackages [steampunk-spotter]: Downloading https://files.pythonhosted.org/packages/a5/9a/7e53948c27ac82d39722900b61562f52d310ceba3f63eea8b4ea83514fb0/steampunk_spotter-1.2.7a2-py3-none-any.whl
+[2023-05-09 11:19:56] INFO root fetch - processPackages [inels-mqtt-new]: Downloading https://files.pythonhosted.org/packages/f3/b4/aad26ab80dde8799302dbe662e01e1fe40a55a40eba4691be5a5ebcc58a7/inels-mqtt-new-0.2.9a1.tar.gz
+[2023-05-09 11:19:56] INFO root fetch - processPackages [steampunk-spotter]: executing diffoscope
+[2023-05-09 11:19:56] INFO root fetch - processPackages [steampunk-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steampunk_spotter-1.2.6rc1-py3-none-any.whl.zip tmp/steampunk_spotter-1.2.7a2-py3-none-any.whl.zip --markdown 20230509/s/steampunk-spotter/1.2.6rc1-1.2.7a2/diff.md --exclude *.pyd
+[2023-05-09 11:19:56] INFO root fetch - main [MainThread]: End processing [birentechci]: success
+[2023-05-09 11:19:57] INFO root fetch - main [MainThread]: End processing [mse-cli]: success
+[2023-05-09 11:19:57] INFO root fetch - processPackages [inels-mqtt-new]: Downloading https://files.pythonhosted.org/packages/a6/7a/baead4901c82cd855d0c5606eadd3c032b5e97b8d81da9cd7c40919e99f4/inels-mqtt-new-0.2.9a2.tar.gz
+[2023-05-09 11:19:57] INFO root fetch - main [MainThread]: End processing [daktari]: success
+[2023-05-09 11:19:57] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-yamcs]: success
+[2023-05-09 11:19:57] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-05-09 11:19:57] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230509/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-05-09 11:19:57] INFO root fetch - main [MainThread]: End processing [licensekeygentest]: success
+[2023-05-09 11:19:58] INFO root fetch - main [MainThread]: End processing [vdk-dag]: success
+[2023-05-09 11:19:58] INFO root fetch - main [MainThread]: End processing [antchain-ak-ee637c8293f64104af9686dc12e0cd18]: success
+[2023-05-09 11:19:58] INFO root fetch - main [MainThread]: End processing [steampunk-spotter]: success
+[2023-05-09 11:19:59] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
+[2023-05-09 11:20:03] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-05-09 11:20:03] INFO root fetch - main [MainThread]: Store serial: [18029981]
