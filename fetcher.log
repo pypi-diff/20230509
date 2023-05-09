@@ -12401,3 +12401,98 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-09 10:36:18] INFO root fetch - main [MainThread]: End processing [pysui]: success
 [2023-05-09 10:36:20] INFO root fetch - main [MainThread]: End processing [FakeNewsClassifier]: success
 [2023-05-09 10:36:20] INFO root fetch - main [MainThread]: Store serial: [18029477]
+[2023-05-09 10:41:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18029477]
+[2023-05-09 10:41:29] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: granular-engine
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OpenGeode-core
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reytool
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-estimator-nightly
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansible-lint
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nucliadb-contributor-assets
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: geofabrics
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pycompete
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: batframes
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: catcatfox777-7
+[2023-05-09 10:41:29] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [pycompete]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [granular-engine]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [geofabrics]: New version: [0.9.4] Old Version: [0.9.3a0]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [batframes]: New version: [1.0.0.1] Old Version: [1.0.0]
+[2023-05-09 10:41:29] WARNING root fetch - processPackages [catcatfox777-7]: Skipping, unable to determine old version
+[2023-05-09 10:41:29] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post752] Old Version: [1.0.0.post750]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [catcatfox777-7]: Start processing: fixed2float
+[2023-05-09 10:41:29] INFO root fetch - main [MainThread]: End processing [catcatfox777-7] error
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ansible-lint]: New version: [6.9.1] Old Version: [6.9.0]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [OpenGeode-core]: New version: [9.10.4] Old Version: [14.0.9]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [fixed2float]: New version: [4.0.0rc2] Old Version: [4.0.0rc1]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-05-09 10:41:29] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230509/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-05-09 10:41:29] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-05-09 10:41:29] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230509/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-05-09 10:41:29] INFO root fetch - processPackages [pycompete]: Downloading https://files.pythonhosted.org/packages/e6/f1/dbd6d5a80faf9b7bc38c0d8c10fcdcc2228eb2b5b0bbbe99ac483df40bc1/pycompete-0.0.4.tar.gz
+[2023-05-09 10:41:29] INFO root fetch - processPackages [batframes]: Downloading https://files.pythonhosted.org/packages/b4/c7/758a494e6fe50ff88b4dccb4bac35e31c93875e191eea296092d29fe93d3/batframes-1.0.0.tar.gz
+[2023-05-09 10:41:29] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/95/b8/d9ddf4500b5e9d603bfcc82a24cb7706b1998fda943f5cc9bd43a755f2fd/nucliadb_contributor_assets-1.0.0.post750-py3-none-any.whl
+[2023-05-09 10:41:29] INFO root fetch - processPackages [OpenGeode-core]: Downloading https://files.pythonhosted.org/packages/f4/d6/c03770d6a9178257977a810f85df4252ebce3b549f00a6a4ad2bc5cd7a5b/OpenGeode_core-14.0.9-cp39-cp39-win_amd64.whl
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ansible-lint]: Downloading https://files.pythonhosted.org/packages/59/c9/bebba18cfb0eb91208fbfaf44156225aa55bfe7f2dbd5afeb6f020fa5dcb/ansible-lint-6.9.0.tar.gz
+[2023-05-09 10:41:29] WARNING root fetch - processPackages [OpenGeode-core]: Skipping package: exceeds size limit 17911399>=10485760
+[2023-05-09 10:41:29] INFO root fetch - processPackages [OpenGeode-core]: Start processing: localstack-core
+[2023-05-09 10:41:29] INFO root fetch - main [MainThread]: End processing [OpenGeode-core] error
+[2023-05-09 10:41:29] INFO root fetch - processPackages [localstack-core]: New version: [2.0.3.dev20230509083833] Old Version: [2.0.3.dev20230509073900]
+[2023-05-09 10:41:29] INFO root fetch - processPackages [fixed2float]: Downloading https://files.pythonhosted.org/packages/13/d1/e1d4066ef11c9e0511888f06e151d9a8c591d1a3de61d5a172c6b6bd1154/fixed2float-4.0.0_rc2-cp37-none-win_amd64.whl
+[2023-05-09 10:41:29] INFO root fetch - processPackages [granular-engine]: executing diffoscope
+[2023-05-09 10:41:29] INFO root fetch - processPackages [granular-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granular_engine-0.2.8.tar.gz tmp/granular_engine-0.2.9.tar.gz --markdown 20230509/g/granular-engine/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-09 10:41:29] INFO root fetch - processPackages [geofabrics]: Downloading https://files.pythonhosted.org/packages/ab/a3/b71a0a3a708fc1aaada6e7d6df13d323de45ae1771809c5f09f6b5f972ae/geofabrics-0.9.3a0.tar.gz
+[2023-05-09 10:41:29] INFO root fetch - processPackages [batframes]: Downloading https://files.pythonhosted.org/packages/b1/3c/733a771d5500d5cd5036dca1a7add8fd956876f01c20751d13ae73d3dc74/batframes-1.0.0.1.tar.gz
+[2023-05-09 10:41:29] INFO root fetch - processPackages [pycompete]: Downloading https://files.pythonhosted.org/packages/f6/d9/32e948bfec4528080402d5e5bf99bfc2d1bd2a37dd4f3c6ba189ee4e8eaa/pycompete-0.0.5.tar.gz
+[2023-05-09 10:41:29] INFO root fetch - processPackages [fixed2float]: executing diffoscope
+[2023-05-09 10:41:29] INFO root fetch - processPackages [fixed2float]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixed2float-4.0.0_rc1.tar.gz tmp/fixed2float-4.0.0_rc2-cp37-none-win_amd64.whl.zip --markdown 20230509/f/fixed2float/4.0.0rc1-4.0.0rc2/diff.md --exclude *.pyd
+[2023-05-09 10:41:29] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/72/f5/d106c0ead894d851b6e0a9535070fa99168914b8e24bdf9192c1e5fdb05d/localstack-core-2.0.3.dev20230509083833.tar.gz
+[2023-05-09 10:41:29] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/f4/8b/fa81a735a4c41d7f8da7c18781c175071eb70dc2eb8ac3e73f2e34ee0c98/nucliadb_contributor_assets-1.0.0.post752-py3-none-any.whl
+[2023-05-09 10:41:29] INFO root fetch - processPackages [ansible-lint]: Downloading https://files.pythonhosted.org/packages/fb/c0/915c941753e6ef9ca998621a5ee07a812a07d674cf5bb759de0488f1325d/ansible-lint-6.9.1.tar.gz
+[2023-05-09 10:41:29] INFO root fetch - processPackages [pycompete]: executing diffoscope
+[2023-05-09 10:41:29] INFO root fetch - processPackages [pycompete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycompete-0.0.4.tar.gz tmp/pycompete-0.0.5.tar.gz --markdown 20230509/p/pycompete/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-09 10:41:29] INFO root fetch - processPackages [batframes]: executing diffoscope
+[2023-05-09 10:41:29] INFO root fetch - processPackages [batframes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batframes-1.0.0.tar.gz tmp/batframes-1.0.0.1.tar.gz --markdown 20230509/b/batframes/1.0.0-1.0.0.1/diff.md --exclude *.pyd
+[2023-05-09 10:41:30] INFO root fetch - processPackages [ansible-lint]: executing diffoscope
+[2023-05-09 10:41:30] INFO root fetch - processPackages [ansible-lint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-lint-6.9.0.tar.gz tmp/ansible-lint-6.9.1.tar.gz --markdown 20230509/a/ansible-lint/6.9.0-6.9.1/diff.md --exclude *.pyd
+[2023-05-09 10:41:30] INFO root fetch - processPackages [geofabrics]: Downloading https://files.pythonhosted.org/packages/f3/2f/b84fea41bea143f4e81d14dc8a934fe6294f1788b6baf846c84da4b88c8d/geofabrics-0.9.4.tar.gz
+[2023-05-09 10:41:30] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-05-09 10:41:30] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post750-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post752-py3-none-any.whl.zip --markdown 20230509/n/nucliadb-contributor-assets/1.0.0.post750-1.0.0.post752/diff.md --exclude *.pyd
+[2023-05-09 10:41:30] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-09 10:41:30] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.3.dev20230509073900.tar.gz tmp/localstack-core-2.0.3.dev20230509083833.tar.gz --markdown 20230509/l/localstack-core/2.0.3.dev20230509073900-2.0.3.dev20230509083833/diff.md --exclude *.pyd
+[2023-05-09 10:41:30] INFO root fetch - processPackages [geofabrics]: executing diffoscope
+[2023-05-09 10:41:30] INFO root fetch - processPackages [geofabrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geofabrics-0.9.3a0.tar.gz tmp/geofabrics-0.9.4.tar.gz --markdown 20230509/g/geofabrics/0.9.3a0-0.9.4/diff.md --exclude *.pyd
+[2023-05-09 10:41:30] INFO root fetch - processPackages [reytool]: Start processing: example-qazedc
+[2023-05-09 10:41:30] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-05-09 10:41:30] WARNING root fetch - processPackages [example-qazedc]: Skipping, unable to determine old version
+[2023-05-09 10:41:30] INFO root fetch - processPackages [example-qazedc]: Start processing: swiftshadow
+[2023-05-09 10:41:30] INFO root fetch - main [MainThread]: End processing [example-qazedc] error
+[2023-05-09 10:41:30] INFO root fetch - processPackages [swiftshadow]: New version: [1.0.0] Old Version: [0.2.3]
+[2023-05-09 10:41:31] INFO root fetch - processPackages [swiftshadow]: Downloading https://files.pythonhosted.org/packages/52/bd/610f7a1c567acb6e638471b744a2e9c9bccdd5f06fb522c869f14221fc90/swiftshadow-0.2.3.tar.gz
+[2023-05-09 10:41:31] INFO root fetch - processPackages [swiftshadow]: Downloading https://files.pythonhosted.org/packages/b9/49/52726031fb46d61a544fc21a92ff35716be17113f581e2aacacca7632388/swiftshadow-1.0.0.tar.gz
+[2023-05-09 10:41:31] INFO root fetch - processPackages [fixed2float]: Start processing: pyautoass
+[2023-05-09 10:41:31] INFO root fetch - main [MainThread]: End processing [fixed2float]: success
+[2023-05-09 10:41:31] INFO root fetch - processPackages [pyautoass]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-09 10:41:31] INFO root fetch - processPackages [swiftshadow]: executing diffoscope
+[2023-05-09 10:41:31] INFO root fetch - processPackages [swiftshadow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiftshadow-0.2.3.tar.gz tmp/swiftshadow-1.0.0.tar.gz --markdown 20230509/s/swiftshadow/0.2.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-09 10:41:31] INFO root fetch - processPackages [pyautoass]: Downloading https://files.pythonhosted.org/packages/de/20/50960bf4bacbfe32d86fe9fb40844169110ef2da5560c6582f2d83d4e11d/pyautoass-1.0.2-py3-none-any.whl
+[2023-05-09 10:41:31] INFO root fetch - processPackages [pycompete]: Start processing: libcnmc
+[2023-05-09 10:41:31] INFO root fetch - main [MainThread]: End processing [pycompete]: success
+[2023-05-09 10:41:31] INFO root fetch - processPackages [libcnmc]: New version: [23.9.1] Old Version: [23.9.0]
+[2023-05-09 10:41:31] INFO root fetch - processPackages [libcnmc]: executing diffoscope
+[2023-05-09 10:41:31] INFO root fetch - processPackages [libcnmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libcnmc-23.9.0.tar.gz tmp/libcnmc-23.9.1.tar.gz --markdown 20230509/l/libcnmc/23.9.0-23.9.1/diff.md --exclude *.pyd
+[2023-05-09 10:41:31] INFO root fetch - main [MainThread]: End processing [granular-engine]: success
+[2023-05-09 10:41:31] INFO root fetch - processPackages [pyautoass]: Downloading https://files.pythonhosted.org/packages/e2/01/de8de52f482a132a9309ba0c1c6096f5689c7fadd515914946c986b9067d/pyautoass-1.0.3.tar.gz
+[2023-05-09 10:41:31] INFO root fetch - main [MainThread]: End processing [batframes]: success
+[2023-05-09 10:41:32] INFO root fetch - processPackages [pyautoass]: executing diffoscope
+[2023-05-09 10:41:32] INFO root fetch - processPackages [pyautoass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230509:/home/abi/fetcher/20230509:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyautoass-1.0.2-py3-none-any.whl.zip tmp/pyautoass-1.0.3.tar.gz --markdown 20230509/p/pyautoass/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-09 10:41:32] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-05-09 10:41:32] INFO root fetch - main [MainThread]: End processing [geofabrics]: success
+[2023-05-09 10:41:33] INFO root fetch - main [MainThread]: End processing [swiftshadow]: success
+[2023-05-09 10:41:33] INFO root fetch - main [MainThread]: End processing [pyautoass]: success
+[2023-05-09 10:41:34] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-05-09 10:41:36] INFO root fetch - main [MainThread]: End processing [libcnmc]: success
+[2023-05-09 10:41:38] INFO root fetch - main [MainThread]: End processing [ansible-lint]: success
+[2023-05-09 10:41:38] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-09 10:41:38] INFO root fetch - main [MainThread]: Store serial: [18029535]
